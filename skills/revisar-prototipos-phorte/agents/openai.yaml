@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revisar protótipos Phorte"
+  short_description: "Revisa segurança, links e documentação"
+  default_prompt: "Revise os protótipos estáticos deste repositório, verifique segurança, links, status e documentação, e registre os achados sem fazer commit."
