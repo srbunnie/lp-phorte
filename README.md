@@ -1,6 +1,8 @@
 # Projetos de Landing Pages — Phorte e USCS
 
-Este repositório reúne os projetos de landing pages desenvolvidos para a Phorte e para a USCS. A pasta foi criada para centralizar páginas, materiais, referências e recursos utilizados pela equipe de quatro pessoas.
+Este repositório reúne objetos estáticos de landing pages desenvolvidos para apresentação e compartilhamento com stakeholders da Phorte e da USCS. A pasta centraliza protótipos navegáveis, layouts, imagens, textos, referências e materiais de demonstração utilizados pela equipe de quatro pessoas.
+
+O conteúdo é demonstrativo. Não devem ser adicionados backends, bancos de dados, integrações de produção, credenciais ou dados reais de usuários.
 
 Cada landing page deve ser organizada como um projeto independente. Dessa forma, é possível trabalhar em várias páginas simultaneamente sem misturar arquivos, imagens, códigos ou versões.
 
@@ -31,6 +33,7 @@ lp-phorte/
 
 - `Graduacao/`: páginas e campanhas relacionadas à graduação.
 - `Pos/`: páginas e campanhas relacionadas à pós-graduação, especializações e MBA.
+- `USCS/`: páginas e protótipos relacionados à USCS.
 - `skills/`: orientações, referências e ferramentas de apoio ao trabalho de design, conteúdo e desenvolvimento.
 
 Se surgir uma nova frente de trabalho, crie uma nova categoria na raiz somente quando ela representar um grupo permanente de projetos. Para uma campanha específica, crie uma subpasta dentro da categoria correspondente.
@@ -48,14 +51,20 @@ Pos/psicopedagogia-turma-agosto/
 
 Dentro de cada projeto, separe os materiais por finalidade:
 
-- `pagina/`: HTML, CSS, JavaScript, componentes, configurações e demais arquivos da página.
+- `pagina/`: HTML, CSS, JavaScript client-side e demais arquivos estáticos da página.
 - `assets/images/`: fotos, banners, logos e imagens usadas na página.
 - `assets/icons/`: ícones, SVGs e elementos gráficos pequenos.
 - `assets/videos/`: vídeos locais ou arquivos relacionados a vídeos.
 - `copy/`: textos, títulos, chamadas, argumentos, FAQs e versões aprovadas da copy.
 - `referencias/`: briefing, layouts, links, prints e materiais de referência.
 
-Caso o projeto utilize um framework, mantenha a estrutura padrão dele dentro de `pagina/` e registre no README do projeto como executar ou publicar a página.
+Caso o projeto utilize um framework para gerar uma demonstração estática, mantenha apenas o resultado necessário para compartilhamento e registre no README do projeto como visualizar a página.
+
+## Escopo dos arquivos
+
+São permitidos HTML, CSS, JavaScript client-side, imagens, ícones, vídeos, fontes licenciadas, textos, wireframes, layouts e referências. Formulários podem existir apenas como demonstração visual, sem envio real de dados.
+
+Não são permitidos APIs, servidores, bancos de dados, chaves, senhas, tokens, dados pessoais reais ou integrações reais com CRM, analytics, pagamentos e serviços externos.
 
 ## README de cada projeto
 
@@ -119,7 +128,7 @@ O status pode ser indicado no README de cada projeto usando uma destas etapas:
 
 `Briefing` → `Copy` → `Design` → `Desenvolvimento` → `Revisão` → `Aprovado` → `Publicado`
 
-O objetivo deste repositório é manter os projetos organizados, facilitar a colaboração e preservar o histórico de decisões e versões das landing pages da Phorte e da USCS.
+O objetivo deste repositório é manter os materiais estáticos organizados, facilitar a colaboração e preservar o histórico de decisões e versões das apresentações de landing pages da Phorte e da USCS.
 
 ## Índice de navegação
 
