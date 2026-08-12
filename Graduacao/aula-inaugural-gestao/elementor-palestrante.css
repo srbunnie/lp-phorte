@@ -1,0 +1,9 @@
+/* Container externo da seção: classe phorte-palestrante-area */
+.phorte-palestrante-area{position:relative;background:#F4F6F9;padding:0 24px 90px;color:#1A1A1A}
+.phorte-palestrante{position:relative;top:-24px;width:min(100%,870px);margin:0 auto;padding:38px 45px 48px;border-radius:8px;background:#fff;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,.14)}
+.phorte-palestrante-eyebrow{margin:0 0 10px;color:#B91C1C;font-family:Poppins,Montserrat,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.phorte-palestrante h2{margin:0;color:#1A1A1A;font-family:Poppins,Montserrat,Arial,sans-serif;font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.05;letter-spacing:-.03em}
+.phorte-palestrante h2 span{color:#B91C1C}
+.phorte-palestrante-cargo{margin:12px 0 24px;color:#595959;font-family:Poppins,Montserrat,Arial,sans-serif;font-size:14px;line-height:1.5}
+.phorte-palestrante img{display:block;width:min(100%,610px);aspect-ratio:1.65;object-fit:cover;object-position:center 40%;margin:0 auto;border-radius:8px}
+@media(max-width:767px){.phorte-palestrante-area{padding:0 16px 60px}.phorte-palestrante{padding:30px 20px 32px}.phorte-palestrante h2{font-size:32px}.phorte-palestrante img{aspect-ratio:1.1}}

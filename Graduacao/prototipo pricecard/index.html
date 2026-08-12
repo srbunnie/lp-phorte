@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo • Card de Inscrição Phorte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/card-styles.css" />
+    <style>
+      :root {
+        --demo-bg: #07111f;
+        --demo-bg-alt: #0f2742;
+        --demo-surface: rgba(255, 255, 255, 0.08);
+        --demo-border: rgba(255, 255, 255, 0.12);
+        --demo-ink: #f6f7fb;
+        --demo-muted: rgba(246, 247, 251, 0.76);
+        --demo-accent: #ffd86b;
+        --demo-popup-bg: #ffffff;
+        --demo-popup-ink: #1b2430;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background:
+          radial-gradient(circle at top left, rgba(255, 216, 107, 0.16), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(239, 63, 58, 0.18), transparent 34%),
+          linear-gradient(135deg, var(--demo-bg) 0%, var(--demo-bg-alt) 100%);
+        color: var(--demo-ink);
+        font-family: "Poppins", "Segoe UI", sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      .demo-shell {
+        margin: 0 auto;
+        max-width: 1240px;
+        padding: 36px 16px 48px;
+      }
+
+      .demo-hero {
+        display: grid;
+        gap: 14px;
+        margin-bottom: 34px;
+      }
+
+      .demo-kicker {
+        color: var(--demo-accent);
+        font-size: 0.84rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .demo-title {
+        font-family: "Sora", sans-serif;
+        font-size: clamp(2.4rem, 6vw, 4.8rem);
+        font-weight: 800;
+        line-height: 0.95;
+        margin: 0;
+        max-width: 11ch;
+      }
+
+      .demo-copy {
+        color: var(--demo-muted);
+        font-size: 1.02rem;
+        margin: 0;
+        max-width: 64ch;
+      }
+
+      .demo-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+        align-items: start;
+      }
+
+      .demo-card-stack {
+        display: grid;
+        gap: 16px;
+      }
+
+      .demo-control {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        backdrop-filter: blur(18px);
+        padding: 16px;
+      }
+
+      .demo-control label {
+        color: var(--demo-accent);
+        display: block;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .demo-control select {
+        appearance: none;
+        background:
+          linear-gradient(45deg, transparent 50%, #475569 50%),
+          linear-gradient(135deg, #475569 50%, transparent 50%),
+          #fbfcfe;
+        background-position:
+          calc(100% - 20px) calc(50% - 3px),
+          calc(100% - 14px) calc(50% - 3px),
+          0 0;
+        background-repeat: no-repeat;
+        background-size: 6px 6px, 6px 6px, auto;
+        border: 1px solid rgba(202, 212, 224, 0.6);
+        border-radius: 14px;
+        color: #1f2937;
+        font: inherit;
+        font-weight: 600;
+        min-height: 46px;
+        padding: 0 40px 0 14px;
+        width: 100%;
+      }
+
+      .demo-panel {
+        background: var(--demo-surface);
+        border: 1px solid var(--demo-border);
+        border-radius: 28px;
+        backdrop-filter: blur(18px);
+        padding: 22px;
+      }
+
+      .demo-panel h2 {
+        font-family: "Sora", sans-serif;
+        font-size: 1.3rem;
+        margin: 0 0 12px;
+      }
+
+      .demo-list {
+        color: var(--demo-muted);
+        display: grid;
+        gap: 10px;
+        margin: 0 0 22px;
+        padding-left: 18px;
+      }
+
+      .demo-list strong {
+        color: var(--demo-ink);
+      }
+
+      .demo-code {
+        background: rgba(2, 8, 18, 0.46);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 18px;
+        color: #fef3c7;
+        font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+        font-size: 0.88rem;
+        overflow: auto;
+        padding: 18px;
+        white-space: pre-wrap;
+      }
+
+      .demo-feedback {
+        color: #d1fae5;
+        font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+        font-size: 0.84rem;
+        margin-top: 18px;
+        white-space: pre-wrap;
+      }
+
+      .demo-error {
+        background: rgba(239, 68, 68, 0.12);
+        border: 1px solid rgba(239, 68, 68, 0.28);
+        border-radius: 18px;
+        color: #fecaca;
+        margin-top: 18px;
+        padding: 14px 16px;
+      }
+
+      .phorte-popup {
+        align-items: center;
+        background: rgba(5, 10, 17, 0.74);
+        display: none;
+        inset: 0;
+        justify-content: center;
+        padding: 12px;
+        position: fixed;
+        z-index: 999;
+      }
+
+      .phorte-popup.is-open {
+        display: flex;
+      }
+
+      .phorte-popup__dialog {
+        background: var(--demo-popup-bg);
+        border-radius: 24px;
+        color: var(--demo-popup-ink);
+        max-height: calc(100vh - 24px);
+        max-width: 760px;
+        overflow: auto;
+        padding: 22px;
+        position: relative;
+        width: min(100%, 760px);
+      }
+
+      .phorte-popup__close {
+        appearance: none;
+        background: #eff2f7;
+        border: 0;
+        border-radius: 999px;
+        color: #223046;
+        cursor: pointer;
+        font-size: 1rem;
+        height: 42px;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        width: 42px;
+      }
+
+      .phorte-popup__summary {
+        background: #fff8dd;
+        border-radius: 16px;
+        color: #8a5300;
+        font-size: 0.86rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+        padding: 12px 14px;
+      }
+
+      .phorte-popup__title {
+        font-family: "Sora", sans-serif;
+        font-size: clamp(1.45rem, 4vw, 1.8rem);
+        margin: 0 0 6px;
+      }
+
+      .phorte-popup__subtitle {
+        color: #5f6876;
+        font-size: 0.95rem;
+        margin: 0 0 18px;
+      }
+
+      .phorte-form {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .phorte-form__field {
+        display: grid;
+        gap: 8px;
+      }
+
+      .phorte-form__field.is-full {
+        grid-column: 1 / -1;
+      }
+
+      .phorte-form label {
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+
+      .phorte-interest-select {
+        background-image:
+          linear-gradient(45deg, transparent 50%, #475569 50%),
+          linear-gradient(135deg, #475569 50%, transparent 50%);
+        background-position:
+          calc(100% - 20px) calc(50% - 3px),
+          calc(100% - 14px) calc(50% - 3px);
+        background-repeat: no-repeat;
+        background-size: 6px 6px;
+        font-weight: 600;
+        padding-right: 38px;
+      }
+
+      .phorte-form input:not([type="radio"]),
+      .phorte-form select,
+      .phorte-form textarea {
+        appearance: none;
+        background: #fbfcfe;
+        border: 1px solid #cad4e0;
+        border-radius: 14px;
+        color: #1f2937;
+        font: inherit;
+        min-height: 46px;
+        padding: 0 14px;
+        width: 100%;
+      }
+
+      .phorte-form textarea {
+        min-height: 132px;
+        padding: 14px;
+        resize: vertical;
+      }
+
+      .phorte-form__submit {
+        background: linear-gradient(180deg, #8b1f1f 0%, #651414 100%);
+        border: 0;
+        border-radius: 16px;
+        color: #ffffff;
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.98rem;
+        font-weight: 700;
+        grid-column: 1 / -1;
+        min-height: 50px;
+      }
+
+      @media (max-width: 960px) {
+        .demo-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .demo-shell {
+          padding: 24px 12px 32px;
+        }
+
+        .demo-panel {
+          padding: 18px;
+        }
+
+        .phorte-popup__dialog {
+          border-radius: 20px;
+          max-height: calc(100vh - 16px);
+          padding: 18px;
+          width: 100%;
+        }
+
+        .phorte-form {
+          grid-template-columns: 1fr;
+        }
+
+        .phorte-form textarea {
+          min-height: 110px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="demo-shell">
+      <section class="demo-hero">
+        <span class="demo-kicker">Demonstração funcional</span>
+        <h1 class="demo-title">Card de inscrição com modalidade, polo e popup.</h1>
+        <p class="demo-copy">
+          Esta demo usa um snapshot da planilha em <code>data/modelo-cursos-ofertas.json</code>,
+          adapta o catálogo em <code>src/course-catalog.js</code>, aplica a lógica de combinação em
+          <code>src/card-controller.js</code> e sincroniza o popup em
+          <code>src/popup-form-sync.js</code>.
+        </p>
+      </section>
+
+      <section class="demo-grid">
+        <div class="demo-card-stack">
+          <div class="demo-control">
+            <label for="demo-course-select">Curso da Demonstração</label>
+            <select id="demo-course-select" data-demo-course-select></select>
+          </div>
+
+        <article class="phorte-card" id="phorte-card-demo">
+          <div class="phorte-card__eyebrow">
+            <div class="phorte-card__eyebrow-head">
+              <span class="phorte-card__eyebrow-title">Modalidade</span>
+            </div>
+            <section>
+              <div class="phorte-card__chips" data-phorte-modalidades></div>
+            </section>
+
+            <div class="phorte-card__eyebrow-divider" aria-hidden="true"></div>
+
+            <div class="phorte-card__eyebrow-head">
+              <span class="phorte-card__eyebrow-title">Polo</span>
+            </div>
+            <section>
+              <div class="phorte-card__placeholder" data-phorte-polo-placeholder>
+                Escolha a modalidade para ver os polos disponíveis
+              </div>
+              <div class="phorte-card__chips" data-phorte-polos></div>
+            </section>
+          </div>
+
+          <h2 class="phorte-card__title" data-phorte-course-title>Administração</h2>
+
+          <div class="phorte-card__badges">
+            <span class="phorte-card__badge phorte-card__badge--mec" data-phorte-badge-mec hidden></span>
+            <span class="phorte-card__badge" data-phorte-badge-turma hidden></span>
+          </div>
+
+          <div class="phorte-card__price-wrap">
+            <span class="phorte-card__price-prefix" data-phorte-preco-prefixo>A partir de</span>
+            <div class="phorte-card__price-row">
+              <span class="phorte-card__price-value" data-phorte-preco-valor>--</span>
+              <span class="phorte-card__price-suffix" data-phorte-preco-sufixo>/mês</span>
+            </div>
+          </div>
+
+          <button type="button" class="phorte-card__cta" data-phorte-cta>
+            Selecione modalidade e polo
+          </button>
+
+          <span hidden data-phorte-popup-id></span>
+        </article>
+        </div>
+
+        <aside class="demo-panel">
+          <h2>O que esta demo prova</h2>
+          <ul class="demo-list">
+            <li><strong>Sem seleção inicial:</strong> o CTA começa bloqueado.</li>
+            <li><strong>Matriz real:</strong> modalidade e polo se cruzam por combinação válida.</li>
+            <li><strong>Troca de curso:</strong> a demo alterna entre cenários reais do snapshot da planilha.</li>
+            <li><strong>Preço dinâmico:</strong> cada combinação atualiza o valor exibido.</li>
+            <li><strong>Popup contextual:</strong> curso, modalidade e polo entram no formulário.</li>
+          </ul>
+
+          <div class="demo-code">
+Snapshot da planilha:
+  /data/modelo-cursos-ofertas.json
+
+Scripts:
+  /src/course-catalog.js
+  /src/card-controller.js
+  /src/popup-form-sync.js
+  /src/demo.js
+
+Execute com static server para a demo carregar o catálogo JSON.
+          </div>
+
+          <div class="demo-feedback" data-phorte-demo-feedback></div>
+          <div class="demo-error" data-phorte-demo-error hidden></div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="phorte-popup" id="phorte-demo-popup" data-phorte-popup>
+      <div class="phorte-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="phorte-popup-title">
+        <button type="button" class="phorte-popup__close" data-phorte-popup-close aria-label="Fechar">
+          ×
+        </button>
+
+        <div class="phorte-popup__summary" data-phorte-popup-summary>
+          Administração • modalidade • polo
+        </div>
+
+        <h2 class="phorte-popup__title" id="phorte-popup-title">Inscreva-se</h2>
+        <p class="phorte-popup__subtitle">
+          Exemplo visual de popup para RD Station. Os campos abaixo são preenchidos automaticamente a
+          partir do card.
+        </p>
+
+        <form class="phorte-form" id="phorte-demo-form">
+          <div class="phorte-form__field is-full">
+            <label for="rd-name">Nome *</label>
+            <input id="rd-name" name="nome" placeholder="Nome" required />
+          </div>
+
+          <div class="phorte-form__field">
+            <label for="rd-email">E-mail *</label>
+            <input id="rd-email" name="email" type="email" placeholder="E-mail" required />
+          </div>
+
+          <div class="phorte-form__field">
+            <label for="rd-phone">Telefone *</label>
+            <input id="rd-phone" name="telefone" placeholder="Telefone" required />
+          </div>
+
+          <div class="phorte-form__field">
+            <label for="rd-polo">Polo *</label>
+            <select id="rd-polo" name="polo" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+
+          <div class="phorte-form__field">
+            <label for="rd-interest">Escolha o curso de interesse *</label>
+            <select
+              id="rd-interest"
+              class="phorte-interest-select"
+              name="curso_modalidade_unificado"
+              data-phorte-interest-select
+              required
+            ></select>
+            <input id="rd-course" name="curso_de_interesse" type="hidden" />
+            <input id="rd-modality" name="modalidade" type="hidden" />
+          </div>
+
+          <div class="phorte-form__field is-full">
+            <label for="rd-essay">Redação, seu texto deve conter entre 7 a 10 linhas, leia e siga as instruções abaixo: *</label>
+            <textarea
+              id="rd-essay"
+              name="vestibular"
+              placeholder="Elabore uma redação apresentando os motivos que o levaram a escolher o curso e como essa formação pode contribuir para o seu desenvolvimento pessoal e profissional."
+              required
+            ></textarea>
+          </div>
+
+          <button class="phorte-form__submit" type="submit">Enviar Vestibular</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./src/demo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+{
+  "styles": {
+    "colors": [
+      {
+        "name": "USCS/Neutral/100",
+        "token": "uscs-neutral-100",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/200",
+        "token": "uscs-neutral-200",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/400",
+        "token": "uscs-neutral-400",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/600",
+        "token": "uscs-neutral-600",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/800",
+        "token": "uscs-neutral-800",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/900",
+        "token": "uscs-neutral-900",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/1000",
+        "token": "uscs-neutral-1000",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/50",
+        "token": "uscs-neutral-50",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Neutral/10",
+        "token": "uscs-neutral-10",
+        "type": "solid"
+      },
+      {
+        "name": "USCS/Gradients/info variavel-800-600",
+        "token": "uscs-gradients-info-variavel-800-600",
+        "type": "gradient_linear"
+      },
+      {
+        "name": "USCS/Gradients/confirmar-600-800",
+        "token": "uscs-gradients-confirmar-600-800",
+        "type": "gradient_linear"
+      },
+      {
+        "name": "USCS/Gradients/matricula-600-800",
+        "token": "uscs-gradients-matricula-600-800",
+        "type": "gradient_linear"
+      }
+    ],
+    "textStyles": [
+      {
+        "name": "USCS/Headings/H2",
+        "token": "uscs-headings-h2",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-1",
+        "token": "uscs-body-b-1",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "32px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-2",
+        "token": "uscs-body-b-2",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-2-FULL",
+        "token": "uscs-body-b-2-full",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "24px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%",
+        "textTransform": "upper"
+      },
+      {
+        "name": "USCS/Body/B-3",
+        "token": "uscs-body-b-3",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "20px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-4",
+        "token": "uscs-body-b-4",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-4-Bold-FULL",
+        "token": "uscs-body-b-4-bold-full",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "16px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%",
+        "textTransform": "upper"
+      },
+      {
+        "name": "USCS/Body/B-5",
+        "token": "uscs-body-b-5",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "400",
+        "fontSize": "12px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-5-Bold-FULL",
+        "token": "uscs-body-b-5-bold-full",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%",
+        "textTransform": "upper"
+      },
+      {
+        "name": "USCS/Body/B-5-SemiBold",
+        "token": "uscs-body-b-5-semibold",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "600",
+        "fontSize": "12px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-5-Bold",
+        "token": "uscs-body-b-5-bold",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "12px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%"
+      },
+      {
+        "name": "USCS/Body/B-6-Bold-FULL",
+        "token": "uscs-body-b-6-bold-full",
+        "type": "text",
+        "fontFamily": "Poppins",
+        "fontWeight": "700",
+        "fontSize": "8px",
+        "lineHeight": 1.2000000476837158,
+        "letterSpacing": "0%",
+        "textTransform": "upper"
+      }
+    ],
+    "effectStyles": [
+      {
+        "name": "D3",
+        "token": "d3",
+        "type": "effect",
+        "value": "box-shadow: 3px 3px 4px 0px rgba(22, 22, 22, 0.1)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 3,
+            "y": 3,
+            "blur": 4,
+            "spread": 0,
+            "color": "rgba(22, 22, 22, 0.1)"
+          }
+        ]
+      },
+      {
+        "name": "USCS/Global Tokens/D1",
+        "token": "uscs-global-tokens-d1",
+        "type": "effect",
+        "value": "box-shadow: 8px 8px 10px 0px rgba(22, 22, 22, 0.08)",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 8,
+            "y": 8,
+            "blur": 10,
+            "spread": 0,
+            "color": "rgba(22, 22, 22, 0.08)"
+          }
+        ]
+      },
+      {
+        "name": "USCS/Global Tokens/D2",
+        "token": "uscs-global-tokens-d2",
+        "type": "effect",
+        "value": "box-shadow: 0px 0px 8px 0px #d7d7d7",
+        "effects": [
+          {
+            "type": "drop-shadow",
+            "x": 0,
+            "y": 0,
+            "blur": 8,
+            "spread": 0,
+            "color": "#d7d7d7"
+          }
+        ]
+      }
+    ],
+    "gridStyles": []
+  },
+  "metadata": {
+    "exportDate": "2026-05-04T14:17:59.410Z",
+    "figmaFileKey": "unknown",
+    "fileName": "Página de investimento",
+    "pluginVersion": "1.0.0",
+    "collectionsFound": 3,
+    "collectionsExported": 1
+  }
+}

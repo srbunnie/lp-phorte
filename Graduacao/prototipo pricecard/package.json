@@ -1,0 +1,10 @@
+{
+  "name": "phorte-enrollment-card",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/card-controller.test.mjs && node tests/enrollment-page.test.mjs",
+    "test:functional": "node scripts/demo-functional-test.mjs",
+    "demo": "node scripts/serve-demo.mjs"
+  }
+}

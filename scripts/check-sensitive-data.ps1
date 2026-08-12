@@ -1,7 +1,10 @@
 $ErrorActionPreference = 'Stop'
 
 $excluded = @('\\.git\\', '\\node_modules\\', '\\skills\\')
-$files = git ls-files --cached --others --exclude-standard
+$repoRoot = (Get-Location).Path
+$files = Get-ChildItem -LiteralPath $repoRoot -File -Recurse -Force | Where-Object {
+  $_.FullName -notmatch '\\.git\\' -and $_.FullName -notmatch '\\skills\\'
+} | ForEach-Object { $_.FullName.Substring($repoRoot.Length + 1) }
 $sensitiveNames = '\.env($|\.)|\.pem$|\.key$|\.p12$|credentials|secrets?'
 $patterns = '(?i)(api[_-]?key|secret|token|password|passwd|authorization|bearer)\s*[:=]\s*["'']?[^\s"''`]+|-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9_]+|sk-[A-Za-z0-9_-]{20,}'
 $findings = @()
@@ -12,8 +15,9 @@ foreach ($file in $files) {
     $findings += "Arquivo com nome sensível: $file"
     continue
   }
-  if (Test-Path -LiteralPath $file -PathType Leaf) {
-    $matches = Select-String -LiteralPath $file -Pattern $patterns -AllMatches -ErrorAction SilentlyContinue
+  $fullPath = Join-Path $repoRoot $file
+  if (Test-Path -LiteralPath $fullPath -PathType Leaf) {
+    $matches = Select-String -LiteralPath $fullPath -Pattern $patterns -AllMatches -ErrorAction SilentlyContinue
     foreach ($match in $matches) { $findings += "${file}:$($match.LineNumber): possível segredo" }
   }
 }

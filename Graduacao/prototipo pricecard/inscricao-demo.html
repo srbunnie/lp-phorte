@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo • Página de Inscrição Phorte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./src/enrollment-page-demo.css" />
+</head>
+
+<body>
+  <main class="enrollment-demo">
+    <header class="demo-topbar">
+      <div class="demo-topbar__inner">
+        <img class="demo-topbar__logo"
+          src="https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp"
+          alt="Faculdade Phorte" />
+      </div>
+    </header>
+    <section class="demo-hero">
+      <div class="demo-hero__inner">
+        <h1>Selecione seu curso para saber mais</h1>
+        <p>
+          Fluxo de inscrição em página dedicada, inspirado na hierarquia da Estácio e alimentado pelo
+          snapshot local da planilha de ofertas.
+        </p>
+      </div>
+    </section>
+
+    <div class="demo-layout">
+      <section class="demo-flow">
+        <div class="demo-flow__section" data-step-section="formation">
+          <div class="demo-flow__header">
+            <div>
+              <span class="demo-flow__index">01</span>
+              <h2>Qual formação busca?</h2>
+            </div>
+          </div>
+          <div class="pill-group" data-formation-options></div>
+        </div>
+
+        <div class="demo-flow__row">
+          <div class="demo-flow__section" data-step-section="course">
+            <div class="demo-flow__header">
+              <div>
+                <span class="demo-flow__index">02</span>
+                <h2>E qual curso você quer fazer?</h2>
+              </div>
+            </div>
+            <label class="select-field">
+              <span>Curso</span>
+              <div class="select-shell">
+                <select id="course-select" data-course-options></select>
+              </div>
+            </label>
+          </div>
+
+          <div class="demo-flow__section" data-step-section="modality">
+            <div class="demo-flow__header">
+              <div>
+                <span class="demo-flow__index">03</span>
+                <h2>Como você prefere estudar?</h2>
+              </div>
+            </div>
+            <label class="select-field">
+              <span>Modalidade</span>
+              <div class="select-shell">
+                <select id="modality-select" data-modality-options></select>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="demo-flow__section" data-step-section="campus">
+          <div class="demo-flow__header">
+            <div>
+              <span class="demo-flow__index">04</span>
+              <h2>Qual polo faz sentido para você?</h2>
+            </div>
+          </div>
+          <div class="pill-group" data-campus-options></div>
+        </div>
+
+        <div class="demo-flow__section demo-flow__section--form" data-step-section="form">
+          <div class="demo-flow__header">
+            <div>
+              <span class="demo-flow__index">05</span>
+              <h2>Complete seus dados de contato para descobrir as opções de oferta</h2>
+            </div>
+          </div>
+
+          <div class="offer-summary" data-offer-summary></div>
+
+          <form class="demo-form" id="enrollment-demo-form">
+            <div class="demo-form__row demo-form__row--triple">
+              <label class="demo-form__field">
+                <span>Nome completo</span>
+                <input name="nome" placeholder="Nome completo" required />
+              </label>
+              <label class="demo-form__field">
+                <span>Celular para contato</span>
+                <input name="telefone" placeholder="Celular para contato" required />
+              </label>
+              <label class="demo-form__field">
+                <span>Email</span>
+                <input name="email" type="email" placeholder="Email" required />
+              </label>
+            </div>
+
+            <label class="demo-form__consent">
+              <input name="consentimento" type="checkbox" required />
+              <span>
+                Estou de acordo com o tratamento dos meus dados para fins de prospecção de serviços
+                educacionais e comunicação da inscrição.
+              </span>
+            </label>
+
+            <label class="demo-form__field demo-form__field--full">
+              <span>Redação</span>
+              <textarea id="essay-field" name="redacao" rows="5"
+                placeholder="Escreva uma breve redação explicando por que escolheu esse curso e como ele contribui para seu desenvolvimento."
+                required></textarea>
+              <div class="demo-form__counter" data-essay-counter>0 / 1000 caracteres m�nimos</div>
+            </label>
+
+            <input type="hidden" name="offer_id" />
+            <input type="hidden" name="offer_label" />
+            <input type="hidden" name="curso_id" />
+            <input type="hidden" name="curso_nome" />
+            <input type="hidden" name="modalidade_id" />
+            <input type="hidden" name="modalidade_nome" />
+            <input type="hidden" name="polo_id" />
+            <input type="hidden" name="polo_nome" />
+            <input type="hidden" name="turma_label" />
+
+            <button class="demo-form__submit" type="submit" disabled>Finalizar Inscrição</button>
+          </form>
+
+          <pre class="demo-form__feedback" data-form-feedback hidden></pre>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="./src/enrollment-page-demo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+preview-react-app/node_modules/
+preview-react-app/dist/
+preview-react-app/output/
+preview-react-app/vite-server.log
+preview-react-app/vite-server.err.log
+workspace-support/demo/preview-react-app/node_modules/
+workspace-support/demo/preview-react-app/dist/
+*.log

@@ -1,0 +1,63 @@
+<!--
+  Landing page para Elementor.
+  Cole todo este conteúdo em um widget HTML.
+  Antes de publicar, substitua os dois valores abaixo pelas URLs da Biblioteca de Mídia:
+  - URL_DA_FOTO_DO_PALESTRANTE
+  - URL_DA_ARTE_DE_FUNDO (opcional)
+-->
+<style>
+  .phorte-aula{--background:#FAFAFA;--foreground:#1A1A1A;--primary:#E64242;--primary-dark:#B91C1C;--secondary:#13B241;--muted:#F4F6F9;--footer-red:#7D1B1B;font-family:Poppins,Montserrat,Arial,sans-serif;color:#fff;background:#450b0d;overflow:hidden}
+  .phorte-aula *{box-sizing:border-box}.phorte-aula-hero{position:relative;background:radial-gradient(circle at 80% 50%,#9b252b 0,#68151a 38%,#450b0d 78%);min-height:560px}.phorte-aula-hero:after{content:"";position:absolute;right:-12%;bottom:-38%;width:75%;height:65%;border:2px solid #e6424266;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 50px #e642424d}.phorte-aula-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;max-width:980px;margin:auto;padding:70px 28px}.phorte-aula .eyebrow{margin:0 0 18px;color:#ffb7b5;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.phorte-aula h1{margin:0;font-size:clamp(38px,5vw,68px);line-height:1;text-transform:uppercase;letter-spacing:-.05em}.phorte-aula h1 span{color:var(--primary)}.phorte-aula .theme{font-size:clamp(19px,2vw,28px);font-weight:600;line-height:1.2;margin:28px 0}.phorte-aula .event-meta{display:flex;align-items:baseline;gap:clamp(14px,3vw,42px);font-size:clamp(17px,2vw,25px);font-weight:700;line-height:1;white-space:nowrap;text-transform:uppercase}.phorte-aula .event-meta div{display:inline-flex;gap:8px;align-items:baseline}.phorte-aula .format{display:inline-block;margin:25px 0 0;padding:10px 20px;border-radius:999px;background:var(--primary);font-size:14px}.phorte-aula .free{font-size:17px;font-weight:600;margin:20px 0 0}.phorte-aula .free span{font-weight:400;color:#ffb7b5}.phorte-aula form{padding:0;background:transparent}.phorte-aula form h2{font-size:26px;line-height:1.05;margin:0 0 28px}.phorte-aula label{display:block;margin:15px 0 7px;font-size:12px;font-weight:700}.phorte-aula input{width:100%;border:0;border-radius:999px;padding:14px 18px;font:inherit;font-size:14px}.phorte-aula button{width:100%;border:0;border-radius:999px;background:#ff7a00;color:#fff;padding:15px;margin-top:22px;font:700 13px inherit;cursor:pointer;transition:transform .2s,background .2s}.phorte-aula button:hover{background:#e66d00;transform:translateY(-2px)}.phorte-aula input:focus-visible,.phorte-aula button:focus-visible{outline:3px solid var(--secondary);outline-offset:3px}.phorte-aula .form-message{text-align:center;min-height:18px;margin:14px 0 0;font-size:12px}.phorte-aula .form-message.error{color:#ffd2d2}.phorte-aula .form-message.success{color:#baf5c9}.phorte-aula-speaker{padding:0 24px 90px;background:var(--muted);color:var(--foreground)}.phorte-aula-card{position:relative;top:-24px;max-width:870px;margin:auto;padding:38px 45px 48px;border-radius:8px;background:#fff;text-align:center;box-shadow:0 2px 5px #0002}.phorte-aula-card .eyebrow{color:var(--primary-dark);margin-bottom:10px}.phorte-aula-card h2{margin:0;font-size:clamp(30px,4vw,46px);line-height:1.05;color:var(--foreground)}.phorte-aula-card h2 span{color:var(--primary-dark)}.phorte-aula-card p:not(.eyebrow){color:#595959;font-size:14px}.phorte-aula-card img{display:block;width:min(100%,610px);aspect-ratio:1.65;object-fit:cover;object-position:center 40%;margin:24px auto 0;border-radius:8px}.phorte-aula-location{padding:55px 24px;background:#fff;color:var(--foreground);text-align:center}.phorte-aula-location p{margin:0;color:#595959;line-height:1.6}.phorte-aula-location strong{color:var(--foreground)}
+  @media(max-width:780px){.phorte-aula-inner{grid-template-columns:1fr;gap:35px;padding:52px 22px}.phorte-aula h1{font-size:42px}.phorte-aula .theme{font-size:20px}.phorte-aula .event-meta{gap:12px;font-size:clamp(14px,4.8vw,21px)}.phorte-aula .event-meta div{gap:5px}.phorte-aula-card{padding:30px 20px 32px}.phorte-aula-card img{aspect-ratio:1.1}.phorte-aula-speaker{padding-bottom:60px}}
+  @media(prefers-reduced-motion:reduce){.phorte-aula button{transition:none}}
+</style>
+
+<div class="phorte-aula">
+  <section class="phorte-aula-hero">
+    <div class="phorte-aula-inner">
+      <div>
+        <p class="eyebrow">Não perca</p>
+        <h1>Aula inaugural<br>dos cursos de <span>Gestão</span></h1>
+        <p class="theme">Comunicação Assertiva e<br>Não Violenta – CNV</p>
+        <div class="event-meta"><div><span>13 DE</span><span>agosto</span></div><div><span>ÀS</span><span>19:30</span></div></div>
+        <p class="format">Com transmissão online</p>
+        <p class="free">Evento gratuito <span>com certificado</span></p>
+      </div>
+      <form class="phorte-aula-form" novalidate>
+        <h2>Preencha os dados e garanta sua vaga</h2>
+        <label for="phorte-nome">Nome completo</label>
+        <input id="phorte-nome" name="nome" type="text" placeholder="Nome" autocomplete="name" required>
+        <label for="phorte-email">E-mail</label>
+        <input id="phorte-email" name="email" type="email" placeholder="E-mail" autocomplete="email" required>
+        <label for="phorte-whatsapp">WhatsApp</label>
+        <input id="phorte-whatsapp" name="whatsapp" type="tel" placeholder="Seu WhatsApp" autocomplete="tel" required>
+        <button type="submit">INSCREVER-SE</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="phorte-aula-speaker">
+    <div class="phorte-aula-card">
+      <p class="eyebrow">Conheça o palestrante</p>
+      <h2>Prof. Dr. <span>Renato Vieira</span></h2>
+      <p>Palestrante da Aula Inaugural dos Cursos de Gestão</p>
+      <img src="https://faculdadephorte.edu.br/wp-content/uploads/2026/08/prof-renato-vieira.webp" alt="Prof. Dr. Renato Vieira">
+    </div>
+  </section>
+
+  <section class="phorte-aula-location">
+    <p><strong>Rua Rui Barbosa, 422 – Bela Vista – São Paulo/SP</strong><br>Evento presencial com transmissão online</p>
+  </section>
+</div>
+
+<script>
+(function(){
+  const root=document.currentScript.previousElementSibling;
+  const form=root.querySelector('.phorte-aula-form');
+  const phone=root.querySelector('#phorte-whatsapp');
+  const message=root.querySelector('.form-message');
+  phone.addEventListener('input',function(){const d=this.value.replace(/\D/g,'').slice(0,11);this.value=d.length>10?d.replace(/(\d{2})(\d{5})(\d{4})/,'($1) $2-$3'):d.replace(/(\d{2})(\d{4})(\d{0,4})/,'($1) $2-$3').replace(/-$/,'')});
+  form.addEventListener('submit',function(e){e.preventDefault();message.className='form-message';if(!form.checkValidity()){message.classList.add('error');message.textContent='Confira os campos e tente novamente.';form.reportValidity();return}message.classList.add('success');message.textContent='Inscrição recebida! Em breve enviaremos a confirmação.';form.reset()});
+})();
+</script>

@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="header">
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Bold="1" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#1F4E78" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="text-wrap">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="currency">
+   <NumberFormat ss:Format="Currency"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Cursos">
+  <Table>
+   <Column ss:Width="130"/>
+   <Column ss:Width="260"/>
+   <Column ss:Width="70"/>
+   <Column ss:Width="220"/>
+   <Row>
+    <Cell ss:StyleID="header"><Data ss:Type="String">curso_id</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">curso_nome</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">ativo</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">observacoes</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">pedagogia</Data></Cell>
+    <Cell><Data ss:Type="String">Pedagogia</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">administracao</Data></Cell>
+    <Cell><Data ss:Type="String">Administracao</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">educacao-fisica</Data></Cell>
+    <Cell><Data ss:Type="String">Educacao Fisica</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">traducao-interpretacao-ingles-portugues</Data></Cell>
+    <Cell><Data ss:Type="String">Traducao e Interpretacao Ingles / Portugues</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">recursos-humanos</Data></Cell>
+    <Cell><Data ss:Type="String">Recursos Humanos</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">processos-gerenciais</Data></Cell>
+    <Cell><Data ss:Type="String">Processos Gerenciais</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">marketing</Data></Cell>
+    <Cell><Data ss:Type="String">Marketing</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+ <Worksheet ss:Name="Ofertas">
+  <Table>
+   <Column ss:Width="130"/>
+   <Column ss:Width="220"/>
+   <Column ss:Width="110"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="90"/>
+   <Column ss:Width="120"/>
+   <Column ss:Width="250"/>
+   <Row>
+    <Cell ss:StyleID="header"><Data ss:Type="String">curso_id</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">curso_nome</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">modalidade</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">polo_codigo</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">polo_nome</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">valor</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">disponivel</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">popup_id</Data></Cell>
+    <Cell ss:StyleID="header"><Data ss:Type="String">observacao_preco</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">administracao</Data></Cell>
+    <Cell><Data ss:Type="String">Administracao</Data></Cell>
+    <Cell><Data ss:Type="String">EAD</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Polo X</Data></Cell>
+    <Cell ss:StyleID="currency"><Data ss:Type="Number">199</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String">popup-ead</Data></Cell>
+    <Cell ss:StyleID="text-wrap"><Data ss:Type="String">Valores podem mudar conforme modalidade e polo.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">administracao</Data></Cell>
+    <Cell><Data ss:Type="String">Administracao</Data></Cell>
+    <Cell><Data ss:Type="String">EAD</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Polo Y</Data></Cell>
+    <Cell ss:StyleID="currency"><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String">popup-ead</Data></Cell>
+    <Cell ss:StyleID="text-wrap"><Data ss:Type="String">Valores podem mudar conforme modalidade e polo.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">administracao</Data></Cell>
+    <Cell><Data ss:Type="String">Administracao</Data></Cell>
+    <Cell><Data ss:Type="String">Presencial</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Polo X</Data></Cell>
+    <Cell ss:StyleID="currency"><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">SIM</Data></Cell>
+    <Cell><Data ss:Type="String">popup-presencial</Data></Cell>
+    <Cell ss:StyleID="text-wrap"><Data ss:Type="String">Valores podem mudar conforme modalidade e polo.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

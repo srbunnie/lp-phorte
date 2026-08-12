@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="./card-styles.css" />
+
+<article class="phorte-card" id="phorte-card-administracao">
+  <div class="phorte-card__eyebrow">
+    <div class="phorte-card__eyebrow-head">
+      <span class="phorte-card__eyebrow-title">Modalidade</span>
+    </div>
+    <section>
+      <div class="phorte-card__chips" data-phorte-modalidades></div>
+    </section>
+
+    <div class="phorte-card__eyebrow-divider" aria-hidden="true"></div>
+
+    <div class="phorte-card__eyebrow-head">
+      <span class="phorte-card__eyebrow-title">Polo</span>
+    </div>
+    <section>
+      <div class="phorte-card__placeholder" data-phorte-polo-placeholder>
+        Escolha a modalidade para ver os polos disponíveis
+      </div>
+      <div class="phorte-card__chips" data-phorte-polos></div>
+    </section>
+  </div>
+
+  <h2 class="phorte-card__title">Administração</h2>
+
+  <div class="phorte-card__badges">
+    <span class="phorte-card__badge phorte-card__badge--mec" data-phorte-badge-mec hidden></span>
+    <span class="phorte-card__badge">Turma 2026.1 Confirmada</span>
+  </div>
+
+  <div class="phorte-card__price-wrap">
+    <span class="phorte-card__price-prefix" data-phorte-preco-prefixo>A partir de</span>
+    <div class="phorte-card__price-row">
+      <span class="phorte-card__price-value" data-phorte-preco-valor>--</span>
+      <span class="phorte-card__price-suffix" data-phorte-preco-sufixo>/mês</span>
+    </div>
+  </div>
+
+  <button type="button" class="phorte-card__cta" data-phorte-cta>
+    Selecione modalidade e polo
+  </button>
+
+  <span hidden data-phorte-popup-id></span>
+</article>
+
+<script type="module">
+  import { initEnrollmentCard } from './card-controller.js';
+
+  const offers = [
+    {
+      curso: 'Administracao',
+      cursoLabel: 'Administração',
+      mecBadgeLabel: 'Nota 5 ★ no Mec',
+      modalidade: 'EAD',
+      modalidadeLabel: 'EAD',
+      polo: 'Polo Rui Barbosa',
+      poloLabel: 'Polo Rui Barbosa',
+      preco: 198,
+      popupId: 'popup-ead',
+      observacaoPreco: 'Valores podem mudar conforme modalidade e polo.',
+    },
+    {
+      curso: 'Administracao',
+      cursoLabel: 'Administração',
+      modalidade: 'Presencial',
+      modalidadeLabel: 'Presencial',
+      polo: 'Polo Lapa',
+      poloLabel: 'Polo Lapa',
+      preco: 249,
+      popupId: 'popup-presencial',
+      observacaoPreco: 'Valores podem mudar conforme modalidade e polo.',
+    },
+    {
+      curso: 'Administracao',
+      cursoLabel: 'Administração',
+      modalidade: 'Presencial',
+      modalidadeLabel: 'Presencial',
+      polo: 'Polo Martiniano',
+      poloLabel: 'Polo Martiniano',
+      preco: 249,
+      popupId: 'popup-presencial',
+      observacaoPreco: 'Valores podem mudar conforme modalidade e polo.',
+    },
+  ];
+
+  initEnrollmentCard(
+    document.querySelector('#phorte-card-administracao'),
+    offers,
+    {
+      courseFieldSelector: '[name="curso_de_interesse"]',
+      modalityFieldSelector: '[name="modalidade"]',
+      poloFieldSelector: '[name="polo"]',
+      priceFieldSelector: '[name="preco"]',
+    },
+  );
+</script>
