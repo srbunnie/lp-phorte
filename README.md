@@ -11,6 +11,7 @@ Use uma pasta principal para cada projeto ou campanha:
 ```text
 lp-phorte/
 ├── README.md
+├── index.html             # Índice de navegação entre os projetos
 ├── Graduacao/
 │   └── nome-da-campanha/
 │       ├── README.md
@@ -119,3 +120,9 @@ O status pode ser indicado no README de cada projeto usando uma destas etapas:
 `Briefing` → `Copy` → `Design` → `Desenvolvimento` → `Revisão` → `Aprovado` → `Publicado`
 
 O objetivo deste repositório é manter os projetos organizados, facilitar a colaboração e preservar o histórico de decisões e versões das landing pages da Phorte e da USCS.
+
+## Índice de navegação
+
+O arquivo `index.html` na raiz é a porta de entrada do repositório. Ele deve apresentar links para as categorias e projetos disponíveis, funcionando como um mapa visual das páginas.
+
+Sempre que uma nova categoria principal for criada, adicione um card e um link para ela no `index.html`. Quando um projeto tiver uma página própria, inclua também seu link na categoria correspondente. Mantenha o índice simples e atualizado; informações detalhadas devem ficar no README de cada projeto.
