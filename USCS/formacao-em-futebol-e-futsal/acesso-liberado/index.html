@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formação em Futebol e Futsal | Aulas - Faculdade Phorte</title>
+<meta name="description" content="Acesse as aulas da Formação em Futebol e Futsal com Mauro Sandri e profissionais convidados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=DM+Serif+Text:ital@0;1&family=Fragment+Mono&family=Georama:ital,wght@0,300..900;1,300..900&family=League+Gothic&family=Manrope:wght@300..800&family=Roboto:ital,wght@1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --black:#0A0A0A;
+  --near-black:#141414;
+  --white:#FAFAF8;
+  --off-white:#F3F2EF;
+  --red:#C8102E;
+  --red-dark:#8E0B21;
+  --gray-100:#EAE9E6;
+  --gray-300:#C9C7C2;
+  --gray-600:#6E6C68;
+  --gray-900:#1C1B19;
+  --font-display:'Barlow Condensed','League Gothic',sans-serif;
+  --font-serif:'DM Serif Text',serif;
+  --font-body:'Manrope','Georama',sans-serif;
+  --font-alt:'Georama',sans-serif;
+  --font-mono:'Fragment Mono',monospace;
+  --font-cond:'Barlow Condensed',sans-serif;
+  --section-pad-y:clamp(76px,10vw,142px);
+  --container-pad-x:clamp(24px,6vw,96px);
+  --max-w:1440px;
+  --ease:cubic-bezier(.16,.84,.44,1);
+}
+html{scroll-behavior:smooth}
+:where(section[id], form[id]){scroll-margin-top:110px}
+body{font-family:var(--font-body);background:var(--white);color:var(--black);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{max-width:var(--max-w);margin:0 auto;padding-left:var(--container-pad-x);padding-right:var(--container-pad-x)}
+.eyebrow{font-family:var(--font-cond);font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--red);display:inline-flex;align-items:center;gap:10px;font-weight:700}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--red);display:inline-block}
+h1,h2,h3{font-family:var(--font-display);font-weight:700;letter-spacing:0;line-height:.92;text-transform:uppercase}
+.section-title{font-size:clamp(38px,4.8vw,70px);max-width:17ch}
+.section-text{font-family:var(--font-alt);font-size:clamp(18px,1.25vw,21px);color:var(--gray-600);max-width:54ch;line-height:1.75}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:18px 34px;font-family:var(--font-cond);font-size:18px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:2px;transition:transform .35s var(--ease),background .35s var(--ease),border-color .35s var(--ease);white-space:nowrap}
+.btn-primary{background:var(--red);color:var(--white);border:1px solid var(--red)}
+.btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px)}
+.btn-secondary{background:transparent;color:var(--white);border:1px solid rgba(250,250,248,.35)}
+.btn-secondary:hover{background:rgba(250,250,248,.08);border-color:var(--white);transform:translateY(-2px)}
+.btn-dark{background:var(--black);color:var(--white);border:1px solid var(--black)}
+.btn-ghost{background:transparent;color:var(--black);border:1px solid var(--gray-300)}
+.btn-arrow{transition:transform .35s var(--ease)}
+.btn:hover .btn-arrow{transform:translateX(4px)}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:900;padding:22px 0;background:rgba(10,10,10,.88);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo{font-family:var(--font-serif);font-size:22px;color:var(--white);display:flex;align-items:baseline;gap:8px}
+.logo span{color:var(--red)}
+.logo small{font-family:var(--font-mono);font-size:11px;color:rgba(250,250,248,.55);letter-spacing:.1em;text-transform:uppercase}
+.nav-desktop{display:flex;align-items:center;gap:34px}
+.nav-desktop a{font-family:var(--font-cond);font-size:17px;font-weight:700;color:rgba(250,250,248,.78);letter-spacing:.02em;text-transform:uppercase}
+.nav-desktop a:hover{color:var(--white)}
+.hero{position:relative;min-height:100vh;background:var(--black);color:var(--white);display:flex;align-items:center;overflow:hidden;padding:140px 0 86px}
+.hero-texture{position:absolute;inset:0;opacity:.95;background:linear-gradient(90deg,transparent 0 49.75%,rgba(250,250,248,.24) 49.75% 50.25%,transparent 50.25% 100%),linear-gradient(0deg,transparent 0 16.8%,rgba(250,250,248,.18) 16.8% 17.3%,transparent 17.3% 82.7%,rgba(250,250,248,.18) 82.7% 83.2%,transparent 83.2% 100%),radial-gradient(circle at 50% 50%,transparent 0 14.8%,rgba(250,250,248,.22) 15% 15.8%,transparent 16% 100%),linear-gradient(90deg,rgba(200,16,46,.13),transparent 28%,transparent 72%,rgba(200,16,46,.13));pointer-events:none}
+.hero-texture::before,.hero-texture::after{content:"";position:absolute;top:50%;width:clamp(130px,18vw,250px);height:clamp(220px,34vw,430px);border:2px solid rgba(250,250,248,.18);transform:translateY(-50%)}
+.hero-texture::before{left:-1px;border-left:none;border-radius:0 999px 999px 0}
+.hero-texture::after{right:-1px;border-right:none;border-radius:999px 0 0 999px}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.08),rgba(10,10,10,.58)),radial-gradient(circle at 78% 30%,rgba(200,16,46,.12),transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,255,255,.04),transparent 40%);pointer-events:none}
+.hero-frame{position:absolute;border:1px solid rgba(255,255,255,.12);pointer-events:none}
+.hero-frame.tl{top:40px;left:var(--container-pad-x);width:46px;height:46px;border-right:none;border-bottom:none}
+.hero-frame.br{bottom:40px;right:var(--container-pad-x);width:46px;height:46px;border-left:none;border-top:none}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 26%,rgba(200,16,46,.18),transparent 44%),radial-gradient(circle at 12% 92%,rgba(255,255,255,.05),transparent 42%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:1040px;text-align:center;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;min-height:42px;padding:11px 22px;margin-bottom:28px;border-radius:999px;background:var(--red);color:var(--white);font-family:var(--font-cond);font-size:17px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 18px 38px rgba(200,16,46,.24)}
+.hero-badge svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+.hero-title{font-size:clamp(48px,6.8vw,92px);max-width:100%;margin:0 auto 26px;color:var(--white)}
+.hero-title .title-line{display:block;white-space:nowrap}
+.hero-subtitle{font-family:var(--font-alt);font-size:clamp(18px,1.35vw,22px);color:rgba(250,250,248,.74);max-width:66ch;line-height:1.7;margin:0 auto 32px}
+.hero-meta{display:flex;justify-content:center;gap:12px;flex-wrap:nowrap;margin:30px 0 40px}
+.hero-meta-item{display:inline-flex;align-items:center;gap:10px;min-height:42px;padding:10px 16px;border:1px solid rgba(250,250,248,.18);border-radius:999px;background:rgba(10,10,10,.36);white-space:nowrap;box-shadow:0 14px 32px rgba(0,0,0,.22)}
+.hero-meta-item svg{width:15px;height:15px;color:var(--red);stroke:currentColor;fill:none;stroke-width:1.8;flex:none}
+.hero-meta-item span{font-family:var(--font-mono);font-size:13px;font-weight:700;text-transform:uppercase;color:var(--white)}
+.hero-note{font-size:clamp(17px,1.2vw,20px);color:rgba(250,250,248,.72);max-width:62ch;margin:0 auto 36px;line-height:1.7}
+.hero-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+.course-nav{padding:clamp(54px,7vw,92px) 0;background:var(--white)}
+.nav-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--gray-100);border:1px solid var(--gray-100);margin-top:0}
+.nav-card{background:var(--white);padding:28px 20px;min-height:168px;display:flex;flex-direction:column;gap:12px;transition:background .35s var(--ease),transform .35s var(--ease)}
+.nav-card:hover{background:var(--off-white);transform:translateY(-3px)}
+.nav-card .idx{font-family:var(--font-mono);font-size:13px;color:var(--red);text-transform:uppercase}
+.nav-card h3{font-size:clamp(24px,2vw,34px);line-height:1}
+.professor-band,.offer-band,.final-offer{background:var(--black);color:var(--white);padding:var(--section-pad-y) 0}
+.professor-grid{display:grid;grid-template-columns:minmax(300px,.9fr) minmax(0,1.1fr);gap:clamp(44px,7vw,92px);align-items:center}
+.professor-photo{aspect-ratio:4/5;background:linear-gradient(150deg,#342d25,#121212);border:1px solid rgba(255,255,255,.12);border-radius:0 0 30px 0;position:relative;display:flex;align-items:flex-end;padding:28px;overflow:hidden}
+.professor-photo::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--red);border-radius:0 0 34px 0;z-index:-1}
+.professor-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(.92);}
+.professor-photo span{font-family:var(--font-mono);font-size:13px;text-transform:uppercase;color:rgba(250,250,248,.58)}
+.professor-name{font-size:clamp(42px,4.2vw,66px);color:var(--white);margin:14px 0 8px}
+.role{display:block;font-family:var(--font-cond);font-size:clamp(18px,1.45vw,24px);font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--red);margin-bottom:26px}
+.light-text{color:rgba(250,250,248,.78)}
+.lesson{padding:var(--section-pad-y) 0;background:var(--white);border-top:1px solid var(--gray-100)}
+.lesson:nth-of-type(even){background:var(--off-white)}
+.lesson-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);gap:clamp(42px,6vw,82px);align-items:start}
+.lesson-copy{position:sticky;top:110px}
+.lesson-label{font-family:var(--font-mono);font-size:14px;color:var(--red);text-transform:uppercase;letter-spacing:.06em}
+.lesson-title{font-size:clamp(36px,4.1vw,62px);margin:18px 0 16px}
+.teacher{font-family:var(--font-cond);font-size:20px;font-weight:700;color:var(--red);letter-spacing:.04em;text-transform:uppercase;margin-bottom:24px}
+.lesson-copy p{font-size:18px;color:var(--gray-600);line-height:1.75;margin-bottom:18px}
+.video-box{aspect-ratio:16/9;background:var(--black);color:rgba(250,250,248,.7);display:flex;align-items:center;justify-content:center;border:1px solid rgba(0,0,0,.1);margin-bottom:22px;position:relative;overflow:hidden}
+.video-box::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(200,16,46,.22),transparent 46%)}
+.video-box span{position:relative;font-family:var(--font-mono);font-size:14px;text-transform:uppercase;letter-spacing:.08em}
+.video-box iframe{display:block;position:relative;z-index:1;width:100%;height:100%;min-height:100%;border:0}
+.understand{background:var(--white);border:1px solid var(--gray-100);padding:30px}
+.understand h3{font-size:clamp(26px,2.2vw,34px);margin-bottom:18px}
+.understand li{display:flex;gap:12px;font-size:17px;color:var(--gray-900);line-height:1.55;margin-bottom:12px}
+.understand li::before{content:"";width:8px;height:8px;background:var(--red);border-radius:50%;margin-top:9px;flex:none}
+.lesson-actions{margin-top:26px}
+.offer-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(320px,1.05fr);gap:clamp(40px,6vw,80px);align-items:start}
+.offer-band .section-title,.final-offer .section-title{color:var(--white)}
+.offer-band .section-text,.final-offer .section-text{color:rgba(250,250,248,.72)}
+.offer-panel{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);padding:clamp(30px,4vw,48px);border-radius:8px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);margin:30px 0}
+.fact{background:var(--black);padding:24px}
+.fact .num{font-family:var(--font-display);font-size:36px;color:var(--white)}
+.fact .lbl{font-size:14px;color:rgba(250,250,248,.6);text-transform:uppercase;letter-spacing:.04em}
+.coupon{border:1px solid var(--red);padding:28px;margin-top:24px}
+.coupon strong{font-family:var(--font-display);font-size:46px;color:var(--white);display:block;line-height:1}
+.coupon p,.coupon li{color:rgba(250,250,248,.78);font-size:17px;line-height:1.65}
+.coupon ul{margin:16px 0 0}
+.certificate{padding:var(--section-pad-y) 0;background:var(--white)}
+.cert-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.85fr);gap:clamp(42px,6vw,82px);align-items:center}
+.cert-card{border:1px solid var(--gray-100);background:var(--off-white);padding:clamp(34px,4vw,54px);border-radius:8px}
+.cert-image{display:block;width:100%;height:auto;margin:22px 0 28px;border:1px solid var(--gray-100);border-radius:4px}
+.cert-card h3{font-size:clamp(34px,3.4vw,50px);margin-bottom:18px}
+.highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.highlight-card{border:1px solid rgba(255,255,255,.12);padding:26px;background:rgba(255,255,255,.04)}
+.highlight-card h3{font-size:clamp(24px,2vw,32px);color:var(--white);margin-bottom:12px}
+.highlight-card p{font-size:16px;line-height:1.65;color:rgba(250,250,248,.68)}
+.support{padding:clamp(72px,8vw,112px) 0;background:var(--red);color:var(--white);text-align:center}
+.support .section-title{margin:0 auto 18px;color:var(--white)}
+.support p{font-size:clamp(18px,1.35vw,22px);max-width:62ch;margin:0 auto 34px;line-height:1.7;color:rgba(255,255,255,.86)}
+.support .btn-primary{background:var(--white);color:var(--red);border-color:var(--white)}
+.footer{background:var(--black);color:rgba(250,250,248,.55);padding:34px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:14px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+@media (max-width:1080px){
+  .nav-desktop{display:none}
+  .nav-grid{grid-template-columns:repeat(3,1fr)}
+  .hero-meta{gap:10px}
+  .hero-meta-item{padding:9px 12px}
+  .hero-meta-item span{font-size:12px}
+  .lesson-grid,.offer-grid,.cert-grid,.professor-grid{grid-template-columns:1fr}
+  .lesson-copy{position:static}
+  .highlight-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  .hero{min-height:auto;padding:128px 0 72px}
+  .hero-title{max-width:100%}
+  .hero-meta{flex-wrap:wrap}
+  .hero-meta-item{width:100%;justify-content:center}
+  .hero-actions .btn{width:100%}
+  .nav-grid,.facts,.highlight-grid{grid-template-columns:1fr}
+  .lesson-title,.section-title{max-width:100%}
+}
+
+/* Navbar aprovada da página de inscrição, adaptada ao fluxo de aulas */
+.site-header{padding:26px 0;background:rgba(10,10,10,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08);transition:padding .35s var(--ease),background .35s var(--ease)}
+.site-header.is-scrolled{padding:16px 0;background:rgba(10,10,10,.98)}
+.header-inner{gap:20px}
+.logo-img{display:inline-flex;align-items:center;flex:none}
+.logo-img img{height:48px;width:auto;object-fit:contain;filter:brightness(0) invert(1);transition:opacity .35s var(--ease)}
+.logo-img:hover img{opacity:.85}
+.site-header .logo{padding:0;line-height:1.2}
+.nav-desktop{gap:28px}
+.nav-desktop a{position:relative;font-weight:600;transition:color .35s var(--ease)}
+.nav-desktop a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--red);transition:width .35s var(--ease)}
+.nav-desktop a:hover::after{width:100%}
+.header-cta{display:flex;align-items:center;gap:14px;margin-left:auto}
+.header-cta .btn{padding:14px 22px;font-size:16px}
+.nav-toggle{display:none;flex-direction:column;gap:5px;width:38px;height:38px;justify-content:center;padding:0 9px;background:transparent;border:1px solid rgba(250,250,248,.25);border-radius:2px}
+.nav-toggle span{height:1px;width:100%;background:var(--white);transition:transform .3s var(--ease),opacity .3s var(--ease)}
+.mobile-nav{position:fixed;inset:0;background:var(--black);z-index:850;display:flex;flex-direction:column;justify-content:center;padding:96px 32px 40px;gap:22px;transform:translateY(-100%);transition:transform .5s var(--ease);overflow-y:auto}
+.mobile-nav.is-open{transform:translateY(0)}
+.mobile-nav a{font-family:var(--font-display);font-size:40px;line-height:1;color:var(--white);font-weight:400}
+.mobile-nav .btn{font-family:var(--font-cond);font-size:18px;line-height:1.2;width:max-content;margin-top:10px;padding:16px 22px}
+@media (max-width:1080px){
+  .nav-desktop{display:none}
+  .nav-toggle{display:flex}
+}
+@media (max-width:480px){
+  .site-header{padding:14px 0}
+  .container.header-inner{padding-left:12px;padding-right:12px;gap:10px}
+  .logo-img img{height:40px}
+  .header-cta{gap:8px}
+  .header-cta .btn{padding:12px 14px;font-size:15px;white-space:nowrap}
+  .mobile-nav{padding-left:24px;padding-right:24px}
+  .mobile-nav a{font-size:34px}
+}
+
+/* Ajustes finais do hero, da sequência de aulas e da experiência mobile. */
+html{scroll-padding-top:104px}
+.hero-meta-item svg{display:none}
+.hero-meta-item::before{
+  content:"•";
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:18px;
+  height:18px;
+  flex:none;
+  color:var(--red);
+  font-family:var(--font-body);
+  font-size:22px;
+  font-weight:800;
+  line-height:1;
+}
+.lesson-actions .btn{max-width:100%;}
+@media (max-width:720px){
+  .hero{padding-top:120px;padding-bottom:68px}
+  .hero-title{font-size:clamp(44px,13vw,68px);line-height:.95}
+  .hero-title .title-line{white-space:normal}
+  .hero-subtitle{font-size:17px;line-height:1.55;margin-bottom:24px}
+  .hero-meta{gap:9px;margin:24px 0 30px}
+  .hero-meta-item{width:100%;min-height:44px;padding:10px 14px;white-space:normal}
+  .hero-meta-item span{white-space:normal;text-align:left;line-height:1.25}
+  .hero-note{font-size:16px;line-height:1.55;margin-bottom:28px}
+  .hero-actions{width:100%;gap:12px}
+  .hero-actions .btn{width:100%;white-space:normal;text-align:center;padding:16px 20px;line-height:1.2}
+  .lesson{padding:72px 0}
+  .lesson-grid{gap:32px}
+  .lesson-copy p{font-size:16px;line-height:1.65}
+  .video-box{margin-bottom:18px}
+  .understand{padding:24px}
+  .understand li{font-size:16px}
+  .lesson-actions .btn{width:100%;white-space:normal;text-align:center;padding:15px 18px;line-height:1.2}
+  .cert-card{padding:28px 22px}
+  .footer-inner{align-items:flex-start;flex-direction:column}
+}
+@media (max-width:480px){
+  .site-header{padding:12px 0}
+  .container.header-inner{padding-left:12px;padding-right:12px}
+  .logo-img img{height:36px}
+  .header-cta{gap:8px}
+  .header-cta .btn{display:none}
+  .nav-toggle{width:36px;height:36px}
+  .hero{padding-top:112px}
+  .hero-badge{font-size:14px;padding:10px 16px}
+  .hero-title{font-size:clamp(42px,13.5vw,58px)}
+  .hero-meta-item span{font-size:11px}
+  .nav-card{min-height:146px;padding:24px 18px}
+}
+</style>
+</head>
+<body>
+
+<header id="siteHeader" class="site-header">
+  <div class="container header-inner">
+    <a href="#topo" class="logo logo-img" aria-label="Faculdade Phorte">
+      <img src="https://posphorte.com.br/wp-content/uploads/2024/05/Logo_Faculdade_Phorte-300x150.png" alt="Faculdade Phorte">
+    </a>
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href="#topo">Início</a>
+      <a href="#aula-1">Aulas</a>
+      <a href="#certificado">Certificado</a>
+      <a href="#pos">Pós-graduação</a>
+      <a href="#suporte">Suporte</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://posphorte.com.br/formacao-em-futebol-futsal/" class="btn btn-primary">Página de inscrição</a>
+      <button id="navToggle" class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav id="mobileNav" class="mobile-nav" aria-label="Navegação mobile">
+  <a href="#topo">Início</a>
+  <a href="#aula-1">Aulas</a>
+  <a href="#certificado">Certificado</a>
+  <a href="#pos">Pós-graduação</a>
+  <a href="#suporte">Suporte</a>
+  <a href="https://posphorte.com.br/formacao-em-futebol-futsal/" class="btn btn-primary">Página de inscrição</a>
+</nav>
+
+<main>
+  <section class="hero" id="topo">
+    <div class="hero-texture"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-frame tl"></div>
+    <div class="hero-frame br"></div>
+    <div class="container hero-inner">
+      <span class="hero-badge reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        Seu acesso foi liberado
+      </span>
+      <h1 class="hero-title reveal"><span class="title-line">Aulas da Formação em</span><span class="title-line">Futebol e Futsal</span></h1>
+      <p class="hero-subtitle reveal">Acompanhe os conteúdos com Mauro Sandri e profissionais convidados sobre formação de jogadores, preparação física, alto rendimento, liderança e carreira.</p>
+      <div class="hero-meta reveal">
+        <div class="hero-meta-item"><svg viewBox="0 0 24 24"><path d="M12 7v5l3 3"/><circle cx="12" cy="12" r="9"/></svg><span>Mais de 6 horas de conteúdo</span></div>
+        <div class="hero-meta-item"><svg viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M10 10l5 2-5 2z"/></svg><span>Aulas online e gravadas</span></div>
+        <div class="hero-meta-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M9 12l-1 8 4-2 4 2-1-8"/></svg><span>Certificado após a conclusão</span></div>
+      </div>
+      <p class="hero-note reveal">As aulas estão organizadas em sequência para facilitar o acompanhamento. Assista aos módulos e, ao final, acesse o link para solicitar seu Certificado de Participação.</p>
+      <div class="hero-actions reveal">
+        <a href="#aula-1" class="btn btn-primary">Começar a primeira aula <span class="btn-arrow">→</span></a>
+        <a href="#aula-1" class="btn btn-secondary">Ir para a primeira aula</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson" id="aula-1">
+    <div class="container lesson-grid">
+      <div class="lesson-copy reveal">
+        <span class="lesson-label">Aula 1</span>
+        <h2 class="lesson-title">Formação de jogadores e inteligência de jogo</h2>
+        <div class="teacher">Mauro Sandri e William Schmidt</div>
+        <p>Formar um jogador envolve desenvolver sua capacidade de observar, interpretar e responder às situações que surgem durante uma partida.</p>
+        <p>Nesta aula, Mauro Sandri e William Schmidt discutem como o treino pode estimular leitura tática, tomada de decisão e comportamento no campo e na quadra.</p>
+      </div>
+      <div class="reveal">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/BQ2XsydlEyg?rel=0&modestbranding=1" title="Aula 1 — Formação de jogadores e inteligência de jogo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+        <div class="understand">
+          <h3>Você vai entender</h3>
+          <ul>
+            <li>Como a tomada de decisão pode ser desenvolvida.</li>
+            <li>Qual é a relação entre treino e compreensão do jogo.</li>
+            <li>Como organizar situações que estimulem leitura tática.</li>
+            <li>Por que o atleta precisa reconhecer problemas antes de escolher uma ação.</li>
+          </ul>
+          <div class="lesson-actions"><a href="#aula-2" class="btn btn-dark">Ir para a Aula 2 <span class="btn-arrow">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson" id="aula-2">
+    <div class="container lesson-grid">
+      <div class="lesson-copy reveal">
+        <span class="lesson-label">Aula 2</span>
+        <h2 class="lesson-title">Alto rendimento, controle de carga e prevenção de lesões</h2>
+        <div class="teacher">Mauro Sandri, Renan Fernandes e Fábio Biajoli</div>
+        <p>O alto rendimento depende de decisões tomadas durante toda a temporada, e não apenas do desempenho apresentado no dia da competição.</p>
+        <p>Nesta aula, os professores analisam como controle de carga, planejamento do treinamento, prevenção de lesões e comunicação entre áreas interferem na preparação dos atletas.</p>
+      </div>
+      <div class="reveal">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/kpjFIKKUhn4?rel=0&modestbranding=1&start=1" title="Aula 2 — Alto rendimento, controle de carga e prevenção de lesões" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+        <div class="understand">
+          <h3>Você vai entender</h3>
+          <ul>
+            <li>Como as cargas podem ser distribuídas ao longo da temporada.</li>
+            <li>Quais fatores precisam ser acompanhados durante a preparação.</li>
+            <li>Como diferentes profissionais participam da prevenção de lesões.</li>
+            <li>Por que planejamento e adaptação precisam caminhar juntos.</li>
+          </ul>
+          <div class="lesson-actions"><a href="#aula-3" class="btn btn-dark">Ir para a Aula 3 <span class="btn-arrow">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer-band">
+    <div class="container offer-grid">
+      <div class="reveal">
+        <span class="eyebrow">Aprofunde sua formação</span>
+        <h2 class="section-title">Quer estudar com mais profundidade os processos de formação e treinamento?</h2>
+        <p class="section-text">Os temas apresentados nas primeiras aulas fazem parte de uma área de conhecimento que envolve metodologia, Ciências do Esporte, formação de atletas, preparação física e análise do jogo.</p>
+        <p class="section-text">A Pós-graduação em Futebol e Futsal da Faculdade Phorte amplia essas discussões em uma formação voltada a profissionais que desejam planejar intervenções mais fundamentadas, da base ao alto rendimento.</p>
+      </div>
+      <div class="offer-panel reveal">
+        <div class="facts">
+          <div class="fact"><div class="num">Ao vivo</div><div class="lbl">Modalidade online</div></div>
+          <div class="fact"><div class="num">15</div><div class="lbl">Meses de duração</div></div>
+          <div class="fact"><div class="num">360h</div><div class="lbl">Carga horária</div></div>
+        </div>
+        <div class="coupon">
+<p>Condição para participantes da Formação</p>
+          <strong>CAMPO20</strong>
+          <ul>
+            <li>20% de desconto nas mensalidades.</li>
+            <li>Isenção da taxa de inscrição.</li>
+            <li>Kit Aluno Phorte.</li>
+          </ul>
+        </div>
+        <div class="lesson-actions"><a href="#pos" class="btn btn-primary">Conhecer a Pós-graduação <span class="btn-arrow">→</span></a></div>
+        <p class="section-text light-text" style="font-size:15px;margin-top:18px;">Consulte as condições e informações atualizadas da turma.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson" id="aula-3">
+    <div class="container lesson-grid">
+      <div class="lesson-copy reveal">
+        <span class="lesson-label">Aula 3</span>
+        <h2 class="lesson-title">Planejamento e construção de equipes competitivas</h2>
+        <div class="teacher">Mauro Sandri e João Carlos Romano</div>
+        <p>Uma equipe competitiva é construída por decisões que organizam o trabalho antes, durante e depois das partidas.</p>
+        <p>Nesta aula, Mauro Sandri e João Carlos Romano abordam planejamento, rotina, mentalidade e ambiente de equipe.</p>
+      </div>
+      <div class="reveal">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/73EftfLAdbM?rel=0&modestbranding=1&start=1" title="Aula 3 — Planejamento e construção de equipes competitivas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+        <div class="understand">
+          <h3>Você vai entender</h3>
+          <ul>
+            <li>Como o planejamento orienta a rotina da equipe.</li>
+            <li>Por que o ambiente interfere no desempenho.</li>
+            <li>Como mentalidade e comportamento coletivo são desenvolvidos.</li>
+            <li>Quais decisões ajudam a manter o trabalho coerente ao longo da temporada.</li>
+          </ul>
+          <div class="lesson-actions"><a href="#aula-4" class="btn btn-dark">Ir para a Aula 4 <span class="btn-arrow">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson" id="aula-4">
+    <div class="container lesson-grid">
+      <div class="lesson-copy reveal">
+        <span class="lesson-label">Aula 4</span>
+        <h2 class="lesson-title">Carreira e atuação profissional no Futebol e no Futsal</h2>
+        <div class="teacher">Mauro Sandri, Cassiano Klein, Cris Souza, Felipe de Sá, Bruno Pivetti e César Del Roy</div>
+        <p>Construir uma carreira no esporte exige formação, repertório, posicionamento e capacidade de adaptação a diferentes ambientes profissionais.</p>
+        <p>Nesta aula, os convidados apresentam perspectivas sobre ingresso no mercado, desenvolvimento profissional e decisões realizadas ao longo de suas trajetórias.</p>
+      </div>
+      <div class="reveal">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/75BtmJkIMG4?rel=0&modestbranding=1&start=3" title="Aula 4 — Carreira e atuação profissional no Futebol e no Futsal" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+        <div class="understand">
+          <h3>Você vai entender</h3>
+          <ul>
+            <li>Quais possibilidades de atuação existem nas modalidades.</li>
+            <li>Como experiências e relações profissionais influenciam a trajetória.</li>
+            <li>Por que posicionamento e atualização são importantes.</li>
+            <li>Quais desafios podem surgir em diferentes momentos da carreira.</li>
+          </ul>
+          <div class="lesson-actions"><a href="#aula-5" class="btn btn-dark">Ir para a Aula 5 <span class="btn-arrow">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lesson" id="aula-5">
+    <div class="container lesson-grid">
+      <div class="lesson-copy reveal">
+        <span class="lesson-label">Aula 5</span>
+        <h2 class="lesson-title">Liderança e tomada de decisão sob pressão</h2>
+        <div class="teacher">Mauro Sandri e professor convidado</div>
+        <p>Liderar uma equipe envolve tomar decisões em situações nas quais tempo, desempenho, expectativas e relações profissionais exercem pressão sobre o trabalho.</p>
+        <p>A aula apresenta experiências relacionadas à condução de equipes de alto nível e mostra como comunicação, postura e leitura de cenário influenciam a atuação de lideranças.</p>
+      </div>
+      <div class="reveal">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/7eE4oH5SnNY?rel=0&modestbranding=1" title="Aula 5 — Liderança e tomada de decisão sob pressão" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+        <div class="understand">
+          <h3>Você vai entender</h3>
+          <ul>
+            <li>Como decisões são tomadas em contextos competitivos.</li>
+            <li>Qual é o papel da comunicação na liderança.</li>
+            <li>Como lidar com pressão e responsabilidade.</li>
+            <li>Por que postura e coerência interferem na relação com a equipe.</li>
+          </ul>
+          <div class="lesson-actions"><a href="#certificado" class="btn btn-dark">Ir para o certificado <span class="btn-arrow">→</span></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="certificate" id="certificado">
+    <div class="container cert-grid">
+      <div class="reveal">
+        <span class="eyebrow">Conteúdo concluído</span>
+        <h2 class="section-title">Você concluiu as aulas da Formação</h2>
+        <p class="section-text">Ao longo dos módulos, você acompanhou discussões sobre formação de jogadores, preparação física, planejamento, liderança e carreira.</p>
+        <p class="section-text">Esses elementos ajudam a compreender o esporte como um ambiente no qual decisões técnicas, humanas e organizacionais se relacionam continuamente.</p>
+      </div>
+      <div class="cert-card reveal">
+        <span class="eyebrow">Certificado de participação</span>
+        <img class="cert-image" src="https://posphorte.com.br/wp-content/uploads/2026/08/CERTIFICADO_PHORTE.webp" alt="Modelo do certificado de participação da Formação em Futebol e Futsal" loading="lazy" decoding="async">
+        <h3>Concluiu as aulas? Solicite seu certificado</h3>
+        <p class="section-text">Depois de assistir aos módulos, você pode solicitar gratuitamente o Certificado de Participação na Formação em Futebol e Futsal.</p>
+        <p class="section-text">Preencha o formulário de emissão com atenção. Os dados informados serão utilizados na elaboração do documento.</p>
+        <!-- TODO: substituir pelo link oficial de solicitação do certificado quando a equipe disponibilizar o destino. -->
+        <div class="lesson-actions"><span class="btn btn-primary" aria-disabled="true">Solicitação do certificado pendente</span></div>
+        <p class="section-text" style="font-size:15px;margin-top:18px;">Confira seu nome e seus dados antes de enviar a solicitação.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-offer" id="pos">
+    <div class="container">
+      <span class="eyebrow reveal">Continue sua formação</span>
+      <h2 class="section-title reveal">Aprofunde sua atuação com a Pós-graduação em Futebol e Futsal</h2>
+      <p class="section-text reveal">Na Pós-graduação em Futebol e Futsal da Faculdade Phorte, os assuntos da Formação são aprofundados por meio de uma matriz que reúne formação e categorias de base, Ciências do Esporte, futebol profissional, futsal de alto rendimento e tópicos especiais.</p>
+      <div class="highlight-grid">
+        <article class="highlight-card reveal"><h3>Formação e categorias de base</h3><p>Estude desenvolvimento de jogadores, metodologia, pedagogia das modalidades e integração entre Futebol e Futsal.</p></article>
+        <article class="highlight-card reveal"><h3>Ciências do Esporte aplicadas</h3><p>Aprofunde conhecimentos relacionados à fisiologia, nutrição, psicologia e preparação esportiva.</p></article>
+        <article class="highlight-card reveal"><h3>Futebol profissional</h3><p>Conheça conteúdos sobre análise de desempenho, preparação física, treinamento e atuação em diferentes contextos.</p></article>
+        <article class="highlight-card reveal"><h3>Futsal no alto rendimento</h3><p>Estude observação do jogo, preparação física, treinamento e especificidades da modalidade.</p></article>
+      </div>
+      <div class="facts" style="margin-top:34px;">
+        <div class="fact"><div class="num">Ao vivo</div><div class="lbl">Online</div></div>
+        <div class="fact"><div class="num">360h</div><div class="lbl">Carga horária</div></div>
+        <div class="fact"><div class="num">15</div><div class="lbl">Meses</div></div>
+      </div>
+      <div class="hero-actions reveal" style="justify-content:flex-start;margin-top:34px;">
+        <a href="https://posphorte.com.br/pos-graduacao/futebol-e-futsal-as-ciencias-do-esporte-e-a-metodologia-do-treinamento/" class="btn btn-primary">Conhecer a Pós-graduação <span class="btn-arrow">→</span></a>
+        <!-- TODO: definir o destino oficial da condição especial antes de ativar este CTA. -->
+        <span class="btn btn-secondary" aria-disabled="true">Condição especial — link pendente</span>
+      </div>
+      <p class="section-text light-text reveal" style="font-size:15px;margin-top:18px;">Consulte valores, regras e disponibilidade da turma atual. Condição sujeita à validação e às regras da campanha vigente.</p>
+    </div>
+  </section>
+
+  <section class="support" id="suporte">
+    <div class="container">
+      <h2 class="section-title reveal">Ficou com alguma dúvida?</h2>
+      <p class="reveal">Entre em contato com a equipe da Faculdade Phorte para esclarecer dúvidas sobre a Formação, o certificado ou a Pós-graduação em Futebol e Futsal.</p>
+      <a href="mailto:contato@posphorte.com.br" class="btn btn-primary reveal">Falar com a equipe <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Faculdade Phorte. Todos os direitos reservados.</p>
+    <a href="https://posphorte.com.br/formacao-em-futebol-futsal/">Voltar para a página de inscrição</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header = document.getElementById('siteHeader');
+  var navToggle = document.getElementById('navToggle');
+  var mobileNav = document.getElementById('mobileNav');
+
+  function updateHeader(){
+    if(header){ header.classList.toggle('is-scrolled', window.pageYOffset > 40); }
+  }
+  document.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+
+  if(navToggle && mobileNav){
+    navToggle.addEventListener('click', function(){
+      var isOpen = mobileNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+      var spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'translateY(6px) rotate(45deg)' : 'none';
+      spans[1].style.opacity = isOpen ? '0' : '1';
+      spans[2].style.transform = isOpen ? 'translateY(-6px) rotate(-45deg)' : 'none';
+    });
+    mobileNav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        mobileNav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Abrir menu');
+        navToggle.querySelectorAll('span').forEach(function(span){ span.style.transform = 'none'; span.style.opacity = '1'; });
+      });
+    });
+  }
+
+  var revealEls = document.querySelectorAll('.reveal');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+  revealEls.forEach(function(el){ io.observe(el); });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var href = this.getAttribute('href') || '';
+      if(href.length <= 1) return;
+
+      var target = document.getElementById(href.slice(1));
+      if(!target) return;
+
+      e.preventDefault();
+      var headerHeight = header ? header.getBoundingClientRect().height : 0;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
+      var destination = Math.max(0, top);
+
+      window.scrollTo({ top: destination, behavior: 'smooth' });
+      if(window.history && window.history.replaceState){
+        window.history.replaceState(null, '', href);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

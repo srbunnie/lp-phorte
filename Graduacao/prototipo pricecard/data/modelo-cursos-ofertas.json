@@ -1,0 +1,181 @@
+{
+  "courses": [
+    {
+      "curso_id": "pedagogia",
+      "curso_nome": "Pedagogia",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "educacao-fisica",
+      "curso_nome": "Educação Física",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "administracao",
+      "curso_nome": "Administração",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "traducao-interpretacao",
+      "curso_nome": "Tradução e Interpretação Inglês / Português",
+      "valor_base": "R$ 529,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "recursos-humanos",
+      "curso_nome": "Recursos Humanos",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "processos-gerenciais",
+      "curso_nome": "Processos Gerenciais",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    },
+    {
+      "curso_id": "marketing",
+      "curso_nome": "Marketing",
+      "valor_base": "R$ 198,00",
+      "aprovado_mec": true,
+      "nota_5_mec": false
+    }
+  ],
+  "offers": [
+    {
+      "curso_id": "pedagogia",
+      "curso_nome": "Pedagogia",
+      "modalidade": "Semipresencial",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "educacao-fisica",
+      "curso_nome": "Educação Física",
+      "modalidade": "Semipresencial",
+      "polo_nome": "Polo Marquês",
+      "valor": "R$ 198,00",
+      "disponivel": false,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "administracao",
+      "curso_nome": "Administração",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "administracao",
+      "curso_nome": "Administração",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Lapa",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "administracao",
+      "curso_nome": "Administração",
+      "modalidade": "Presencial",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "traducao-interpretacao",
+      "curso_nome": "Tradução e Interpretação Inglês / Português",
+      "modalidade": "EAD Ao Vivo",
+      "polo_nome": "Polo Lapa",
+      "valor": "R$ 529,00",
+      "disponivel": false,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "traducao-interpretacao",
+      "curso_nome": "Tradução e Interpretação Inglês / Português",
+      "modalidade": "EAD Ao Vivo",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 529,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "recursos-humanos",
+      "curso_nome": "Recursos Humanos",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Lapa",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "recursos-humanos",
+      "curso_nome": "Recursos Humanos",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "processos-gerenciais",
+      "curso_nome": "Processos Gerenciais",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Lapa",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "processos-gerenciais",
+      "curso_nome": "Processos Gerenciais",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "processos-gerenciais",
+      "curso_nome": "Processos Gerenciais",
+      "modalidade": "Presencial",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "marketing",
+      "curso_nome": "Marketing",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Lapa",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    },
+    {
+      "curso_id": "marketing",
+      "curso_nome": "Marketing",
+      "modalidade": "EAD",
+      "polo_nome": "Polo Bela Vista",
+      "valor": "R$ 198,00",
+      "disponivel": true,
+      "turma_confirmada": false
+    }
+  ]
+}

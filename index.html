@@ -3,49 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Índice dos projetos de landing pages da Phorte e da USCS." />
-    <title>Projetos de Landing Pages | Phorte e USCS</title>
+    <meta name="description" content="Índice central dos protótipos estáticos da Phorte e da USCS." />
+    <title>Índice de protótipos | Phorte e USCS</title>
     <style>
       :root { color-scheme: light; font-family: Inter, Arial, sans-serif; background: #f5f7fb; color: #172033; }
       body { margin: 0; }
-      main { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding: 72px 0; }
-      header { margin-bottom: 40px; }
+      main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
+      header { margin-bottom: 36px; }
       .eyebrow { color: #5968d8; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-      h1 { max-width: 720px; margin: 12px 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.02; }
-      header p { max-width: 650px; color: #667085; font-size: 1.1rem; line-height: 1.6; }
+      h1 { max-width: 760px; margin: 12px 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.02; }
+      header p { max-width: 720px; color: #667085; font-size: 1.1rem; line-height: 1.6; }
+      .section-title { margin: 36px 0 16px; font-size: 1.15rem; }
       .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-      .card { display: flex; min-height: 180px; flex-direction: column; justify-content: space-between; padding: 26px; border: 1px solid #e2e6f0; border-radius: 18px; background: #fff; box-shadow: 0 10px 30px #26345d0d; }
-      .card h2 { margin: 0 0 10px; font-size: 1.35rem; }
+      .card { display: flex; min-height: 164px; flex-direction: column; justify-content: space-between; padding: 24px; border: 1px solid #e2e6f0; border-radius: 18px; background: #fff; box-shadow: 0 10px 30px #26345d0d; }
+      .card h3 { margin: 0 0 10px; font-size: 1.25rem; }
       .card p { margin: 0; color: #667085; line-height: 1.5; }
       a { color: inherit; text-decoration: none; }
-      .link { display: inline-flex; margin-top: 24px; color: #5968d8; font-weight: 700; }
+      .link { display: inline-flex; margin-top: 22px; color: #5968d8; font-weight: 700; }
+      .note { padding: 18px 20px; border-left: 4px solid #5968d8; border-radius: 8px; background: #eef0ff; color: #4b5572; line-height: 1.5; }
       footer { margin-top: 48px; color: #98a2b3; font-size: .9rem; }
+      footer a { color: #5968d8; font-weight: 700; }
     </style>
   </head>
   <body>
     <main>
       <header>
         <span class="eyebrow">Phorte · USCS</span>
-        <h1>Índice de objetos estáticos</h1>
-        <p>Área central para navegar entre protótipos, layouts e materiais de apresentação. Este repositório é destinado ao compartilhamento com stakeholders.</p>
+        <h1>Índice central de protótipos</h1>
+        <p>Objetos estáticos para apresentação, validação e compartilhamento com stakeholders. Abra uma categoria ou um projeto específico abaixo.</p>
       </header>
 
+      <div class="note">Este repositório é demonstrativo: não contém backends, bancos de dados ou integrações de produção. Formulários e interações devem ser tratados como protótipos visuais.</div>
+
+      <h2 class="section-title">Categorias</h2>
       <section class="grid" aria-label="Categorias de projetos">
-        <a class="card" href="./Graduacao/">
-          <div><h2>Graduação</h2><p>Landing pages e protótipos de campanhas de graduação.</p></div>
-          <span class="link">Acessar projetos →</span>
-        </a>
-        <a class="card" href="./Pos/">
-          <div><h2>Pós-graduação</h2><p>Projetos de pós, especializações, MBA e campanhas relacionadas.</p></div>
-          <span class="link">Acessar projetos →</span>
-        </a>
-        <a class="card" href="./USCS/">
-          <div><h2>USCS</h2><p>Landing pages e materiais específicos dos projetos da USCS.</p></div>
-          <span class="link">Acessar projetos →</span>
-        </a>
+        <a class="card" href="#projetos"><div><h3>Graduação</h3><p>Campanhas, páginas e componentes relacionados à graduação.</p></div><span class="link">Ver projetos →</span></a>
+        <a class="card" href="#projetos"><div><h3>Pós-graduação</h3><p>Projetos de pós, especializações, MBA e campanhas relacionadas.</p></div><span class="link">Ver projetos →</span></a>
+        <a class="card" href="#projetos"><div><h3>USCS</h3><p>Landing pages, componentes e materiais específicos da USCS.</p></div><span class="link">Ver projetos →</span></a>
       </section>
 
-      <footer>Consulte o <a href="./README.md">README</a> para as regras de organização e colaboração.</footer>
+      <h2 class="section-title" id="projetos">Projetos disponíveis</h2>
+      <section class="grid" aria-label="Projetos disponíveis">
+        <a class="card" href="./USCS/formacao-em-futebol-e-futsal/"><div><h3>Formação em Futebol e Futsal</h3><p>Landing page e área de aulas da formação.</p></div><span class="link">Abrir protótipo →</span></a>
+        <a class="card" href="./Graduacao/pedagogia/"><div><h3>Graduação em Pedagogia</h3><p>Página de Pedagogia semipresencial.</p></div><span class="link">Abrir protótipo →</span></a>
+        <a class="card" href="./Pos/registro-e-documentacao/"><div><h3>Registro e Documentação</h3><p>Landing page, agradecimento e documentação do Live Educação.</p></div><span class="link">Abrir projeto →</span></a>
+        <a class="card" href="./Graduacao/aula-inaugural-gestao/"><div><h3>Aula Inaugural de Gestão</h3><p>Página da aula inaugural dos cursos de Gestão.</p></div><span class="link">Abrir protótipo →</span></a>
+        <a class="card" href="./USCS/prototipo%20price%20card/"><div><h3>Price Card USCS</h3><p>Componente de cards de preço e inscrição para a USCS.</p></div><span class="link">Abrir protótipo →</span></a>
+        <a class="card" href="./Graduacao/prototipo%20pricecard/"><div><h3>Price Card Graduação</h3><p>Componente de inscrição para ofertas de graduação.</p></div><span class="link">Abrir protótipo →</span></a>
+      </section>
+
+      <footer>Consulte o <a href="./README.md">README</a> e o <a href="./SECURITY.md">checklist de segurança</a> antes de compartilhar novos arquivos.</footer>
     </main>
   </body>
 </html>

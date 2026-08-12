@@ -1,0 +1,216 @@
+.formacao-formulario {
+  --phorte-red: #c8102e;
+  --phorte-dark: #151515;
+  --phorte-border: #c9c9c9;
+  --phorte-bg: #ffffff;
+}
+
+/* Área geral do formulário */
+.formacao-formulario .elementor-form {
+  width: 100%;
+  padding: 34px 30px;
+  box-sizing: border-box;
+  background: var(--phorte-bg);
+  border-radius: 4px;
+}
+
+/* Espaçamento entre os campos */
+.formacao-formulario .elementor-field-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.formacao-formulario .elementor-field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--phorte-dark);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .4px;
+  line-height: 1.3;
+}
+
+/* Campos */
+.formacao-formulario .elementor-field,
+.formacao-formulario select.elementor-field {
+  width: 100%;
+  min-height: 48px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid var(--phorte-border);
+  border-radius: 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.3;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+/* Placeholder */
+.formacao-formulario .elementor-field::placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+/* Foco */
+.formacao-formulario .elementor-field:focus {
+  border-color: var(--phorte-red);
+  box-shadow: 0 0 0 2px rgba(200, 16, 46, .12);
+}
+
+/* Select */
+.formacao-formulario select.elementor-field {
+  cursor: pointer;
+  appearance: auto;
+}
+
+/* Checkbox de consentimento */
+.formacao-formulario .elementor-field-type-checkbox {
+  margin-top: 3px;
+}
+
+.formacao-formulario .elementor-field-type-checkbox .elementor-field-option {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  color: #666666;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.formacao-formulario .elementor-field-type-checkbox input {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  accent-color: var(--phorte-red);
+}
+
+/* Botão */
+.formacao-formulario .elementor-button {
+  width: 100%;
+  min-height: 48px;
+  padding: 14px 20px;
+  color: #ffffff;
+  background: var(--phorte-red);
+  border: 1px solid var(--phorte-red);
+  border-radius: 0;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+
+.formacao-formulario .elementor-button:hover {
+  background: #a90d27;
+  border-color: #a90d27;
+}
+
+.formacao-formulario .elementor-button:active {
+  transform: translateY(1px);
+}
+
+/* Mensagens de erro */
+.formacao-formulario .elementor-message-danger,
+.formacao-formulario .elementor-field-group .elementor-message {
+  margin-top: 6px;
+  color: #c8102e;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+/* Mensagem de sucesso */
+.formacao-formulario .elementor-message-success {
+  margin-top: 18px;
+  padding: 12px;
+  color: #176b38;
+  background: #edf8f1;
+  border-left: 3px solid #176b38;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 767px) {
+  .formacao-formulario .elementor-form {
+    padding: 26px 20px;
+  }
+
+  .formacao-formulario .elementor-field-group {
+    width: 100% !important;
+  }
+
+  .formacao-formulario .elementor-field,
+  .formacao-formulario select.elementor-field {
+    min-height: 46px;
+  }
+
+  .formacao-formulario .elementor-button {
+    min-height: 50px;
+  }
+}
+
+/* Correção visual do campo Área de atuação.
+   O Elementor cria um wrapper com a classe .elementor-field
+   ao redor do select; a borda deve ficar somente no select. */
+.formacao-formulario
+.elementor-field-type-select
+.elementor-select-wrapper {
+  width: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.formacao-formulario
+.elementor-field-type-select
+.elementor-select-wrapper::before,
+.formacao-formulario
+.elementor-field-type-select
+.elementor-select-wrapper::after {
+  display: none !important;
+  content: none !important;
+}
+
+.formacao-formulario
+.elementor-field-type-select
+select.elementor-field-textual {
+  display: block;
+  width: 100% !important;
+  min-height: 48px;
+  margin: 0 !important;
+  padding: 13px 42px 13px 15px !important;
+  box-sizing: border-box;
+  color: #333333;
+  background: #ffffff !important;
+  border: 1px solid #c9c9c9 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.formacao-formulario
+.elementor-field-type-select
+select.elementor-field-textual:focus {
+  border-color: #c8102e !important;
+  box-shadow: 0 0 0 2px rgba(200, 16, 46, .12) !important;
+}
+
+.formacao-formulario
+.elementor-field-type-select
+.select-caret-down-wrapper {
+  right: 14px;
+  pointer-events: none;
+}

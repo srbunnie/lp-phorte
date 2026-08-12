@@ -1,0 +1,6 @@
+{
+  "framework": "vite",
+  "buildCommand": "cd preview-react-app && npm run build",
+  "outputDirectory": "preview-react-app/dist",
+  "installCommand": "cd preview-react-app && npm install"
+}
