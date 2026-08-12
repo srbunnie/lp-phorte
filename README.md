@@ -14,6 +14,8 @@ Use uma pasta principal para cada projeto ou campanha:
 lp-phorte/
 ├── README.md
 ├── index.html             # Índice de navegação entre os projetos
+├── SECURITY.md            # Checklist de revisão antes do commit
+├── scripts/                # Verificações locais de segurança
 ├── Graduacao/
 │   └── nome-da-campanha/
 │       ├── README.md
@@ -65,6 +67,8 @@ Caso o projeto utilize um framework para gerar uma demonstração estática, man
 São permitidos HTML, CSS, JavaScript client-side, imagens, ícones, vídeos, fontes licenciadas, textos, wireframes, layouts e referências. Formulários podem existir apenas como demonstração visual, sem envio real de dados.
 
 Não são permitidos APIs, servidores, bancos de dados, chaves, senhas, tokens, dados pessoais reais ou integrações reais com CRM, analytics, pagamentos e serviços externos.
+
+Antes de cada commit ou push, a equipe deve executar a revisão definida em [`SECURITY.md`](./SECURITY.md). A verificação de arquivos `.env` e valores hardcoded é uma etapa obrigatória para evitar vazamentos acidentais.
 
 ## README de cada projeto
 
