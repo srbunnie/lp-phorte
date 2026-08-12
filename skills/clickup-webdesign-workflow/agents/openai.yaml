@@ -1,0 +1,4 @@
+interface:
+  display_name: "ClickUp WebDesign"
+  short_description: "Localiza e inicia tarefas no WebDesign"
+  default_prompt: "Use $clickup-webdesign-workflow para localizar o ambiente WebDesign no ClickUp e consultar, criar ou iniciar uma tarefa."

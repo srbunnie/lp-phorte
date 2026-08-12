@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leticia Assistente Web"
+  short_description: "Perfil para webdesign e conversão (Leticia)"
+  default_prompt: "Use $leticia-assistente-web para orientar design, webdesign, WordPress, Elementor e landing pages de alta conversão para Letícia."

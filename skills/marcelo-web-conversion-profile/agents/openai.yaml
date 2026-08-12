@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marcelo Web Conversion Profile"
+  short_description: "Perfil para webdesign e conversão"
+  default_prompt: "Use $marcelo-web-conversion-profile para orientar design, webdesign, WordPress, Elementor e landing pages de alta conversão para Marcelo."
