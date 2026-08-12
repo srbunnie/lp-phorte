@@ -4,8 +4,9 @@ Pasta de trabalho da tarefa [86ajx185e](https://app.clickup.com/t/9013299512/86a
 
 ## Estrutura da entrega
 
-- `principal/` — landing page principal, com formulário.
-- `agradecimento/` — página exibida após a inscrição.
+- `registro-e-documentacao-live/` — landing page principal aprovada, com formulário.
+- `registro-e-documentacao-agradecimento/` — página de agradecimento aprovada após a inscrição.
+- `cancelados/` — versões antigas preservadas para histórico, sem uso no fluxo principal.
 
 ## Referências
 

@@ -5,10 +5,11 @@ Projeto correspondente à tarefa ClickUp [86ajx185e](https://app.clickup.com/t/9
 ## Estrutura
 
 - `index.html`: índice local para abrir as duas páginas.
-- `principal/`: landing page principal com formulário, conteúdo da live e certificado.
-- `agradecimento/`: página pós-inscrição com confirmação, convite ao WhatsApp e vídeo.
+- `registro-e-documentacao-live/`: landing page principal aprovada com formulário, conteúdo da live e certificado.
+- `registro-e-documentacao-agradecimento/`: página pós-inscrição aprovada com confirmação, convite ao WhatsApp e vídeo.
+- `cancelados/`: versões antigas preservadas apenas para histórico.
 - `canva-exports/`: PDFs originais exportados do Canva — preservados sem alteração.
-- `principal/assets/` e `agradecimento/assets/`: cópias PNG de páginas específicas dos PDFs usadas na implementação.
+- `registro-e-documentacao-live/assets/` e `registro-e-documentacao-agradecimento/assets/`: cópias PNG de páginas específicas dos PDFs usadas na implementação.
 
 ## Como abrir
 
@@ -23,14 +24,14 @@ Depois acesse `http://localhost:8080/`.
 
 ## Fluxo atual
 
-1. A pessoa acessa `principal/index.html`.
+1. A pessoa acessa `registro-e-documentacao-live/registro-e-documentacao-live.html`.
 2. O formulário valida nome, e-mail, telefone, atuação em educação infantil, objetivo e consentimento.
-3. Nesta prévia local, o cadastro é salvo apenas no `localStorage` do navegador e a pessoa é encaminhada para `agradecimento/index.html`.
+3. Nesta prévia local, o cadastro é salvo apenas no `localStorage` do navegador e a pessoa é encaminhada para `registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento.html`.
 4. A página de agradecimento apresenta a confirmação, o convite para o grupo do WhatsApp e o link do vídeo no YouTube.
 
 ## Pendências para publicação
 
-- Substituir o comportamento demonstrativo do `principal/script.js` pelo formulário/endpoint real do RD Station, preservando os campos e a página de conversão.
+- Substituir o comportamento demonstrativo do `registro-e-documentacao-live/script.js` pelo formulário/endpoint real do RD Station, preservando os campos e a página de conversão.
 - Validar com a equipe o texto final de data, horário, política de privacidade e mensagens de confirmação antes de publicar.
 - Confirmar se o vídeo da página de agradecimento deve usar thumbnail oficial do YouTube ou um asset exportado do Canva.
 - Revisar metadados, tags de campanha, consentimento e evento de conversão no ambiente do RD Station.

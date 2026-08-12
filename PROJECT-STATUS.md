@@ -1,0 +1,42 @@
+# Estado do projeto
+
+## Objetivo
+
+Este repositório centraliza protótipos e objetos estáticos de landing pages da Phorte e da USCS para apresentação, validação e compartilhamento com stakeholders.
+
+## Estrutura atual
+
+- `Graduacao/`: Graduação Phorte, incluindo Pedagogia, Aula Inaugural e Price Card.
+- `Pos/`: Pós Phorte, incluindo Registro e Documentação.
+- `USCS/`: Formação em Futebol e Futsal e Price Card USCS.
+- `skills/`: instruções de apoio, incluindo revisão e commit deste projeto.
+- `index.html`: índice central com categorias, acordeões, prioridades e status.
+- `SECURITY.md` e `scripts/check-sensitive-data.ps1`: revisão de vazamentos antes de publicar.
+- `.nojekyll`: publicação dos arquivos estáticos no GitHub Pages sem processamento Jekyll.
+
+## Estados e prioridades atuais
+
+1. Registro e Documentação — Em andamento.
+2. Graduação em Pedagogia — Em andamento; versão clara em andamento e versão escura cancelada.
+3. Price Card Graduação — Pausado.
+4. Price Card USCS — Pausado.
+
+### Concluídos
+
+- Aula Inaugural de Gestão.
+- Formação em Futebol e Futsal.
+
+## Publicação
+
+- Repositório: https://github.com/srbunnie/lp-phorte
+- GitHub Pages: https://srbunnie.github.io/lp-phorte/
+- A publicação deve ocorrer somente depois da revisão de segurança e autorização explícita para commit/push.
+
+## Histórico funcional
+
+- Repositório Git inicializado e conectado ao GitHub.
+- README de organização criado.
+- Índice central estático criado e alinhado ao design system Phorte.
+- Projetos de Pedagogia, Registro e Documentação, Aula Inaugural, Futebol/Futsal e Price Cards migrados.
+- GitHub Pages configurado com `.nojekyll`.
+- Status, prioridades, categorias coloridas e versões clara/escura adicionados ao índice.

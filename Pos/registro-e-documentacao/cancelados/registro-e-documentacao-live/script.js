@@ -38,6 +38,6 @@
     }
     status.textContent = 'Inscrição registrada nesta prévia. Redirecionando…';
     localStorage.setItem('liveEducacaoCadastro', JSON.stringify({ nome: data.get('nome'), email: data.get('email') }));
-    window.setTimeout(() => { window.location.href = '../agradecimento/index.html'; }, 500);
+    window.setTimeout(() => { window.location.href = '../registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento-cancelado.html'; }, 500);
   });
 })();

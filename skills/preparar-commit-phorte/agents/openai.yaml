@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparar commit Phorte"
+  short_description: "Valida e publica alterações aprovadas"
+  default_prompt: "Valide as alterações aprovadas, execute a revisão de segurança, crie um commit descritivo e faça push somente após autorização explícita."
