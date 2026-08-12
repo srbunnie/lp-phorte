@@ -6,23 +6,50 @@
     <meta name="description" content="Índice central dos protótipos estáticos da Phorte e da USCS." />
     <title>Índice de protótipos | Phorte e USCS</title>
     <style>
-      :root { color-scheme: light; font-family: Inter, Arial, sans-serif; background: #f5f7fb; color: #172033; }
+      :root { font-family: Inter, Arial, sans-serif; color: #1A1A1A; background: #f8f9fb; --red-light: #E64242; --red-dark: #B91C1C; --blue: #123a63; --ink: #1A1A1A; --muted: #595959; --line: #e4e7ec; --card: #fff; --radius: 8px; }
+      * { box-sizing: border-box; }
       body { margin: 0; }
-      main { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0; }
-      header { margin-bottom: 36px; }
-      .eyebrow { color: #5968d8; font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
-      h1 { max-width: 760px; margin: 12px 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.02; }
-      header p { max-width: 720px; color: #667085; font-size: 1.1rem; line-height: 1.6; }
-      .section-title { margin: 36px 0 16px; font-size: 1.15rem; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-      .card { display: flex; min-height: 164px; flex-direction: column; justify-content: space-between; padding: 24px; border: 1px solid #e2e6f0; border-radius: 18px; background: #fff; box-shadow: 0 10px 30px #26345d0d; }
-      .card h3 { margin: 0 0 10px; font-size: 1.25rem; }
-      .card p { margin: 0; color: #667085; line-height: 1.5; }
-      a { color: inherit; text-decoration: none; }
-      .link { display: inline-flex; margin-top: 22px; color: #5968d8; font-weight: 700; }
-      .note { padding: 18px 20px; border-left: 4px solid #5968d8; border-radius: 8px; background: #eef0ff; color: #4b5572; line-height: 1.5; }
-      footer { margin-top: 48px; color: #98a2b3; font-size: .9rem; }
-      footer a { color: #5968d8; font-weight: 700; }
+      main { width: min(1060px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0 72px; }
+      header { margin-bottom: 30px; }
+      .eyebrow { color: var(--red-light); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+      h1 { max-width: 760px; margin: 12px 0 10px; font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: .98; letter-spacing: -.04em; }
+      .lead { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
+      .notice { display: flex; gap: 12px; align-items: flex-start; margin: 28px 0 38px; padding: 17px 20px; border: 1px solid #f0c9cb; border-radius: var(--radius); background: #fff7f7; color: #694144; line-height: 1.5; }
+      .notice strong { color: var(--red-dark); }
+      .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin: 38px 0 16px; }
+      h2 { margin: 0; font-size: 1.5rem; }
+      .legend { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .85rem; }
+      .legend span { display: inline-flex; gap: 5px; align-items: center; }
+      .dot { width: 9px; height: 9px; border-radius: 99px; background: currentColor; }
+      .categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .category { min-height: 130px; padding: 22px; border: 1px solid var(--line); border-top: 5px solid var(--accent); border-radius: var(--radius); background: var(--card); box-shadow: 0 3px 12px #1720330a; }
+      .category h3 { margin: 0 0 8px; font-size: 1.15rem; }
+      .category p { margin: 0; color: var(--muted); line-height: 1.45; }
+      .category.grad { --accent: var(--red-light); }
+      .category.pos { --accent: var(--red-dark); }
+      .category.uscs { --accent: var(--blue); }
+      .projects { display: grid; gap: 12px; }
+      details.project { overflow: hidden; border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); background: var(--card); box-shadow: 0 3px 12px #1720330a; }
+      details.project[open] { box-shadow: 0 7px 22px #17203312; }
+      details.project summary { display: flex; align-items: center; gap: 14px; padding: 19px 21px; cursor: pointer; list-style: none; }
+      details.project summary::-webkit-details-marker { display: none; }
+      details.project summary::after { margin-left: auto; color: var(--muted); content: "+"; font-size: 1.5rem; font-weight: 400; }
+      details.project[open] summary::after { content: "−"; }
+      .project-title { min-width: 0; flex: 1; }
+      .project-title strong { display: block; font-size: 1.08rem; }
+      .project-title small { display: block; margin-top: 3px; color: var(--muted); }
+      .project.grad { --accent: var(--red-light); } .project.pos { --accent: var(--red-dark); } .project.uscs { --accent: var(--blue); }
+      .priority { display: inline-grid; width: 28px; height: 28px; flex: none; place-items: center; border: 1px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .78rem; font-weight: 700; }
+      .status { display: inline-flex; flex: none; padding: 4px 9px; border-radius: 999px; font-size: .74rem; font-weight: 700; line-height: 1; }
+      .solicitado { background: #fff0d8; color: #8a5200; } .andamento { background: #e7f0ff; color: #275b9b; } .concluido { background: #e5f6ea; color: #20743a; } .pausado { background: #eeeeef; color: #62666d; } .cancelado { background: #fde8e8; color: #a12828; }
+      .project-body { padding: 0 21px 21px; }
+      .project-body p { margin: 0 0 14px; color: var(--muted); line-height: 1.5; }
+      .subprojects { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+      .subproject { display: flex; align-items: center; gap: 10px; padding: 11px 13px; border: 1px solid #edf0f4; border-radius: 8px; background: #fbfcfd; }
+      .subproject a { color: var(--ink); font-weight: 700; text-decoration: none; } .subproject a:hover { color: var(--red-dark); text-decoration: underline; }
+      .subproject .status { margin-left: auto; }
+      footer { margin-top: 42px; color: #87909e; font-size: .9rem; } footer a { color: var(--red-dark); font-weight: 700; }
+      @media (max-width: 720px) { main { width: min(100% - 28px, 600px); padding-top: 36px; } .categories { grid-template-columns: 1fr; } .section-heading { align-items: flex-start; flex-direction: column; } details.project summary { align-items: flex-start; flex-wrap: wrap; } details.project summary .status { order: 3; } .subproject { align-items: flex-start; flex-wrap: wrap; } .subproject .status { margin-left: 0; } }
     </style>
   </head>
   <body>
@@ -30,26 +57,31 @@
       <header>
         <span class="eyebrow">Phorte · USCS</span>
         <h1>Índice central de protótipos</h1>
-        <p>Objetos estáticos para apresentação, validação e compartilhamento com stakeholders. Abra uma categoria ou um projeto específico abaixo.</p>
+        <p class="lead">Objetos estáticos para apresentação, validação e compartilhamento com stakeholders. Cada projeto e subprojeto possui seu próprio status de acompanhamento.</p>
       </header>
 
-      <div class="note">Este repositório é demonstrativo: não contém backends, bancos de dados ou integrações de produção. Formulários e interações devem ser tratados como protótipos visuais.</div>
+      <div class="notice"><span aria-hidden="true">◆</span><div><strong>Ambiente demonstrativo.</strong> Este repositório contém protótipos estáticos. Formulários e interações são apenas visuais e não representam integrações de produção.</div></div>
 
-      <h2 class="section-title">Categorias</h2>
-      <section class="grid" aria-label="Categorias de projetos">
-        <a class="card" href="#projetos"><div><h3>Graduação</h3><p>Campanhas, páginas e componentes relacionados à graduação.</p></div><span class="link">Ver projetos →</span></a>
-        <a class="card" href="#projetos"><div><h3>Pós-graduação</h3><p>Projetos de pós, especializações, MBA e campanhas relacionadas.</p></div><span class="link">Ver projetos →</span></a>
-        <a class="card" href="#projetos"><div><h3>USCS</h3><p>Landing pages, componentes e materiais específicos da USCS.</p></div><span class="link">Ver projetos →</span></a>
+      <section aria-labelledby="categorias">
+        <div class="section-heading"><h2 id="categorias">Categorias</h2></div>
+        <div class="categories">
+          <article class="category grad"><h3>Graduação Phorte</h3><p>Campanhas, páginas e componentes da graduação.</p></article>
+          <article class="category pos"><h3>Pós Phorte</h3><p>Projetos de pós-graduação, especializações e MBA.</p></article>
+          <article class="category uscs"><h3>USCS</h3><p>Landing pages e componentes específicos da USCS.</p></article>
+        </div>
       </section>
 
-      <h2 class="section-title" id="projetos">Projetos disponíveis</h2>
-      <section class="grid" aria-label="Projetos disponíveis">
-        <a class="card" href="./USCS/formacao-em-futebol-e-futsal/"><div><h3>Formação em Futebol e Futsal</h3><p>Landing page e área de aulas da formação.</p></div><span class="link">Abrir protótipo →</span></a>
-        <a class="card" href="./Graduacao/pedagogia/"><div><h3>Graduação em Pedagogia</h3><p>Página de Pedagogia semipresencial.</p></div><span class="link">Abrir protótipo →</span></a>
-        <a class="card" href="./Pos/registro-e-documentacao/"><div><h3>Registro e Documentação</h3><p>Landing page, agradecimento e documentação do Live Educação.</p></div><span class="link">Abrir projeto →</span></a>
-        <a class="card" href="./Graduacao/aula-inaugural-gestao/"><div><h3>Aula Inaugural de Gestão</h3><p>Página da aula inaugural dos cursos de Gestão.</p></div><span class="link">Abrir protótipo →</span></a>
-        <a class="card" href="./USCS/prototipo%20price%20card/"><div><h3>Price Card USCS</h3><p>Componente de cards de preço e inscrição para a USCS.</p></div><span class="link">Abrir protótipo →</span></a>
-        <a class="card" href="./Graduacao/prototipo%20pricecard/"><div><h3>Price Card Graduação</h3><p>Componente de inscrição para ofertas de graduação.</p></div><span class="link">Abrir protótipo →</span></a>
+      <section aria-labelledby="projetos">
+        <div class="section-heading"><h2 id="projetos">Projetos disponíveis</h2><div class="legend" aria-label="Legenda de status"><span><i class="dot" style="color:#d89016"></i>Solicitado</span><span><i class="dot" style="color:#3776c4"></i>Em andamento</span><span><i class="dot" style="color:#36a457"></i>Concluído</span><span><i class="dot" style="color:#62666d"></i>Pausado</span><span><i class="dot" style="color:#a12828"></i>Cancelado</span></div></div>
+        <div class="projects">
+          <details class="project pos"><summary><span class="priority">1</span><div class="project-title"><strong>Registro e Documentação</strong><small>Pós Phorte · Live Educação</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>Landing page, agradecimento e materiais da live.</p><ul class="subprojects"><li class="subproject"><a href="./Pos/registro-e-documentacao/index.html">Índice do projeto</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/principal/index.html">Landing page principal</a><span class="status andamento">Em andamento</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/agradecimento/index.html">Página de agradecimento</a><span class="status andamento">Em andamento</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/versao-antiga/index.html">Versão anterior</a><span class="status concluido">Concluído</span></li></ul></div></details>
+          <details class="project grad"><summary><span class="priority">2</span><div class="project-title"><strong>Graduação em Pedagogia</strong><small>Graduação Phorte · duas versões visuais</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>Página de Pedagogia semipresencial para apresentação e revisão.</p><ul class="subprojects"><li class="subproject"><a href="./Graduacao/pedagogia/index%20claro.html">Versão escura</a><span class="status cancelado">Cancelado</span></li><li class="subproject"><a href="./Graduacao/pedagogia/index.html">Versão clara</a><span class="status andamento">Em andamento</span></li></ul></div></details>
+          <details class="project grad"><summary><span class="priority">3</span><div class="project-title"><strong>Price Card Graduação</strong><small>Graduação Phorte · componente de inscrição</small></div><span class="status pausado">Pausado</span></summary><div class="project-body"><p>Componente estático para ofertas e inscrições de graduação.</p><ul class="subprojects"><li class="subproject"><a href="./Graduacao/prototipo%20pricecard/index.html">Demo do card</a><span class="status pausado">Pausado</span></li><li class="subproject"><a href="./Graduacao/prototipo%20pricecard/inscricao-demo.html">Demo de inscrição</a><span class="status pausado">Pausado</span></li></ul></div></details>
+          <details class="project uscs"><summary><span class="priority">4</span><div class="project-title"><strong>Price Card USCS</strong><small>USCS · componente de preço e inscrição</small></div><span class="status pausado">Pausado</span></summary><div class="project-body"><p>Componente estático de cards de preço para cursos da USCS.</p><ul class="subprojects"><li class="subproject"><a href="./USCS/prototipo%20price%20card/preview-react-app/index.html">Preview React</a><span class="status pausado">Pausado</span></li><li class="subproject"><a href="./USCS/prototipo%20price%20card/README.md">Documentação do componente</a><span class="status pausado">Pausado</span></li></ul></div></details>
+          <h3 class="section-title" style="margin: 22px 0 0; font-size: 1.1rem;">Concluídos</h3>
+          <details class="project grad"><summary><div class="project-title"><strong>Aula Inaugural de Gestão</strong><small>Graduação Phorte</small></div><span class="status concluido">Concluído</span></summary><div class="project-body"><p>Protótipo da aula inaugural dos cursos de Gestão.</p><ul class="subprojects"><li class="subproject"><a href="./Graduacao/aula-inaugural-gestao/index.html">Página principal</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./Graduacao/aula-inaugural-gestao/elementor-aula-inaugural.html">Bloco Elementor</a><span class="status concluido">Concluído</span></li></ul></div></details>
+          <details class="project uscs"><summary><div class="project-title"><strong>Formação em Futebol e Futsal</strong><small>USCS</small></div><span class="status concluido">Concluído</span></summary><div class="project-body"><p>Landing page e área de aulas da formação.</p><ul class="subprojects"><li class="subproject"><a href="./USCS/formacao-em-futebol-e-futsal/index.html">Landing page</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./USCS/formacao-em-futebol-e-futsal/acesso-liberado/index.html">Acesso liberado / aulas</a><span class="status concluido">Concluído</span></li></ul></div></details>
+        </div>
       </section>
 
       <footer>Consulte o <a href="./README.md">README</a> e o <a href="./SECURITY.md">checklist de segurança</a> antes de compartilhar novos arquivos.</footer>
