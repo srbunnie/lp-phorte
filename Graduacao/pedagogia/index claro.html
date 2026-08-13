@@ -255,30 +255,17 @@
     .carousel-fade.right{right:0;background:linear-gradient(-90deg,#f7f5f3,transparent)}
 
     /* ── DEPOIMENTOS ── */
-    .testimonial-stage{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:stretch}
-    .testimonial-fixed{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:36px 0}
-    .testimonial-fixed h2{max-width:520px}
-    .testimonial-fixed>p{font-size:1.02rem;max-width:480px}
-    .testimonial-fixed-card{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;max-width:500px;margin-top:10px;padding:24px;border-radius:16px;background:#fff;border:1px solid rgba(201,45,45,.18);box-shadow:0 18px 38px rgba(31,31,31,.08)}
-    .testimonial-fixed-mark{width:62px;height:62px;border-radius:16px;background:var(--red);color:#fff;display:grid;place-items:center;font:800 1.45rem var(--title);box-shadow:inset 0 -6px 0 rgba(245,197,66,.8),0 10px 22px rgba(201,45,45,.28)}
-    .testimonial-fixed-card strong{display:block;font:800 clamp(1.18rem,1.7vw,1.55rem)/1.15 var(--title);color:var(--ink);letter-spacing:-.03em}
-    .testimonial-fixed-card span{display:block;margin-top:6px;color:var(--muted);font-size:.92rem}
-    .testimonial-rotator{min-width:0}
-    .testimonial-carousel-wrap{position:relative;width:100%}
-    .testimonial-carousel{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 12px;scrollbar-width:none;-ms-overflow-style:none}
-    .testimonial-carousel::-webkit-scrollbar{display:none}
-    .testimonial-slide{flex:0 0 100%;scroll-snap-align:start}
-    .testimonial-card{position:relative;min-height:360px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 18px 44px rgba(31,31,31,.09);overflow:hidden;display:flex;flex-direction:column}
-    .testimonial-video-slot{position:relative;flex:1;background:#161616;min-height:260px;display:flex;align-items:center;justify-content:center;color:#fff}
-    .testimonial-video-slot span.video-play{position:relative}
-    .testimonial-slot-label{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;font:700 .68rem var(--title);letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
-    .testimonial-person{padding:18px 22px;border-top:1px solid var(--line)}
+    .testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;max-width:940px;margin-left:auto;margin-right:auto}
+    .testimonial-card{position:relative;border-radius:18px;background:#fff;box-shadow:0 18px 40px rgba(31,31,31,.1);overflow:hidden;transition:.2s transform,.2s box-shadow}
+    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 22px 46px rgba(31,31,31,.14)}
+    .testimonial-video-slot{position:relative;aspect-ratio:4/5;background:#161616 center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff}
+    .testimonial-video-slot:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 55%,rgba(0,0,0,.55))}
+    .testimonial-video-slot iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-play-trigger{position:relative;z-index:1;width:100%;height:100%;background:none;border:0;padding:0;cursor:pointer;display:flex;align-items:flex-end;justify-content:flex-start}
+    .video-play{width:44px;height:44px;margin:0 0 18px 18px;border-radius:50%;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(2px);color:#fff;display:grid;place-items:center;position:relative;z-index:1;font-size:.85rem}
+    .testimonial-person{padding:16px 18px}
     .testimonial-person strong{display:block;font:800 .95rem var(--title);color:var(--ink)}
     .testimonial-person span{font-size:.82rem;color:var(--muted)}
-    .testimonial-dots{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
-    .testimonial-dot{width:8px;height:8px;border-radius:50%;border:0;background:#d7d0c9;padding:0}
-    .testimonial-dot.is-active{background:var(--red)}
-    .video-play{width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;position:relative;z-index:1;font-size:1rem}
 
     /* MATRIZ CURRICULAR */
     .accordion{display:grid;gap:10px}
@@ -403,8 +390,7 @@
       .audience-grid .audience-card{grid-column:span 1!important}
       .audience-grid .audience-card:nth-child(7){grid-column:span 2!important}
       .coord-photo{min-height:300px}
-      .testimonial-stage{grid-template-columns:1fr;gap:24px}
-      .testimonial-fixed{padding:0}
+      .testimonial-grid{grid-template-columns:repeat(2,1fr)}
     }
     @media(max-width:620px){
       .container{width:min(var(--max),calc(100% - 32px))}
@@ -432,7 +418,7 @@
       #professores .section-head{padding-left:0;padding-right:0}
       .teacher{flex:0 0 82vw}
       .teacher-photo,.teacher-photo-placeholder{height:260px}
-      .testimonial-fixed-card{grid-template-columns:1fr;padding:18px}
+      .testimonial-grid{grid-template-columns:1fr;max-width:320px}
     }
   </style>
 </head>
@@ -745,7 +731,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Fatima Bonifacio</div>
+              <img class="teacher-photo" src="fotos%20professores/Fatima%20Bonif%C3%A1cio_.webp" alt="Professora Fatima Bonifacio">
               <div class="teacher-body">
                 <h3>Fatima Bonifacio</h3>
                 <span class="teacher-role">Psicopedagoga</span>
@@ -753,7 +739,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Agleide Vicente</div>
+              <img class="teacher-photo" src="fotos%20professores/Agleide%20Vicente_.webp" alt="Professora Agleide Vicente">
               <div class="teacher-body">
                 <h3>Agleide Vicente</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -761,7 +747,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Letícia Streit</div>
+              <img class="teacher-photo" src="fotos%20professores/Let%C3%ADcia%20Streit.webp" alt="Professora Letícia Streit">
               <div class="teacher-body">
                 <h3>Letícia Streit</h3>
                 <span class="teacher-role">Mestra e doutoranda em Educação</span>
@@ -769,7 +755,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Lisette Rocha</div>
+              <img class="teacher-photo" src="fotos%20professores/Lisette%20Rocha.webp" alt="Professora Lisette Rocha">
               <div class="teacher-body">
                 <h3>Lisette Rocha</h3>
                 <span class="teacher-role">Intérprete de Libras</span>
@@ -777,7 +763,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Andrea Costa</div>
+              <img class="teacher-photo" src="fotos%20professores/Andrea%20Costa.webp" alt="Professora Andrea Costa">
               <div class="teacher-body">
                 <h3>Andrea Costa</h3>
                 <span class="teacher-role">Mestre e doutoranda em Educação</span>
@@ -785,7 +771,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Matilde Aparecida</div>
+              <img class="teacher-photo" src="fotos%20professores/Matilde%20Aparecida_.webp" alt="Professora Matilde Aparecida">
               <div class="teacher-body">
                 <h3>Matilde Aparecida</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -793,7 +779,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Márcia Aparecida</div>
+              <img class="teacher-photo" src="fotos%20professores/M%C3%A1rcia%20Aparecida_.webp" alt="Professora Márcia Aparecida">
               <div class="teacher-body">
                 <h3>Márcia Aparecida</h3>
                 <span class="teacher-role">Mestre em Ciências</span>
@@ -801,7 +787,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Mariama Palhares</div>
+              <img class="teacher-photo" src="fotos%20professores/Mariama%20Palhares.webp" alt="Professora Mariama Palhares">
               <div class="teacher-body">
                 <h3>Mariama Palhares</h3>
                 <span class="teacher-role">Mestranda em Educação</span>
@@ -809,7 +795,7 @@
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Ana Lucia</div>
+              <img class="teacher-photo" src="fotos%20professores/Ana%20Lucia_.webp" alt="Professora Ana Lucia">
               <div class="teacher-body">
                 <h3>Ana Lucia</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -826,48 +812,39 @@
 <!-- ── 12. DEPOIMENTOS EM VÍDEO ── -->
     <section class="section-pad people" id="depoimentos">
       <div class="container">
-        <div class="testimonial-stage">
-          <div class="testimonial-fixed">
-            <span class="eyebrow">Depoimentos em vídeo</span>
-            <h2>Quem vive a Phorte conta melhor.</h2>
-            <p>Conheça experiências de quem escolheu a Faculdade Phorte para construir sua trajetória na educação.</p>
-          </div>
-
-          <div class="testimonial-rotator">
-            <div class="carousel-nav">
-              <button type="button" id="testimonial-prev" aria-label="Depoimento anterior">←</button>
-              <button type="button" id="testimonial-next" aria-label="Próximo depoimento">→</button>
+        <div class="section-head center">
+          <span class="eyebrow">Depoimentos em vídeo</span>
+          <h2>Quem vive a Phorte conta melhor.</h2>
+          <p>Conheça experiências de quem escolheu a Faculdade Phorte para construir sua trajetória na educação.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-video-slot" data-video-id="bJwRpDj-5hI" style="background-image:url(https://img.youtube.com/vi/bJwRpDj-5hI/hqdefault.jpg)">
+              <button class="video-play-trigger" type="button" aria-label="Reproduzir depoimento de Rosângela Simões Silva"><span class="video-play">▶</span></button>
             </div>
-            <div class="testimonial-carousel-wrap">
-              <div class="testimonial-carousel" id="testimonial-carousel">
-                <article class="testimonial-slide">
-                  <div class="testimonial-card">
-                    <button class="testimonial-video-slot" type="button" data-video-id="bJwRpDj-5hI" data-video-title="Depoimento em vídeo">
-                      <span class="testimonial-slot-label">Depoimento 1 · Espaço para vídeo</span>
-                      <span class="video-play">▶</span>
-                    </button>
-                    <div class="testimonial-person">
-                      <strong>Nome da pessoa</strong>
-                      <span>Identificação</span>
-                    </div>
-                  </div>
-                </article>
-                <article class="testimonial-slide">
-                  <div class="testimonial-card">
-                    <button class="testimonial-video-slot" type="button" data-video-id="bJwRpDj-5hI" data-video-title="Depoimento em vídeo">
-                      <span class="testimonial-slot-label">Depoimento 2 · Espaço para vídeo</span>
-                      <span class="video-play">▶</span>
-                    </button>
-                    <div class="testimonial-person">
-                      <strong>Nome da pessoa</strong>
-                      <span>Identificação</span>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="testimonial-dots" id="testimonial-dots" aria-label="Navegação dos depoimentos"></div>
+            <div class="testimonial-person">
+              <strong>Rosângela Simões Silva</strong>
+              <span>Aluna de Pedagogia</span>
             </div>
-          </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-video-slot" data-video-id="lB8999z0MsA" style="background-image:url(https://img.youtube.com/vi/lB8999z0MsA/hqdefault.jpg)">
+              <button class="video-play-trigger" type="button" aria-label="Reproduzir depoimento de Maiara"><span class="video-play">▶</span></button>
+            </div>
+            <div class="testimonial-person">
+              <strong>Maiara</strong>
+              <span>Aluna de Pedagogia</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-video-slot" data-video-id="vLShG2rvk84" style="background-image:url(https://img.youtube.com/vi/vLShG2rvk84/hqdefault.jpg)">
+              <button class="video-play-trigger" type="button" aria-label="Reproduzir depoimento de Paulo Santos"><span class="video-play">▶</span></button>
+            </div>
+            <div class="testimonial-person">
+              <strong>Paulo Santos</strong>
+              <span>Aluno de Pedagogia</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1181,7 +1158,6 @@ function initPedagogiaPage() {
   }
 
   setupCarousel('teacher-carousel', 'teacher-prev', 'teacher-next', '.teacher', 1);
-  setupCarousel('testimonial-carousel', 'testimonial-prev', 'testimonial-next', '.testimonial-slide', 1, 'testimonial-dots');
 
   // Vídeos: reproduzir em modal, sem abrir outra página.
   const videoModal = document.getElementById('video-modal');
@@ -1193,7 +1169,7 @@ function initPedagogiaPage() {
     if (videoFrame) videoFrame.src = '';
   };
 
-  document.querySelectorAll('[data-video-id]').forEach((trigger) => {
+  document.querySelectorAll('[data-video-id]:not(.testimonial-video-slot)').forEach((trigger) => {
     if (trigger.dataset.videoReady === 'true') return;
     trigger.dataset.videoReady = 'true';
     trigger.addEventListener('click', () => {
@@ -1215,6 +1191,22 @@ function initPedagogiaPage() {
       if (event.target === videoModal) closeVideoModal();
     });
   }
+
+  // Depoimentos: reproduzir o vídeo direto no card, sem modal.
+  document.querySelectorAll('.testimonial-video-slot').forEach((slot) => {
+    if (slot.dataset.videoReady === 'true') return;
+    slot.dataset.videoReady = 'true';
+    slot.addEventListener('click', () => {
+      const videoId = slot.dataset.videoId;
+      if (!videoId) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      slot.innerHTML = '';
+      slot.appendChild(iframe);
+    });
+  });
 
   // Formulário de inscrição inline.
   const enrollmentSuccess = document.getElementById('enrollment-success');

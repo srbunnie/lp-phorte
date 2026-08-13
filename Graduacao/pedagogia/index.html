@@ -308,34 +308,19 @@
     .carousel-fade.right{right:0;background:linear-gradient(-90deg,#f7f5f3,transparent)}
 
     /* ── DEPOIMENTOS ── */
-    .testimonial-stage{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:stretch}
-    .testimonial-fixed{display:flex;flex-direction:column;justify-content:center;gap:22px;padding:36px 0}
-    .testimonial-fixed h2{max-width:520px}
-    .testimonial-fixed>p{font-size:1.02rem;max-width:480px}
-    .testimonial-fixed-card{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;max-width:500px;margin-top:10px;padding:24px;border-radius:16px;background:#fff;border:1px solid rgba(201,45,45,.18);box-shadow:0 18px 38px rgba(60,36,36,.08)}
-    .testimonial-fixed-mark{width:62px;height:62px;border-radius:16px;background:var(--red);color:#fff;display:grid;place-items:center;font:800 1.45rem var(--title);box-shadow:0 10px 22px rgba(201,45,45,.28)}
-    .testimonial-fixed-card strong{display:block;font:800 clamp(1.18rem,1.7vw,1.55rem)/1.15 var(--title);color:var(--ink);letter-spacing:-.03em}
-    .testimonial-fixed-card span{display:block;margin-top:6px;color:var(--muted);font-size:.92rem}
-    .testimonial-rotator{min-width:0}
-    .testimonial-carousel-wrap{position:relative;width:100%}
-    .testimonial-carousel{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 0 12px;scrollbar-width:none;-ms-overflow-style:none}
-    .testimonial-carousel::-webkit-scrollbar{display:none}
-    .testimonial-slide{flex:0 0 100%;scroll-snap-align:start}
-    .testimonial-card{position:relative;min-height:490px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 18px 44px rgba(60,36,36,.09);overflow:hidden}
-    .testimonial-media{position:absolute;inset:0;background:#161616}
-    .testimonial-video-link{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background-size:cover;background-position:center;color:#fff}
-    .testimonial-video-link:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.55))}
-    .testimonial-video-caption{position:absolute;left:24px;right:24px;bottom:24px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 17px;border-radius:14px;background:rgba(255,255,255,.92);color:var(--ink);box-shadow:0 12px 25px rgba(0,0,0,.22)}
-    .testimonial-video-caption strong{display:block;font:800 .92rem var(--title)}
-    .testimonial-video-caption span{display:block;font-size:.78rem;color:var(--muted)}
-    .testimonial-text-card{display:grid;grid-template-rows:240px 1fr;min-height:490px}
-    .testimonial-text-image{background-size:cover;background-position:center}
-    .testimonial-text-body{padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:22px}
-    .testimonial-text-body p{font:700 clamp(1.05rem,1.4vw,1.28rem)/1.48 var(--title);color:var(--ink);letter-spacing:-.02em}
-    .testimonial-person strong{display:block;font:800 .95rem var(--title);color:var(--ink)}
-    .testimonial-person span{font-size:.82rem;color:var(--muted)}
-    .testimonial-dots{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
-    .testimonial-dot{width:8px;height:8px;border-radius:50%;border:0;background:#d7d0c9;padding:0}
+    .testimonial-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:36px}
+    .testimonial-card{position:relative;border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 18px 40px rgba(60,36,36,.09);overflow:hidden;display:flex;flex-direction:column;transition:.2s transform,.2s box-shadow}
+    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 22px 46px rgba(60,36,36,.14)}
+    .testimonial-media{position:relative;aspect-ratio:4/5;background:#161616 center/cover no-repeat}
+    .testimonial-video-link{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:flex-start;background-size:cover;background-position:center;color:#fff}
+    .testimonial-video-link:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 55%,rgba(0,0,0,.55))}
+    .testimonial-media iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-play{width:40px;height:40px;margin:0 0 16px 16px;border-radius:50%;background:rgba(255,255,255,.16);border:1.5px solid rgba(255,255,255,.7);backdrop-filter:blur(2px);color:#fff;display:grid;place-items:center;position:relative;z-index:1;font-size:.78rem}
+    .testimonial-text-image{aspect-ratio:4/5;background-size:cover;background-position:center}
+    .testimonial-person{padding:14px 16px}
+    .testimonial-person strong{display:block;font:800 .88rem var(--title);color:var(--ink)}
+    .testimonial-person span{font-size:.76rem;color:var(--muted)}
+    .testimonial-person--text p{font-size:.82rem;line-height:1.45;color:var(--ink);margin:0 0 10px}
     .testimonial-dot.is-active{background:var(--red)}
     .video-play{width:62px;height:62px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;position:relative;z-index:1;font-size:1.1rem}
 
@@ -559,10 +544,7 @@
       .coord-photo{min-height:300px}
       .teacher{flex-basis:calc((100% - 44px)/3)}
       .teacher-photo,.teacher-photo-placeholder{height:220px}
-      .testimonial-stage{grid-template-columns:1fr;gap:24px}
-      .testimonial-fixed{padding:0}
-      .testimonial-card{min-height:430px}
-      .testimonial-text-card{grid-template-rows:210px 1fr;min-height:430px}
+      .testimonial-grid{grid-template-columns:repeat(3,1fr)}
     }
     @media(max-width:760px){
       .teacher{flex-basis:calc((100% - 22px)/2)}
@@ -600,11 +582,7 @@
       .career-grid{grid-template-columns:1fr}
       .teacher{flex:0 0 82vw}
       .teacher-photo,.teacher-photo-placeholder{height:230px}
-      .testimonial-fixed-card{grid-template-columns:1fr;padding:18px}
-      .testimonial-card{min-height:390px}
-      .testimonial-text-card{grid-template-rows:180px 1fr;min-height:390px}
-      .testimonial-text-body{padding:22px}
-      .testimonial-video-caption{left:14px;right:14px;bottom:14px;align-items:flex-start}
+      .testimonial-grid{grid-template-columns:1fr}
     }
     @media(max-width:620px){
       .audience-grid{grid-template-columns:1fr!important}
@@ -1067,7 +1045,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Fatima Bonifacio</div>
+              <img class="teacher-photo" src="fotos%20professores/Fatima%20Bonif%C3%A1cio_.webp" alt="Professora Fatima Bonifacio">
               <div class="teacher-body">
                 <h3>Fatima Bonifacio</h3>
                 <span class="teacher-role">Psicopedagoga</span>
@@ -1075,7 +1053,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Agleide Vicente</div>
+              <img class="teacher-photo" src="fotos%20professores/Agleide%20Vicente_.webp" alt="Professora Agleide Vicente">
               <div class="teacher-body">
                 <h3>Agleide Vicente</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -1083,7 +1061,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Letícia Streit</div>
+              <img class="teacher-photo" src="fotos%20professores/Let%C3%ADcia%20Streit.webp" alt="Professora Letícia Streit">
               <div class="teacher-body">
                 <h3>Letícia Streit</h3>
                 <span class="teacher-role">Mestra e doutoranda em Educação</span>
@@ -1091,7 +1069,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Lisette Rocha</div>
+              <img class="teacher-photo" src="fotos%20professores/Lisette%20Rocha.webp" alt="Professora Lisette Rocha">
               <div class="teacher-body">
                 <h3>Lisette Rocha</h3>
                 <span class="teacher-role">Intérprete de Libras</span>
@@ -1099,7 +1077,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Andrea Costa</div>
+              <img class="teacher-photo" src="fotos%20professores/Andrea%20Costa.webp" alt="Professora Andrea Costa">
               <div class="teacher-body">
                 <h3>Andrea Costa</h3>
                 <span class="teacher-role">Mestre e doutoranda em Educação</span>
@@ -1107,7 +1085,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Matilde Aparecida</div>
+              <img class="teacher-photo" src="fotos%20professores/Matilde%20Aparecida_.webp" alt="Professora Matilde Aparecida">
               <div class="teacher-body">
                 <h3>Matilde Aparecida</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -1115,7 +1093,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Márcia Aparecida</div>
+              <img class="teacher-photo" src="fotos%20professores/M%C3%A1rcia%20Aparecida_.webp" alt="Professora Márcia Aparecida">
               <div class="teacher-body">
                 <h3>Márcia Aparecida</h3>
                 <span class="teacher-role">Mestre em Ciências</span>
@@ -1123,7 +1101,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Mariama Palhares</div>
+              <img class="teacher-photo" src="fotos%20professores/Mariama%20Palhares.webp" alt="Professora Mariama Palhares">
               <div class="teacher-body">
                 <h3>Mariama Palhares</h3>
                 <span class="teacher-role">Mestranda em Educação</span>
@@ -1131,7 +1109,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
               </div>
             </article>
             <article class="teacher">
-              <div class="teacher-photo-placeholder">Foto de Ana Lucia</div>
+              <img class="teacher-photo" src="fotos%20professores/Ana%20Lucia_.webp" alt="Professora Ana Lucia">
               <div class="teacher-body">
                 <h3>Ana Lucia</h3>
                 <span class="teacher-role">Mestre em Educação</span>
@@ -1145,82 +1123,62 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
 
     <!-- ── DEPOIMENTOS ── -->
     <section class="section-pad people" id="depoimentos">
-      <div class="container full-bleed-carousel">
-        <div class="testimonial-stage">
-          <div class="testimonial-fixed">
-            <span class="eyebrow">Depoimentos</span>
-            <h2>Quem vive a Phorte conta melhor.</h2>
-            <p>Conheça experiências de quem escolheu a Faculdade Phorte para construir sua trajetória na educação.</p>
-            <div class="testimonial-fixed-card">
-              <div class="testimonial-fixed-mark">+</div>
-              <div>
-                <strong>Histórias reais de formação e transformação</strong>
-                <span>Depoimentos em vídeo e texto mostram como a prática, os encontros e as aulas ao vivo apoiam a jornada na Pedagogia.</span>
-              </div>
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Depoimentos</span>
+          <h2>Quem vive a Phorte conta melhor.</h2>
+          <p>Conheça experiências de quem escolheu a Faculdade Phorte para construir sua trajetória na educação.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-media">
+              <button class="testimonial-video-link" type="button" data-video-id="bJwRpDj-5hI" data-video-title="Depoimento de Rosângela Simões Silva" style="background-image:url(https://img.youtube.com/vi/bJwRpDj-5hI/hqdefault.jpg)">
+                <span class="video-play">▶</span>
+              </button>
             </div>
-          </div>
-
-          <div class="testimonial-rotator">
-            <div class="carousel-nav">
-              <button type="button" id="testimonial-prev" aria-label="Depoimento anterior">←</button>
-              <button type="button" id="testimonial-next" aria-label="Próximo depoimento">→</button>
+            <div class="testimonial-person">
+              <strong>Rosângela Simões Silva</strong>
+              <span>Aluna de Pedagogia</span>
             </div>
-            <div class="testimonial-carousel-wrap">
-              <div class="testimonial-carousel" id="testimonial-carousel">
-                <article class="testimonial-slide">
-                  <div class="testimonial-card">
-                    <div class="testimonial-media">
-                      <button class="testimonial-video-link" type="button" data-video-id="bJwRpDj-5hI" data-video-title="Depoimento em vídeo" style="background-image:url(https://img.youtube.com/vi/bJwRpDj-5hI/hqdefault.jpg)">
-                        <span class="video-play">▶</span>
-                        <span class="testimonial-video-caption">
-                          <span><strong>Depoimento em vídeo</strong><span>Clique para assistir</span></span>
-                          <span class="arrow">→</span>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </article>
-                <article class="testimonial-slide">
-                  <div class="testimonial-card testimonial-text-card">
-                    <div class="testimonial-text-image" style="background-image:url(https://faculdadephorte.edu.br/wp-content/uploads/2026/06/desenvolvimento-infantil-na-abordagem-pikler-scaled.jpg)"></div>
-                    <div class="testimonial-text-body">
-                      <p>"Escolhi a Phorte porque queria uma formação próxima da prática. As aulas conectam teoria, escola e realidade profissional."</p>
-                      <div class="testimonial-person">
-                        <strong>Aluna de Pedagogia</strong>
-                        <span>Graduação semipresencial</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <article class="testimonial-slide">
-                  <div class="testimonial-card">
-                    <div class="testimonial-media">
-                      <button class="testimonial-video-link" type="button" data-video-id="bJwRpDj-5hI" data-video-title="Conheça uma história de formação" style="background-image:url(https://faculdadephorte.edu.br/wp-content/uploads/2026/06/257e51401c0e6442b77f222a6804a34b.jpg)">
-                        <span class="video-play">▶</span>
-                        <span class="testimonial-video-caption">
-                          <span><strong>Conheça uma história</strong><span>Troque o link e a capa quando quiser</span></span>
-                          <span class="arrow">→</span>
-                        </span>
-                      </button>
-                    </div>
-                  </div>
-                </article>
-                <article class="testimonial-slide">
-                  <div class="testimonial-card testimonial-text-card">
-                    <div class="testimonial-text-image" style="background-image:url(https://faculdadephorte.edu.br/wp-content/uploads/2026/02/rubia-professora-phorte.webp)"></div>
-                    <div class="testimonial-text-body">
-                      <p>"A modalidade semipresencial facilita a organização dos estudos sem perder a troca ao vivo com docentes e colegas."</p>
-                      <div class="testimonial-person">
-                        <strong>Estudante Phorte</strong>
-                        <span>Aulas ao vivo e encontros presenciais</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="testimonial-dots" id="testimonial-dots" aria-label="Navegação dos depoimentos"></div>
+          </article>
+          <article class="testimonial-card testimonial-text-card">
+            <div class="testimonial-text-image" style="background-image:url(https://faculdadephorte.edu.br/wp-content/uploads/2026/06/desenvolvimento-infantil-na-abordagem-pikler-scaled.jpg)"></div>
+            <div class="testimonial-person testimonial-person--text">
+              <p>"Escolhi a Phorte porque queria uma formação próxima da prática. As aulas conectam teoria, escola e realidade profissional."</p>
+              <strong>Aluna de Pedagogia</strong>
+              <span>Graduação semipresencial</span>
             </div>
-          </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-media">
+              <button class="testimonial-video-link" type="button" data-video-id="lB8999z0MsA" data-video-title="Depoimento de Maiara" style="background-image:url(https://img.youtube.com/vi/lB8999z0MsA/hqdefault.jpg)">
+                <span class="video-play">▶</span>
+              </button>
+            </div>
+            <div class="testimonial-person">
+              <strong>Maiara</strong>
+              <span>Aluna de Pedagogia</span>
+            </div>
+          </article>
+          <article class="testimonial-card testimonial-text-card">
+            <div class="testimonial-text-image" style="background-image:url(https://faculdadephorte.edu.br/wp-content/uploads/2026/02/rubia-professora-phorte.webp)"></div>
+            <div class="testimonial-person testimonial-person--text">
+              <p>"A modalidade semipresencial facilita a organização dos estudos sem perder a troca ao vivo com docentes e colegas."</p>
+              <strong>Estudante Phorte</strong>
+              <span>Aulas ao vivo e encontros presenciais</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-media">
+              <button class="testimonial-video-link" type="button" data-video-id="vLShG2rvk84" data-video-title="Depoimento de Paulo Santos" style="background-image:url(https://img.youtube.com/vi/vLShG2rvk84/hqdefault.jpg)">
+                <span class="video-play">▶</span>
+              </button>
+            </div>
+            <div class="testimonial-person">
+              <strong>Paulo Santos</strong>
+              <span>Aluno de Pedagogia</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -1439,7 +1397,6 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
     }
 
     setupCarousel('teacher-carousel', 'teacher-prev', 'teacher-next', '.teacher', 'auto');
-    setupCarousel('testimonial-carousel', 'testimonial-prev', 'testimonial-next', '.testimonial-slide', 1, 'testimonial-dots');
 
     // Vídeos: reproduzir em modal, sem abrir outra página.
     const videoModal = document.getElementById('video-modal');
@@ -1451,7 +1408,7 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
       if (videoFrame) videoFrame.src = '';
     };
 
-    document.querySelectorAll('[data-video-id]').forEach((trigger) => {
+    document.querySelectorAll('[data-video-id]:not(.testimonial-video-link)').forEach((trigger) => {
       trigger.addEventListener('click', () => {
         if (!videoModal || !videoFrame) return;
         const videoId = trigger.dataset.videoId;
@@ -1464,6 +1421,21 @@ Com um currículo que prioriza a prática, preparamos você para atuar com excel
       });
     });
     document.querySelector('[data-video-close]')?.addEventListener('click', closeVideoModal);
+
+    // Depoimentos: reproduzir o vídeo direto no card, sem modal.
+    document.querySelectorAll('.testimonial-video-link').forEach((trigger) => {
+      trigger.addEventListener('click', () => {
+        const videoId = trigger.dataset.videoId;
+        const media = trigger.closest('.testimonial-media');
+        if (!videoId || !media) return;
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&playsinline=1`;
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+        iframe.allowFullscreen = true;
+        media.innerHTML = '';
+        media.appendChild(iframe);
+      });
+    });
     videoModal?.addEventListener('click', (event) => {
       if (event.target === videoModal) closeVideoModal();
     });
