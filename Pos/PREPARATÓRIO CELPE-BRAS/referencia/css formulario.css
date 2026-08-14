@@ -1,0 +1,95 @@
+.formulario-celpe .elementor-form {
+  display: grid;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid rgba(5, 9, 22, 0.08);
+  border-radius: 26px;
+}
+
+.formulario-celpe .elementor-field-group {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 0 !important;
+}
+
+.formulario-celpe .elementor-field-label {
+  color: #71798a;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.formulario-celpe .elementor-field,
+.formulario-celpe input,
+.formulario-celpe select,
+.formulario-celpe textarea {
+  min-height: 54px;
+  width: 100%;
+  border: 1px solid #dfe3eb !important;
+  border-radius: 14px !important;
+  color: #050916 !important;
+  font: inherit;
+  outline: 0;
+  padding: 0 16px;
+  box-shadow: none !important;
+  transition:
+    border-color 220ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.formulario-celpe textarea {
+  min-height: 120px;
+  padding-top: 14px;
+}
+
+.formulario-celpe input:focus,
+.formulario-celpe select:focus,
+.formulario-celpe textarea:focus {
+  border-color: #07bfa5 !important;
+  box-shadow: 0 0 0 5px rgba(7, 191, 165, 0.12) !important;
+  transform: translateY(-1px);
+}
+
+.formulario-celpe .elementor-button {
+  min-height: 58px;
+  width: 100%;
+  margin-top: 4px;
+  border: 0;
+  border-radius: 999px;
+  background: #07bfa5 !important;
+  color: #fff !important;
+  box-shadow: 0 20px 50px rgba(7, 191, 165, 0.22);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition:
+    transform 220ms ease,
+    background 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.formulario-celpe .elementor-button:hover {
+  background: #009e8a !important;
+  transform: translateY(-3px) scale(1.015);
+}
+
+.formulario-celpe .elementor-message {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .formulario-celpe .elementor-form {
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  .formulario-celpe .elementor-button {
+    min-height: 54px;
+    font-size: 0.7rem;
+  }
+}
