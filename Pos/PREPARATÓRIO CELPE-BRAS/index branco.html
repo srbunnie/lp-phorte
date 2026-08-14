@@ -1,0 +1,1588 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preparat&oacute;rio Celpe-Bras | Faculdade Phorte</title>
+    <meta
+      name="description"
+      content="Curso preparat&oacute;rio oficial para o Celpe-Bras com o Prof. Ms. Fernando Pedretti. 24h ao vivo, 8 semanas, turma reduzida. Inscreva-se na Faculdade Phorte, Posto Aplicador Credenciado pelo MEC."
+    />
+    <meta name="theme-color" content="#fbfbfd" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    />
+    <style>
+:root {
+  --bg: #fbfbfd;
+  --bg-deep: #f2f3f7;
+  --panel: #ffffff;
+  --panel-soft: #f6f7fb;
+  --ink: #050916;
+  --white: #050916;
+  --muted: #6a7280;
+  --soft: #3d4453;
+  --red: #f24747;
+  --red-dark: #d83636;
+  --green: #07bfa5;
+  --green-dark: #009e8a;
+  --line: rgba(5, 9, 22, 0.1);
+  --shadow-red: 0 22px 60px rgba(242, 71, 71, 0.22);
+  --shadow-card: 0 24px 60px rgba(15, 23, 42, 0.1);
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --max: 1120px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Plus Jakarta Sans", Arial, sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(242, 71, 71, 0.07), transparent 34rem),
+    linear-gradient(180deg, #ffffff 0%, var(--bg) 42%, var(--bg-deep) 100%);
+  overflow-x: hidden;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(5, 9, 22, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 9, 22, 0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 78%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.section-pad {
+  padding: 88px max(22px, calc((100vw - var(--max)) / 2));
+}
+
+.hero {
+  position: relative;
+  min-height: 760px;
+  padding-top: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.nav {
+  position: absolute;
+  top: 28px;
+  right: max(22px, calc((100vw - var(--max)) / 2));
+  left: max(22px, calc((100vw - var(--max)) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo-card {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid rgba(5, 9, 22, 0.1);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);
+}
+
+.brand-logo-card img {
+  display: block;
+  width: auto;
+  max-width: 150px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.brand-logo-card.logo-celpe img {
+  height: 38px;
+}
+
+.brand-logo-card.logo-phorte img {
+  height: 32px;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 34px;
+  background: rgba(5, 9, 22, 0.16);
+}
+
+.brand-copy {
+  max-width: 170px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.nav-cta {
+  padding: 13px 21px;
+  border: 1px solid rgba(5, 9, 22, 0.14);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  border-color: rgba(242, 71, 71, 0.58);
+  background: rgba(242, 71, 71, 0.14);
+}
+
+.hero-content {
+  width: min(950px, 100%);
+  margin: 86px auto 0;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 26px;
+  padding: 7px 13px;
+  border: 1px solid rgba(242, 71, 71, 0.48);
+  border-radius: 999px;
+  color: var(--red);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+.hero-title {
+  max-width: 920px;
+  margin: 0 auto;
+  color: var(--ink);
+  font-size: clamp(3rem, 7.25vw, 6.35rem);
+  font-weight: 900;
+  line-height: 1.03;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.hero-title span {
+  display: block;
+  color: var(--red);
+}
+
+.hero-subtitle {
+  max-width: 720px;
+  margin: 32px auto 0;
+  color: var(--soft);
+  font-size: clamp(1rem, 1.7vw, 1.38rem);
+  line-height: 1.65;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 42px;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease, border-color 220ms ease;
+}
+
+.button-primary {
+  min-width: 290px;
+  padding: 0 34px;
+  background: var(--red);
+  color: #fff;
+  box-shadow: var(--shadow-red);
+}
+
+.button-primary:hover {
+  transform: translateY(-3px) scale(1.015);
+}
+
+.button-ghost {
+  min-width: 178px;
+  padding: 0 28px;
+  border: 1px solid rgba(5, 9, 22, 0.16);
+  background: rgba(5, 9, 22, 0.03);
+  color: var(--ink);
+}
+
+.button-ghost:hover {
+  transform: translateY(-3px);
+  border-color: rgba(5, 9, 22, 0.3);
+  background: rgba(5, 9, 22, 0.06);
+}
+
+.hero-metrics {
+  display: grid;
+  max-width: 690px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 54px auto 0;
+}
+
+.hero-metrics div {
+  min-height: 112px;
+  padding: 22px 18px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.hero-metrics strong {
+  display: block;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero-metrics span {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero-glow {
+  position: absolute;
+  z-index: -1;
+  width: 280px;
+  height: 280px;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: 0.55;
+}
+
+.hero-glow-one {
+  top: 20%;
+  left: 11%;
+  background: rgba(242, 71, 71, 0.22);
+}
+
+.hero-glow-two {
+  right: 8%;
+  bottom: 20%;
+  background: rgba(7, 191, 165, 0.2);
+}
+
+.section-header {
+  max-width: 760px;
+}
+
+.section-header.centered {
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2.1rem, 5vw, 4.25rem);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.section-subtitle {
+  max-width: 620px;
+  margin: 22px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(290px, 0.75fr);
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.glass-card,
+.opportunity-panel,
+.teacher-panel,
+.benefit-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.intro-copy {
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.intro-copy p {
+  margin: 0;
+  color: var(--soft);
+  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  line-height: 1.76;
+}
+
+.intro-copy p + p {
+  margin-top: 20px;
+}
+
+.opportunity-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 34px;
+}
+
+.opportunity-panel::before {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 190px;
+  height: 190px;
+  border-radius: 999px;
+  content: "";
+  background: rgba(242, 71, 71, 0.16);
+  filter: blur(28px);
+}
+
+.panel-tag {
+  width: max-content;
+  margin-bottom: auto;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(7, 191, 165, 0.12);
+  color: var(--green-dark);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.opportunity-panel strong {
+  margin-top: 120px;
+  color: var(--ink);
+  font-size: 2.35rem;
+  font-weight: 900;
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+}
+
+.opportunity-panel p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.benefit-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  padding: 32px;
+  transition: transform 260ms ease, border-color 260ms ease, background 260ms ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(242, 71, 71, 0.3);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.14);
+}
+
+.benefit-icon {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(242, 71, 71, 0.1);
+  color: var(--red);
+  font-weight: 900;
+}
+
+.benefit-card h3 {
+  margin: 56px 0 12px;
+  color: var(--ink);
+  font-size: 1.45rem;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.benefit-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.teacher {
+  padding-top: 70px;
+}
+
+.teacher-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(290px, 0.65fr);
+  gap: 24px;
+  margin-top: 38px;
+}
+
+.teacher-copy {
+  padding: clamp(28px, 4vw, 48px);
+}
+
+.teacher-copy p {
+  margin: 0;
+  color: var(--soft);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  line-height: 1.76;
+}
+
+.teacher-copy p + p {
+  margin-top: 18px;
+}
+
+.teacher-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 34px;
+}
+
+.teacher-panel::before {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 190px;
+  height: 190px;
+  border-radius: 999px;
+  content: "";
+  background: rgba(7, 191, 165, 0.14);
+  filter: blur(28px);
+}
+
+.teacher-visual {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 26px;
+  border: 1px solid rgba(5, 9, 22, 0.1);
+  border-radius: 22px;
+  aspect-ratio: 16 / 10;
+  background: rgba(5, 9, 22, 0.04);
+  box-shadow: 0 22px 46px rgba(15, 23, 42, 0.12);
+}
+
+.teacher-visual::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, transparent 35%, rgba(5, 9, 22, 0.55)),
+    radial-gradient(circle at 78% 12%, rgba(242, 71, 71, 0.22), transparent 45%);
+}
+
+.teacher-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.teacher-panel .panel-tag {
+  position: relative;
+  z-index: 1;
+}
+
+.teacher-panel strong {
+  position: relative;
+  z-index: 1;
+  margin-top: 24px;
+  color: var(--ink);
+  font-size: 2.05rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.teacher-panel p {
+  position: relative;
+  z-index: 1;
+  margin: 18px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.schedule {
+  padding-top: 70px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.week-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  padding: 25px 22px 22px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: var(--shadow-card);
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+}
+
+.week-card::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background: radial-gradient(circle at 18% 0%, rgba(242, 71, 71, 0.16), transparent 13rem);
+  opacity: 0;
+  transition: opacity 260ms ease;
+}
+
+.week-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(242, 71, 71, 0.32);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.16);
+}
+
+.week-card:hover::after {
+  opacity: 1;
+}
+
+.card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #6f7788;
+  font-size: 0.66rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.week-number-label {
+  color: var(--red);
+}
+
+.week-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 14px;
+  margin-top: 18px;
+  color: #6f7788;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.week-meta span::before {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 8px;
+  border-radius: 2px;
+  content: "";
+  background: currentColor;
+  opacity: 0.65;
+}
+
+.week-card h3 {
+  margin: 22px 0 14px;
+  color: inherit;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.week-topic {
+  margin: 0;
+  color: #50596b;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.week-topic-highlight {
+  display: inline;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(242, 71, 71, 0.09);
+  color: var(--red-dark);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.week-description {
+  margin: 14px 0 0;
+  color: #636c7d;
+  font-size: 0.84rem;
+  line-height: 1.58;
+}
+
+.schedule-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.offer {
+  padding-top: 70px;
+}
+
+.offer-card {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 0;
+  max-width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.offer-details {
+  padding: clamp(30px, 4vw, 46px);
+}
+
+.offer-details h3 {
+  margin: 0 0 22px;
+  color: var(--ink);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.offer-list {
+  display: grid;
+  gap: 16px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.offer-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--soft);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.offer-list li::before {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  content: "";
+  background: rgba(7, 191, 165, 0.14);
+  box-shadow: inset 0 0 0 2px rgba(7, 191, 165, 0.55);
+}
+
+.offer-list li strong {
+  color: var(--ink);
+}
+
+.offer-approval {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel-soft);
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.offer-approval strong {
+  color: var(--ink);
+}
+
+.offer-price {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(30px, 4vw, 46px);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(242, 71, 71, 0.1), transparent 18rem),
+    var(--panel-soft);
+  text-align: center;
+}
+
+.offer-price::before {
+  position: absolute;
+  bottom: -90px;
+  left: -70px;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  content: "";
+  background: rgba(7, 191, 165, 0.16);
+  filter: blur(40px);
+}
+
+.offer-price-label {
+  position: relative;
+  z-index: 1;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.offer-price-value {
+  position: relative;
+  z-index: 1;
+  margin: 14px 0 6px;
+  color: var(--ink);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.offer-price-value span {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.offer-price-note {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.offer-price .button-primary {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.offer-price-guarantee {
+  position: relative;
+  z-index: 1;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.faq {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.faq-list {
+  display: grid;
+  max-width: 820px;
+  gap: 14px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 6px 26px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: var(--shadow-card);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  flex: 0 0 auto;
+  color: var(--red);
+  font-size: 1.4rem;
+  font-weight: 900;
+  content: "+";
+  transition: transform 220ms ease;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.68;
+}
+
+.footer {
+  padding: 64px max(22px, calc((100vw - var(--max)) / 2)) 34px;
+  background: #060b18;
+  color: #dce2f0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr 0.75fr;
+  gap: 70px;
+}
+
+.footer p,
+.footer a {
+  color: #c1c8d8;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer h3 {
+  margin: 0 0 22px;
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-grid a {
+  display: block;
+  margin-top: 12px;
+}
+
+.footer-brand {
+  margin-bottom: 22px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 62px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.11);
+  color: #9aa2b6;
+  font-size: 0.78rem;
+}
+
+.footer-bottom nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-bottom a {
+  color: #aeb6c8;
+  font-size: 0.78rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 760ms ease, transform 760ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .hero {
+    min-height: 700px;
+  }
+
+  .intro-grid,
+  .teacher-grid,
+  .offer-card {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offer-price {
+    text-align: left;
+  }
+
+  .offer-price-label,
+  .offer-price-note,
+  .offer-price-guarantee {
+    text-align: left;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 680px) {
+  .section-pad {
+    padding: 64px 18px;
+  }
+
+  .hero {
+    min-height: 760px;
+    padding-top: 104px;
+  }
+
+  .nav {
+    top: 18px;
+    right: 18px;
+    left: 18px;
+  }
+
+  .brand-divider,
+  .brand-copy {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 12px 15px;
+    font-size: 0.66rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.9rem, 13vw, 4.25rem);
+  }
+
+  .hero-actions,
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .button-primary,
+  .button-ghost {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero section-pad" data-parallax>
+        <nav class="nav reveal">
+          <a class="brand brand-logos" href="#" aria-label="Faculdade Phorte e Celpe-Bras">
+            <span class="brand-logo-card logo-celpe">
+              <img
+                src="https://posphorte.com.br/wp-content/uploads/2026/07/Logo_CELPE_BRAS.png"
+                alt="Logo Celpe-Bras"
+              />
+            </span>
+            <span class="brand-logo-card logo-phorte">
+              <img
+                src="https://posphorte.com.br/wp-content/uploads/2026/07/logo-phorte.png"
+                alt="Logo Faculdade Phorte"
+              />
+            </span>
+          </a>
+          <a class="nav-cta" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/preparatorio-celpe-bras/4429/1">Inscrever-se</a>
+        </nav>
+
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow reveal">Curso preparat&oacute;rio oficial</p>
+          <h1 class="hero-title reveal">
+            Conquiste sua Profici&ecirc;ncia em Portugu&ecirc;s:
+            <span>Preparat&oacute;rio Celpe-Bras!</span>
+          </h1>
+          <p class="hero-subtitle reveal">
+            8 semanas de aulas ao vivo com o Prof. Ms. Fernando Pedretti para voc&ecirc;
+            dominar o &uacute;nico exame oficial de portugu&ecirc;s do Brasil e abrir as
+            portas para o seu futuro acad&ecirc;mico e profissional.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary magnetic" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/preparatorio-celpe-bras/4429/1">Garantir minha vaga</a>
+            <a class="button button-ghost" href="#cronograma">Ver cronograma</a>
+          </div>
+          <div class="hero-metrics reveal" aria-label="Destaques do curso">
+            <div>
+              <strong data-count="8">0</strong>
+              <span>semanas de curso</span>
+            </div>
+            <div>
+              <strong data-count="24">0</strong>
+              <span>horas ao vivo</span>
+            </div>
+            <div>
+              <strong>MEC</strong>
+              <span>posto credenciado</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="intro section-pad" id="sobre">
+          <div class="section-header reveal">
+            <p class="eyebrow">Desbloqueie suas oportunidades no Brasil!</p>
+            <h2>O caminho premium para entender, treinar e chegar mais confiante ao Celpe-Bras.</h2>
+          </div>
+          <div class="intro-grid">
+            <article class="intro-copy glass-card reveal">
+              <p>
+                O Celpe-Bras &eacute; o passaporte que voc&ecirc; precisa para validar seu diploma,
+                ingressar em universidades brasileiras, seja gradua&ccedil;&atilde;o ou
+                p&oacute;s-gradua&ccedil;&atilde;o, ou se destacar no mercado de trabalho internacional.
+              </p>
+              <p>
+                Concedido pelo MEC, ele &eacute; o &uacute;nico certificado oficial de
+                profici&ecirc;ncia em portugu&ecirc;s como l&iacute;ngua estrangeira reconhecido pelo
+                governo brasileiro.
+              </p>
+              <p>
+                Para ajudar voc&ecirc; a alcan&ccedil;ar o n&iacute;vel avan&ccedil;ado, a Faculdade
+                Phorte, Posto Aplicador Credenciado pelo MEC, preparou um curso completo,
+                pr&aacute;tico e estruturado, com encontros ao vivo &agrave;s segundas e quartas.
+              </p>
+            </article>
+            <div class="opportunity-panel reveal">
+              <span class="panel-tag">Prepara&ccedil;&atilde;o guiada</span>
+              <strong>Rumo ao N&iacute;vel Avan&ccedil;ado</strong>
+              <p>Leitura, escrita, compreens&atilde;o e produ&ccedil;&atilde;o oral trabalhadas com foco total no que realmente cai na prova.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey section-pad">
+          <div class="section-header centered reveal">
+            <p class="eyebrow">O que voc&ecirc; vai encontrar nesse curso?</p>
+            <h2>Conte&uacute;do objetivo, especialista e foco total no resultado.</h2>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-card reveal">
+              <span class="benefit-icon">01</span>
+              <h3>Diagn&oacute;stico e constructo da prova</h3>
+              <p>Voc&ecirc; conhece a fundo o exame e identifica seu n&iacute;vel e suas dificuldades j&aacute; na semana 1.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon">02</span>
+              <h3>Parte Escrita, tarefa a tarefa</h3>
+              <p>Compreens&atilde;o e as quatro tarefas da Parte Escrita detalhadas uma a uma, com simulado ao final.</p>
+            </article>
+            <article class="benefit-card reveal">
+              <span class="benefit-icon">03</span>
+              <h3>Parte Oral com simulado real</h3>
+              <p>Entrevista, intera&ccedil;&atilde;o e elementos provocadores trabalhados at&eacute; o simulado final da Parte Oral.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="teacher section-pad" id="professor">
+          <div class="section-header reveal">
+            <p class="eyebrow">Professor do curso</p>
+            <h2>Prof. Ms. Fernando Pedretti</h2>
+          </div>
+          <div class="teacher-grid">
+            <article class="teacher-copy glass-card reveal">
+              <p>
+                &Eacute; professor de Portugu&ecirc;s como L&iacute;ngua Estrangeira (PLE) desde 2009,
+                idealizador do Descomplicando com Fernando, canal no YouTube que, desde 2019,
+                traz dicas do Certificado de Profici&ecirc;ncia em L&iacute;ngua Portuguesa para
+                Estrangeiros (Celpe-Bras). Tamb&eacute;m &eacute; professor dos cursos de PLE na
+                Universidade Federal de Santa Catarina (UFSC), al&eacute;m de j&aacute; ter trabalhado
+                em outras institui&ccedil;&otilde;es de ensino superior catarinenses.
+              </p>
+              <p>
+                &Eacute; bacharel em Lingu&iacute;stica Intercultural e mestre em Educa&ccedil;&atilde;o
+                pela Universidade de Copenhague, Dinamarca. Tem experi&ecirc;ncia com aulas de
+                portugu&ecirc;s para estrangeiros em embaixadas, consulados, empresas multinacionais,
+                institutos de idiomas e aulas on-line particulares.
+              </p>
+              <p>
+                &Eacute; avaliador da parte oral e j&aacute; atuou como avaliador da parte escrita do
+                Celpe-Bras, exame de profici&ecirc;ncia em l&iacute;ngua portuguesa, e ministra cursos
+                preparat&oacute;rios para o exame.
+              </p>
+              <p>
+                Atualmente se dedica tamb&eacute;m ao ensino e pesquisa de Portugu&ecirc;s como
+                L&iacute;ngua de Acolhimento (PLAc), desenvolvendo um poss&iacute;vel aplicativo no
+                ensino de portugu&ecirc;s para migrantes e refugiados.
+              </p>
+            </article>
+            <aside class="teacher-panel reveal">
+              <div class="teacher-visual">
+                <img
+                  src="https://posphorte.com.br/wp-content/uploads/2026/07/Fernando-Pedretti.jpeg"
+                  alt="Prof. Ms. Fernando Pedretti"
+                />
+              </div>
+              <span class="panel-tag">Experi&ecirc;ncia PLE e Celpe-Bras</span>
+              <strong>Desde 2009 preparando estudantes para o portugu&ecirc;s do Brasil.</strong>
+              <p>Professor da P&oacute;s da Phorte em Ensino da L&iacute;ngua Portuguesa como L&iacute;ngua Estrangeira.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="schedule section-pad" id="cronograma">
+          <div class="section-header centered reveal">
+            <p class="eyebrow">Segundas e quartas &bull; 19h &agrave;s 20h30</p>
+            <h2>Cronograma do Curso</h2>
+            <p class="section-subtitle">
+              8 semanas conduzidas pelo Prof. Ms. Fernando Pedretti, com foco
+              pr&aacute;tico nas partes escrita e oral do Celpe-Bras.
+            </p>
+          </div>
+
+          <div class="schedule-grid">
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 01</span>
+              </div>
+              <div class="week-meta">
+                <span>24 e 26 de agosto</span>
+              </div>
+              <h3>Conhecendo o Celpe-Bras + Diagn&oacute;stico</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Vis&atilde;o geral</span></p>
+              <p class="week-description">
+                Conhecer o exame e identificar o n&iacute;vel e as dificuldades de cada participante.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 02</span>
+              </div>
+              <div class="week-meta">
+                <span>31 de agosto e 2 de setembro</span>
+              </div>
+              <h3>Parte Escrita: Compreens&atilde;o + Tarefa 1</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
+              <p class="week-description">
+                Conhecer a Parte Escrita e detalhar o constructo da Tarefa 1.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 03</span>
+              </div>
+              <div class="week-meta">
+                <span>7 e 9 de setembro</span>
+              </div>
+              <h3>Parte Escrita: Tarefa 2 + Tarefa 3</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
+              <p class="week-description">
+                Detalhar o constructo da Tarefa 2 e da Tarefa 3.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 04</span>
+              </div>
+              <div class="week-meta">
+                <span>14 e 16 de setembro</span>
+              </div>
+              <h3>Parte Escrita: Tarefa 4</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
+              <p class="week-description">
+                Detalhar o constructo da Tarefa 4 da Parte Escrita.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 05</span>
+              </div>
+              <div class="week-meta">
+                <span>21 e 23 de setembro</span>
+              </div>
+              <h3>Parte Escrita: Simulado</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
+              <p class="week-description">
+                Aplica&ccedil;&atilde;o e corre&ccedil;&atilde;o do simulado completo da Parte Escrita.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 06</span>
+              </div>
+              <div class="week-meta">
+                <span>28 e 30 de setembro</span>
+              </div>
+              <h3>Parte Oral: Entrevista + Intera&ccedil;&atilde;o</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
+              <p class="week-description">
+                Desenvolver flu&ecirc;ncia e capacidade de intera&ccedil;&atilde;o na entrevista oral.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 07</span>
+              </div>
+              <div class="week-meta">
+                <span>5 e 7 de outubro</span>
+              </div>
+              <h3>Parte Oral: Elementos Provocadores</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
+              <p class="week-description">
+                Argumentar, interpretar e desenvolver respostas a partir dos elementos provocadores.
+              </p>
+            </article>
+
+            <article class="week-card reveal">
+              <div class="card-topline">
+                <span class="week-number-label">Semana 08</span>
+              </div>
+              <div class="week-meta">
+                <span>12 e 14 de outubro</span>
+              </div>
+              <h3>Parte Oral: Simulado</h3>
+              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
+              <p class="week-description">
+                Aplica&ccedil;&atilde;o e corre&ccedil;&atilde;o do simulado completo da Parte Oral.
+              </p>
+            </article>
+          </div>
+
+          <p class="schedule-note">Metodologia comunicativa, com atividades individuais e em pares, leitura, escrita e discuss&otilde;es orais em todos os encontros.</p>
+        </section>
+
+        <section class="offer section-pad" id="investimento">
+          <div class="section-header centered reveal">
+            <p class="eyebrow">Investimento</p>
+            <h2>Garanta sua vaga no Preparat&oacute;rio Celpe-Bras</h2>
+            <p class="section-subtitle">
+              Turma online, ao vivo, com acompanhamento direto do Prof. Ms. Fernando Pedretti
+              do in&iacute;cio ao fim da prepara&ccedil;&atilde;o.
+            </p>
+          </div>
+
+          <div class="offer-card reveal">
+            <div class="offer-details">
+              <h3>O que est&aacute; incluso</h3>
+              <ul class="offer-list">
+                <li><strong>24 horas</strong>&nbsp;de aulas ao vivo, distribu&iacute;das em 8 semanas.</li>
+                <li>Encontros &agrave;s <strong>segundas e quartas, das 19h &agrave;s 20h30</strong>.</li>
+                <li>Modalidade <strong>100% online e ao vivo</strong>, com intera&ccedil;&atilde;o direta com o professor.</li>
+                <li>Cobertura completa da <strong>Parte Escrita</strong> (compreens&atilde;o e 4 tarefas) e da <strong>Parte Oral</strong> (entrevista e elementos provocadores).</li>
+                <li><strong>2 simulados avaliativos</strong>, um da Parte Escrita e um da Parte Oral, com corre&ccedil;&atilde;o.</li>
+                <li>Turma conduzida pelo Prof. Ms. Fernando Pedretti, avaliador oficial do Celpe-Bras.</li>
+              </ul>
+              <div class="offer-approval">
+                <strong>Crit&eacute;rios de aprova&ccedil;&atilde;o:</strong> avalia&ccedil;&atilde;o processual e cont&iacute;nua,
+                frequ&ecirc;ncia m&iacute;nima de 75% e nota igual ou superior a 7,0.
+              </div>
+            </div>
+            <div class="offer-price">
+              <span class="offer-price-label">Investimento total</span>
+              <p class="offer-price-value">R$ 500<span>,00</span></p>
+              <p class="offer-price-note">Curso completo &bull; 24 horas &bull; 8 semanas</p>
+              <a class="button button-primary magnetic" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/preparatorio-celpe-bras/4429/1">Garantir minha vaga</a>
+              <span class="offer-price-guarantee">Vagas limitadas &bull; Posto Aplicador Credenciado MEC</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq section-pad" id="duvidas">
+          <div class="section-header centered reveal">
+            <p class="eyebrow">D&uacute;vidas frequentes</p>
+            <h2>Tudo o que voc&ecirc; precisa saber antes de se inscrever.</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details class="faq-item">
+              <summary>Como funcionam as aulas?</summary>
+              <p>
+                As aulas acontecem ao vivo, &agrave;s segundas e quartas, das 19h &agrave;s 20h30,
+                totalizando 24 horas de curso distribu&iacute;das em 8 semanas. A metodologia &eacute;
+                comunicativa, com atividades individuais e em pares, leitura, escrita e discuss&otilde;es orais.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Preciso ter algum n&iacute;vel m&iacute;nimo de portugu&ecirc;s?</summary>
+              <p>
+                O curso &eacute; voltado para quem busca alcan&ccedil;ar o n&iacute;vel avan&ccedil;ado no
+                Celpe-Bras. Na primeira semana fazemos um diagn&oacute;stico para identificar o n&iacute;vel
+                e as principais dificuldades de cada participante.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Como funciona a avalia&ccedil;&atilde;o do curso?</summary>
+              <p>
+                A avalia&ccedil;&atilde;o &eacute; processual e continuada, com um simulado da Parte
+                Escrita e um simulado da Parte Oral. A aprova&ccedil;&atilde;o exige frequ&ecirc;ncia
+                m&iacute;nima de 75% e nota igual ou superior a 7,0.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Quem &eacute; o professor do curso?</summary>
+              <p>
+                O curso &eacute; conduzido pelo Prof. Ms. Fernando Pedretti, professor de Portugu&ecirc;s
+                como L&iacute;ngua Estrangeira desde 2009, avaliador oficial da parte oral do Celpe-Bras
+                e professor de PLE na UFSC.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Como faço para me inscrever?</summary>
+              <p>
+                Basta clicar em um dos bot&otilde;es "Garantir minha vaga" nesta p&aacute;gina e preencher
+                o formul&aacute;rio de pr&eacute;-cadastro. Nossa equipe entrar&aacute; em contato com os
+                pr&oacute;ximos passos para efetivar sua matr&iacute;cula.
+              </p>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <div>
+            <a class="brand brand-logos footer-brand" href="#" aria-label="Faculdade Phorte e Celpe-Bras">
+              <span class="brand-logo-card logo-celpe">
+                <img
+                  src="https://posphorte.com.br/wp-content/uploads/2026/07/Logo_CELPE_BRAS.png"
+                  alt="Logo Celpe-Bras"
+                />
+              </span>
+              <span class="brand-logo-card logo-phorte">
+                <img
+                  src="https://posphorte.com.br/wp-content/uploads/2026/07/logo-phorte.png"
+                  alt="Logo Faculdade Phorte"
+                />
+              </span>
+            </a>
+            <p>
+              Faculdade Phorte: educa&ccedil;&atilde;o, credibilidade e prepara&ccedil;&atilde;o oficial
+              para quem deseja conquistar novas oportunidades no Brasil.
+            </p>
+          </div>
+          <div>
+            <h3>Navega&ccedil;&atilde;o</h3>
+            <a href="#sobre">Sobre o Celpe-Bras</a>
+            <a href="#cronograma">Cronograma</a>
+            <a href="#investimento">Investimento</a>
+            <a href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/preparatorio-celpe-bras/4429/1">Inscri&ccedil;&atilde;o</a>
+          </div>
+          <div>
+            <h3>Contato</h3>
+            <p>WhatsApp: (11) 2222-1222</p>
+            <p>S&atilde;o Paulo - SP</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Faculdade Phorte. Todos os direitos reservados.</span>
+          <nav>
+            <a href="#">Pol&iacute;ticas de Privacidade</a>
+            <a href="#">Pol&iacute;ticas de Cookies</a>
+            <a href="#">Revisar cookies</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+const revealElements = document.querySelectorAll(".reveal");
+const counters = document.querySelectorAll("[data-count]");
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.16, rootMargin: "0px 0px -40px 0px" }
+);
+
+revealElements.forEach((element, index) => {
+  element.style.transitionDelay = `${Math.min(index * 45, 360)}ms`;
+  revealObserver.observe(element);
+});
+
+function animateCounter(counter) {
+  const target = Number(counter.dataset.count);
+  const duration = 900;
+  const startTime = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    counter.textContent = Math.round(target * eased).toString();
+
+    if (progress < 1) {
+      requestAnimationFrame(tick);
+    }
+  }
+
+  requestAnimationFrame(tick);
+}
+
+const counterObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.8 }
+);
+
+counters.forEach((counter) => counterObserver.observe(counter));
+
+document.querySelectorAll(".magnetic").forEach((button) => {
+  button.addEventListener("mousemove", (event) => {
+    const rect = button.getBoundingClientRect();
+    const x = event.clientX - rect.left - rect.width / 2;
+    const y = event.clientY - rect.top - rect.height / 2;
+    button.style.transform = `translate(${x * 0.05}px, ${y * 0.08}px) scale(1.015)`;
+  });
+
+  button.addEventListener("mouseleave", () => {
+    button.style.transform = "";
+  });
+});
+
+document.addEventListener("scroll", () => {
+  const parallax = document.querySelector("[data-parallax]");
+  if (!parallax) return;
+  const offset = window.scrollY * 0.08;
+  parallax.style.backgroundPosition = `center ${offset}px`;
+}, { passive: true });
+
+    </script>
+  </body>
+</html>
