@@ -276,8 +276,8 @@ a {
 
 .hero-metrics {
   display: grid;
-  max-width: 690px;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 460px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 14px;
   margin: 54px auto 0;
 }
@@ -394,7 +394,7 @@ a {
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 34px;
 }
 
@@ -412,7 +412,6 @@ a {
 
 .panel-tag {
   width: max-content;
-  margin-bottom: auto;
   padding: 8px 12px;
   border-radius: 999px;
   background: rgba(7, 191, 165, 0.12);
@@ -423,8 +422,21 @@ a {
   letter-spacing: 0.14em;
 }
 
+.opportunity-icon {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 68px;
+  height: 68px;
+  margin-top: 28px;
+  place-items: center;
+  border-radius: 20px;
+  background: rgba(242, 71, 71, 0.1);
+  color: var(--red);
+}
+
 .opportunity-panel strong {
-  margin-top: 120px;
+  margin-top: 28px;
   color: var(--ink);
   font-size: 2.35rem;
   font-weight: 900;
@@ -591,7 +603,7 @@ a {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -599,15 +611,14 @@ a {
   position: relative;
   overflow: hidden;
   display: flex;
-  min-height: 300px;
   flex-direction: column;
-  padding: 25px 22px 22px;
+  padding: 30px 32px;
   border: 1px solid var(--line);
   border-radius: 22px;
   background: #fff;
   color: var(--ink);
   box-shadow: var(--shadow-card);
-  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease, opacity 260ms ease;
 }
 
 .week-card::after {
@@ -630,20 +641,20 @@ a {
   opacity: 1;
 }
 
-.card-topline {
+.week-card-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  color: #6f7788;
-  font-size: 0.66rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
+  gap: 10px;
 }
 
 .week-number-label {
   color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
 }
 
 .week-meta {
@@ -651,9 +662,9 @@ a {
   flex-wrap: wrap;
   align-items: center;
   gap: 4px 14px;
-  margin-top: 18px;
+  margin-top: 14px;
   color: #6f7788;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   font-weight: 800;
 }
 
@@ -669,37 +680,75 @@ a {
 }
 
 .week-card h3 {
-  margin: 22px 0 14px;
+  margin: 16px 0 0;
   color: inherit;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.3rem, 1.7vw, 1.55rem);
   font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.045em;
-}
-
-.week-topic {
-  margin: 0;
-  color: #50596b;
-  font-size: 0.82rem;
-  font-weight: 800;
-  line-height: 1.45;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
 }
 
 .week-topic-highlight {
-  display: inline;
-  padding: 2px 7px;
+  display: inline-block;
+  padding: 5px 12px;
   border-radius: 999px;
   background: rgba(242, 71, 71, 0.09);
   color: var(--red-dark);
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
 }
 
 .week-description {
   margin: 14px 0 0;
   color: #636c7d;
-  font-size: 0.84rem;
-  line-height: 1.58;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.schedule-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.schedule-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 38px;
+  border: 2px solid var(--red);
+  border-radius: 999px;
+  background: rgba(242, 71, 71, 0.08);
+  color: var(--red);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: transform 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.schedule-toggle:hover {
+  transform: translateY(-3px);
+  background: var(--red);
+  color: #fff;
+}
+
+.schedule-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 220ms ease;
+}
+
+.schedule-toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
+}
+
+.week-card.is-hidden {
+  display: none;
 }
 
 .schedule-note {
@@ -1120,7 +1169,6 @@ a {
         <div class="hero-content">
           <p class="eyebrow reveal">Curso preparat&oacute;rio oficial</p>
           <h1 class="hero-title reveal">
-            Conquiste sua Profici&ecirc;ncia em Portugu&ecirc;s:
             <span>Preparat&oacute;rio Celpe-Bras!</span>
           </h1>
           <p class="hero-subtitle reveal">
@@ -1140,10 +1188,6 @@ a {
             <div>
               <strong data-count="24">0</strong>
               <span>horas ao vivo</span>
-            </div>
-            <div>
-              <strong>MEC</strong>
-              <span>posto credenciado</span>
             </div>
           </div>
         </div>
@@ -1175,6 +1219,13 @@ a {
             </article>
             <div class="opportunity-panel reveal">
               <span class="panel-tag">Prepara&ccedil;&atilde;o guiada</span>
+              <div class="opportunity-icon" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3L2 8L12 13L22 8L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M6 10.5V16C6 16 8.5 18.5 12 18.5C15.5 18.5 18 16 18 16V10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 8V14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
               <strong>Rumo ao N&iacute;vel Avan&ccedil;ado</strong>
               <p>Leitura, escrita, compreens&atilde;o e produ&ccedil;&atilde;o oral trabalhadas com foco total no que realmente cai na prova.</p>
             </div>
@@ -1263,116 +1314,125 @@ a {
 
           <div class="schedule-grid">
             <article class="week-card reveal">
-              <div class="card-topline">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 01</span>
+                <span class="week-topic-highlight">Vis&atilde;o geral</span>
               </div>
               <div class="week-meta">
                 <span>24 e 26 de agosto</span>
               </div>
               <h3>Conhecendo o Celpe-Bras + Diagn&oacute;stico</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Vis&atilde;o geral</span></p>
               <p class="week-description">
                 Conhecer o exame e identificar o n&iacute;vel e as dificuldades de cada participante.
               </p>
             </article>
 
             <article class="week-card reveal">
-              <div class="card-topline">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 02</span>
+                <span class="week-topic-highlight">Parte Escrita</span>
               </div>
               <div class="week-meta">
                 <span>31 de agosto e 2 de setembro</span>
               </div>
               <h3>Parte Escrita: Compreens&atilde;o + Tarefa 1</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
               <p class="week-description">
                 Conhecer a Parte Escrita e detalhar o constructo da Tarefa 1.
               </p>
             </article>
 
             <article class="week-card reveal">
-              <div class="card-topline">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 03</span>
+                <span class="week-topic-highlight">Parte Escrita</span>
               </div>
               <div class="week-meta">
                 <span>7 e 9 de setembro</span>
               </div>
               <h3>Parte Escrita: Tarefa 2 + Tarefa 3</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
               <p class="week-description">
                 Detalhar o constructo da Tarefa 2 e da Tarefa 3.
               </p>
             </article>
 
             <article class="week-card reveal">
-              <div class="card-topline">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 04</span>
+                <span class="week-topic-highlight">Parte Escrita</span>
               </div>
               <div class="week-meta">
                 <span>14 e 16 de setembro</span>
               </div>
               <h3>Parte Escrita: Tarefa 4</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
               <p class="week-description">
                 Detalhar o constructo da Tarefa 4 da Parte Escrita.
               </p>
             </article>
 
-            <article class="week-card reveal">
-              <div class="card-topline">
+            <article class="week-card week-card--extra is-hidden reveal">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 05</span>
+                <span class="week-topic-highlight">Parte Escrita</span>
               </div>
               <div class="week-meta">
                 <span>21 e 23 de setembro</span>
               </div>
               <h3>Parte Escrita: Simulado</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Escrita</span></p>
               <p class="week-description">
                 Aplica&ccedil;&atilde;o e corre&ccedil;&atilde;o do simulado completo da Parte Escrita.
               </p>
             </article>
 
-            <article class="week-card reveal">
-              <div class="card-topline">
+            <article class="week-card week-card--extra is-hidden reveal">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 06</span>
+                <span class="week-topic-highlight">Parte Oral</span>
               </div>
               <div class="week-meta">
                 <span>28 e 30 de setembro</span>
               </div>
               <h3>Parte Oral: Entrevista + Intera&ccedil;&atilde;o</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
               <p class="week-description">
                 Desenvolver flu&ecirc;ncia e capacidade de intera&ccedil;&atilde;o na entrevista oral.
               </p>
             </article>
 
-            <article class="week-card reveal">
-              <div class="card-topline">
+            <article class="week-card week-card--extra is-hidden reveal">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 07</span>
+                <span class="week-topic-highlight">Parte Oral</span>
               </div>
               <div class="week-meta">
                 <span>5 e 7 de outubro</span>
               </div>
               <h3>Parte Oral: Elementos Provocadores</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
               <p class="week-description">
                 Argumentar, interpretar e desenvolver respostas a partir dos elementos provocadores.
               </p>
             </article>
 
-            <article class="week-card reveal">
-              <div class="card-topline">
+            <article class="week-card week-card--extra is-hidden reveal">
+              <div class="week-card-head">
                 <span class="week-number-label">Semana 08</span>
+                <span class="week-topic-highlight">Parte Oral</span>
               </div>
               <div class="week-meta">
                 <span>12 e 14 de outubro</span>
               </div>
               <h3>Parte Oral: Simulado</h3>
-              <p class="week-topic"><span class="week-topic-highlight">Parte Oral</span></p>
               <p class="week-description">
                 Aplica&ccedil;&atilde;o e corre&ccedil;&atilde;o do simulado completo da Parte Oral.
               </p>
             </article>
+          </div>
+
+          <div class="schedule-toggle-wrap">
+            <button type="button" class="schedule-toggle" id="scheduleToggle" aria-expanded="false" aria-controls="cronograma">
+              <span class="schedule-toggle-label">Ver mais semanas</span>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
           </div>
 
           <p class="schedule-note">Metodologia comunicativa, com atividades individuais e em pares, leitura, escrita e discuss&otilde;es orais em todos os encontros.</p>
@@ -1392,12 +1452,9 @@ a {
             <div class="offer-details">
               <h3>O que est&aacute; incluso</h3>
               <ul class="offer-list">
-                <li><strong>24 horas</strong>&nbsp;de aulas ao vivo, distribu&iacute;das em 8 semanas.</li>
-                <li>Encontros &agrave;s <strong>segundas e quartas, das 19h &agrave;s 20h30</strong>.</li>
-                <li>Modalidade <strong>100% online e ao vivo</strong>, com intera&ccedil;&atilde;o direta com o professor.</li>
-                <li>Cobertura completa da <strong>Parte Escrita</strong> (compreens&atilde;o e 4 tarefas) e da <strong>Parte Oral</strong> (entrevista e elementos provocadores).</li>
-                <li><strong>2 simulados avaliativos</strong>, um da Parte Escrita e um da Parte Oral, com corre&ccedil;&atilde;o.</li>
-                <li>Turma conduzida pelo Prof. Ms. Fernando Pedretti, avaliador oficial do Celpe-Bras.</li>
+                <li><span>Encontros &agrave;s <strong>segundas e quartas, das 19h &agrave;s 20h30</strong>.</span></li>
+                <li><span>Modalidade <strong>100% online e ao vivo</strong>, com intera&ccedil;&atilde;o direta com o professor.</span></li>
+                <li><span><strong>2 simulados avaliativos</strong>, um da Parte Escrita e um da Parte Oral, com corre&ccedil;&atilde;o.</span></li>
               </ul>
               <div class="offer-approval">
                 <strong>Crit&eacute;rios de aprova&ccedil;&atilde;o:</strong> avalia&ccedil;&atilde;o processual e cont&iacute;nua,
@@ -1582,6 +1639,22 @@ document.addEventListener("scroll", () => {
   const offset = window.scrollY * 0.08;
   parallax.style.backgroundPosition = `center ${offset}px`;
 }, { passive: true });
+
+const scheduleToggle = document.getElementById("scheduleToggle");
+const scheduleToggleLabel = scheduleToggle?.querySelector(".schedule-toggle-label");
+const extraWeekCards = document.querySelectorAll(".week-card--extra");
+
+if (scheduleToggle) {
+  scheduleToggle.addEventListener("click", () => {
+    const isExpanded = scheduleToggle.getAttribute("aria-expanded") === "true";
+    extraWeekCards.forEach((card) => card.classList.toggle("is-hidden", isExpanded));
+    scheduleToggle.setAttribute("aria-expanded", String(!isExpanded));
+    scheduleToggleLabel.textContent = isExpanded ? "Ver mais semanas" : "Ver menos semanas";
+    if (isExpanded) {
+      document.getElementById("cronograma").scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+}
 
     </script>
   </body>
