@@ -52,3 +52,5 @@ h1, h2, .brand, .footer-brand { font-family: 'Poppins', Arial, sans-serif; }
   .split-copy h2, .profile-copy h2, .certificate h2 { max-width: 15ch; font-size: clamp(1.8rem, 8.2vw, 2.45rem); }
   .split-copy p, .profile-copy p, .certificate p { font-size: .92rem; }
 }
+
+.footer-logo { filter: none; }
