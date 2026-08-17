@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ==========================================================================
+   SEÇÃO DO FORMULÁRIO (CONTAINER PRINCIPAL)
+   ========================================================================== */
+.formulario-container {
+  --purple: #A946FF;
+  --purple-dark: #7B24C7;
+  --ink: #21182C;
+  --muted: #6F626F;
+  --line: #E5D5CF;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: clamp(60px, 7vw, 100px) 20px !important;
+  background-image: linear-gradient(rgba(247, 238, 232, 0.86), rgba(247, 238, 232, 0.86)), url('https://posphorte.com.br/wp-content/uploads/2026/08/FUNDO.jpg') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-attachment: fixed;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Inner flex wrapper */
+.formulario-container > .e-con-inner,
+.formulario-container.e-con-boxed > .e-con-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: clamp(32px, 5vw, 70px) !important;
+  width: 100% !important;
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Coluna Esquerda (Foto + Texto) */
+.formulario-foto,
+.formulario-texto,
+.signup-art {
+  flex: 1 1 45% !important;
+  max-width: 480px !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.formulario-foto img,
+.formulario-texto img,
+.signup-art img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 460px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  filter: drop-shadow(0 20px 22px rgba(95, 43, 14, 0.1)) !important;
+}
+
+.formulario-foto p,
+.formulario-texto p,
+.signup-art p {
+  max-width: 320px !important;
+  margin: 16px auto 0 !important;
+  color: #A946FF !important;
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  transform: rotate(-3deg) !important;
+}
+
+/* Coluna Direita (Card do Formulário) */
+.formulario-coluna,
+.form-card {
+  flex: 1 1 55% !important;
+  max-width: 580px !important;
+  width: 100% !important;
+  padding: clamp(28px, 4vw, 44px) !important;
+  background: #FFFDFC !important;
+  border: 1px solid var(--line) !important;
+  border-top: 5px solid #A946FF !important;
+  border-radius: 20px !important;
+  box-shadow: 0 24px 80px rgba(33, 24, 44, 0.13) !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+/* Cabeçalho do Formulário */
+.formulario-cabecalho {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.formulario-cabecalho .kicker,
+.formulario-coluna .kicker {
+  display: block;
+  margin: 0 0 12px 0 !important;
+  color: #A946FF !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+}
+
+.formulario-cabecalho h2,
+.formulario-coluna h2 {
+  max-width: 16ch;
+  margin: 0 0 14px 0 !important;
+  color: #21182C !important;
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-size: clamp(1.85rem, 3.2vw, 2.6rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.05em !important;
+  text-align: left !important;
+}
+
+.formulario-cabecalho p,
+.formulario-cabecalho .form-intro,
+.formulario-coluna .form-intro,
+.formulario-coluna > p:not(.kicker) {
+  max-width: 100% !important;
+  margin: 0 0 22px 0 !important;
+  color: #6F626F !important;
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  text-align: left !important;
+  transform: none !important;
+}
+
+/* Widget Formulário Elementor Pro */
+.phorte-formulario {
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: left;
+}
+
+.phorte-formulario .elementor-field-group {
+  margin-bottom: 16px;
+}
+
+.phorte-formulario .elementor-field-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #21182C;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.phorte-formulario .elementor-field-textual:not(textarea):not(select),
+.phorte-formulario input[type="text"],
+.phorte-formulario input[type="email"],
+.phorte-formulario input[type="tel"] {
+  width: 100% !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  padding: 12px 14px !important;
+  color: #21182C !important;
+  background: #fff !important;
+  border: 1px solid #D8C9C4 !important;
+  border-radius: 10px !important;
+  font-family: inherit !important;
+  font-size: 13px !important;
+  box-sizing: border-box !important;
+}
+
+.phorte-formulario input:focus,
+.phorte-formulario textarea:focus {
+  border-color: #A946FF !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 3px rgba(169, 70, 255, 0.14) !important;
+}
+
+/* Select */
+.phorte-formulario .elementor-field-type-select .elementor-select-wrapper,
+.phorte-formulario .elementor-select-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.phorte-formulario .elementor-field-type-select select,
+.phorte-formulario select.elementor-field,
+.phorte-formulario .elementor-select-wrapper select {
+  display: block !important;
+  width: 100% !important;
+  min-height: 48px !important;
+  height: 48px !important;
+  padding: 12px 38px 12px 14px !important;
+  color: #21182C !important;
+  background-color: #fff !important;
+  border: 1px solid #D8C9C4 !important;
+  border-radius: 10px !important;
+  font-family: 'Poppins', Arial, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  outline: 0 !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2321182C' d='M6 8L0 0h12z'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: calc(100% - 14px) center !important;
+  background-size: 10px 7px !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+}
+
+.phorte-formulario .elementor-field-type-select .elementor-select-wrapper::before,
+.phorte-formulario .elementor-field-type-select .elementor-select-wrapper::after,
+.phorte-formulario .elementor-select-wrapper::before,
+.phorte-formulario .elementor-select-wrapper::after {
+  display: none !important;
+  content: none !important;
+}
+
+.phorte-formulario .elementor-field-type-select select:focus,
+.phorte-formulario select.elementor-field:focus {
+  border-color: #A946FF !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 3px rgba(169, 70, 255, 0.14) !important;
+}
+
+/* Radio & Checkbox */
+.phorte-formulario .elementor-field-type-radio .elementor-field-subgroup {
+  display: flex !important;
+  gap: 20px !important;
+  margin-top: 4px !important;
+}
+
+.phorte-formulario .elementor-field-type-radio .elementor-field-option label {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #6F626F !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+}
+
+.phorte-formulario .elementor-field-type-acceptance label,
+.phorte-formulario .elementor-field-type-checkbox label {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 9px !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #6F626F !important;
+  line-height: 1.45 !important;
+  cursor: pointer !important;
+  text-align: left !important;
+}
+
+.phorte-formulario .elementor-field-type-acceptance a {
+  color: #A946FF !important;
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+.phorte-formulario input[type="radio"],
+.phorte-formulario input[type="checkbox"] {
+  accent-color: #A946FF !important;
+  margin-top: 2px !important;
+  cursor: pointer !important;
+}
+
+/* Botão */
+.phorte-formulario .elementor-button {
+  width: 100%;
+  min-height: 54px;
+  padding: 15px 26px;
+  color: #fff;
+  background: #A946FF !important;
+  border: 0;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(169, 70, 255, 0.22);
+  transition: background 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.phorte-formulario .elementor-button:hover {
+  background: #7B24C7 !important;
+  transform: translateY(-2px);
+}
+
+/* Responsivo */
+@media (max-width: 860px) {
+  .formulario-container > .e-con-inner,
+  .formulario-container {
+    flex-direction: column !important;
+    gap: 40px !important;
+    padding: 50px 20px !important;
+  }
+
+  .formulario-foto,
+  .formulario-texto,
+  .signup-art,
+  .formulario-coluna,
+  .form-card {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .formulario-coluna,
+  .form-card {
+    padding: 28px 20px !important;
+  }
+
+  .formulario-foto p,
+  .formulario-texto p {
+    font-size: 18px;
+  }
+}

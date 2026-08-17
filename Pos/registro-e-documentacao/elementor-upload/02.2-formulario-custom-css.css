@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.formulario-container { --purple:#A946FF; --purple-dark:#7B24C7; --ink:#21182C; --muted:#6F626F; --line:#E5D5CF; display:flex; align-items:center; gap:70px; width:100%; max-width:1160px; margin:0 auto; padding:80px 40px; background:linear-gradient(rgba(247,238,232,.86),rgba(247,238,232,.86)),url('https://posphorte.com.br/wp-content/uploads/2026/08/FUNDO.jpg') center/cover; border-radius:24px; font-family:'Poppins',Arial,sans-serif; }
+.formulario-texto { flex:1 1 45%; text-align:center; }
+.formulario-texto img { display:block; width:min(100%,460px); margin:0 auto; }
+.formulario-texto p { max-width:300px; margin:16px auto 0; color:#A946FF; font-size:20px; font-weight:500; line-height:1.1; text-align:center; }
+.formulario-coluna { flex:1 1 55%; padding:40px; background:#FFFDFC; border:1px solid #E5D5CF; border-top:5px solid #A946FF; border-radius:20px; box-shadow:0 24px 80px rgba(33,24,44,.13); }
+.phorte-formulario { font-family:'Poppins',Arial,sans-serif; }
+.phorte-formulario .elementor-field-group { margin-bottom:16px; }
+.phorte-formulario .elementor-field-label { display:block; margin-bottom:7px; color:#21182C; font-size:12px; font-weight:700; }
+.phorte-formulario .elementor-field, .phorte-formulario .elementor-field-textual { min-height:48px; padding:12px 14px; color:#21182C; background:#fff; border:1px solid #D8C9C4; border-radius:10px; font-family:inherit; font-size:13px; }
+.phorte-formulario .elementor-field:focus { border-color:#A946FF; outline:0; box-shadow:0 0 0 3px rgba(169,70,255,.14); }
+.phorte-formulario .elementor-button { width:100%; min-height:54px; padding:15px 26px; color:#fff; background:#A946FF !important; border:0; border-radius:999px; font-family:inherit; font-size:13px; font-weight:700; box-shadow:0 10px 24px rgba(169,70,255,.22); }
+.phorte-formulario .elementor-button:hover { background:#7B24C7 !important; }
+@media (max-width:767px) { .formulario-container { flex-direction:column; gap:36px; padding:48px 18px; border-radius:16px; } .formulario-texto,.formulario-coluna { width:100%; } .formulario-coluna { padding:26px 18px; } .formulario-texto p { font-size:18px; } }
