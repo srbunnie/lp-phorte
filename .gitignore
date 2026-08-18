@@ -1,0 +1,7 @@
+# Dependências e caches
+node_modules/
+.playwright-cli/
+
+# Arquivos sensíveis e logs
+.env*
+*.log
