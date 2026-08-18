@@ -1,5 +1,7 @@
 # Projetos de Landing Pages — Phorte e USCS
 
+> 🌐 **Demonstração no GitHub Pages:** [https://srbunnie.github.io/lp-phorte/](https://srbunnie.github.io/lp-phorte/)
+
 Este repositório reúne objetos estáticos de landing pages desenvolvidos para apresentação e compartilhamento com stakeholders da Phorte e da USCS. A pasta centraliza protótipos navegáveis, layouts, imagens, textos, referências e materiais de demonstração utilizados pela equipe de quatro pessoas.
 
 O conteúdo é demonstrativo. Não devem ser adicionados backends, bancos de dados, integrações de produção, credenciais ou dados reais de usuários.
