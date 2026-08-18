@@ -16,13 +16,13 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ## Estados e prioridades atuais
 
-1. Registro e Documentação — Em andamento.
-2. Graduação em Pedagogia — Em andamento; versão clara em andamento e versão escura cancelada.
-3. Price Card Graduação — Pausado.
-4. Price Card USCS — Pausado.
+1. Graduação em Pedagogia — Em andamento; versão clara em andamento e versão escura cancelada.
+2. Price Card Graduação — Pausado.
+3. Price Card USCS — Pausado.
 
 ### Concluídos
 
+- Registro e Documentação (Live e Agradecimento).
 - Aula Inaugural de Gestão.
 - Formação em Futebol e Futsal.
 
