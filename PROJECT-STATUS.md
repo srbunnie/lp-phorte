@@ -7,7 +7,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estrutura atual
 
 - `Graduacao/`: Graduação Phorte, incluindo Pedagogia, Aula Inaugural e Price Card.
-- `Pos/`: Pós Phorte, incluindo Registro e Documentação.
+- `Pos/`: Pós Phorte, incluindo Registro e Documentação e Educação Infantil (Perspectiva Pikleriana).
 - `USCS/`: Formação em Futebol e Futsal e Price Card USCS.
 - `skills/`: instruções de apoio, incluindo revisão e commit deste projeto.
 - `index.html`: índice central com categorias, acordeões, prioridades e status.
@@ -17,8 +17,9 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estados e prioridades atuais
 
 1. Graduação em Pedagogia — Em andamento; versão clara em andamento e versão escura cancelada.
-2. Price Card Graduação — Pausado.
-3. Price Card USCS — Pausado.
+2. Educação Infantil (Perspectiva Pikleriana) — Em andamento; landing page principal e agradecimento.
+3. Price Card Graduação — Pausado.
+4. Price Card USCS — Pausado.
 
 ### Concluídos
 
