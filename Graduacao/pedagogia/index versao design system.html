@@ -93,7 +93,34 @@
     .hero-copy .eyebrow{margin-bottom:16px}
     .hero-copy h1{color:var(--ink);margin-bottom:16px;max-width:640px}
     .hero-copy h1 span{display:block;color:var(--red);font-size:clamp(1.05rem,1.5vw,1.4rem);line-height:1.3;letter-spacing:-.01em;margin-top:10px;font-weight:700}
-    .hero-lead{font-size:1rem;color:var(--muted);margin-bottom:26px;max-width:520px;line-height:1.65}
+    .hero-lead{font-size:1rem;color:var(--muted);margin-bottom:20px;max-width:520px;line-height:1.65}
+    
+    /* Hero Pricing Box */
+    .hero-pricing-box{
+      background:linear-gradient(135deg,#fff8f8,#fff);
+      border:1.5px solid rgba(201,45,45,.26);
+      border-left:5px solid var(--red);
+      border-radius:14px;
+      padding:14px 18px;
+      margin-bottom:20px;
+      box-shadow:0 8px 24px rgba(201,45,45,.08);
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      max-width:540px;
+    }
+    .hero-pricing-main{display:flex;flex-direction:column;gap:2px}
+    .hero-pricing-tag{display:inline-block;color:var(--red);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .hero-pricing-val{display:flex;align-items:baseline;gap:5px}
+    .hero-pricing-val small{font-size:.8rem;color:var(--muted);font-weight:600}
+    .hero-pricing-val strong{font:800 1.65rem/1 var(--title);color:var(--ink);letter-spacing:-.03em}
+    .hero-pricing-val strong span{font-size:.95rem;font-weight:700;color:var(--muted)}
+    .hero-pricing-badges{display:flex;flex-direction:column;gap:4px;font-size:.75rem;font-weight:700;color:#555}
+    .hero-pricing-badges span{display:inline-flex;align-items:center;gap:4px}
+    .hero-pricing-badges b{color:var(--red)}
+
     .hero-mec{
       display:inline-flex;align-items:center;gap:8px;
       background:#fff9e4;
@@ -122,11 +149,14 @@
 
     /* ── INFO STRIP ── */
     .info-strip{background:linear-gradient(135deg,var(--wine),var(--red));color:#fff;border-top:5px solid var(--yellow)}
-    .facts{display:grid;grid-template-columns:repeat(6,1fr)}
+    .facts{display:grid;grid-template-columns:repeat(7,1fr)}
     .fact{padding:19px 16px;border-right:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:2px}
     .fact:last-child{border:0}
     .fact strong{font:700 .84rem var(--title);display:block;color:#fff}
     .fact span{font-size:.7rem;color:#ffe9a0}
+    .fact.fact-highlight{background:rgba(245,197,66,.22);border-left:1px solid rgba(245,197,66,.45);border-right:1px solid rgba(245,197,66,.45)}
+    .fact.fact-highlight strong{color:#fff;font-size:.9rem}
+    .fact.fact-highlight span{color:#fff;font-weight:700}
 
     /* ── SOBRE ── */
     #sobre.section-pad{padding-bottom:42px;background:var(--mist)}
@@ -138,14 +168,15 @@
 
     /* ── COMO FUNCIONA (modalidade) ── */
     .format{background:var(--mist)}
-    .format-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:18px;align-items:start;max-width:980px;margin:auto}
-    .format-line{align-self:center}
-    .format-step{text-align:center;padding:20px}
-    .format-num{margin:auto auto 14px;width:46px;height:46px;display:grid;place-items:center;border-radius:50%;background:var(--red);color:#fff;font:800 1rem var(--title);box-shadow:0 5px 17px rgba(201,45,45,.18)}
-    .format-step h3{margin-bottom:8px}
-    .format-step p{font-size:.9rem}
-    .format-line{height:1px;background:#cfc7c0;position:relative}
+    .format-grid{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:18px;align-items:stretch;max-width:1040px;margin:auto}
+    .format-line{align-self:center;height:1px;background:#cfc7c0;position:relative}
     .format-line:after{content:'›';position:absolute;right:-4px;top:-15px;color:var(--red);font-size:25px}
+    .format-step{text-align:left;padding:24px;background:#fff;border-radius:16px;border:1px solid rgba(201,45,45,.16);box-shadow:0 10px 24px rgba(0,0,0,.05);display:flex;flex-direction:column}
+    .format-num{margin:0 0 14px;padding:6px 12px;border-radius:999px;background:var(--red);color:#fff;font:800 .78rem var(--title);letter-spacing:.04em;text-transform:uppercase;display:inline-flex;align-self:flex-start;box-shadow:0 4px 12px rgba(201,45,45,.2)}
+    .format-step h3{margin-bottom:10px;font-size:1.05rem}
+    .format-step p{font-size:.88rem;line-height:1.55;color:var(--muted);margin-bottom:14px}
+    .format-step p strong{color:var(--ink)}
+    .format-badge{margin-top:auto;background:#fff9e4;border:1px solid rgba(245,197,66,.7);color:#8a5300;font-size:.74rem;font-weight:700;padding:7px 10px;border-radius:8px;display:inline-flex;align-items:center;gap:6px}
     .callout{max-width:850px;margin:36px auto 0;padding:18px 22px;border-left:4px solid var(--red);background:var(--softred);border-radius:0 12px 12px 0;color:var(--wine);font-size:.92rem}
     .callout b{font-family:var(--title)}
 
@@ -245,11 +276,21 @@
     .teacher-body h3{margin-bottom:3px;font-size:.95rem}
     .teacher-role{color:var(--red);font-size:.76rem;font-weight:700;margin-bottom:8px;display:block}
     .teacher-body p{font-size:.83rem;line-height:1.45;margin:0}
-    .carousel-nav{display:flex;justify-content:flex-end;gap:8px;margin:0 0 20px}
-    .carousel-nav button{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--red);font-size:1.3rem;cursor:pointer;transition:.2s}
-    .carousel-nav button:hover{background:var(--red);color:#fff;border-color:var(--red)}
-    .carousel-nav button:disabled{opacity:.35;cursor:default}
-    .carousel-nav button:disabled:hover{background:#fff;color:var(--red);border-color:var(--line)}
+    .carousel-nav{display:flex;justify-content:flex-end;gap:12px;margin:0 0 20px}
+    .carousel-nav button{
+      width:48px;height:48px;border:2px solid var(--red);border-radius:50%;background:#fff;
+      color:var(--red);display:inline-flex;align-items:center;justify-content:center;
+      cursor:pointer;transition:all .2s ease;box-shadow:0 4px 14px rgba(201,45,45,.16);padding:0;
+    }
+    .carousel-nav button svg{width:24px;height:24px;display:block;transition:transform .2s ease}
+    .carousel-nav button:hover:not(:disabled){
+      background:var(--red);color:#fff;border-color:var(--red);transform:scale(1.08);box-shadow:0 6px 18px rgba(201,45,45,.32);
+    }
+    .carousel-nav button:hover:not(:disabled) svg{stroke:#fff}
+    .carousel-nav button:disabled{
+      opacity:.28;cursor:not-allowed;border-color:var(--line);color:var(--muted);box-shadow:none;background:#fbfbfb;
+    }
+    .carousel-nav button:disabled svg{stroke:var(--muted)}
     .carousel-fade{position:absolute;top:0;bottom:8px;width:60px;pointer-events:none;z-index:1}
     .carousel-fade.left{left:0;background:linear-gradient(90deg,#f7f5f3,transparent)}
     .carousel-fade.right{right:0;background:linear-gradient(-90deg,#f7f5f3,transparent)}
@@ -451,6 +492,21 @@
             <div class="hero-enrollment">TURMA 2026.2 Confirmada.</div>
             <h1>Pedagogia Semipresencial em São Paulo<span>Formação Especializada em Educação Infantil</span></h1>
             <p class="hero-lead">Aprenda com mestres e doutores que vivenciam diariamente a rotina pedagógica nas escolas. Desenvolva mais de 700 horas dedicadas à vivência prática em diversos ambientes educacionais.</p>
+            
+            <div class="hero-pricing-box">
+              <div class="hero-pricing-main">
+                <span class="hero-pricing-tag">Condição Especial · Turma 2026.2</span>
+                <div class="hero-pricing-val">
+                  <small>Mensalidades a partir de</small>
+                  <strong>R$ 198<span>,00/mês*</span></strong>
+                </div>
+              </div>
+              <div class="hero-pricing-badges">
+                <span><b>✓</b> Bolsa ENEM até 100%</span>
+                <span><b>✓</b> Desconto Vestibular e 2ª Graduação</span>
+              </div>
+            </div>
+
             <div class="hero-mec">
               <span class="hero-mec-dot"></span>
               Licenciatura reconhecida pelo MEC
@@ -479,10 +535,11 @@
 <!-- ── 2. INFORMAÇÕES GERAIS ── -->
     <section class="info-strip" aria-label="Informações gerais">
       <div class="container facts">
-        <div class="fact"><strong>Semipresencial</strong><span>com aulas ao vivo</span></div>
+        <div class="fact"><strong>Semipresencial</strong><span>1º ano online · 3º sem. presencial</span></div>
         <div class="fact"><strong>8 Semestres</strong><span>duração (4 anos)</span></div>
-        <div class="fact"><strong>Bela Vista – SP</strong><span>Rua Rui Barbosa, 422 · próx. metrô São Joaquim</span></div>
-        <div class="fact"><strong>Noturno</strong><span>19h às 22h</span></div>
+        <div class="fact"><strong>Bela Vista – SP</strong><span>Campus presencial (Rua Rui Barbosa, 422)</span></div>
+        <div class="fact"><strong>Noturno</strong><span>19h às 21h50</span></div>
+        <div class="fact fact-highlight"><strong>R$ 198,00/mês*</strong><span>mensalidade promocional</span></div>
         <div class="fact"><strong>Licenciatura</strong><span>reconhecida pelo MEC</span></div>
         <div class="fact"><strong>Ingresso simplificado</strong><span>Vestibular, ENEM, 2ª Grad. ou Transferência</span></div>
       </div>
@@ -514,26 +571,30 @@
     <section class="section format" id="modalidade">
       <div class="container">
         <div class="section-head">
-          <h2>Como funciona o semipresencial</h2>
-          <p>Na Phorte, o semipresencial é pensado para unir a flexibilidade que você precisa à orientação constante de nossos professores e à troca real com sua turma.</p>
+          <span class="eyebrow">Dinâmica do curso</span>
+          <h2>Como funciona a rotina do semipresencial</h2>
+          <p>Entenda exatamente como se divide a sua jornada entre o aprendizado online ao vivo e a vivência presencial no campus Bela Vista ao longo dos 8 semestres.</p>
         </div>
         <div class="format-grid">
           <article class="format-step">
-            <div class="format-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
-            <h3>Semestre 100% on-line</h3>
-            <p>Aulas online ao vivo, de segunda a sexta-feira, das 19h às 22h. Não pode assistir ao vivo? Acesse a gravação e organize seus estudos conforme a sua rotina.</p>
+            <div class="format-num">1º ano</div>
+            <h3>1º e 2º Semestres · 100% Online</h3>
+            <p><strong>Aulas online ao vivo:</strong> de segunda a sexta-feira, das 19h às 21h50. Você assiste e interage em tempo real com mestres e doutores, ou acessa as gravações na íntegra para conciliar seus estudos com a rotina.</p>
+            <div class="format-badge">📍 Provas presenciais ao fim de cada semestre</div>
           </article>
           <div class="format-line" aria-hidden="true"></div>
           <article class="format-step">
-            <div class="format-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
-            <h3>Entra a vivência presencial</h3>
-            <p>Você mantém as aulas online e integra a vivência presencial em nosso campus na Bela Vista, três dias por semana.</p>
+            <div class="format-num">2º ao 4º ano</div>
+            <h3>3º ao 8º Semestres · Vivência no Campus</h3>
+            <p><strong>3 dias presenciais no campus:</strong> vivências, laboratórios e debates no Campus Bela Vista (19h às 21h50).<br><strong>2 dias online ao vivo:</strong> aulas complementares transmitidas ao vivo.</p>
+            <div class="format-badge">📍 Campus Bela Vista (Rua Rui Barbosa, 422)</div>
           </article>
           <div class="format-line" aria-hidden="true"></div>
           <article class="format-step">
-            <div class="format-num"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3v2h6V3"/><path d="M9 11l2 2 4-4"/><path d="M9 17h6"/></svg></div>
-            <h3>Avaliações</h3>
-            <p>Provas presenciais obrigatórias realizadas uma vez por semestre em nosso Polo São Paulo.</p>
+            <div class="format-num">+700 horas</div>
+            <h3>Prática e Estágios Supervisionados</h3>
+            <p><strong>Imersão no cotidiano escolar:</strong> vivência prática desde o início, com estágios supervisionados e parcerias em redes públicas e particulares de São Paulo na Educação Infantil e Fundamental.</p>
+            <div class="format-badge">📍 Parcerias escolares e suporte ao estágio</div>
           </article>
         </div>
       </div>
@@ -720,8 +781,8 @@
           <p>Os estudantes de Pedagogia da Faculdade Phorte aprendem com um corpo docente composto por mestres, doutores e especialistas com sólida trajetória na educação básica, gestão escolar, pesquisa aplicada e práticas pedagógicas inovadoras.</p>
         </div>
         <div class="carousel-nav">
-          <button type="button" id="teacher-prev" aria-label="Professor anterior">←</button>
-          <button type="button" id="teacher-next" aria-label="Próximo professor">→</button>
+          <button type="button" id="teacher-prev" aria-label="Professor anterior"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></button>
+          <button type="button" id="teacher-next" aria-label="Próximo professor"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button>
         </div>
         <div class="teacher-carousel-wrap">
           <div class="carousel-fade left" aria-hidden="true"></div>
@@ -822,20 +883,20 @@
 
 
 
-<!-- ── 12. DEPOIMENTOS EM VÍDEO ── -->
+<!-- ── 12. DEPOIMENTOS ── -->
     <section class="section-pad people" id="depoimentos">
       <div class="container">
         <div class="testimonial-stage">
           <div class="testimonial-fixed">
-            <span class="eyebrow">Depoimentos em vídeo</span>
+            <span class="eyebrow">Depoimentos</span>
             <h2>Quem vive a Phorte conta melhor.</h2>
             <p>Conheça experiências de quem escolheu a Faculdade Phorte para construir sua trajetória na educação.</p>
           </div>
 
           <div class="testimonial-rotator">
             <div class="carousel-nav">
-              <button type="button" id="testimonial-prev" aria-label="Depoimento anterior">←</button>
-              <button type="button" id="testimonial-next" aria-label="Próximo depoimento">→</button>
+              <button type="button" id="testimonial-prev" aria-label="Depoimento anterior"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg></button>
+              <button type="button" id="testimonial-next" aria-label="Próximo depoimento"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button>
             </div>
             <div class="testimonial-carousel-wrap">
               <div class="testimonial-carousel" id="testimonial-carousel">
@@ -1059,6 +1120,15 @@
           <span class="eyebrow">Comece agora</span>
           <h2>Comece sua graduação em Pedagogia.</h2>
           <p>Escolha a modalidade de ingresso que melhor se adapta à sua trajetória e inicie hoje mesmo sua formação superior na Faculdade Phorte.</p>
+          
+          <div class="enroll-price-box">
+            <span class="enroll-price-box-label">Condição Especial · Turma 2026.2</span>
+            <div class="enroll-price-box-val">
+              <strong>R$ 198</strong><span>,00/mês*</span>
+            </div>
+            <p class="enroll-price-box-desc">Mensalidade promocional para novas turmas. Aproveite condições especiais para nota do ENEM, Vestibular, 2ª Graduação e Transferência.</p>
+          </div>
+
           <div class="steps-mini">
             <span>Vestibular</span>
             <span>ENEM</span>
