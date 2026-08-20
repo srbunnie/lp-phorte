@@ -1,7 +1,9 @@
 # Dependências e caches
 node_modules/
+.next/
 .playwright-cli/
 
 # Arquivos sensíveis e logs
 .env*
 *.log
+
