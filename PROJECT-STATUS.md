@@ -18,8 +18,10 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 1. Graduação em Pedagogia — Em andamento; versão clara em andamento e versão escura cancelada.
 2. Educação Infantil (Perspectiva Pikleriana) — Em andamento; landing page principal e agradecimento.
-3. Price Card Graduação — Pausado.
-4. Price Card USCS — Pausado.
+3. Kit de Boas-Vindas (Educação Física) — Em andamento; aplicação Next.js com export estático dist (FTP), integração Google Sheets e RD Station.
+4. Políticas de Privacidade, Cookies e Termos de Uso — Em andamento; página unificada 3-em-1.
+5. Price Card Graduação — Pausado.
+6. Price Card USCS — Pausado.
 
 ### Concluídos
 

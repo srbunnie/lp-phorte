@@ -1,0 +1,9233 @@
+<!-- =========================================================
+     FACULDADE PHORTE
+     PERSONALIZAÇÃO DO KIT
+     VERSÃO CONSOLIDADA
+     WORDPRESS + ELEMENTOR
+
+     UM ÚNICO WIDGET HTML
+========================================================= -->
+
+<script>
+(function () {
+
+    var editorFrame =
+        window.self !== window.top &&
+        window.location.search.indexOf("elementor-preview=") !== -1;
+
+    document.documentElement.classList.add(
+        editorFrame ? "pk-editor-mode" : "pk-flow-mode"
+    );
+
+})();
+</script>
+
+
+<style>
+
+/* =========================================================
+   RESET / VARIÁVEIS
+========================================================= */
+
+#pk-app,
+#pk-app * {
+    box-sizing: border-box;
+}
+
+#pk-app {
+    --pk-red: #e30613;
+    --pk-red-dark: #a90009;
+    --pk-black: #070707;
+    --pk-text: #171717;
+    --pk-gray: #707070;
+    --pk-border: #dedede;
+
+    width: 100%;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================================================
+   TELAS
+========================================================= */
+
+html.pk-flow-mode #pk-app .pk-screen {
+    display: none !important;
+}
+
+html.pk-flow-mode #pk-app .pk-screen.pk-active {
+    display: block !important;
+}
+
+
+/* NO EDITOR ELEMENTOR
+   TODAS AS ETAPAS FICAM VISÍVEIS */
+
+html.pk-editor-mode #pk-app .pk-screen,
+html.pk-editor-mode #pk-second-post,
+html.pk-editor-mode #pk-community {
+    display: block !important;
+}
+
+
+/* =========================================================
+   ESTRUTURA COMPARTILHADA
+========================================================= */
+
+.pk-step-screen {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    padding:
+        48px 0 100px;
+
+    color:
+        var(--pk-text);
+
+    background:
+
+        radial-gradient(
+            circle at 95% 3%,
+            rgba(227,6,19,.07),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            180deg,
+            #faf9f7 0%,
+            #f3f2f0 100%
+        );
+}
+
+
+.pk-step-container {
+
+    width:
+        min(calc(100% - 64px), 1380px);
+
+    margin:
+        0 auto;
+}
+
+
+/* =========================================================
+   PROGRESSO
+========================================================= */
+
+.pk-step-progress {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 38px;
+
+    color: #9a9a9a;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: .85px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-step-progress .pk-done {
+    color: #666;
+}
+
+
+.pk-step-progress .pk-current {
+    color: var(--pk-red);
+}
+
+
+/* =========================================================
+   INTRO DAS ETAPAS
+========================================================= */
+
+.pk-step-intro {
+
+    max-width: 850px;
+
+    margin-bottom: 34px;
+}
+
+
+.pk-step-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+
+    color:
+        var(--pk-red) !important;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-step-eyebrow::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 2px;
+
+    background:
+        var(--pk-red);
+}
+
+
+.pk-step-title {
+
+    margin: 0 !important;
+
+    color:
+        #151515 !important;
+
+    font-size:
+        clamp(43px, 4.2vw, 62px);
+
+    line-height: 1;
+
+    letter-spacing: -2.7px;
+
+    font-weight: 800;
+}
+
+
+.pk-step-description {
+
+    max-width: 750px;
+
+    margin:
+        18px 0 0 !important;
+
+    color:
+        #696969 !important;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   BOTÕES COMPARTILHADOS
+========================================================= */
+
+.pk-btn-back,
+.pk-btn-next,
+.pk-btn-light {
+
+    min-height: 48px;
+
+    padding:
+        0 21px !important;
+
+    border-radius:
+        7px !important;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+
+.pk-btn-back,
+.pk-btn-light {
+
+    border:
+        1px solid #d2d2d2 !important;
+
+    background:
+        #fff !important;
+
+    color:
+        #444 !important;
+}
+
+
+.pk-btn-next {
+
+    border:
+        0 !important;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #eb0715,
+            #b10009
+        ) !important;
+
+    color:
+        #fff !important;
+
+    box-shadow:
+        0 12px 28px
+        rgba(227,6,19,.18);
+}
+
+
+.pk-btn-next:hover {
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 15px 33px
+        rgba(227,6,19,.27);
+}
+
+
+.pk-btn-next:disabled {
+
+    cursor:
+        not-allowed;
+
+    opacity: .38;
+
+    box-shadow: none;
+}
+
+
+.pk-navigation {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 28px;
+
+    padding-top: 24px;
+
+    border-top:
+        1px solid #e1e1e1;
+}
+
+
+/* =========================================================
+   FORMULÁRIOS
+========================================================= */
+
+.pk-form-box {
+
+    padding: 29px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 16px 40px
+        rgba(0,0,0,.045);
+}
+
+
+.pk-form-heading {
+
+    margin-bottom: 24px;
+}
+
+
+.pk-form-heading strong {
+
+    display: block;
+
+    color: #181818;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.pk-form-heading span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #858585;
+
+    font-size: 12px;
+}
+
+
+.pk-form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(12,1fr);
+
+    gap: 16px;
+}
+
+
+.pk-field {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.pk-col-12 { grid-column: span 12; }
+.pk-col-9 { grid-column: span 9; }
+.pk-col-8 { grid-column: span 8; }
+.pk-col-6 { grid-column: span 6; }
+.pk-col-5 { grid-column: span 5; }
+.pk-col-4 { grid-column: span 4; }
+.pk-col-3 { grid-column: span 3; }
+
+
+.pk-field label {
+
+    color: #313131;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+
+.pk-required {
+    color: var(--pk-red);
+}
+
+
+#pk-app .pk-input,
+#pk-app .pk-select {
+
+    width: 100% !important;
+
+    min-height: 50px !important;
+
+    margin: 0 !important;
+
+    padding:
+        0 14px !important;
+
+    border:
+        1px solid #dcdcdc !important;
+
+    border-radius:
+        8px !important;
+
+    outline: 0 !important;
+
+    box-shadow:
+        none !important;
+
+    background:
+        #fafafa !important;
+
+    color:
+        #202020 !important;
+
+    font-family:
+        inherit !important;
+
+    font-size:
+        13px !important;
+}
+
+
+#pk-app .pk-input:focus,
+#pk-app .pk-select:focus {
+
+    border-color:
+        rgba(227,6,19,.65) !important;
+
+    background:
+        #fff !important;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(227,6,19,.07) !important;
+}
+
+
+.pk-hint {
+
+    color: #999;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+.pk-field.pk-field-error
+.pk-input,
+
+.pk-field.pk-field-error
+.pk-select {
+
+    border-color:
+        var(--pk-red) !important;
+
+    background:
+        #fff7f7 !important;
+}
+
+
+.pk-error {
+
+    display: none;
+
+    color:
+        var(--pk-red);
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.pk-field.pk-field-error
+.pk-error {
+
+    display: block;
+}
+
+
+/* =========================================================
+   CHECKBOX
+========================================================= */
+
+.pk-check-box {
+
+    margin-top: 21px;
+
+    padding: 15px;
+
+    border:
+        1px solid #e1e1e1;
+
+    border-radius: 10px;
+
+    background: #f8f8f8;
+}
+
+
+.pk-check-label {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+
+#pk-app
+.pk-check-label input {
+
+    width:
+        18px !important;
+
+    height:
+        18px !important;
+
+    flex-shrink: 0;
+
+    margin:
+        1px 0 0 !important;
+
+    accent-color:
+        var(--pk-red);
+}
+
+
+.pk-check-copy {
+
+    color: #606060;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.pk-check-copy strong {
+    color: #222;
+}
+
+
+/* =========================================================
+   CARD ESCURO
+========================================================= */
+
+.pk-dark-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 31px;
+
+    border-radius: 16px;
+
+    background:
+
+        radial-gradient(
+            circle at 95% 90%,
+            rgba(227,6,19,.15),
+            transparent 36%
+        ),
+
+        linear-gradient(
+            145deg,
+            #1b1b1b,
+            #090909
+        );
+
+    color: #fff;
+
+    box-shadow:
+        0 18px 42px
+        rgba(0,0,0,.10);
+}
+
+
+.pk-dark-label {
+
+    position: relative;
+
+    z-index: 2;
+
+    color:
+        var(--pk-red);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-dark-title {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin:
+        12px 0 13px !important;
+
+    color:
+        #fff !important;
+
+    font-size:
+        27px !important;
+
+    line-height: 1.08;
+
+    letter-spacing: -.8px;
+
+    font-weight: 800;
+}
+
+
+.pk-dark-text {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 !important;
+
+    color:
+        #bdbdbd !important;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+#pk-home {
+
+    --phorte-red: #e30613;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: #fff;
+
+    background:
+
+        radial-gradient(
+            circle at 82% 47%,
+            rgba(227,6,19,.16),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            118deg,
+            #020202 0%,
+            #070707 57%,
+            #120000 100%
+        );
+}
+
+
+#pk-home::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 570px;
+
+    height: 570px;
+
+    right: -210px;
+
+    top: 40px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(227,6,19,.055);
+
+    filter:
+        blur(20px);
+
+    pointer-events: none;
+}
+
+
+.pk-home-container {
+
+    width:
+        min(calc(100% - 64px),1380px);
+
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0 auto;
+}
+
+
+.pk-home-header {
+
+    min-height: 92px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.09);
+}
+
+
+.pk-home-logo img {
+
+    display: block;
+
+    width: 205px;
+
+    max-width: 100%;
+
+    height: auto;
+}
+
+
+.pk-home-student {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding:
+        10px 17px;
+
+    border:
+        1px solid rgba(255,255,255,.18);
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    color:
+        rgba(255,255,255,.88);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.pk-home-student svg {
+
+    width: 17px;
+
+    height: 17px;
+
+    stroke:
+        currentColor;
+}
+
+
+.pk-home-hero {
+
+    min-height:
+        calc(100vh - 180px);
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(500px,.98fr)
+        minmax(440px,1.02fr);
+
+    align-items: center;
+
+    gap: 75px;
+
+    padding:
+        58px 0 38px;
+}
+
+
+.pk-home-copy {
+
+    max-width: 620px;
+}
+
+
+.pk-home-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 18px;
+
+    color:
+        #fff !important;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-home-eyebrow::before {
+
+    content: "";
+
+    width: 31px;
+
+    height: 2px;
+
+    background:
+        var(--phorte-red);
+}
+
+
+.pk-home-title {
+
+    margin: 0 !important;
+
+    color:
+        #fff !important;
+
+    font-size:
+        clamp(53px,5vw,78px);
+
+    line-height: .98;
+
+    letter-spacing: -3.5px;
+
+    font-weight: 800;
+}
+
+
+.pk-home-title span {
+
+    display: block;
+
+    color:
+        var(--phorte-red) !important;
+}
+
+
+.pk-home-subtitle {
+
+    max-width: 570px;
+
+    margin:
+        24px 0 0 !important;
+
+    color:
+        #d0d0d0 !important;
+
+    font-size: 18px;
+
+    line-height: 1.55;
+}
+
+
+.pk-home-time {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 18px;
+
+    color: #9f9f9f;
+
+    font-size: 13px;
+}
+
+
+.pk-home-time svg {
+
+    width: 18px;
+
+    height: 18px;
+}
+
+
+.pk-home-button {
+
+    min-height: 57px;
+
+    margin-top: 27px;
+
+    padding:
+        0 29px !important;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    border: 0 !important;
+
+    border-radius:
+        7px !important;
+
+    cursor: pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #eb0715,
+            #b4000a
+        ) !important;
+
+    color:
+        #fff !important;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 15px 35px
+        rgba(227,6,19,.21);
+}
+
+
+.pk-home-button svg {
+
+    width: 20px;
+
+    height: 20px;
+}
+
+
+.pk-kit-side {
+
+    min-height: 480px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-top: 20px;
+}
+
+
+.pk-kit-side::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 370px;
+
+    height: 370px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(227,6,19,.13);
+
+    filter:
+        blur(90px);
+}
+
+
+.pk-kit-dots {
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 290px;
+
+    right: 0;
+
+    top: 70px;
+
+    opacity: .27;
+
+    background-image:
+
+        radial-gradient(
+            rgba(227,6,19,.82) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        11px 11px;
+}
+
+
+.pk-kit-image {
+
+    width:
+        min(100%,470px);
+
+    max-height: 350px;
+
+    position: relative;
+
+    z-index: 3;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(
+            0 25px 26px rgba(0,0,0,.55)
+        );
+}
+
+
+.pk-kit-message {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 100%;
+
+    max-width: 430px;
+
+    margin-top: 14px;
+
+    padding-left: 41px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 15px;
+
+    line-height: 1.45;
+}
+
+
+.pk-kit-message::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 10px;
+
+    width: 28px;
+
+    height: 2px;
+
+    background:
+        var(--phorte-red);
+}
+
+
+.pk-kit-message strong {
+
+    color: #fff;
+}
+
+
+.pk-home-word {
+
+    position: absolute;
+
+    right: -65px;
+
+    bottom: -25px;
+
+    color:
+        rgba(255,255,255,.018);
+
+    font-size:
+        clamp(110px,13vw,210px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -10px;
+
+    white-space: nowrap;
+}
+
+
+.pk-home-progress-wrap {
+
+    padding-bottom: 34px;
+}
+
+
+.pk-home-progress {
+
+    width: 100%;
+
+    max-width: 900px;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    margin: 0 auto;
+}
+
+
+.pk-home-progress::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 10%;
+
+    right: 10%;
+
+    top: 17px;
+
+    height: 1px;
+
+    background:
+        rgba(255,255,255,.19);
+}
+
+
+.pk-home-progress-item {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+}
+
+
+.pk-home-progress-circle {
+
+    width: 35px;
+
+    height: 35px;
+
+    margin:
+        0 auto 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid #4d4d4d;
+
+    border-radius: 50%;
+
+    background:
+        #080808;
+
+    color:
+        #808080;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.pk-home-progress-item:first-child
+.pk-home-progress-circle {
+
+    border-color:
+        var(--phorte-red);
+
+    background:
+        var(--phorte-red);
+
+    color: #fff;
+
+    box-shadow:
+        0 0 0 5px
+        rgba(227,6,19,.11);
+}
+
+
+.pk-home-progress-label {
+
+    color: #898989;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.pk-home-progress-item:first-child
+.pk-home-progress-label {
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   LIVROS
+========================================================= */
+
+.pk-books-search {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    overflow: hidden;
+
+    margin-bottom: 37px;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 12px;
+
+    background: #fff;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.035);
+}
+
+
+.pk-books-search-field {
+
+    min-height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding:
+        0 20px;
+}
+
+
+.pk-books-search-field svg {
+
+    width: 20px;
+
+    height: 20px;
+
+    stroke: #888;
+}
+
+
+#pk-book-search {
+
+    width:
+        100% !important;
+
+    border:
+        0 !important;
+
+    outline:
+        0 !important;
+
+    padding:
+        0 !important;
+
+    background:
+        transparent !important;
+
+    box-shadow:
+        none !important;
+
+    font-family:
+        inherit !important;
+
+    font-size:
+        15px !important;
+}
+
+
+.pk-books-search-button {
+
+    min-width: 135px;
+
+    border:
+        0 !important;
+
+    cursor: pointer;
+
+    background:
+        #151515 !important;
+
+    color:
+        #fff !important;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.pk-area-intro {
+
+    margin-bottom: 19px;
+}
+
+
+.pk-area-intro strong {
+
+    display: block;
+
+    color: #181818;
+
+    font-size: 17px;
+
+    font-weight: 800;
+}
+
+
+.pk-area-intro span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #858585;
+
+    font-size: 13px;
+}
+
+
+.pk-area-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 16px;
+}
+
+
+.pk-area-card {
+
+    min-height: 202px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    padding:
+        25px !important;
+
+    border:
+        1px solid #ddd !important;
+
+    border-radius:
+        14px !important;
+
+    background:
+        #fff !important;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.pk-area-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(227,6,19,.42) !important;
+
+    box-shadow:
+        0 18px 40px
+        rgba(0,0,0,.07);
+}
+
+
+.pk-area-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 25px;
+
+    width: 39px;
+
+    height: 3px;
+
+    background:
+        var(--pk-red);
+}
+
+
+.pk-area-number {
+
+    margin-bottom: 28px;
+
+    color:
+        var(--pk-red);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.4px;
+}
+
+
+.pk-area-title {
+
+    margin: 0 !important;
+
+    color:
+        #171717 !important;
+
+    font-size:
+        21px !important;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+
+.pk-area-copy {
+
+    margin:
+        9px 0 19px !important;
+
+    color:
+        #777 !important;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+.pk-area-action {
+
+    margin-top: auto;
+
+    color:
+        var(--pk-red);
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+#pk-book-catalog {
+
+    display: none;
+}
+
+
+#pk-book-catalog.pk-visible {
+
+    display: block;
+}
+
+
+#pk-book-areas.pk-hidden {
+
+    display: none;
+}
+
+
+.pk-catalog-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-end;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+}
+
+
+.pk-catalog-back {
+
+    margin-bottom: 11px;
+
+    padding:
+        0 !important;
+
+    border:
+        0 !important;
+
+    cursor: pointer;
+
+    background:
+        transparent !important;
+
+    color:
+        #777 !important;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.pk-catalog-title {
+
+    margin: 0 !important;
+
+    color:
+        #151515 !important;
+
+    font-size:
+        31px !important;
+
+    font-weight: 800;
+}
+
+
+.pk-catalog-count {
+
+    color: #888;
+
+    font-size: 12px;
+}
+
+
+.pk-book-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 18px;
+}
+
+
+.pk-book-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 16px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 14px;
+
+    background: #fff;
+}
+
+
+.pk-book-card.pk-book-selected {
+
+    border:
+        2px solid
+        var(--pk-red);
+
+    box-shadow:
+        0 14px 32px
+        rgba(227,6,19,.12);
+}
+
+
+.pk-book-cover-area {
+
+    height: 270px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #f8f8f8,
+            #ededed
+        );
+}
+
+
+.pk-book-cover {
+
+    width: 155px;
+
+    height: 220px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content:
+        space-between;
+
+    overflow: hidden;
+
+    padding: 18px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #272727,
+            #060606
+        );
+
+    box-shadow:
+        0 14px 30px
+        rgba(0,0,0,.22);
+}
+
+
+.pk-book-cover::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 105px;
+
+    height: 105px;
+
+    right: -36px;
+
+    top: -36px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(227,6,19,.74);
+}
+
+
+.pk-book-brand,
+.pk-book-cover-title {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.pk-book-brand {
+
+    color:
+        var(--pk-red);
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-book-cover-title {
+
+    color:
+        #fff !important;
+
+    font-size: 13px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+}
+
+
+.pk-book-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding-top: 16px;
+}
+
+
+.pk-book-category {
+
+    margin-bottom: 7px;
+
+    color:
+        var(--pk-red);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.1px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-book-title {
+
+    margin: 0 !important;
+
+    color:
+        #191919 !important;
+
+    font-size:
+        15px !important;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+}
+
+
+.pk-book-author {
+
+    min-height: 42px;
+
+    margin:
+        8px 0 18px !important;
+
+    color:
+        #777 !important;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+.pk-book-select {
+
+    width: 100%;
+
+    min-height: 43px;
+
+    margin-top: auto;
+
+    border:
+        1px solid #d4d4d4 !important;
+
+    border-radius:
+        7px !important;
+
+    cursor: pointer;
+
+    background:
+        #fff !important;
+
+    color:
+        #282828 !important;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+
+.pk-book-card.pk-book-selected
+.pk-book-select {
+
+    border-color:
+        var(--pk-red) !important;
+
+    background:
+        var(--pk-red) !important;
+
+    color:
+        #fff !important;
+}
+
+
+#pk-book-empty {
+
+    display: none;
+
+    padding:
+        50px 20px;
+
+    border:
+        1px dashed #ccc;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+#pk-book-more-wrap {
+
+    display: none;
+
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+
+.pk-book-selection-bar {
+
+    display: none;
+
+    position: sticky;
+
+    z-index: 50;
+
+    bottom: 17px;
+
+    margin-top: 30px;
+
+    padding:
+        14px 15px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(15,15,15,.97);
+
+    color: #fff;
+
+    box-shadow:
+        0 22px 50px
+        rgba(0,0,0,.25);
+}
+
+
+.pk-book-selection-bar.pk-visible {
+
+    display: flex;
+}
+
+
+.pk-book-selection-icon {
+
+    width: 49px;
+
+    height: 61px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #e30613,
+            #720005
+        );
+
+    font-size: 20px;
+
+    font-weight: 900;
+}
+
+
+.pk-book-selection-info {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.pk-book-selection-label {
+
+    color:
+        var(--pk-red);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+#pk-selected-book-name {
+
+    margin-top: 4px;
+
+    overflow: hidden;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    text-overflow:
+        ellipsis;
+}
+
+
+/* =========================================================
+   CAMISETA
+========================================================= */
+
+.pk-shirt-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px,.72fr)
+        minmax(560px,1.28fr);
+
+    gap: 28px;
+}
+
+
+.pk-shirt-visual {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 220px;
+
+    height: 200px;
+
+    margin:
+        25px auto 10px;
+}
+
+
+.pk-shirt-body {
+
+    width: 125px;
+
+    height: 165px;
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    transform:
+        translateX(-50%);
+
+    clip-path:
+
+        polygon(
+            18% 0,
+            34% 0,
+            38% 8%,
+            62% 8%,
+            66% 0,
+            82% 0,
+            100% 17%,
+            86% 38%,
+            77% 31%,
+            77% 100%,
+            23% 100%,
+            23% 31%,
+            14% 38%,
+            0 17%
+        );
+
+    background:
+
+        linear-gradient(
+            110deg,
+            #222 0%,
+            #222 48%,
+            #d70713 49%,
+            #a60009 100%
+        );
+}
+
+
+.pk-shirt-width {
+
+    position: absolute;
+
+    left: 20px;
+
+    right: 20px;
+
+    top: 96px;
+
+    height: 1px;
+
+    background:
+        #f5a623;
+}
+
+
+.pk-shirt-width-label {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 72px;
+
+    color:
+        #f5a623;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.pk-shirt-height {
+
+    position: absolute;
+
+    right: 30px;
+
+    top: 25px;
+
+    bottom: 5px;
+
+    width: 1px;
+
+    background:
+        #26b96b;
+}
+
+
+.pk-shirt-height-label {
+
+    position: absolute;
+
+    right: 39px;
+
+    bottom: 0;
+
+    color:
+        #26b96b;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.pk-shirt-note {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 22px;
+
+    padding:
+        13px 14px;
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    color: #bbb;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+.pk-shirt-note strong {
+
+    color: #fff;
+}
+
+
+.pk-size-box {
+
+    padding: 28px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 16px 40px
+        rgba(0,0,0,.045);
+}
+
+
+.pk-size-header {
+
+    margin-bottom: 22px;
+}
+
+
+.pk-size-header strong {
+
+    display: block;
+
+    color: #181818;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.pk-size-header span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #858585;
+
+    font-size: 12px;
+}
+
+
+.pk-size-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 13px;
+}
+
+
+.pk-size-card {
+
+    min-height: 150px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content:
+        space-between;
+
+    padding:
+        20px !important;
+
+    border:
+        1px solid #dedede !important;
+
+    border-radius:
+        12px !important;
+
+    cursor: pointer;
+
+    background:
+        #fafafa !important;
+
+    color:
+        #151515 !important;
+
+    text-align: left;
+
+    font-family: inherit;
+}
+
+
+.pk-size-card.pk-size-selected {
+
+    border:
+        2px solid
+        var(--pk-red) !important;
+
+    background:
+        #fff7f7 !important;
+
+    box-shadow:
+        0 13px 30px
+        rgba(227,6,19,.12);
+}
+
+
+.pk-size-card.pk-size-selected::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    top: 13px;
+
+    right: 13px;
+
+    width: 26px;
+
+    height: 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--pk-red);
+
+    color: #fff;
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+
+.pk-size-name {
+
+    color:
+        var(--pk-red);
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+
+.pk-size-measure strong {
+
+    display: block;
+
+    color: #191919;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.pk-size-measure span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #898989;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: .4px;
+
+    text-transform: uppercase;
+}
+
+
+#pk-size-summary {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 16px;
+
+    align-items: center;
+
+    gap: 14px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 11px;
+
+    background:
+        #f8f8f8;
+}
+
+
+#pk-size-summary.pk-visible {
+
+    display: flex;
+}
+
+
+.pk-size-summary-badge {
+
+    width: 52px;
+
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+        var(--pk-red);
+
+    color: #fff;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+
+.pk-size-summary-copy {
+
+    flex: 1;
+}
+
+
+.pk-size-summary-copy span {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-size-summary-copy strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #181818;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   DADOS DO ALUNO
+========================================================= */
+
+.pk-student-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(290px,.65fr)
+        minmax(600px,1.35fr);
+
+    gap: 28px;
+}
+
+
+.pk-security-list {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    gap: 13px;
+
+    margin-top: 27px;
+}
+
+
+.pk-security-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding-top: 13px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.10);
+
+    color: #d0d0d0;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+.pk-security-check {
+
+    width: 19px;
+
+    height: 19px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(227,6,19,.15);
+
+    color:
+        var(--pk-red);
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   ENDEREÇO
+========================================================= */
+
+.pk-address-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px,.68fr)
+        minmax(600px,1.32fr);
+
+    gap: 28px;
+}
+
+
+.pk-summary-item {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding:
+        17px 0;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.11);
+}
+
+
+.pk-summary-item:first-of-type {
+
+    border-top: 0;
+}
+
+
+.pk-summary-label {
+
+    margin-bottom: 6px;
+
+    color: #888;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-summary-value {
+
+    color: #fff;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    font-weight: 800;
+}
+
+
+.pk-summary-note {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    border-radius: 9px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    color: #b9b9b9;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   CONFIRMAÇÃO
+========================================================= */
+
+.pk-confirm-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        minmax(300px,.42fr);
+
+    gap: 28px;
+}
+
+
+.pk-review-box {
+
+    padding: 29px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 16px 40px
+        rgba(0,0,0,.045);
+}
+
+
+.pk-review-heading {
+
+    margin-bottom: 23px;
+}
+
+
+.pk-review-heading strong {
+
+    display: block;
+
+    color: #181818;
+
+    font-size: 18px;
+
+    font-weight: 800;
+}
+
+
+.pk-review-heading span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    color: #858585;
+
+    font-size: 12px;
+}
+
+
+.pk-review-grid {
+
+    display: grid;
+
+    gap: 13px;
+}
+
+
+.pk-review-card {
+
+    display: grid;
+
+    grid-template-columns:
+        52px 1fr auto;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 18px;
+
+    border:
+        1px solid #e0e0e0;
+
+    border-radius: 12px;
+
+    background: #fafafa;
+}
+
+
+.pk-review-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background:
+        rgba(227,6,19,.09);
+
+    color:
+        var(--pk-red);
+
+    font-size: 20px;
+
+    font-weight: 900;
+}
+
+
+.pk-review-icon svg {
+
+    width: 23px;
+
+    height: 23px;
+
+    stroke: currentColor;
+}
+
+
+.pk-review-label {
+
+    margin-bottom: 5px;
+
+    color:
+        var(--pk-red);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-review-value {
+
+    color: #181818;
+
+    font-size: 14px;
+
+    line-height: 1.45;
+
+    font-weight: 800;
+}
+
+
+.pk-review-secondary {
+
+    margin-top: 4px;
+
+    color: #858585;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+.pk-review-edit {
+
+    padding:
+        9px 13px !important;
+
+    border:
+        1px solid #d5d5d5 !important;
+
+    border-radius:
+        7px !important;
+
+    cursor: pointer;
+
+    background:
+        #fff !important;
+
+    color:
+        #555 !important;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+
+.pk-final-card
+.pk-dark-text {
+
+    margin-bottom:
+        24px !important;
+}
+
+
+.pk-final-list {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    gap: 12px;
+
+    margin-bottom: 27px;
+}
+
+
+.pk-final-item {
+
+    display: flex;
+
+    gap: 9px;
+
+    color: #d2d2d2;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+
+.pk-final-item span:first-child {
+
+    color:
+        var(--pk-red);
+
+    font-weight: 900;
+}
+
+
+.pk-final-confirm {
+
+    width: 100%;
+
+    min-height: 53px;
+
+    position: relative;
+
+    z-index: 2;
+
+    border:
+        0 !important;
+
+    border-radius:
+        8px !important;
+
+    cursor: pointer;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ed0715,
+            #ab0008
+        ) !important;
+
+    color:
+        #fff !important;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 14px 30px
+        rgba(227,6,19,.22);
+}
+
+
+/* =========================================================
+   SUCESSO
+========================================================= */
+
+#pk-success {
+
+    display: none;
+
+    min-height: 440px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+#pk-success.pk-visible {
+
+    display: flex;
+}
+
+
+.pk-success-card {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding:
+        60px 40px;
+
+    border:
+        1px solid #dedede;
+
+    border-radius: 18px;
+
+    background: #fff;
+
+    box-shadow:
+        0 20px 50px
+        rgba(0,0,0,.06);
+}
+
+
+.pk-success-icon {
+
+    width: 78px;
+
+    height: 78px;
+
+    margin:
+        0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--pk-red);
+
+    color: #fff;
+
+    font-size: 34px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 12px 30px
+        rgba(227,6,19,.20);
+}
+
+
+.pk-success-eyebrow {
+
+    margin-bottom: 12px;
+
+    color:
+        var(--pk-red);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-success-title {
+
+    margin: 0 !important;
+
+    color:
+        #151515 !important;
+
+    font-size:
+        clamp(38px,4vw,56px);
+
+    line-height: 1;
+
+    letter-spacing: -2.2px;
+
+    font-weight: 800;
+}
+
+
+.pk-success-text {
+
+    max-width: 610px;
+
+    margin:
+        20px auto 0 !important;
+
+    color:
+        #6d6d6d !important;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   SEGUNDA PÓS
+========================================================= */
+
+#pk-second-post {
+
+    display: none;
+
+    width: 100%;
+
+    padding:
+        12px 0 34px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #f3f2f0,
+            #ededeb
+        );
+}
+
+
+html.pk-editor-mode
+#pk-second-post {
+
+    display: block;
+}
+
+
+.pk-second-container {
+
+    width:
+        min(calc(100% - 64px),1380px);
+
+    margin: 0 auto;
+}
+
+
+.pk-second-transition {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    margin-bottom: 29px;
+
+    color: #929292;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-second-transition::before,
+.pk-second-transition::after {
+
+    content: "";
+
+    width: 47px;
+
+    height: 1px;
+
+    background: #cacaca;
+}
+
+
+.pk-second-banner {
+
+    min-height: 380px;
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(520px,1.08fr)
+        minmax(370px,.92fr);
+
+    align-items: center;
+
+    gap: 50px;
+
+    overflow: hidden;
+
+    padding:
+        56px 60px;
+
+    border-radius: 20px;
+
+    background:
+
+        radial-gradient(
+            circle at 78% 45%,
+            rgba(227,6,19,.17),
+            transparent 27%
+        ),
+
+        linear-gradient(
+            118deg,
+            #020202 0%,
+            #070707 58%,
+            #130000 100%
+        );
+
+    color: #fff;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,.17);
+}
+
+
+.pk-second-banner::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 270px;
+
+    height: 330px;
+
+    right: -15px;
+
+    top: 20px;
+
+    opacity: .25;
+
+    background-image:
+
+        radial-gradient(
+            rgba(227,6,19,.78) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        11px 11px;
+}
+
+
+.pk-second-content,
+.pk-second-benefits {
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.pk-second-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 16px;
+
+    color:
+        rgba(255,255,255,.75);
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-second-eyebrow::before {
+
+    content: "";
+
+    width: 30px;
+
+    height: 2px;
+
+    background:
+        var(--pk-red);
+}
+
+
+.pk-second-title {
+
+    margin: 0 !important;
+
+    color:
+        #fff !important;
+
+    font-size:
+        clamp(39px,3.8vw,59px);
+
+    line-height: .99;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 800;
+}
+
+
+.pk-second-title span {
+
+    display: block;
+
+    color:
+        var(--pk-red) !important;
+}
+
+
+.pk-second-description {
+
+    max-width: 610px;
+
+    margin:
+        21px 0 0 !important;
+
+    color:
+        #c9c9c9 !important;
+
+    font-size: 15px;
+
+    line-height: 1.58;
+}
+
+
+.pk-second-cta {
+
+    min-height: 53px;
+
+    margin-top: 27px;
+
+    padding:
+        0 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #eb0715,
+            #ae0009
+        );
+
+    color:
+        #fff !important;
+
+    text-decoration:
+        none !important;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    box-shadow:
+        0 15px 34px
+        rgba(227,6,19,.22);
+}
+
+
+.pk-second-benefits {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 13px;
+}
+
+
+.pk-second-benefit {
+
+    min-height: 205px;
+
+    position: relative;
+
+    padding: 26px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.11);
+
+    border-radius: 15px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.065),
+            rgba(255,255,255,.018)
+        );
+}
+
+
+.pk-second-benefit::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 25px;
+
+    width: 37px;
+
+    height: 2px;
+
+    background:
+        var(--pk-red);
+}
+
+
+.pk-second-benefit-label {
+
+    color: #8f8f8f;
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+}
+
+
+.pk-second-percentage {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: #fff;
+
+    font-size: 54px;
+
+    line-height: .9;
+
+    letter-spacing: -3px;
+
+    font-weight: 900;
+}
+
+
+.pk-second-discount {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color:
+        var(--pk-red);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+.pk-second-mode {
+
+    display: block;
+
+    margin-top: 14px;
+
+    color: #bcbcbc;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+}
+
+.pk-book-cover-image {
+    width: auto;
+    max-width: 88%;
+    height: 220px;
+    display: block;
+    object-fit: contain;
+    border-radius: 2px;
+    box-shadow: 0 14px 30px rgba(0,0,0,.22);
+}
+
+#pk-confirmation.pk-completed {
+    min-height: auto;
+    padding-bottom: 30px;
+}
+
+.pk-success-next {
+    margin-top: 24px;
+    color: var(--pk-red);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.pk-success-next span {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   COMUNIDADE PHORTE
+========================================================= */
+
+#pk-community {
+    display: none;
+    width: 100%;
+    padding: 0 0 56px;
+    background: #ededeb;
+}
+
+html.pk-editor-mode #pk-community {
+    display: block;
+}
+
+.pk-community-container {
+    width: min(calc(100% - 64px), 1380px);
+    margin: 0 auto;
+}
+
+.pk-community-card {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 34px;
+    padding: 42px 48px;
+    border: 1px solid #dedede;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 18px 45px rgba(0,0,0,.06);
+}
+
+.pk-community-card::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    right: -100px;
+    top: -105px;
+    border-radius: 50%;
+    background: rgba(227, 6, 19, .10);
+}
+
+.pk-community-copy,
+.pk-community-cta {
+    position: relative;
+    z-index: 2;
+}
+
+.pk-community-eyebrow {
+    margin-bottom: 10px;
+    color: var(--pk-red);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.pk-community-title {
+    margin: 0 !important;
+    color: #171717 !important;
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1.05;
+    letter-spacing: -1.8px;
+    font-weight: 800;
+}
+
+.pk-community-description {
+    max-width: 720px;
+    margin: 14px 0 0 !important;
+    color: #6d6d6d !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.pk-community-cta {
+    min-height: 54px;
+    padding: 0 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--pk-red);
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: 900;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.pk-community-cta:hover {
+    background: var(--pk-red-dark);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVO
+========================================================= */
+
+@media(max-width:950px) {
+
+    .pk-home-hero,
+    .pk-shirt-layout,
+    .pk-student-layout,
+    .pk-address-layout,
+    .pk-confirm-layout,
+    .pk-second-banner {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .pk-area-grid,
+    .pk-book-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .pk-step-container,
+    .pk-home-container,
+    .pk-second-container {
+
+        width:
+            calc(100% - 30px);
+    }
+
+
+    .pk-step-screen {
+
+        padding:
+            32px 0 90px;
+    }
+
+
+    .pk-step-title {
+
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .pk-step-description {
+
+        font-size: 15px;
+    }
+
+
+    .pk-home-header {
+        min-height: 88px;
+        align-items: center;
+        gap: 12px;
+    }
+
+
+    .pk-home-logo img {
+        width: 132px;
+    }
+
+
+    .pk-home-student {
+        max-width: 142px;
+        padding: 7px 9px;
+        font-size: 8px;
+        line-height: 1.25;
+        text-align: left;
+        white-space: normal;
+        flex-shrink: 1;
+    }
+
+    .pk-home-student svg {
+        width: 17px;
+        min-width: 17px;
+    }
+
+
+    .pk-home-hero {
+
+        min-height: auto;
+
+        gap: 28px;
+
+        padding:
+            40px 0 35px;
+    }
+
+
+    .pk-home-title {
+
+        font-size: 48px;
+
+        letter-spacing: -2.5px;
+    }
+
+
+    .pk-home-subtitle {
+
+        font-size: 16px;
+    }
+
+
+    .pk-home-button {
+
+        width: 100%;
+    }
+
+
+    .pk-kit-side {
+
+        min-height: auto;
+    }
+
+
+    .pk-kit-image {
+
+        width:
+            min(100%,340px);
+
+        max-height: 260px;
+    }
+
+
+    .pk-kit-message {
+
+        max-width: 340px;
+
+        font-size: 13px;
+    }
+
+
+    .pk-home-word {
+
+        display: none;
+    }
+
+
+    .pk-home-progress-label {
+
+        font-size: 8px;
+    }
+
+
+    .pk-books-search {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .pk-books-search-button {
+
+        min-height: 48px;
+    }
+
+
+    .pk-area-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .pk-book-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap: 10px;
+    }
+
+
+    .pk-book-card {
+
+        padding: 10px;
+    }
+
+
+    .pk-book-cover-area {
+
+        height: 205px;
+    }
+
+
+    .pk-book-cover {
+
+        width: 120px;
+
+        height: 175px;
+
+        padding: 13px;
+    }
+
+    .pk-book-cover-image {
+        height: 175px;
+        max-width: 92%;
+    }
+
+
+    .pk-size-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    .pk-form-box,
+    .pk-review-box,
+    .pk-size-box,
+    .pk-dark-card {
+
+        padding: 20px;
+    }
+
+
+    .pk-col-9,
+    .pk-col-8,
+    .pk-col-6,
+    .pk-col-5,
+    .pk-col-4,
+    .pk-col-3 {
+
+        grid-column:
+            span 12;
+    }
+
+
+    .pk-navigation {
+
+        flex-direction:
+            column-reverse;
+    }
+
+
+    .pk-navigation button {
+
+        width: 100%;
+    }
+
+
+    .pk-review-card {
+
+        grid-template-columns:
+            45px 1fr;
+    }
+
+
+    .pk-review-edit {
+
+        grid-column:
+            1 / -1;
+
+        width: 100%;
+    }
+
+
+    .pk-second-banner {
+
+        min-height: auto;
+
+        padding:
+            37px 23px;
+
+        border-radius: 16px;
+    }
+
+
+    .pk-second-title {
+
+        font-size: 40px;
+
+        letter-spacing: -1.9px;
+    }
+
+
+    .pk-second-benefits {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .pk-second-cta {
+
+        width: 100%;
+    }
+
+    .pk-community-container {
+        width: calc(100% - 30px);
+    }
+
+    .pk-community-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 30px 23px;
+        border-radius: 16px;
+    }
+
+    .pk-community-title {
+        font-size: 34px;
+        letter-spacing: -1.4px;
+    }
+
+    .pk-community-cta {
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+}
+
+</style>
+
+
+<!-- =========================================================
+     APP
+========================================================= -->
+
+<div id="pk-app">
+
+
+<!-- =========================================================
+     0. INÍCIO
+========================================================= -->
+
+<section
+    id="pk-home"
+    class="pk-screen pk-active"
+>
+
+    <div class="pk-home-container">
+
+
+        <header class="pk-home-header">
+
+
+            <div class="pk-home-logo">
+
+                <img
+                    src="https://posphorte.com.br/wp-content/uploads/2025/01/LOGO_GRADUACAO-E-POS-FACULDADE-PHORTE_Branco.webp"
+                    alt="Faculdade Phorte"
+                >
+
+            </div>
+
+
+            <div class="pk-home-student">
+
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="1.8"
+                >
+
+                    <path d="M3 10l9-5 9 5-9 5z"></path>
+
+                    <path d="M7 12v5c3 2 7 2 10 0v-5"></path>
+
+                </svg>
+
+
+                Exclusivo para alunos matriculados
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="pk-home-hero">
+
+
+            <div class="pk-home-copy">
+
+
+                <div class="pk-home-eyebrow">
+
+                    PERSONALIZAÇÃO
+
+                </div>
+
+
+                <h1 class="pk-home-title">
+
+                    Personalize seu
+
+                    <span>
+                        Kit Phorte
+                    </span>
+
+                </h1>
+
+
+                <p class="pk-home-subtitle">
+
+                    Escolha seu livro da Editora Phorte,
+                    selecione o tamanho da sua camiseta,
+                    confirme seus dados e informe o endereço
+                    de entrega.
+
+                </p>
+
+
+                <div class="pk-home-time">
+
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                    >
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="9"
+                        ></circle>
+
+                        <path
+                            d="M12 7v5l3 2"
+                        ></path>
+
+                    </svg>
+
+
+                    Leva menos de 3 minutos
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="pk-home-button"
+                    data-go="pk-books"
+                >
+
+                    Começar agora
+
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+
+                        <path d="M5 12h14"></path>
+
+                        <path d="M13 6l6 6-6 6"></path>
+
+                    </svg>
+
+
+                </button>
+
+
+            </div>
+
+
+
+            <div class="pk-kit-side">
+
+
+                <div class="pk-kit-dots"></div>
+
+
+                <div class="pk-home-word">
+
+                    PHORTE
+
+                </div>
+
+
+                <img
+                    class="pk-kit-image"
+                    src="https://posphorte.com.br/wp-content/uploads/2026/08/kit-boas-vindas-phorte.webp"
+                    alt="Kit de boas-vindas Faculdade Phorte"
+                >
+
+
+                <div class="pk-kit-message">
+
+                    <strong>
+                        Sua jornada começa
+                    </strong>
+
+                    com escolhas que têm a sua cara.
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="pk-home-progress-wrap">
+
+
+            <div class="pk-home-progress">
+
+
+                <div class="pk-home-progress-item">
+
+                    <div class="pk-home-progress-circle">
+                        1
+                    </div>
+
+                    <div class="pk-home-progress-label">
+                        Livro
+                    </div>
+
+                </div>
+
+
+                <div class="pk-home-progress-item">
+
+                    <div class="pk-home-progress-circle">
+                        2
+                    </div>
+
+                    <div class="pk-home-progress-label">
+                        Camiseta
+                    </div>
+
+                </div>
+
+
+                <div class="pk-home-progress-item">
+
+                    <div class="pk-home-progress-circle">
+                        3
+                    </div>
+
+                    <div class="pk-home-progress-label">
+                        Seus dados
+                    </div>
+
+                </div>
+
+
+                <div class="pk-home-progress-item">
+
+                    <div class="pk-home-progress-circle">
+                        4
+                    </div>
+
+                    <div class="pk-home-progress-label">
+                        Endereço
+                    </div>
+
+                </div>
+
+
+                <div class="pk-home-progress-item">
+
+                    <div class="pk-home-progress-circle">
+                        5
+                    </div>
+
+                    <div class="pk-home-progress-label">
+                        Confirmação
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     1. LIVRO
+========================================================= -->
+
+<section
+    id="pk-books"
+    class="pk-screen pk-step-screen"
+>
+
+
+    <div class="pk-step-container">
+
+
+        <div class="pk-step-progress">
+
+            <strong class="pk-current">
+                01 Livro
+            </strong>
+
+            <span>—</span>
+
+            02 Camiseta
+
+            <span>—</span>
+
+            03 Seus dados
+
+            <span>—</span>
+
+            04 Endereço
+
+            <span>—</span>
+
+            05 Confirmação
+
+        </div>
+
+
+
+        <div class="pk-step-intro">
+
+
+            <div class="pk-step-eyebrow">
+
+                Etapa 1 de 5
+
+            </div>
+
+
+            <h2 class="pk-step-title">
+
+                Escolha seu livro
+
+            </h2>
+
+
+            <p class="pk-step-description">
+
+                Encontre um título que tenha a ver com você.
+                Explore uma área de interesse ou, se já souber
+                o que procura, busque diretamente pelo livro.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="pk-books-search">
+
+
+            <div class="pk-books-search-field">
+
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke-width="1.8"
+                >
+
+                    <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                    ></circle>
+
+                    <path
+                        d="M16 16l5 5"
+                    ></path>
+
+                </svg>
+
+
+                <input
+                    type="text"
+                    id="pk-book-search"
+                    placeholder="Busque por título, autor ou tema..."
+                >
+
+
+            </div>
+
+
+            <button
+                type="button"
+                class="pk-books-search-button"
+                id="pk-book-search-button"
+            >
+
+                Buscar
+
+            </button>
+
+
+        </div>
+
+
+
+        <div id="pk-book-areas">
+
+
+            <div class="pk-area-intro">
+
+                <strong>
+                    Por onde você quer começar?
+                </strong>
+
+                <span>
+                    Escolha uma área para descobrir os títulos disponíveis.
+                </span>
+
+            </div>
+
+
+
+            <div class="pk-area-grid">
+
+
+                <button
+                    type="button"
+                    class="pk-area-card"
+                    data-category="treinamento"
+                >
+
+                    <span class="pk-area-number">
+                        01
+                    </span>
+
+                    <h3 class="pk-area-title">
+                        Treinamento & Musculação
+                    </h3>
+
+                    <p class="pk-area-copy">
+
+                        Musculação, força, biomecânica,
+                        avaliação física e treinamento.
+
+                    </p>
+
+                    <span class="pk-area-action">
+                        Explorar títulos →
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="pk-area-card"
+                    data-category="esportes"
+                >
+
+                    <span class="pk-area-number">
+                        02
+                    </span>
+
+                    <h3 class="pk-area-title">
+                        Esportes
+                    </h3>
+
+                    <p class="pk-area-copy">
+
+                        Futebol, futsal, corrida,
+                        modalidades e performance.
+
+                    </p>
+
+                    <span class="pk-area-action">
+                        Explorar títulos →
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="pk-area-card"
+                    data-category="saude"
+                >
+
+                    <span class="pk-area-number">
+                        03
+                    </span>
+
+                    <h3 class="pk-area-title">
+                        Saúde & Reabilitação
+                    </h3>
+
+                    <p class="pk-area-copy">
+
+                        Exercício, reabilitação,
+                        qualidade de vida e saúde.
+
+                    </p>
+
+                    <span class="pk-area-action">
+                        Explorar títulos →
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="pk-area-card"
+                    data-category="educacao"
+                >
+
+                    <span class="pk-area-number">
+                        04
+                    </span>
+
+                    <h3 class="pk-area-title">
+                        Educação & Ensino
+                    </h3>
+
+                    <p class="pk-area-copy">
+
+                        Educação Física Escolar,
+                        jogos, dança e práticas pedagógicas.
+
+                    </p>
+
+                    <span class="pk-area-action">
+                        Explorar títulos →
+                    </span>
+
+                </button>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="pk-book-catalog">
+
+
+            <div class="pk-catalog-header">
+
+
+                <div>
+
+
+                    <button
+                        type="button"
+                        class="pk-catalog-back"
+                        id="pk-catalog-back"
+                    >
+
+                        ← Voltar para as áreas
+
+                    </button>
+
+
+                    <h3
+                        class="pk-catalog-title"
+                        id="pk-catalog-title"
+                    >
+
+                        Títulos disponíveis
+
+                    </h3>
+
+
+                </div>
+
+
+                <div
+                    class="pk-catalog-count"
+                    id="pk-catalog-count"
+                >
+                </div>
+
+
+            </div>
+
+
+
+            <div
+                class="pk-book-grid"
+                id="pk-book-grid"
+            >
+            </div>
+
+
+
+            <div id="pk-book-empty">
+
+                Nenhum título encontrado.
+
+            </div>
+
+
+
+            <div id="pk-book-more-wrap">
+
+
+                <button
+                    type="button"
+                    class="pk-btn-light"
+                    id="pk-book-more"
+                >
+
+                    Ver mais livros
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div
+            class="pk-book-selection-bar"
+            id="pk-book-selection-bar"
+        >
+
+
+            <div class="pk-book-selection-icon">
+
+                P
+
+            </div>
+
+
+            <div class="pk-book-selection-info">
+
+
+                <div class="pk-book-selection-label">
+
+                    Seu livro escolhido
+
+                </div>
+
+
+                <div id="pk-selected-book-name">
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="button"
+                class="pk-btn-next"
+                id="pk-book-continue"
+            >
+
+                Continuar para camiseta →
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     2. CAMISETA
+========================================================= -->
+
+<section
+    id="pk-shirt"
+    class="pk-screen pk-step-screen"
+>
+
+
+    <div class="pk-step-container">
+
+
+        <div class="pk-step-progress">
+
+            <span class="pk-done">
+                ✓ 01 Livro
+            </span>
+
+            <span>—</span>
+
+            <strong class="pk-current">
+                02 Camiseta
+            </strong>
+
+            <span>—</span>
+
+            03 Seus dados
+
+            <span>—</span>
+
+            04 Endereço
+
+            <span>—</span>
+
+            05 Confirmação
+
+        </div>
+
+
+
+        <div class="pk-step-intro">
+
+
+            <div class="pk-step-eyebrow">
+
+                Etapa 2 de 5
+
+            </div>
+
+
+            <h2 class="pk-step-title">
+
+                Escolha o tamanho da sua camiseta
+
+            </h2>
+
+
+            <p class="pk-step-description">
+
+                Selecione o tamanho que melhor se adapta a você.
+                Confira as medidas de largura e comprimento
+                antes de confirmar sua escolha.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="pk-shirt-layout">
+
+
+            <aside class="pk-dark-card">
+
+
+                <div class="pk-dark-label">
+
+                    Camiseta Phorte • Unissex
+
+                </div>
+
+
+                <h3 class="pk-dark-title">
+
+                    Confira as medidas antes de escolher
+
+                </h3>
+
+
+                <p class="pk-dark-text">
+
+                    Use como referência uma camiseta que você já tenha.
+                    Coloque a peça aberta sobre uma superfície plana
+                    e compare as medidas.
+
+                </p>
+
+
+
+                <div class="pk-shirt-visual">
+
+
+                    <div class="pk-shirt-body">
+                    </div>
+
+
+                    <div class="pk-shirt-width-label">
+
+                        Largura
+
+                    </div>
+
+
+                    <div class="pk-shirt-width">
+                    </div>
+
+
+                    <div class="pk-shirt-height">
+                    </div>
+
+
+                    <div class="pk-shirt-height-label">
+
+                        Comprimento
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-shirt-note">
+
+                    <strong>
+                        Importante:
+                    </strong>
+
+                    as medidas são apresentadas em
+                    largura × comprimento.
+
+                </div>
+
+
+            </aside>
+
+
+
+            <div class="pk-size-box">
+
+
+                <div class="pk-size-header">
+
+
+                    <strong>
+                        Selecione seu tamanho
+                    </strong>
+
+
+                    <span>
+                        Clique em uma das opções abaixo.
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="pk-size-grid">
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="PP"
+                        data-measure="47 × 65 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            PP
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                47 × 65 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="P"
+                        data-measure="50 × 67 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            P
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                50 × 67 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="M"
+                        data-measure="54 × 69 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            M
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                54 × 69 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="G"
+                        data-measure="57 × 71 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            G
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                57 × 71 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="GG"
+                        data-measure="62 × 76 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            GG
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                62 × 76 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-size-card"
+                        data-size="XG"
+                        data-measure="71 × 81 cm"
+                    >
+
+                        <span class="pk-size-name">
+                            XG
+                        </span>
+
+                        <div class="pk-size-measure">
+
+                            <strong>
+                                71 × 81 cm
+                            </strong>
+
+                            <span>
+                                largura × comprimento
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+
+
+                <div id="pk-size-summary">
+
+
+                    <div
+                        class="pk-size-summary-badge"
+                        id="pk-size-summary-badge"
+                    >
+                    </div>
+
+
+                    <div class="pk-size-summary-copy">
+
+
+                        <span>
+                            Tamanho selecionado
+                        </span>
+
+
+                        <strong
+                            id="pk-size-summary-text"
+                        >
+                        </strong>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-navigation">
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-back"
+                        data-go="pk-books"
+                    >
+
+                        ← Voltar para o livro
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-next"
+                        id="pk-shirt-continue"
+                        disabled
+                    >
+
+                        Continuar para meus dados →
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     3. DADOS DO ALUNO
+========================================================= -->
+
+<section
+    id="pk-student-check"
+    class="pk-screen pk-step-screen"
+>
+
+
+    <div class="pk-step-container">
+
+
+        <div class="pk-step-progress">
+
+            <span class="pk-done">
+                ✓ 01 Livro
+            </span>
+
+            <span>—</span>
+
+            <span class="pk-done">
+                ✓ 02 Camiseta
+            </span>
+
+            <span>—</span>
+
+            <strong class="pk-current">
+                03 Seus dados
+            </strong>
+
+            <span>—</span>
+
+            04 Endereço
+
+            <span>—</span>
+
+            05 Confirmação
+
+        </div>
+
+
+
+        <div class="pk-step-intro">
+
+
+            <div class="pk-step-eyebrow">
+
+                Etapa 3 de 5
+
+            </div>
+
+
+            <h2 class="pk-step-title">
+
+                Antes de continuar, confirme seus dados
+
+            </h2>
+
+
+            <p class="pk-step-description">
+
+                Queremos garantir que o Kit Phorte seja destinado
+                ao aluno correto. Informe os dados vinculados à
+                sua matrícula para continuar.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="pk-student-layout">
+
+
+            <aside class="pk-dark-card">
+
+
+                <div class="pk-dark-label">
+
+                    Identificação do aluno
+
+                </div>
+
+
+                <h3 class="pk-dark-title">
+
+                    Precisamos confirmar que é você.
+
+                </h3>
+
+
+                <p class="pk-dark-text">
+
+                    Informe seus dados para vincular corretamente
+                    a personalização ao seu Kit Phorte.
+
+                </p>
+
+
+
+                <div class="pk-security-list">
+
+
+                    <div class="pk-security-item">
+
+                        <span class="pk-security-check">
+                            ✓
+                        </span>
+
+                        <span>
+
+                            Nome e telefone ajudam a identificar
+                            corretamente sua solicitação.
+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="pk-security-item">
+
+                        <span class="pk-security-check">
+                            ✓
+                        </span>
+
+                        <span>
+
+                            Seu curso será vinculado à
+                            personalização do Kit Phorte.
+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="pk-security-item">
+
+                        <span class="pk-security-check">
+                            ✓
+                        </span>
+
+                        <span>
+
+                            Esses dados poderão ser conferidos com
+                            a base de alunos elegíveis antes do envio.
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </aside>
+
+
+
+            <div class="pk-form-box">
+
+
+                <div class="pk-form-heading">
+
+
+                    <strong>
+                        Dados da sua matrícula
+                    </strong>
+
+
+                    <span>
+                        Preencha os três campos abaixo para continuar.
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="pk-form-grid">
+
+
+                    <div
+                        class="pk-field pk-col-12"
+                        id="pk-field-student-name"
+                    >
+
+
+                        <label for="pk-student-name">
+
+                            Nome completo
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-student-name"
+                            autocomplete="name"
+                            placeholder="Digite seu nome completo"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe seu nome completo.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-6"
+                        id="pk-field-student-phone"
+                    >
+
+
+                        <label for="pk-student-phone">
+
+                            Telefone
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="tel"
+                            id="pk-student-phone"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            maxlength="15"
+                            placeholder="(00) 00000-0000"
+                        >
+
+                        <span class="pk-error">
+
+                            Informe um telefone válido com DDD.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-6"
+                        id="pk-field-student-course"
+                    >
+
+
+                        <label for="pk-student-course">
+
+                            Curso
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-student-course"
+                            placeholder="Ex.: Pós em Medicina do Esporte"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe seu curso.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <div class="pk-check-box">
+
+
+                    <label class="pk-check-label">
+
+
+                        <input
+                            type="checkbox"
+                            id="pk-student-confirm"
+                        >
+
+
+                        <span class="pk-check-copy">
+
+
+                            <strong>
+
+                                Confirmo que os dados acima são meus
+
+                            </strong>
+
+
+                            e estão corretos para a solicitação
+                            do meu Kit Phorte.
+
+
+                        </span>
+
+
+                    </label>
+
+
+                </div>
+
+
+
+                <div class="pk-navigation">
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-back"
+                        data-go="pk-shirt"
+                    >
+
+                        ← Voltar para camiseta
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-next"
+                        id="pk-student-continue"
+                    >
+
+                        Continuar para endereço →
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     4. ENDEREÇO
+========================================================= -->
+
+<section
+    id="pk-address"
+    class="pk-screen pk-step-screen"
+>
+
+
+    <div class="pk-step-container">
+
+
+        <div class="pk-step-progress">
+
+            <span class="pk-done">
+                ✓ 01 Livro
+            </span>
+
+            <span>—</span>
+
+            <span class="pk-done">
+                ✓ 02 Camiseta
+            </span>
+
+            <span>—</span>
+
+            <span class="pk-done">
+                ✓ 03 Seus dados
+            </span>
+
+            <span>—</span>
+
+            <strong class="pk-current">
+                04 Endereço
+            </strong>
+
+            <span>—</span>
+
+            05 Confirmação
+
+        </div>
+
+
+
+        <div class="pk-step-intro">
+
+
+            <div class="pk-step-eyebrow">
+
+                Etapa 4 de 5
+
+            </div>
+
+
+            <h2 class="pk-step-title">
+
+                Confirme seu endereço de entrega
+
+            </h2>
+
+
+            <p class="pk-step-description">
+
+                Informe onde deseja receber seu Kit Phorte.
+                Confira os dados com atenção antes de avançar.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="pk-address-layout">
+
+
+            <aside class="pk-dark-card">
+
+
+                <div class="pk-dark-label">
+
+                    Seu Kit Phorte
+
+                </div>
+
+
+                <h3 class="pk-dark-title">
+
+                    Suas escolhas até aqui
+
+                </h3>
+
+
+
+                <div class="pk-summary-item">
+
+
+                    <div class="pk-summary-label">
+
+                        Aluno
+
+                    </div>
+
+
+                    <div
+                        class="pk-summary-value"
+                        id="pk-address-summary-student"
+                    >
+
+                        —
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-summary-item">
+
+
+                    <div class="pk-summary-label">
+
+                        Curso e turma
+
+                    </div>
+
+
+                    <div
+                        class="pk-summary-value"
+                        id="pk-address-summary-course"
+                    >
+
+                        —
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-summary-item">
+
+
+                    <div class="pk-summary-label">
+
+                        Livro
+
+                    </div>
+
+
+                    <div
+                        class="pk-summary-value"
+                        id="pk-address-summary-book"
+                    >
+
+                        —
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-summary-item">
+
+
+                    <div class="pk-summary-label">
+
+                        Camiseta
+
+                    </div>
+
+
+                    <div
+                        class="pk-summary-value"
+                        id="pk-address-summary-shirt"
+                    >
+
+                        —
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-summary-note">
+
+                    Confira principalmente o CEP,
+                    número do imóvel e complemento.
+                    Essas informações são essenciais para a entrega.
+
+                </div>
+
+
+            </aside>
+
+
+
+            <div class="pk-form-box">
+
+
+                <div class="pk-form-heading">
+
+
+                    <strong>
+
+                        Dados para entrega
+
+                    </strong>
+
+
+                    <span>
+
+                        Os campos marcados com * são obrigatórios.
+
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="pk-form-grid">
+
+
+                    <div
+                        class="pk-field pk-col-4"
+                        id="pk-field-cep"
+                    >
+
+
+                        <label for="pk-address-cep">
+
+                            CEP
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-cep"
+                            maxlength="9"
+                            inputmode="numeric"
+                            placeholder="00000-000"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe um CEP válido.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-8"
+                        id="pk-field-address"
+                    >
+
+
+                        <label for="pk-address-street">
+
+                            Endereço
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-street"
+                            placeholder="Rua, avenida, travessa..."
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe o endereço.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-3"
+                        id="pk-field-address-number"
+                    >
+
+
+                        <label for="pk-address-number">
+
+                            Número
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-number"
+                            placeholder="123"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe o número.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="pk-field pk-col-5">
+
+
+                        <label for="pk-address-complement">
+
+                            Complemento
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-complement"
+                            placeholder="Apto., bloco, casa..."
+                        >
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-4"
+                        id="pk-field-neighborhood"
+                    >
+
+
+                        <label for="pk-address-neighborhood">
+
+                            Bairro
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-neighborhood"
+                            placeholder="Seu bairro"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe o bairro.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-8"
+                        id="pk-field-city"
+                    >
+
+
+                        <label for="pk-address-city">
+
+                            Cidade
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <input
+                            class="pk-input"
+                            type="text"
+                            id="pk-address-city"
+                            placeholder="Sua cidade"
+                        >
+
+
+                        <span class="pk-error">
+
+                            Informe a cidade.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="pk-field pk-col-4"
+                        id="pk-field-state"
+                    >
+
+
+                        <label for="pk-address-state">
+
+                            Estado
+
+                            <span class="pk-required">
+                                *
+                            </span>
+
+                        </label>
+
+
+                        <select
+                            class="pk-select"
+                            id="pk-address-state"
+                        >
+
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+
+
+                        </select>
+
+
+                        <span class="pk-error">
+
+                            Selecione o estado.
+
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="pk-check-box">
+
+
+                    <label class="pk-check-label">
+
+
+                        <input
+                            type="checkbox"
+                            id="pk-address-confirm"
+                        >
+
+
+                        <span class="pk-check-copy">
+
+
+                            <strong>
+                                Conferi os dados acima
+                            </strong>
+
+
+                            e confirmo que este é o endereço
+                            correto para receber meu Kit Phorte.
+
+
+                        </span>
+
+
+                    </label>
+
+
+                </div>
+
+
+
+                <div class="pk-navigation">
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-back"
+                        data-go="pk-student-check"
+                    >
+
+                        ← Voltar para meus dados
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="pk-btn-next"
+                        id="pk-address-continue"
+                    >
+
+                        Revisar meu kit →
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     5. CONFIRMAÇÃO
+========================================================= -->
+
+<section
+    id="pk-confirmation"
+    class="pk-screen pk-step-screen"
+>
+
+
+    <div class="pk-step-container">
+
+
+        <div id="pk-confirm-review">
+
+
+            <div class="pk-step-progress">
+
+                <span class="pk-done">
+                    ✓ 01 Livro
+                </span>
+
+                <span>—</span>
+
+                <span class="pk-done">
+                    ✓ 02 Camiseta
+                </span>
+
+                <span>—</span>
+
+                <span class="pk-done">
+                    ✓ 03 Seus dados
+                </span>
+
+                <span>—</span>
+
+                <span class="pk-done">
+                    ✓ 04 Endereço
+                </span>
+
+                <span>—</span>
+
+                <strong class="pk-current">
+                    05 Confirmação
+                </strong>
+
+            </div>
+
+
+
+            <div class="pk-step-intro">
+
+
+                <div class="pk-step-eyebrow">
+
+                    Etapa 5 de 5
+
+                </div>
+
+
+                <h2 class="pk-step-title">
+
+                    Revise e confirme seu Kit Phorte
+
+                </h2>
+
+
+                <p class="pk-step-description">
+
+                    Está quase pronto. Confira seus dados,
+                    suas escolhas e o endereço antes de finalizar.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="pk-confirm-layout">
+
+
+                <div class="pk-review-box">
+
+
+                    <div class="pk-review-heading">
+
+
+                        <strong>
+
+                            Confira todas as informações
+
+                        </strong>
+
+
+                        <span>
+
+                            Você ainda pode alterar qualquer etapa.
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="pk-review-grid">
+
+
+                        <!-- ALUNO -->
+
+                        <div class="pk-review-card">
+
+
+                            <div class="pk-review-icon">
+
+                                👤
+
+                            </div>
+
+
+                            <div>
+
+
+                                <div class="pk-review-label">
+
+                                    Aluno
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-value"
+                                    id="pk-confirm-student"
+                                >
+
+                                    —
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-secondary"
+                                    id="pk-confirm-student-info"
+                                >
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="pk-review-edit"
+                                data-go="pk-student-check"
+                            >
+
+                                Alterar
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- LIVRO -->
+
+                        <div class="pk-review-card">
+
+
+                            <div class="pk-review-icon">
+
+                                📖
+
+                            </div>
+
+
+                            <div>
+
+
+                                <div class="pk-review-label">
+
+                                    Livro escolhido
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-value"
+                                    id="pk-confirm-book"
+                                >
+
+                                    —
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-secondary"
+                                    id="pk-confirm-book-category"
+                                >
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="pk-review-edit"
+                                data-go="pk-books"
+                            >
+
+                                Alterar
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- CAMISETA -->
+
+                        <div class="pk-review-card">
+
+
+                            <div class="pk-review-icon">
+
+                                👕
+
+                            </div>
+
+
+                            <div>
+
+
+                                <div class="pk-review-label">
+
+                                    Camiseta
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-value"
+                                    id="pk-confirm-shirt"
+                                >
+
+                                    —
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-secondary"
+                                    id="pk-confirm-shirt-measure"
+                                >
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="pk-review-edit"
+                                data-go="pk-shirt"
+                            >
+
+                                Alterar
+
+                            </button>
+
+
+                        </div>
+
+
+
+                        <!-- ENDEREÇO -->
+
+                        <div class="pk-review-card">
+
+
+                            <div class="pk-review-icon">
+
+                                📍
+
+                            </div>
+
+
+                            <div>
+
+
+                                <div class="pk-review-label">
+
+                                    Endereço de entrega
+
+                                </div>
+
+
+                                <div
+                                    class="pk-review-value"
+                                    id="pk-confirm-address"
+                                >
+
+                                    —
+
+                                </div>
+
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                class="pk-review-edit"
+                                data-go="pk-address"
+                            >
+
+                                Alterar
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="pk-navigation">
+
+
+                        <button
+                            type="button"
+                            class="pk-btn-back"
+                            data-go="pk-address"
+                        >
+
+                            ← Voltar para endereço
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <aside class="pk-dark-card pk-final-card">
+
+
+                    <div class="pk-dark-label">
+
+                        Última etapa
+
+                    </div>
+
+
+                    <h3 class="pk-dark-title">
+
+                        Tudo certo com seu kit?
+
+                    </h3>
+
+
+                    <p class="pk-dark-text">
+
+                        Ao confirmar, suas informações
+                        ficam prontas para o registro
+                        da personalização.
+
+                    </p>
+
+
+
+                    <div class="pk-final-list">
+
+
+                        <div class="pk-final-item">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            Conferi meus dados de matrícula
+
+                        </div>
+
+
+                        <div class="pk-final-item">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            Conferi o livro escolhido
+
+                        </div>
+
+
+                        <div class="pk-final-item">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            Conferi o tamanho da camiseta
+
+                        </div>
+
+
+                        <div class="pk-final-item">
+
+                            <span>
+                                ✓
+                            </span>
+
+                            Conferi o endereço de entrega
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="pk-final-confirm"
+                        id="pk-final-confirm"
+                    >
+
+                        Confirmar meu Kit Phorte
+
+                    </button>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- SUCESSO -->
+
+        <div id="pk-success">
+
+
+            <div class="pk-success-card">
+
+
+                <div class="pk-success-icon">
+
+                    ✓
+
+                </div>
+
+
+                <div class="pk-success-eyebrow">
+
+                    Personalização concluída
+
+                </div>
+
+
+                <h2 class="pk-success-title">
+
+                    Seu Kit Phorte está confirmado!
+
+                </h2>
+
+
+                <p class="pk-success-text">
+
+                    Recebemos suas preferências e dados com sucesso! O envio do seu kit
+                    pode ocorrer em até 20 dias úteis a contar do preenchimento no site.
+                    Em breve, você receberá pelo WhatsApp o código de rastreio do seu kit
+                    ou a confirmação da data para retirá-lo em uma das aulas presenciais.
+
+                </p>
+
+                <div class="pk-success-next">
+                    Sua experiência continua abaixo
+                    <span>↓</span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     SEGUNDA PÓS
+========================================================= -->
+
+<section id="pk-second-post">
+
+
+    <div class="pk-second-container">
+
+
+        <div class="pk-second-transition">
+
+            Continue avançando
+
+        </div>
+
+
+
+        <div class="pk-second-banner">
+
+
+            <div class="pk-second-content">
+
+
+                <div class="pk-second-eyebrow">
+
+                    Benefício exclusivo para alunos Phorte
+
+                </div>
+
+
+                <h2 class="pk-second-title">
+
+                    Sua jornada não precisa
+
+                    <span>
+
+                        parar por aqui.
+
+                    </span>
+
+                </h2>
+
+
+                <p class="pk-second-description">
+
+                    Você já está investindo na sua formação.
+                    Aproveite sua condição de aluno Phorte
+                    para conquistar uma segunda Pós-Graduação
+                    ou MBA com condições especiais.
+
+                </p>
+
+
+
+                <!-- LINK OFICIAL SEGUNDA PÓS -->
+
+                <a
+                    href="https://posphorte.com.br/pos-em-educacao-fisica-phorte/"
+                    class="pk-second-cta"
+                    id="pk-second-cta"
+                >
+
+                    Quero conhecer minha próxima pós →
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="pk-second-benefits">
+
+
+                <div class="pk-second-benefit">
+
+
+                    <span class="pk-second-benefit-label">
+
+                        Segunda Pós ou MBA
+
+                    </span>
+
+
+                    <span class="pk-second-percentage">
+
+                        40%
+
+                    </span>
+
+
+                    <span class="pk-second-discount">
+
+                        de bolsa
+
+                    </span>
+
+
+                    <span class="pk-second-mode">
+
+                        Nas modalidades online/ao vivo
+                        e presencial
+
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="pk-second-benefit">
+
+
+                    <span class="pk-second-benefit-label">
+
+                        Segunda Pós ou MBA
+
+                    </span>
+
+
+                    <span class="pk-second-percentage">
+
+                        50%
+
+                    </span>
+
+
+                    <span class="pk-second-discount">
+
+                        de bolsa
+
+                    </span>
+
+
+                    <span class="pk-second-mode">
+
+                        Na modalidade EAD
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     COMUNIDADE PHORTE
+========================================================= -->
+
+<section id="pk-community">
+
+    <div class="pk-community-container">
+
+        <div class="pk-community-card">
+
+            <div class="pk-community-copy">
+
+                <div class="pk-community-eyebrow">
+                    Comunidade Phorte
+                </div>
+
+                <h2 class="pk-community-title">
+                    Agora você faz parte oficialmente da atmosfera Phorte
+                </h2>
+
+            </div>
+
+            <a
+                href="https://whatsapp.com/channel/0029VbDgHtbFXUuhS0dWqE0e"
+                class="pk-community-cta"
+                id="pk-community-cta"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Entrar na comunidade →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CAMPOS INTERNOS
+========================================================= -->
+
+<input type="hidden" id="pk-output-book">
+
+<input type="hidden" id="pk-output-book-category">
+
+<input type="hidden" id="pk-output-shirt">
+
+<input type="hidden" id="pk-output-shirt-measure">
+
+<input type="hidden" id="pk-output-student-name">
+
+<input type="hidden" id="pk-output-student-phone">
+
+<input type="hidden" id="pk-output-student-course">
+
+<input type="hidden" id="pk-output-address">
+
+<input type="hidden" id="pk-output-confirmed">
+
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT ÚNICO
+========================================================= -->
+
+<script>
+
+(function () {
+
+
+    if (
+        window.__PHORTE_KIT_INITIALIZED__
+    ) {
+
+        return;
+
+    }
+
+
+    window.__PHORTE_KIT_INITIALIZED__ =
+        true;
+
+
+
+    /* =====================================================
+       TELAS
+    ====================================================== */
+
+    var screens = [
+
+        "pk-home",
+
+        "pk-books",
+
+        "pk-shirt",
+
+        "pk-student-check",
+
+        "pk-address",
+
+        "pk-confirmation"
+
+    ];
+
+
+
+    /* =====================================================
+       ESTADO DA JORNADA
+    ====================================================== */
+
+    var state = {
+
+
+        book:
+            null,
+
+
+        bookCategory:
+            "",
+
+
+        shirt:
+            "",
+
+
+        shirtMeasure:
+            "",
+
+
+        student: {
+
+            name:
+                "",
+
+            phone:
+                "",
+
+            course:
+                ""
+
+        },
+
+
+        address: {
+
+            cep:
+                "",
+
+            street:
+                "",
+
+            number:
+                "",
+
+            complement:
+                "",
+
+            neighborhood:
+                "",
+
+            city:
+                "",
+
+            state:
+                ""
+
+        }
+
+
+    };
+
+
+
+    /* =====================================================
+       NAVEGAÇÃO ÚNICA
+    ====================================================== */
+
+    window.pkGoTo =
+        function (screenId) {
+
+
+            var target =
+                document
+                .getElementById(
+                    screenId
+                );
+
+
+            if (!target) {
+
+
+                console.warn(
+
+                    "Tela não encontrada:",
+
+                    screenId
+
+                );
+
+
+                return;
+
+            }
+
+
+
+            screens.forEach(
+                function (id) {
+
+
+                    var screen =
+                        document
+                        .getElementById(id);
+
+
+                    if (!screen) {
+
+                        return;
+
+                    }
+
+
+                    screen
+                        .classList
+                        .remove(
+                            "pk-active"
+                        );
+
+
+                }
+            );
+
+
+
+            target
+                .classList
+                .add(
+                    "pk-active"
+                );
+
+
+
+            syncSummaries();
+
+
+
+            setTimeout(
+                function () {
+
+
+                    target
+                        .scrollIntoView({
+
+                            behavior:
+                                "smooth",
+
+                            block:
+                                "start"
+
+                        });
+
+
+                },
+                50
+            );
+
+
+        };
+
+
+
+    /* =====================================================
+       BOTÕES DATA-GO
+    ====================================================== */
+
+    document
+        .addEventListener(
+            "click",
+            function (event) {
+
+
+                var button =
+                    event
+                    .target
+                    .closest(
+                        "[data-go]"
+                    );
+
+
+                if (!button) {
+
+                    return;
+
+                }
+
+
+                event
+                    .preventDefault();
+
+
+                window
+                    .pkGoTo(
+
+                        button
+                            .getAttribute(
+                                "data-go"
+                            )
+
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       CATEGORIAS
+    ====================================================== */
+
+    var categoryNames = {
+
+
+        treinamento:
+            "Treinamento & Musculação",
+
+
+        esportes:
+            "Esportes",
+
+
+        saude:
+            "Saúde & Reabilitação",
+
+
+        educacao:
+            "Educação & Ensino"
+
+
+    };
+
+
+
+    /* =====================================================
+       LIVROS
+    ====================================================== */
+
+    var books = [
+        { id: 1, title: "Manual de Musculação", author: "Editora Phorte", category: "treinamento", image: "https://images.tcdn.com.br/img/img_prod/628279/manual_de_musculacao_8a_edicao_uchida_charro_bacurau_pintes_e_navarro_943_1_aa785b2982430f6078ea3c33f49db870.jpeg" },
+        { id: 2, title: "Biomecânica Aplicada", author: "Paulo Marchetti, Ruy Calheiros e Mario Charro", category: "treinamento", image: "https://images.tcdn.com.br/img/img_prod/628279/biomecanica_aplicada_uma_abordagem_para_o_treinamento_de_forca_paulo_marchetti_ruy_calheiros_e_mario_819_1_20190726104517.jpg" },
+        { id: 3, title: "Testes, medidas e avaliação em Educação Física e Esportes", author: "Editora Phorte", category: "treinamento", image: "https://images.tcdn.com.br/img/img_prod/628279/testes_medidas_e_avaliacao_em_educacao_fisica_e_esportes_francisco_jose_gondim_pitanga_825_1_20190924102653.png" },
+        { id: 4, title: "Personal Training para pequenos grupos", author: "Editora Phorte", category: "treinamento", image: "https://images.tcdn.com.br/img/img_prod/628279/personal_training_para_pequenos_grupos_luis_claudio_bossi_945_1_264f8a699201539003facdef1c10853c.jpg" },
+        { id: 5, title: "Futsal conceitos modernos - 2ª edição", author: "Nicolino Belo e Ubiratan Silva Alves", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/futsal_conceitos_modernos_2a_edicao_nicolino_belo_ubiratan_silva_alves_831_1_20200218145231.jpg" },
+        { id: 6, title: "Corrida de Rua: periodização para o atleta da vida real", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/corrida_de_rua_periodizao_para_o_atleta_da_vida_re_1_20260814084805_19fe855989de.jpg" },
+        { id: 7, title: "O esporte paralímpico no Brasil: profissionalismo, administração e classificação de atletas", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/o_esporte_paralimpico_no_brasil_profissionalismo_administracao_e_classificacao_de_atletas_530_1_20180601125838.jpg" },
+        { id: 8, title: "O evento esportivo como objeto de marketing - 2ª edição", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/o_evento_esportivo_como_objeto_de_marketing_2a_edicao_532_1_20180604093415.jpg" },
+        { id: 9, title: "Teste e avaliação em esporte adaptado", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/teste_e_avaliacao_em_esporte_adaptado_668_1_20180601130134.jpg" },
+        { id: 10, title: "Ensinando natação - 4ª edição", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/ensinando_natacao_4a_edicao_222_1_20180427111832.jpg" },
+        { id: 11, title: "Treinamento da natação competitiva: Uma abordagem metodológica", author: "Editora Phorte", category: "esportes", image: "https://images.tcdn.com.br/img/img_prod/628279/treinamento_da_natacao_competitiva_uma_abordagem_metodologica_682_1_20180601151129.jpg" },
+        { id: 12, title: "Eletroestimulação de Corpo Inteiro", author: "Alexandre Evangelista e Tiago Volpi", category: "saude", image: "https://images.tcdn.com.br/img/img_prod/628279/eletroestimulacao_de_corpo_inteiro_org_alexandre_evangelista_e_tiago_volpi_947_1_099173ec2e8e5227e4f188f00d0c8bad.jpg" },
+        { id: 13, title: "Método pilates: A arte de esculpir o corpo", author: "Cecília Panelli", category: "saude", image: "https://images.tcdn.com.br/img/img_prod/628279/metodo_pilates_a_arte_de_esculpir_o_corpo_org_cecilia_panelli_939_1_781c6ab13717c7575d09cf59943ed152.jpg" },
+        { id: 14, title: "Método pilates para crianças", author: "Editora Phorte", category: "saude", image: "https://images.tcdn.com.br/img/img_prod/628279/metodo_pilates_para_criancas_460_1_20180601105331.jpg" },
+        { id: 15, title: "A Dança na Arte, no Esporte e na Educação", author: "Editora Phorte", category: "educacao", image: "https://images.tcdn.com.br/img/img_prod/628279/a_danca_na_arte_no_esporte_e_na_educacao_carla_salvagni_e_antonio_carlos_de_quadros_jr_organizadores_935_1_3ea98d88ea7c18e17ff06ea6512b1dd3.jpg" },
+        { id: 16, title: "Jogos educativos - 5ª edição: estrutura e organização da prática", author: "Editora Phorte", category: "educacao", image: "https://images.tcdn.com.br/img/img_prod/628279/jogos_educativos_5a_edicao_estrutura_e_organizacao_da_pratica_390_1_20180417142730.jpg" },
+        { id: 17, title: "Educação Física Infantil: construindo o movimento na escola - 7ª edição", author: "Editora Phorte", category: "educacao", image: "https://images.tcdn.com.br/img/img_prod/628279/educacao_fisica_infantil_construindo_o_movimento_na_escola_7a_edicao_204_1_20180601161708.jpg" }
+    ];
+
+
+
+    var currentCategory =
+        null;
+
+
+    var currentSearch =
+        "";
+
+
+    var bookAmount =
+        6;
+
+
+
+    var bookAreas =
+        document
+        .getElementById(
+            "pk-book-areas"
+        );
+
+
+    var bookCatalog =
+        document
+        .getElementById(
+            "pk-book-catalog"
+        );
+
+
+    var bookGrid =
+        document
+        .getElementById(
+            "pk-book-grid"
+        );
+
+
+    var bookSearch =
+        document
+        .getElementById(
+            "pk-book-search"
+        );
+
+
+
+    /* =====================================================
+       FILTRO DE LIVROS
+    ====================================================== */
+
+    function filteredBooks() {
+
+
+        return books
+            .filter(
+                function (book) {
+
+
+                    var categoryOK =
+
+                        !currentCategory
+
+                        ||
+
+                        book.category ===
+                        currentCategory;
+
+
+
+                    var haystack = (
+
+                        book.title
+                        + " "
+                        + book.author
+                        + " "
+                        + categoryNames[
+                            book.category
+                        ]
+
+                    )
+                    .toLowerCase();
+
+
+
+                    var searchOK =
+
+                        !currentSearch
+
+                        ||
+
+                        haystack
+                        .indexOf(
+                            currentSearch
+                        )
+                        !==
+                        -1;
+
+
+
+                    return (
+
+                        categoryOK
+
+                        &&
+
+                        searchOK
+
+                    );
+
+
+                }
+            );
+
+
+    }
+
+
+
+    /* =====================================================
+       RENDER LIVROS
+    ====================================================== */
+
+    function renderBooks() {
+
+
+        var results =
+            filteredBooks();
+
+
+
+        bookGrid
+            .innerHTML =
+            "";
+
+
+
+        document
+            .getElementById(
+                "pk-catalog-count"
+            )
+            .textContent =
+
+            results.length
+
+            +
+
+            (
+                results.length === 1
+
+                ? " título"
+
+                : " títulos"
+            );
+
+
+
+        var empty =
+            document
+            .getElementById(
+                "pk-book-empty"
+            );
+
+
+        var moreWrap =
+            document
+            .getElementById(
+                "pk-book-more-wrap"
+            );
+
+
+
+        if (!results.length) {
+
+
+            empty.style.display =
+                "block";
+
+
+            moreWrap.style.display =
+                "none";
+
+
+            return;
+
+        }
+
+
+
+        empty.style.display =
+            "none";
+
+
+
+        results
+            .slice(
+                0,
+                bookAmount
+            )
+            .forEach(
+                function (book) {
+
+
+                    var card =
+                        document
+                        .createElement(
+                            "article"
+                        );
+
+
+                    card.className =
+                        "pk-book-card";
+
+
+
+                    if (
+
+                        state.book
+
+                        &&
+
+                        state.book.id ===
+                        book.id
+
+                    ) {
+
+
+                        card
+                            .classList
+                            .add(
+                                "pk-book-selected"
+                            );
+
+
+                    }
+
+
+
+                    card.innerHTML =
+
+
+                        '<div class="pk-book-cover-area">' +
+
+                            '<img class="pk-book-cover-image" src="' +
+                                book.image +
+                                '" alt="Capa do livro ' +
+                                book.title.replace(/"/g, '&quot;') +
+                                '" loading="lazy">' +
+
+
+                        '</div>' +
+
+
+
+                        '<div class="pk-book-content">' +
+
+
+                            '<div class="pk-book-category">' +
+
+                                categoryNames[
+                                    book.category
+                                ] +
+
+                            '</div>' +
+
+
+                            '<h4 class="pk-book-title">' +
+
+                                book.title +
+
+                            '</h4>' +
+
+
+                            '<p class="pk-book-author">' +
+
+                                book.author +
+
+                            '</p>' +
+
+
+                            '<button ' +
+
+                                'type="button" ' +
+
+                                'class="pk-book-select" ' +
+
+                                'data-book-id="' +
+
+                                book.id +
+
+                                '">' +
+
+
+                                (
+
+                                    state.book
+
+                                    &&
+
+                                    state.book.id ===
+                                    book.id
+
+                                    ? "✓ Livro escolhido"
+
+                                    : "Escolher este livro"
+
+                                ) +
+
+
+                            '</button>' +
+
+
+                        '</div>';
+
+
+
+                    bookGrid
+                        .appendChild(
+                            card
+                        );
+
+
+                }
+            );
+
+
+
+        moreWrap.style.display =
+
+            results.length >
+            bookAmount
+
+            ? "flex"
+
+            : "none";
+
+
+    }
+
+
+
+    /* =====================================================
+       CATEGORIAS
+    ====================================================== */
+
+    document
+        .querySelectorAll(
+            ".pk-area-card"
+        )
+        .forEach(
+            function (button) {
+
+
+                button
+                    .addEventListener(
+                        "click",
+                        function () {
+
+
+                            currentCategory =
+                                this
+                                .getAttribute(
+                                    "data-category"
+                                );
+
+
+                            currentSearch =
+                                "";
+
+
+                            bookAmount =
+                                6;
+
+
+                            bookSearch.value =
+                                "";
+
+
+                            bookAreas
+                                .classList
+                                .add(
+                                    "pk-hidden"
+                                );
+
+
+                            bookCatalog
+                                .classList
+                                .add(
+                                    "pk-visible"
+                                );
+
+
+                            document
+                                .getElementById(
+                                    "pk-catalog-title"
+                                )
+                                .textContent =
+                                categoryNames[
+                                    currentCategory
+                                ];
+
+
+                            renderBooks();
+
+
+                        }
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       VOLTAR PARA CATEGORIAS
+    ====================================================== */
+
+    document
+        .getElementById(
+            "pk-catalog-back"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                bookCatalog
+                    .classList
+                    .remove(
+                        "pk-visible"
+                    );
+
+
+                bookAreas
+                    .classList
+                    .remove(
+                        "pk-hidden"
+                    );
+
+
+                currentCategory =
+                    null;
+
+
+                currentSearch =
+                    "";
+
+
+                bookAmount =
+                    6;
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       BUSCAR LIVROS
+    ====================================================== */
+
+    function searchBooks() {
+
+
+        currentCategory =
+            null;
+
+
+        currentSearch =
+            bookSearch
+            .value
+            .trim()
+            .toLowerCase();
+
+
+        bookAmount =
+            6;
+
+
+        bookAreas
+            .classList
+            .add(
+                "pk-hidden"
+            );
+
+
+        bookCatalog
+            .classList
+            .add(
+                "pk-visible"
+            );
+
+
+        document
+            .getElementById(
+                "pk-catalog-title"
+            )
+            .textContent =
+
+            currentSearch
+
+            ? "Resultados da busca"
+
+            : "Todos os títulos";
+
+
+        renderBooks();
+
+
+    }
+
+
+
+    document
+        .getElementById(
+            "pk-book-search-button"
+        )
+        .addEventListener(
+            "click",
+            searchBooks
+        );
+
+
+
+    bookSearch
+        .addEventListener(
+            "keydown",
+            function (event) {
+
+
+                if (
+                    event.key ===
+                    "Enter"
+                ) {
+
+
+                    event
+                        .preventDefault();
+
+
+                    searchBooks();
+
+
+                }
+
+
+            }
+        );
+
+
+
+    document
+        .getElementById(
+            "pk-book-more"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                bookAmount +=
+                    6;
+
+
+                renderBooks();
+
+
+            }
+        );
+
+
+
+    bookGrid
+        .addEventListener(
+            "click",
+            function (event) {
+
+
+                var button =
+                    event
+                    .target
+                    .closest(
+                        "[data-book-id]"
+                    );
+
+
+                if (!button) {
+
+                    return;
+
+                }
+
+
+
+                var id =
+                    Number(
+
+                        button
+                            .getAttribute(
+                                "data-book-id"
+                            )
+
+                    );
+
+
+
+                state.book =
+                    books
+                    .find(
+                        function (book) {
+
+                            return (
+                                book.id ===
+                                id
+                            );
+
+                        }
+                    );
+
+
+
+                state.bookCategory =
+                    categoryNames[
+                        state.book.category
+                    ];
+
+
+
+                document
+                    .getElementById(
+                        "pk-selected-book-name"
+                    )
+                    .textContent =
+                    state.book.title;
+
+
+
+                document
+                    .getElementById(
+                        "pk-book-selection-bar"
+                    )
+                    .classList
+                    .add(
+                        "pk-visible"
+                    );
+
+
+
+                renderBooks();
+
+
+                syncOutputs();
+
+
+            }
+        );
+
+
+
+    document
+        .getElementById(
+            "pk-book-continue"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                if (!state.book) {
+
+                    return;
+
+                }
+
+
+                window
+                    .pkGoTo(
+                        "pk-shirt"
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       CAMISETA
+    ====================================================== */
+
+    var sizeCards =
+        document
+        .querySelectorAll(
+            ".pk-size-card"
+        );
+
+
+
+    sizeCards
+        .forEach(
+            function (card) {
+
+
+                card
+                    .addEventListener(
+                        "click",
+                        function () {
+
+
+                            sizeCards
+                                .forEach(
+                                    function (item) {
+
+
+                                        item
+                                            .classList
+                                            .remove(
+                                                "pk-size-selected"
+                                            );
+
+
+                                    }
+                                );
+
+
+
+                            this
+                                .classList
+                                .add(
+                                    "pk-size-selected"
+                                );
+
+
+
+                            state.shirt =
+                                this
+                                .getAttribute(
+                                    "data-size"
+                                );
+
+
+
+                            state.shirtMeasure =
+                                this
+                                .getAttribute(
+                                    "data-measure"
+                                );
+
+
+
+                            document
+                                .getElementById(
+                                    "pk-size-summary-badge"
+                                )
+                                .textContent =
+                                state.shirt;
+
+
+
+                            document
+                                .getElementById(
+                                    "pk-size-summary-text"
+                                )
+                                .textContent =
+
+                                state.shirtMeasure
+
+                                +
+
+                                " — largura × comprimento";
+
+
+
+                            document
+                                .getElementById(
+                                    "pk-size-summary"
+                                )
+                                .classList
+                                .add(
+                                    "pk-visible"
+                                );
+
+
+
+                            document
+                                .getElementById(
+                                    "pk-shirt-continue"
+                                )
+                                .disabled =
+                                false;
+
+
+
+                            syncOutputs();
+
+
+                        }
+                    );
+
+
+            }
+        );
+
+
+
+    document
+        .getElementById(
+            "pk-shirt-continue"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                if (!state.shirt) {
+
+                    return;
+
+                }
+
+
+                window
+                    .pkGoTo(
+                        "pk-student-check"
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       TELEFONE
+    ====================================================== */
+
+    var phoneInput =
+        document
+        .getElementById(
+            "pk-student-phone"
+        );
+
+
+
+    phoneInput
+        .addEventListener(
+            "input",
+            function () {
+
+
+                var value =
+                    this.value
+                    .replace(
+                        /\D/g,
+                        ""
+                    )
+                    .slice(
+                        0,
+                        11
+                    );
+
+                if (value.length > 10) {
+                    value = value.replace(
+                        /(\d{2})(\d{5})(\d{0,4})/,
+                        "($1) $2-$3"
+                    );
+                } else {
+                    value = value.replace(
+                        /(\d{2})(\d{4})(\d{0,4})/,
+                        "($1) $2-$3"
+                    );
+                }
+
+
+
+                this.value =
+                    value;
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       VALIDA CPF
+    ====================================================== */
+
+    function validCPF(value) {
+
+
+        var cpf =
+            value
+            .replace(
+                /\D/g,
+                ""
+            );
+
+
+
+        if (
+
+            cpf.length !== 11
+
+            ||
+
+            /^(\d)\1{10}$/
+            .test(cpf)
+
+        ) {
+
+
+            return false;
+
+
+        }
+
+
+
+        var sum =
+            0;
+
+
+        var remainder;
+
+
+
+        for (
+            var i = 1;
+            i <= 9;
+            i++
+        ) {
+
+
+            sum +=
+
+                parseInt(
+                    cpf.substring(
+                        i - 1,
+                        i
+                    ),
+                    10
+                )
+
+                *
+
+                (11 - i);
+
+
+        }
+
+
+
+        remainder =
+            (sum * 10)
+            %
+            11;
+
+
+
+        if (
+
+            remainder === 10
+
+            ||
+
+            remainder === 11
+
+        ) {
+
+
+            remainder =
+                0;
+
+
+        }
+
+
+
+        if (
+
+            remainder !==
+
+            parseInt(
+                cpf.substring(
+                    9,
+                    10
+                ),
+                10
+            )
+
+        ) {
+
+
+            return false;
+
+
+        }
+
+
+
+        sum =
+            0;
+
+
+
+        for (
+            var j = 1;
+            j <= 10;
+            j++
+        ) {
+
+
+            sum +=
+
+                parseInt(
+                    cpf.substring(
+                        j - 1,
+                        j
+                    ),
+                    10
+                )
+
+                *
+
+                (12 - j);
+
+
+        }
+
+
+
+        remainder =
+            (sum * 10)
+            %
+            11;
+
+
+
+        if (
+
+            remainder === 10
+
+            ||
+
+            remainder === 11
+
+        ) {
+
+
+            remainder =
+                0;
+
+
+        }
+
+
+
+        return (
+
+            remainder ===
+
+            parseInt(
+                cpf.substring(
+                    10,
+                    11
+                ),
+                10
+            )
+
+        );
+
+
+    }
+
+
+
+    /* =====================================================
+       ERROS
+    ====================================================== */
+
+    function setError(
+        wrapperId,
+        hasError
+    ) {
+
+
+        var wrapper =
+            document
+            .getElementById(
+                wrapperId
+            );
+
+
+        if (!wrapper) {
+
+            return;
+
+        }
+
+
+
+        wrapper
+            .classList
+            .toggle(
+
+                "pk-field-error",
+
+                hasError
+
+            );
+
+
+    }
+
+
+
+    /* =====================================================
+       DADOS DO ALUNO
+    ====================================================== */
+
+    document
+        .getElementById(
+            "pk-student-continue"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                var name =
+                    document
+                    .getElementById(
+                        "pk-student-name"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var phone =
+                    phoneInput
+                    .value
+                    .trim();
+
+
+
+                var course =
+                    document
+                    .getElementById(
+                        "pk-student-course"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var nameOK =
+                    name.length >=
+                    5;
+
+
+
+                var phoneOK =
+                    phone.replace(/\D/g, "").length >= 10;
+
+
+
+                var courseOK =
+                    course.length >=
+                    3;
+
+
+
+                setError(
+                    "pk-field-student-name",
+                    !nameOK
+                );
+
+
+                setError(
+                    "pk-field-student-phone",
+                    !phoneOK
+                );
+
+
+                setError(
+                    "pk-field-student-course",
+                    !courseOK
+                );
+
+
+                if (
+
+                    !nameOK
+
+                    ||
+
+                    !phoneOK
+
+                    ||
+
+                    !courseOK
+
+                ) {
+
+
+                    return;
+
+
+                }
+
+
+
+                if (
+
+                    !document
+                    .getElementById(
+                        "pk-student-confirm"
+                    )
+                    .checked
+
+                ) {
+
+
+                    alert(
+
+                        "Confirme que os dados informados correspondem à sua matrícula."
+
+                    );
+
+
+                    return;
+
+
+                }
+
+
+
+                state.student = {
+
+
+                    name:
+                        name,
+
+
+                    phone:
+                        phone,
+
+
+                    course:
+                        course
+
+
+                };
+
+
+
+                syncOutputs();
+
+
+
+                window
+                    .pkGoTo(
+                        "pk-address"
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       CEP
+    ====================================================== */
+
+    var cepInput =
+        document
+        .getElementById(
+            "pk-address-cep"
+        );
+
+
+
+    cepInput
+        .addEventListener(
+            "input",
+            function () {
+
+
+                var value =
+                    this.value
+                    .replace(
+                        /\D/g,
+                        ""
+                    )
+                    .slice(
+                        0,
+                        8
+                    );
+
+
+
+                if (
+                    value.length >
+                    5
+                ) {
+
+
+                    value =
+
+                        value.slice(
+                            0,
+                            5
+                        )
+
+                        +
+
+                        "-"
+
+                        +
+
+                        value.slice(5);
+
+
+                }
+
+
+
+                this.value =
+                    value;
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       ENDEREÇO
+    ====================================================== */
+
+    document
+        .getElementById(
+            "pk-address-continue"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                var cep =
+                    cepInput
+                    .value
+                    .trim();
+
+
+
+                var street =
+                    document
+                    .getElementById(
+                        "pk-address-street"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var number =
+                    document
+                    .getElementById(
+                        "pk-address-number"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var complement =
+                    document
+                    .getElementById(
+                        "pk-address-complement"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var neighborhood =
+                    document
+                    .getElementById(
+                        "pk-address-neighborhood"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var city =
+                    document
+                    .getElementById(
+                        "pk-address-city"
+                    )
+                    .value
+                    .trim();
+
+
+
+                var stateValue =
+                    document
+                    .getElementById(
+                        "pk-address-state"
+                    )
+                    .value;
+
+
+
+                var cepOK =
+
+                    cep
+                    .replace(
+                        /\D/g,
+                        ""
+                    )
+                    .length ===
+                    8;
+
+
+
+                var streetOK =
+                    street.length >=
+                    3;
+
+
+
+                var numberOK =
+                    number.length >=
+                    1;
+
+
+
+                var neighborhoodOK =
+                    neighborhood.length >=
+                    2;
+
+
+
+                var cityOK =
+                    city.length >=
+                    2;
+
+
+
+                var stateOK =
+                    !!stateValue;
+
+
+
+                setError(
+                    "pk-field-cep",
+                    !cepOK
+                );
+
+
+                setError(
+                    "pk-field-address",
+                    !streetOK
+                );
+
+
+                setError(
+                    "pk-field-address-number",
+                    !numberOK
+                );
+
+
+                setError(
+                    "pk-field-neighborhood",
+                    !neighborhoodOK
+                );
+
+
+                setError(
+                    "pk-field-city",
+                    !cityOK
+                );
+
+
+                setError(
+                    "pk-field-state",
+                    !stateOK
+                );
+
+
+
+                if (
+
+                    !cepOK
+
+                    ||
+
+                    !streetOK
+
+                    ||
+
+                    !numberOK
+
+                    ||
+
+                    !neighborhoodOK
+
+                    ||
+
+                    !cityOK
+
+                    ||
+
+                    !stateOK
+
+                ) {
+
+
+                    return;
+
+
+                }
+
+
+
+                if (
+
+                    !document
+                    .getElementById(
+                        "pk-address-confirm"
+                    )
+                    .checked
+
+                ) {
+
+
+                    alert(
+
+                        "Confirme que você conferiu o endereço de entrega."
+
+                    );
+
+
+                    return;
+
+
+                }
+
+
+
+                state.address = {
+
+
+                    cep:
+                        cep,
+
+
+                    street:
+                        street,
+
+
+                    number:
+                        number,
+
+
+                    complement:
+                        complement,
+
+
+                    neighborhood:
+                        neighborhood,
+
+
+                    city:
+                        city,
+
+
+                    state:
+                        stateValue
+
+
+                };
+
+
+
+                syncOutputs();
+
+
+
+                window
+                    .pkGoTo(
+                        "pk-confirmation"
+                    );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       ENDEREÇO FORMATADO
+    ====================================================== */
+
+    function fullAddress() {
+
+
+        var a =
+            state.address;
+
+
+
+        return [
+
+
+            a.street,
+
+
+            a.number,
+
+
+            a.complement,
+
+
+            a.neighborhood,
+
+
+            (
+                a.city
+                &&
+                a.state
+
+                ? a.city
+                  + "/"
+                  + a.state
+
+                : ""
+            ),
+
+
+            (
+                a.cep
+
+                ? "CEP "
+                  + a.cep
+
+                : ""
+            )
+
+
+        ]
+        .filter(
+            Boolean
+        )
+        .join(
+            ", "
+        );
+
+
+    }
+
+
+
+    /* =====================================================
+       SINCRONIZAR RESUMOS
+    ====================================================== */
+
+    function syncSummaries() {
+
+
+        var student =
+            state.student.name
+            ||
+            "—";
+
+
+
+        var course =
+            state.student.course;
+
+
+
+        var book =
+
+            state.book
+
+            ? state.book.title
+
+            : "—";
+
+
+
+        var shirt =
+
+            state.shirt
+
+            ? "Tamanho "
+              + state.shirt
+              + " • "
+              + state.shirtMeasure
+
+            : "—";
+
+
+
+        document
+            .getElementById(
+                "pk-address-summary-student"
+            )
+            .textContent =
+            student;
+
+
+
+        document
+            .getElementById(
+                "pk-address-summary-course"
+            )
+            .textContent =
+            course
+            ||
+            "—";
+
+
+
+        document
+            .getElementById(
+                "pk-address-summary-book"
+            )
+            .textContent =
+            book;
+
+
+
+        document
+            .getElementById(
+                "pk-address-summary-shirt"
+            )
+            .textContent =
+            shirt;
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-student"
+            )
+            .textContent =
+            state.student.name
+            ||
+            "—";
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-student-info"
+            )
+            .textContent = [
+
+
+                state.student.course,
+
+                state.student.phone
+
+
+            ]
+            .filter(
+                Boolean
+            )
+            .join(
+                " • "
+            );
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-book"
+            )
+            .textContent =
+            book;
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-book-category"
+            )
+            .textContent =
+            state.bookCategory;
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-shirt"
+            )
+            .textContent =
+
+            state.shirt
+
+            ? "Tamanho "
+              + state.shirt
+
+            : "—";
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-shirt-measure"
+            )
+            .textContent =
+            state.shirtMeasure;
+
+
+
+        document
+            .getElementById(
+                "pk-confirm-address"
+            )
+            .textContent =
+            fullAddress()
+            ||
+            "—";
+
+
+    }
+
+
+
+    /* =====================================================
+       CAMPOS INTERNOS
+    ====================================================== */
+
+    function syncOutputs() {
+
+
+        document
+            .getElementById(
+                "pk-output-book"
+            )
+            .value =
+
+            state.book
+
+            ? state.book.title
+
+            : "";
+
+
+
+        document
+            .getElementById(
+                "pk-output-book-category"
+            )
+            .value =
+            state.bookCategory;
+
+
+
+        document
+            .getElementById(
+                "pk-output-shirt"
+            )
+            .value =
+            state.shirt;
+
+
+
+        document
+            .getElementById(
+                "pk-output-shirt-measure"
+            )
+            .value =
+            state.shirtMeasure;
+
+
+
+        document
+            .getElementById(
+                "pk-output-student-name"
+            )
+            .value =
+            state.student.name;
+
+
+
+        document
+            .getElementById(
+                "pk-output-student-phone"
+            )
+            .value =
+            state.student.phone;
+
+
+
+        document
+            .getElementById(
+                "pk-output-student-course"
+            )
+            .value =
+            state.student.course;
+
+
+
+        document
+            .getElementById(
+                "pk-output-address"
+            )
+            .value =
+            fullAddress();
+
+
+
+        syncSummaries();
+
+
+    }
+
+
+
+    /* =====================================================
+       CONFIRMAÇÃO DO KIT
+    ====================================================== */
+
+    document
+        .getElementById(
+            "pk-final-confirm"
+        )
+        .addEventListener(
+            "click",
+            function () {
+
+
+                syncOutputs();
+
+
+
+                document
+                    .getElementById(
+                        "pk-output-confirmed"
+                    )
+                    .value =
+                    "SIM";
+
+
+
+                var finalData = {
+
+
+                    book:
+
+                        state.book
+
+                        ? state.book.title
+
+                        : "",
+
+
+                    bookCategory:
+                        state.bookCategory,
+
+
+                    shirt:
+                        state.shirt,
+
+
+                    shirtMeasure:
+                        state.shirtMeasure,
+
+
+                    student:
+
+                        Object.assign(
+
+                            {},
+
+                            state.student
+
+                        ),
+
+
+                    address:
+
+                        Object.assign(
+
+                            {},
+
+                            state.address
+
+                        )
+
+
+                };
+
+
+
+                window.PhorteKitData =
+                    finalData;
+
+
+
+                /* =========================================
+                   PONTO DE INTEGRAÇÃO FUTURA
+
+                   Aqui entraremos com:
+
+                   fetch("/wp-json/phorte-kit/v1/confirm", {
+                       method: "POST",
+                       ...
+                   })
+
+                   A tela de sucesso deverá aparecer
+                   SOMENTE se o servidor responder OK.
+                ========================================== */
+
+
+
+                try {
+
+
+                    window
+                        .dispatchEvent(
+
+                            new CustomEvent(
+
+                                "phorteKitConfirmed",
+
+                                {
+
+                                    detail:
+                                        finalData
+
+                                }
+
+                            )
+
+                        );
+
+
+                }
+
+                catch(error) {}
+
+
+
+                document
+                    .getElementById(
+                        "pk-confirm-review"
+                    )
+                    .style
+                    .display =
+                    "none";
+
+
+
+                document
+                    .getElementById(
+                        "pk-success"
+                    )
+                    .classList
+                    .add(
+                        "pk-visible"
+                    );
+
+
+
+                document
+                    .getElementById(
+                        "pk-confirmation"
+                    )
+                    .classList
+                    .add(
+                        "pk-completed"
+                    );
+
+
+
+                document
+                    .getElementById(
+                        "pk-second-post"
+                    )
+                    .style
+                    .display =
+                    "block";
+
+
+
+                document
+                    .getElementById(
+                        "pk-community"
+                    )
+                    .style
+                    .display =
+                    "block";
+
+
+
+                setTimeout(
+                    function () {
+
+
+                        document
+                            .getElementById(
+                                "pk-success"
+                            )
+                            .scrollIntoView({
+
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "center"
+
+                            });
+
+
+                    },
+                    80
+                );
+
+
+            }
+        );
+
+
+
+    /* =====================================================
+       INICIALIZAÇÃO
+    ====================================================== */
+
+    if (
+
+        document
+        .documentElement
+        .classList
+        .contains(
+            "pk-flow-mode"
+        )
+
+    ) {
+
+
+        screens
+            .forEach(
+                function (id) {
+
+
+                    var screen =
+                        document
+                        .getElementById(
+                            id
+                        );
+
+
+                    if (!screen) {
+
+                        return;
+
+                    }
+
+
+                    screen
+                        .classList
+                        .remove(
+                            "pk-active"
+                        );
+
+
+                }
+            );
+
+
+
+        document
+            .getElementById(
+                "pk-home"
+            )
+            .classList
+            .add(
+                "pk-active"
+            );
+
+
+
+        document
+            .getElementById(
+                "pk-second-post"
+            )
+            .style
+            .display =
+            "none";
+
+
+
+        document
+            .getElementById(
+                "pk-community"
+            )
+            .style
+            .display =
+            "none";
+
+
+    }
+
+
+
+    syncSummaries();
+
+
+})();
+
+</script>
