@@ -101,25 +101,18 @@
       border:1.5px solid rgba(201,45,45,.26);
       border-left:5px solid var(--red);
       border-radius:14px;
-      padding:14px 18px;
+      padding:14px 20px;
       margin-bottom:20px;
       box-shadow:0 8px 24px rgba(201,45,45,.08);
-      display:flex;
-      flex-wrap:wrap;
+      display:inline-flex;
       align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      max-width:540px;
+      max-width:100%;
     }
-    .hero-pricing-main{display:flex;flex-direction:column;gap:2px}
-    .hero-pricing-tag{display:inline-block;color:var(--red);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-    .hero-pricing-val{display:flex;align-items:baseline;gap:5px}
-    .hero-pricing-val small{font-size:.8rem;color:var(--muted);font-weight:600}
-    .hero-pricing-val strong{font:800 1.65rem/1 var(--title);color:var(--ink);letter-spacing:-.03em}
-    .hero-pricing-val strong span{font-size:.95rem;font-weight:700;color:var(--muted)}
-    .hero-pricing-badges{display:flex;flex-direction:column;gap:4px;font-size:.75rem;font-weight:700;color:#555}
-    .hero-pricing-badges span{display:inline-flex;align-items:center;gap:4px}
-    .hero-pricing-badges b{color:var(--red)}
+    .hero-pricing-main{display:flex;align-items:center}
+    .hero-pricing-val{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+    .hero-pricing-val small{font-size:.92rem;color:var(--muted);font-weight:600}
+    .hero-pricing-val strong{font:800 2.15rem/1 var(--title);color:var(--ink);letter-spacing:-.03em}
+    .hero-pricing-val strong span{font-size:1.05rem;font-weight:700;color:var(--muted)}
 
     .hero-mec{
       display:inline-flex;align-items:center;gap:8px;
@@ -149,14 +142,11 @@
 
     /* ── INFO STRIP ── */
     .info-strip{background:linear-gradient(135deg,var(--wine),var(--red));color:#fff;border-top:5px solid var(--yellow)}
-    .facts{display:grid;grid-template-columns:repeat(7,1fr)}
+    .facts{display:grid;grid-template-columns:repeat(6,1fr)}
     .fact{padding:19px 16px;border-right:1px solid rgba(255,255,255,.2);display:flex;flex-direction:column;gap:2px}
     .fact:last-child{border:0}
     .fact strong{font:700 .84rem var(--title);display:block;color:#fff}
     .fact span{font-size:.7rem;color:#ffe9a0}
-    .fact.fact-highlight{background:rgba(245,197,66,.22);border-left:1px solid rgba(245,197,66,.45);border-right:1px solid rgba(245,197,66,.45)}
-    .fact.fact-highlight strong{color:#fff;font-size:.9rem}
-    .fact.fact-highlight span{color:#fff;font-weight:700}
 
     /* ── SOBRE ── */
     #sobre.section-pad{padding-bottom:42px;background:var(--mist)}
@@ -257,7 +247,7 @@
     .coord-video-btn{margin-top:22px}
 
     /* ── PROFESSORES (CARROSSEL) ── */
-    #professores .section-head{padding-left:clamp(28px,5vw,84px);padding-right:clamp(28px,5vw,84px)}
+    #professores .section-head{padding-left:0;padding-right:0}
     #professores .carousel-fade{display:none}
     .teacher-carousel-wrap{position:relative;width:100%}
     .teacher-carousel{
@@ -335,13 +325,17 @@
     .acc-panel li{margin:7px 0}
     .matrix .acc-button span{font-size:.92rem}
 
+    /* Price highlight */
+    .enroll-price-box{background:#fff;border:1.5px solid rgba(201,45,45,.28);border-left:5px solid var(--red);border-radius:12px;padding:14px 20px;margin:20px 0 16px;box-shadow:0 8px 24px rgba(201,45,45,.06);display:inline-block}
+    .enroll-price-box-val{display:flex;align-items:baseline;gap:4px}
+    .enroll-price-box-val strong{font:800 2.35rem/1 var(--title);color:var(--ink);letter-spacing:-.02em}
+    .enroll-price-box-val span{font-size:1.15rem;font-weight:700;color:var(--muted)}
+
     /* Enroll / investimento */
     .enroll{background:linear-gradient(125deg,#fff4f4,#fff 55%,#fff9e4)}
     .enroll-grid{display:grid;grid-template-columns:1fr .9fr;gap:62px;align-items:center}
     .enroll-copy h2{margin:13px 0}
     .enroll-copy p{max-width:540px}
-    .steps-mini{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}
-    .steps-mini span{font-size:.78rem;border:1px solid rgba(201,45,45,.25);padding:8px 10px;border-radius:8px;background:#fff;color:var(--red);font-weight:700}
     .final-form{background:#fff;border:1px solid rgba(201,45,45,.22);border-top:5px solid var(--red);border-radius:var(--radius);padding:27px;box-shadow:0 14px 35px rgba(201,45,45,.1)}
     .final-form h3{font-size:1.25rem;margin-bottom:5px}
     .final-form>p{font-size:.85rem;margin-bottom:14px}
@@ -495,15 +489,10 @@
             
             <div class="hero-pricing-box">
               <div class="hero-pricing-main">
-                <span class="hero-pricing-tag">Condição Especial · Turma 2026.2</span>
                 <div class="hero-pricing-val">
                   <small>Mensalidades a partir de</small>
                   <strong>R$ 198<span>,00/mês*</span></strong>
                 </div>
-              </div>
-              <div class="hero-pricing-badges">
-                <span><b>✓</b> Bolsa ENEM até 100%</span>
-                <span><b>✓</b> Desconto Vestibular e 2ª Graduação</span>
               </div>
             </div>
 
@@ -539,7 +528,6 @@
         <div class="fact"><strong>8 Semestres</strong><span>duração (4 anos)</span></div>
         <div class="fact"><strong>Bela Vista – SP</strong><span>Campus presencial (Rua Rui Barbosa, 422)</span></div>
         <div class="fact"><strong>Noturno</strong><span>19h às 21h50</span></div>
-        <div class="fact fact-highlight"><strong>R$ 198,00/mês*</strong><span>mensalidade promocional</span></div>
         <div class="fact"><strong>Licenciatura</strong><span>reconhecida pelo MEC</span></div>
         <div class="fact"><strong>Ingresso simplificado</strong><span>Vestibular, ENEM, 2ª Grad. ou Transferência</span></div>
       </div>
@@ -1122,18 +1110,9 @@
           <p>Escolha a modalidade de ingresso que melhor se adapta à sua trajetória e inicie hoje mesmo sua formação superior na Faculdade Phorte.</p>
           
           <div class="enroll-price-box">
-            <span class="enroll-price-box-label">Condição Especial · Turma 2026.2</span>
             <div class="enroll-price-box-val">
               <strong>R$ 198</strong><span>,00/mês*</span>
             </div>
-            <p class="enroll-price-box-desc">Mensalidade promocional para novas turmas. Aproveite condições especiais para nota do ENEM, Vestibular, 2ª Graduação e Transferência.</p>
-          </div>
-
-          <div class="steps-mini">
-            <span>Vestibular</span>
-            <span>ENEM</span>
-            <span>Segunda Graduação</span>
-            <span>Transferência Externa</span>
           </div>
         </div>
 
