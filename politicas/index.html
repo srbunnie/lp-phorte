@@ -1,0 +1,1305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Políticas de Privacidade, Cookies e Termos de Uso da Faculdade Phorte de Educação e Tecnologia. Diretrizes de proteção de dados (LGPD - Lei nº 13.709/2018)." />
+    <title>Políticas de Privacidade, Cookies e Termos de Uso | Faculdade Phorte</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --red: #C92D2D;
+        --red-dark: #8F1F1F;
+        --red-light: #ff4d4d;
+        --yellow: #F5C542;
+        --yellow-light: #FFF9E4;
+        --yellow-dark: #b8860b;
+        --wine: #5B1212;
+        --ink: #18191B;
+        --ink-light: #2C2E33;
+        --muted: #5E6470;
+        --line: #E7E9ED;
+        --line-soft: #F0F2F5;
+        --surface: #FFFFFF;
+        --surface-subtle: #F8F9FB;
+        --surface-alt: #F4F6F9;
+        --radius: 12px;
+        --radius-sm: 8px;
+        --radius-lg: 18px;
+        --shadow-sm: 0 2px 8px rgba(24, 25, 27, 0.04);
+        --shadow-md: 0 8px 24px rgba(24, 25, 27, 0.06);
+        --shadow-lg: 0 16px 40px rgba(24, 25, 27, 0.09);
+        --font-title: 'Outfit', sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 24px;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: #FAFAFB;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* ── HERO BANNER ── */
+      .hero-section {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F5F7FA 100%);
+        border-bottom: 1px solid var(--line);
+        padding: 48px 24px 38px;
+      }
+      .hero-container {
+        max-width: 1240px;
+        margin: 0 auto;
+      }
+      .hero-brand-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .hero-badge-logo {
+        background: var(--red);
+        color: #fff;
+        font-family: var(--font-title);
+        font-weight: 800;
+        font-size: 1.15rem;
+        padding: 4px 10px;
+        border-radius: 6px;
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+      .hero-badge-title {
+        font-family: var(--font-title);
+        font-weight: 800;
+        font-size: 1.05rem;
+        color: var(--ink);
+      }
+      .hero-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(201, 45, 45, 0.08);
+        color: var(--red);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+      .hero-kicker::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--red);
+      }
+      .hero-title {
+        font-family: var(--font-title);
+        font-size: clamp(2rem, 3.5vw, 2.9rem);
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 1.15;
+        color: var(--ink);
+        margin-bottom: 14px;
+      }
+      .hero-lead {
+        font-size: 1.02rem;
+        color: var(--muted);
+        max-width: 840px;
+        line-height: 1.62;
+        margin-bottom: 24px;
+      }
+      .hero-legal-entity {
+        background: #fff;
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--yellow);
+        border-radius: var(--radius-sm);
+        padding: 12px 18px;
+        font-size: 0.85rem;
+        color: #4A4E57;
+        margin-bottom: 24px;
+        line-height: 1.5;
+      }
+      .hero-legal-entity strong {
+        color: var(--ink);
+      }
+      .hero-meta-bar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      .hero-meta-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+      .hero-meta-item strong {
+        color: var(--ink);
+      }
+
+      /* ── PILL TABS / SELECTOR ── */
+      .doc-tabs-wrap {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .doc-tab {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 18px;
+        border-radius: 999px;
+        font-size: 0.86rem;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--ink-light);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .doc-tab:hover {
+        border-color: var(--red);
+        color: var(--red);
+        transform: translateY(-1px);
+      }
+      .doc-tab.active {
+        background: var(--red);
+        border-color: var(--red);
+        color: #fff;
+        box-shadow: 0 4px 14px rgba(201, 45, 45, 0.25);
+      }
+
+      /* ── LAYOUT PRINCIPAL ── */
+      .layout-wrap {
+        max-width: 1240px;
+        margin: 36px auto 80px;
+        padding: 0 24px;
+        display: grid;
+        grid-template-columns: 290px 1fr;
+        gap: 36px;
+        align-items: start;
+      }
+
+      /* ── SIDEBAR FIXA ── */
+      .sidebar {
+        position: sticky;
+        top: 24px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 20px 16px;
+        box-shadow: var(--shadow-sm);
+        max-height: calc(100vh - 48px);
+        overflow-y: auto;
+      }
+      .sidebar-title {
+        font-family: var(--font-title);
+        font-size: 0.76rem;
+        font-weight: 800;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 12px;
+        padding-left: 6px;
+      }
+      .sidebar-search {
+        position: relative;
+        margin-bottom: 16px;
+      }
+      .sidebar-search input {
+        width: 100%;
+        padding: 8px 12px 8px 34px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--line);
+        font-size: 0.84rem;
+        font-family: var(--font-body);
+        outline: none;
+        transition: border-color 0.15s;
+        background: var(--surface-subtle);
+      }
+      .sidebar-search input:focus {
+        border-color: var(--red);
+        background: #fff;
+      }
+      .sidebar-search-icon {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #8C93A0;
+        pointer-events: none;
+      }
+      .toc-group {
+        margin-bottom: 18px;
+      }
+      .toc-group:last-child {
+        margin-bottom: 0;
+      }
+      .toc-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.86rem;
+        color: var(--ink);
+        padding: 6px 8px;
+        margin-bottom: 4px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.15s ease;
+      }
+      .toc-heading:hover {
+        background: var(--surface-alt);
+        color: var(--red);
+      }
+      .toc-heading.active {
+        color: var(--red);
+        font-weight: 800;
+      }
+      .toc-list {
+        list-style: none;
+        padding-left: 12px;
+        border-left: 2px solid var(--line-soft);
+        margin-left: 8px;
+      }
+      .toc-list li a {
+        display: block;
+        padding: 4px 6px;
+        font-size: 0.78rem;
+        color: var(--muted);
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.15s ease;
+        line-height: 1.35;
+      }
+      .toc-list li a:hover {
+        color: var(--red);
+        background: rgba(201, 45, 45, 0.05);
+      }
+      .toc-list li a.active {
+        color: var(--red);
+        font-weight: 700;
+        border-left: 2px solid var(--red);
+        margin-left: -14px;
+        padding-left: 12px;
+      }
+      .sidebar-dpo-box {
+        margin-top: 18px;
+        padding: 12px;
+        border-radius: var(--radius-sm);
+        background: var(--yellow-light);
+        border: 1px solid rgba(245, 197, 66, 0.5);
+      }
+      .sidebar-dpo-box h4 {
+        font-family: var(--font-title);
+        font-size: 0.82rem;
+        font-weight: 800;
+        color: #7A4E00;
+        margin-bottom: 3px;
+      }
+      .sidebar-dpo-box p {
+        font-size: 0.74rem;
+        color: #614209;
+        margin-bottom: 6px;
+        line-height: 1.35;
+      }
+      .sidebar-dpo-box a {
+        font-size: 0.76rem;
+        font-weight: 700;
+        color: var(--red-dark);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .sidebar-dpo-box a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── CONTENT AREA ── */
+      .content-area {
+        min-width: 0;
+      }
+      .doc-section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        padding: 38px 36px;
+        margin-bottom: 40px;
+        box-shadow: var(--shadow-sm);
+      }
+      .doc-section:last-child {
+        margin-bottom: 0;
+      }
+      .doc-header {
+        border-bottom: 2px solid var(--line-soft);
+        padding-bottom: 22px;
+        margin-bottom: 28px;
+      }
+      .doc-badge {
+        display: inline-block;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--red);
+        background: rgba(201, 45, 45, 0.08);
+        padding: 4px 10px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+      .doc-header h2 {
+        font-family: var(--font-title);
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--ink);
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      .doc-header p {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      /* ── SUMMARY / HIGHLIGHT CARD ── */
+      .summary-card {
+        background: linear-gradient(135deg, #FFF8F8 0%, #FFFFFF 100%);
+        border: 1px solid rgba(201, 45, 45, 0.2);
+        border-left: 4px solid var(--red);
+        border-radius: var(--radius);
+        padding: 18px 22px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 16px rgba(201, 45, 45, 0.04);
+      }
+      .summary-card-title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--font-title);
+        font-size: 0.94rem;
+        font-weight: 800;
+        color: var(--red);
+        margin-bottom: 8px;
+      }
+      .summary-card ul {
+        list-style: none;
+        display: grid;
+        gap: 8px;
+        margin-top: 8px;
+      }
+      .summary-card li {
+        font-size: 0.88rem;
+        color: var(--ink-light);
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        line-height: 1.45;
+      }
+      .summary-card li::before {
+        content: '✓';
+        color: var(--red);
+        font-weight: 800;
+      }
+
+      /* ── ARTICLES ── */
+      .doc-article {
+        margin-bottom: 32px;
+        scroll-margin-top: 30px;
+      }
+      .doc-article:last-child {
+        margin-bottom: 0;
+      }
+      .doc-article h3 {
+        font-family: var(--font-title);
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 12px;
+        letter-spacing: -0.015em;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+      .doc-article h3 .num {
+        color: var(--red);
+        font-weight: 800;
+      }
+      .doc-article p {
+        font-size: 0.94rem;
+        color: #42464E;
+        line-height: 1.7;
+        margin-bottom: 14px;
+      }
+      .doc-article p:last-child {
+        margin-bottom: 0;
+      }
+      .doc-article ul, .doc-article ol {
+        margin: 10px 0 16px 20px;
+        color: #42464E;
+        font-size: 0.92rem;
+      }
+      .doc-article li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+      .doc-article strong {
+        color: var(--ink);
+      }
+
+      /* ── CALLOUT BOXES ── */
+      .callout {
+        border-radius: var(--radius);
+        padding: 16px 18px;
+        margin: 16px 0;
+        font-size: 0.88rem;
+        line-height: 1.6;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .callout-icon {
+        font-size: 1.2rem;
+        flex: 0 0 22px;
+        line-height: 1;
+      }
+      .callout-info {
+        background: #F0F6FF;
+        border: 1px solid #C9DEFF;
+        color: #174276;
+      }
+      .callout-info .callout-icon { color: #1E62B8; }
+      .callout-warning {
+        background: #FFFDF0;
+        border: 1px solid #FFECA3;
+        color: #7A5700;
+      }
+      .callout-warning .callout-icon { color: #D48E00; }
+      .callout-phorte {
+        background: #FFF6F6;
+        border: 1px solid #FFD4D4;
+        border-left: 4px solid var(--red);
+        color: #6E1F1F;
+      }
+      .callout-phorte .callout-icon { color: var(--red); }
+
+      /* ── TABLES ── */
+      .table-wrap {
+        width: 100%;
+        overflow-x: auto;
+        border-radius: var(--radius);
+        border: 1px solid var(--line);
+        margin: 18px 0;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+      }
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.88rem;
+      }
+      .data-table th {
+        background: #FAF3E0;
+        color: #664100;
+        font-family: var(--font-title);
+        font-weight: 700;
+        padding: 12px 16px;
+        border-bottom: 2px solid #EADBBA;
+      }
+      .data-table td {
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line-soft);
+        color: #42464E;
+        vertical-align: top;
+      }
+      .data-table tr:last-child td {
+        border-bottom: none;
+      }
+      .data-table tr:hover td {
+        background: #FAFBFD;
+      }
+      .badge-cookie {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.74rem;
+        font-weight: 700;
+      }
+      .badge-essential { background: #E2F5E8; color: #1E6E38; }
+      .badge-analytics { background: #E7F0FF; color: #205BB0; }
+      .badge-marketing { background: #FFF0F0; color: #BA2424; }
+      .badge-functional { background: #FFF8E6; color: #8F5E00; }
+
+      /* ── DPO CONTACT CARD ── */
+      .dpo-card {
+        background: linear-gradient(135deg, #FFFDF8 0%, #FFFFFF 100%);
+        border: 2px solid rgba(245, 197, 66, 0.7);
+        border-radius: var(--radius-lg);
+        padding: 30px;
+        margin-top: 36px;
+        box-shadow: var(--shadow-md);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        align-items: center;
+      }
+      .dpo-card-content h3 {
+        font-family: var(--font-title);
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: var(--ink);
+        margin-bottom: 10px;
+      }
+      .dpo-card-content p {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.55;
+        margin-bottom: 16px;
+      }
+      .dpo-channels {
+        background: #FAF9F6;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .dpo-channel-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .dpo-channel-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: #fff;
+        border: 1px solid var(--line);
+        display: grid;
+        place-items: center;
+        color: var(--red);
+        font-size: 1rem;
+        flex: 0 0 36px;
+      }
+      .dpo-channel-text small {
+        display: block;
+        font-size: 0.72rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+      .dpo-channel-text a, .dpo-channel-text strong {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--ink);
+        text-decoration: none;
+      }
+      .dpo-channel-text a:hover {
+        color: var(--red);
+        text-decoration: underline;
+      }
+
+      /* ── BACK TO TOP ── */
+      .back-to-top {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--red);
+        color: #fff;
+        border: none;
+        box-shadow: 0 4px 16px rgba(201, 45, 45, 0.4);
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        font-size: 1.1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s ease;
+        z-index: 90;
+      }
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      .back-to-top:hover {
+        background: var(--red-dark);
+        transform: translateY(-3px);
+      }
+
+      /* ── RESPONSIVE ── */
+      @media (max-width: 1020px) {
+        .layout-wrap {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: relative;
+          top: 0;
+          max-height: none;
+        }
+        .dpo-card {
+          grid-template-columns: 1fr;
+          gap: 22px;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .hero-section {
+          padding: 30px 16px 24px;
+        }
+        .layout-wrap {
+          padding: 0 16px;
+          margin-top: 20px;
+        }
+        .doc-section {
+          padding: 22px 16px;
+        }
+        .doc-tab {
+          padding: 7px 13px;
+          font-size: 0.8rem;
+        }
+        .data-table th, .data-table td {
+          padding: 10px 12px;
+          font-size: 0.82rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ── HERO BANNER ── -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-brand-tag">
+          <span class="hero-badge-logo">phorte</span>
+          <span class="hero-badge-title">Faculdade Phorte</span>
+        </div>
+
+        <span class="hero-kicker">Transparência, Segurança e Conformidade LGPD</span>
+        <h1 class="hero-title">Políticas de Privacidade, Cookies e Termos de Uso</h1>
+        <p class="hero-lead">
+          A <strong>Faculdade Phorte de Educação e Tecnologia</strong> está comprometida com o respeito, a transparência e a segurança no tratamento dos seus dados pessoais, operando em rigorosa conformidade com o <strong>Marco Civil da Internet (Lei nº 12.965/2014)</strong> e a <strong>Lei Geral de Proteção de Dados Pessoais (LGPD - Lei Federal nº 13.709/2018)</strong>.
+        </p>
+
+        <div class="hero-legal-entity">
+          <strong>Identificação Institucional:</strong> FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA, mantida pela ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE (CNPJ nº 42.098.615/0001-42), com sede na Rua Rui Barbosa, nº 422, 1º andar, Bela Vista, São Paulo/SP, CEP 01326-010.
+        </div>
+
+        <div class="hero-meta-bar">
+          <div class="doc-tabs-wrap" role="tablist" aria-label="Selecione o documento">
+            <a href="#todos" class="doc-tab active" data-filter="todos">Ver Tudo</a>
+            <a href="#privacidade" class="doc-tab" data-filter="privacidade">🔒 Privacidade (LGPD)</a>
+            <a href="#cookies" class="doc-tab" data-filter="cookies">🍪 Cookies</a>
+            <a href="#termos" class="doc-tab" data-filter="termos">📄 Termos de Uso</a>
+          </div>
+
+          <div class="hero-meta-item">
+            <span>📅 Última atualização: <strong>Agosto de 2026</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LAYOUT PRINCIPAL (SIDEBAR + CONTEÚDO) ── -->
+    <main class="layout-wrap">
+      <!-- ── SIDEBAR FIXA DE NAVEGAÇÃO (TOC) ── -->
+      <aside class="sidebar" aria-label="Sumário da página">
+        <div class="sidebar-title">Sumário de Tópicos</div>
+        
+        <div class="sidebar-search">
+          <span class="sidebar-search-icon" aria-hidden="true">🔍</span>
+          <input type="text" id="terms-search" placeholder="Buscar nas políticas..." aria-label="Buscar termo nas políticas" />
+        </div>
+
+        <div class="toc-group" data-doc="privacidade">
+          <a href="#privacidade" class="toc-heading">1. Privacidade (LGPD)</a>
+          <ul class="toc-list">
+            <li><a href="#priv-1">1.1 Informações Gerais</a></li>
+            <li><a href="#priv-2">1.2 Coleta e Finalidades</a></li>
+            <li><a href="#priv-3">1.3 Armazenamento & Prazos</a></li>
+            <li><a href="#priv-4">1.4 Legitimidade & Consentimento</a></li>
+            <li><a href="#priv-5">1.5 Compartilhamento</a></li>
+            <li><a href="#priv-6">1.6 Medidas de Proteção</a></li>
+            <li><a href="#priv-7">1.7 Direitos do Titular</a></li>
+            <li><a href="#priv-8">1.8 Treinamentos & Auditoria</a></li>
+            <li><a href="#priv-9">1.9 Legislação e Foro</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group" data-doc="cookies">
+          <a href="#cookies" class="toc-heading">2. Política de Cookies</a>
+          <ul class="toc-list">
+            <li><a href="#cook-1">2.1 Informações Gerais</a></li>
+            <li><a href="#cook-2">2.2 O que são Cookies?</a></li>
+            <li><a href="#cook-3">2.3 Tipos de Cookies Usados</a></li>
+            <li><a href="#cook-4">2.4 Gestão nos Navegadores</a></li>
+            <li><a href="#cook-5">2.5 Canais de Suporte</a></li>
+          </ul>
+        </div>
+
+        <div class="toc-group" data-doc="termos">
+          <a href="#termos" class="toc-heading">3. Termos de Uso</a>
+          <ul class="toc-list">
+            <li><a href="#term-1">3.1 Aceite & Objeto</a></li>
+            <li><a href="#term-2">3.2 Cadastro & Veracidade</a></li>
+            <li><a href="#term-3">3.3 Propriedade Intelectual</a></li>
+            <li><a href="#term-4">3.4 Responsabilidades</a></li>
+            <li><a href="#term-5">3.5 Limitação & Foro</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-dpo-box">
+          <h4>Encarregado (DPO)</h4>
+          <p><strong>Leonardo Vinicius Alcarde Garcia</strong></p>
+          <a href="mailto:Leonardo.alcarde@phorte.org.br">Leonardo.alcarde@phorte.org.br →</a>
+        </div>
+      </aside>
+
+      <!-- ── ÁREA DE DOCUMENTOS ── -->
+      <div class="content-area">
+        
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- 1. POLÍTICA DE PRIVACIDADE (LGPD)                          -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="doc-section" id="privacidade" data-category="privacidade">
+          <header class="doc-header">
+            <span class="doc-badge">LGPD · Lei Federal nº 13.709/2018</span>
+            <h2>1. Política de Privacidade</h2>
+            <p>Diretrizes sobre o modo como a Faculdade Phorte trata os dados pessoais dos usuários que acessam o site www.faculdadephorte.edu.br e suas páginas integradas.</p>
+          </header>
+
+          <div class="summary-card">
+            <div class="summary-card-title">✨ Em Resumo: Princípios Fundamentais</div>
+            <ul>
+              <li>Coletamos dados mediante sua submissão voluntária para prestar serviços educacionais, processar inscrições/matrículas e tirar dúvidas.</li>
+              <li>A base de dados formada é de propriedade e responsabilidade da Faculdade Phorte; nunca comercializamos seus dados com terceiros.</li>
+              <li>Você pode confirmar, acessar, corrigir, anonimizar ou revogar seu consentimento a qualquer momento junto ao nosso Encarregado de Proteção de Dados (DPO).</li>
+            </ul>
+          </div>
+
+          <article class="doc-article" id="priv-1">
+            <h3><span class="num">1.1</span> Informações Gerais</h3>
+            <p>
+              A <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong>, instituição de ensino superior mantida pela <strong>ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE</strong>, associação sem finalidade econômica, de direito privado, com autonomia administrativa e financeira, inscrita no CNPJ sob o nº 42.098.615/0001-42, com sede na Rua Rui Barbosa, nº 422, 1º andar, Bairro Bela Vista, Município de São Paulo, Estado de São Paulo, CEP 01326-010, por meio de seu Encarregado de Proteção de Dados, <strong>Leonardo Vinicius Alcarde Garcia</strong>, quer que você entenda como coletamos, usamos e realizamos o tratamento de dados pessoais.
+            </p>
+            <p>
+              A presente Política de Privacidade foi elaborada em estrita conformidade com a <strong>Lei Federal nº 12.965/2014 (Marco Civil da Internet)</strong> e a <strong>Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados - LGPD)</strong>, aplicando-se a todos os portais e formulários da instituição.
+            </p>
+            <p>
+              Ao acessar o site e enviar suas informações pessoais, o usuário consente, de forma livre e expressa, que seus dados sejam coletados, armazenados, tratados e compartilhados conforme as regras desta Política. Caso você não concorde com os termos, fica ciente de que a prestação dos serviços associados poderá não ser possível.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-2">
+            <h3><span class="num">1.2</span> Coleta e Finalidades do Uso de Dados</h3>
+            <p>Os dados necessários são coletados a partir da sua submissão voluntária, sem prejuízo de posterior enriquecimento, e incluem:</p>
+            
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Tipos de Dados</th>
+                    <th>Dados Pessoais Coletados</th>
+                    <th>Finalidade do Uso de Dados</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="8"><strong>Cadastrais</strong></td>
+                    <td rowspan="8">Nome Completo, Celular, E-mail, CPF, Endereço Completo</td>
+                    <td>Pré-cadastro para inscrição em cursos de graduação, pós-graduação e extensão</td>
+                  </tr>
+                  <tr><td>Contato telefônico via ligação e/ou WhatsApp para atendimento sobre produto educacional</td></tr>
+                  <tr><td>Contato telefônico e/ou WhatsApp para requisição de documentos adicionais e matrícula</td></tr>
+                  <tr><td>E-mail marketing e informativos acadêmicos (com opção de cancelamento)</td></tr>
+                  <tr><td>Geração de boleto bancário ou faturamento para pagamento de inscrição e mensalidade</td></tr>
+                  <tr><td>Compartilhamento estrito com a Instituição de Ensino para controle acadêmico</td></tr>
+                  <tr><td>Compartilhamento com empresas parceiras de tecnologia para auxílio na prestação de serviços</td></tr>
+                  <tr><td>Recuperação de senha e acesso aos portais do aluno/candidato</td></tr>
+                  <tr>
+                    <td rowspan="3"><strong>Identificação Digital</strong></td>
+                    <td rowspan="3">Endereço IP e Porta Lógica de Origem, Registros de interações, Session ID e Cookies</td>
+                    <td>Identificar o Usuário (determinação legal do Marco Civil da Internet)</td>
+                  </tr>
+                  <tr><td>Ações de remarketing institucional e anúncios educacionais relevantes</td></tr>
+                  <tr><td>Análise de tráfego e desempenho do site para melhoria contínua</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout callout-info">
+              <span class="callout-icon">📌</span>
+              <div>
+                <strong>Corresponsabilidade & Confidencialidade:</strong> A Faculdade Phorte não é responsável pela precisão ou veracidade das informações inseridas pelo usuário, cabendo a este mantê-las atualizadas. O usuário é corresponsável pelo sigilo de seus dados e senhas. Internamente, os dados são acessados somente por profissionais devidamente autorizados, sob rigoroso compromisso de sigilo e confidencialidade.
+              </div>
+            </div>
+          </article>
+
+          <article class="doc-article" id="priv-3">
+            <h3><span class="num">1.3</span> Armazenamento dos Dados e Prazos Legais</h3>
+            <p>Os dados coletados e os registros de atividades estarão armazenados em ambiente seguro e controlado pelo prazo exigido por lei, considerando:</p>
+            <ul>
+              <li><strong>Prazo mínimo de 6 (seis) meses:</strong> Armazenamento do registro de logs de acesso e atividades, nos termos do Marco Civil da Internet (Lei nº 12.965/2014);</li>
+              <li><strong>Prazo mínimo de 5 (cinco) anos:</strong> Armazenamento dos dados pessoais após o cancelamento da Conta de Acesso ou relação acadêmica, nos termos do Código de Defesa do Consumidor;</li>
+              <li><strong>Normas Regulatórias do MEC:</strong> Retenção de acervo acadêmico, diplomas e históricos conforme diretrizes federais de educação;</li>
+              <li><strong>Estado da técnica disponível:</strong> Padrões de segurança da informação atualizados.</li>
+            </ul>
+            <p>
+              Os dados poderão ser excluídos antes desses prazos mediante solicitação formal do titular, ressalvadas as hipóteses de guarda obrigatória por lei ou ordem judicial.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-4">
+            <h3><span class="num">1.4</span> Legitimidade e Consentimento</h3>
+            <p>
+              Tratamos os seus dados pessoais com base no seu <strong>consentimento livre, individual, claro, específico e legítimo</strong>, assim como nas bases legais de execução de contratos, cumprimento de obrigação legal/regulatória e legítimo interesse (Art. 7º da LGPD).
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-5">
+            <h3><span class="num">1.5</span> Compartilhamento de Dados Pessoais</h3>
+            <p>Para a execução dos serviços educacionais e operacionais, os dados pessoais poderão ser compartilhados com:</p>
+            <ul>
+              <li>Empresas e prestadores de serviços contratados para atuar em nome da <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong> (como provedores de infraestrutura em nuvem, sistemas de gestão acadêmica, plataformas de formulários e mensageria);</li>
+              <li>Propósitos administrativos internos: pesquisa, planejamento pedagógico, segurança e gerenciamento de risco;</li>
+              <li>Autoridades judiciais, administrativas ou governamentais competentes (como MEC e INEP), mediante obrigação legal ou requisição formal.</li>
+            </ul>
+            <p>
+              Em qualquer hipótese, o compartilhamento limita-se ao mínimo estritamente necessário. Caso ocorra transferência internacional de dados (ex: servidores em nuvem), será assegurado nível de proteção equivalente ao da legislação brasileira.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-6">
+            <h3><span class="num">1.6</span> Medidas de Proteção e Segurança da Informação</h3>
+            <p>
+              Empregamos medidas técnicas e organizacionais adequadas — como tráfego criptografado via HTTPS/TLS, armazenamento em locais digitais com controle restrito de acesso por credenciais nominais e ambientes operacionais seguros não acessíveis ao público.
+            </p>
+            <p>
+              No caso eventual de um incidente de segurança que envolva risco ou dano relevante, a Faculdade Phorte adotará prontamente as medidas de contingência cabíveis e comunicará a Autoridade Nacional de Proteção de Dados (ANPD) e os usuários afetados em prazo razoável.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-7">
+            <h3><span class="num">1.7</span> Direitos do Titular de Dados</h3>
+            <p>Em conformidade com o Artigo 18 da LGPD, você possui os seguintes direitos garantidos perante a Faculdade Phorte:</p>
+            <ol>
+              <li>Confirmação da existência de tratamento;</li>
+              <li>Acesso aos seus dados pessoais;</li>
+              <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
+              <li>Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade;</li>
+              <li>Portabilidade dos dados, quando regulamentado e cabível;</li>
+              <li>Eliminação dos dados pessoais tratados com consentimento;</li>
+              <li>Informação sobre entidades públicas e privadas com as quais houve uso compartilhado;</li>
+              <li>Informação sobre a possibilidade de não fornecer consentimento e consequências da negativa;</li>
+              <li>Revogação do consentimento de forma simples e gratuita.</li>
+            </ol>
+            <div class="callout callout-phorte">
+              <span class="callout-icon">✉️</span>
+              <div>
+                <strong>Como exercer seus direitos:</strong> Envie sua solicitação gratuita diretamente ao Encarregado pelo Tratamento dos Dados Pessoais pelo e-mail <strong>Leonardo.alcarde@phorte.org.br</strong>. A instituição reserva-se o direito de solicitar comprovação de identidade do requerente para garantir a segurança dos dados.
+              </div>
+            </div>
+          </article>
+
+          <article class="doc-article" id="priv-8">
+            <h3><span class="num">1.8</span> Programa de Conscientização, Treinamento e Auditoria</h3>
+            <p>
+              <strong>Treinamentos Anuais:</strong> Os encarregados desta política desenvolvem anualmente programas de esclarecimento, conscientização e treinamento prático de privacidade de dados para as equipes operacionais e acadêmicas que lidam com dados de terceiros.
+            </p>
+            <p>
+              <strong>Auditorias Periódicas:</strong> Anualmente são conduzidos processos formais de auditoria nas áreas de atendimento, admissão e tecnologia para validar a contínua conformidade com a LGPD e as políticas institucionais.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-9">
+            <h3><span class="num">1.9</span> Atualizações, Legislação e Foro</h3>
+            <p>
+              Esta Política de Privacidade está sujeita a revisões periódicas. Recomenda-se sua consulta frequente.
+            </p>
+            <p>
+              Este documento é regido pelas leis da República Federativa do Brasil, em especial a Lei nº 13.709/2018 (LGPD), sendo eleito o <strong>Foro da Comarca da Capital do Estado de São Paulo</strong> para dirimir qualquer controvérsia ou litígio.
+            </p>
+          </article>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- 2. POLÍTICA DE COOKIES                                     -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="doc-section" id="cookies" data-category="cookies">
+          <header class="doc-header">
+            <span class="doc-badge">Navegação & Rastreamento Web</span>
+            <h2>2. Política de Cookies</h2>
+            <p>Explicação detalhada sobre o que são cookies, quais categorias utilizamos nos sites da Faculdade Phorte e como você pode gerenciar suas preferências.</p>
+          </header>
+
+          <div class="summary-card">
+            <div class="summary-card-title">🍪 Em Resumo: Nosso Uso de Cookies</div>
+            <ul>
+              <li>Utilizamos cookies essenciais para manter você conectado aos portais e garantir formulários seguros.</li>
+              <li>Cookies analíticos nos ajudam a entender de forma anônima quais cursos e temas despertam maior interesse.</li>
+              <li>Você pode aceitar, personalizar ou revogar cookies a qualquer momento através das configurações do seu navegador web.</li>
+            </ul>
+          </div>
+
+          <article class="doc-article" id="cook-1">
+            <h3><span class="num">2.1</span> Informações Gerais</h3>
+            <p>
+              A presente Política de Cookies da <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong> foi elaborada de acordo com as disposições da <strong>Lei Federal nº 12.965/2014 (Marco Civil da Internet)</strong> e da <strong>Lei Federal nº 13.709/2018 (LGPD)</strong>, podendo ser atualizada sempre que ocorrer alteração legislativa significativa ou necessidade de adequação técnica.
+            </p>
+          </article>
+
+          <article class="doc-article" id="cook-2">
+            <h3><span class="num">2.2</span> O que são Cookies?</h3>
+            <p>
+              Cookies são ferramentas essenciais na navegação online. Consistem em arquivos transferidos para o seu equipamento (computador, tablet ou smartphone) que identificam a interação entre você, nossos sites, redes sociais e anúncios, visando otimizar e personalizar a sua experiência.
+            </p>
+            <p>O termo "cookie" abrange também tecnologias semelhantes, como <em>pixel tags</em>, <em>web beacons</em> e identificadores de dispositivos móveis.</p>
+            <ul>
+              <li><strong>Cookies de Sessão:</strong> Coletam informações temporárias que não identificam diretamente o usuário e são automaticamente apagados assim que você fecha o navegador.</li>
+              <li><strong>Cookies Persistentes:</strong> Permanecem armazenados no dispositivo até a sua data de expiração ou exclusão manual, permitindo lembrar suas preferências em visitas futuras.</li>
+              <li><strong>Cookies Proprietários vs. de Terceiros:</strong> Os proprietários são emitidos pelo domínio da Faculdade Phorte; os de terceiros pertencem a parceiros confiáveis (como Google Analytics, Meta Pixel e RD Station) para serviços integrados.</li>
+            </ul>
+          </article>
+
+          <article class="doc-article" id="cook-3">
+            <h3><span class="num">2.3</span> Categorias de Cookies e Finalidades</h3>
+            <p>Abaixo detalhamos os diferentes tipos de cookies utilizados em nossos ambientes:</p>
+
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Categoria</th>
+                    <th>Subtipo / Provedor</th>
+                    <th>Finalidade Específica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="2"><strong>Essenciais</strong><br><span class="badge-cookie badge-essential">Obrigatório</span></td>
+                    <td>Sessão</td>
+                    <td>Mantém o estado da aplicação ativo durante sua navegação.</td>
+                  </tr>
+                  <tr>
+                    <td>Identificação de Usuário</td>
+                    <td>Garante que o aluno visualize apenas suas próprias informações no portal.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="4"><strong>Preferências</strong><br><span class="badge-cookie badge-functional">Funcional</span></td>
+                    <td>Idioma & Localização</td>
+                    <td>Memoriza preferências regionais e exibe opções mais próximas ao usuário.</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile</td>
+                    <td>Indica e adapta a interface para telas de smartphones e tablets.</td>
+                  </tr>
+                  <tr>
+                    <td>Site de Referência</td>
+                    <td>Registra de onde o usuário veio para melhor compreensão do canal de entrada.</td>
+                  </tr>
+                  <tr>
+                    <td>Última Visita & Histórico</td>
+                    <td>Grava datas de visita para fornecer atualizações e relatórios de erro em formulários.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2"><strong>Analíticos</strong><br><span class="badge-cookie badge-analytics">Desempenho</span></td>
+                    <td>Google Analytics</td>
+                    <td>Métricas agregadas e anônimas sobre páginas visitadas, tempo e taxa de rejeição.</td>
+                  </tr>
+                  <tr>
+                    <td>Auditoria de Tráfego</td>
+                    <td>Auxilia no aprimoramento da navegação e identificação de dificuldades técnicas.</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3"><strong>Publicidade</strong><br><span class="badge-cookie badge-marketing">Marketing</span></td>
+                    <td>Anúncios Direcionados</td>
+                    <td>Exibe campanhas de vestibular relevantes no Google e redes sociais.</td>
+                  </tr>
+                  <tr>
+                    <td>Detecção de Fraude</td>
+                    <td>Detecta e previne fraudes de cliques e acessos automatizados.</td>
+                  </tr>
+                  <tr>
+                    <td>Plugins de Mídia Social</td>
+                    <td>Integração com botões de compartilhamento (Meta / Facebook, Instagram, LinkedIn).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="doc-article" id="cook-4">
+            <h3><span class="num">2.4</span> Como Posso Gerenciar o Uso dos Cookies?</h3>
+            <p>
+              Ao acessar as páginas da Faculdade Phorte, você pode consentir com a utilização dos cookies. A qualquer momento, você pode revogar seu consentimento apagando ou bloqueando os cookies nas configurações do seu navegador de preferência.
+            </p>
+            <div class="callout callout-warning">
+              <span class="callout-icon">⚠️</span>
+              <div>
+                <strong>Impacto da Desativação:</strong> O bloqueio de cookies estritamente necessários pode resultar na perda de funcionalidades essenciais do site, como preenchimento de inscrições ou acesso ao Portal do Aluno.
+              </div>
+            </div>
+            <p>Para gerenciar cookies diretamente no seu navegador, consulte os tutoriais oficiais:</p>
+            <ul>
+              <li><strong>Google Chrome:</strong> <a href="https://support.google.com/accounts/answer/61416?hl=pt-BR" target="_blank" rel="noopener noreferrer">Gerenciar cookies no Google Chrome ↗</a></li>
+              <li><strong>Mozilla Firefox:</strong> <a href="https://support.mozilla.org/pt-BR/kb/ative-e-desative-os-cookies-que-os-sites-usam" target="_blank" rel="noopener noreferrer">Gerenciar cookies no Firefox ↗</a></li>
+              <li><strong>Microsoft Edge:</strong> <a href="https://support.microsoft.com/pt-br/microsoft-edge/excluir-cookies-no-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer">Gerenciar cookies no Microsoft Edge ↗</a></li>
+              <li><strong>Apple Safari:</strong> <a href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer">Gerenciar cookies no Safari ↗</a></li>
+            </ul>
+          </article>
+
+          <article class="doc-article" id="cook-5">
+            <h3><span class="num">2.5</span> E se Eu Precisar de Ajuda?</h3>
+            <p>
+              Aconselhamos que você consulte periodicamente esta política juntamente com a nossa Política de Privacidade. Caso precise de esclarecimentos complementares sobre o uso de cookies, contate nosso Encarregado pelo e-mail <strong>Leonardo.alcarde@phorte.org.br</strong>.
+            </p>
+          </article>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- 3. TERMOS DE USO                                           -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="doc-section" id="termos" data-category="termos">
+          <header class="doc-header">
+            <span class="doc-badge">Condições Gerais de Acesso</span>
+            <h2>3. Termos de Uso</h2>
+            <p>Regras para navegação, responsabilidades mútuas, direitos autorais e utilização das plataformas digitais da Faculdade Phorte.</p>
+          </header>
+
+          <div class="summary-card">
+            <div class="summary-card-title">📄 Em Resumo: Diretrizes de Uso</div>
+            <ul>
+              <li>O acesso aos nossos sites e formulários pressupõe a aceitação integral destes Termos de Uso e o compromisso com a veracidade dos dados informados.</li>
+              <li>Todos os conteúdos educacionais, marcas e materiais didáticos são protegidos por direitos autorais e de propriedade intelectual da Faculdade Phorte.</li>
+            </ul>
+          </div>
+
+          <article class="doc-article" id="term-1">
+            <h3><span class="num">3.1</span> Aceitação dos Termos e Objeto</h3>
+            <p>
+              Estes Termos de Uso regulam o acesso e a utilização dos websites, landing pages, simuladores e portais disponibilizados pela <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong>. Ao navegar por nossas páginas, solicitar informações ou submeter cadastros em processos seletivos, o usuário declara ter lido, compreendido e concordado com as presentes condições.
+            </p>
+          </article>
+
+          <article class="doc-article" id="term-2">
+            <h3><span class="num">3.2</span> Cadastro, Veracidade e Responsabilidades do Usuário</h3>
+            <p>
+              Ao fornecer dados nos formulários de vestibular, atendimento via WhatsApp, agendamento de visitas ou matrícula, o usuário se compromete a fornecer <strong>informações autênticas, completas e atualizadas</strong>, sendo o único responsável civil e criminalmente pela veracidade das declarações prestadas.
+            </p>
+            <p>O usuário concorda em utilizar as plataformas de maneira ética e em estrita conformidade com a legislação brasileira, comprometendo-se a não:</p>
+            <ul>
+              <li>Tentar violar a segurança, autenticação ou integridade dos servidores da Faculdade Phorte;</li>
+              <li>Utilizar ferramentas automatizadas (robôs, spiders ou scrapers) para extrair conteúdos sem autorização prévia;</li>
+              <li>Disseminar arquivos corrompidos, vírus ou softwares maliciosos;</li>
+              <li>Compartilhar senhas ou credenciais de acesso com terceiros, sob pena de bloqueio imediato do acesso.</li>
+            </ul>
+          </article>
+
+          <article class="doc-article" id="term-3">
+            <h3><span class="num">3.3</span> Propriedade Intelectual e Direitos Autorais</h3>
+            <p>
+              Todos os elementos visuais e materiais disponibilizados — incluindo logotipos, marcas registradas, nomes de cursos, projetos pedagógicos, e-books, vídeos, podcasts, apostilas e códigos-fonte — são de titularidade exclusiva da <strong>Faculdade Phorte</strong> ou de seus parceiros licenciadores, protegidos pelas <strong>Leis nº 9.610/1998 (Direitos Autorais)</strong> e <strong>nº 9.279/1996 (Propriedade Industrial)</strong>.
+            </p>
+            <div class="callout callout-phorte">
+              <span class="callout-icon">📚</span>
+              <div>
+                <strong>Uso Pessoal e Educacional:</strong> Os materiais didáticos disponibilizados aos estudantes destinam-se exclusivamente ao seu estudo individual. É terminantemente proibida a comercialização, reprodução integral/parcial, rateio ou publicação não autorizada em redes sociais ou sites de terceiros.
+              </div>
+            </div>
+          </article>
+
+          <article class="doc-article" id="term-4">
+            <h3><span class="num">3.4</span> Links Externos e Serviços de Terceiros</h3>
+            <p>
+              Nossos sites podem conter hiperlinks para páginas de parceiros, plataformas de pagamento, eventos externos ou redes sociais. A Faculdade Phorte não se responsabiliza pelas práticas de privacidade, termos de uso ou conteúdos veiculados nesses domínios de terceiros.
+            </p>
+          </article>
+
+          <article class="doc-article" id="term-5">
+            <h3><span class="num">3.5</span> Limitação de Responsabilidade e Foro</h3>
+            <p>
+              A Faculdade Phorte empenha seus melhores esforços para garantir a máxima disponibilidade e estabilidade de suas plataformas, não respondendo por eventuais instabilidades temporárias de conexão à internet decorrentes de provedores de telecomunicações.
+            </p>
+            <p>
+              Estes Termos de Uso são regidos pela legislação brasileira. Fica eleito o <strong>Foro da Comarca da Capital do Estado de São Paulo</strong> para dirimir quaisquer dúvidas ou litígios oriundos deste instrumento.
+            </p>
+          </article>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- CARD DO DPO / ENCARREGADO DE DADOS                         -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="dpo-card" id="dpo-contato">
+          <div class="dpo-card-content">
+            <h3>Canal Oficial do Encarregado de Dados (DPO)</h3>
+            <p>
+              Em cumprimento ao Art. 41 da LGPD, nosso Encarregado de Proteção de Dados atua como canal oficial para atender suas solicitações, tirar dúvidas e receber comunicações da Autoridade Nacional de Proteção de Dados (ANPD).
+            </p>
+            <p>
+              Você pode exercer gratuitamente qualquer um dos seus direitos previstos na lei falando diretamente com o nosso Encarregado.
+            </p>
+          </div>
+
+          <div class="dpo-channels">
+            <div class="dpo-channel-item">
+              <div class="dpo-channel-icon" aria-hidden="true">👤</div>
+              <div class="dpo-channel-text">
+                <small>Encarregado de Dados (DPO)</small>
+                <strong>Leonardo Vinicius Alcarde Garcia</strong>
+              </div>
+            </div>
+            <div class="dpo-channel-item">
+              <div class="dpo-channel-icon" aria-hidden="true">✉️</div>
+              <div class="dpo-channel-text">
+                <small>E-mail Direto do DPO</small>
+                <a href="mailto:Leonardo.alcarde@phorte.org.br">Leonardo.alcarde@phorte.org.br</a>
+              </div>
+            </div>
+            <div class="dpo-channel-item">
+              <div class="dpo-channel-icon" aria-hidden="true">📍</div>
+              <div class="dpo-channel-text">
+                <small>Endereço da Mantenedora</small>
+                <strong>Rua Rui Barbosa, 422, 1º andar — Bela Vista, São Paulo/SP (CEP 01326-010)</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ── BOTÃO VOLTAR AO TOPO ── -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página">↑</button>
+
+    <!-- ── JAVASCRIPT DE INTERATIVIDADE & FILTROS ── -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const backToTopBtn = document.getElementById('backToTop');
+        const docTabs = document.querySelectorAll('.doc-tab');
+        const docSections = document.querySelectorAll('.doc-section');
+        const tocGroups = document.querySelectorAll('.toc-group');
+        const tocLinks = document.querySelectorAll('.toc-list a, .toc-heading');
+        const searchInput = document.getElementById('terms-search');
+
+        // Scroll: Back-to-top button
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 400) {
+            backToTopBtn.classList.add('visible');
+          } else {
+            backToTopBtn.classList.remove('visible');
+          }
+
+          // TOC scroll spy
+          let currentSectionId = '';
+          docSections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 160 && rect.bottom >= 160) {
+              currentSectionId = section.id;
+            }
+          });
+
+          if (currentSectionId) {
+            tocLinks.forEach((link) => {
+              const href = link.getAttribute('href');
+              if (href === '#' + currentSectionId) {
+                link.classList.add('active');
+              } else if (href && href.startsWith('#') && !href.includes(currentSectionId)) {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+
+        // Back to top click
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Pill Tabs Filter
+        docTabs.forEach((tab) => {
+          tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filter = tab.dataset.filter;
+
+            docTabs.forEach((t) => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            if (filter === 'todos') {
+              docSections.forEach((sec) => (sec.style.display = 'block'));
+              tocGroups.forEach((group) => (group.style.display = 'block'));
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+              docSections.forEach((sec) => {
+                if (sec.dataset.category === filter) {
+                  sec.style.display = 'block';
+                  sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                  sec.style.display = 'none';
+                }
+              });
+
+              tocGroups.forEach((group) => {
+                if (group.dataset.doc === filter) {
+                  group.style.display = 'block';
+                } else {
+                  group.style.display = 'none';
+                }
+              });
+            }
+          });
+        });
+
+        // Search Filter inside policies
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const articles = document.querySelectorAll('.doc-article');
+
+            if (!query) {
+              articles.forEach((art) => (art.style.display = 'block'));
+              return;
+            }
+
+            articles.forEach((art) => {
+              const text = art.textContent.toLowerCase();
+              if (text.includes(query)) {
+                art.style.display = 'block';
+              } else {
+                art.style.display = 'none';
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
