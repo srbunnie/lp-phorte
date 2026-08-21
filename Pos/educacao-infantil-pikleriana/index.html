@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Inscreva-se gratuitamente na live A organização do tempo numa Perspectiva Pikleriana com a Faculdade Phorte.">
+    <title>A organização do tempo | Live Educação</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- ============================================================ -->
+    <!-- PARTE 1: CIMA (Header, Hero e Faixa de Informações)          -->
+    <!-- ============================================================ -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Live Educação — início">
+          <span class="brand-live">LIVE</span>
+          <span class="brand-play" aria-hidden="true">▶</span>
+          <span class="brand-separator">|</span>
+          <span class="brand-youtube"><span class="youtube-icon" aria-hidden="true">▶</span> YouTube</span>
+        </a>
+        <a class="header-link" href="#inscricao">Inscreva-se gratuitamente <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- ── HERO / HEAD ── -->
+      <section class="hero section-head-bg">
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <p class="kicker">LIVE EDUCAÇÃO · 14/09 ÀS 19H30</p>
+            <h1>A organização do tempo numa <em>Perspectiva Pikleriana</em></h1>
+            <p class="hero-lead">Explore as relações entre <strong>tempo, rotina e desenvolvimento infantil</strong> para compreender como o cotidiano pode ser estruturado com foco na continuidade, na autonomia e no respeito ao tempo próprio.</p>
+            
+            <div class="event-meta" aria-label="Informações da live">
+              <span><b>14/09</b><small>às 19h30</small></span>
+              <span><b>Ao vivo</b><small>pelo YouTube</small></span>
+              <span><b>Gratuita</b><small>com certificado</small></span>
+            </div>
+
+            <p class="hero-support">Com a Profª. Ma. Valéria Pasetchny e a Profª. Esp. Luanna Nascimento</p>
+            <a class="button button-primary" href="#inscricao">Quero participar da live <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTAGEM / DESTAQUES ── -->
+      <section class="countdown-band" aria-label="Informações da live">
+        <div class="container countdown-grid">
+          <div><strong>14</strong><span>setembro</span></div>
+          <div><strong>19h30</strong><span>horário de Brasília</span></div>
+          <div><strong>100%</strong><span>gratuita</span></div>
+          <div><strong>1</strong><span>certificado</span></div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- PARTE 2: MEIO (Formulário de Inscrição e Imagem de Apoio)   -->
+      <!-- ============================================================ -->
+      <section class="signup section-paper" id="inscricao">
+        <div class="container signup-grid">
+          <div class="signup-art">
+            <img src="https://posphorte.com.br/wp-content/uploads/2026/08/apoio.webp" alt="Criança explorando um ambiente de educação infantil" loading="lazy">
+            <p>Uma conversa para respeitar os ritmos de cada criança.</p>
+          </div>
+
+          <div class="form-card">
+            <p class="kicker">Inscrição gratuita</p>
+            <h2>Garanta seu lugar na conversa.</h2>
+            <p class="form-intro">Para participar, preencha o formulário:</p>
+            
+            <form id="signup-form" novalidate>
+              <div class="form-field">
+                <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos chamar você?">
+                <small class="field-error" data-error-for="nome"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+                <small class="field-error" data-error-for="email"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+                <input id="telefone" name="telefone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000">
+                <small class="field-error" data-error-for="telefone"></small>
+              </div>
+
+              <fieldset class="form-field">
+                <legend>Você trabalha com educação infantil? <span aria-hidden="true">*</span></legend>
+                <label class="choice"><input type="radio" name="educacao-infantil" value="sim" required> <span>Sim</span></label>
+                <label class="choice"><input type="radio" name="educacao-infantil" value="nao"> <span>Não</span></label>
+                <small class="field-error" data-error-for="educacao-infantil"></small>
+              </fieldset>
+
+              <div class="form-field">
+                <label for="objetivo">Qual seu principal objetivo ao participar da live? <span aria-hidden="true">*</span></label>
+                <select id="objetivo" name="objetivo" required>
+                  <option value="">Selecione uma opção</option>
+                  <option>Atualizar meus conhecimentos na área</option>
+                  <option>Entender mais sobre práticas, conceitos e teorias da minha área de atuação</option>
+                  <option>Conhecer opções de cursos de especialização</option>
+                  <option>Adquirir certificações</option>
+                </select>
+                <small class="field-error" data-error-for="objetivo"></small>
+              </div>
+
+              <label class="consent">
+                <input id="consentimento" name="consentimento" type="checkbox" required>
+                <span>Eu concordo em receber comunicações. A Faculdade Phorte protege seus dados e os usa apenas para fins de marketing. Acesse nossa <a href="https://posphorte.com.br/politica-de-privacidade/" target="_blank" rel="noreferrer">política de privacidade</a>.</span>
+              </label>
+              <small class="field-error" data-error-for="consentimento"></small>
+
+              <button class="button button-submit" type="submit">Conclua sua inscrição <span aria-hidden="true">→</span></button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- PARTE 3: FINAL (Conteúdo Pós-Formulário e Rodapé)            -->
+      <!-- ============================================================ -->
+      <!-- ── 01 · SOBRE A LIVE ── -->
+      <section class="content-section section-white">
+        <div class="container split-grid">
+          <div class="split-copy">
+            <p class="section-number">01 · Sobre a live</p>
+            <h2>Organizar o cotidiano é respeitar o tempo de cada criança.</h2>
+            <p><strong>Na perspectiva Pikleriana, ao respeitar ritmos e continuidades, o pedagogo favorece práticas mais coerentes com as necessidades dos bebês.</strong></p>
+            <p>Pensar o cotidiano para além dos horários ajuda a reduzir interrupções, observar hábitos individuais, favorecer a autonomia, fortalecer vínculos e tomar decisões mais coerentes com a rotina pedagógica.</p>
+            <p>Nesta live, aprofunde como a perspectiva Pikleriana orienta a organização do tempo e amplia as possibilidades de atuação do professor no cotidiano da Educação Infantil. Aproveite a transmissão ao vivo para fazer perguntas, compartilhar experiências e ampliar suas referências.</p>
+          </div>
+          <figure class="shape-image">
+            <img src="https://posphorte.com.br/wp-content/uploads/2026/08/publico.webp" alt="Crianças explorando materiais em uma sala de educação infantil" loading="lazy">
+            <figcaption>Uma rotina mais respeitosa aos ritmos de cada criança.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ── 02 · SOBRE AS PROFESSORAS ── -->
+      <section class="profile section-paper">
+        <div class="container">
+          <p class="section-number">02 · Sobre as professoras</p>
+          <div class="profiles">
+            <article class="profile-card">
+              <img src="https://posphorte.com.br/wp-content/uploads/2026/08/luanna.webp" alt="Professora Luanna Nascimento" loading="lazy">
+              <h2>Profª. Esp. Luanna Nascimento</h2>
+              <p><strong>Pedagoga</strong> pela Faculdade de Educação da Universidade Federal Fluminense (UFF). <strong>Especialista em Gestão Pedagógica e Formação em Educação Infantil</strong> pelo Instituto Superior de Educação Vera Cruz e em <strong>Educação Infantil numa Perspectiva Pikleriana</strong> pela Faculdade Phorte.</p>
+              <p>Realiza formação na <strong>Abordagem Pikler pelo Instituto Pikler Lóczy</strong>, em Budapeste. Atua há <strong>14 anos como coordenadora pedagógica na Rede Municipal de Educação de São Paulo</strong>, na formação de equipes e no acompanhamento pedagógico.</p>
+            </article>
+
+            <article class="profile-card">
+              <img src="https://posphorte.com.br/wp-content/uploads/2026/08/valeria.webp" alt="Professora Valéria Pasetchny" loading="lazy">
+              <h2>Profª. Ma. Valéria Pasetchny</h2>
+              <p><strong>Mestre em Educação</strong> – Gestão e Práticas Educacionais (Uninove). Está em <strong>formação como Pedagoga Pikler</strong> pelo Instituto Pikler-Lóczy de Budapeste, Hungria. Pedagoga e <strong>Especialista em Educação Infantil</strong> pela FEUSP.</p>
+              <p>Atuou como <strong>professora de bebês e crianças bem pequenas</strong> por mais de 25 anos em redes pública e privada. Atualmente, integra o corpo docente da pós-graduação em Educação Infantil numa Perspectiva Pikleriana da Faculdade Phorte.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── 03 · PARA QUEM É & CERTIFICADO ── -->
+      <section class="content-section section-white">
+        <div class="container split-grid reverse-mobile">
+          <figure class="certificate-fig">
+            <img src="https://posphorte.com.br/wp-content/uploads/2026/08/certificado.webp" alt="Certificado de participação da Faculdade Phorte" loading="lazy">
+          </figure>
+          <div class="split-copy">
+            <p class="section-number">03 · Para quem é</p>
+            <h2>Para profissionais que querem qualificar suas práticas.</h2>
+            <p>Este encontro é voltado para <strong>professoras da Educação Infantil, coordenadoras pedagógicas e estudantes</strong> que buscam compreender a relevância do brincar livre para estruturar práticas de observação e organização de ambientes que favoreçam a autonomia e o desenvolvimento.</p>
+            <p>Também oferece contribuições para <strong>profissionais da fisioterapia e áreas afins</strong> que atuam com bebês e crianças pequenas e buscam fundamentos da abordagem Pikler.</p>
+            <p>Além do diálogo ao vivo com duas especialistas, você garante um <strong>certificado de participação</strong>.</p>
+            <a class="button button-primary" href="#inscricao">Quero participar <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img class="footer-logo" src="https://posphorte.com.br/wp-content/uploads/2026/08/logo.svg" alt="Faculdade Phorte">
+        <span>Associação de Educação e Novas Tecnologias Phorte · Todos os direitos reservados.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

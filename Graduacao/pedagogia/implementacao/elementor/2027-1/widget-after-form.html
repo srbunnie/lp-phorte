@@ -1,0 +1,224 @@
+<!-- Pedagogia 2027.1 — bloco depois do Form widget. -->
+<div class="phorte-pedagogia-2027-1">
+<div class="video-modal" id="video-modal" hidden>
+      <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+        <button class="video-modal__close" type="button" data-video-close aria-label="Fechar vídeo">×</button>
+        <iframe class="video-modal__frame" id="video-modal-frame" title="Vídeo da Faculdade Phorte" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-modal__title" id="video-modal-title">Vídeo da Faculdade Phorte</div>
+      </div>
+    </div>
+
+
+
+<!-- ── 15. PERGUNTAS FREQUENTES (FAQ) ── -->
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Escolher com clareza também é parte da formação.</h2>
+          <p>Se ainda houver dúvida, deixe seus dados. Nossa equipe orienta o melhor caminho de ingresso para você.</p>
+          <a class="btn btn-ghost" href="#inscricao" data-track="faq-to-form">Falar com a equipe <span class="arrow">→</span></a>
+        </div>
+        <div class="accordion">
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Como escolher uma faculdade de pedagogia com ensino a distância reconhecido?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>O passo fundamental é consultar a nota da instituição no portal e-MEC. Além do reconhecimento legal, priorize projetos pedagógicos que integrem a carga horária EAD com imersão prática, garantindo uma formação que une teoria e realidade escolar, diferencial que norteia nossa metodologia.</p></div></div>
+          </article>
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Faculdades de pedagogia que possuem estágios garantidos durante o curso?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>O estágio é um componente curricular obrigatório que exige suporte qualificado. Por aqui, a vivência prática é o centro da formação, oferecendo o direcionamento necessário para que você realize suas atividades de campo com segurança e conexão direta com o cotidiano educacional.</p></div></div>
+          </article>
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Como escolher a melhor plataforma de pedagogia a distância?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>Busque plataformas que privilegiam a interação. Modelos com aulas online ao vivo superam o aprendizado estático, pois permitem a troca direta com mestres e doutores.</p></div></div>
+          </article>
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Salário inicial de um pedagogo no setor público?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>O rendimento baseia-se no piso salarial nacional do magistério, variando conforme o edital e a rede de ensino. Com uma graduação que foca na prática desde o início, você desenvolve as competências necessárias para se destacar nos processos seletivos e concursos da área.</p></div></div>
+          </article>
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Onde consultar o reconhecimento do curso de pedagogia pelo MEC?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>A verificação oficial deve ser feita exclusivamente pelo site e-MEC (emec.mec.gov.br). Utilize a opção de "Consulta Avançada" para validar se o curso possui autorização e reconhecimento ativos, assegurando a validade do seu diploma em todo o território nacional.</p></div></div>
+          </article>
+          <article class="acc">
+            <button class="acc-button" aria-expanded="false"><span>Custo médio de mensalidade para graduação em pedagogia EAD?</span><i>+</i></button>
+            <div class="acc-panel"><div><p>Os valores variam conforme a infraestrutura e o suporte oferecido. Trabalhamos para tornar a educação de referência acessível, com mensalidades a partir de R$ 198,00, sem abrir mão da qualidade acadêmica necessária para atuar com excelência na educação infantil.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- ── 16. CTA FINAL ── -->
+    <section class="section final-cta">
+      <div class="container">
+        <h2>Flexibilidade para estudar, presença para formar!</h2>
+        <p style="color:#d9d9d9;max-width:560px;margin:0 auto 26px">Escolher uma graduação também é escolher a forma como você quer viver essa formação.</p>
+        <a class="btn btn-primary" href="#inscricao" data-track="final-cta">Matricule-se <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+
+
+<!-- ── 17. MOBILE STICKY CTA ── -->
+  <div class="mobile-cta">
+    <a class="btn btn-primary" href="#inscricao" data-track="mobile-cta">Matricule-se <span class="arrow">→</span></a>
+  </div>
+</div>
+<script>
+function initPedagogiaPage() {
+  document.documentElement.classList.add('js-ready');
+
+  document.querySelectorAll('.acc-button').forEach((btn) => {
+    if (btn.dataset.accReady === 'true') return;
+    btn.dataset.accReady = 'true';
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+    });
+  });
+
+  function setupCarousel(carouselId, prevId, nextId, itemSelector, visibleStep = 1, dotsId = null) {
+    const carousel = document.getElementById(carouselId);
+    const prevBtn = document.getElementById(prevId);
+    const nextBtn = document.getElementById(nextId);
+    if (!carousel || !prevBtn || !nextBtn || carousel.dataset.carouselReady === 'true') return;
+
+    carousel.dataset.carouselReady = 'true';
+    const dotsWrap = dotsId ? document.getElementById(dotsId) : null;
+    const items = Array.from(carousel.querySelectorAll(itemSelector));
+
+    function cardStep() {
+      const card = carousel.querySelector(itemSelector);
+      if (!card) return carousel.clientWidth;
+
+      const style = getComputedStyle(carousel);
+      const gap = parseFloat(style.gap || style.columnGap || '22') || 0;
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    function updateNavState() {
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth - 2;
+      prevBtn.disabled = carousel.scrollLeft <= 2;
+      nextBtn.disabled = carousel.scrollLeft >= maxScroll;
+
+      if (dotsWrap && items.length) {
+        const activeIndex = Math.round(carousel.scrollLeft / cardStep());
+        dotsWrap.querySelectorAll('.testimonial-dot').forEach((dot, index) => {
+          dot.classList.toggle('is-active', index === activeIndex);
+        });
+      }
+    }
+
+    if (dotsWrap && items.length) {
+      dotsWrap.innerHTML = '';
+      items.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = `testimonial-dot${index === 0 ? ' is-active' : ''}`;
+        dot.setAttribute('aria-label', `Ir para o depoimento ${index + 1}`);
+        dot.addEventListener('click', () => {
+          carousel.scrollTo({ left: cardStep() * index, behavior: 'smooth' });
+        });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -cardStep() * visibleStep, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: cardStep() * visibleStep, behavior: 'smooth' });
+    });
+
+    carousel.addEventListener('scroll', updateNavState, { passive: true });
+    window.addEventListener('resize', updateNavState);
+    updateNavState();
+    setTimeout(updateNavState, 300);
+  }
+
+  setupCarousel('teacher-carousel', 'teacher-prev', 'teacher-next', '.teacher', 1);
+  setupCarousel('testimonial-carousel', 'testimonial-prev', 'testimonial-next', '.testimonial-slide', 1, 'testimonial-dots');
+
+  // Vídeos: reproduzir em modal, sem abrir outra página.
+  const videoModal = document.getElementById('video-modal');
+  const videoFrame = document.getElementById('video-modal-frame');
+  const videoTitle = document.getElementById('video-modal-title');
+  const closeVideoModal = () => {
+    if (!videoModal) return;
+    videoModal.hidden = true;
+    if (videoFrame) videoFrame.src = '';
+  };
+
+  document.querySelectorAll('[data-video-id]:not(.testimonial-video-slot)').forEach((trigger) => {
+    if (trigger.dataset.videoReady === 'true') return;
+    trigger.dataset.videoReady = 'true';
+    trigger.addEventListener('click', () => {
+      if (!videoModal || !videoFrame) return;
+      const videoId = trigger.dataset.videoId;
+      if (!videoId) return;
+      videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      const title = trigger.dataset.videoTitle || 'Vídeo da Faculdade Phorte';
+      videoFrame.title = title;
+      if (videoTitle) videoTitle.textContent = title;
+      videoModal.hidden = false;
+    });
+  });
+  const videoCloseButton = document.querySelector('[data-video-close]');
+  if (videoCloseButton?.dataset.ready !== 'true') {
+    videoCloseButton.dataset.ready = 'true';
+    videoCloseButton.addEventListener('click', closeVideoModal);
+    videoModal?.addEventListener('click', (event) => {
+      if (event.target === videoModal) closeVideoModal();
+    });
+  }
+
+  // Depoimentos: reproduzir o vídeo direto no card, sem modal.
+  document.querySelectorAll('.testimonial-video-slot').forEach((slot) => {
+    if (slot.dataset.videoReady === 'true') return;
+    slot.dataset.videoReady = 'true';
+    slot.addEventListener('click', () => {
+      const videoId = slot.dataset.videoId;
+      if (!videoId) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&rel=0&playsinline=1`;
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      slot.innerHTML = '';
+      slot.appendChild(iframe);
+    });
+  });
+
+  // Formulário de inscrição inline.
+  const enrollmentSuccess = document.getElementById('enrollment-success');
+  const leadForm = document.getElementById('lead-form');
+  if (leadForm && leadForm.dataset.formReady !== 'true') {
+    leadForm.dataset.formReady = 'true';
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (enrollmentSuccess) enrollmentSuccess.hidden = false;
+      leadForm.reset();
+    });
+  }
+
+  if (document.documentElement.dataset.modalKeysReady !== 'true') {
+    document.documentElement.dataset.modalKeysReady = 'true';
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      closeVideoModal();
+    });
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPedagogiaPage);
+} else {
+  initPedagogiaPage();
+}
+
+window.addEventListener('load', initPedagogiaPage);
+setTimeout(initPedagogiaPage, 800);
+</script>

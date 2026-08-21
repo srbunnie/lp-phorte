@@ -2,6 +2,8 @@
 node_modules/
 .next/
 .playwright-cli/
+.visual-review/
+output/
 
 # Arquivos sensíveis e logs
 .env*
