@@ -21,12 +21,12 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ### Em Andamento & Destaques
 1. **Graduação em Pedagogia** — Versões 2026-2 e 2027-1 semipresencial, versão Design System e versão escura histórica.
 2. **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
-3. **Educação Infantil (Perspectiva Pikleriana)** — Landing page principal e página de agradecimento com grupo VIP WhatsApp.
-4. **Kit de Boas-Vindas (Educação Física)** — Aplicação Next.js com export estático `dist/` (FTP) e wizard interativo em 5 etapas.
-5. **Políticas de Privacidade, Cookies e Termos de Uso** — Página unificada 3-em-1.
-6. **TRADUSHOW — IA e Humano em Sinergia** — Landing page sobre Inteligência Artificial e mercado de tradução.
+3. **Kit de Boas-Vindas (Educação Física)** — Aplicação Next.js com export estático `dist/` (FTP) e wizard interativo em 5 etapas.
 
 ### Concluídos & Publicados
+- **Educação Infantil (Perspectiva Pikleriana)** — Landing page principal e página de agradecimento com grupo VIP WhatsApp.
+- **Políticas de Privacidade, Cookies e Termos de Uso** — Página unificada 3-em-1.
+- **TRADUSHOW — IA e Humano em Sinergia** — Landing page sobre Inteligência Artificial e mercado de tradução.
 - **Preparatório Celpe-Bras** — Versões escura e clara.
 - **Registro e Documentação** — Live pedagógica, agradecimento e índice.
 - **Aula Inaugural de Gestão** — Página principal e bloco Elementor.
@@ -51,3 +51,4 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 - Normalização e padronização completa de pastas (kebab-case, sem espaços e sem acentos).
 - Inclusão dos projetos Celpe-Bras, Pós em Educação (Hub) e TRADUSHOW no índice.
 - Atualização e validação de 100% dos links de navegação do `index.html`.
+- Correção de codificação UTF-8 e atualização dos status de Pikleriana, Políticas e TRADUSHOW para Concluído.
