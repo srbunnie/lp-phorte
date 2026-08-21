@@ -391,9 +391,9 @@
     }
 
     .support-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:34px; }
-    .support-pill { position:relative; overflow:hidden; padding:16px 18px; border:1px solid var(--line); border-radius:8px; background:rgba(255,255,255,0.04); text-align:center; color:var(--white); font-family:var(--font-display); font-weight:700; transition:transform 0.25s ease,border-color 0.25s ease,background 0.25s ease,color 0.25s ease; }
+    .support-pill { position:relative; overflow:hidden; padding:16px 18px; border:1px solid var(--line); border-radius:8px; background:rgba(255,255,255,0.04); text-align:center; color:var(--white); font-family:var(--font-display); font-weight:700; text-decoration:none; transition:transform 0.25s ease,border-color 0.25s ease,background 0.25s ease,color 0.25s ease; }
     .support-pill:hover { transform:translateY(-3px); border-color:rgba(79,255,224,0.3); background:rgba(79,255,224,0.055); }
-    .support-logos { grid-template-columns:repeat(5,minmax(0,1fr)); }
+    .support-logos { grid-template-columns:repeat(4,minmax(0,1fr)); }
     .support-logo-pill { display:flex; align-items:center; justify-content:center; padding:20px 16px; min-height:90px; }
     .support-logo-img { max-width:100%; max-height:56px; width:auto; height:auto; object-fit:contain; opacity:1; transition:opacity 0.25s ease,filter 0.25s ease; }
     .support-logo-pill:hover .support-logo-img { opacity:1; filter:drop-shadow(0 0 6px rgba(79,255,224,0.4)); }
@@ -939,6 +939,9 @@
           <div class="support-pill support-logo-pill">
             <img src="https://faculdadephorte.edu.br/wp-content/uploads/2026/06/35bcb8f8-db41-433b-8450-59c93a2a53d2.jpg" alt="The Voltz" class="support-logo-img" />
           </div>
+          <a href="https://pro.wordscope.com/" target="_blank" rel="noopener noreferrer" class="support-pill support-logo-pill" title="WordScope" aria-label="Visitar WordScope">
+            <img src="https://faculdadephorte.edu.br/wp-content/uploads/2026/08/whitelogo-word-scope.png" alt="WordScope" class="support-logo-img" />
+          </a>
         </div>
       </div>
     </section>
