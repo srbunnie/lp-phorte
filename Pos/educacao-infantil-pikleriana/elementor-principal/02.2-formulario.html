@@ -1,0 +1,54 @@
+<!-- 02.2 — Card e Formulário de Inscrição da coluna direita -->
+<div class="form-card">
+  <p class="kicker">Inscrição gratuita</p>
+  <h2>Garanta seu lugar na conversa.</h2>
+  <p class="form-intro">Para participar, preencha o formulário:</p>
+  
+  <form id="signup-form" novalidate>
+    <div class="form-field">
+      <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+      <input id="nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos chamar você?">
+      <small class="field-error" data-error-for="nome"></small>
+    </div>
+
+    <div class="form-field">
+      <label for="email">E-mail <span aria-hidden="true">*</span></label>
+      <input id="email" name="email" type="email" autocomplete="email" required placeholder="voce@exemplo.com">
+      <small class="field-error" data-error-for="email"></small>
+    </div>
+
+    <div class="form-field">
+      <label for="telefone">Telefone <span aria-hidden="true">*</span></label>
+      <input id="telefone" name="telefone" type="tel" autocomplete="tel" required placeholder="(00) 00000-0000">
+      <small class="field-error" data-error-for="telefone"></small>
+    </div>
+
+    <fieldset class="form-field">
+      <legend>Você trabalha com educação infantil? <span aria-hidden="true">*</span></legend>
+      <label class="choice"><input type="radio" name="educacao-infantil" value="sim" required> <span>Sim</span></label>
+      <label class="choice"><input type="radio" name="educacao-infantil" value="nao"> <span>Não</span></label>
+      <small class="field-error" data-error-for="educacao-infantil"></small>
+    </fieldset>
+
+    <div class="form-field">
+      <label for="objetivo">Qual seu principal objetivo ao participar da live? <span aria-hidden="true">*</span></label>
+      <select id="objetivo" name="objetivo" required>
+        <option value="">Selecione uma opção</option>
+        <option>Atualizar meus conhecimentos na área</option>
+        <option>Entender mais sobre práticas, conceitos e teorias da minha área de atuação</option>
+        <option>Conhecer opções de cursos de especialização</option>
+        <option>Adquirir certificações</option>
+      </select>
+      <small class="field-error" data-error-for="objetivo"></small>
+    </div>
+
+    <label class="consent">
+      <input id="consentimento" name="consentimento" type="checkbox" required>
+      <span>Eu concordo em receber comunicações. A Faculdade Phorte protege seus dados e os usa apenas para fins de marketing. Acesse nossa <a href="https://posphorte.com.br/politica-de-privacidade/" target="_blank" rel="noreferrer">política de privacidade</a>.</span>
+    </label>
+    <small class="field-error" data-error-for="consentimento"></small>
+
+    <button class="button button-submit" type="submit">Conclua sua inscrição <span aria-hidden="true">→</span></button>
+    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+  </form>
+</div>

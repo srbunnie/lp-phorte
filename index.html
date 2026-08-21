@@ -1,96 +1,795 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Índice central dos protótipos estáticos da Phorte e da USCS." />
-    <title>Índice de protótipos | Phorte e USCS</title>
+    <meta name="description" content="Ãndice central de protÃ³tipos e landing pages da Faculdade Phorte, PÃ³s-GraduaÃ§Ã£o, Cursos Livres e USCS." />
+    <title>Ãndice de ProtÃ³tipos e Landing Pages | Phorte &amp; USCS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
-      :root { font-family: Inter, Arial, sans-serif; color: #1A1A1A; background: #f8f9fb; --red-light: #E64242; --red-dark: #B91C1C; --blue: #123a63; --ink: #1A1A1A; --muted: #595959; --line: #e4e7ec; --card: #fff; --radius: 8px; }
+      :root {
+        --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+        --font-heading: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+
+        --bg: #f8fafc;
+        --card-bg: #ffffff;
+        --ink: #0f172a;
+        --ink-soft: #334155;
+        --muted: #64748b;
+        --line: #e2e8f0;
+        --line-soft: #f1f5f9;
+
+        /* Category Accents */
+        --accent-grad: #E64242;
+        --accent-grad-bg: #fef2f2;
+        --accent-pos: #B91C1C;
+        --accent-pos-bg: #fff1f2;
+        --accent-cursos: #7c3aed;
+        --accent-cursos-bg: #f5f3ff;
+        --accent-uscs: #123a63;
+        --accent-uscs-bg: #eff6ff;
+        --accent-inst: #475569;
+        --accent-inst-bg: #f8fafc;
+
+        /* Shadows & Radius */
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 16px;
+        --shadow-subtle: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+        --shadow-card: 0 4px 14px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.02);
+        --shadow-card-hover: 0 10px 25px -4px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+      }
+
       * { box-sizing: border-box; }
-      body { margin: 0; }
-      main { width: min(1060px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0 72px; }
-      header { margin-bottom: 30px; }
-      .eyebrow { color: var(--red-light); font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-      h1 { max-width: 760px; margin: 12px 0 10px; font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: .98; letter-spacing: -.04em; }
-      .lead { max-width: 720px; margin: 0; color: var(--muted); font-size: 1.1rem; line-height: 1.6; }
-      .notice { display: flex; gap: 12px; align-items: flex-start; margin: 28px 0 38px; padding: 17px 20px; border: 1px solid #f0c9cb; border-radius: var(--radius); background: #fff7f7; color: #694144; line-height: 1.5; }
-      .notice strong { color: var(--red-dark); }
-      .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin: 38px 0 16px; }
-      h2 { margin: 0; font-size: 1.5rem; }
-      .legend { display: flex; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .85rem; }
-      .legend span { display: inline-flex; gap: 5px; align-items: center; }
-      .dot { width: 9px; height: 9px; border-radius: 99px; background: currentColor; }
-      .categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-      .category { min-height: 130px; padding: 22px; border: 1px solid var(--line); border-top: 5px solid var(--accent); border-radius: var(--radius); background: var(--card); box-shadow: 0 3px 12px #1720330a; }
-      .category h3 { margin: 0 0 8px; font-size: 1.15rem; }
-      .category p { margin: 0; color: var(--muted); line-height: 1.45; }
-      .category.grad { --accent: var(--red-light); }
-      .category.pos { --accent: var(--red-dark); }
-      .category.uscs { --accent: var(--blue); }
-      .projects { display: grid; gap: 12px; }
-      details.project { overflow: hidden; border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); background: var(--card); box-shadow: 0 3px 12px #1720330a; }
-      details.project[open] { box-shadow: 0 7px 22px #17203312; }
-      details.project summary { display: flex; align-items: center; gap: 14px; padding: 19px 21px; cursor: pointer; list-style: none; }
+      body {
+        margin: 0;
+        font-family: var(--font-body);
+        color: var(--ink);
+        background: var(--bg);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 56px 0 80px;
+      }
+
+      /* Header */
+      header {
+        margin-bottom: 36px;
+      }
+      .brand-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent-pos);
+        background: var(--accent-pos-bg);
+        border: 1px solid #fecdd3;
+        padding: 5px 12px;
+        border-radius: 999px;
+      }
+      h1 {
+        font-family: var(--font-heading);
+        margin: 14px 0 12px;
+        font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.035em;
+        color: var(--ink);
+      }
+      .lead {
+        max-width: 780px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      /* Notice */
+      .notice {
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+        margin: 28px 0 38px;
+        padding: 16px 20px;
+        border: 1px solid #fed7aa;
+        border-radius: var(--radius-md);
+        background: #fffbeb;
+        color: #92400e;
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+      .notice strong { color: #78350f; font-weight: 700; }
+      .notice-icon { font-size: 1.1rem; flex-shrink: 0; }
+
+      /* Categories Grid */
+      .section-heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 18px;
+        margin: 40px 0 16px;
+      }
+      h2 {
+        font-family: var(--font-heading);
+        margin: 0;
+        font-size: 1.45rem;
+        letter-spacing: -0.02em;
+      }
+      .categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 14px;
+      }
+      .category {
+        padding: 20px 22px;
+        border: 1px solid var(--line);
+        border-top: 4px solid var(--accent);
+        border-radius: var(--radius-md);
+        background: var(--card-bg);
+        box-shadow: var(--shadow-card);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .category:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-card-hover);
+      }
+      .category h3 {
+        margin: 0 0 6px;
+        font-size: 1.08rem;
+        color: var(--ink);
+      }
+      .category p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+      .category.grad { --accent: var(--accent-grad); }
+      .category.pos { --accent: var(--accent-pos); }
+      .category.cursos { --accent: var(--accent-cursos); }
+      .category.uscs { --accent: var(--accent-uscs); }
+      .category.institucional { --accent: var(--accent-inst); }
+
+      /* Status Legend */
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+      .legend span {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 99px;
+        background: currentColor;
+      }
+
+      /* Projects List */
+      .projects-group-title {
+        margin: 36px 0 14px;
+        font-size: 1.05rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .projects-group-title::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+      }
+
+      .projects {
+        display: grid;
+        gap: 14px;
+      }
+
+      details.project {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-left: 5px solid var(--accent);
+        border-radius: var(--radius-md);
+        background: var(--card-bg);
+        box-shadow: var(--shadow-card);
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      details.project[open] {
+        box-shadow: var(--shadow-card-hover);
+        border-color: #cbd5e1;
+      }
+      details.project summary {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 18px 22px;
+        cursor: pointer;
+        list-style: none;
+        user-select: none;
+      }
       details.project summary::-webkit-details-marker { display: none; }
-      details.project summary::after { margin-left: auto; color: var(--muted); content: "+"; font-size: 1.5rem; font-weight: 400; }
-      details.project[open] summary::after { content: "−"; }
-      .project-title { min-width: 0; flex: 1; }
-      .project-title strong { display: block; font-size: 1.08rem; }
-      .project-title small { display: block; margin-top: 3px; color: var(--muted); }
-      .project.grad { --accent: var(--red-light); } .project.pos { --accent: var(--red-dark); } .project.uscs { --accent: var(--blue); }
-      .priority { display: inline-grid; width: 28px; height: 28px; flex: none; place-items: center; border: 1px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: .78rem; font-weight: 700; }
-      .status { display: inline-flex; flex: none; padding: 4px 9px; border-radius: 999px; font-size: .74rem; font-weight: 700; line-height: 1; }
-      .solicitado { background: #fff0d8; color: #8a5200; } .andamento { background: #e7f0ff; color: #275b9b; } .concluido { background: #e5f6ea; color: #20743a; } .pausado { background: #eeeeef; color: #62666d; } .cancelado { background: #fde8e8; color: #a12828; }
-      .project-body { padding: 0 21px 21px; }
-      .project-body p { margin: 0 0 14px; color: var(--muted); line-height: 1.5; }
-      .subprojects { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
-      .status-group-title { margin: 14px 0 2px; padding: 0 2px; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; list-style: none; }
+      details.project summary::after {
+        margin-left: auto;
+        color: var(--muted);
+        content: "+";
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1;
+        transition: transform 0.2s ease;
+      }
+      details.project[open] summary::after {
+        content: "âˆ’";
+      }
+
+      .project.grad { --accent: var(--accent-grad); }
+      .project.pos { --accent: var(--accent-pos); }
+      .project.cursos { --accent: var(--accent-cursos); }
+      .project.uscs { --accent: var(--accent-uscs); }
+      .project.institucional { --accent: var(--accent-inst); }
+
+      .priority {
+        display: inline-grid;
+        width: 28px;
+        height: 28px;
+        flex: none;
+        place-items: center;
+        border: 1.5px solid var(--accent);
+        border-radius: 50%;
+        color: var(--accent);
+        font-size: 0.76rem;
+        font-weight: 800;
+        background: #ffffff;
+      }
+
+      .project-title {
+        min-width: 0;
+        flex: 1;
+      }
+      .project-title strong {
+        display: block;
+        font-size: 1.06rem;
+        color: var(--ink);
+      }
+      .project-title small {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
+        font-size: 0.84rem;
+      }
+
+      /* Status Badges */
+      .status {
+        display: inline-flex;
+        align-items: center;
+        flex: none;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.73rem;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.02em;
+      }
+      .solicitado { background: #fff7ed; color: #9a3412; border: 1px solid #ffedd5; }
+      .andamento { background: #eff6ff; color: #1d4ed8; border: 1px solid #dbeafe; }
+      .concluido { background: #ecfdf5; color: #047857; border: 1px solid #d1fae5; }
+      .pausado { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+      .cancelado { background: #fef2f2; color: #b91c1c; border: 1px solid #fee2e2; }
+
+      /* Subprojects List */
+      .project-body {
+        padding: 0 22px 22px;
+      }
+      .project-body p {
+        margin: 0 0 14px;
+        color: var(--ink-soft);
+        font-size: 0.92rem;
+        line-height: 1.55;
+      }
+      .subprojects {
+        display: grid;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .status-group-title {
+        margin: 14px 0 4px;
+        padding: 0 2px;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        list-style: none;
+      }
       .status-group-title:first-child { margin-top: 0; }
-      .subproject { display: flex; align-items: center; gap: 10px; padding: 11px 13px; border: 1px solid #edf0f4; border-radius: 8px; background: #fbfcfd; }
-      .subproject a { color: var(--ink); font-weight: 700; text-decoration: none; } .subproject a:hover { color: var(--red-dark); text-decoration: underline; }
-      .subproject .status { margin-left: auto; }
-      footer { margin-top: 42px; color: #87909e; font-size: .9rem; } footer a { color: var(--red-dark); font-weight: 700; }
-      @media (max-width: 720px) { main { width: min(100% - 28px, 600px); padding-top: 36px; } .categories { grid-template-columns: 1fr; } .section-heading { align-items: flex-start; flex-direction: column; } details.project summary { align-items: flex-start; flex-wrap: wrap; } details.project summary .status { order: 3; } .subproject { align-items: flex-start; flex-wrap: wrap; } .subproject .status { margin-left: 0; } }
+
+      .subproject {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-sm);
+        background: #ffffff;
+        transition: background 0.15s ease, border-color 0.15s ease;
+      }
+      .subproject:hover {
+        background: #f8fafc;
+        border-color: #cbd5e1;
+      }
+      .subproject a {
+        color: var(--ink);
+        font-weight: 600;
+        font-size: 0.92rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .subproject a:hover {
+        color: var(--accent-pos);
+        text-decoration: underline;
+      }
+      .subproject .status {
+        margin-left: auto;
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 48px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.88rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      footer a {
+        color: var(--accent-pos);
+        font-weight: 600;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        main { width: min(100% - 32px, 640px); padding-top: 36px; }
+        .categories { grid-template-columns: 1fr; }
+        .section-heading { align-items: flex-start; flex-direction: column; }
+        details.project summary { align-items: flex-start; flex-wrap: wrap; }
+        details.project summary .status { order: 3; }
+        .subproject { align-items: flex-start; flex-wrap: wrap; }
+        .subproject .status { margin-left: 0; }
+      }
     </style>
   </head>
   <body>
     <main>
       <header>
-        <span class="eyebrow">Phorte · USCS</span>
-        <h1>Índice central de protótipos</h1>
-        <p class="lead">Objetos estáticos para apresentação, validação e compartilhamento com stakeholders. Cada projeto e subprojeto possui seu próprio status de acompanhamento.</p>
+        <span class="brand-badge">Faculdade Phorte Â· USCS Â· Cursos Livres</span>
+        <h1>Ãndice central de protÃ³tipos</h1>
+        <p class="lead">Projetos estÃ¡ticos organizados para apresentaÃ§Ã£o, validaÃ§Ã£o rÃ¡pida e compartilhamento com stakeholders.</p>
       </header>
 
-      <div class="notice"><span aria-hidden="true">◆</span><div><strong>Ambiente demonstrativo.</strong> Este repositório contém protótipos estáticos. Formulários e interações são apenas visuais e não representam integrações de produção.</div></div>
+      <div class="notice">
+        <span class="notice-icon" aria-hidden="true">ðŸ’¡</span>
+        <div>
+          <strong>Ambiente demonstrativo.</strong> Este repositÃ³rio centraliza landing pages e protÃ³tipos estÃ¡ticos navegÃ¡veis. FormulÃ¡rios e interaÃ§Ãµes simulam o comportamento real da interface.
+        </div>
+      </div>
 
+      <!-- Categorias -->
       <section aria-labelledby="categorias">
-        <div class="section-heading"><h2 id="categorias">Categorias</h2></div>
+        <div class="section-heading">
+          <h2 id="categorias">Categorias</h2>
+        </div>
         <div class="categories">
-          <article class="category grad"><h3>Graduação Phorte</h3><p>Campanhas, páginas e componentes da graduação.</p></article>
-          <article class="category pos"><h3>Pós Phorte</h3><p>Projetos de pós-graduação, especializações e MBA.</p></article>
-          <article class="category uscs"><h3>USCS</h3><p>Landing pages e componentes específicos da USCS.</p></article>
+          <article class="category grad">
+            <h3>GraduaÃ§Ã£o Phorte</h3>
+            <p>Campanhas, vestibulares e pÃ¡ginas dos cursos de graduaÃ§Ã£o.</p>
+          </article>
+          <article class="category pos">
+            <h3>PÃ³s Phorte</h3>
+            <p>EspecializaÃ§Ãµes, pÃ³s-graduaÃ§Ãµes, MBAs, lives e kits.</p>
+          </article>
+          <article class="category cursos">
+            <h3>Cursos Livres</h3>
+            <p>FormaÃ§Ãµes de extensÃ£o, eventos e workshops de capacitaÃ§Ã£o.</p>
+          </article>
+          <article class="category uscs">
+            <h3>USCS</h3>
+            <p>Landing pages e componentes sob medida da parceria USCS.</p>
+          </article>
+          <article class="category institucional">
+            <h3>Institucional</h3>
+            <p>Termos de uso, polÃ­ticas de privacidade (LGPD) e cookies.</p>
+          </article>
         </div>
       </section>
 
+      <!-- Projetos -->
       <section aria-labelledby="projetos">
-        <div class="section-heading"><h2 id="projetos">Projetos disponíveis</h2><div class="legend" aria-label="Legenda de status"><span><i class="dot" style="color:#d89016"></i>Solicitado</span><span><i class="dot" style="color:#3776c4"></i>Em andamento</span><span><i class="dot" style="color:#36a457"></i>Concluído</span><span><i class="dot" style="color:#62666d"></i>Pausado</span><span><i class="dot" style="color:#a12828"></i>Cancelado</span></div></div>
+        <div class="section-heading">
+          <h2 id="projetos">Projetos disponÃ­veis</h2>
+          <div class="legend" aria-label="Legenda de status">
+            <span><i class="dot" style="color:#d97706"></i>Solicitado</span>
+            <span><i class="dot" style="color:#2563eb"></i>Em andamento</span>
+            <span><i class="dot" style="color:#059669"></i>ConcluÃ­do</span>
+            <span><i class="dot" style="color:#64748b"></i>Pausado</span>
+            <span><i class="dot" style="color:#dc2626"></i>Cancelado</span>
+          </div>
+        </div>
+
+        <!-- EM ANDAMENTO / PRINCIPAIS -->
+        <h3 class="projects-group-title">Em Andamento &amp; Destaques</h3>
         <div class="projects">
-          <details class="project grad"><summary><span class="priority">1</span><div class="project-title"><strong>Graduação em Pedagogia</strong><small>Graduação Phorte · duas versões visuais</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>Página de Pedagogia semipresencial para apresentação e revisão.</p><ul class="subprojects"><li class="status-group-title">Em andamento</li><li class="subproject"><a href="./Graduacao/pedagogia/index%20claro.html">Versão clara</a><span class="status andamento">Em andamento</span></li><li class="status-group-title">Cancelado</li><li class="subproject"><a href="./Graduacao/pedagogia/index.html">Versão escura</a><span class="status cancelado">Cancelado</span></li></ul></div></details>
-          <details class="project pos"><summary><span class="priority">2</span><div class="project-title"><strong>Educação Infantil — Perspectiva Pikleriana</strong><small>Pós Phorte · Live Educação</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>A organização do tempo numa Perspectiva Pikleriana — Landing page principal e confirmação da live.</p><ul class="subprojects"><li class="status-group-title">Em andamento</li><li class="subproject"><a href="./Pos/educa%C3%A7%C3%A3o%20infantil%20numa%20perspectiva%20pikleriana/index.html">Landing page principal</a><span class="status andamento">Em andamento</span></li><li class="subproject"><a href="./Pos/educa%C3%A7%C3%A3o%20infantil%20numa%20perspectiva%20pikleriana/obrigado.html">Página de agradecimento</a><span class="status andamento">Em andamento</span></li></ul></div></details>
-          <details class="project pos"><summary><span class="priority">3</span><div class="project-title"><strong>Kit de Boas-Vindas (Educação Física)</strong><small>Pós Phorte · Next.js Static Export (2 Páginas)</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>Personalização do kit com página de apresentação e página do wizard em etapas com integrações Google Sheets e RD Station.</p><ul class="subprojects"><li class="status-group-title">Em andamento</li><li class="subproject"><a href="./Pos/kit%20boas%20vindas%20cursos%20educacao%20fisica/dist/index.html">Página 1: Apresentação (Começar Agora)</a><span class="status andamento">Em andamento</span></li><li class="subproject"><a href="./Pos/kit%20boas%20vindas%20cursos%20educacao%20fisica/dist/personalizar/index.html">Página 2: Wizard de Personalização (5 Etapas)</a><span class="status andamento">Em andamento</span></li><li class="status-group-title">Legado</li><li class="subproject"><a href="./Pos/kit%20boas%20vindas%20cursos%20educacao%20fisica/legacy/index.legacy.html">Versão legada (Widget Elementor)</a><span class="status pausado">Legado</span></li></ul></div></details>
-          <details class="project grad"><summary><span class="priority">4</span><div class="project-title"><strong>Políticas de Privacidade, Cookies e Termos de Uso</strong><small>Institucional Phorte · Página unificada 3-em-1</small></div><span class="status andamento">Em andamento</span></summary><div class="project-body"><p>Página unificada com Termos de Uso, Política de Privacidade (LGPD) e Política de Cookies.</p><ul class="subprojects"><li class="status-group-title">Em andamento</li><li class="subproject"><a href="./politicas/index.html">Página unificada de políticas</a><span class="status andamento">Em andamento</span></li></ul></div></details>
-          <h3 class="section-title" style="margin: 22px 0 0; font-size: 1.1rem;">Pausados</h3>
-          <details class="project grad"><summary><span class="priority">3</span><div class="project-title"><strong>Price Card Graduação</strong><small>Graduação Phorte · componente de inscrição</small></div><span class="status pausado">Pausado</span></summary><div class="project-body"><p>Componente estático para ofertas e inscrições de graduação.</p><ul class="subprojects"><li class="status-group-title">Pausado</li><li class="subproject"><a href="./Graduacao/prototipo%20pricecard/index.html">Demo do card</a><span class="status pausado">Pausado</span></li><li class="subproject"><a href="./Graduacao/prototipo%20pricecard/inscricao-demo.html">Demo de inscrição</a><span class="status pausado">Pausado</span></li></ul></div></details>
-          <details class="project uscs"><summary><span class="priority">4</span><div class="project-title"><strong>Price Card USCS</strong><small>USCS · componente de preço e inscrição</small></div><span class="status pausado">Pausado</span></summary><div class="project-body"><p>Componente estático de cards de preço para cursos da USCS.</p><ul class="subprojects"><li class="status-group-title">Pausado</li><li class="subproject"><a href="./USCS/prototipo%20price%20card/preview-react-app/index.html">Preview React</a><span class="status pausado">Pausado</span></li><li class="subproject"><a href="./USCS/prototipo%20price%20card/README.md">Documentação do componente</a><span class="status pausado">Pausado</span></li></ul></div></details>
-          <h3 class="section-title" style="margin: 22px 0 0; font-size: 1.1rem;">Concluídos</h3>
-          <details class="project pos"><summary><div class="project-title"><strong>Registro e Documentação</strong><small>Pós Phorte · Live Educação</small></div><span class="status concluido">Concluído</span></summary><div class="project-body"><p>Landing page, agradecimento e materiais da live.</p><ul class="subprojects"><li class="status-group-title">Concluído</li><li class="subproject"><a href="./Pos/registro-e-documentacao/registro-e-documentacao-live/registro-e-documentacao-live.html">Landing page principal aprovada</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento.html">Página de agradecimento aprovada</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/index.html">Índice do projeto</a><span class="status concluido">Concluído</span></li><li class="status-group-title">Cancelado</li><li class="subproject"><a href="./Pos/registro-e-documentacao/cancelados/registro-e-documentacao-live/registro-e-documentacao-live-cancelado.html">Landing page antiga</a><span class="status cancelado">Cancelado</span></li><li class="subproject"><a href="./Pos/registro-e-documentacao/cancelados/registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento-cancelado.html">Página de agradecimento antiga</a><span class="status cancelado">Cancelado</span></li></ul></div></details>
-          <details class="project grad"><summary><div class="project-title"><strong>Aula Inaugural de Gestão</strong><small>Graduação Phorte</small></div><span class="status concluido">Concluído</span></summary><div class="project-body"><p>Protótipo da aula inaugural dos cursos de Gestão.</p><ul class="subprojects"><li class="status-group-title">Concluído</li><li class="subproject"><a href="./Graduacao/aula-inaugural-gestao/index.html">Página principal</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./Graduacao/aula-inaugural-gestao/elementor-aula-inaugural.html">Bloco Elementor</a><span class="status concluido">Concluído</span></li></ul></div></details>
-          <details class="project uscs"><summary><div class="project-title"><strong>Formação em Futebol e Futsal</strong><small>USCS</small></div><span class="status concluido">Concluído</span></summary><div class="project-body"><p>Landing page e área de aulas da formação.</p><ul class="subprojects"><li class="status-group-title">Concluído</li><li class="subproject"><a href="./USCS/formacao-em-futebol-e-futsal/index.html">Landing page</a><span class="status concluido">Concluído</span></li><li class="subproject"><a href="./USCS/formacao-em-futebol-e-futsal/acesso-liberado/index.html">Acesso liberado / aulas</a><span class="status concluido">Concluído</span></li></ul></div></details>
+
+          <!-- Pedagogia -->
+          <details class="project grad" open>
+            <summary>
+              <span class="priority">1</span>
+              <div class="project-title">
+                <strong>GraduaÃ§Ã£o em Pedagogia</strong>
+                <small>GraduaÃ§Ã£o Phorte Â· VersÃµes 2026-2 e 2027-1 semipresencial</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>PÃ¡gina de Pedagogia semipresencial para apresentaÃ§Ã£o e revisÃ£o com diferentes grades e semestres.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">VersÃµes Ativas</li>
+                <li class="subproject">
+                  <a href="./Graduacao/pedagogia/index-claro-2026-2.html">VersÃ£o clara (Turma 2026-2) â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Graduacao/pedagogia/index-claro-2027-1.html">VersÃ£o clara (Turma 2027-1) â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Graduacao/pedagogia/index-design-system.html">VersÃ£o Design System Phorte â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="status-group-title">Arquivo / HistÃ³rico</li>
+                <li class="subproject">
+                  <a href="./Graduacao/pedagogia/index.html">VersÃ£o escura (Antiga) â†—</a>
+                  <span class="status cancelado">Cancelado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- PÃ³s em EducaÃ§Ã£o - Hub Geral -->
+          <details class="project pos" open>
+            <summary>
+              <span class="priority">2</span>
+              <div class="project-title">
+                <strong>PÃ³s em EducaÃ§Ã£o (Hub Geral de Cursos)</strong>
+                <small>PÃ³s Phorte Â· Landing page completa de cursos de educaÃ§Ã£o</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>PÃ¡gina principal dos cursos de pÃ³s-graduaÃ§Ã£o em EducaÃ§Ã£o, reconstruÃ­da em HTML puro e 100% responsiva.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">VersÃ£o Oficial</li>
+                <li class="subproject">
+                  <a href="./Pos/pos-em-educacao/index.html">Landing page de PÃ³s em EducaÃ§Ã£o â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="status-group-title">HistÃ³rico</li>
+                <li class="subproject">
+                  <a href="./Pos/pos-em-educacao/pos-em-educacao-original.html">VersÃ£o original Elementor (Backup) â†—</a>
+                  <span class="status pausado">Legado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- EducaÃ§Ã£o Infantil Pikleriana -->
+          <details class="project pos">
+            <summary>
+              <span class="priority">3</span>
+              <div class="project-title">
+                <strong>EducaÃ§Ã£o Infantil â€” Perspectiva Pikleriana</strong>
+                <small>PÃ³s Phorte Â· Live EducaÃ§Ã£o</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>A organizaÃ§Ã£o do tempo numa Perspectiva Pikleriana â€” Landing page principal e confirmaÃ§Ã£o de inscriÃ§Ã£o na live.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Live &amp; Agradecimento</li>
+                <li class="subproject">
+                  <a href="./Pos/educacao-infantil-pikleriana/index.html">Landing page principal â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/educacao-infantil-pikleriana/obrigado.html">PÃ¡gina de agradecimento (WhatsApp) â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Kit Boas-Vindas EducaÃ§Ã£o FÃ­sica -->
+          <details class="project pos">
+            <summary>
+              <span class="priority">4</span>
+              <div class="project-title">
+                <strong>Kit de Boas-Vindas (EducaÃ§Ã£o FÃ­sica)</strong>
+                <small>PÃ³s Phorte Â· Next.js Static Export com Wizard de 5 etapas</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>PersonalizaÃ§Ã£o do kit com pÃ¡gina de apresentaÃ§Ã£o e wizard completo em 5 etapas com integraÃ§Ã£o a Google Sheets e RD Station.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">AplicaÃ§Ã£o Next.js (Export EstÃ¡tico)</li>
+                <li class="subproject">
+                  <a href="./Pos/kit-boas-vindas-educacao-fisica/dist/index.html">PÃ¡gina 1: ApresentaÃ§Ã£o (ComeÃ§ar Agora) â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/kit-boas-vindas-educacao-fisica/dist/personalizar/index.html">PÃ¡gina 2: Wizard de PersonalizaÃ§Ã£o (5 Etapas) â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+                <li class="status-group-title">HistÃ³rico</li>
+                <li class="subproject">
+                  <a href="./Pos/kit-boas-vindas-educacao-fisica/legacy/index.legacy.html">VersÃ£o legada (Widget Elementor) â†—</a>
+                  <span class="status pausado">Legado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- PolÃ­ticas Institucionais -->
+          <details class="project institucional">
+            <summary>
+              <span class="priority">5</span>
+              <div class="project-title">
+                <strong>PolÃ­ticas de Privacidade, Cookies e Termos de Uso</strong>
+                <small>Institucional Phorte Â· PÃ¡gina unificada 3-em-1</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>PÃ¡gina unificada com Termos de Uso, PolÃ­tica de Privacidade (LGPD) e PolÃ­tica de Cookies.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">PÃ¡gina Unificada</li>
+                <li class="subproject">
+                  <a href="./politicas/index.html">PÃ¡gina unificada de polÃ­ticas e LGPD â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Tradushow Cursos Livres -->
+          <details class="project cursos">
+            <summary>
+              <span class="priority">6</span>
+              <div class="project-title">
+                <strong>TRADUSHOW â€” IA e Humano em Sinergia</strong>
+                <small>Cursos Livres Phorte Â· FormaÃ§Ã£o e Evento de TraduÃ§Ã£o</small>
+              </div>
+              <span class="status andamento">Em andamento</span>
+            </summary>
+            <div class="project-body">
+              <p>Landing page temÃ¡tica e interativa do evento e formaÃ§Ã£o TRADUSHOW sobre InteligÃªncia Artificial e traduÃ§Ã£o.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Landing Page</li>
+                <li class="subproject">
+                  <a href="./Cursos-Livres/tradushow/index.html">Landing page TRADUSHOW â†—</a>
+                  <span class="status andamento">Em andamento</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+
+        <!-- CONCLUÃDOS -->
+        <h3 class="projects-group-title">ConcluÃ­dos &amp; Publicados</h3>
+        <div class="projects">
+
+          <!-- PreparatÃ³rio Celpe-Bras -->
+          <details class="project pos">
+            <summary>
+              <div class="project-title">
+                <strong>PreparatÃ³rio Celpe-Bras</strong>
+                <small>PÃ³s Phorte Â· Curso preparatÃ³rio oficial com Prof. Ms. Fernando Pedretti</small>
+              </div>
+              <span class="status concluido">ConcluÃ­do</span>
+            </summary>
+            <div class="project-body">
+              <p>Landing page do curso preparatÃ³rio oficial para o exame de proficiÃªncia Celpe-Bras com turmas reduzidas e certificaÃ§Ã£o MEC.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">VersÃµes DisponÃ­veis</li>
+                <li class="subproject">
+                  <a href="./Pos/preparatorio-celpe-bras/index.html">VersÃ£o escura (Principal) â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/preparatorio-celpe-bras/index-branco.html">VersÃ£o clara â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Registro e DocumentaÃ§Ã£o -->
+          <details class="project pos">
+            <summary>
+              <div class="project-title">
+                <strong>Registro e DocumentaÃ§Ã£o</strong>
+                <small>PÃ³s Phorte Â· Live EducaÃ§Ã£o</small>
+              </div>
+              <span class="status concluido">ConcluÃ­do</span>
+            </summary>
+            <div class="project-body">
+              <p>Landing page, agradecimento e materiais da live â€œRegistrei. E agora? Como o registro transforma a prÃ¡tica pedagÃ³gicaâ€.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">VersÃµes Aprovadas</li>
+                <li class="subproject">
+                  <a href="./Pos/registro-e-documentacao/registro-e-documentacao-live/registro-e-documentacao-live.html">Landing page principal aprovada â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/registro-e-documentacao/registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento.html">PÃ¡gina de agradecimento aprovada â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/registro-e-documentacao/index.html">Ãndice do projeto â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="status-group-title">Arquivo</li>
+                <li class="subproject">
+                  <a href="./Pos/registro-e-documentacao/cancelados/registro-e-documentacao-live/registro-e-documentacao-live-cancelado.html">Landing page antiga â†—</a>
+                  <span class="status cancelado">Cancelado</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Pos/registro-e-documentacao/cancelados/registro-e-documentacao-agradecimento/registro-e-documentacao-agradecimento-cancelado.html">PÃ¡gina de agradecimento antiga â†—</a>
+                  <span class="status cancelado">Cancelado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Aula Inaugural de GestÃ£o -->
+          <details class="project grad">
+            <summary>
+              <div class="project-title">
+                <strong>Aula Inaugural de GestÃ£o</strong>
+                <small>GraduaÃ§Ã£o Phorte</small>
+              </div>
+              <span class="status concluido">ConcluÃ­do</span>
+            </summary>
+            <div class="project-body">
+              <p>ProtÃ³tipo e blocos de integraÃ§Ã£o da aula inaugural dos cursos de GestÃ£o.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">PÃ¡ginas</li>
+                <li class="subproject">
+                  <a href="./Graduacao/aula-inaugural-gestao/index.html">PÃ¡gina principal â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Graduacao/aula-inaugural-gestao/elementor-aula-inaugural.html">Bloco Elementor â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FormaÃ§Ã£o em Futebol e Futsal USCS -->
+          <details class="project uscs">
+            <summary>
+              <div class="project-title">
+                <strong>FormaÃ§Ã£o em Futebol e Futsal</strong>
+                <small>USCS</small>
+              </div>
+              <span class="status concluido">ConcluÃ­do</span>
+            </summary>
+            <div class="project-body">
+              <p>Landing page e Ã¡rea de acesso/aulas da formaÃ§Ã£o em Futebol e Futsal.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">PÃ¡ginas</li>
+                <li class="subproject">
+                  <a href="./USCS/formacao-em-futebol-e-futsal/index.html">Landing page â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+                <li class="subproject">
+                  <a href="./USCS/formacao-em-futebol-e-futsal/acesso-liberado/index.html">Acesso liberado / Ã¡rea de aulas â†—</a>
+                  <span class="status concluido">ConcluÃ­do</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+        </div>
+
+        <!-- PAUSADOS -->
+        <h3 class="projects-group-title">Componentes &amp; ProtÃ³tipos Pausados</h3>
+        <div class="projects">
+
+          <!-- Price Card GraduaÃ§Ã£o -->
+          <details class="project grad">
+            <summary>
+              <div class="project-title">
+                <strong>Price Card GraduaÃ§Ã£o</strong>
+                <small>GraduaÃ§Ã£o Phorte Â· Componente de ofertas e inscriÃ§Ã£o</small>
+              </div>
+              <span class="status pausado">Pausado</span>
+            </summary>
+            <div class="project-body">
+              <p>Componente estÃ¡tico para exibiÃ§Ã£o de valores, polos e inscriÃ§Ã£o para cursos de graduaÃ§Ã£o.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">DemonstraÃ§Ãµes</li>
+                <li class="subproject">
+                  <a href="./Graduacao/prototipo-pricecard/index.html">Demo do Card de Ofertas â†—</a>
+                  <span class="status pausado">Pausado</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Graduacao/prototipo-pricecard/inscricao-demo.html">Demo de InscriÃ§Ã£o / Popup â†—</a>
+                  <span class="status pausado">Pausado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Price Card USCS -->
+          <details class="project uscs">
+            <summary>
+              <div class="project-title">
+                <strong>Price Card USCS</strong>
+                <small>USCS Â· Componente React de preÃ§os e ofertas</small>
+              </div>
+              <span class="status pausado">Pausado</span>
+            </summary>
+            <div class="project-body">
+              <p>Componente modular React com cards de preÃ§o dinÃ¢micos para ofertas e cursos da USCS.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Preview &amp; DocumentaÃ§Ã£o</li>
+                <li class="subproject">
+                  <a href="./USCS/prototipo-price-card/preview-react-app/dist/index.html">Preview do Componente React (Build) â†—</a>
+                  <span class="status pausado">Pausado</span>
+                </li>
+                <li class="subproject">
+                  <a href="./USCS/prototipo-price-card/README.md">DocumentaÃ§Ã£o do Componente â†—</a>
+                  <span class="status pausado">Pausado</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
         </div>
       </section>
 
-      <footer>Consulte o <a href="./README.md">README</a> e o <a href="./SECURITY.md">checklist de segurança</a> antes de compartilhar novos arquivos.</footer>
+      <footer>
+        <div>Consulte o <a href="./README.md">README</a> e o <a href="./SECURITY.md">checklist de seguranÃ§a</a> antes de realizar commits.</div>
+        <div>RepositÃ³rio: <a href="https://github.com/srbunnie/lp-phorte" target="_blank" rel="noopener">srbunnie/lp-phorte</a></div>
+      </footer>
     </main>
   </body>
 </html>

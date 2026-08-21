@@ -1,0 +1,26 @@
+/* Estilos exclusivos da página de confirmação. */
+@import url('./styles-completo.css');
+
+.confirmation,
+.group-section,
+.video-section,
+.next-step {
+  isolation: isolate;
+}
+
+.confirmation-copy h1 em,
+.section-copy h2 em,
+.kicker,
+.section-number {
+  color: #244332 !important;
+}
+
+.button-outline {
+  color: #244332 !important;
+  border-color: #244332 !important;
+}
+
+.button-outline:hover {
+  color: #ffffff !important;
+  background: #244332 !important;
+}

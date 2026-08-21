@@ -36,9 +36,11 @@ lp-phorte/
 
 ### Categorias principais
 
-- `Graduacao/`: páginas e campanhas relacionadas à graduação.
-- `Pos/`: páginas e campanhas relacionadas à pós-graduação, especializações e MBA.
-- `USCS/`: páginas e protótipos relacionados à USCS.
+- `Graduacao/`: páginas e campanhas relacionadas à graduação Phorte.
+- `Pos/`: páginas e campanhas relacionadas à pós-graduação, especializações e MBA Phorte.
+- `Cursos-Livres/`: formações livres, cursos de extensão e eventos.
+- `USCS/`: páginas e protótipos relacionados à parceria USCS.
+- `politicas/`: páginas institucionais de privacidade (LGPD), termos de uso e cookies.
 - `skills/`: orientações, referências e ferramentas de apoio ao trabalho de design, conteúdo e desenvolvimento.
 
 Se surgir uma nova frente de trabalho, crie uma nova categoria na raiz somente quando ela representar um grupo permanente de projetos. Para uma campanha específica, crie uma subpasta dentro da categoria correspondente.
