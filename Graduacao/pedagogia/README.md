@@ -2,6 +2,8 @@
 
 Pasta de trabalho da tarefa [86aj7trg0](https://app.clickup.com/t/9013299512/86aj7trg0).
 
+**Status:** Concluído ✅
+
 ## Referências do projeto
 
 - [Página atual de Pedagogia](https://faculdadephorte.edu.br/graduacao/pedagogia/)
