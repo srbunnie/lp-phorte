@@ -7,7 +7,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estrutura Atual e Categorias
 
 - `Graduacao/`: Graduação Phorte (`pedagogia`, `aula-inaugural-gestao`, `prototipo-pricecard`).
-- `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `kit-boas-vindas-educacao-fisica`, `preparatorio-celpe-bras`, `registro-e-documentacao`).
+- `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`).
 - `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`).
 - `USCS/`: Parceria USCS (`formacao-em-futebol-e-futsal`, `prototipo-price-card`).
 - `politicas/`: Termos de uso, privacidade LGPD e cookies.
@@ -20,7 +20,6 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ### Em Andamento & Destaques
 1. **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
-2. **Kit de Boas-Vindas (Educação Física)** — Aplicação Next.js com export estático `dist/` (FTP) e wizard interativo em 5 etapas.
 
 ### Concluídos & Publicados
 - **Graduação em Pedagogia** — Versões 2026-2 e 2027-1 semipresencial, versão Design System e versão escura histórica.
