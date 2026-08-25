@@ -67,11 +67,18 @@
         max-width: 1240px;
         margin: 0 auto;
       }
+      .hero-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 20px;
+      }
       .hero-brand-tag {
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        margin-bottom: 20px;
       }
       .hero-badge-logo {
         background: var(--red);
@@ -89,6 +96,37 @@
         font-weight: 800;
         font-size: 1.05rem;
         color: var(--ink);
+      }
+      
+      /* Language Switcher */
+      .lang-switch-wrap {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        background: var(--surface-alt);
+        padding: 4px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+      }
+      .lang-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 12px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--muted);
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+      .lang-btn:hover {
+        color: var(--ink);
+      }
+      .lang-btn.active {
+        background: #fff;
+        color: var(--red);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       }
       .hero-kicker {
         display: inline-flex;
@@ -699,9 +737,18 @@
     <!-- ── HERO BANNER ── -->
     <section class="hero-section">
       <div class="hero-container">
-        <div class="hero-brand-tag">
-          <span class="hero-badge-logo">phorte</span>
-          <span class="hero-badge-title">Faculdade Phorte</span>
+        <div class="hero-header-top">
+          <div class="hero-brand-tag">
+            <span class="hero-badge-logo">phorte</span>
+            <span class="hero-badge-title">Faculdade Phorte</span>
+          </div>
+
+          <!-- Language Selector -->
+          <div class="lang-switch-wrap" role="navigation" aria-label="Selecione o idioma">
+            <a href="index.html" class="lang-btn active" title="Português">🇧🇷 PT</a>
+            <a href="en.html" class="lang-btn" title="English">🇺🇸 EN</a>
+            <a href="es.html" class="lang-btn" title="Español">🇪🇸 ES</a>
+          </div>
         </div>
 
         <span class="hero-kicker">Transparência, Segurança e Conformidade LGPD</span>
