@@ -1,0 +1,2343 @@
+<style>
+  :root {
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-brand: "Poppins", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+    --background: #fafafa;
+    --foreground: #1a1a1a;
+    --card: #ffffff;
+    --card-foreground: #1a1a1a;
+    --muted: #f4f6f9;
+    --muted-foreground: #595959;
+    --border: #e5e5e5;
+
+    --primary: #e64242;
+    --primary-dark: #b91c1c;
+    --primary-foreground: #ffffff;
+    --accent: #ffd13f;
+    --accent-hover: #ffe16b;
+    --accent-border: #f4b400;
+    --accent-foreground: #1a1a1a;
+
+    --secondary: #13b241;
+    --secondary-dark: #15803d;
+    --secondary-foreground: #ffffff;
+
+    --destructive: #ba0517;
+    --destructive-foreground: #ffffff;
+    --success: #2e844a;
+    --success-foreground: #ffffff;
+    --warning: #dd7a01;
+    --warning-foreground: #1a1a1a;
+    --info: #0176d3;
+    --info-foreground: #ffffff;
+
+    --footer-red: #7d1b1b;
+    --mec-green: #006837;
+    --whatsapp: #25d366;
+    --whatsapp-hover: #128c7e;
+
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-2xl: 16px;
+    --radius-3xl: 24px;
+    --radius-full: 999px;
+
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 8px 24px -18px rgba(15, 23, 42, 0.35);
+    --shadow-lg: 0 18px 48px -28px rgba(15, 23, 42, 0.45);
+    --shadow-primary: 0 18px 36px -22px rgba(230, 66, 66, 0.55);
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+    --space-16: 64px;
+    --space-20: 80px;
+    --space-24: 96px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  img,
+  svg {
+    display: block;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .landing-shell {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  .landing-section {
+    padding-block: 80px;
+  }
+
+  .eyebrow {
+    color: var(--primary);
+    font-size: var(--text-xs);
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    max-width: 920px;
+    margin: 0;
+    color: var(--foreground);
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: 0;
+  }
+
+  .hero-copy {
+    max-width: 680px;
+    color: var(--muted-foreground);
+    font-size: var(--text-lg);
+    line-height: 1.6;
+  }
+
+  .card {
+    background: var(--card);
+    color: var(--card-foreground);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-elevated {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .button-primary,
+  .button-secondary {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    padding-inline: 24px;
+    font-size: var(--text-sm);
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+      background 180ms ease,
+      transform 180ms ease,
+      box-shadow 180ms ease,
+      border-color 180ms ease;
+  }
+
+  .button-primary {
+    border: 1px solid var(--accent-border);
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  .button-primary:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 18px 36px -22px rgba(255, 209, 63, 0.7);
+    transform: translateY(-1px);
+  }
+
+  .button-secondary {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--foreground);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary) 10%, white);
+    color: var(--primary);
+    padding: 6px 10px;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .input {
+    min-height: 48px;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    color: var(--foreground);
+    padding-inline: 16px;
+  }
+
+  textarea.input {
+    min-height: 132px;
+    padding-block: 14px;
+    resize: vertical;
+  }
+
+  .input:focus {
+    border-color: var(--primary);
+    outline: 2px solid color-mix(in srgb, var(--primary) 20%, transparent);
+    outline-offset: 2px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+  }
+
+  .hero {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(185, 28, 28, 0.82),
+        rgba(230, 66, 66, 0.2) 58%,
+        rgba(185, 28, 28, 0.92)
+      ),
+      radial-gradient(
+        circle at 18% 18%,
+        rgba(255, 209, 63, 0.16),
+        transparent 24%
+      ),
+      linear-gradient(
+        135deg,
+        var(--primary-dark) 0%,
+        var(--primary) 52%,
+        var(--primary-dark) 100%
+      );
+    padding-block: 32px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.72fr);
+    align-items: center;
+    gap: 48px;
+  }
+
+  .hero-media {
+    position: relative;
+    max-width: 452px;
+    margin-left: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: var(--radius-3xl);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero .badge {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  .hero .hero-title,
+  .hero .hero-copy,
+  .hero .eyebrow {
+    color: var(--primary-foreground);
+  }
+
+  .hero .hero-copy {
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .hero .hero-proof {
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .hero .course-tag {
+    border-color: rgba(255, 209, 63, 0.44);
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .mec-card {
+    position: absolute;
+    left: -24px;
+    bottom: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: var(--radius-2xl);
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+  }
+
+  .mec-icon,
+  .benefit-icon,
+  .process-icon,
+  .course-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+    background: color-mix(in srgb, var(--primary) 12%, white);
+    color: var(--primary);
+  }
+
+  .mec-icon {
+    width: 42px;
+    height: 42px;
+    color: var(--primary-foreground);
+    background: var(--primary);
+  }
+
+  .mec-card small {
+    display: block;
+    color: var(--muted-foreground);
+    font-size: var(--text-xs);
+    line-height: 1.1;
+  }
+
+  .mec-card strong {
+    color: var(--mec-green);
+    font-size: var(--text-base);
+    font-weight: 900;
+  }
+
+  .hero-proof-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    max-width: 720px;
+    margin-top: 22px;
+  }
+
+  .hero-proof {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .hero-proof h3 {
+    margin: 0 0 4px;
+    font-size: var(--text-base);
+    line-height: 1.2;
+  }
+
+  .hero-proof p {
+    margin: 0;
+    color: var(--muted-foreground);
+    font-size: var(--text-sm);
+    line-height: 1.45;
+  }
+
+  .course-tags {
+    margin-top: 22px;
+  }
+
+  .course-tags p {
+    margin: 0 0 10px;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .course-tag {
+    border: 1px solid color-mix(in srgb, var(--primary) 28%, var(--border));
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    color: var(--foreground);
+    padding: 8px 12px;
+    font-size: var(--text-sm);
+    font-weight: 700;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .section-header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .section-header p {
+    margin: 16px 0 0;
+    color: var(--muted-foreground);
+    font-size: var(--text-base);
+    line-height: 1.65;
+  }
+
+  .process {
+    background: linear-gradient(180deg, #ffffff 0%, var(--muted) 100%);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 18px;
+  }
+
+  .process-card {
+    position: relative;
+    display: flex;
+    min-height: 278px;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 28px;
+    border-radius: var(--radius-2xl);
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.96),
+        rgba(255, 255, 255, 0.9)
+      ),
+      var(--card);
+    box-shadow: 0 18px 44px -34px rgba(15, 23, 42, 0.45);
+    transition:
+      transform 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease;
+  }
+
+  .process-card:hover {
+    border-color: color-mix(in srgb, var(--primary) 24%, var(--border));
+    box-shadow: 0 24px 54px -36px rgba(15, 23, 42, 0.55);
+    transform: translateY(-2px);
+  }
+
+  .process-card-featured {
+    min-height: 278px;
+    background:
+      radial-gradient(
+        circle at 94% 10%,
+        rgba(255, 209, 63, 0.22),
+        transparent 26%
+      ),
+      linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: var(--primary-foreground);
+  }
+
+  .process-card-red {
+    background:
+      radial-gradient(
+        circle at 94% 10%,
+        rgba(255, 209, 63, 0.22),
+        transparent 26%
+      ),
+      linear-gradient(135deg, var(--primary-dark), var(--primary));
+    color: var(--primary-foreground);
+  }
+
+  .process-card-wide {
+    grid-column: auto;
+  }
+
+  .process-card-compact {
+    grid-column: auto;
+  }
+
+  .process-card-result {
+    grid-column: 1 / -1;
+    min-height: 220px;
+    background:
+      radial-gradient(
+        circle at 92% 18%,
+        rgba(255, 209, 63, 0.2),
+        transparent 30%
+      ),
+      linear-gradient(135deg, #111827, #2c1010 58%, var(--footer-red));
+    color: var(--primary-foreground);
+  }
+
+  .process-card-result.process-card-red {
+    background:
+      radial-gradient(
+        circle at 94% 10%,
+        rgba(255, 209, 63, 0.22),
+        transparent 26%
+      ),
+      linear-gradient(135deg, var(--primary-dark), var(--primary));
+  }
+
+  .process-number {
+    position: relative;
+    z-index: 1;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--border));
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary) 9%, white);
+    color: var(--primary-dark);
+    font-size: var(--text-base);
+    font-weight: 900;
+  }
+
+  .process-card-featured .process-number,
+  .process-card-red .process-number,
+  .process-card-result .process-number {
+    border-color: rgba(255, 255, 255, 0.24);
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  .process-icon {
+    display: none;
+  }
+
+  .process-card h3,
+  .course-card h3,
+  .benefit-card h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    color: var(--foreground);
+    font-size: var(--text-xl);
+    line-height: 1.18;
+  }
+
+  .process-card-featured h3,
+  .process-card-red h3,
+  .process-card-result h3 {
+    color: var(--primary-foreground);
+    font-size: var(--text-2xl);
+  }
+
+  .process-card p,
+  .course-card p,
+  .benefit-card p {
+    position: relative;
+    z-index: 1;
+    margin: 12px 0 0;
+    color: var(--muted-foreground);
+    font-size: var(--text-base);
+    line-height: 1.65;
+  }
+
+  .process-card-featured p,
+  .process-card-red p,
+  .process-card-result p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .process-list {
+    position: relative;
+    z-index: 1;
+    margin: 14px 0 0;
+    padding: 0;
+    list-style: none;
+    color: var(--muted-foreground);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .process-list li + li {
+    margin-top: 10px;
+  }
+
+  .process-list li {
+    position: relative;
+    padding-left: 18px;
+  }
+
+  .process-list li::before {
+    content: "";
+    position: absolute;
+    top: 0.68em;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: var(--radius-full);
+    background: var(--primary);
+  }
+
+  .process-card-featured .process-list,
+  .process-card-red .process-list,
+  .process-card-result .process-list {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .process-card-featured .process-list li::before,
+  .process-card-red .process-list li::before,
+  .process-card-result .process-list li::before {
+    background: var(--accent);
+  }
+
+  .process-mobile-nav {
+    display: none;
+  }
+
+  .process-nav-button {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    background: var(--card);
+    color: var(--primary-dark);
+    font-size: var(--text-xl);
+    font-weight: 900;
+    transition:
+      background 180ms ease,
+      color 180ms ease,
+      border-color 180ms ease;
+  }
+
+  .process-nav-button:hover {
+    border-color: var(--primary-dark);
+    background: var(--primary-dark);
+    color: var(--primary-foreground);
+  }
+
+  .courses {
+    background: linear-gradient(
+      180deg,
+      var(--background) 0%,
+      var(--muted) 100%
+    );
+    overflow: hidden;
+  }
+
+  .course-grid {
+    display: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .course-card {
+    display: flex;
+    min-height: 310px;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .course-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+  }
+
+  .course-meta {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+
+  .course-meta strong {
+    font-size: var(--text-sm);
+  }
+
+  .course-modalities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .course-pill {
+    padding: 5px 8px;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary) 10%, white);
+    color: var(--primary-dark);
+    font-size: 0.72rem;
+    font-weight: 800;
+  }
+
+  .course-carousel {
+    position: relative;
+    display: block;
+    min-height: 438px;
+    margin-inline: calc(50% - 50vw);
+    overflow: hidden;
+    padding: 8px 0 36px;
+  }
+
+  .course-carousel-stage {
+    position: relative;
+    height: 392px;
+  }
+
+  .course-slide {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: min(344px, calc(100vw - 48px));
+    transition:
+      transform 620ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 620ms cubic-bezier(0.22, 1, 0.36, 1),
+      filter 620ms cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, opacity, filter;
+  }
+
+  .course-slide .course-card {
+    min-height: 368px;
+  }
+
+  .course-carousel-fade {
+    position: absolute;
+    inset-block: 0;
+    z-index: 4;
+    width: min(18vw, 180px);
+    pointer-events: none;
+  }
+
+  .course-carousel-fade-left {
+    left: 0;
+    background: linear-gradient(90deg, var(--muted) 16%, transparent);
+  }
+
+  .course-carousel-fade-right {
+    right: 0;
+    background: linear-gradient(270deg, var(--muted) 16%, transparent);
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 44%;
+    z-index: 6;
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: var(--radius-full);
+    background: var(--primary-dark);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-primary);
+    transition:
+      transform 180ms ease,
+      background 180ms ease;
+  }
+
+  .carousel-arrow:hover {
+    background: var(--primary);
+    transform: translateY(-1px);
+  }
+
+  .carousel-arrow-prev {
+    left: clamp(24px, 8vw, 128px);
+  }
+
+  .carousel-arrow-next {
+    right: clamp(24px, 8vw, 128px);
+  }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .carousel-dot {
+    width: 9px;
+    height: 9px;
+    border: 0;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary) 24%, var(--border));
+    padding: 0;
+  }
+
+  .carousel-dot.is-active {
+    width: 28px;
+    background: var(--primary-dark);
+  }
+
+  .phorte-cursos-v2 {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4px 0 10px;
+    font-family: var(--font-brand);
+  }
+
+  .phorte-cursos-v2 *,
+  .phorte-cursos-v2 *::before,
+  .phorte-cursos-v2 *::after {
+    font-family: var(--font-brand);
+  }
+
+  .phorte-cursos-v2__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+  }
+
+  .phorte-filtros {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .phorte-filtro {
+    appearance: none;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--primary-dark);
+    padding: 12px 18px;
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition:
+      background 220ms ease,
+      color 220ms ease,
+      border-color 220ms ease;
+  }
+
+  .phorte-filtro:hover,
+  .phorte-filtro.active {
+    background: var(--primary-dark);
+    color: var(--primary-foreground);
+    border-color: var(--primary-dark);
+  }
+
+  .phorte-nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .phorte-nav__btn {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    background: var(--card);
+    color: var(--primary-dark);
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    transition:
+      background 220ms ease,
+      color 220ms ease,
+      border-color 220ms ease;
+  }
+
+  .phorte-nav__btn:hover {
+    background: var(--primary-dark);
+    color: var(--primary-foreground);
+    border-color: var(--primary-dark);
+  }
+
+  .phorte-carousel-wrap {
+    overflow: hidden;
+  }
+
+  .phorte-carousel {
+    display: flex;
+    gap: 22px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    padding: 4px 2px 10px;
+  }
+
+  .phorte-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .phorte-card {
+    flex: 0 0 calc(33.333% - 15px);
+    min-width: 320px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .phorte-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-3xl);
+    background: var(--card);
+    color: inherit;
+    text-decoration: none;
+    transition:
+      transform 260ms ease,
+      border-color 260ms ease;
+  }
+
+  .phorte-card__link:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--primary) 35%, var(--border));
+  }
+
+  .phorte-card__media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: var(--muted);
+  }
+
+  .phorte-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 420ms ease;
+  }
+
+  .phorte-card__link:hover .phorte-card__media img {
+    transform: scale(1.04);
+  }
+
+  .phorte-card__body {
+    display: flex;
+    min-height: 280px;
+    flex-direction: column;
+    gap: 14px;
+    padding: 22px;
+  }
+
+  .phorte-card__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .phorte-badge {
+    display: inline-flex;
+    min-height: 28px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--primary) 26%, var(--border));
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--primary) 8%, white);
+    color: var(--primary-dark);
+    padding: 6px 10px;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .phorte-card__title {
+    margin: 0;
+    color: var(--foreground);
+    font-size: var(--text-xl);
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .phorte-card__text {
+    margin: 0;
+    color: var(--muted-foreground);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+  }
+
+  .phorte-card__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .phorte-card__price-group {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .phorte-card__price-label {
+    color: var(--muted-foreground);
+    font-size: var(--text-xs);
+    line-height: 1.4;
+  }
+
+  .phorte-card__price {
+    color: var(--primary);
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .phorte-card__price span {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+  .phorte-card__cta {
+    border: 0;
+    display: inline-flex;
+    width: 100%;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: 0 16px;
+    font-size: var(--text-sm);
+    font-weight: 900;
+    text-transform: lowercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      opacity 220ms ease,
+      transform 220ms ease;
+  }
+
+  .phorte-card__link:hover .phorte-card__cta {
+    transform: translateY(-1px);
+    opacity: 0.94;
+  }
+
+  .phorte-card.is-hidden {
+    display: none;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .benefit-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .benefit-card {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .benefit-card-highlight {
+    border-color: color-mix(in srgb, var(--accent) 52%, var(--primary));
+    background:
+      radial-gradient(
+        circle at 92% 14%,
+        rgba(255, 255, 255, 0.22),
+        transparent 28%
+      ),
+      linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-primary);
+  }
+
+  .benefit-card-highlight h3,
+  .benefit-card-highlight p {
+    color: var(--primary-foreground);
+  }
+
+  .benefit-card-highlight p {
+    color: rgba(255, 255, 255, 0.84);
+  }
+
+  .benefit-card-highlight .benefit-icon {
+    background: var(--accent);
+    color: var(--accent-foreground);
+  }
+
+  .benefit-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .form-section {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(
+        circle at 14% 18%,
+        rgba(255, 209, 63, 0.12) 0 2px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle at 82% 28%,
+        rgba(255, 255, 255, 0.13) 0 2px,
+        transparent 3px
+      ),
+      radial-gradient(
+        circle at 36% 72%,
+        rgba(255, 255, 255, 0.08) 0 1.5px,
+        transparent 3px
+      ),
+      linear-gradient(
+        135deg,
+        var(--footer-red) 0%,
+        #9f1f1f 55%,
+        var(--primary-dark) 100%
+      );
+    background-size:
+      auto,
+      auto,
+      28px 28px,
+      auto;
+    color: var(--primary-foreground);
+  }
+
+  .form-section > .landing-shell {
+    position: relative;
+    z-index: 1;
+  }
+
+  .form-section .section-header h2,
+  .form-section .section-header p {
+    color: var(--primary-foreground);
+  }
+
+  .form-card {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .field {
+    display: grid;
+    gap: 8px;
+  }
+
+  .field.full {
+    grid-column: 1 / -1;
+  }
+
+  .field label {
+    color: var(--foreground);
+    font-size: var(--text-sm);
+    font-weight: 800;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .notice {
+    margin: 18px 0 0;
+    padding: 14px 16px;
+    border-radius: var(--radius-xl);
+    background: var(--muted);
+    color: var(--muted-foreground);
+    font-size: var(--text-xs);
+    line-height: 1.5;
+  }
+
+  .success-card {
+    display: none;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 42px;
+    text-align: center;
+  }
+
+  .success-icon {
+    display: inline-flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-full);
+    background: color-mix(in srgb, var(--success) 14%, white);
+    color: var(--success);
+  }
+
+  .success-card h2 {
+    margin: 18px 0 10px;
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+  }
+
+  .success-card p {
+    margin: 0;
+    color: var(--muted-foreground);
+    line-height: 1.65;
+  }
+
+  .footer {
+    background: var(--foreground);
+    color: white;
+    padding: 48px 0;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .footer h3 {
+    margin: 0 0 12px;
+    color: white;
+    font-family: var(--font-brand);
+    font-size: var(--text-xl);
+  }
+
+  .footer h4 {
+    margin: 0 0 14px;
+    color: white;
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+  }
+
+  .footer p,
+  .footer li {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+  }
+
+  .footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .copyright {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.56);
+    font-size: var(--text-xs);
+  }
+
+  @media (max-width: 1023px) {
+    .hero {
+      min-height: auto;
+      padding-block: 44px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-media {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .hero-image {
+      aspect-ratio: 4 / 5;
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .mec-card {
+      left: 18px;
+      bottom: 18px;
+    }
+
+    .hero-proof-grid,
+    .process-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-grid {
+      display: flex;
+      gap: 16px;
+      margin-inline: -24px;
+      overflow-x: auto;
+      padding: 4px 24px 18px;
+      scroll-padding-inline: 24px;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+
+    .process-grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    .process-mobile-nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .process-card {
+      flex: 0 0 min(76vw, 430px);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    .process-card,
+    .process-card-featured,
+    .process-card-wide,
+    .process-card-compact {
+      grid-column: span 1;
+      min-height: 360px;
+    }
+
+    .process-card-featured,
+    .process-card-result {
+      grid-column: 1 / -1;
+    }
+
+    .process-card-result {
+      min-height: 300px;
+    }
+
+    .course-carousel {
+      min-height: 402px;
+      padding-bottom: 28px;
+    }
+
+    .phorte-card {
+      flex-basis: calc(50% - 11px);
+      min-width: 290px;
+    }
+
+    .course-carousel-stage {
+      height: 356px;
+    }
+
+    .course-slide {
+      width: min(318px, calc(100vw - 72px));
+    }
+
+    .course-slide .course-card {
+      min-height: 330px;
+    }
+
+    .carousel-arrow {
+      width: 48px;
+      height: 48px;
+    }
+
+    .carousel-arrow-prev {
+      left: 18px;
+    }
+
+    .carousel-arrow-next {
+      right: 18px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .landing-shell {
+      padding-inline: 18px;
+    }
+
+    .landing-section {
+      padding-block: 56px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 13vw, 3.35rem);
+    }
+
+    .hero-copy {
+      font-size: var(--text-base);
+    }
+
+    .hero-proof-grid,
+    .process-grid,
+    .benefit-list,
+    .form-grid,
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .process-card {
+      grid-column: auto;
+      flex-basis: calc(100vw - 54px);
+      min-height: auto;
+      padding: 22px;
+    }
+
+    .process-card-featured,
+    .process-card-wide,
+    .process-card-compact,
+    .process-card-result {
+      grid-column: auto;
+    }
+
+    .process-card-featured h3,
+    .process-card-result h3 {
+      font-size: var(--text-xl);
+    }
+
+    .process-card h3,
+    .course-card h3,
+    .benefit-card h3 {
+      font-size: var(--text-lg);
+    }
+
+    .process-card p,
+    .process-list {
+      font-size: var(--text-sm);
+    }
+
+    .hero-actions .button-primary,
+    .button-secondary {
+      width: 100%;
+    }
+
+    .course-carousel {
+      min-height: 386px;
+      margin-inline: -18px;
+    }
+
+    .phorte-cursos-v2__top {
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .phorte-filtros {
+      width: 100%;
+      gap: 10px;
+    }
+
+    .phorte-filtro {
+      padding: 10px 14px;
+      font-size: var(--text-sm);
+    }
+
+    .phorte-nav {
+      width: 100%;
+      justify-content: flex-end;
+    }
+
+    .phorte-carousel {
+      gap: 12px;
+      padding-inline: 0;
+      scroll-snap-type: x mandatory;
+    }
+
+    .phorte-card {
+      flex-basis: 100%;
+      min-width: 100%;
+    }
+
+    .phorte-card__body {
+      min-height: auto;
+      padding: 18px;
+    }
+
+    .phorte-card__title {
+      font-size: var(--text-lg);
+    }
+
+    .course-carousel-stage {
+      height: 342px;
+    }
+
+    .course-slide {
+      width: min(282px, calc(100vw - 88px));
+    }
+
+    .course-slide .course-card {
+      min-height: 318px;
+      padding: 20px;
+    }
+
+    .course-carousel-fade {
+      width: 34px;
+    }
+
+    .carousel-arrow {
+      width: 42px;
+      height: 42px;
+    }
+
+    .form-card {
+      padding: 22px;
+    }
+
+    .footer {
+      padding: 40px 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+
+<main class="phorte-elementor-landing">
+  <section class="hero">
+    <div class="landing-shell">
+      <div class="hero-grid">
+        <div>
+          <span class="badge">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 3l2.25 4.55 5.02.73-3.64 3.55.86 5-4.49-2.36-4.49 2.36.86-5-3.64-3.55 5.02-.73L12 3z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Bolsas de até 100%
+          </span>
+
+          <h1 class="hero-title" style="margin-top: 20px">
+            Estude na Faculdade Phorte com Bolsas de até 100%
+          </h1>
+          <p class="hero-copy">
+            Participe do processo seletivo para bolsas sociais e transforme seu
+            futuro com ensino superior de qualidade.
+          </p>
+
+          <div class="hero-proof-grid">
+            <article class="hero-proof card">
+              <span class="benefit-icon">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 10L12 5 2 10l10 5 10-5z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6 12.5V17c3.5 2 8.5 2 12 0v-4.5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Cursos reconhecidos pelo MEC</h3>
+                <p>Ensino validado pelo Ministério da Educação.</p>
+              </div>
+            </article>
+            <article class="hero-proof card">
+              <span class="benefit-icon">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 014 16.5v-11z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M8 7h8M8 11h8"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <div>
+                <h3>Modalidades flexíveis</h3>
+                <p>EAD, Presencial e Semipresencial.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="course-tags">
+            <p class="eyebrow">Cursos disponíveis</p>
+            <div class="tag-list">
+              <span class="course-tag">Administração</span>
+              <span class="course-tag">Marketing</span>
+              <span class="course-tag">Processos Gerenciais</span>
+              <span class="course-tag">Recursos Humanos</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button
+              class="button-primary"
+              type="button"
+              data-scroll-to="inscricao"
+            >
+              Fazer inscrição
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img
+            class="hero-image"
+            src="https://faculdadephorte.edu.br/wp-content/uploads/2026/05/Banner_site_graduacao_-1.webp"
+            alt="Campanha de graduação da Faculdade Phorte"
+          />
+          <div class="mec-card">
+            <span class="mec-icon">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3l7 4v5c0 4.5-2.9 7.9-7 9-4.1-1.1-7-4.5-7-9V7l7-4z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 12l2 2 4-5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <div>
+              <small>Reconhecido pelo</small>
+              <strong>MEC</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section process">
+    <div class="landing-shell">
+      <header class="section-header">
+        <h2>Como funciona o processo seletivo</h2>
+        <p>
+          Um processo transparente e estruturado para orientar sua candidatura
+          com clareza.
+        </p>
+      </header>
+
+      <div class="process-grid">
+        <article class="process-card process-card-featured card card-elevated">
+          <span class="process-number">1</span>
+          <h3>Inscrição online</h3>
+          <p>
+            Preencha a ficha socioeconômica com seus dados, escolha o curso
+            desejado e realize a inscrição.
+          </p>
+        </article>
+        <article class="process-card process-card-wide card card-elevated">
+          <span class="process-number">2</span>
+          <h3>Quem pode participar</h3>
+          <p>
+            Podem participar candidatos que já concluíram o Ensino Médio e
+            atendem aos critérios de renda familiar per capita.
+          </p>
+          <ul class="process-list">
+            <li>Até 1,5 salário-mínimo para candidatos à bolsa de 100%.</li>
+            <li>Até 3 salários-mínimos para candidatos à bolsa de 50%.</li>
+            <li>
+              Novos alunos também precisam ser aprovados no vestibular da
+              Faculdade Phorte.
+            </li>
+          </ul>
+        </article>
+        <article
+          class="process-card process-card-compact process-card-red card card-elevated"
+        >
+          <span class="process-number">3</span>
+          <h3>Vestibular simplificado</h3>
+          <p>
+            Os candidatos ingressantes deverão realizar o processo seletivo da
+            instituição para validação da matrícula.
+          </p>
+        </article>
+        <article class="process-card process-card-wide card card-elevated">
+          <span class="process-number">4</span>
+          <h3>Análise socioeconômica</h3>
+          <p>
+            A Faculdade Phorte analisará os dados socioeconômicos apresentados
+            pelo candidato.
+          </p>
+          <ul class="process-list">
+            <li>Renda familiar e composição familiar.</li>
+            <li>Padrão de vida e informações socioeconômicas.</li>
+            <li>Participação no CadÚnico.</li>
+          </ul>
+        </article>
+        <article
+          class="process-card process-card-compact process-card-red card card-elevated"
+        >
+          <span class="process-number">5</span>
+          <h3>Envio da documentação</h3>
+          <p>
+            Os candidatos pré-selecionados deverão enviar toda a documentação
+            comprobatória exigida dentro do prazo estabelecido.
+          </p>
+        </article>
+        <article class="process-card process-card-compact card card-elevated">
+          <span class="process-number">6</span>
+          <h3>Entrevista ou visita social</h3>
+          <p>
+            A instituição poderá realizar entrevista, videoconferência ou visita
+            domiciliar para validação das informações apresentadas.
+          </p>
+        </article>
+        <article
+          class="process-card process-card-result process-card-red card card-elevated"
+        >
+          <span class="process-number">7</span>
+          <h3>Resultado e concessão da bolsa</h3>
+          <p>
+            Os candidatos aprovados poderão receber bolsa integral de 100% ou
+            bolsa parcial de 50%.
+          </p>
+          <p>
+            A aprovação depende da análise socioeconômica, dos critérios do
+            edital e da disponibilidade de vagas.
+          </p>
+        </article>
+      </div>
+      <div
+        class="process-mobile-nav"
+        aria-label="Navegação das etapas do processo seletivo"
+      >
+        <button
+          class="process-nav-button"
+          type="button"
+          id="processPrev"
+          aria-label="Etapa anterior"
+        >
+          &#10094;
+        </button>
+        <button
+          class="process-nav-button"
+          type="button"
+          id="processNext"
+          aria-label="Próxima etapa"
+        >
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section courses">
+    <div class="landing-shell">
+      <header class="section-header">
+        <h2>Cursos disponíveis</h2>
+        <p>Graduações reconhecidas pelo MEC com foco no mercado de trabalho.</p>
+      </header>
+
+      <div class="phorte-cursos-v2">
+        <div class="phorte-cursos-v2__top">
+          <div
+            class="phorte-filtros"
+            id="phorteFiltros"
+            aria-label="Filtrar cursos por modalidade"
+          >
+            <button
+              class="phorte-filtro active"
+              type="button"
+              data-filter="all"
+            >
+              Todos
+            </button>
+            <button class="phorte-filtro" type="button" data-filter="ead">
+              EAD
+            </button>
+            <button
+              class="phorte-filtro"
+              type="button"
+              data-filter="presencial"
+            >
+              Presencial
+            </button>
+            <button
+              class="phorte-filtro"
+              type="button"
+              data-filter="semipresencial"
+            >
+              Semipresencial
+            </button>
+          </div>
+
+          <div class="phorte-nav">
+            <button
+              class="phorte-nav__btn"
+              type="button"
+              id="phortePrev"
+              aria-label="Curso anterior"
+            >
+              &#10094;
+            </button>
+            <button
+              class="phorte-nav__btn"
+              type="button"
+              id="phorteNext"
+              aria-label="Próximo curso"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+
+        <div class="phorte-carousel-wrap">
+          <div
+            class="phorte-carousel"
+            id="phorteCarousel"
+            aria-label="Cursos disponíveis"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section benefits">
+    <div class="landing-shell">
+      <div class="benefits-grid">
+        <div>
+          <p class="eyebrow">Diferenciais Phorte</p>
+          <h2
+            class="hero-title"
+            style="font-size: clamp(2rem, 4vw, 3rem); margin-top: 12px"
+          >
+            Formação com apoio e conexão profissional
+          </h2>
+          <p class="hero-copy">
+            Uma instituição comprometida com sua formação e crescimento
+            profissional.
+          </p>
+        </div>
+
+        <div class="benefit-list">
+          <article class="benefit-card card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3l7 4v5c0 4.5-2.9 7.9-7 9-4.1-1.1-7-4.5-7-9V7l7-4z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                /></svg
+            ></span>
+            <div>
+              <h3>Cursos reconhecidos pelo MEC</h3>
+              <p>Diplomas válidos em todo o território nacional.</p>
+            </div>
+          </article>
+          <article class="benefit-card card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M16 11a4 4 0 10-8 0M4 21a8 8 0 0116 0"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+            ></span>
+            <div>
+              <h3>Professores especialistas</h3>
+              <p>Docentes com experiência acadêmica e mercadológica.</p>
+            </div>
+          </article>
+          <article class="benefit-card card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3v18M5 12h14M7 7l10 10M17 7L7 17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+            ></span>
+            <div>
+              <h3>Ensino conectado ao mercado</h3>
+              <p>Grade curricular alinhada às demandas profissionais.</p>
+            </div>
+          </article>
+          <article class="benefit-card card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M8 3v4M16 3v4M4 9h16M5 5h14v16H5V5z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+            ></span>
+            <div>
+              <h3>Flexibilidade de ensino</h3>
+              <p>Escolha a modalidade que se adapta à sua rotina.</p>
+            </div>
+          </article>
+          <article class="benefit-card card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M4 12a8 8 0 0116 0v5a3 3 0 01-3 3h-2M4 12v4h4v-4H4zm16 0h-4v4h4v-4z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                /></svg
+            ></span>
+            <div>
+              <h3>Apoio acadêmico</h3>
+              <p>Suporte completo durante toda a sua jornada.</p>
+            </div>
+          </article>
+          <article class="benefit-card benefit-card-highlight card">
+            <span class="benefit-icon"
+              ><svg class="icon" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 3v5M7 7l3 3M17 7l-3 3M5 14h14M7 21h10a2 2 0 002-2v-5H5v5a2 2 0 002 2z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg
+            ></span>
+            <div>
+              <h3>Bolsa Social</h3>
+              <p>
+                Cobertura de até 100% da mensalidade para candidatos aprovados.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const courses = [
+    {
+      icon: "briefcase",
+      name: "Administração",
+      description:
+        "Forme-se para liderar empresas e gerenciar negócios com visão estratégica.",
+      duration: "4 anos",
+      modalities: ["EAD", "Presencial", "Semipresencial"],
+    },
+    {
+      icon: "chart",
+      name: "Marketing",
+      description:
+        "Aprenda a criar estratégias de comunicação e posicionamento de marca.",
+      duration: "2 anos",
+      modalities: ["EAD", "Presencial", "Semipresencial"],
+    },
+    {
+      icon: "users",
+      name: "Processos Gerenciais",
+      description:
+        "Otimize processos e gerencie operações empresariais com eficiência.",
+      duration: "2 anos",
+      modalities: ["EAD", "Semipresencial"],
+    },
+    {
+      icon: "user-check",
+      name: "Recursos Humanos",
+      description:
+        "Desenvolva talentos e construa culturas organizacionais de alto desempenho.",
+      duration: "2 anos",
+      modalities: ["EAD", "Presencial", "Semipresencial"],
+    },
+  ];
+
+  const iconPaths = {
+    briefcase:
+      '<path d="M10 6V5a2 2 0 012-2h0a2 2 0 012 2v1M4 8h16v11H4V8zM4 13h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    chart:
+      '<path d="M4 19V5M4 19h16M8 16l3-4 3 2 4-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    book: '<path d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 014 16.5v-11z" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 11h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+    users:
+      '<path d="M16 11a4 4 0 10-8 0M4 21a8 8 0 0116 0M19 8a3 3 0 110 6M21 21a5.8 5.8 0 00-3-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+    "user-check":
+      '<path d="M15 11a4 4 0 10-8 0M3 21a8 8 0 0112-7M17 18l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+  };
+
+  function icon(name) {
+    return `<svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">${iconPaths[name]}</svg>`;
+  }
+
+  function courseCard(course) {
+    const modalities = course.modalities
+      .map((modality) => `<span class="course-pill">${modality}</span>`)
+      .join("");
+    return `
+          <article class="course-card card card-elevated">
+            <span class="course-icon">${icon(course.icon)}</span>
+            <h3>${course.name}</h3>
+            <p>${course.description}</p>
+            <div class="course-meta">
+              <span>Duração: <strong>${course.duration}</strong></span>
+              <div class="course-modalities">${modalities}</div>
+            </div>
+          </article>
+        `;
+  }
+
+  document.querySelectorAll("[data-scroll-to]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = document.getElementById(button.dataset.scrollTo);
+      if (target) target.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  const grid = document.getElementById("courseGrid");
+  const carousel = document.getElementById("courseCarousel");
+  const dots = document.getElementById("courseDots");
+  const prevButton = document.getElementById("coursePrev");
+  const nextButton = document.getElementById("courseNext");
+  let activeCourse = 0;
+  let carouselTimer;
+
+  if (grid) grid.innerHTML = courses.map(courseCard).join("");
+
+  function circularOffset(index, active, total) {
+    let offset = index - active;
+    if (offset > total / 2) offset -= total;
+    if (offset < -total / 2) offset += total;
+    return offset;
+  }
+
+  function slideTransform(offset) {
+    const distance = Math.min(Math.abs(offset), 2);
+    const direction = Math.sign(offset);
+    const viewport = window.innerWidth;
+    const nearOffset = viewport <= 720 ? 246 : viewport <= 1023 ? 326 : 392;
+    const farOffset = viewport <= 720 ? 420 : viewport <= 1023 ? 560 : 690;
+    const x = direction * (distance === 1 ? nearOffset : farOffset);
+    const scale = distance === 0 ? 1 : distance === 1 ? 0.78 : 0.64;
+    return `translateX(calc(-50% + ${x}px)) scale(${scale})`;
+  }
+
+  function updateCarousel() {
+    if (!carousel || !dots) return;
+
+    carousel.querySelectorAll(".course-slide").forEach((slide) => {
+      const index = Number(slide.dataset.courseIndex);
+      const offset = circularOffset(index, activeCourse, courses.length);
+      const distance = Math.min(Math.abs(offset), 2);
+      const visible = distance <= 2;
+      const opacity = distance === 0 ? 1 : distance === 1 ? 0.42 : 0.24;
+      const blur = distance === 0 ? 0 : distance === 1 ? 3 : 5;
+      const zIndex = 5 - distance;
+
+      slide.setAttribute("aria-hidden", offset === 0 ? "false" : "true");
+      slide.style.transform = slideTransform(offset);
+      slide.style.opacity = visible ? opacity : 0;
+      slide.style.filter = `blur(${blur}px)`;
+      slide.style.zIndex = zIndex;
+      slide.style.pointerEvents = offset === 0 ? "auto" : "none";
+    });
+
+    dots.querySelectorAll(".carousel-dot").forEach((dot) => {
+      const index = Number(dot.dataset.courseIndex);
+      const isActive = index === activeCourse;
+      dot.classList.toggle("is-active", isActive);
+      dot.setAttribute("aria-current", isActive ? "true" : "false");
+    });
+  }
+
+  function mountCarousel() {
+    if (!carousel || !dots) return;
+
+    carousel.innerHTML = courses
+      .map(
+        (course, index) => `
+            <div class="course-slide" data-course-index="${index}" aria-hidden="true">
+              ${courseCard(course)}
+            </div>
+          `,
+      )
+      .join("");
+
+    dots.innerHTML = courses
+      .map(
+        (course, index) => `
+            <button
+              class="carousel-dot"
+              type="button"
+              aria-label="Ver curso ${course.name}"
+              aria-current="false"
+              data-course-index="${index}"
+            ></button>
+          `,
+      )
+      .join("");
+
+    dots.querySelectorAll(".carousel-dot").forEach((dot) => {
+      dot.addEventListener("click", () => {
+        activeCourse = Number(dot.dataset.courseIndex);
+        updateCarousel();
+        restartCarouselTimer();
+      });
+    });
+
+    updateCarousel();
+  }
+
+  function showCourse(direction) {
+    activeCourse = (activeCourse + direction + courses.length) % courses.length;
+    updateCarousel();
+  }
+
+  function restartCarouselTimer() {
+    window.clearInterval(carouselTimer);
+    carouselTimer = window.setInterval(() => showCourse(1), 4600);
+  }
+
+  if (carousel) {
+    mountCarousel();
+    restartCarouselTimer();
+    prevButton?.addEventListener("click", () => {
+      showCourse(-1);
+      restartCarouselTimer();
+    });
+    nextButton?.addEventListener("click", () => {
+      showCourse(1);
+      restartCarouselTimer();
+    });
+    carousel.parentElement?.addEventListener("mouseenter", () =>
+      window.clearInterval(carouselTimer),
+    );
+    carousel.parentElement?.addEventListener(
+      "mouseleave",
+      restartCarouselTimer,
+    );
+    window.addEventListener("resize", updateCarousel);
+  }
+
+  const phorteCourses = [
+    {
+      name: "Administração",
+      category: "ead presencial",
+      url: "https://faculdadephorte.edu.br/graduacao/administracao/",
+      image:
+        "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/arte-curso-administracao.webp",
+      alt: "Graduação em Administração",
+      badges: ["Presencial", "EAD"],
+      description:
+        "Formação prática para gestão, negócios e tomada de decisão no mercado atual.",
+    },
+    {
+      name: "Recursos Humanos",
+      category: "ead",
+      url: "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+      image:
+        "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/curso-phorte-recursos-humanos-rh.webp",
+      alt: "Graduação em Recursos Humanos",
+      badges: ["EAD"],
+      description:
+        "Desenvolva visão estratégica para recrutamento, gestão de pessoas e cultura organizacional.",
+    },
+    {
+      name: "Processos Gerenciais",
+      category: "ead presencial",
+      url: "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+      image:
+        "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/curso-phorte-processos-gerenciais.webp",
+      alt: "Graduação em Processos Gerenciais",
+      badges: ["EAD", "Presencial"],
+      description:
+        "Aprenda a estruturar operações, indicadores e processos com foco em resultado.",
+    },
+    {
+      name: "Marketing",
+      category: "ead",
+      url: "https://faculdadephorte.edu.br/graduacao/marketing/",
+      image:
+        "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/curso-graduacao-phorte-marketing.webp",
+      alt: "Graduação em Marketing",
+      badges: ["EAD"],
+      description:
+        "Estratégia, comunicação e posicionamento para quem quer atuar onde o mercado cresce.",
+    },
+  ];
+
+  const phorteCarousel = document.getElementById("phorteCarousel");
+  const phorteFilters = document.getElementById("phorteFiltros");
+  const phortePrev = document.getElementById("phortePrev");
+  const phorteNext = document.getElementById("phorteNext");
+
+  function phorteCourseCard(course) {
+    const badges = course.badges
+      .map((badge) => `<span class="phorte-badge">${badge}</span>`)
+      .join("");
+    return `
+          <article class="phorte-card" data-category="${course.category}">
+            <div class="phorte-card__link">
+              <div class="phorte-card__media">
+                <img src="${course.image}" alt="${course.alt}" loading="lazy" />
+              </div>
+              <div class="phorte-card__body">
+                <div class="phorte-card__badges">${badges}</div>
+                <h3 class="phorte-card__title">${course.name}</h3>
+                <p class="phorte-card__text">${course.description}</p>
+                <div class="phorte-card__footer">
+                  <button class="phorte-card__cta" type="button" data-scroll-to="inscricao">faça o vestibular agora!</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        `;
+  }
+
+  function visiblePhorteCards() {
+    if (!phorteCarousel) return [];
+    return Array.from(
+      phorteCarousel.querySelectorAll(".phorte-card:not(.is-hidden)"),
+    );
+  }
+
+  function scrollPhorteCarousel(direction) {
+    if (!phorteCarousel) return;
+    const firstCard = visiblePhorteCards()[0];
+    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 320;
+    phorteCarousel.scrollBy({
+      left: direction * (cardWidth + 22),
+      behavior: "smooth",
+    });
+  }
+
+  if (phorteCarousel) {
+    phorteCarousel.innerHTML = phorteCourses.map(phorteCourseCard).join("");
+    phorteCarousel.addEventListener("click", (event) => {
+      const scrollButton = event.target.closest("[data-scroll-to]");
+      if (!scrollButton) return;
+      const target = document.getElementById(scrollButton.dataset.scrollTo);
+      if (target) target.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  phorteFilters?.querySelectorAll("[data-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+      phorteFilters
+        .querySelectorAll("[data-filter]")
+        .forEach((filterButton) => {
+          filterButton.classList.toggle("active", filterButton === button);
+        });
+
+      phorteCarousel?.querySelectorAll(".phorte-card").forEach((card) => {
+        const categories = card.dataset.category || "";
+        card.classList.toggle(
+          "is-hidden",
+          filter !== "all" && !categories.includes(filter),
+        );
+      });
+
+      if (phorteCarousel)
+        phorteCarousel.scrollTo({ left: 0, behavior: "smooth" });
+    });
+  });
+
+  phortePrev?.addEventListener("click", () => scrollPhorteCarousel(-1));
+  phorteNext?.addEventListener("click", () => scrollPhorteCarousel(1));
+
+  const processGrid = document.querySelector(".process-grid");
+  const processPrev = document.getElementById("processPrev");
+  const processNext = document.getElementById("processNext");
+
+  function scrollProcessCarousel(direction) {
+    if (!processGrid) return;
+    const firstCard = processGrid.querySelector(".process-card");
+    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 320;
+    processGrid.scrollBy({
+      left: direction * (cardWidth + 16),
+      behavior: "smooth",
+    });
+  }
+
+  processPrev?.addEventListener("click", () => scrollProcessCarousel(-1));
+  processNext?.addEventListener("click", () => scrollProcessCarousel(1));
+</script>
