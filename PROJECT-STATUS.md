@@ -6,7 +6,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ## Estrutura Atual e Categorias
 
-- `Graduacao/`: Graduação Phorte (`pedagogia`, `aula-inaugural-gestao`, `prototipo-pricecard`).
+- `Graduacao/`: Graduação Phorte (`pedagogia`, `aula-inaugural-gestao`, `bolsas sociais`, `bolsas sociais Escola Aberta`, `prototipo-pricecard`).
 - `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`).
 - `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`).
 - `USCS/`: Parceria USCS (`formacao-em-futebol-e-futsal`, `prototipo-price-card`).
@@ -20,8 +20,10 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ### Em Andamento & Destaques
 1. **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
+2. **Bolsas Sociais (Escola Aberta)** — Processo seletivo de bolsas em parceria com a Escola Aberta (RH, Processos Gerenciais e Marketing) em desenvolvimento.
 
 ### Concluídos & Publicados
+- **Bolsas Sociais (Graduação Phorte)** — Processo seletivo para bolsas sociais de até 100% (Administração, RH, Processos Gerenciais e Marketing).
 - **Graduação em Pedagogia** — Versões 2026-2 e 2027-1 semipresencial, versão Design System e versão escura histórica.
 - **Educação Infantil (Perspectiva Pikleriana)** — Landing page principal e página de agradecimento com grupo VIP WhatsApp.
 - **Políticas de Privacidade, Cookies e Termos de Uso** — Página unificada 3-em-1.
@@ -51,3 +53,4 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 - Inclusão dos projetos Celpe-Bras, Pós em Educação (Hub) e TRADUSHOW no índice.
 - Atualização e validação de 100% dos links de navegação do `index.html`.
 - Correção de codificação UTF-8 e atualização dos status de Pedagogia, Pikleriana, Políticas e TRADUSHOW para Concluído.
+- Inclusão das landing pages de Bolsas Sociais e Bolsas Sociais Escola Aberta no catálogo central `index.html`.
