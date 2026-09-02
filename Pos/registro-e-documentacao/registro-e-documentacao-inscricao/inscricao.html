@@ -1,0 +1,1972 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Libere gratuitamente conteúdos sobre Registro e Documentação Pedagógica da Faculdade Phorte."
+    />
+    <title>Libere seu acesso aos conteúdos | Faculdade Phorte</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+      :root {
+        --ink: #1a1a1a;
+        --muted: #595959;
+        --line: #e5e5e5;
+        --surface: #ffffff;
+        --canvas: #fafafa;
+        --paper: #f4f6f9;
+        --red: #e64242;
+        --red-dark: #b91c1c;
+        --violet: #6e45d8;
+        --violet-soft: #eeeafd;
+        --yellow: #f4c442;
+        --shadow: 0 18px 48px rgba(26, 26, 26, 0.08);
+        --radius: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 72px;
+      }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--canvas);
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+
+      .container {
+        width: min(1180px, calc(100% - 48px));
+        margin: 0 auto;
+      }
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -100px;
+        z-index: 30;
+        padding: 10px 14px;
+        color: #fff;
+        background: var(--ink);
+        border-radius: 8px;
+      }
+      .skip-link:focus {
+        top: 12px;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        color: var(--ink);
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 4px 16px rgba(26, 26, 26, 0.05);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        min-height: 64px;
+      }
+      .brand {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        width: 112px;
+      }
+      .brand img {
+        width: 98px;
+        height: auto;
+      }
+      .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(14px, 2vw, 29px);
+        margin-left: auto;
+      }
+      .main-nav a,
+      .header-cta,
+      .footer-inner a {
+        color: var(--muted);
+        font-size: 0.68rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .main-nav a {
+        position: relative;
+        white-space: nowrap;
+      }
+      .main-nav a:hover,
+      .main-nav a:focus-visible {
+        color: var(--red);
+      }
+      .main-nav .nav-link-active {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      .main-nav .nav-link-active::after {
+        display: none;
+      }
+      .header-cta {
+        flex: 0 0 auto;
+        padding: 8px 15px;
+        color: #637083;
+        background: #fff;
+        border: 1px solid #dbe0e8;
+        border-radius: 6px;
+        white-space: nowrap;
+      }
+      .header-cta:hover,
+      .header-cta:focus-visible {
+        color: var(--red);
+        border-color: #e9a5ac;
+        background: #fffafa;
+      }
+      .footer-inner a:hover,
+      .footer-inner a:focus-visible {
+        color: var(--ink);
+      }
+
+      .hero {
+        padding: 18px 0 0;
+        background: var(--surface);
+      }
+      .hero-panel {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(380px, 0.86fr);
+        height: min(560px, calc(100vh - 150px));
+        min-height: 0;
+        overflow: hidden;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+      .hero-panel::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 9px;
+        content: "";
+        background: var(--red);
+      }
+      .hero-copy {
+        align-self: center;
+        padding: clamp(42px, 6vw, 80px) clamp(34px, 6vw, 88px);
+      }
+      .eyebrow {
+        margin: 0 0 17px;
+        color: var(--red);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .eyebrow-violet {
+        color: var(--violet);
+      }
+      .hero h1,
+      h2,
+      h3 {
+        font-family: "Poppins", Arial, sans-serif;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: clamp(3.1rem, 5.35vw, 5.25rem);
+        line-height: 0.96;
+        letter-spacing: -0.07em;
+      }
+      .hero-subtitle {
+        margin: 14px 0 0;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: clamp(1.08rem, 1.65vw, 1.32rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.035em;
+      }
+      .hero-lead {
+        max-width: 590px;
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.5vw, 1.16rem);
+        line-height: 1.58;
+      }
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 17px;
+        margin-top: 30px;
+      }
+      .hero-note {
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+      .hero-art {
+        position: relative;
+        min-height: 430px;
+        margin: 0;
+        overflow: hidden;
+        background: #f2eef7;
+      }
+      .hero-art-backdrop {
+        position: absolute;
+        inset: 42px 30px 0;
+        background: var(--violet-soft);
+        border-radius: 48% 48% 0 0;
+      }
+      .hero-art-backdrop::after {
+        position: absolute;
+        right: -80px;
+        bottom: -160px;
+        width: 290px;
+        height: 290px;
+        content: "";
+        background: var(--yellow);
+        border-radius: 50%;
+        opacity: 0.9;
+      }
+      .hero-art img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 12px 19px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-weight: 800;
+        line-height: 1.2;
+        text-align: center;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+      .button:hover {
+        transform: translateY(-2px);
+      }
+      .button-primary {
+        color: #fff;
+        background: var(--red);
+        box-shadow: 0 10px 22px rgba(216, 43, 57, 0.16);
+      }
+      .button-primary:hover,
+      .button-primary:focus-visible {
+        color: #fff;
+        background: var(--red-dark);
+      }
+
+      .proof-strip {
+        background: var(--surface);
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .proof-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 24px 0;
+      }
+      .proof-item {
+        display: grid;
+        gap: 4px;
+        padding: 4px 20px;
+        border-right: 1px solid var(--line);
+      }
+      .proof-item:first-child {
+        padding-left: 0;
+      }
+      .proof-item:last-child {
+        border-right: 0;
+      }
+      .proof-item strong {
+        color: var(--ink);
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 1.65rem;
+        letter-spacing: -0.06em;
+        text-transform: lowercase;
+      }
+      .proof-item span {
+        color: var(--muted);
+        font-size: 0.76rem;
+      }
+
+      .section {
+        padding: clamp(72px, 9vw, 120px) 0;
+      }
+      .section-heading {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 28px;
+      }
+      .section-heading h2 {
+        max-width: 820px;
+        margin: 0;
+        font-size: clamp(2.15rem, 3.65vw, 3.65rem);
+        line-height: 1.02;
+        letter-spacing: -0.065em;
+      }
+      .section-heading p:not(.eyebrow) {
+        max-width: 650px;
+        margin: 18px 0 0;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .library-count {
+        flex: 0 0 auto;
+        margin: 0 0 8px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+      .library-count {
+        margin: 0 0 9px;
+      }
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid rgba(110, 69, 216, 0.28);
+        outline-offset: 3px;
+      }
+
+      .lesson-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .lesson-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        color: var(--ink);
+        text-decoration: none;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease,
+          border-color 0.2s ease;
+      }
+      .lesson-card:hover {
+        transform: translateY(-4px);
+        border-color: #cac8d5;
+        box-shadow: var(--shadow);
+      }
+      .lesson-card:focus-visible {
+        border-color: var(--violet);
+        box-shadow: 0 0 0 3px rgba(110, 69, 216, 0.12);
+      }
+      .lesson-media {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        aspect-ratio: 16 / 10;
+        background: #ebe8ed;
+      }
+      .lesson-media::after {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background: linear-gradient(
+          180deg,
+          transparent 60%,
+          rgba(22, 19, 34, 0.36)
+        );
+        pointer-events: none;
+      }
+      .lesson-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.35s ease;
+      }
+      .lesson-card:hover .lesson-media img {
+        transform: scale(1.035);
+      }
+      .media-index {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        width: 34px;
+        height: 34px;
+        color: var(--violet);
+        background: #fff;
+        border: 1px solid rgba(110, 69, 216, 0.2);
+        border-radius: 8px;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 800;
+      }
+      .lesson-body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding: 19px 18px 20px;
+      }
+      .lesson-kicker,
+      .course-label {
+        margin: 0 0 10px;
+        color: var(--violet);
+        font-size: 0.62rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .lesson-body h3 {
+        margin: 0;
+        font-size: 0.96rem;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+      .lesson-body p:not(.lesson-kicker) {
+        margin: 14px 0 20px;
+        color: var(--muted);
+        font-size: 0.79rem;
+        line-height: 1.55;
+      }
+      .lesson-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: auto;
+        color: var(--red);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      .lesson-link::after {
+        content: "→";
+        font-size: 1.05rem;
+        transition: transform 0.2s ease;
+      }
+      .lesson-link:hover {
+        color: var(--red-dark);
+      }
+      .lesson-link:hover::after {
+        transform: translateX(4px);
+      }
+
+      .next-step {
+        background: var(--paper);
+      }
+      .recommendation {
+        display: grid;
+        grid-template-columns: minmax(300px, 0.7fr) minmax(0, 1.2fr);
+        align-items: center;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+      .recommendation-art {
+        position: relative;
+        align-self: stretch;
+        min-height: 410px;
+        margin: 0;
+        overflow: hidden;
+        background: #f0edf7;
+      }
+      .recommendation-art::after {
+        position: absolute;
+        left: -64px;
+        bottom: -96px;
+        width: 240px;
+        height: 240px;
+        content: "";
+        background: var(--violet);
+        border-radius: 50%;
+        opacity: 0.9;
+      }
+      .recommendation-art img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 14%;
+      }
+      .recommendation-copy {
+        padding: clamp(34px, 6vw, 72px);
+      }
+      .recommendation-copy h2 {
+        max-width: 650px;
+        margin: 0 0 20px;
+        font-size: clamp(2.05rem, 3.5vw, 3.45rem);
+        line-height: 1.02;
+        letter-spacing: -0.065em;
+      }
+      .recommendation-copy p:not(.eyebrow) {
+        max-width: 620px;
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.62;
+      }
+      .recommendation-copy .button {
+        max-width: 480px;
+        margin-top: 15px;
+      }
+
+      .bonus {
+        background: var(--surface);
+      }
+      .bonus-heading {
+        margin-bottom: 28px;
+      }
+      .bonus-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+      .bonus-card {
+        display: grid;
+        grid-template-columns: minmax(150px, 0.58fr) minmax(0, 1fr);
+        overflow: hidden;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+      .bonus-card > img {
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        object-fit: cover;
+      }
+      .bonus-copy {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 24px;
+      }
+      .bonus-copy h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        line-height: 1.12;
+        letter-spacing: -0.04em;
+      }
+      .bonus-copy p:not(.course-label) {
+        margin: 14px 0 20px;
+        color: var(--muted);
+        font-size: 0.79rem;
+        line-height: 1.55;
+      }
+
+      .site-footer {
+        background: #f4f1f3;
+        border-top: 1px solid var(--line);
+      }
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        min-height: 110px;
+        padding: 20px 0;
+      }
+      .footer-inner img {
+        width: 118px;
+        height: auto;
+      }
+      .footer-inner p {
+        flex: 1;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.78rem;
+        line-height: 1.45;
+      }
+      .footer-inner a {
+        color: var(--red);
+      }
+
+      @media (max-width: 1040px) {
+        .lesson-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .main-nav {
+          gap: 16px;
+        }
+      }
+
+      @media (max-width: 760px) {
+        html {
+          scroll-padding-top: 68px;
+        }
+        .container {
+          width: min(100% - 32px, 1180px);
+        }
+        .main-nav {
+          display: none;
+        }
+        .header-inner {
+          justify-content: space-between;
+          min-height: 60px;
+        }
+        .header-cta {
+          font-size: 0.72rem;
+        }
+        .hero {
+          padding-top: 14px;
+        }
+        .hero-panel {
+          grid-template-columns: 1fr;
+          height: auto;
+          min-height: 0;
+        }
+        .hero-copy {
+          order: 2;
+          padding: 38px 28px 42px;
+        }
+        .hero h1 {
+          font-size: clamp(2.9rem, 13.5vw, 4.25rem);
+        }
+        .hero-subtitle {
+          font-size: 1.16rem;
+        }
+        .hero-lead {
+          font-size: 1rem;
+        }
+        .hero-art {
+          order: 1;
+          min-height: 310px;
+        }
+        .hero-art-backdrop {
+          inset: 18px 26px 0;
+        }
+        .proof-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 18px 0;
+          padding: 22px 0;
+        }
+        .proof-item {
+          padding: 0 16px;
+        }
+        .proof-item:nth-child(odd) {
+          padding-left: 0;
+        }
+        .proof-item:nth-child(-n + 2) {
+          padding-bottom: 16px;
+          border-bottom: 1px solid var(--line);
+        }
+        .proof-item:nth-child(even) {
+          border-right: 0;
+        }
+        .section-heading {
+          display: block;
+        }
+        .library-count {
+          margin-top: 18px;
+        }
+        .lesson-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+        .lesson-card {
+          display: grid;
+          grid-template-columns: minmax(132px, 0.42fr) minmax(0, 0.58fr);
+        }
+        .lesson-media {
+          aspect-ratio: auto;
+          min-height: 100%;
+        }
+        .lesson-body {
+          padding: 15px 15px 17px;
+        }
+        .lesson-body h3 {
+          font-size: 0.95rem;
+        }
+        .lesson-body p:not(.lesson-kicker) {
+          font-size: 0.75rem;
+        }
+        .recommendation {
+          grid-template-columns: 1fr;
+        }
+        .recommendation-art {
+          min-height: 300px;
+        }
+        .recommendation-copy {
+          padding: 34px 26px 38px;
+        }
+        .recommendation-copy h2 {
+          font-size: 2.25rem;
+        }
+        .recommendation-copy .button {
+          width: 100%;
+        }
+        .bonus-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .brand {
+          width: 112px;
+          padding: 7px 13px;
+        }
+        .brand img {
+          width: 86px;
+        }
+        .header-cta {
+          padding: 9px 11px;
+        }
+        .hero-copy {
+          padding-inline: 22px;
+        }
+        .hero-art {
+          min-height: 275px;
+        }
+        .lesson-card {
+          display: block;
+        }
+        .lesson-media {
+          width: 100%;
+          min-height: 0;
+          height: auto;
+          aspect-ratio: 16 / 10;
+        }
+        .bonus-card {
+          grid-template-columns: 1fr;
+        }
+        .bonus-card > img {
+          min-height: 190px;
+          max-height: 240px;
+        }
+        .footer-inner {
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+        }
+        .footer-inner p {
+          flex: 1 1 100%;
+          order: 3;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+      }
+    </style>
+    <style>
+      .signup-page {
+        background: var(--canvas);
+      }
+      .signup-page main {
+        overflow: hidden;
+      }
+      .signup-page .site-header {
+        position: sticky;
+      }
+
+      .signup-hero {
+        padding: 28px 0 64px;
+        background: var(--surface);
+      }
+      .signup-hero-panel {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(360px, 0.74fr);
+        gap: clamp(28px, 4vw, 56px);
+        align-items: start;
+        overflow: hidden;
+        padding: clamp(34px, 4vw, 56px) clamp(34px, 6vw, 88px);
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+      .signup-hero-panel::before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 9px;
+        content: "";
+        background: var(--red);
+      }
+      .signup-hero-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        max-width: 660px;
+      }
+      .signup-hero h1 {
+        max-width: 650px;
+        margin: 0;
+        font-size: clamp(2.55rem, 3.6vw, 4rem);
+        line-height: 0.99;
+        letter-spacing: -0.065em;
+      }
+      .signup-hero h1 span,
+      .instructor-copy h2 span {
+        color: var(--violet);
+      }
+      .signup-hero-lead {
+        max-width: 640px;
+        margin: 20px 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 1.45vw, 1.14rem);
+        line-height: 1.6;
+      }
+      .signup-benefits {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px 22px;
+        max-width: 620px;
+        margin: 30px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+      .signup-benefits li {
+        display: grid;
+        grid-template-columns: 28px minmax(0, 1fr);
+        gap: 12px;
+        align-items: start;
+        color: var(--ink);
+        font-size: 0.88rem;
+        line-height: 1.48;
+      }
+      .benefit-index {
+        display: grid;
+        place-items: center;
+        width: 27px;
+        height: 27px;
+        color: var(--violet);
+        background: var(--violet-soft);
+        border: 1px solid #ddd5ff;
+        border-radius: 50%;
+        font-size: 0.61rem;
+        font-weight: 800;
+      }
+      .signup-microcopy {
+        margin: 22px 0 0;
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+      .signup-microcopy strong {
+        color: var(--ink);
+      }
+
+      .signup-form-card {
+        align-self: center;
+        padding: clamp(22px, 2.6vw, 30px);
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+      }
+      .form-heading h2 {
+        max-width: 360px;
+        margin: 0;
+        font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+        line-height: 1.04;
+        letter-spacing: -0.06em;
+      }
+      .form-intro {
+        max-width: 360px;
+        margin: 10px 0 18px;
+        color: var(--muted);
+        font-size: 0.76rem;
+        line-height: 1.45;
+      }
+      .form-field,
+      .challenge-field {
+        margin: 0 0 10px;
+      }
+      .form-field label,
+      .challenge-field > label {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--ink);
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+      .form-field label span,
+      .challenge-field label span {
+        color: var(--red);
+      }
+      .form-field input,
+      .form-field select,
+      .challenge-row input {
+        width: 100%;
+        min-height: 42px;
+        padding: 9px 12px;
+        color: var(--ink);
+        background: #fff;
+        border: 1px solid #d9d7df;
+        border-radius: 7px;
+        font: inherit;
+        font-size: 0.76rem;
+        outline: none;
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .form-field input::placeholder,
+      .challenge-row input::placeholder {
+        color: #8b8794;
+      }
+      .form-field input:focus,
+      .form-field select:focus,
+      .challenge-row input:focus {
+        border-color: var(--violet);
+        box-shadow: 0 0 0 3px rgba(110, 69, 216, 0.14);
+      }
+      .challenge-row {
+        display: grid;
+        grid-template-columns: minmax(0, 0.85fr) minmax(118px, 1fr);
+        gap: 10px;
+      }
+      .challenge-question {
+        display: grid;
+        place-items: center;
+        min-height: 42px;
+        color: var(--violet);
+        background: var(--violet-soft);
+        border: 1px solid #ddd5ff;
+        border-radius: 7px;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+      .button-submit {
+        width: 100%;
+        margin-top: 2px;
+      }
+      .form-legal {
+        margin: 11px 0 0;
+        color: var(--muted);
+        font-size: 0.61rem;
+        line-height: 1.45;
+      }
+      .form-legal a {
+        color: var(--red);
+        font-weight: 700;
+      }
+      .form-status {
+        min-height: 20px;
+        margin: 10px 0 0;
+        color: var(--red-dark);
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+      .button-submit:disabled {
+        cursor: wait;
+        opacity: 0.68;
+      }
+
+      /* RD Station embed: preserve the official form fields inside the Phorte card. */
+      .rdstation-form-wrap {
+        width: 100%;
+        margin-top: 4px;
+      }
+      .rdstation-form-wrap [role="main"] {
+        width: 100%;
+        font-family: "Poppins", Arial, sans-serif !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks--component-embeddable-form,
+      .rdstation-form-wrap [role="main"] .bricks--section,
+      .rdstation-form-wrap [role="main"] .bricks--row,
+      .rdstation-form-wrap [role="main"] .bricks--column,
+      .rdstation-form-wrap [role="main"] .bricks--column > div,
+      .rdstation-form-wrap [role="main"] .bricks-form,
+      .rdstation-form-wrap [role="main"] .bricks-form form {
+        width: 100% !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+      .rdstation-form-wrap [role="main"] * {
+        font-family: "Poppins", Arial, sans-serif !important;
+        box-sizing: border-box;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__field {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        margin: 0 0 8px !important;
+        padding: 0 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__label {
+        display: block !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0 0 3px !important;
+        padding: 0 !important;
+        color: var(--ink) !important;
+        font-size: 0.65rem !important;
+        font-weight: 700 !important;
+        line-height: 1.25 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__input {
+        display: block !important;
+        width: 100% !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        margin: 0 !important;
+        padding: 8px 12px !important;
+        color: var(--ink) !important;
+        background: #fff !important;
+        border: 1px solid #d9d7df !important;
+        border-radius: 7px !important;
+        font-size: 0.74rem !important;
+        line-height: 1.3 !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__input::placeholder {
+        color: #8b8794 !important;
+        opacity: 1 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__input:focus {
+        border-color: var(--violet) !important;
+        box-shadow: 0 0 0 3px rgba(110, 69, 216, 0.14) !important;
+      }
+      .rdstation-form-wrap [role="main"] .phone-input-group {
+        display: grid !important;
+        grid-template-columns: 47px minmax(0, 1fr);
+        gap: 8px;
+        width: 100%;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .phone-input-group
+        > .form-control.phone-country:not(.select2-container),
+      .rdstation-form-wrap [role="main"] .phone-input-group > .country-field {
+        display: none !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .phone-input-group
+        .bricks-form__input {
+        grid-column: 2;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .select2-container.form-control.phone-country {
+        display: block !important;
+        grid-column: 1;
+        width: 47px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        background: #fff !important;
+        border: 1px solid #d9d7df !important;
+        border-radius: 7px !important;
+      }
+      .rdstation-form-wrap [role="main"] .select2-choice {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        height: 38px !important;
+        padding: 0 !important;
+        color: var(--ink) !important;
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 7px !important;
+        box-shadow: none !important;
+      }
+      .rdstation-form-wrap [role="main"] .select2-choice .flag {
+        width: 23px !important;
+        height: auto !important;
+      }
+      .rdstation-form-wrap [role="main"] .select2-choice .select2-arrow {
+        position: static !important;
+        width: 12px !important;
+        height: auto !important;
+        margin-left: 2px !important;
+        background: transparent !important;
+        border: 0 !important;
+      }
+      .rdstation-form-wrap [role="main"] .select2-choice .select2-arrow b {
+        display: block !important;
+        width: 0 !important;
+        height: 0 !important;
+        margin: 0 auto !important;
+        border-top: 5px solid var(--muted) !important;
+        border-right: 4px solid transparent !important;
+        border-left: 4px solid transparent !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__field:has(
+          .js-field-cf_voce_tem_interesse_em_ser_um_especialista_em_registro
+        ) {
+        padding: 10px 12px !important;
+        background: var(--violet-soft) !important;
+        border: 1px solid #ddd5ff !important;
+        border-radius: 8px !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__field:has(
+          .js-field-cf_voce_tem_interesse_em_ser_um_especialista_em_registro
+        )
+        > .bricks-form__label {
+        margin-bottom: 6px !important;
+        font-size: 0.68rem !important;
+        line-height: 1.3 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__field__option {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 20px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__field__option
+        .bricks-form__label {
+        display: inline-block !important;
+        margin: 0 0 0 6px !important;
+        color: var(--muted) !important;
+        font-size: 0.67rem !important;
+        font-weight: 500 !important;
+        line-height: 1.3 !important;
+        vertical-align: middle;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__field__option__input {
+        display: inline-block !important;
+        width: 14px !important;
+        height: 14px !important;
+        min-height: 14px !important;
+        margin: 0 !important;
+        accent-color: var(--violet);
+        vertical-align: middle;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__privacy {
+        margin-top: -2px !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__privacy
+        .bricks-form__field__option
+        .bricks-form__label {
+        color: var(--ink) !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__terms {
+        margin-top: 0 !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__terms
+        .bricks-form__static {
+        width: 100% !important;
+        height: auto !important;
+        color: var(--muted) !important;
+        font-size: 0.57rem !important;
+        line-height: 1.4 !important;
+      }
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__terms
+        .bricks-form__static
+        > div {
+        height: auto !important;
+        color: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__terms a {
+        color: var(--red) !important;
+        font-weight: 700 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__submit {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__submit .rd-button,
+      .rdstation-form-wrap [role="main"] .bricks-form__submit button {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        height: 46px !important;
+        min-height: 46px !important;
+        margin: 2px 0 0 !important;
+        padding: 12px 19px !important;
+        color: #fff !important;
+        background: var(--red) !important;
+        border: 1px solid transparent !important;
+        border-radius: 8px !important;
+        box-shadow: 0 10px 22px rgba(216, 43, 57, 0.16) !important;
+        font-size: 0.78rem !important;
+        font-weight: 800 !important;
+        line-height: 1.2 !important;
+        cursor: pointer;
+      }
+      .rdstation-form-wrap [role="main"] .bricks-form__submit button:hover,
+      .rdstation-form-wrap
+        [role="main"]
+        .bricks-form__submit
+        button:focus-visible {
+        background: var(--red-dark) !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks--component-text.rd-text {
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 9px !important;
+        color: var(--muted) !important;
+        font-size: 0.57rem !important;
+        line-height: 1.4 !important;
+      }
+      .rdstation-form-wrap [role="main"] .bricks--component-text.rd-text > div {
+        color: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+
+      .signup-proof .proof-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .context-section {
+        padding: clamp(76px, 9vw, 120px) 0;
+        background: var(--surface);
+      }
+      .context-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(290px, 0.9fr);
+        gap: clamp(36px, 8vw, 110px);
+        align-items: center;
+      }
+      .context-copy {
+        max-width: 690px;
+      }
+      .context-copy h2,
+      .instructor-copy h2,
+      .signup-final h2 {
+        max-width: 680px;
+        margin: 0 0 22px;
+        font-size: clamp(2.2rem, 4vw, 4.15rem);
+        line-height: 1.02;
+        letter-spacing: -0.065em;
+      }
+      .context-copy p:not(.eyebrow),
+      .instructor-copy p:not(.eyebrow) {
+        max-width: 650px;
+        margin: 0 0 17px;
+        color: var(--muted);
+        font-size: 0.91rem;
+        line-height: 1.7;
+      }
+      .context-art {
+        position: relative;
+        margin: 0;
+        padding: 20px;
+        background: var(--violet-soft);
+        border-radius: 50% 50% 10px 10px;
+      }
+      .context-art img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+      .context-art figcaption {
+        max-width: 260px;
+        margin: 15px auto 0;
+        color: var(--violet);
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 1.45;
+        text-align: center;
+      }
+
+      .context-divider {
+        margin: clamp(48px, 6vw, 72px) 0;
+        border: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .course-spotlight {
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+        gap: clamp(36px, 7vw, 90px);
+        align-items: center;
+      }
+      .course-spotlight-copy h2 {
+        margin: 0 0 20px;
+        font-size: clamp(2rem, 3.6vw, 3.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.055em;
+      }
+      .course-spotlight-copy p:not(.eyebrow) {
+        margin: 0 0 20px;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+      .course-badges {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 26px;
+      }
+      .course-badge-item {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 14px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--ink);
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+      }
+      .course-badge-item.highlight {
+        color: var(--violet);
+        background: var(--violet-soft);
+        border-color: rgba(110, 69, 216, 0.2);
+      }
+      .course-video-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .course-video-title {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.03em;
+        color: var(--ink);
+      }
+      .course-video-placeholder {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 270px;
+        padding: 32px 24px;
+        background: var(--paper);
+        border: 2px dashed #d2d6df;
+        border-radius: var(--radius);
+        text-align: center;
+        transition: border-color 0.2s ease, background 0.2s ease;
+      }
+      .course-video-placeholder:hover {
+        border-color: var(--violet);
+        background: #f7f5fd;
+      }
+      .course-video-placeholder-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 56px;
+        height: 56px;
+        margin-bottom: 14px;
+        color: #fff;
+        background: var(--violet);
+        border-radius: 50%;
+        box-shadow: 0 8px 20px rgba(110, 69, 216, 0.25);
+      }
+      .course-video-placeholder-icon svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 3px;
+        fill: currentColor;
+      }
+      .course-video-placeholder p {
+        margin: 0 0 6px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .course-video-placeholder span {
+        font-size: 0.76rem;
+        color: var(--muted);
+      }
+
+      @media (max-width: 760px) {
+        .course-spotlight {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .instructor-section {
+        padding: clamp(76px, 9vw, 120px) 0;
+        background: var(--paper);
+      }
+      .instructor-grid {
+        display: grid;
+        grid-template-columns: minmax(300px, 0.78fr) minmax(0, 1.22fr);
+        gap: clamp(38px, 8vw, 110px);
+        align-items: center;
+      }
+      .instructor-art {
+        position: relative;
+        align-self: stretch;
+        min-height: 470px;
+        margin: 0;
+        overflow: hidden;
+        background: var(--violet-soft);
+        border-radius: var(--radius);
+      }
+      .instructor-art::after {
+        position: absolute;
+        right: -95px;
+        bottom: -110px;
+        width: 270px;
+        height: 270px;
+        content: "";
+        background: var(--yellow);
+        border-radius: 50%;
+      }
+      .instructor-art img {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center bottom;
+      }
+      .instructor-copy h2 {
+        margin-bottom: 20px;
+      }
+      .instructor-copy .button {
+        margin-top: 10px;
+      }
+
+      .signup-final {
+        padding: clamp(60px, 7vw, 90px) 0;
+        background: var(--surface);
+        border-top: 1px solid var(--line);
+      }
+      .signup-final-inner {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 36px;
+      }
+      .signup-final h2 {
+        max-width: 620px;
+        margin-bottom: 14px;
+        font-size: clamp(2rem, 3.5vw, 3.6rem);
+      }
+      .signup-final p:not(.eyebrow) {
+        max-width: 570px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.91rem;
+        line-height: 1.6;
+      }
+      .signup-final .button {
+        flex: 0 0 auto;
+      }
+
+      @media (max-width: 1040px) {
+        .signup-hero-panel {
+          grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
+          gap: 28px;
+          padding-inline: 42px 34px;
+        }
+        .signup-hero h1 {
+          font-size: clamp(2.55rem, 4.5vw, 3.7rem);
+        }
+        .signup-form-card {
+          padding: 26px;
+        }
+        .context-grid,
+        .instructor-grid {
+          gap: 40px;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .signup-hero {
+          padding: 14px 0 44px;
+        }
+        .signup-hero-panel {
+          grid-template-columns: 1fr;
+          gap: 34px;
+          padding: 36px 24px 28px 30px;
+        }
+        .signup-hero h1 {
+          font-size: clamp(2.55rem, 11.5vw, 4rem);
+        }
+        .signup-hero-lead {
+          font-size: 0.94rem;
+        }
+        .signup-benefits {
+          margin-top: 24px;
+        }
+        .signup-benefits {
+          grid-template-columns: 1fr;
+        }
+        .signup-form-card {
+          padding: 25px 21px 24px;
+        }
+        .signup-proof .proof-grid {
+          grid-template-columns: 1fr;
+          gap: 0;
+          padding: 22px 0;
+        }
+        .signup-proof .proof-item {
+          padding: 0 0 14px;
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        .signup-proof .proof-item + .proof-item {
+          padding-top: 14px;
+        }
+        .signup-proof .proof-item:last-child {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+        .context-grid,
+        .instructor-grid {
+          grid-template-columns: 1fr;
+        }
+        .context-art {
+          max-width: 430px;
+          margin: 0 auto;
+        }
+        .instructor-art {
+          min-height: 420px;
+        }
+        .context-copy h2,
+        .instructor-copy h2 {
+          font-size: 2.45rem;
+        }
+        .signup-final-inner {
+          display: block;
+        }
+        .signup-final .button {
+          width: 100%;
+          margin-top: 28px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .signup-hero-panel {
+          padding-right: 19px;
+        }
+        .signup-hero h1 {
+          font-size: clamp(2.3rem, 11.5vw, 3.4rem);
+        }
+        .signup-hero-lead {
+          font-size: 0.9rem;
+        }
+        .challenge-row {
+          grid-template-columns: 1fr;
+        }
+        .challenge-question {
+          min-height: 38px;
+        }
+        .context-copy h2,
+        .instructor-copy h2,
+        .signup-final h2 {
+          font-size: 2.15rem;
+        }
+        .instructor-art {
+          min-height: 360px;
+        }
+      }
+    </style>
+  </head>
+  <body class="signup-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="../registro-e-documentacao-materiais/materiais.html"
+          aria-label="Faculdade Phorte — página de materiais"
+        >
+          <img
+            src="https://posphorte.com.br/wp-content/uploads/2022/01/Logo_Faculdade-Phorte1.png"
+            alt="Faculdade Phorte"
+          />
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#sobre">Pós-graduação</a>
+          <a href="#contexto">Cursos gratuitos</a>
+          <a href="#sobre">Para empresas</a>
+          <a href="#sobre">Sobre a Phorte</a>
+          <a class="nav-link-active" href="#inscricao">Conteúdos</a>
+        </nav>
+        <a
+          class="header-cta"
+          href="../registro-e-documentacao-materiais/materiais.html"
+          aria-label="Acessar os materiais"
+          >Já tenho acesso</a
+        >
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="signup-hero" id="inscricao">
+        <div class="container signup-hero-panel">
+          <div class="signup-hero-copy">
+            <p class="eyebrow">Ciclo formativo</p>
+            <h1>
+              Registro Pedagógico:
+              <span>narrativas que nascem do cotidiano.</span>
+            </h1>
+            <p class="signup-hero-lead">
+              Articule diferentes dimensões da documentação pedagógica para
+              construir uma visão integrada entre escrita, registro, reflexão e
+              prática, com foco na construção de sentidos a partir das
+              experiências que compõem o cotidiano educativo.
+            </p>
+
+            <ul class="signup-benefits" aria-label="O que você vai receber">
+              <li>
+                <span class="benefit-index" aria-hidden="true">01</span
+                ><span
+                  ><strong>8 aulas exclusivas</strong> com o Prof. Dr. Cristiano
+                  Alcântara.</span
+                >
+              </li>
+              <li>
+                <span class="benefit-index" aria-hidden="true">02</span
+                ><span
+                  ><strong>Mais de 10 horas de conteúdo</strong> fundamentado no
+                  chão da sala.</span
+                >
+              </li>
+              <li>
+                <span class="benefit-index" aria-hidden="true">03</span
+                ><span
+                  >Conteúdos focados em
+                  <strong>dimensões concretas da pedagogia.</strong></span
+                >
+              </li>
+              <li>
+                <span class="benefit-index" aria-hidden="true">04</span
+                ><span
+                  >Repertório para
+                  <strong>intencionalizar seus registros.</strong></span
+                >
+              </li>
+            </ul>
+
+            <p class="signup-microcopy">
+              <strong>Gratuito e online.</strong> Preencha o formulário para
+              liberar o acesso agora.
+            </p>
+          </div>
+
+          <div class="signup-form-card">
+            <div class="form-heading">
+              <p class="eyebrow eyebrow-violet">Acesso gratuito</p>
+              <h2>Preencha para desbloquear.</h2>
+              <p class="form-intro">
+                É rápido. Assim que concluir, você será encaminhado para as
+                aulas.
+              </p>
+            </div>
+
+            <div class="rdstation-form-wrap">
+              <div
+                role="main"
+                id="educacao-i-materiais-gratuitos-de-registro-i-formulario-base-e02720cacdd00cd91016"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"
+              ></script>
+              <script type="text/javascript">
+                new RDStationForms(
+                  "educacao-i-materiais-gratuitos-de-registro-i-formulario-base-e02720cacdd00cd91016",
+                  "UA-150398790-1",
+                ).createForm();
+              </script>
+              <p
+                class="form-status rdstation-status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="signup-proof proof-strip"
+        aria-label="O que está disponível"
+      >
+        <div class="container proof-grid">
+          <div class="proof-item">
+            <strong>8</strong><span>aulas exclusivas</span>
+          </div>
+          <div class="proof-item">
+            <strong>10+</strong><span>horas de conteúdo</span>
+          </div>
+          <div class="proof-item">
+            <strong>100%</strong><span>gratuito e online</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="context-section" id="contexto">
+        <div class="container">
+          <div class="context-grid">
+            <div class="context-copy">
+              <p class="eyebrow eyebrow-violet">Ciclo Formativo</p>
+              <h2>Sobre o Ciclo Formativo</h2>
+              <p>
+                Ação prevista na legislação educacional, documentar faz parte da
+                rotina docente. Na Educação Infantil, o registro pedagógico é um
+                dos principais instrumentos para acompanhar as aprendizagens e o
+                desenvolvimento das crianças.
+              </p>
+              <p>
+                A LDB e as Diretrizes Curriculares Nacionais para a Educação
+                Infantil (DCNEI) estabelecem o acompanhamento, a observação e o
+                registro como parte do processo pedagógico. Na prática, isso exige
+                do professor observar, documentar e interpretar o cotidiano com
+                intencionalidade.
+              </p>
+              <p>
+                Por isso, aprofundar conhecimentos sobre registro e documentação
+                pedagógica é qualificar uma dimensão concreta da atuação docente.
+                Neste Ciclo Formativo, diferentes perspectivas sobre escrita,
+                registro, reflexão e prática se articulam para ampliar esse
+                repertório.
+              </p>
+            </div>
+            <figure class="context-art">
+              <img
+                src="https://phorte.com/wp-content/uploads/2026/09/quadrado-25.webp"
+                alt="Criança explorando um ambiente educativo ao ar livre."
+                loading="lazy"
+                width="600"
+                height="600"
+              />
+              <figcaption>
+                O cotidiano documentado é ponto de partida para novas decisões.
+              </figcaption>
+            </figure>
+          </div>
+
+          <hr class="context-divider" />
+
+          <div class="course-spotlight">
+            <div class="course-spotlight-copy">
+              <p class="eyebrow">Pós-Graduação Phorte</p>
+              <h2>Qualifique o modo como você observa, registra e documenta</h2>
+              <p>
+                Na Pós-graduação em Registro e Documentação Pedagógica da
+                Faculdade Phorte, coordenada pelo Prof. Dr. Cristiano Alcântara,
+                você desenvolve repertório para transformar observações,
+                experiências e acontecimentos em registros mais intencionais,
+                reflexivos e significativos para a prática pedagógica.
+              </p>
+              <div class="course-badges" aria-label="Informações do curso">
+                <span class="course-badge-item highlight">Online / Ao Vivo</span>
+                <span class="course-badge-item">360h</span>
+                <span class="course-badge-item">Registrada pelo E-MEC</span>
+              </div>
+              <a
+                class="button button-primary"
+                href="https://tinyurl.com/conheca-o-curso-registro"
+                target="_blank"
+                rel="noreferrer"
+                >Conheça o curso <span aria-hidden="true">→</span></a
+              >
+            </div>
+
+            <div class="course-video-wrapper">
+              <h3 class="course-video-title">
+                Um olhar sobre o curso a partir de quem constrói essa
+                especialização
+              </h3>
+              <!-- Área para anexar o vídeo posteriormente -->
+              <div class="course-video-placeholder" aria-label="Espaço reservado para vídeo">
+                <div class="course-video-placeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </div>
+                <p>Vídeo de apresentação</p>
+                <span>Área reservada para inclusão do vídeo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="instructor-section" id="sobre">
+        <div class="container instructor-grid">
+          <figure class="instructor-art">
+            <img
+              src="https://phorte.com/wp-content/uploads/2026/09/vertical-03.webp"
+              alt="Prof. Dr. Cristiano Alcântara em um retrato editorial."
+              loading="lazy"
+              width="1080"
+              height="1456"
+            />
+          </figure>
+          <div class="instructor-copy">
+            <p class="eyebrow">Quem conduz essa conversa</p>
+            <h2>Prof. Dr. <span>Cristiano Alcântara.</span></h2>
+            <p>
+              <strong
+                >Pós-Doutor em Psicologia da Educação, Doutor em Língua
+                Portuguesa, Mestre em Ciência da Informação e Documentação,
+                Bacharel em Letras - Português e Literaturas de Língua
+                Portuguesa e Pedagogo em Gestão Escolar. Especialista em PROEJA,
+                Letramento e Alfabetização e Supervisão Escolar.</strong
+              >
+            </p>
+            <p>
+              Atualmente é Coordenador Pedagógico na Cidade de São Paulo e
+              Coordenador dos cursos de graduação em Pedagogia e pós-graduação
+              em Educação Infantil numa Perspectiva Pikleriana e Registro e
+              Documentação Pedagógica da Faculdade Phorte. Suas principais áreas
+              de atuação são: formação de professores, assessoramento pedagógico
+              e gestão escolar.
+            </p>
+            <p>
+              Suas principais áreas de atuação são formação de professores,
+              assessoramento pedagógico e gestão escolar.
+            </p>
+            <a class="button button-primary" href="#inscricao"
+              >Quero liberar meu acesso <span aria-hidden="true">↑</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="signup-final">
+        <div class="container signup-final-inner">
+          <div>
+            <p class="eyebrow eyebrow-violet">Próximo passo</p>
+            <h2>Seu acesso começa com um cadastro rápido.</h2>
+            <p>
+              Depois de enviar seus dados, você seguirá direto para a página com
+              as aulas abertas.
+            </p>
+          </div>
+          <a class="button button-primary" href="#inscricao"
+            >Preencher formulário <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img
+          src="https://posphorte.com.br/wp-content/uploads/2022/01/Logo_Faculdade-Phorte1.png"
+          alt="Faculdade Phorte"
+          width="160"
+          height="79"
+        />
+        <p>
+          Conteúdos gratuitos para transformar observação em reflexão e prática
+          pedagógica.
+        </p>
+        <a href="#inscricao">Voltar ao início</a>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const formRoot = document.querySelector(
+          "#educacao-i-materiais-gratuitos-de-registro-i-formulario-base-e02720cacdd00cd91016",
+        );
+        const status = document.querySelector("#form-status");
+        const redirectUrl = new URL(
+          "../registro-e-documentacao-materiais/materiais.html",
+          window.location.href,
+        ).href;
+
+        if (!formRoot) return;
+
+        const enhanceForm = () => {
+          const form = formRoot.querySelector("form");
+          if (!form || form.dataset.phorteEnhanced === "true") return;
+
+          form.dataset.phorteEnhanced = "true";
+          const submitButton = form.querySelector('button[type="submit"]');
+
+          form.addEventListener("submit", (event) => {
+            const fields = [
+              ...form.querySelectorAll(
+                "input[required], select[required], textarea[required]",
+              ),
+            ];
+            const firstEmptyField = fields.find(
+              (field) => field.type !== "radio" && !field.value.trim(),
+            );
+            const requiredRadioGroups = [
+              ...new Set(
+                fields
+                  .filter((field) => field.type === "radio")
+                  .map((field) => field.name),
+              ),
+            ];
+            const missingRadioGroup = requiredRadioGroups.find(
+              (name) =>
+                !form.querySelector(
+                  `input[type="radio"][name="${CSS.escape(name)}"]:checked`,
+                ),
+            );
+
+            if (firstEmptyField || missingRadioGroup) return;
+
+            event.preventDefault();
+            sessionStorage.setItem("phorte-registration-complete", "true");
+
+            if (submitButton) submitButton.disabled = true;
+            if (status)
+              status.textContent = "Tudo certo! Abrindo seus conteúdos…";
+
+            window.setTimeout(() => {
+              window.location.href = redirectUrl;
+            }, 900);
+          });
+        };
+
+        const observer = new MutationObserver(enhanceForm);
+        observer.observe(formRoot, { childList: true, subtree: true });
+        enhanceForm();
+      })();
+    </script>
+  </body>
+</html>

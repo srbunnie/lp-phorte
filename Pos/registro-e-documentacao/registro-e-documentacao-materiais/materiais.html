@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aulas abertas e conteúdos gratuitos sobre Registro e Documentação Pedagógica.">
+    <title>Conteúdos de Registro e Documentação | Faculdade Phorte</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ink: #1a1a1a;
+  --muted: #595959;
+  --line: #e5e5e5;
+  --surface: #ffffff;
+  --canvas: #fafafa;
+  --paper: #f4f6f9;
+  --red: #e64242;
+  --red-dark: #b91c1c;
+  --violet: #6e45d8;
+  --violet-soft: #eeeafd;
+  --yellow: #f4c442;
+  --shadow: 0 18px 48px rgba(26, 26, 26, .08);
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+body { margin: 0; color: var(--ink); background: var(--canvas); font-family: 'Poppins', Arial, sans-serif; font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+
+.container { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
+.skip-link { position: absolute; left: 16px; top: -100px; z-index: 30; padding: 10px 14px; color: #fff; background: var(--ink); border-radius: 8px; }
+.skip-link:focus { top: 12px; }
+
+.site-header { position: sticky; top: 0; z-index: 20; color: var(--ink); background: var(--surface); border-bottom: 1px solid var(--line); box-shadow: 0 4px 16px rgba(26, 26, 26, .05); }
+.header-inner { display: flex; align-items: center; gap: 22px; min-height: 64px; }
+.brand { flex: 0 0 auto; display: inline-flex; align-items: center; width: 112px; }
+.brand img { width: 98px; height: auto; }
+.main-nav { display: flex; align-items: center; justify-content: center; gap: clamp(14px, 2vw, 29px); margin-left: auto; }
+.main-nav a, .header-cta, .footer-inner a { color: var(--muted); font-size: .68rem; font-weight: 600; text-decoration: none; }
+.main-nav a { position: relative; white-space: nowrap; }
+.main-nav a:hover, .main-nav a:focus-visible { color: var(--red); }
+.main-nav .nav-link-active { color: var(--ink); font-weight: 700; }
+.main-nav .nav-link-active::after { display: none; }
+.header-cta { flex: 0 0 auto; padding: 8px 15px; color: #637083; background: #fff; border: 1px solid #dbe0e8; border-radius: 6px; white-space: nowrap; }
+.header-cta:hover, .header-cta:focus-visible { color: var(--red); border-color: #e9a5ac; background: #fffafa; }
+.footer-inner a:hover, .footer-inner a:focus-visible { color: var(--ink); }
+
+.hero { padding: 18px 0 0; background: var(--surface); }
+.hero-panel { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .86fr); height: min(560px, calc(100vh - 150px)); min-height: 0; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.hero-panel::before { position: absolute; inset: 0 auto 0 0; width: 9px; content: ''; background: var(--red); }
+.hero-copy { align-self: center; padding: clamp(42px, 6vw, 80px) clamp(34px, 6vw, 88px); }
+.eyebrow { margin: 0 0 17px; color: var(--red); font-size: .72rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.eyebrow-violet { color: var(--violet); }
+.hero h1, h2, h3 { font-family: 'Poppins', Arial, sans-serif; }
+.hero h1 { margin: 0; font-size: clamp(3.1rem, 5.35vw, 5.25rem); line-height: .96; letter-spacing: -.07em; }
+.hero-subtitle { margin: 14px 0 0; font-family: 'Poppins', Arial, sans-serif; font-size: clamp(1.08rem, 1.65vw, 1.32rem); font-weight: 700; line-height: 1.2; letter-spacing: -.035em; }
+.hero-lead { max-width: 590px; margin: 14px 0 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.16rem); line-height: 1.58; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 17px; margin-top: 30px; }
+.hero-note { color: var(--muted); font-size: .78rem; }
+.hero-art { position: relative; min-height: 430px; margin: 0; overflow: hidden; background: #f2eef7; }
+.hero-art-backdrop { position: absolute; inset: 42px 30px 0; background: var(--violet-soft); border-radius: 48% 48% 0 0; }
+.hero-art-backdrop::after { position: absolute; right: -80px; bottom: -160px; width: 290px; height: 290px; content: ''; background: var(--yellow); border-radius: 50%; opacity: .9; }
+.hero-art img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 19px; border: 1px solid transparent; border-radius: 8px; font-size: .8rem; font-weight: 800; line-height: 1.2; text-align: center; text-decoration: none; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { color: #fff; background: var(--red); box-shadow: 0 10px 22px rgba(216, 43, 57, .16); }
+.button-primary:hover, .button-primary:focus-visible { color: #fff; background: var(--red-dark); }
+
+.proof-strip { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding: 24px 0; }
+.proof-item { display: grid; gap: 4px; padding: 4px 20px; border-right: 1px solid var(--line); }
+.proof-item:first-child { padding-left: 0; }
+.proof-item:last-child { border-right: 0; }
+.proof-item strong { color: var(--ink); font-family: 'Poppins', Arial, sans-serif; font-size: 1.65rem; letter-spacing: -.06em; text-transform: lowercase; }
+.proof-item span { color: var(--muted); font-size: .76rem; }
+
+.section { padding: clamp(72px, 9vw, 120px) 0; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
+.section-heading h2 { max-width: 820px; margin: 0; font-size: clamp(2.15rem, 3.65vw, 3.65rem); line-height: 1.02; letter-spacing: -.065em; }
+.section-heading p:not(.eyebrow) { max-width: 650px; margin: 18px 0 0; color: var(--muted); line-height: 1.55; }
+.library-count { flex: 0 0 auto; margin: 0 0 8px; color: var(--muted); font-size: .8rem; font-weight: 700; }
+.library-count { margin: 0 0 9px; }
+a:focus-visible, button:focus-visible { outline: 3px solid rgba(110, 69, 216, .28); outline-offset: 3px; }
+
+.lesson-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.lesson-card { display: flex; flex-direction: column; overflow: hidden; color: var(--ink); text-decoration: none; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.lesson-card:hover { transform: translateY(-4px); border-color: #cac8d5; box-shadow: var(--shadow); }
+.lesson-card:focus-visible { border-color: var(--violet); box-shadow: 0 0 0 3px rgba(110, 69, 216, .12); }
+.lesson-media { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 10; background: #ebe8ed; }
+.lesson-media::after { position: absolute; inset: 0; content: ''; background: linear-gradient(180deg, transparent 60%, rgba(22, 19, 34, .36)); pointer-events: none; }
+.lesson-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.lesson-card:hover .lesson-media img { transform: scale(1.035); }
+.media-index { position: absolute; top: 12px; left: 12px; z-index: 1; display: grid; place-items: center; width: 34px; height: 34px; color: var(--violet); background: #fff; border: 1px solid rgba(110, 69, 216, .2); border-radius: 8px; font-family: 'Poppins', Arial, sans-serif; font-size: .8rem; font-weight: 800; }
+.lesson-body { display: flex; flex: 1; flex-direction: column; padding: 19px 18px 20px; }
+.lesson-kicker, .course-label { margin: 0 0 10px; color: var(--violet); font-size: .62rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.lesson-body h3 { margin: 0; font-size: .96rem; line-height: 1.2; letter-spacing: -.03em; }
+.lesson-body p:not(.lesson-kicker) { margin: 14px 0 20px; color: var(--muted); font-size: .79rem; line-height: 1.55; }
+.lesson-link { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: var(--red); font-size: .78rem; font-weight: 800; text-decoration: none; }
+.lesson-link::after { content: '→'; font-size: 1.05rem; transition: transform .2s ease; }
+.lesson-link:hover { color: var(--red-dark); }
+.lesson-link:hover::after { transform: translateX(4px); }
+
+.next-step { background: var(--paper); }
+.recommendation { display: grid; grid-template-columns: minmax(300px, .7fr) minmax(0, 1.2fr); align-items: center; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); }
+.recommendation-art { position: relative; align-self: stretch; min-height: 410px; margin: 0; overflow: hidden; background: #f0edf7; }
+.recommendation-art::after { position: absolute; left: -64px; bottom: -96px; width: 240px; height: 240px; content: ''; background: var(--violet); border-radius: 50%; opacity: .9; }
+.recommendation-art img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: 50% 14%; }
+.recommendation-copy { padding: clamp(34px, 6vw, 72px); }
+.recommendation-copy h2 { max-width: 650px; margin: 0 0 20px; font-size: clamp(2.05rem, 3.5vw, 3.45rem); line-height: 1.02; letter-spacing: -.065em; }
+.recommendation-copy p:not(.eyebrow) { max-width: 620px; margin: 0 0 16px; color: var(--muted); line-height: 1.62; }
+.recommendation-copy .button { max-width: 480px; margin-top: 15px; }
+
+.bonus { background: var(--surface); }
+.bonus-heading { margin-bottom: 28px; }
+.bonus-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.bonus-card { display: grid; grid-template-columns: minmax(150px, .58fr) minmax(0, 1fr); overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.bonus-card > img { width: 100%; height: 100%; min-height: 250px; object-fit: cover; }
+.bonus-copy { display: flex; flex-direction: column; padding: 25px 24px; }
+.bonus-copy h3 { margin: 0; font-size: 1.2rem; line-height: 1.12; letter-spacing: -.04em; }
+.bonus-copy p:not(.course-label) { margin: 14px 0 20px; color: var(--muted); font-size: .79rem; line-height: 1.55; }
+
+.site-footer { background: #f4f1f3; border-top: 1px solid var(--line); }
+.footer-inner { display: flex; align-items: center; gap: 22px; min-height: 110px; padding: 20px 0; }
+.footer-inner img { width: 118px; height: auto; }
+.footer-inner p { flex: 1; margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+.footer-inner a { color: var(--red); }
+
+@media (max-width: 1040px) {
+  .lesson-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .main-nav { gap: 16px; }
+}
+
+@media (max-width: 760px) {
+  html { scroll-padding-top: 68px; }
+  .container { width: min(100% - 32px, 1180px); }
+  .main-nav { display: none; }
+  .header-inner { justify-content: space-between; min-height: 60px; }
+  .header-cta { font-size: .72rem; }
+  .hero { padding-top: 14px; }
+  .hero-panel { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  .hero-copy { order: 2; padding: 38px 28px 42px; }
+  .hero h1 { font-size: clamp(2.9rem, 13.5vw, 4.25rem); }
+  .hero-subtitle { font-size: 1.16rem; }
+  .hero-lead { font-size: 1rem; }
+  .hero-art { order: 1; min-height: 310px; }
+  .hero-art-backdrop { inset: 18px 26px 0; }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); gap: 18px 0; padding: 22px 0; }
+  .proof-item { padding: 0 16px; }
+  .proof-item:nth-child(odd) { padding-left: 0; }
+  .proof-item:nth-child(-n+2) { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .proof-item:nth-child(even) { border-right: 0; }
+  .section-heading { display: block; }
+  .library-count { margin-top: 18px; }
+  .lesson-grid { grid-template-columns: 1fr; gap: 16px; }
+  .lesson-card { display: grid; grid-template-columns: minmax(132px, .42fr) minmax(0, .58fr); }
+  .lesson-media { aspect-ratio: auto; min-height: 100%; }
+  .lesson-body { padding: 15px 15px 17px; }
+  .lesson-body h3 { font-size: .95rem; }
+  .lesson-body p:not(.lesson-kicker) { font-size: .75rem; }
+  .recommendation { grid-template-columns: 1fr; }
+  .recommendation-art { min-height: 300px; }
+  .recommendation-copy { padding: 34px 26px 38px; }
+  .recommendation-copy h2 { font-size: 2.25rem; }
+  .recommendation-copy .button { width: 100%; }
+  .bonus-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .brand { width: 112px; padding: 7px 13px; }
+  .brand img { width: 86px; }
+  .header-cta { padding: 9px 11px; }
+  .hero-copy { padding-inline: 22px; }
+  .hero-art { min-height: 275px; }
+  .lesson-card { display: block; }
+  .lesson-media { width: 100%; min-height: 0; height: auto; aspect-ratio: 16 / 10; }
+  .bonus-card { grid-template-columns: 1fr; }
+  .bonus-card > img { min-height: 190px; max-height: 240px; }
+  .footer-inner { flex-wrap: wrap; justify-content: center; text-align: center; }
+  .footer-inner p { flex: 1 1 100%; order: 3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Faculdade Phorte — início">
+          <img src="https://posphorte.com.br/wp-content/uploads/2022/01/Logo_Faculdade-Phorte1.png" alt="Faculdade Phorte">
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+          <a href="#proximo-passo">Pós-graduação</a>
+          <a href="#bonus">Cursos gratuitos</a>
+          <a href="#aulas">Para empresas</a>
+          <a href="#top">Sobre a Phorte</a>
+          <a class="nav-link-active" href="#aulas">Conteúdos</a>
+        </nav>
+        <a class="header-cta" href="#aulas" aria-label="Entrar nos conteúdos">Entrar</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="top">
+        <div class="container hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Materiais gratuitos · acesso liberado</p>
+            <h1>Parabéns!</h1>
+            <p class="hero-subtitle">Seu acesso aos conteúdos já está liberado.</p>
+            <p class="hero-lead">Você acaba de liberar uma seleção de aulas gratuitas sobre Registro e Documentação Pedagógica. O conteúdo foi organizado pelo coordenador da pós-graduação, Profº. Dr. Cristiano Alcântara, para você começar hoje.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#aulas">Começar pelas aulas</a>
+              <span class="hero-note">8 aulas · gratuitas · online</span>
+            </div>
+          </div>
+          <figure class="hero-art">
+            <div class="hero-art-backdrop" aria-hidden="true"></div>
+            <img src="https://phorte.com/wp-content/uploads/2026/09/vertical-03.webp" alt="Prof. Dr. Cristiano Alcântara sorrindo, em um retrato editorial.">
+          </figure>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="O que está disponível">
+        <div class="container proof-grid">
+          <div class="proof-item"><strong>8</strong><span>aulas abertas</span></div>
+          <div class="proof-item"><strong>3</strong><span>temas para explorar</span></div>
+          <div class="proof-item"><strong>100%</strong><span>online e gratuito</span></div>
+          <div class="proof-item"><strong>agora</strong><span>acesso imediato</span></div>
+        </div>
+      </section>
+
+      <section class="library section" id="aulas">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow eyebrow-violet">Comece por onde fizer sentido</p>
+              <h2>Aulas abertas para olhar, registrar e refletir.</h2>
+              <p>Uma curadoria de conteúdos gratuitos para transformar o registro em uma prática mais consciente no cotidiano escolar.</p>
+            </div>
+            <p class="library-count">8 aulas para assistir</p>
+          </div>
+
+          <div class="lesson-grid">
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=XyV21DrAKws" target="_blank" rel="noreferrer" aria-label="Assistir: É possível ser um especialista em Registros?">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/XyV21DrAKws.webp" alt="Capa da aula É possível ser um especialista em Registros?" loading="lazy" width="480" height="360">
+                <span class="media-index">01</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 01 · Escrita e registro</p>
+                <h3>É possível ser um especialista em Registros?</h3>
+                <p>Descubra como transformar uma prática desafiadora da docência em uma especialidade que valoriza sua carreira e amplia o olhar sobre o cotidiano escolar.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=xq55HeGSACw" target="_blank" rel="noreferrer" aria-label="Assistir: Da dificuldade de escrita à produção de um diário de bordo">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/xq55HeGSACw.webp" alt="Capa da aula Da dificuldade de escrita à produção de um diário de bordo" loading="lazy" width="480" height="360">
+                <span class="media-index">02</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 02 · Escrita e registro</p>
+                <h3>Da dificuldade de escrita à produção de um diário de bordo</h3>
+                <p>Entenda como a escrita pedagógica pode deixar de ser obrigação e se tornar uma ferramenta de reflexão, ação e construção de conhecimento.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=kf6Wq7iJ5u8" target="_blank" rel="noreferrer" aria-label="Assistir: Entre o cotidiano e a reflexão: Experiências de Registrar e Documentar">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/kf6Wq7iJ5u8.webp" alt="Capa da aula Entre o cotidiano e a reflexão: Experiências de Registrar e Documentar" loading="lazy" width="480" height="360">
+                <span class="media-index">03</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 03 · Cotidiano e reflexão</p>
+                <h3>Entre o cotidiano e a reflexão: Experiências de Registrar e Documentar</h3>
+                <p>Reflita sobre como o registro e a documentação ajudam a analisar o trabalho pedagógico no cotidiano escolar.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=G_L1nB4mjMk" target="_blank" rel="noreferrer" aria-label="Assistir: Da escrita individual à construção coletiva: registro como diálogo pedagógico">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/G_L1nB4mjMk.webp" alt="Capa da aula Da escrita individual à construção coletiva: registro como diálogo pedagógico" loading="lazy" width="480" height="360">
+                <span class="media-index">04</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 04 · Cotidiano e reflexão</p>
+                <h3>Da escrita individual à construção coletiva: registro como diálogo pedagógico</h3>
+                <p>Veja como o registro pode sair do campo individual e se tornar instrumento de diálogo e construção coletiva.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=8b_ld0NZVyw" target="_blank" rel="noreferrer" aria-label="Assistir: Registrei. E agora? Como o registro transforma a prática pedagógica">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/8b_ld0NZVyw.webp" alt="Capa da aula Registrei. E agora? Como o registro transforma a prática pedagógica" loading="lazy" width="480" height="360">
+                <span class="media-index">05</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 05 · Cotidiano e reflexão</p>
+                <h3>Registrei. E agora? Como o registro transforma a prática pedagógica</h3>
+                <p>Depois de registrar, como avançar? Reflita sobre como usar o registro para interpretar o cotidiano e orientar a prática pedagógica.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=i3uFxXTsqEc" target="_blank" rel="noreferrer" aria-label="Assistir: Educação pedagógica: viver e narrar o cotidiano com os bebês e as crianças pequenas">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/i3uFxXTsqEc.webp" alt="Capa da aula Educação pedagógica: viver e narrar o cotidiano com os bebês e as crianças pequenas" loading="lazy" width="480" height="360">
+                <span class="media-index">06</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 06 · Educação Infantil</p>
+                <h3>Educação pedagógica: viver e narrar o cotidiano com os bebês e as crianças pequenas</h3>
+                <p>Um olhar sobre o cotidiano com bebês e crianças pequenas, com participação da Profa. Dra. Ana Lúcia Borges.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=DIXLb0NZvno" target="_blank" rel="noreferrer" aria-label="Assistir: O registro como possibilidade de evidenciar aprendizagens">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/DIXLb0NZvno.webp" alt="Capa da aula O registro como possibilidade de evidenciar aprendizagens" loading="lazy" width="480" height="360">
+                <span class="media-index">07</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 07 · Educação Infantil</p>
+                <h3>O registro como possibilidade de evidenciar aprendizagens</h3>
+                <p>Entenda como o registro e a documentação pedagógica evidenciam aprendizagens e fortalecem a formação contínua.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+
+            <a class="lesson-card" href="https://www.youtube.com/watch?v=q4nt1dSoeYo" target="_blank" rel="noreferrer" aria-label="Assistir: O Registro na Educação Infantil">
+              <div class="lesson-media">
+                <img src="https://phorte.com/wp-content/uploads/2026/09/q4nt1dSoeYo.webp" alt="Capa da aula O Registro na Educação Infantil" loading="lazy" width="480" height="360">
+                <span class="media-index">08</span>
+              </div>
+              <div class="lesson-body">
+                <p class="lesson-kicker">Aula 08 · Educação Infantil</p>
+                <h3>O Registro na Educação Infantil</h3>
+                <p>Converse sobre o papel do registro na Educação Infantil e como ele apoia escolhas pedagógicas mais conscientes.</p>
+                <span class="lesson-link">Assistir aula</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="next-step section" id="proximo-passo">
+        <div class="container recommendation">
+          <figure class="recommendation-art">
+            <img src="https://phorte.com/wp-content/uploads/2026/09/quadrado-30.webp" alt="Prof. Dr. Cristiano Alcântara em um retrato editorial sobre registro e reflexão." loading="lazy" width="600" height="600">
+          </figure>
+          <div class="recommendation-copy">
+            <p class="eyebrow eyebrow-violet">Continue a jornada</p>
+            <h2>Se o tema faz parte da sua rotina, aprofunde.</h2>
+            <p>Registrar não é apenas guardar lembranças: é observar melhor, interpretar o cotidiano e tomar decisões pedagógicas mais intencionais.</p>
+            <p>Na pós-graduação em Registro e Documentação Pedagógica, você aprofunda esse olhar com uma formação conectada à prática e à realidade da escola.</p>
+            <a class="button button-primary" href="https://posphorte.com.br/pos-graduacao/registro-e-documentacao-pedagogica-2/?utm_source=materiaisgratuitos&utm_medium=paginademateriaisderegistromanychat&utm_campaign=posemregistro&utm_id=posemregistro&utm_term=paginademateriaisderegistromanychat&utm_content=paginademateriaisderegistromanychat" target="_blank" rel="noreferrer">Conhecer a pós-graduação</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus section" id="bonus">
+        <div class="container">
+          <div class="section-heading bonus-heading">
+            <div>
+              <p class="eyebrow eyebrow-violet">Próximos conteúdos</p>
+              <h2>Continue aprendendo, no seu ritmo.</h2>
+              <p>Dois cursos gratuitos para ampliar seu repertório e levar novas ideias para a prática.</p>
+            </div>
+          </div>
+          <div class="bonus-grid">
+            <article class="bonus-card">
+              <img src="https://phorte.com/wp-content/uploads/2026/09/quadrado-26.webp" alt="Criança explorando blocos coloridos." loading="lazy" width="520" height="520">
+              <div class="bonus-copy">
+                <p class="course-label">Curso gratuito · online</p>
+                <h3>Contribuições de neurociência para o desenvolvimento entre 0 e 3 anos</h3>
+                <p>Com aulas gravadas e acesso online, você aprende como a neurociência pode contribuir para o desenvolvimento de bebês e crianças de 0 a 3 anos.</p>
+                <a class="lesson-link" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/contribuicoes-de-neurociencia-para-o-desenvolvimento-entre-0-e-3-anos/701/1" target="_blank" rel="noreferrer">Conhecer curso</a>
+              </div>
+            </article>
+            <article class="bonus-card">
+              <img src="https://phorte.com/wp-content/uploads/2026/09/quadrado-27.webp" alt="Professora acompanhando crianças em uma atividade com blocos." loading="lazy" width="520" height="520">
+              <div class="bonus-copy">
+                <p class="course-label">Curso gratuito · online</p>
+                <h3>Aplicações da psicomotricidade na prática educacional</h3>
+                <p>Aprenda a integrar a psicomotricidade ao contexto pedagógico com uma base teórica sólida e aplicável à rotina educacional.</p>
+                <a class="lesson-link" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/aplicacao-da-psicomotricidade-na-pratica-educacional/1166/1" target="_blank" rel="noreferrer">Conhecer curso</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="https://posphorte.com.br/wp-content/uploads/2022/01/Logo_Faculdade-Phorte1.png" alt="Faculdade Phorte" width="160" height="79">
+        <p>Conteúdos gratuitos para transformar observação em reflexão e prática pedagógica.</p>
+        <a href="#top">Voltar ao início</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
