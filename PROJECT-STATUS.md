@@ -6,7 +6,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ## Estrutura Atual e Categorias
 
-- `Graduacao/`: Graduação Phorte (`pedagogia`, `aula-inaugural-gestao`, `bolsas sociais`, `bolsas sociais Escola Aberta`, `prototipo-pricecard`).
+- `Graduacao/`: Graduação Phorte (`pedagogia`, `traducao e interpretacao`, `aula-inaugural-gestao`, `bolsas sociais`, `bolsas sociais Escola Aberta`, `prototipo-pricecard`).
 - `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`).
 - `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`).
 - `USCS/`: Parceria USCS (`formacao-em-futebol-e-futsal`, `prototipo-price-card`).
@@ -19,10 +19,12 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estados e Prioridades Atuais
 
 ### Em Andamento & Destaques
-1. **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
-2. **Bolsas Sociais (Escola Aberta)** — Processo seletivo de bolsas em parceria com a Escola Aberta (RH, Processos Gerenciais e Marketing) em desenvolvimento.
+1. **Graduação em Tradução e Interpretação** — Landing page principal de Tradução e Interpretação Português / Inglês (Turma 2027.1), pacote Elementor e documentação de implementação.
 
 ### Concluídos & Publicados
+- **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
+- **Bolsas Sociais (Escola Aberta)** — Processo seletivo de bolsas em parceria com a Escola Aberta (RH, Processos Gerenciais e Marketing).
+- **Medicina do Esporte (Grade de professores)** — Protótipo de carrossel do corpo docente e responsividade.
 - **Bolsas Sociais (Graduação Phorte)** — Processo seletivo para bolsas sociais de até 100% (Administração, RH, Processos Gerenciais e Marketing).
 - **Graduação em Pedagogia** — Versões 2026-2 e 2027-1 semipresencial, versão Design System e versão escura histórica.
 - **Educação Infantil (Perspectiva Pikleriana)** — Landing page principal e página de agradecimento com grupo VIP WhatsApp.
