@@ -1,0 +1,1152 @@
+/*
+ * Graduação em Tradução e Interpretação — Faculdade Phorte
+ * CSS compartilhado pelo preview e pelos widgets HTML do Elementor.
+ * Todos os componentes são escopados ao wrapper da página para evitar
+ * colisões com tema, header e widgets globais do WordPress.
+ */
+
+.phorte-traducao-interpretacao-2027-1 {
+  --ti-red: #c92d2d;
+  --ti-wine: #8f1f1f;
+  --ti-yellow: #f5c542;
+  --ti-yellow-dark: #a56d00;
+  --ti-ink: #1f1f1f;
+  --ti-muted: #626262;
+  --ti-paper: #ffffff;
+  --ti-mist: #f7f5f2;
+  --ti-line: #e8e4df;
+  --ti-soft-red: #fceeee;
+  --ti-soft-yellow: #fff9e4;
+  --ti-radius: 20px;
+  --ti-max: 1180px;
+  --ti-title: 'Montserrat', Arial, sans-serif;
+  --ti-body: 'Inter', Arial, sans-serif;
+
+  color: var(--ti-ink);
+  background: var(--ti-paper);
+  font-family: var(--ti-body);
+  line-height: 1.55;
+  overflow: clip;
+}
+
+.phorte-traducao-interpretacao-2027-1,
+.phorte-traducao-interpretacao-2027-1 *,
+.phorte-traducao-interpretacao-2027-1 *::before,
+.phorte-traducao-interpretacao-2027-1 *::after {
+  box-sizing: border-box;
+}
+
+.phorte-traducao-interpretacao-2027-1 :where(h1, h2, h3, p, ul, ol, figure) {
+  margin-block-start: 0;
+}
+
+.phorte-traducao-interpretacao-2027-1 :where(a, button, input, select, textarea, summary) {
+  font: inherit;
+}
+
+.phorte-traducao-interpretacao-2027-1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 img {
+  display: block;
+  max-width: 100%;
+}
+
+.phorte-traducao-interpretacao-2027-1 button,
+.phorte-traducao-interpretacao-2027-1 summary {
+  cursor: pointer;
+}
+
+.phorte-traducao-interpretacao-2027-1 :where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 3px solid rgba(245, 197, 66, .95);
+  outline-offset: 3px;
+}
+
+.phorte-traducao-interpretacao-2027-1 :where(section, [id]) {
+  scroll-margin-top: 24px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-container {
+  width: min(var(--ti-max), calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-skip-link {
+  position: absolute;
+  z-index: 20;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--ti-ink);
+  transform: translateY(-150%);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-skip-link:focus {
+  transform: translateY(0);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-overline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ti-red);
+  font: 700 .76rem/1.2 var(--ti-title);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-overline::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
+
+.phorte-traducao-interpretacao-2027-1 :where(h1, h2, h3) {
+  font-family: var(--ti-title);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+
+.phorte-traducao-interpretacao-2027-1 h1 {
+  font-size: clamp(2.1rem, 4.4vw, 4.15rem);
+}
+
+.phorte-traducao-interpretacao-2027-1 h2 {
+  font-size: clamp(1.8rem, 3.1vw, 3rem);
+}
+
+.phorte-traducao-interpretacao-2027-1 h3 {
+  font-size: 1.12rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 p {
+  color: var(--ti-muted);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  font: 700 .9rem/1.2 var(--ti-title);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button:hover {
+  transform: translateY(-2px);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button-primary {
+  color: var(--ti-ink);
+  background: var(--ti-yellow);
+  border-color: var(--ti-yellow);
+  box-shadow: 0 12px 24px rgba(245, 197, 66, .28);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button-primary:hover {
+  color: #fff;
+  background: var(--ti-red);
+  border-color: var(--ti-red);
+  box-shadow: 0 14px 30px rgba(201, 45, 45, .25);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button-outline {
+  color: var(--ti-red);
+  background: transparent;
+  border-color: rgba(201, 45, 45, .55);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-button-outline:hover {
+  color: #fff;
+  background: var(--ti-red);
+  border-color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-arrow {
+  font-size: 1.25em;
+  line-height: 0;
+}
+
+/* Hero */
+.phorte-traducao-interpretacao-2027-1 .ti-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 38px 0 58px;
+  background: linear-gradient(135deg, #fff 45%, #fff9e8 100%);
+  border-bottom: 1px solid var(--ti-line);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero::before {
+  position: absolute;
+  top: -220px;
+  right: -120px;
+  width: 520px;
+  height: 520px;
+  border: 1px solid rgba(201, 45, 45, .12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 42px rgba(201, 45, 45, .035), 0 0 0 84px rgba(201, 45, 45, .025);
+  content: '';
+  pointer-events: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+  color: #9a938c;
+  font-size: .79rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-crumbs a:hover {
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-crumbs strong {
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(360px, .98fr);
+  gap: clamp(32px, 5vw, 76px);
+  align-items: center;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-copy .ti-overline {
+  margin-bottom: 18px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-copy h1 {
+  max-width: 720px;
+  margin-bottom: 18px;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-copy h1 span {
+  display: block;
+  margin-top: 14px;
+  color: var(--ti-red);
+  font-size: clamp(1.08rem, 1.7vw, 1.48rem);
+  line-height: 1.28;
+  letter-spacing: -.01em;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-lead {
+  max-width: 620px;
+  margin-bottom: 24px;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.7;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-price {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding: 15px 20px;
+  border: 1px solid rgba(201, 45, 45, .24);
+  border-left: 5px solid var(--ti-red);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 8px 24px rgba(201, 45, 45, .08);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-price del {
+  color: #918a83;
+  font-size: .86rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-price strong {
+  font: 800 clamp(2rem, 3.4vw, 2.8rem)/1 var(--ti-title);
+  letter-spacing: -.04em;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-price small {
+  color: var(--ti-muted);
+  font-weight: 700;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-mec-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border: 1px solid rgba(245, 197, 66, .78);
+  border-radius: 999px;
+  color: var(--ti-ink);
+  background: var(--ti-soft-yellow);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-mec-badge::before {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ti-yellow-dark);
+  content: '';
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-visual {
+  position: relative;
+  min-height: 510px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--ti-mist);
+  box-shadow: 0 28px 62px rgba(31, 31, 31, .16);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 510px;
+  object-fit: cover;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-visual::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(20, 20, 20, .02), rgba(20, 20, 20, .26));
+  content: '';
+  pointer-events: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: calc(100% - 36px);
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, .16);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--ti-ink);
+  background: var(--ti-yellow);
+  font: 800 .82rem var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge strong,
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge span {
+  display: block;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge strong {
+  font: 800 .92rem var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge span {
+  color: var(--ti-muted);
+  font-size: .72rem;
+}
+
+/* Facts */
+.phorte-traducao-interpretacao-2027-1 .ti-facts {
+  border-top: 5px solid var(--ti-yellow);
+  color: #fff;
+  background: linear-gradient(135deg, var(--ti-wine), var(--ti-red));
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-facts-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-fact {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding: 18px 16px;
+  border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-fact:last-child {
+  border-right: 0;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-fact strong {
+  font: 800 .88rem var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-fact span {
+  color: #ffe9a0;
+  font-size: .73rem;
+}
+
+/* Shared sections */
+.phorte-traducao-interpretacao-2027-1 .ti-section {
+  padding: clamp(56px, 7vw, 92px) 0;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-section-mist {
+  background: var(--ti-mist);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-section-dark {
+  color: #fff;
+  background: #241f1d;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-overline-light {
+  color: var(--ti-yellow);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-heading-light {
+  color: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-copy-light {
+  color: #ddd2cb;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-section-head {
+  max-width: 760px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-section-head h2 {
+  margin: 12px 0 14px;
+  color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-section-head p {
+  font-size: 1.03rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-two-column {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, .86fr);
+  gap: clamp(32px, 6vw, 84px);
+  align-items: center;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-copy h2 {
+  margin: 12px 0 18px;
+  color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-copy p {
+  margin-bottom: 16px;
+  font-size: 1.03rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-list {
+  display: grid;
+  gap: 13px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--ti-muted);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-list li::before {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ti-red);
+  background: var(--ti-soft-red);
+  content: '✓';
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-image-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  border-radius: var(--ti-radius);
+  background: #e9e0d7;
+  box-shadow: 0 20px 44px rgba(31, 31, 31, .12);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-image-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  object-fit: cover;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-image-card figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(31, 31, 31, .78);
+  font-size: .8rem;
+}
+
+/* Why / career cards */
+.phorte-traducao-interpretacao-2027-1 .ti-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-card {
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  padding: 24px;
+  border: 1px solid rgba(201, 45, 45, .15);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .045);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-card-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 18px;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--ti-red);
+  background: var(--ti-soft-red);
+  font-size: 1.18rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-card h3 {
+  margin-bottom: 8px;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-card p {
+  margin: 0;
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-career-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-career-card {
+  padding: 22px;
+  border-top: 4px solid var(--ti-yellow);
+  border-radius: 14px;
+  color: #fff;
+  background: #302927;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-career-card h3 {
+  margin-bottom: 8px;
+  color: var(--ti-yellow);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-career-card p {
+  margin: 0;
+  color: #ddd2cb;
+  font-size: .91rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-practice-card {
+  padding: 26px;
+  border-top: 4px solid var(--ti-yellow);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .05);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-practice-card h3 {
+  margin-bottom: 10px;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-practice-card p {
+  margin: 0;
+  font-size: .91rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-profile-panel {
+  padding: 28px;
+  border-radius: 18px;
+  background: var(--ti-soft-yellow);
+  box-shadow: inset 0 0 0 1px rgba(245, 197, 66, .48);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-profile-panel h3 {
+  margin-bottom: 15px;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-profile-panel .ti-list {
+  margin-top: 0;
+}
+
+/* Course routine */
+.phorte-traducao-interpretacao-2027-1 .ti-routine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-routine-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid rgba(201, 45, 45, .16);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .05);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-routine-label {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--ti-red);
+  font: 800 .76rem var(--ti-title);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-routine-card h3 {
+  margin-bottom: 10px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-routine-card p {
+  margin-bottom: 14px;
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-routine-note {
+  margin-top: auto;
+  padding: 9px 11px;
+  border: 1px solid rgba(245, 197, 66, .7);
+  border-radius: 8px;
+  color: #7b5100;
+  background: var(--ti-soft-yellow);
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-callout {
+  max-width: 900px;
+  margin: 32px auto 0;
+  padding: 18px 22px;
+  border-left: 4px solid var(--ti-red);
+  border-radius: 0 12px 12px 0;
+  color: var(--ti-wine);
+  background: var(--ti-soft-red);
+  font-size: .94rem;
+}
+
+/* Curriculum */
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum {
+  display: grid;
+  gap: 12px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum details {
+  overflow: hidden;
+  border: 1px solid var(--ti-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 60px;
+  padding: 16px 20px;
+  color: var(--ti-ink);
+  font: 800 .95rem var(--ti-title);
+  list-style: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum summary::-webkit-details-marker {
+  display: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum summary::after {
+  color: var(--ti-red);
+  content: '+';
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum details[open] summary::after {
+  content: '−';
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-curriculum details[open] summary {
+  border-bottom: 1px solid var(--ti-line);
+  color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-subjects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 28px;
+  margin: 0;
+  padding: 18px 24px 22px 42px;
+  color: var(--ti-muted);
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-subjects li::marker {
+  color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-expand-row {
+  margin: 18px auto 0;
+  text-align: center;
+}
+
+/* Faculty */
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card {
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  padding: 23px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .06);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card h3 {
+  margin-bottom: 5px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-role {
+  margin-bottom: 13px;
+  color: var(--ti-red);
+  font: 700 .73rem var(--ti-title);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card p:last-child {
+  margin-bottom: 0;
+  font-size: .87rem;
+}
+
+/* Enrollment */
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment {
+  color: #fff;
+  background: linear-gradient(135deg, var(--ti-wine), var(--ti-red));
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .86fr) minmax(360px, 1.14fr);
+  gap: clamp(30px, 5vw, 70px);
+  align-items: center;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment .ti-overline,
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment h2 {
+  color: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment h2 {
+  margin: 13px 0 16px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-copy > p {
+  color: #ffe5d8;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  margin: 20px 0 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  color: var(--ti-ink);
+  background: var(--ti-yellow);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-price strong {
+  font: 800 2.28rem/1 var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-price span {
+  font-weight: 800;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-note {
+  display: block;
+  color: #ffe5d8;
+  font-size: .78rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-enrollment-form {
+  padding: clamp(23px, 4vw, 34px);
+  border-radius: 18px;
+  color: var(--ti-ink);
+  background: #fff;
+  box-shadow: 0 20px 44px rgba(31, 31, 31, .18);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-intro h3 {
+  margin-bottom: 7px;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-intro p {
+  margin-bottom: 20px;
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-grid label {
+  display: grid;
+  gap: 6px;
+  color: var(--ti-ink);
+  font-size: .79rem;
+  font-weight: 700;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-grid :where(input, select) {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #cfc8c2;
+  border-radius: 9px;
+  color: var(--ti-ink);
+  background: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-grid :where(input, select):focus {
+  border-color: var(--ti-red);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-submit {
+  width: 100%;
+  margin-top: 2px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-disclaimer {
+  margin: 14px 0 0;
+  color: #77706a;
+  font-size: .72rem;
+  line-height: 1.45;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-form-success {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  color: #166534;
+  background: #ecfdf5;
+  font-size: .86rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 [hidden] {
+  display: none !important;
+}
+
+/* FAQ + footer */
+.phorte-traducao-interpretacao-2027-1 .ti-faq {
+  display: grid;
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq details {
+  border-bottom: 1px solid var(--ti-line);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 4px;
+  color: var(--ti-ink);
+  font: 800 1rem var(--ti-title);
+  list-style: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq summary::after {
+  color: var(--ti-red);
+  content: '+';
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq details[open] summary::after {
+  content: '−';
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faq details > p {
+  max-width: 780px;
+  margin: 0 38px 18px 4px;
+  font-size: .92rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-footer {
+  padding: 34px 0 46px;
+  color: #d9cbc4;
+  background: #241f1d;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-footer strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font: 800 1rem var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-footer p {
+  margin: 0;
+  color: #d9cbc4;
+  font-size: .84rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-footer a {
+  color: var(--ti-yellow);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-mobile-cta {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-two-column,
+  .phorte-traducao-interpretacao-2027-1 .ti-enrollment-grid {
+    gap: 34px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr);
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-visual,
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-visual img {
+    min-height: 440px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-card-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .phorte-traducao-interpretacao-2027-1 .ti-container {
+    width: min(100% - 36px, var(--ti-max));
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero {
+    padding: 27px 0 44px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-crumbs {
+    margin-bottom: 26px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-two-column,
+  .phorte-traducao-interpretacao-2027-1 .ti-enrollment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-copy h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-copy h1 span {
+    font-size: 1.12rem;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-price {
+    gap: 8px;
+    padding-inline: 14px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-price strong {
+    font-size: 2rem;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-actions .ti-button {
+    width: 100%;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-visual,
+  .phorte-traducao-interpretacao-2027-1 .ti-hero-visual img {
+    min-height: 390px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-fact {
+    min-height: 90px;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-fact:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-fact:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-section {
+    padding: 54px 0;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-section-head {
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-section-head h2 {
+    margin-top: 10px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-section-head p {
+    font-size: .97rem;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-image-card,
+  .phorte-traducao-interpretacao-2027-1 .ti-image-card img {
+    min-height: 310px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-card-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-career-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-routine,
+  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-card,
+  .phorte-traducao-interpretacao-2027-1 .ti-routine-card,
+  .phorte-traducao-interpretacao-2027-1 .ti-faculty-card {
+    min-height: auto;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-subjects {
+    grid-template-columns: 1fr;
+    padding-left: 38px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-enrollment-form {
+    padding: 23px 18px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-mobile-cta {
+    position: fixed;
+    z-index: 10;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    min-height: 52px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    color: var(--ti-ink);
+    background: var(--ti-yellow);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .2);
+    font: 800 .86rem var(--ti-title);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .phorte-traducao-interpretacao-2027-1 *,
+  .phorte-traducao-interpretacao-2027-1 *::before,
+  .phorte-traducao-interpretacao-2027-1 *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

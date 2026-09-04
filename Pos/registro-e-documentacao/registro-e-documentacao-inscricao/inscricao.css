@@ -1,0 +1,139 @@
+.signup-page { background: var(--canvas); }
+.signup-page main { overflow: hidden; }
+.signup-page .site-header { position: sticky; }
+
+.signup-hero { padding: 28px 0 64px; background: var(--surface); }
+.signup-hero-panel { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, .74fr); gap: clamp(28px, 4vw, 56px); align-items: start; overflow: hidden; padding: clamp(34px, 4vw, 56px) clamp(34px, 6vw, 88px); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.signup-hero-panel::before { position: absolute; inset: 0 auto 0 0; width: 9px; content: ''; background: var(--red); }
+.signup-hero-copy { display: flex; flex-direction: column; justify-content: center; align-self: center; max-width: 660px; }
+.signup-hero h1 { max-width: 650px; margin: 0; font-size: clamp(2.55rem, 3.6vw, 4rem); line-height: .99; letter-spacing: -.065em; }
+.signup-hero h1 span, .instructor-copy h2 span { color: var(--violet); }
+.signup-hero-lead { max-width: 640px; margin: 20px 0 0; color: var(--muted); font-size: clamp(1rem, 1.45vw, 1.14rem); line-height: 1.6; }
+.signup-benefits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px 22px; max-width: 620px; margin: 30px 0 0; padding: 0; list-style: none; }
+.signup-benefits li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; align-items: start; color: var(--ink); font-size: .88rem; line-height: 1.48; }
+.benefit-index { display: grid; place-items: center; width: 27px; height: 27px; color: var(--violet); background: var(--violet-soft); border: 1px solid #ddd5ff; border-radius: 50%; font-size: .61rem; font-weight: 800; }
+.signup-microcopy { margin: 22px 0 0; color: var(--muted); font-size: .78rem; }
+.signup-microcopy strong { color: var(--ink); }
+
+.signup-form-card { align-self: center; padding: clamp(22px, 2.6vw, 30px); background: var(--paper); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); }
+.form-heading h2 { max-width: 360px; margin: 0; font-size: clamp(1.75rem, 2.6vw, 2.25rem); line-height: 1.04; letter-spacing: -.06em; }
+.form-intro { max-width: 360px; margin: 10px 0 18px; color: var(--muted); font-size: .76rem; line-height: 1.45; }
+.form-field, .challenge-field { margin: 0 0 10px; }
+.form-field label, .challenge-field > label { display: block; margin-bottom: 4px; color: var(--ink); font-size: .7rem; font-weight: 700; }
+.form-field label span, .challenge-field label span { color: var(--red); }
+.form-field input, .form-field select, .challenge-row input { width: 100%; min-height: 42px; padding: 9px 12px; color: var(--ink); background: #fff; border: 1px solid #d9d7df; border-radius: 7px; font: inherit; font-size: .76rem; outline: none; transition: border-color .2s ease, box-shadow .2s ease; }
+.form-field input::placeholder, .challenge-row input::placeholder { color: #8b8794; }
+.form-field input:focus, .form-field select:focus, .challenge-row input:focus { border-color: var(--violet); box-shadow: 0 0 0 3px rgba(110, 69, 216, .14); }
+.challenge-row { display: grid; grid-template-columns: minmax(0, .85fr) minmax(118px, 1fr); gap: 10px; }
+.challenge-question { display: grid; place-items: center; min-height: 42px; color: var(--violet); background: var(--violet-soft); border: 1px solid #ddd5ff; border-radius: 7px; font-size: .78rem; font-weight: 800; letter-spacing: .02em; }
+.button-submit { width: 100%; margin-top: 2px; }
+.form-legal { margin: 11px 0 0; color: var(--muted); font-size: .61rem; line-height: 1.45; }
+.form-legal a { color: var(--red); font-weight: 700; }
+.form-status { min-height: 20px; margin: 10px 0 0; color: var(--red-dark); font-size: .7rem; font-weight: 700; }
+.button-submit:disabled { cursor: wait; opacity: .68; }
+
+/* RD Station embed: preserve the official form fields inside the Phorte card. */
+.rdstation-form-wrap { width: 100%; margin-top: 4px; }
+.rdstation-form-wrap [role="main"] { width: 100%; font-family: 'Poppins', Arial, sans-serif !important; }
+.rdstation-form-wrap [role="main"] .bricks--component-embeddable-form,
+.rdstation-form-wrap [role="main"] .bricks--section,
+.rdstation-form-wrap [role="main"] .bricks--row,
+.rdstation-form-wrap [role="main"] .bricks--column,
+.rdstation-form-wrap [role="main"] .bricks--column > div,
+.rdstation-form-wrap [role="main"] .bricks-form,
+.rdstation-form-wrap [role="main"] .bricks-form form { width: 100% !important; max-width: none !important; min-height: 0 !important; margin: 0 !important; padding: 0 !important; background: transparent !important; }
+.rdstation-form-wrap [role="main"] * { font-family: 'Poppins', Arial, sans-serif !important; box-sizing: border-box; }
+.rdstation-form-wrap [role="main"] .bricks-form__field { display: flex !important; flex-direction: column !important; width: 100% !important; height: auto !important; min-height: 0 !important; margin: 0 0 8px !important; padding: 0 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__label { display: block !important; width: auto !important; height: auto !important; margin: 0 0 3px !important; padding: 0 !important; color: var(--ink) !important; font-size: .65rem !important; font-weight: 700 !important; line-height: 1.25 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__input { display: block !important; width: 100% !important; height: 40px !important; min-height: 40px !important; margin: 0 !important; padding: 8px 12px !important; color: var(--ink) !important; background: #fff !important; border: 1px solid #d9d7df !important; border-radius: 7px !important; font-size: .74rem !important; line-height: 1.3 !important; outline: none !important; box-shadow: none !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__input::placeholder { color: #8b8794 !important; opacity: 1 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__input:focus { border-color: var(--violet) !important; box-shadow: 0 0 0 3px rgba(110, 69, 216, .14) !important; }
+.rdstation-form-wrap [role="main"] .phone-input-group { display: grid !important; grid-template-columns: 47px minmax(0, 1fr); gap: 8px; width: 100%; }
+.rdstation-form-wrap [role="main"] .phone-input-group > .form-control.phone-country:not(.select2-container),
+.rdstation-form-wrap [role="main"] .phone-input-group > .country-field { display: none !important; }
+.rdstation-form-wrap [role="main"] .phone-input-group .bricks-form__input { grid-column: 2; }
+.rdstation-form-wrap [role="main"] .select2-container.form-control.phone-country { display: block !important; grid-column: 1; width: 47px !important; height: 40px !important; margin: 0 !important; background: #fff !important; border: 1px solid #d9d7df !important; border-radius: 7px !important; }
+.rdstation-form-wrap [role="main"] .select2-choice { display: flex !important; align-items: center; justify-content: center; width: 100% !important; height: 38px !important; padding: 0 !important; color: var(--ink) !important; background: transparent !important; border: 0 !important; border-radius: 7px !important; box-shadow: none !important; }
+.rdstation-form-wrap [role="main"] .select2-choice .flag { width: 23px !important; height: auto !important; }
+.rdstation-form-wrap [role="main"] .select2-choice .select2-arrow { position: static !important; width: 12px !important; height: auto !important; margin-left: 2px !important; background: transparent !important; border: 0 !important; }
+.rdstation-form-wrap [role="main"] .select2-choice .select2-arrow b { display: block !important; width: 0 !important; height: 0 !important; margin: 0 auto !important; border-top: 5px solid var(--muted) !important; border-right: 4px solid transparent !important; border-left: 4px solid transparent !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__field:has(.js-field-cf_voce_tem_interesse_em_ser_um_especialista_em_registro) { padding: 10px 12px !important; background: var(--violet-soft) !important; border: 1px solid #ddd5ff !important; border-radius: 8px !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__field:has(.js-field-cf_voce_tem_interesse_em_ser_um_especialista_em_registro) > .bricks-form__label { margin-bottom: 6px !important; font-size: .68rem !important; line-height: 1.3 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__field__option { display: block !important; width: 100% !important; height: auto !important; min-height: 20px !important; margin: 0 !important; padding: 0 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__field__option .bricks-form__label { display: inline-block !important; margin: 0 0 0 6px !important; color: var(--muted) !important; font-size: .67rem !important; font-weight: 500 !important; line-height: 1.3 !important; vertical-align: middle; }
+.rdstation-form-wrap [role="main"] .bricks-form__field__option__input { display: inline-block !important; width: 14px !important; height: 14px !important; min-height: 14px !important; margin: 0 !important; accent-color: var(--violet); vertical-align: middle; }
+.rdstation-form-wrap [role="main"] .bricks-form__privacy { margin-top: -2px !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__privacy .bricks-form__field__option .bricks-form__label { color: var(--ink) !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__terms { margin-top: 0 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__terms .bricks-form__static { width: 100% !important; height: auto !important; color: var(--muted) !important; font-size: .57rem !important; line-height: 1.4 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__terms .bricks-form__static > div { height: auto !important; color: inherit !important; font-size: inherit !important; line-height: inherit !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__terms a { color: var(--red) !important; font-weight: 700 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__submit { display: block !important; width: 100% !important; height: auto !important; margin: 0 !important; padding: 0 !important; }
+.rdstation-form-wrap [role="main"] .bricks-form__submit .rd-button,
+.rdstation-form-wrap [role="main"] .bricks-form__submit button { display: inline-flex !important; align-items: center; justify-content: center; width: 100% !important; height: 46px !important; min-height: 46px !important; margin: 2px 0 0 !important; padding: 12px 19px !important; color: #fff !important; background: var(--red) !important; border: 1px solid transparent !important; border-radius: 8px !important; box-shadow: 0 10px 22px rgba(216, 43, 57, .16) !important; font-size: .78rem !important; font-weight: 800 !important; line-height: 1.2 !important; cursor: pointer; }
+.rdstation-form-wrap [role="main"] .bricks-form__submit button:hover,
+.rdstation-form-wrap [role="main"] .bricks-form__submit button:focus-visible { background: var(--red-dark) !important; }
+.rdstation-form-wrap [role="main"] .bricks--component-text.rd-text { width: 100% !important; height: auto !important; margin-top: 9px !important; color: var(--muted) !important; font-size: .57rem !important; line-height: 1.4 !important; }
+.rdstation-form-wrap [role="main"] .bricks--component-text.rd-text > div { color: inherit !important; font-size: inherit !important; line-height: inherit !important; }
+
+.signup-proof .proof-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.context-section { padding: clamp(76px, 9vw, 120px) 0; background: var(--surface); }
+.context-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(290px, .9fr); gap: clamp(36px, 8vw, 110px); align-items: center; }
+.context-copy { max-width: 690px; }
+.context-copy h2, .instructor-copy h2, .signup-final h2 { max-width: 680px; margin: 0 0 22px; font-size: clamp(2.2rem, 4vw, 4.15rem); line-height: 1.02; letter-spacing: -.065em; }
+.context-copy p:not(.eyebrow), .instructor-copy p:not(.eyebrow) { max-width: 650px; margin: 0 0 17px; color: var(--muted); font-size: .91rem; line-height: 1.7; }
+.context-art { position: relative; margin: 0; padding: 20px; background: var(--violet-soft); border-radius: 50% 50% 10px 10px; }
+.context-art img { width: 100%; height: auto; border-radius: 50%; }
+.context-art figcaption { max-width: 260px; margin: 15px auto 0; color: var(--violet); font-size: .7rem; font-weight: 700; line-height: 1.45; text-align: center; }
+
+.instructor-section { padding: clamp(76px, 9vw, 120px) 0; background: var(--paper); }
+.instructor-grid { display: grid; grid-template-columns: minmax(300px, .78fr) minmax(0, 1.22fr); gap: clamp(38px, 8vw, 110px); align-items: center; }
+.instructor-art { position: relative; align-self: stretch; min-height: 470px; margin: 0; overflow: hidden; background: var(--violet-soft); border-radius: var(--radius); }
+.instructor-art::after { position: absolute; right: -95px; bottom: -110px; width: 270px; height: 270px; content: ''; background: var(--yellow); border-radius: 50%; }
+.instructor-art img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+.instructor-copy h2 { margin-bottom: 20px; }
+.instructor-copy .button { margin-top: 10px; }
+
+.signup-final { padding: clamp(60px, 7vw, 90px) 0; background: var(--surface); border-top: 1px solid var(--line); }
+.signup-final-inner { display: flex; align-items: end; justify-content: space-between; gap: 36px; }
+.signup-final h2 { max-width: 620px; margin-bottom: 14px; font-size: clamp(2rem, 3.5vw, 3.6rem); }
+.signup-final p:not(.eyebrow) { max-width: 570px; margin: 0; color: var(--muted); font-size: .91rem; line-height: 1.6; }
+.signup-final .button { flex: 0 0 auto; }
+
+@media (max-width: 1040px) {
+  .signup-hero-panel { grid-template-columns: minmax(0, 1fr) minmax(320px, .78fr); gap: 28px; padding-inline: 42px 34px; }
+  .signup-hero h1 { font-size: clamp(2.55rem, 4.5vw, 3.7rem); }
+  .signup-form-card { padding: 26px; }
+  .context-grid, .instructor-grid { gap: 40px; }
+}
+
+@media (max-width: 760px) {
+  .signup-hero { padding: 14px 0 44px; }
+  .signup-hero-panel { grid-template-columns: 1fr; gap: 34px; padding: 36px 24px 28px 30px; }
+  .signup-hero h1 { font-size: clamp(2.55rem, 11.5vw, 4rem); }
+  .signup-hero-lead { font-size: .94rem; }
+  .signup-benefits { margin-top: 24px; }
+  .signup-benefits { grid-template-columns: 1fr; }
+  .signup-form-card { padding: 25px 21px 24px; }
+  .signup-proof .proof-grid { grid-template-columns: 1fr; gap: 0; padding: 22px 0; }
+  .signup-proof .proof-item { padding: 0 0 14px; border-right: 0; border-bottom: 1px solid var(--line); }
+  .signup-proof .proof-item + .proof-item { padding-top: 14px; }
+  .signup-proof .proof-item:last-child { padding-bottom: 0; border-bottom: 0; }
+  .context-grid, .instructor-grid { grid-template-columns: 1fr; }
+  .context-art { max-width: 430px; margin: 0 auto; }
+  .instructor-art { min-height: 420px; }
+  .context-copy h2, .instructor-copy h2 { font-size: 2.45rem; }
+  .signup-final-inner { display: block; }
+  .signup-final .button { width: 100%; margin-top: 28px; }
+}
+
+@media (max-width: 480px) {
+  .signup-hero-panel { padding-right: 19px; }
+  .signup-hero h1 { font-size: clamp(2.3rem, 11.5vw, 3.4rem); }
+  .signup-hero-lead { font-size: .9rem; }
+  .challenge-row { grid-template-columns: 1fr; }
+  .challenge-question { min-height: 38px; }
+  .context-copy h2, .instructor-copy h2, .signup-final h2 { font-size: 2.15rem; }
+  .instructor-art { min-height: 360px; }
+}
