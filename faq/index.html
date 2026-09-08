@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tire suas dúvidas sobre os cursos, formações, eventos e jornadas de aprendizagem da Phorte." />
+    <link rel="canonical" href="https://phorte.com/faq/" />
+    <title>FAQ dos Cursos | Phorte</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e64242'/%3E%3Ctext x='16' y='23' fill='white' font-family='Arial' font-size='22' text-anchor='middle'%3Ep%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      :root {
+        --red: #e64242;
+        --red-dark: #b91c1c;
+        --red-wash: #fff5f5;
+        --ink: #18191b;
+        --ink-light: #2c2e33;
+        --muted: #5e6470;
+        --line: #e7e9ed;
+        --line-soft: #f0f2f5;
+        --surface: #fff;
+        --surface-subtle: #f8f9fb;
+        --yellow: #f5c542;
+        --green: #13b241;
+        --radius: 12px;
+        --radius-lg: 18px;
+        --shadow-sm: 0 2px 8px rgba(24, 25, 27, 0.04);
+        --shadow-md: 0 12px 30px rgba(24, 25, 27, 0.08);
+        --font-title: 'Outfit', sans-serif;
+        --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; }
+      html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fafafb;
+        font-family: var(--font-body);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      button, input { font: inherit; }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      :focus-visible { outline: 3px solid rgba(230, 66, 66, 0.34); outline-offset: 3px; }
+      .skip-link {
+        position: fixed;
+        z-index: 50;
+        top: -100px;
+        left: 16px;
+        padding: 10px 14px;
+        color: #fff;
+        background: var(--ink);
+        border-radius: 8px;
+        font-size: .82rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .skip-link:focus { top: 16px; }
+
+      /* Content wrapper */
+      .container { width: min(1200px, calc(100% - 48px)); margin: 0 auto; }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: clamp(64px, 8vw, 100px) 0 82px;
+        background:
+          radial-gradient(circle at 88% 16%, rgba(230,66,66,.13), transparent 22rem),
+          linear-gradient(180deg, #fff 0%, #f8f9fb 100%);
+        border-bottom: 1px solid var(--line);
+      }
+      .hero::after {
+        position: absolute;
+        right: 5%;
+        bottom: -100px;
+        width: 240px;
+        height: 240px;
+        border: 1px solid rgba(230,66,66,.15);
+        border-radius: 50%;
+        content: '';
+      }
+      .hero-copy { position: relative; z-index: 1; max-width: 790px; }
+      .eyebrow, .section-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 16px;
+        color: var(--red-dark);
+        font-size: .75rem;
+        font-weight: 800;
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before, .section-kicker::before {
+        width: 7px;
+        height: 7px;
+        background: var(--red);
+        border-radius: 50%;
+        content: '';
+      }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 {
+        max-width: 770px;
+        margin-bottom: 18px;
+        font-family: var(--font-title);
+        font-size: clamp(2.55rem, 6vw, 4.85rem);
+        font-weight: 800;
+        letter-spacing: -.065em;
+        line-height: .99;
+      }
+      h1 em { color: var(--red); font-style: normal; }
+      .hero-lead {
+        max-width: 690px;
+        margin-bottom: 30px;
+        color: var(--muted);
+        font-size: clamp(.98rem, 2vw, 1.12rem);
+        line-height: 1.7;
+      }
+      .hero-search {
+        display: flex;
+        align-items: center;
+        max-width: 680px;
+        padding: 7px 8px 7px 18px;
+        background: var(--surface);
+        border: 1px solid #d9dde4;
+        border-radius: 999px;
+        box-shadow: var(--shadow-md);
+      }
+      .hero-search-icon { flex: 0 0 auto; margin-right: 10px; color: var(--red); font-size: 1.1rem; }
+      .hero-search input {
+        width: 100%;
+        min-width: 0;
+        padding: 10px 0;
+        color: var(--ink);
+        border: 0;
+        outline: 0;
+        background: transparent;
+        font-size: .9rem;
+      }
+      .hero-search button {
+        flex: 0 0 auto;
+        min-height: 42px;
+        padding: 0 19px;
+        color: #fff;
+        background: var(--red);
+        border: 0;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: .82rem;
+        font-weight: 800;
+      }
+      .hero-search button:hover { background: var(--red-dark); }
+      .search-meta { margin: 12px 0 0 18px; color: var(--muted); font-size: .75rem; }
+
+      /* FAQ layout */
+      .faq-shell { padding: 68px 0 92px; }
+      .faq-layout {
+        display: grid;
+        grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
+        align-items: start;
+        gap: clamp(38px, 6vw, 90px);
+      }
+      .toc {
+        position: sticky;
+        top: 24px;
+      }
+      .toc-title { margin-bottom: 16px; font-family: var(--font-title); font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+      .toc-nav { display: grid; gap: 3px; padding-left: 14px; border-left: 1px solid var(--line); }
+      .toc-nav a {
+        position: relative;
+        display: block;
+        padding: 8px 12px;
+        color: var(--muted);
+        border-radius: 7px;
+        font-size: .82rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color .2s ease, background .2s ease;
+      }
+      .toc-nav a::before {
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        width: 3px;
+        height: 0;
+        background: var(--red);
+        border-radius: 3px;
+        content: '';
+        transform: translateY(-50%);
+        transition: height .2s ease;
+      }
+      .toc-nav a:hover, .toc-nav a.active { color: var(--red-dark); background: var(--red-wash); }
+      .toc-nav a.active::before { height: 22px; }
+      .contact-note {
+        margin-top: 32px;
+        padding: 18px;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-top: 3px solid var(--yellow);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-sm);
+      }
+      .contact-note strong { display: block; margin-bottom: 7px; font-family: var(--font-title); font-size: .95rem; }
+      .contact-note p { margin-bottom: 12px; color: var(--muted); font-size: .77rem; line-height: 1.55; }
+      .contact-note a { color: var(--red-dark); font-size: .77rem; font-weight: 800; text-decoration: none; }
+      .content-intro { margin-bottom: 40px; }
+      .content-intro h2 { margin-bottom: 10px; font-family: var(--font-title); font-size: clamp(1.8rem, 3vw, 2.55rem); letter-spacing: -.045em; line-height: 1.06; }
+      .content-intro p { max-width: 630px; margin-bottom: 0; color: var(--muted); font-size: .95rem; }
+      .faq-section { margin-bottom: 48px; scroll-margin-top: 24px; }
+      .faq-section:last-of-type { margin-bottom: 0; }
+      .section-heading {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        padding-bottom: 14px;
+        border-bottom: 2px solid var(--line-soft);
+      }
+      .section-heading h3 { margin: 0; font-family: var(--font-title); font-size: 1.35rem; letter-spacing: -.025em; }
+      .section-count { color: var(--muted); font-size: .72rem; font-weight: 700; white-space: nowrap; }
+      .faq-list { border-bottom: 1px solid var(--line); }
+      .faq-item { border-bottom: 1px solid var(--line); }
+      .faq-item:last-child { border-bottom: 0; }
+      .faq-item[hidden] { display: none; }
+      .faq-item summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-height: 68px;
+        padding: 18px 2px;
+        color: var(--ink);
+        cursor: pointer;
+        list-style: none;
+        font-family: var(--font-title);
+        font-size: .98rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+      .faq-item summary::-webkit-details-marker { display: none; }
+      .faq-item summary::after {
+        flex: 0 0 auto;
+        width: 27px;
+        height: 27px;
+        color: var(--red);
+        border: 1px solid rgba(230,66,66,.35);
+        border-radius: 50%;
+        content: '+';
+        font-family: var(--font-body);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+      }
+      .faq-item[open] summary { color: var(--red-dark); }
+      .faq-item[open] summary::after { color: #fff; background: var(--red); content: '−'; }
+      .faq-answer { max-width: 720px; padding: 0 50px 21px 2px; color: #42464e; font-size: .88rem; line-height: 1.75; }
+      .faq-answer p { margin-bottom: 10px; }
+      .faq-answer p:last-child { margin-bottom: 0; }
+      .faq-answer a { color: var(--red-dark); font-weight: 700; }
+      .faq-answer ul { margin: 8px 0 0 20px; padding: 0; }
+      .faq-answer li { margin-bottom: 5px; }
+      .no-results {
+        display: none;
+        margin-top: 24px;
+        padding: 28px;
+        text-align: center;
+        background: #fff;
+        border: 1px dashed #d6dbe2;
+        border-radius: var(--radius);
+      }
+      .no-results.visible { display: block; }
+      .no-results strong { display: block; margin-bottom: 5px; font-family: var(--font-title); }
+      .no-results p { margin-bottom: 0; color: var(--muted); font-size: .85rem; }
+
+      /* CTA */
+      .final-cta { padding: 0 0 92px; }
+      .cta-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: clamp(28px, 5vw, 50px);
+        color: #fff;
+        background: linear-gradient(120deg, #b91c1c, #e64242);
+        border-radius: var(--radius-lg);
+        box-shadow: 0 18px 38px rgba(185, 28, 28, .18);
+      }
+      .cta-card h2 { margin-bottom: 9px; font-family: var(--font-title); font-size: clamp(1.5rem, 3vw, 2.25rem); letter-spacing: -.04em; line-height: 1.05; }
+      .cta-card p { max-width: 550px; margin-bottom: 0; color: rgba(255,255,255,.82); font-size: .88rem; }
+      .cta-actions { display: flex; flex-wrap: wrap; gap: 10px; flex: 0 0 auto; }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 45px;
+        padding: 0 18px;
+        border-radius: 999px;
+        font-size: .78rem;
+        font-weight: 800;
+        text-decoration: none;
+        transition: transform .2s ease, background .2s ease;
+      }
+      .button:hover { transform: translateY(-2px); }
+      .button-light { color: var(--red-dark); background: #fff; }
+      .button-light:hover { background: #fff7f7; }
+      .button-outline-light { color: #fff; border: 1px solid rgba(255,255,255,.55); }
+      .button-outline-light:hover { background: rgba(255,255,255,.12); }
+      .back-to-top {
+        position: fixed;
+        right: 22px;
+        bottom: 22px;
+        z-index: 8;
+        display: grid;
+        place-items: center;
+        width: 43px;
+        height: 43px;
+        color: #fff;
+        background: var(--red);
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 0 10px 24px rgba(230,66,66,.28);
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: opacity .2s ease, transform .2s ease;
+      }
+      .back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+      @media (max-width: 860px) {
+        .faq-layout { grid-template-columns: 1fr; gap: 40px; }
+        .toc { position: static; }
+        .toc-nav { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; border: 0; }
+        .toc-nav a { padding: 8px 11px; background: #fff; border: 1px solid var(--line); }
+        .toc-nav a::before { display: none; }
+        .toc-nav a.active { border-color: rgba(230,66,66,.35); }
+        .contact-note { max-width: 440px; }
+      }
+      @media (max-width: 560px) {
+        .container { width: min(100% - 28px, 1200px); }
+        .hero { padding: 60px 0 65px; }
+        h1 { font-size: clamp(2.45rem, 14vw, 4rem); }
+        .hero-search { align-items: stretch; flex-wrap: wrap; border-radius: 15px; padding: 8px; }
+        .hero-search-icon { padding-top: 10px; }
+        .hero-search input { width: calc(100% - 36px); }
+        .hero-search button { width: 100%; margin-top: 6px; }
+        .search-meta { margin-left: 0; }
+        .faq-shell { padding-top: 52px; }
+        .faq-answer { padding-right: 0; }
+        .cta-card { align-items: flex-start; flex-direction: column; }
+        .cta-actions { width: 100%; }
+        .button { flex: 1 1 170px; }
+        .back-to-top { right: 14px; bottom: 14px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Qual é a diferença entre curso, formação, evento e mentoria?","acceptedAnswer":{"@type":"Answer","text":"Cursos são programas focados em uma habilidade ou tema. Formações reúnem uma jornada mais completa. Eventos são encontros pontuais e mentorias oferecem acompanhamento direcionado. A página de cada oferta explica formato, duração e entrega."}},
+          {"@type":"Question","name":"Como escolher o curso ideal para mim?","acceptedAnswer":{"@type":"Answer","text":"Compare a área, o objetivo profissional, o nível, a carga horária, a modalidade e o formato de cada oferta. Use a busca e os filtros do catálogo e leia a página do curso antes de se inscrever."}},
+          {"@type":"Question","name":"Os cursos da Phorte são reconhecidos?","acceptedAnswer":{"@type":"Answer","text":"A Phorte oferece cursos, formações e programas certificados conforme a natureza de cada oferta. A página de cada curso informa o tipo de certificado e as condições específicas."}},
+          {"@type":"Question","name":"Posso estudar no meu ritmo?","acceptedAnswer":{"@type":"Answer","text":"As condições de acesso variam de acordo com o curso, a modalidade e a turma. Consulte a página da oferta para saber como a jornada de aprendizagem funciona."}},
+          {"@type":"Question","name":"Quais modalidades estão disponíveis?","acceptedAnswer":{"@type":"Answer","text":"O catálogo pode reunir cursos online, presenciais, híbridos, formações, mentorias e eventos. A modalidade aparece na página de cada oferta."}},
+          {"@type":"Question","name":"Como faço minha inscrição?","acceptedAnswer":{"@type":"Answer","text":"Escolha o curso no catálogo, confira as informações da oferta e avance pelo botão de inscrição. O fluxo apresenta as próximas etapas, condições comerciais e orientações necessárias."}},
+          {"@type":"Question","name":"Onde encontro o valor e as condições de pagamento?","acceptedAnswer":{"@type":"Answer","text":"O investimento e as condições de pagamento são apresentados na página do curso ou durante o processo de inscrição. Eles podem variar de acordo com a oferta e a turma."}},
+          {"@type":"Question","name":"Como acesso o curso depois da inscrição?","acceptedAnswer":{"@type":"Answer","text":"Após a confirmação da inscrição, as orientações de acesso são encaminhadas pelos canais informados no processo. Quando aplicável, o acesso acontece pelo Portal de Cursos Phorte."}},
+          {"@type":"Question","name":"Posso assistir às aulas pelo celular?","acceptedAnswer":{"@type":"Answer","text":"Quando o curso é online, o acesso pode ser feito por computador ou dispositivo móvel compatível. Consulte os requisitos informados na página da oferta."}},
+          {"@type":"Question","name":"Esqueci minha senha. Como recupero o acesso?","acceptedAnswer":{"@type":"Answer","text":"Use a opção de recuperação de senha disponível no Portal de Cursos. Se precisar de ajuda com uma inscrição já realizada, procure o canal indicado na confirmação do seu pedido."}},
+          {"@type":"Question","name":"Como funciona o certificado?","acceptedAnswer":{"@type":"Answer","text":"A emissão depende da natureza da oferta e dos critérios de conclusão indicados na página do curso. As regras de certificação devem ser consultadas antes da inscrição."}},
+          {"@type":"Question","name":"Quando recebo meu certificado?","acceptedAnswer":{"@type":"Answer","text":"O prazo e o canal de disponibilização variam conforme o curso e o cumprimento dos critérios de conclusão. A equipe orienta os participantes após a finalização da oferta."}},
+          {"@type":"Question","name":"Ainda ficou alguma dúvida. Quem pode me ajudar?","acceptedAnswer":{"@type":"Answer","text":"Use o canal de atendimento indicado na página do curso ou fale com a equipe pelos contatos institucionais da Phorte. Se a dúvida for sobre uma inscrição já realizada, tenha em mãos os dados da oferta."}}
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="container hero-copy">
+          <p class="eyebrow">Central de ajuda · Cursos Phorte</p>
+          <h1 id="page-title">Escolha seu próximo passo com <em>clareza.</em></h1>
+          <p class="hero-lead">Respostas rápidas sobre cursos, formações, eventos e jornadas de aprendizagem para você encontrar a oportunidade certa para o seu momento profissional.</p>
+          <form class="hero-search" id="faqSearchForm" role="search">
+            <span class="hero-search-icon" aria-hidden="true">⌕</span>
+            <label class="sr-only" for="faqSearch">Buscar uma dúvida</label>
+            <input id="faqSearch" type="search" placeholder="Busque por uma dúvida, curso ou assunto..." autocomplete="off" />
+            <button type="submit">Buscar respostas</button>
+          </form>
+          <p class="search-meta" id="searchMeta">13 respostas organizadas por assunto</p>
+        </div>
+      </section>
+
+      <section class="faq-shell">
+        <div class="container faq-layout">
+          <aside class="toc" aria-label="Navegue por assunto">
+            <div class="toc-title">Navegue por assunto</div>
+            <nav class="toc-nav">
+              <a class="active" href="#comecar">Comece aqui</a>
+              <a href="#inscricao">Inscrição e pagamento</a>
+              <a href="#acesso">Acesso e experiência</a>
+              <a href="#certificado">Certificado</a>
+              <a href="#atendimento">Atendimento</a>
+            </nav>
+            <div class="contact-note">
+              <strong>Não encontrou o que precisava?</strong>
+              <p>A equipe Phorte pode orientar você sobre a oferta mais adequada para o seu objetivo.</p>
+              <a href="https://phorte.com/cursos/">Falar com a equipe ↗</a>
+            </div>
+          </aside>
+
+          <div class="faq-content">
+            <div class="content-intro">
+              <p class="section-kicker">Perguntas frequentes</p>
+              <h2>Informação para decidir melhor.</h2>
+              <p>As respostas abaixo ajudam nas dúvidas mais comuns antes da inscrição. Como cada oferta tem características próprias, confirme sempre os detalhes na página do curso escolhido.</p>
+            </div>
+
+            <section class="faq-section" id="comecar" data-section>
+              <div class="section-heading">
+                <h3>Comece por aqui</h3>
+                <span class="section-count">05 respostas</span>
+              </div>
+              <div class="faq-list">
+                <details class="faq-item" id="faq-diferenca" data-question data-search="diferença curso formação evento mentoria o que é">
+                  <summary>Qual é a diferença entre curso, formação, evento e mentoria?</summary>
+                  <div class="faq-answer"><p><strong>Cursos</strong> são programas focados em uma habilidade ou tema. <strong>Formações</strong> reúnem uma jornada mais completa. <strong>Eventos</strong> são encontros pontuais e <strong>mentorias</strong> oferecem acompanhamento direcionado.</p><p>A página de cada oferta explica o formato, a duração e o que está incluído.</p></div>
+                </details>
+                <details class="faq-item" id="faq-escolher" data-question data-search="escolher curso ideal área objetivo profissão carreira">
+                  <summary>Como escolher o curso ideal para mim?</summary>
+                  <div class="faq-answer"><p>Comece pelo seu objetivo profissional e compare a área, o nível, a carga horária, a modalidade e o formato de cada oferta. Use a busca e os filtros do catálogo e leia a página do curso antes de se inscrever.</p></div>
+                </details>
+                <details class="faq-item" id="faq-reconhecidos" data-question data-search="curso reconhecido certificado validade reconhecimento">
+                  <summary>Os cursos da Phorte são reconhecidos?</summary>
+                  <div class="faq-answer"><p>A Phorte oferece cursos, formações e programas certificados conforme a natureza de cada oferta. A página de cada curso informa o tipo de certificado e as condições específicas.</p></div>
+                </details>
+                <details class="faq-item" id="faq-ritmo" data-question data-search="estudar ritmo online tempo flexível aulas">
+                  <summary>Posso estudar no meu ritmo?</summary>
+                  <div class="faq-answer"><p>As condições de acesso variam de acordo com o curso, a modalidade e a turma. Consulte a página da oferta para saber como a jornada de aprendizagem funciona e se há prazos ou encontros ao vivo.</p></div>
+                </details>
+                <details class="faq-item" id="faq-modalidades" data-question data-search="modalidades online presencial híbrido formação mentoria evento">
+                  <summary>Quais modalidades estão disponíveis?</summary>
+                  <div class="faq-answer"><p>O catálogo pode reunir cursos online, presenciais, híbridos, formações, mentorias e eventos. A modalidade aparece na página de cada oferta, junto às informações da jornada.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="faq-section" id="inscricao" data-section>
+              <div class="section-heading">
+                <h3>Inscrição e pagamento</h3>
+                <span class="section-count">02 respostas</span>
+              </div>
+              <div class="faq-list">
+                <details class="faq-item" id="faq-inscricao" data-question data-search="como fazer inscrição matrícula cadastrar comprar">
+                  <summary>Como faço minha inscrição?</summary>
+                  <div class="faq-answer"><p>Escolha o curso no <a href="https://phorte.com/cursos/">catálogo</a>, confira as informações da oferta e avance pelo botão de inscrição. O fluxo apresenta as próximas etapas, as condições comerciais e as orientações necessárias.</p></div>
+                </details>
+                <details class="faq-item" id="faq-pagamento" data-question data-search="valor preço investimento pagamento parcelas condições">
+                  <summary>Onde encontro o valor e as condições de pagamento?</summary>
+                  <div class="faq-answer"><p>O investimento e as condições de pagamento são apresentados na página do curso ou durante o processo de inscrição. Eles podem variar de acordo com a oferta e a turma.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="faq-section" id="acesso" data-section>
+              <div class="section-heading">
+                <h3>Acesso e experiência</h3>
+                <span class="section-count">03 respostas</span>
+              </div>
+              <div class="faq-list">
+                <details class="faq-item" id="faq-acesso" data-question data-search="acesso curso depois inscrição portal login plataforma">
+                  <summary>Como acesso o curso depois da inscrição?</summary>
+                  <div class="faq-answer"><p>Após a confirmação da inscrição, as orientações de acesso são encaminhadas pelos canais informados no processo. Quando aplicável, o acesso acontece pelo <a href="https://faculdadephorte.edux.phorte.org.br/student/login">Portal de Cursos Phorte</a>.</p></div>
+                </details>
+                <details class="faq-item" id="faq-celular" data-question data-search="assistir aula celular computador dispositivo móvel online">
+                  <summary>Posso assistir às aulas pelo celular?</summary>
+                  <div class="faq-answer"><p>Quando o curso é online, o acesso pode ser feito por computador ou dispositivo móvel compatível. Consulte os requisitos informados na página da oferta.</p></div>
+                </details>
+                <details class="faq-item" id="faq-senha" data-question data-search="esqueci senha login portal acesso recuperar">
+                  <summary>Esqueci minha senha. Como recupero o acesso?</summary>
+                  <div class="faq-answer"><p>Use a opção de recuperação de senha disponível no Portal de Cursos. Se precisar de ajuda com uma inscrição já realizada, procure o canal indicado na confirmação do seu pedido.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="faq-section" id="certificado" data-section>
+              <div class="section-heading">
+                <h3>Certificado e conclusão</h3>
+                <span class="section-count">02 respostas</span>
+              </div>
+              <div class="faq-list">
+                <details class="faq-item" id="faq-certificado" data-question data-search="certificado emissão conclusão critérios">
+                  <summary>Como funciona o certificado?</summary>
+                  <div class="faq-answer"><p>A emissão depende da natureza da oferta e dos critérios de conclusão indicados na página do curso. As regras de certificação devem ser consultadas antes da inscrição.</p></div>
+                </details>
+                <details class="faq-item" id="faq-prazo-certificado" data-question data-search="quando recebo certificado prazo disponibilização">
+                  <summary>Quando recebo meu certificado?</summary>
+                  <div class="faq-answer"><p>O prazo e o canal de disponibilização variam conforme o curso e o cumprimento dos critérios de conclusão. A equipe orienta os participantes após a finalização da oferta.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <section class="faq-section" id="atendimento" data-section>
+              <div class="section-heading">
+                <h3>Atendimento</h3>
+                <span class="section-count">01 resposta</span>
+              </div>
+              <div class="faq-list">
+                <details class="faq-item" id="faq-atendimento" data-question data-search="ajuda atendimento suporte dúvida contato equipe">
+                  <summary>Ainda ficou alguma dúvida. Quem pode me ajudar?</summary>
+                  <div class="faq-answer"><p>Use o canal de atendimento indicado na página do curso ou fale com a equipe pelos <a href="https://phorte.com/">contatos institucionais da Phorte</a>. Se a dúvida for sobre uma inscrição já realizada, tenha em mãos os dados da oferta.</p></div>
+                </details>
+              </div>
+            </section>
+
+            <div class="no-results" id="noResults" role="status" aria-live="polite">
+              <strong>Não encontramos uma resposta para essa busca.</strong>
+              <p>Tente outro termo ou fale com a equipe Phorte para receber orientação.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Pronto para encontrar sua próxima formação?</h2>
+              <p>Explore o catálogo e compare as oportunidades da Phorte pelo tema, modalidade e objetivo profissional.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-light" href="https://phorte.com/cursos/">Explorar cursos ↗</a>
+              <a class="button button-outline-light" href="mailto:graduacao@faculdadephorte.edu.br">Falar com a equipe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo da página">↑</button>
+
+    <script>
+      (() => {
+        const searchForm = document.getElementById('faqSearchForm');
+        const searchInput = document.getElementById('faqSearch');
+        const searchMeta = document.getElementById('searchMeta');
+        const noResults = document.getElementById('noResults');
+        const questions = [...document.querySelectorAll('[data-question]')];
+        const sections = [...document.querySelectorAll('[data-section]')];
+        const tocLinks = [...document.querySelectorAll('.toc-nav a')];
+        const backToTop = document.getElementById('backToTop');
+
+        const filterQuestions = () => {
+          const term = searchInput.value.trim().toLocaleLowerCase('pt-BR');
+          let matches = 0;
+          questions.forEach((question) => {
+            const haystack = `${question.textContent} ${question.dataset.search}`.toLocaleLowerCase('pt-BR');
+            const match = !term || haystack.includes(term);
+            question.hidden = !match;
+            if (match) matches += 1;
+          });
+          sections.forEach((section) => {
+            const visible = section.querySelectorAll('[data-question]:not([hidden])').length > 0;
+            section.hidden = !visible;
+          });
+          noResults.classList.toggle('visible', matches === 0);
+          searchMeta.textContent = term ? `${matches} ${matches === 1 ? 'resposta encontrada' : 'respostas encontradas'}` : '13 respostas organizadas por assunto';
+        };
+
+        searchInput.addEventListener('input', filterQuestions);
+        searchForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          filterQuestions();
+          const firstVisible = questions.find((question) => !question.hidden);
+          if (firstVisible && searchInput.value.trim()) {
+            firstVisible.open = true;
+            firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+
+        const hashTarget = document.getElementById(window.location.hash.slice(1));
+        if (hashTarget && hashTarget.matches('details')) hashTarget.open = true;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            tocLinks.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`));
+          });
+        }, { rootMargin: '-25% 0px -62% 0px', threshold: 0 });
+        sections.forEach((section) => observer.observe(section));
+
+        window.addEventListener('scroll', () => {
+          backToTop.classList.toggle('visible', window.scrollY > 500);
+        }, { passive: true });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      })();
+    </script>
+  </body>
+</html>

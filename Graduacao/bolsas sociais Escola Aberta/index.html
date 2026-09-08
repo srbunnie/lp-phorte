@@ -92,6 +92,10 @@
     text-rendering: optimizeLegibility;
   }
 
+  .phorte-elementor-landing {
+    overflow-x: clip;
+  }
+
   img,
   svg {
     display: block;
@@ -1676,15 +1680,14 @@
                 stroke-linejoin="round"
               />
             </svg>
-            Bolsas de até 100%
+            Bolsas de 100%
           </span>
 
           <h1 class="hero-title" style="margin-top: 20px">
-            Estude na Faculdade Phorte com Bolsas de até 100%
+            Estude na Faculdade Phorte com Bolsas de 100%
           </h1>
           <p class="hero-copy">
-            Participe do processo seletivo para bolsas sociais e transforme seu
-            futuro com ensino superior de qualidade.
+            SUA JORNADA DE SUCESSO COMEÇA AQUI.
           </p>
 
           <div class="hero-proof-grid">
@@ -1827,7 +1830,7 @@
         <span class="partnership-divider" aria-hidden="true"></span>
         <img
           class="partnership-logo partnership-logo-escola"
-          src="./escola aberta novo logo-07.svg"
+          src="https://faculdadephorte.edu.br/wp-content/uploads/2026/09/escola-aberta-novo-logo-07.svg"
           alt="Escola Aberta"
           loading="lazy"
           decoding="async"
@@ -1839,97 +1842,42 @@
   <section class="landing-section process">
     <div class="landing-shell">
       <header class="section-header">
-        <h2>Como funciona o processo seletivo</h2>
+        <h2>Como funciona o processo de matrícula</h2>
         <p>
-          Um processo transparente e estruturado para orientar sua candidatura
-          com clareza.
+          Um processo simples e transparente para você começar sua graduação.
         </p>
       </header>
 
       <div class="process-grid">
         <article class="process-card process-card-featured card card-elevated">
           <span class="process-number">1</span>
-          <h3>Inscrição online</h3>
+          <h3>Faça sua inscrição</h3>
           <p>
-            Preencha a ficha socioeconômica com seus dados, escolha o curso
-            desejado e realize a inscrição.
+            Preencha seus dados e realize a inscrição no curso desejado.
           </p>
         </article>
         <article class="process-card process-card-wide card card-elevated">
           <span class="process-number">2</span>
-          <h3>Quem pode participar</h3>
+          <h3>Envie a documentação</h3>
           <p>
-            Podem participar candidatos que já concluíram o Ensino Médio e
-            atendem aos critérios de renda familiar per capita.
+            Após a inscrição, envie a documentação necessária para análise e
+            validação.
           </p>
-          <ul class="process-list">
-            <li>Até 1,5 salário-mínimo para candidatos à bolsa de 100%.</li>
-            <li>Até 3 salários-mínimos para candidatos à bolsa de 50%.</li>
-            <li>
-              Novos alunos também precisam ser aprovados no vestibular da
-              Faculdade Phorte.
-            </li>
-          </ul>
         </article>
         <article
           class="process-card process-card-compact process-card-red card card-elevated"
         >
           <span class="process-number">3</span>
-          <h3>Vestibular simplificado</h3>
+          <h3>Matrícula confirmada</h3>
           <p>
-            Os candidatos ingressantes deverão realizar o processo seletivo da
-            instituição para validação da matrícula.
-          </p>
-        </article>
-        <article class="process-card process-card-wide card card-elevated">
-          <span class="process-number">4</span>
-          <h3>Análise socioeconômica</h3>
-          <p>
-            A Faculdade Phorte analisará os dados socioeconômicos apresentados
-            pelo candidato.
-          </p>
-          <ul class="process-list">
-            <li>Renda familiar e composição familiar.</li>
-            <li>Padrão de vida e informações socioeconômicas.</li>
-            <li>Participação no CadÚnico.</li>
-          </ul>
-        </article>
-        <article
-          class="process-card process-card-compact process-card-red card card-elevated"
-        >
-          <span class="process-number">5</span>
-          <h3>Envio da documentação</h3>
-          <p>
-            Os candidatos pré-selecionados deverão enviar toda a documentação
-            comprobatória exigida dentro do prazo estabelecido.
-          </p>
-        </article>
-        <article class="process-card process-card-compact card card-elevated">
-          <span class="process-number">6</span>
-          <h3>Entrevista ou visita social</h3>
-          <p>
-            A instituição poderá realizar entrevista, videoconferência ou visita
-            domiciliar para validação das informações apresentadas.
-          </p>
-        </article>
-        <article
-          class="process-card process-card-result process-card-red card card-elevated"
-        >
-          <span class="process-number">7</span>
-          <h3>Resultado e concessão da bolsa</h3>
-          <p>
-            Os candidatos aprovados poderão receber bolsa integral de 100% ou
-            bolsa parcial de 50%.
-          </p>
-          <p>
-            A aprovação depende da análise socioeconômica, dos critérios do
-            edital e da disponibilidade de vagas.
+            Se a documentação estiver correta e todos os requisitos forem
+            atendidos, sua matrícula será efetivada.
           </p>
         </article>
       </div>
       <div
         class="process-mobile-nav"
-        aria-label="Navegação das etapas do processo seletivo"
+        aria-label="Navegação das etapas do processo de matrícula"
       >
         <button
           class="process-nav-button"
@@ -1951,7 +1899,7 @@
     </div>
   </section>
 
-  <section class="landing-section courses">
+  <section class="landing-section courses" id="inscricao">
     <div class="landing-shell">
       <header class="section-header">
         <h2>Cursos disponíveis</h2>
@@ -2112,24 +2060,6 @@
             <div>
               <h3>Apoio acadêmico</h3>
               <p>Suporte completo durante toda a sua jornada.</p>
-            </div>
-          </article>
-          <article class="benefit-card benefit-card-highlight card">
-            <span class="benefit-icon"
-              ><svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M12 3v5M7 7l3 3M17 7l-3 3M5 14h14M7 21h10a2 2 0 002-2v-5H5v5a2 2 0 002 2z"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                /></svg
-            ></span>
-            <div>
-              <h3>Bolsa Social</h3>
-              <p>
-                Cobertura de até 100% da mensalidade para candidatos aprovados.
-              </p>
             </div>
           </article>
         </div>
@@ -2387,7 +2317,7 @@
                 <h3 class="phorte-card__title">${course.name}</h3>
                 <p class="phorte-card__text">${course.description}</p>
                 <div class="phorte-card__footer">
-                  <button class="phorte-card__cta" type="button" data-scroll-to="inscricao">faça o vestibular agora!</button>
+                  <button class="phorte-card__cta" type="button" data-scroll-to="inscricao">faça sua inscrição agora!</button>
                 </div>
               </div>
             </div>
