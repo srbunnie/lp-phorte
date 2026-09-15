@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Consulta Pública de Diplomas da Faculdade Phorte. Serviço em implementação para verificação de diplomas emitidos pela instituição." />
+    <meta name="robots" content="noindex, follow" />
+    <title>Consulta Pública de Diplomas | Faculdade Phorte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:," />
+    <style>
+      :root {
+        --red: #c92d2d;
+        --wine: #8f1f1f;
+        --yellow: #f5c542;
+        --ink: #1f1f1f;
+        --muted: #626262;
+        --paper: #fff;
+        --mist: #f6f5f3;
+        --line: #e8e4df;
+        --soft-red: #fceeee;
+        --max: 1180px;
+        --title: 'Montserrat', sans-serif;
+        --body: 'Inter', sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        color: var(--ink);
+        background: var(--mist);
+        font: 400 1rem/1.6 var(--body);
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: inherit; }
+      img { display: block; max-width: 100%; }
+      .shell { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+
+      .site-header {
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, .96);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        min-height: 84px;
+      }
+      .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; }
+      .brand img { width: 92px; height: auto; }
+      .brand span {
+        border-left: 1px solid var(--line);
+        padding-left: 12px;
+        color: var(--muted);
+        font-size: .76rem;
+        font-weight: 700;
+        line-height: 1.25;
+      }
+      .header-link {
+        color: var(--red);
+        font-size: .86rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .header-link:hover { color: var(--wine); text-decoration: underline; }
+      :focus-visible { outline: 3px solid rgba(245, 197, 66, .9); outline-offset: 4px; }
+
+      main { display: grid; place-items: center; min-height: calc(100vh - 84px - 170px); padding: 72px 0 84px; }
+      .consultation-card {
+        position: relative;
+        width: min(100%, 700px);
+        overflow: hidden;
+        padding: clamp(32px, 6vw, 64px);
+        border: 1px solid rgba(201, 45, 45, .16);
+        border-radius: 22px;
+        background: var(--paper);
+        box-shadow: 0 24px 60px rgba(31, 31, 31, .10);
+        text-align: center;
+      }
+      .consultation-card::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 6px;
+        background: linear-gradient(90deg, var(--red), var(--yellow));
+        content: '';
+      }
+      .status-icon {
+        display: grid;
+        place-items: center;
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 24px;
+        border-radius: 20px;
+        color: var(--red);
+        background: var(--soft-red);
+      }
+      .status-icon svg { width: 38px; height: 38px; }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--red);
+        font: 700 .74rem/1.2 var(--title);
+        letter-spacing: .12em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before { width: 8px; height: 8px; border-radius: 50%; background: var(--red); content: ''; }
+      h1, h2 { margin: 0; font-family: var(--title); line-height: 1.12; letter-spacing: -.04em; }
+      h1 { max-width: 540px; margin: 14px auto 18px; font-size: clamp(2rem, 5vw, 3.25rem); }
+      .lead { max-width: 540px; margin: 0 auto; color: var(--muted); font-size: 1.05rem; }
+      .support-note {
+        max-width: 520px;
+        margin: 28px auto 0;
+        padding: 17px 20px;
+        border-left: 4px solid var(--yellow);
+        border-radius: 0 12px 12px 0;
+        color: var(--wine);
+        background: #fff9e4;
+        text-align: left;
+        font-size: .91rem;
+      }
+      .support-note strong { color: var(--ink); }
+      .actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        min-height: 50px;
+        padding: 13px 22px;
+        border: 2px solid transparent;
+        border-radius: 999px;
+        font: 700 .88rem var(--title);
+        text-decoration: none;
+        transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+      }
+      .button:hover { transform: translateY(-2px); }
+      .button-primary { color: #fff; background: var(--red); box-shadow: 0 10px 22px rgba(201, 45, 45, .22); }
+      .button-primary:hover { background: var(--wine); box-shadow: 0 14px 28px rgba(143, 31, 31, .25); }
+      .button-secondary { color: var(--red); border-color: rgba(201, 45, 45, .42); background: transparent; }
+      .button-secondary:hover { color: var(--wine); border-color: var(--red); background: var(--soft-red); }
+      .button .arrow { font-size: 1.15em; line-height: 0; }
+
+      .site-footer { padding: 28px 0; border-top: 1px solid var(--line); background: #fff; }
+      .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+      .footer-copy { margin: 0; color: var(--muted); font-size: .78rem; }
+      .footer-links { display: flex; gap: 18px; flex-wrap: wrap; margin: 0; padding: 0; list-style: none; }
+      .footer-links a { color: var(--ink); font-size: .78rem; font-weight: 700; text-decoration: none; }
+      .footer-links a:hover { color: var(--red); text-decoration: underline; }
+      .footer-links .current { color: var(--red); }
+
+      @media (max-width: 620px) {
+        .shell { width: min(100% - 32px, var(--max)); }
+        .header-inner { min-height: 72px; }
+        .brand img { width: 82px; }
+        .brand span { max-width: 120px; font-size: .68rem; }
+        .header-link { font-size: .78rem; }
+        main { min-height: calc(100vh - 72px - 190px); padding: 40px 0 52px; }
+        .consultation-card { padding: 40px 22px 34px; border-radius: 18px; }
+        .status-icon { width: 64px; height: 64px; margin-bottom: 20px; border-radius: 17px; }
+        h1 { font-size: clamp(1.9rem, 10vw, 2.55rem); }
+        .lead { font-size: .96rem; }
+        .actions { align-items: stretch; flex-direction: column; }
+        .button { width: 100%; }
+        .footer-inner { align-items: flex-start; flex-direction: column; gap: 12px; }
+        .footer-links { gap: 10px 18px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .button { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="../../index.html" aria-label="Voltar ao índice da Faculdade Phorte">
+          <img src="../../Pos/educacao-infantil-pikleriana/assets/logo-phorte.svg" alt="Faculdade Phorte" />
+          <span>Faculdade Phorte<br />Graduação</span>
+        </a>
+        <a class="header-link" href="../../index.html">Voltar ao início</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="consultation-card" aria-labelledby="page-title">
+        <div class="status-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 5h14l8 8v28H14a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4Z" />
+            <path d="M28 5v9h8" />
+            <path d="M18 23h12M18 29h7" />
+            <circle cx="32" cy="34" r="6" fill="var(--soft-red)" />
+            <path d="M32 31v3l2 1" />
+          </svg>
+        </div>
+        <span class="eyebrow">Serviço institucional</span>
+        <h1 id="page-title">Consulta Pública de Diplomas</h1>
+        <p class="lead" role="status" aria-live="polite"><strong>Consulta em implementação</strong></p>
+        <p class="lead">Estamos trabalhando para disponibilizar a consulta pública dos diplomas emitidos pela Faculdade Phorte. Em breve, será possível verificar a autenticidade e as informações do diploma diretamente por esta página.</p>
+        <p class="support-note"><strong>Precisa de orientação agora?</strong><br />Enquanto o serviço não estiver disponível, entre em contato com a secretaria para obter informações sobre diplomas e registros acadêmicos.</p>
+        <div class="actions">
+          <a class="button button-primary" href="mailto:graduacao@faculdadephorte.edu.br">Falar com a secretaria <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="../../index.html">Voltar ao início</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p class="footer-copy">Faculdade Phorte de Educação e Tecnologia</p>
+        <nav aria-label="Links institucionais">
+          <ul class="footer-links">
+            <li><a href="https://faculdadephorte.edu.br/" target="_blank" rel="noopener">Site institucional</a></li>
+            <li><a class="current" href="./index.html" aria-current="page">Consulta Pública de Diplomas</a></li>
+            <li><a href="../../politicas/index.html">Privacidade e termos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- TODO: substituir este estado provisório pelo módulo de Consulta Pública de Diplomas após definição da integração com Perseus. -->
+  </body>
+</html>

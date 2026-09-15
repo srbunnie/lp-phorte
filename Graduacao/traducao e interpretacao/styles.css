@@ -254,6 +254,22 @@
   line-height: 1.7;
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-hero-support {
+  max-width: 620px;
+  margin-bottom: 16px;
+  color: var(--ti-muted);
+  font-size: .98rem;
+  line-height: 1.65;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-emphasis {
+  max-width: 620px;
+  margin-bottom: 24px;
+  color: var(--ti-red);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .phorte-traducao-interpretacao-2027-1 .ti-hero-price {
   display: inline-flex;
   max-width: 100%;
@@ -376,6 +392,24 @@
   font-size: .72rem;
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge .ti-hero-badge-mark {
+  display: grid;
+  place-items: center;
+  color: var(--ti-ink);
+  font: 800 1.08rem/1 var(--ti-title);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge > span:not(.ti-hero-badge-mark) {
+  display: block;
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-hero-badge > span:not(.ti-hero-badge-mark) > span {
+  display: block;
+  color: var(--ti-muted);
+  font-size: .72rem;
+}
+
 /* Facts */
 .phorte-traducao-interpretacao-2027-1 .ti-facts {
   border-top: 5px solid var(--ti-yellow);
@@ -385,7 +419,7 @@
 
 .phorte-traducao-interpretacao-2027-1 .ti-facts-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-fact {
@@ -467,6 +501,11 @@
 .phorte-traducao-interpretacao-2027-1 .ti-copy p {
   margin-bottom: 16px;
   font-size: 1.03rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-copy-wide {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-list {
@@ -692,6 +731,10 @@
   font-size: .94rem;
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-callout p:last-child {
+  margin-bottom: 0;
+}
+
 /* Curriculum */
 .phorte-traducao-interpretacao-2027-1 .ti-curriculum {
   display: grid;
@@ -753,6 +796,27 @@
   color: var(--ti-red);
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-itineraries {
+  padding: 0 24px 24px 42px;
+  color: var(--ti-muted);
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-itineraries p {
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-itineraries h3 {
+  margin: 18px 0 8px;
+  color: var(--ti-red);
+  font-size: 1rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-itineraries ul {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
 .phorte-traducao-interpretacao-2027-1 .ti-expand-row {
   margin: 18px auto 0;
   text-align: center;
@@ -790,6 +854,61 @@
 .phorte-traducao-interpretacao-2027-1 .ti-faculty-card p:last-child {
   margin-bottom: 0;
   font-size: .87rem;
+}
+
+/* Video placeholders */
+.phorte-traducao-interpretacao-2027-1 .ti-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-video-card {
+  padding: 22px;
+  border: 1px solid var(--ti-line);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-video-card h3 {
+  margin-bottom: 14px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-video-card p {
+  margin: 10px 0 0;
+  color: var(--ti-muted);
+  font-size: .9rem;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-video-placeholder {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  border: 1px dashed rgba(201, 45, 45, .35);
+  border-radius: 12px;
+  color: var(--ti-red);
+  background: var(--ti-soft-red);
+  font-weight: 800;
+  text-align: center;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ti-wine), var(--ti-red));
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta .ti-overline,
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta h2 {
+  color: #fff;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta p {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  color: #ffe5d8;
 }
 
 /* Enrollment */
@@ -1103,7 +1222,8 @@
   .phorte-traducao-interpretacao-2027-1 .ti-career-grid,
   .phorte-traducao-interpretacao-2027-1 .ti-routine,
   .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid,
-  .phorte-traducao-interpretacao-2027-1 .ti-practice-grid {
+  .phorte-traducao-interpretacao-2027-1 .ti-practice-grid,
+  .phorte-traducao-interpretacao-2027-1 .ti-video-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1115,6 +1235,10 @@
 
   .phorte-traducao-interpretacao-2027-1 .ti-subjects {
     grid-template-columns: 1fr;
+    padding-left: 38px;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-itineraries {
     padding-left: 38px;
   }
 
