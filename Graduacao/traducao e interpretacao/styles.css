@@ -8,6 +8,7 @@
 .phorte-traducao-interpretacao-2027-1 {
   --ti-red: #c92d2d;
   --ti-wine: #8f1f1f;
+  --ti-green: #13b241;
   --ti-yellow: #f5c542;
   --ti-yellow-dark: #a56d00;
   --ti-ink: #1f1f1f;
@@ -463,12 +464,14 @@
   color: var(--ti-yellow);
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-section-dark .ti-section-head h2,
 .phorte-traducao-interpretacao-2027-1 .ti-heading-light {
   color: #fff;
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-section-dark .ti-section-head p,
 .phorte-traducao-interpretacao-2027-1 .ti-copy-light {
-  color: #ddd2cb;
+  color: #fff;
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-section-head {
@@ -614,10 +617,12 @@
 
 .phorte-traducao-interpretacao-2027-1 .ti-career-card {
   padding: 22px;
+  border: 1px solid rgba(255, 255, 255, .14);
   border-top: 4px solid var(--ti-yellow);
   border-radius: 14px;
   color: #fff;
   background: #302927;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .16);
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-career-card h3 {
@@ -627,7 +632,7 @@
 
 .phorte-traducao-interpretacao-2027-1 .ti-career-card p {
   margin: 0;
-  color: #ddd2cb;
+  color: #fff;
   font-size: .91rem;
 }
 
@@ -823,24 +828,169 @@
 }
 
 /* Faculty */
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-carousel {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-viewport {
+  margin: -2px;
+  padding: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-inline: 2px;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-viewport:focus-visible {
+  outline: 3px solid var(--ti-yellow);
+  outline-offset: 6px;
+}
+
 .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 36px) / 3);
+  align-items: stretch;
   gap: 18px;
+  min-width: 100%;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card {
+  height: 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-controls {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  order: -1;
+  margin: 0 0 18px;
+  padding-inline: 2px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button {
+  display: inline-grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border: 1px solid rgba(201, 45, 45, .42);
+  border-radius: 50%;
+  color: var(--ti-red);
+  background: #fff;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 6px 16px rgba(36, 31, 29, .06);
+  transition: transform .2s ease, color .2s ease, background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button svg {
+  display: block;
+  width: 21px;
+  height: 21px;
+  overflow: visible;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button:hover,
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button:focus-visible {
+  transform: translateY(-2px);
+  color: var(--ti-ink);
+  border-color: var(--ti-yellow);
+  background: var(--ti-yellow);
+  box-shadow: 0 9px 20px rgba(215, 166, 36, .2);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-carousel-button:focus-visible {
+  outline: 3px solid rgba(215, 166, 36, .4);
+  outline-offset: 3px;
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-faculty-card {
   display: flex;
   min-height: 240px;
   flex-direction: column;
+  overflow: hidden;
   padding: 23px;
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 12px 28px rgba(0, 0, 0, .06);
 }
 
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card > img {
+  display: block;
+  margin: -23px -23px 18px;
+  width: calc(100% + 46px);
+  height: 220px;
+  flex: 0 0 220px;
+  object-fit: cover;
+  object-position: center 30%;
+  background: var(--ti-mist);
+  border-radius: 12px 12px 0 0;
+}
+
 .phorte-traducao-interpretacao-2027-1 .ti-faculty-card h3 {
   margin-bottom: 5px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card > p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-card.is-expanded > p {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-more {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 8px 0 0;
+  border: 0;
+  color: var(--ti-red);
+  background: transparent;
+  cursor: pointer;
+  font: 800 .78rem/1.2 var(--ti-title);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-more:hover,
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-more:focus-visible {
+  color: var(--ti-ink);
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-faculty-more:focus-visible {
+  outline: 2px solid var(--ti-yellow);
+  outline-offset: 3px;
 }
 
 .phorte-traducao-interpretacao-2027-1 .ti-faculty-role {
@@ -909,6 +1059,14 @@
   max-width: 760px;
   margin: 0 auto 24px;
   color: #ffe5d8;
+}
+
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta .ti-button-primary:hover,
+.phorte-traducao-interpretacao-2027-1 .ti-final-cta .ti-button-primary:focus-visible {
+  color: #fff;
+  background: var(--ti-green);
+  border-color: var(--ti-green);
+  box-shadow: 0 14px 30px rgba(19, 178, 65, .25);
 }
 
 /* Enrollment */
@@ -1126,9 +1284,12 @@
     min-height: 440px;
   }
 
-  .phorte-traducao-interpretacao-2027-1 .ti-card-grid,
-  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
+  .phorte-traducao-interpretacao-2027-1 .ti-card-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
+    grid-auto-columns: calc((100% - 18px) / 2);
   }
 }
 
@@ -1221,10 +1382,13 @@
   .phorte-traducao-interpretacao-2027-1 .ti-card-grid,
   .phorte-traducao-interpretacao-2027-1 .ti-career-grid,
   .phorte-traducao-interpretacao-2027-1 .ti-routine,
-  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid,
   .phorte-traducao-interpretacao-2027-1 .ti-practice-grid,
   .phorte-traducao-interpretacao-2027-1 .ti-video-grid {
     grid-template-columns: 1fr;
+  }
+
+  .phorte-traducao-interpretacao-2027-1 .ti-faculty-grid {
+    grid-auto-columns: 100%;
   }
 
   .phorte-traducao-interpretacao-2027-1 .ti-card,
