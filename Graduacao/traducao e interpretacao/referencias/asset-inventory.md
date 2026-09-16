@@ -18,14 +18,14 @@ Estas URLs foram usadas apenas como referência no preview local e no pacote de 
 - Hero: `https://faculdadephorte.edu.br/wp-content/uploads/2024/12/curso-traducao-interpretacao-1.webp` — 895 × 1024;
 - fundo temático: `https://faculdadephorte.edu.br/wp-content/uploads/2024/12/TRADUCAO-E-INTERPRETACAO-BG.webp`;
 - selo MEC: `https://faculdadephorte.edu.br/wp-content/uploads/2024/12/selo-mec-nota-maximo-nota-5.webp`;
-- Amanda Moura: `https://faculdadephorte.edu.br/wp-content/uploads/2025/02/Amanda-Moura.webp`;
+- Fotos oficiais do corpo docente: URLs públicas da biblioteca de mídia da Faculdade Phorte, utilizadas diretamente nos cards em `index.html` e no widget Elementor;
+- Foto local de Stephan Hughes: `assets/stephan-hughes.jpg`, fornecida para substituir a referência remota nos cards do preview e do widget;
 - imagem institucional: `https://faculdadephorte.edu.br/wp-content/uploads/2024/11/faculdade-final.webp`;
 - ilustrações de carreira: `Group-230-1.png`, `Group-232-1.png`, `Group-233.png`, `Group-234-1.png` na pasta `/wp-content/uploads/2024/12/`;
 - marca: `https://faculdadephorte.edu.br/wp-content/uploads/2024/12/logo-faculdade-phorte-unificado-1.svg`.
 
 ## Lacunas
 
-- Não há assets locais do curso, export Elementor ou fotos dos docentes no repositório; o material local disponível é copy/briefing.
-- As imagens de docentes listadas na página oficial não foram copiadas para o projeto; o preview usa cards tipográficos para evitar empacotar mídia sem revisão de direitos, recorte e aprovação.
+- Não há assets locais do curso ou export Elementor no repositório; o material local disponível é copy/briefing e o HTML referencia as fotos públicas hospedadas pela Faculdade Phorte.
 - O preço e a turma são variáveis comerciais e devem ser reconfirmados antes da publicação.
 - O vídeo da coordenação e os depoimentos indicados no briefing ainda não foram localizados; permanecem como pendência de conteúdo.
