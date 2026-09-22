@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Consulta de diplomas | Faculdade Phorte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root { --red:#c92d2d; --wine:#8f1f1f; --green:#16794c; --green-soft:#eaf7f0; --yellow:#f5c542; --ink:#202020; --muted:#656565; --paper:#fff; --mist:#f7f6f4; --line:#e6e2de; --soft-red:#fceeee; --max:1180px; --title:'Montserrat',sans-serif; --body:'Inter',sans-serif; }
+      * { box-sizing:border-box; }
+      html { scroll-behavior:smooth; }
+      body { min-width:320px; margin:0; color:var(--ink); background:var(--mist); font:400 1rem/1.55 var(--body); -webkit-font-smoothing:antialiased; }
+      a { color:inherit; }
+      button, input { font:inherit; }
+      .shell { width:min(var(--max),calc(100% - 48px)); margin:0 auto; }
+      .site-header { border-bottom:1px solid var(--line); background:#fff; }
+      .header-inner { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:84px; }
+      .brand { display:inline-flex; align-items:center; gap:12px; text-decoration:none; }
+      .brand img { width:92px; }
+      .brand span { border-left:1px solid var(--line); padding-left:12px; color:var(--muted); font-size:.76rem; font-weight:700; line-height:1.25; }
+      .header-link { color:var(--red); font-size:.84rem; font-weight:700; text-decoration:none; }
+      .header-link:hover { color:var(--wine); text-decoration:underline; }
+      :focus-visible { outline:3px solid rgba(245,197,66,.95); outline-offset:4px; }
+      main { padding:52px 0 80px; }
+      .breadcrumbs { display:flex; gap:9px; margin-bottom:26px; color:var(--muted); font-size:.76rem; }
+      .breadcrumbs a { text-decoration:none; }
+      .breadcrumbs a:hover { color:var(--red); text-decoration:underline; }
+      .intro { max-width:760px; margin-bottom:28px; }
+      .eyebrow { display:inline-flex; align-items:center; gap:8px; color:var(--red); font:700 .72rem/1.2 var(--title); letter-spacing:.12em; text-transform:uppercase; }
+      .eyebrow::before { width:8px; height:8px; border-radius:50%; background:var(--red); content:''; }
+      h1, h2, h3 { margin:0; font-family:var(--title); line-height:1.12; letter-spacing:-.04em; }
+      h1 { margin:14px 0 12px; font-size:clamp(2.1rem,4.8vw,3.35rem); }
+      .intro p { max-width:690px; margin:0; color:var(--muted); font-size:1.02rem; }
+      .trust-strip { display:flex; align-items:center; gap:14px; margin:24px 0 30px; padding:14px 17px; border:1px solid #cbe6d7; border-radius:12px; color:#246341; background:var(--green-soft); font-size:.82rem; }
+      .trust-strip svg { flex:0 0 23px; width:23px; color:var(--green); }
+      .layout { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(280px,.75fr); gap:22px; align-items:start; }
+      .card { border:1px solid var(--line); border-radius:18px; background:var(--paper); box-shadow:0 10px 28px rgba(31,31,31,.06); }
+      .consultation-card { overflow:hidden; }
+      .card-top { padding:26px 28px 20px; border-bottom:1px solid var(--line); }
+      .card-top h2 { font-size:1.3rem; }
+      .card-top p { margin:8px 0 0; color:var(--muted); font-size:.84rem; }
+      .switcher { display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:18px 28px 0; }
+      .switcher button { min-height:72px; padding:12px; border:1px solid var(--line); border-radius:12px; color:var(--muted); background:#fff; cursor:pointer; text-align:left; transition:.2s ease; }
+      .switcher button strong, .switcher button span { display:block; }
+      .switcher button strong { color:var(--ink); font:700 .78rem var(--title); }
+      .switcher button span { margin-top:4px; font-size:.72rem; line-height:1.35; }
+      .switcher button[aria-selected="true"] { border-color:rgba(201,45,45,.55); background:var(--soft-red); box-shadow:inset 0 0 0 1px rgba(201,45,45,.12); }
+      .switcher button[aria-selected="true"] strong { color:var(--red); }
+      .form-wrap { padding:22px 28px 28px; }
+      fieldset { margin:0; padding:0; border:0; }
+      .field-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+      .field { display:grid; gap:7px; }
+      .field label { font-size:.76rem; font-weight:700; }
+      .field input { width:100%; min-height:47px; padding:11px 13px; border:1px solid #d7d2cd; border-radius:9px; color:var(--ink); background:#fff; outline:none; }
+      .field input::placeholder { color:#aaa4a0; }
+      .field input:focus { border-color:var(--red); box-shadow:0 0 0 3px rgba(201,45,45,.12); }
+      .hint { margin:7px 0 0; color:var(--muted); font-size:.72rem; }
+      .form-footer { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:24px; }
+      .form-helper { margin:0; color:var(--muted); font-size:.72rem; }
+      .actions { display:flex; gap:9px; flex-wrap:wrap; }
+      .button { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:45px; padding:11px 17px; border:2px solid transparent; border-radius:999px; font:700 .76rem var(--title); cursor:pointer; text-decoration:none; transition:.2s ease; }
+      .button:hover { transform:translateY(-1px); }
+      .primary { color:#fff; background:var(--red); box-shadow:0 8px 17px rgba(201,45,45,.2); }
+      .primary:hover { background:var(--wine); }
+      .secondary { color:var(--red); border-color:rgba(201,45,45,.4); background:#fff; }
+      .secondary:hover { background:var(--soft-red); }
+      .arrow { font-size:1.15em; line-height:0; }
+      .feedback { margin:18px 0 0; padding:12px 14px; border-radius:9px; font-size:.78rem; }
+      .feedback.error { color:#7c2d12; background:#fff7ed; border:1px solid #fed7aa; }
+      .feedback.success { color:#17633e; background:var(--green-soft); border:1px solid #bfe1ce; }
+      .result { margin:0 28px 28px; border:1px solid #bfe1ce; border-radius:14px; overflow:hidden; }
+      .result-head { display:flex; align-items:center; gap:12px; padding:16px 18px; color:#17633e; background:var(--green-soft); }
+      .result-head svg { flex:0 0 25px; width:25px; }
+      .result-head strong, .result-head span { display:block; }
+      .result-head strong { font:700 .88rem var(--title); }
+      .result-head span { font-size:.75rem; }
+      .result-body { padding:20px; }
+      .result-body h3 { font-size:1.1rem; }
+      .result-body > p { margin:7px 0 17px; color:var(--muted); font-size:.76rem; }
+      .data-group + .data-group { margin-top:20px; }
+      .data-group h4 { margin:0 0 9px; color:var(--muted); font:700 .68rem var(--title); letter-spacing:.1em; text-transform:uppercase; }
+      .data-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; overflow:hidden; border:1px solid var(--line); border-radius:10px; background:var(--line); }
+      .data-item { min-height:72px; padding:11px 12px; background:#fff; }
+      .data-item small, .data-item strong { display:block; }
+      .data-item small { margin-bottom:4px; color:var(--muted); font-size:.67rem; line-height:1.2; }
+      .data-item strong { font-size:.76rem; line-height:1.35; }
+      .data-item.status strong { color:var(--green); }
+      .aside { padding:25px; }
+      .aside-icon { display:grid; place-items:center; width:43px; height:43px; margin-bottom:17px; border-radius:12px; color:var(--red); background:var(--soft-red); }
+      .aside-icon svg { width:23px; }
+      .aside h2 { font-size:1.08rem; }
+      .aside > p { margin:9px 0 0; color:var(--muted); font-size:.79rem; }
+      .check-list { display:grid; gap:14px; margin:22px 0 0; padding:0; list-style:none; }
+      .check-list li { display:grid; grid-template-columns:20px 1fr; gap:9px; color:var(--muted); font-size:.76rem; line-height:1.4; }
+      .check-list svg { width:18px; color:var(--green); }
+      .aside-note { margin-top:22px !important; padding-top:18px; border-top:1px solid var(--line); }
+      .aside-note a { color:var(--red); font-weight:700; text-decoration:none; }
+      .aside-note a:hover { text-decoration:underline; }
+      .site-footer { padding:27px 0; border-top:1px solid var(--line); background:#fff; }
+      .footer-inner { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+      .footer-copy, .footer-links { margin:0; color:var(--muted); font-size:.74rem; }
+      .footer-links { display:flex; gap:18px; padding:0; list-style:none; }
+      .footer-links a { color:var(--ink); font-weight:700; text-decoration:none; }
+      .footer-links a:hover, .footer-links .current { color:var(--red); text-decoration:underline; }
+      [hidden] { display:none !important; }
+      @media (max-width:850px) { .layout { grid-template-columns:1fr; } .aside { display:grid; grid-template-columns:auto 1fr; gap:0 16px; } .aside-icon { grid-row:span 2; } .check-list, .aside-note { grid-column:1/-1; } }
+      @media (max-width:620px) { .shell { width:min(100% - 32px,var(--max)); } .header-inner { min-height:72px; } .brand img { width:82px; } .brand span { max-width:120px; font-size:.68rem; } main { padding:38px 0 55px; } .switcher, .card-top, .form-wrap { padding-right:20px; padding-left:20px; } .switcher { gap:6px; } .switcher button { min-height:84px; padding:10px; } .field-grid, .data-grid { grid-template-columns:1fr; } .form-footer { align-items:stretch; flex-direction:column; } .actions { flex-direction:column-reverse; } .actions .button { width:100%; } .result { margin-right:20px; margin-left:20px; } .result-body { padding:16px; } .footer-inner { align-items:flex-start; flex-direction:column; gap:12px; } .footer-links { gap:10px 18px; flex-wrap:wrap; } }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .button { transition:none; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="../../index.html" aria-label="Voltar ao índice da Faculdade Phorte"><img src="../../Pos/educacao-infantil-pikleriana/assets/logo-phorte.svg" alt="Faculdade Phorte" /><span>Faculdade Phorte<br />Graduação</span></a>
+        <a class="header-link" href="../../index.html">Voltar ao início</a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <div class="shell">
+        <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="../../index.html">Início</a><span aria-hidden="true">›</span><strong>Diplomas</strong></nav>
+        <header class="intro">
+          <span class="eyebrow">Serviço institucional</span>
+          <h1>Consulta de diplomas Phorte</h1>
+          <p>Consulte os dados públicos de um diploma registrado ou valide um diploma digital por seu código de segurança.</p>
+        </header>
+        <div class="trust-strip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v5c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg><span>Ambiente demonstrativo do futuro sistema de consulta pública. Os dados apresentados são fictícios.</span></div>
+
+        <div class="layout">
+          <section class="card consultation-card" aria-labelledby="consultation-title">
+            <div class="card-top"><h2 id="consultation-title">Encontre um registro</h2><p>Selecione o tipo de consulta e informe os dados solicitados.</p></div>
+            <div class="switcher" role="tablist" aria-label="Tipo de consulta">
+              <button id="public-tab" type="button" role="tab" aria-selected="true" aria-controls="public-panel" data-mode="public"><strong>Consulta pública</strong><span>Dados do registro do diploma</span></button>
+              <button id="validation-tab" type="button" role="tab" aria-selected="false" aria-controls="validation-panel" data-mode="validation"><strong>Validar diploma digital</strong><span>Código de validação do diploma</span></button>
+            </div>
+            <form class="form-wrap" id="consultation-form" novalidate>
+              <fieldset id="public-panel" data-panel="public" role="tabpanel" aria-labelledby="public-tab">
+                <div class="field-grid">
+                  <div class="field"><label for="cpf">CPF do diplomado</label><input id="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" autocomplete="off" /></div>
+                  <div class="field"><label for="birth">Data de nascimento</label><input id="birth" type="date" autocomplete="bday" /></div>
+                </div>
+                <p class="hint">O CPF será usado somente para localizar o registro e será exibido de forma parcial no resultado.</p>
+              </fieldset>
+              <fieldset id="validation-panel" data-panel="validation" role="tabpanel" aria-labelledby="validation-tab" hidden>
+                <div class="field"><label for="code">Código de validação</label><input id="code" type="text" placeholder="Ex.: PHORTE-2025-000184" autocomplete="off" /><p class="hint">Digite o código exatamente como aparece no diploma digital.</p></div>
+              </fieldset>
+              <div class="form-footer"><p class="form-helper">Demonstração local · sem conexão com banco de dados.</p><div class="actions"><button class="button secondary" type="reset">Limpar</button><button class="button primary" id="submit-button" type="submit">Consultar <span class="arrow" aria-hidden="true">→</span></button></div></div>
+              <p class="feedback error" id="error-feedback" role="alert" hidden></p>
+            </form>
+
+            <section class="result" id="public-result" aria-labelledby="public-result-title" hidden>
+              <div class="result-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg><div><strong>Registro localizado</strong><span>Confira os dados públicos do diploma.</span></div></div>
+              <div class="result-body"><h3 id="public-result-title">Dados do registro do diploma</h3><p>Esta consulta não exibe nem disponibiliza o arquivo do diploma.</p>
+                <div class="data-group"><h4>Diplomado e curso</h4><div class="data-grid">
+                  <div class="data-item"><small>Nome do aluno diplomado</small><strong>Mariana Alves de Souza</strong></div>
+                  <div class="data-item"><small>Seis dígitos centrais do CPF</small><strong>***.456.***-**</strong></div>
+                  <div class="data-item"><small>Curso superior</small><strong>Licenciatura em Pedagogia</strong></div>
+                  <div class="data-item"><small>Código e-MEC do curso</small><strong>148765</strong></div>
+                </div></div>
+                <div class="data-group"><h4>Instituições responsáveis</h4><div class="data-grid">
+                  <div class="data-item"><small>IES expedidora</small><strong>Faculdade Phorte</strong></div>
+                  <div class="data-item"><small>Código e-MEC da expedidora</small><strong>12345</strong></div>
+                  <div class="data-item"><small>IES registradora</small><strong>Faculdade Phorte</strong></div>
+                  <div class="data-item"><small>Código e-MEC da registradora</small><strong>12345</strong></div>
+                </div></div>
+                <div class="data-group"><h4>Datas do percurso acadêmico</h4><div class="data-grid">
+                  <div class="data-item"><small>Data de ingresso</small><strong>10/02/2021</strong></div>
+                  <div class="data-item"><small>Data de conclusão</small><strong>15/12/2024</strong></div>
+                  <div class="data-item"><small>Data de expedição</small><strong>30/01/2025</strong></div>
+                  <div class="data-item"><small>Data de registro</small><strong>04/02/2025</strong></div>
+                </div></div>
+                <div class="data-group"><h4>Identificação e publicação</h4><div class="data-grid">
+                  <div class="data-item"><small>Número da expedição</small><strong>EXP-2025-000184</strong></div>
+                  <div class="data-item"><small>Número do registro</small><strong>REG-2025-000184</strong></div>
+                  <div class="data-item"><small>Publicação no DOU</small><strong>10/02/2025</strong></div>
+                </div></div>
+              </div>
+            </section>
+
+            <section class="result" id="validation-result" aria-labelledby="validation-result-title" hidden>
+              <div class="result-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg><div><strong>Diploma digital válido</strong><span>O código informado corresponde a um registro ativo.</span></div></div>
+              <div class="result-body"><h3 id="validation-result-title">Validação concluída</h3><p>A validação confirma o vínculo do código com o diploma digital. O documento completo permanece protegido.</p><div class="feedback success">Código validado em 10/02/2025 · Status: <strong>ativo</strong></div></div>
+            </section>
+            <section class="feedback error" id="not-found" role="alert" hidden><strong>Não encontramos um registro com esses dados.</strong><br />Confira as informações e tente novamente. Para suporte, fale com a secretaria.</section>
+          </section>
+
+          <aside class="card aside" aria-labelledby="how-title">
+            <div class="aside-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v5c0 5 3.4 8.2 8 10 4.6-1.8 8-5 8-10V6l-8-3Z"/><path d="M12 8v4M12 16h.01"/></svg></div>
+            <div><h2 id="how-title">Qual consulta devo usar?</h2><p>Os dois serviços têm objetivos diferentes.</p></div>
+            <ul class="check-list"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg><span><strong>Consulta pública:</strong> mostra os dados básicos e os dados do registro exigidos pelo MEC.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg><span><strong>Validação digital:</strong> verifica a autenticidade por meio do código presente no diploma.</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg><span><strong>Privacidade:</strong> a consulta pública não mostra o diploma nem o CPF completo.</span></li></ul>
+            <p class="aside-note">Precisa de ajuda?<br /><a href="mailto:graduacao@faculdadephorte.edu.br">Falar com a secretaria →</a></p>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><p class="footer-copy">Faculdade Phorte de Educação e Tecnologia</p><nav aria-label="Links institucionais"><ul class="footer-links"><li><a href="https://faculdadephorte.edu.br/" target="_blank" rel="noopener">Site institucional</a></li><li><a class="current" href="./index-playground.html" aria-current="page">Consulta de diplomas</a></li><li><a href="../../politicas/index.html">Privacidade e termos</a></li></ul></nav></div></footer>
+    <script>
+      (() => {
+        const form = document.querySelector('#consultation-form');
+        const tabs = [...document.querySelectorAll('[data-mode]')];
+        const panels = [...document.querySelectorAll('[data-panel]')];
+        const publicResult = document.querySelector('#public-result');
+        const validationResult = document.querySelector('#validation-result');
+        const notFound = document.querySelector('#not-found');
+        const error = document.querySelector('#error-feedback');
+        const submitButton = document.querySelector('#submit-button');
+        let mode = 'public';
+
+        const activeInputs = () => [...document.querySelector(`[data-panel="${mode}"]`).querySelectorAll('input')];
+        const clearMessages = () => { publicResult.hidden = true; validationResult.hidden = true; notFound.hidden = true; error.hidden = true; };
+        const setMode = (next, shouldFocus = true) => { mode = next; tabs.forEach((tab) => { const selected = tab.dataset.mode === next; tab.setAttribute('aria-selected', String(selected)); tab.tabIndex = selected ? 0 : -1; }); panels.forEach((panel) => { panel.hidden = panel.dataset.panel !== next; }); clearMessages(); if (shouldFocus) activeInputs()[0].focus(); };
+        tabs.forEach((tab) => tab.addEventListener('click', () => setMode(tab.dataset.mode)));
+        tabs.forEach((tab, index) => tab.addEventListener('keydown', (event) => {
+          if (!['ArrowRight', 'ArrowLeft'].includes(event.key)) return;
+          event.preventDefault();
+          const nextIndex = event.key === 'ArrowRight' ? (index + 1) % tabs.length : (index - 1 + tabs.length) % tabs.length;
+          tabs[nextIndex].focus(); setMode(tabs[nextIndex].dataset.mode, false);
+        }));
+        setMode(mode, false);
+        form.addEventListener('submit', (event) => {
+          event.preventDefault(); clearMessages();
+          const inputs = activeInputs(); const empty = inputs.find((input) => !input.value.trim());
+          if (empty) { empty.focus(); error.textContent = 'Preencha os campos para realizar a consulta.'; error.hidden = false; return; }
+          submitButton.disabled = true; submitButton.innerHTML = 'Consultando...'; form.setAttribute('aria-busy', 'true');
+          window.setTimeout(() => {
+            submitButton.disabled = false; submitButton.innerHTML = 'Consultar <span class="arrow" aria-hidden="true">→</span>'; form.removeAttribute('aria-busy');
+            if (inputs.some((input) => input.value.trim().toUpperCase() === 'NAO-ENCONTRADO')) { notFound.hidden = false; notFound.scrollIntoView({ behavior:'smooth', block:'center' }); return; }
+            const result = mode === 'public' ? publicResult : validationResult;
+            result.hidden = false; result.scrollIntoView({ behavior:'smooth', block:'start' });
+          }, 550);
+        });
+        form.addEventListener('reset', () => window.setTimeout(clearMessages, 0));
+      })();
+    </script>
+  </body>
+</html>
