@@ -2,7 +2,7 @@
 
 Página estática da Graduação Phorte para o estado provisório **Consulta em implementação**.
 
-Também há uma versão funcional demonstrativa em `index-funcional.html`, simulando o sistema de cadastro e consulta pública.
+Também há uma versão funcional demonstrativa em `index-funcional.html` e um playground alinhado ao fluxo legal em `index-playground.html`.
 
 ## Escopo atual
 
@@ -16,6 +16,13 @@ Também há uma versão funcional demonstrativa em `index-funcional.html`, simul
 - O preenchimento é processado somente no navegador e exibe um resultado fictício.
 - Para visualizar o estado “não encontrado”, preencha qualquer campo com `NAO-ENCONTRADO`.
 - O botão “Visualizar documento” também permanece simulado até existir uma integração documental real.
+
+## Playground da consulta pública
+
+- `index-playground.html` separa visualmente a **Consulta pública** da **Validação do diploma digital**.
+- A consulta pública apresenta os 12 dados exigidos no art. 23, sem exibir o arquivo do diploma.
+- A validação por código apresenta um retorno próprio de autenticidade/status.
+- O preenchimento continua sendo demonstrativo e local; todos os registros exibidos são fictícios.
 
 ## Como visualizar
 
