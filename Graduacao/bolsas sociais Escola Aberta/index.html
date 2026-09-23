@@ -198,20 +198,6 @@
     color: var(--foreground);
   }
 
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    border-radius: var(--radius-full);
-    background: color-mix(in srgb, var(--primary) 10%, white);
-    color: var(--primary);
-    padding: 6px 10px;
-    font-size: 0.6875rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-
   .input {
     min-height: 48px;
     width: 100%;
@@ -286,11 +272,6 @@
     box-shadow: var(--shadow-lg);
   }
 
-  .hero .badge {
-    background: var(--accent);
-    color: var(--accent-foreground);
-  }
-
   .hero .hero-title,
   .hero .hero-copy,
   .hero .eyebrow {
@@ -352,8 +333,9 @@
 
   .mec-card strong {
     color: var(--mec-green);
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
     font-weight: 900;
+    line-height: 1.35;
   }
 
   .hero-proof-grid {
@@ -437,20 +419,12 @@
     margin: 0 0 8px;
   }
 
-  .partnership-copy h2 {
-    margin: 0;
-    font-family: var(--font-display);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    font-weight: 900;
-    line-height: 1.1;
-  }
-
   .partnership-copy p:last-child {
-    max-width: 460px;
+    max-width: 620px;
     margin: 8px 0 0;
     color: var(--muted-foreground);
-    font-size: var(--text-sm);
-    line-height: 1.5;
+    font-size: var(--text-base);
+    line-height: 1.55;
   }
 
   .partnership-lockup {
@@ -472,14 +446,18 @@
     object-fit: contain;
   }
 
-  .partnership-logo-phorte {
-    width: min(210px, 36vw);
-    max-height: 60px;
+  .partnership-logo-educacional {
+    width: min(260px, 42vw);
+    max-height: 64px;
   }
 
-  .partnership-logo-escola {
+  .partnership-logo-prefeitura {
     width: min(220px, 38vw);
-    max-height: 64px;
+    height: 60px;
+    border-radius: var(--radius-lg);
+    background: var(--primary-dark);
+    object-fit: cover;
+    object-position: center 60%;
   }
 
   .partnership-divider {
@@ -1502,12 +1480,12 @@
       padding-inline: 14px;
     }
 
-    .partnership-logo-phorte {
-      width: min(150px, 42vw);
+    .partnership-logo-educacional {
+      width: min(190px, 38vw);
     }
 
-    .partnership-logo-escola {
-      width: min(160px, 43vw);
+    .partnership-logo-prefeitura {
+      width: min(160px, 30vw);
     }
 
     .partnership-divider {
@@ -1666,25 +1644,8 @@
     <div class="landing-shell">
       <div class="hero-grid">
         <div>
-          <span class="badge">
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 3l2.25 4.55 5.02.73-3.64 3.55.86 5-4.49-2.36-4.49 2.36.86-5-3.64-3.55 5.02-.73L12 3z"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-            </svg>
-            Bolsas de 100%
-          </span>
-
           <h1 class="hero-title" style="margin-top: 20px">
-            Estude na Faculdade Phorte com Bolsas de 100%
+            Estude na Faculdade Phorte com Bolsas de Estudos 100% gratuitas.
           </h1>
           <p class="hero-copy">
             SUA JORNADA DE SUCESSO COMEÇA AQUI.
@@ -1796,8 +1757,7 @@
               </svg>
             </span>
             <div>
-              <small>Reconhecido pelo</small>
-              <strong>MEC</strong>
+              <strong>Faculdade credenciada pelo MEC</strong>
             </div>
           </div>
         </div>
@@ -1805,33 +1765,37 @@
     </div>
   </section>
 
-  <section class="partnership-strip" aria-labelledby="partnership-title">
+  <section
+    class="partnership-strip"
+    aria-label="Parceria institucional da Faculdade Phorte com o Programa Escola Aberta"
+  >
     <div class="landing-shell partnership-inner">
       <div class="partnership-copy">
         <p class="eyebrow">Parceria institucional</p>
-        <h2 id="partnership-title">Faculdade Phorte + Escola Aberta</h2>
         <p>
-          Uma parceria para ampliar o acesso à graduação e criar novas
-          oportunidades por meio da educação.
+          A Associação Phorte de Educação e Novas Tecnologias, em parceria com
+          o Programa Escola Aberta, oferece 100 bolsas de estudo 100% gratuitas
+          para moradores da Zona Leste de São Paulo.
         </p>
       </div>
 
       <div
         class="partnership-lockup"
-        aria-label="Parceria entre a Faculdade Phorte e a Escola Aberta"
+        role="group"
+        aria-label="Logos da Phorte Educacional e da Prefeitura de São Paulo"
       >
         <img
-          class="partnership-logo partnership-logo-phorte"
-          src="https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp"
-          alt="Faculdade Phorte"
+          class="partnership-logo partnership-logo-educacional"
+          src="https://www.phorteeducacional.com.br/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-16-at-10.55.01-1.jpeg"
+          alt="Phorte Educacional — Associação de Educação e Novas Tecnologias"
           loading="lazy"
           decoding="async"
         />
         <span class="partnership-divider" aria-hidden="true"></span>
         <img
-          class="partnership-logo partnership-logo-escola"
-          src="https://faculdadephorte.edu.br/wp-content/uploads/2026/09/escola-aberta-novo-logo-07.svg"
-          alt="Escola Aberta"
+          class="partnership-logo partnership-logo-prefeitura"
+          src="https://capital.sp.gov.br/o/adaptive-media/image/25242441/Preview-1000x0/logo_PrefSP_sem%2Bfundo_horizontal_branco_monocrom%C3%A1tico.png?t=1748437491987"
+          alt="Prefeitura de São Paulo"
           loading="lazy"
           decoding="async"
         />
@@ -1851,14 +1815,14 @@
       <div class="process-grid">
         <article class="process-card process-card-featured card card-elevated">
           <span class="process-number">1</span>
-          <h3>Faça sua inscrição</h3>
+          <h3>FAÇA SUA INSCRIÇÃO</h3>
           <p>
-            Preencha seus dados e realize a inscrição no curso desejado.
+            Preencha seus dados e selecione o curso desejado
           </p>
         </article>
         <article class="process-card process-card-wide card card-elevated">
           <span class="process-number">2</span>
-          <h3>Envie a documentação</h3>
+          <h3>ENVIE A DOCUMENTAÇÃO</h3>
           <p>
             Após a inscrição, envie a documentação necessária para análise e
             validação.
@@ -1868,10 +1832,10 @@
           class="process-card process-card-compact process-card-red card card-elevated"
         >
           <span class="process-number">3</span>
-          <h3>Matrícula confirmada</h3>
+          <h3>CONFIRMAÇÃO DA MATRÍCULA</h3>
           <p>
-            Se a documentação estiver correta e todos os requisitos forem
-            atendidos, sua matrícula será efetivada.
+            Com documentos aprovados e requisitos cumpridos, sua matrícula será
+            confirmada.
           </p>
         </article>
       </div>
@@ -2393,4 +2357,71 @@
 
   processPrev?.addEventListener("click", () => scrollProcessCarousel(-1));
   processNext?.addEventListener("click", () => scrollProcessCarousel(1));
+
+  const schoolNames = [
+    "EMEF Pedro Fukuyei Y. Ferreira",
+    "EMEF Águas de Março",
+    "EMEF Prof. Quirino Carneiro Renno",
+    "EMEF Dr. José Pedro Leite Cordeiro",
+    "EMEF Prof. Fernando Azevedo",
+    "EMEF Brigadeiro Correia de Mello",
+    "EMEF Sebastião Francisco, O Negro",
+    "EMEF Profa. Maria Aparecida Vilasboas",
+    "EMEF Profa. Clotilde Rosa H. Elias",
+    "EMEF Vladimir Herzog",
+  ];
+
+  function replaceSchoolSourceField() {
+    const textField = document.getElementById("form-field-comosoube");
+    if (!textField || textField.tagName === "SELECT") return Boolean(textField);
+
+    const selectWrapper = document.createElement("div");
+    selectWrapper.className = "elementor-field elementor-select-wrapper remove-before";
+
+    const schoolSelect = document.createElement("select");
+    schoolSelect.id = textField.id;
+    schoolSelect.name = textField.name;
+    schoolSelect.className = textField.className
+      .replace(/\belementor-field\b/g, "")
+      .trim();
+    schoolSelect.required = textField.required;
+    schoolSelect.setAttribute("aria-required", String(textField.required));
+
+    const placeholder = new Option("Selecione sua escola", "", true, true);
+    placeholder.disabled = true;
+    schoolSelect.add(placeholder);
+
+    schoolNames.forEach((schoolName) => {
+      schoolSelect.add(new Option(schoolName, schoolName));
+    });
+
+    const caret = document.createElement("div");
+    caret.className = "select-caret-down-wrapper";
+    caret.setAttribute("aria-hidden", "true");
+    caret.innerHTML =
+      '<svg aria-hidden="true" class="e-font-icon-svg e-eicon-caret-down" viewBox="0 0 571.4 571.4" xmlns="http://www.w3.org/2000/svg"><path d="M571 393Q571 407 561 418L311 668Q300 679 286 679T261 668L11 418Q0 407 0 393T11 368 36 357H536Q550 357 561 368T571 393Z"></path></svg>';
+
+    selectWrapper.append(caret, schoolSelect);
+
+    const fieldGroup = textField.closest(".elementor-field-group-comosoube");
+    if (fieldGroup) {
+      fieldGroup.classList.remove("elementor-field-type-text");
+      fieldGroup.classList.add("elementor-field-type-select");
+    }
+
+    textField.replaceWith(selectWrapper);
+    return true;
+  }
+
+  if (window.location.hostname.endsWith("faculdadephorte.edu.br")) {
+    if (!replaceSchoolSourceField()) {
+      const schoolFieldObserver = new MutationObserver(() => {
+        if (replaceSchoolSourceField()) schoolFieldObserver.disconnect();
+      });
+      schoolFieldObserver.observe(document.documentElement, {
+        childList: true,
+        subtree: true,
+      });
+    }
+  }
 </script>
