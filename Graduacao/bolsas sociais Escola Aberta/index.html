@@ -432,9 +432,9 @@
     flex: 0 1 550px;
     align-items: center;
     justify-content: center;
-    gap: clamp(14px, 3vw, 32px);
+    gap: clamp(10px, 1.5vw, 18px);
     min-height: 86px;
-    padding: 14px 24px;
+    padding: 14px 18px;
     border: 1px solid var(--border);
     border-radius: var(--radius-2xl);
     background: var(--muted);
@@ -447,17 +447,18 @@
   }
 
   .partnership-logo-educacional {
-    width: min(260px, 42vw);
-    max-height: 64px;
+    width: min(200px, 22vw);
+    max-height: 58px;
+  }
+
+  .partnership-logo-escola {
+    width: min(130px, 14vw);
+    max-height: 58px;
   }
 
   .partnership-logo-prefeitura {
-    width: min(220px, 38vw);
-    height: 60px;
-    border-radius: var(--radius-lg);
-    background: var(--primary-dark);
-    object-fit: cover;
-    object-position: center 60%;
+    width: min(145px, 16vw);
+    max-height: 58px;
   }
 
   .partnership-divider {
@@ -1341,6 +1342,27 @@
   }
 
   @media (max-width: 1023px) {
+    .partnership-inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 18px;
+      padding-block: 24px;
+    }
+
+    .partnership-copy {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+
+    .partnership-copy p:last-child {
+      margin-inline: auto;
+    }
+
+    .partnership-lockup {
+      flex-basis: auto;
+      width: 100%;
+    }
+
     .hero {
       min-height: auto;
       padding-block: 44px;
@@ -1474,22 +1496,33 @@
     }
 
     .partnership-lockup {
-      flex-basis: auto;
-      width: 100%;
-      gap: 12px;
-      padding-inline: 14px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 14px;
     }
 
     .partnership-logo-educacional {
-      width: min(190px, 38vw);
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: min(190px, 58vw);
+      max-height: 58px;
+    }
+
+    .partnership-logo-escola {
+      justify-self: center;
+      width: min(130px, 36vw);
+      max-height: 48px;
     }
 
     .partnership-logo-prefeitura {
-      width: min(160px, 30vw);
+      justify-self: center;
+      width: min(150px, 40vw);
+      max-height: 48px;
     }
 
     .partnership-divider {
-      height: 42px;
+      display: none;
     }
 
     .landing-section {
@@ -1782,7 +1815,7 @@
       <div
         class="partnership-lockup"
         role="group"
-        aria-label="Logos da Phorte Educacional e da Prefeitura de São Paulo"
+        aria-label="Logos da Phorte Educacional, do Programa Escola Aberta e da Prefeitura de São Paulo"
       >
         <img
           class="partnership-logo partnership-logo-educacional"
@@ -1793,8 +1826,16 @@
         />
         <span class="partnership-divider" aria-hidden="true"></span>
         <img
+          class="partnership-logo partnership-logo-escola"
+          src="./escola%20aberta%20novo%20logo-07.svg"
+          alt="Programa Escola Aberta"
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="partnership-divider" aria-hidden="true"></span>
+        <img
           class="partnership-logo partnership-logo-prefeitura"
-          src="https://capital.sp.gov.br/o/adaptive-media/image/25242441/Preview-1000x0/logo_PrefSP_sem%2Bfundo_horizontal_branco_monocrom%C3%A1tico.png?t=1748437491987"
+          src="https://prefeitura.sp.gov.br/o/adaptive-media/image/25188884/Thumbnail-300x300/logo_PrefSP__horizontal_fundo+claro+%281%29.png?t=1748350244506"
           alt="Prefeitura de São Paulo"
           loading="lazy"
           decoding="async"
