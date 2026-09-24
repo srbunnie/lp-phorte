@@ -168,6 +168,126 @@
       document.fonts?.ready.then(scheduleUpdate);
       update();
     });
+
+    root.querySelectorAll('[data-testimonial-carousel]').forEach((carousel) => {
+      const viewport = carousel.querySelector('[data-testimonial-viewport]');
+      const track = carousel.querySelector('[data-testimonial-track]');
+      const slides = [...(track?.querySelectorAll('.ti-testimonial-slide') || [])];
+      const previous = carousel.querySelector('[data-testimonial-prev]');
+      const next = carousel.querySelector('[data-testimonial-next]');
+
+      if (!viewport || !track || !slides.length || !previous || !next) return;
+
+      let updateFrame;
+
+      const getGap = () => Number.parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
+      const getVisibleCount = () => {
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        const step = slideWidth + getGap();
+
+        return Math.max(1, Math.min(slides.length, Math.floor((viewport.clientWidth + getGap()) / step + .01)));
+      };
+      const getCurrentIndex = () => {
+        const scrollLeft = viewport.scrollLeft;
+        let closestIndex = 0;
+        let closestDistance = Number.POSITIVE_INFINITY;
+
+        slides.forEach((slide, index) => {
+          const distance = Math.abs(slide.offsetLeft - scrollLeft);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        return closestIndex;
+      };
+      const updateViewportHeight = (currentIndex, visibleCount) => {
+        const visibleSlides = slides.slice(currentIndex, currentIndex + visibleCount);
+        const tallestSlide = Math.max(...visibleSlides.map((slide) => slide.offsetHeight));
+
+        if (Number.isFinite(tallestSlide)) viewport.style.height = `${tallestSlide + 4}px`;
+      };
+      const scheduleUpdate = () => {
+        cancelAnimationFrame(updateFrame);
+        updateFrame = requestAnimationFrame(update);
+      };
+      const update = () => {
+        const visibleCount = getVisibleCount();
+        const lastIndex = Math.max(0, slides.length - visibleCount);
+        const currentIndex = Math.min(lastIndex, getCurrentIndex());
+
+        updateViewportHeight(currentIndex, visibleCount);
+        slides.forEach((slide) => {
+          slide.setAttribute('role', 'group');
+          slide.setAttribute('aria-roledescription', 'slide');
+          const title = slide.querySelector('.ti-testimonial-person strong')?.textContent?.trim();
+          slide.setAttribute('aria-label', title || 'Depoimento');
+        });
+      };
+      const move = (direction) => {
+        const visibleCount = getVisibleCount();
+        const lastIndex = Math.max(0, slides.length - visibleCount);
+        const currentIndex = Math.min(lastIndex, getCurrentIndex());
+        let targetIndex = currentIndex + direction * visibleCount;
+
+        if (direction > 0 && currentIndex >= lastIndex) targetIndex = 0;
+        if (direction < 0 && currentIndex <= 0) targetIndex = lastIndex;
+        targetIndex = Math.min(lastIndex, Math.max(0, targetIndex));
+        const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
+        viewport.scrollTo({ left: slides[targetIndex].offsetLeft, behavior });
+      };
+
+      slides.forEach((slide) => {
+        const slot = slide.querySelector('.ti-testimonial-video');
+        const play = slot?.querySelector('[data-testimonial-play]');
+        if (!slot || !play) return;
+
+        play.addEventListener('click', () => {
+          if (slot.dataset.videoReady === 'true') return;
+          const videoId = slot.dataset.videoId;
+          if (!videoId) return;
+
+          const iframe = document.createElement('iframe');
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&rel=0&playsinline=1`;
+          iframe.title = slot.dataset.videoTitle || 'Depoimento em vídeo — Graduação em Tradução e Interpretação';
+          iframe.loading = 'lazy';
+          iframe.allow = 'autoplay; encrypted-media; picture-in-picture; web-share';
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+          iframe.allowFullscreen = true;
+          slot.dataset.videoReady = 'true';
+          slot.replaceChildren(iframe);
+        });
+      });
+
+      previous.addEventListener('click', () => move(-1));
+      next.addEventListener('click', () => move(1));
+      viewport.addEventListener('scroll', scheduleUpdate, { passive: true });
+      viewport.addEventListener('keydown', (event) => {
+        if (event.altKey || event.ctrlKey || event.metaKey) return;
+
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          move(-1);
+        }
+        if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          move(1);
+        }
+      });
+
+      if ('ResizeObserver' in window) {
+        const resizeObserver = new ResizeObserver(scheduleUpdate);
+        resizeObserver.observe(viewport);
+        resizeObserver.observe(track);
+      } else {
+        window.addEventListener('resize', scheduleUpdate, { passive: true });
+      }
+
+      document.fonts?.ready.then(scheduleUpdate);
+      update();
+    });
   }
 
   if (document.readyState === 'loading') {
