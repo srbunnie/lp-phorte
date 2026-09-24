@@ -36,15 +36,15 @@ As legendas automáticas foram usadas como base e revisadas para corrigir nomes 
 >
 > O ambiente aqui é ótimo, o pessoal aqui é ótimo, e a prova é supertranquila. Não é um ENEM; é mais para você consolidar o que está estudando e seguir em frente.
 
-## 3. Andrea
+## 3. André
 
 **Vídeo:** `PthD3ngAXpU`
 
-**Identificação:** Andrea está no primeiro semestre da graduação de Tradução e Interpretação. Também atua como professora, tradutora e advogada.
+**Identificação:** André está no primeiro semestre da graduação de Tradução e Interpretação. Também atua como professor, tradutor e advogado.
 
 **Transcrição revisada:**
 
-> Olá, meu nome é Andrea e estou na graduação de Tradução e Interpretação, no primeiro semestre.
+> Olá, meu nome é André e estou na graduação de Tradução e Interpretação, no primeiro semestre.
 >
 > Eu venho de várias tentativas. A Phorte é a minha terceira tentativa e é a tentativa acertada. Encontrei justamente o que eu queria: instrumentalidade para a profissão de tradutor e intérprete.
 >
