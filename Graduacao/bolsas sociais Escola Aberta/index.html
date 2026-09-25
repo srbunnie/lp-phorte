@@ -1111,6 +1111,7 @@
     font-size: var(--text-sm);
     font-weight: 900;
     text-transform: lowercase;
+    text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
     transition:
@@ -1683,7 +1684,7 @@
       <div class="hero-grid">
         <div>
           <h1 class="hero-title">
-            Estude na Faculdade Phorte com Bolsas de Estudos 100% gratuitas.
+            Estude na Faculdade Phorte com Bolsas de Estudos 100% Gratuitas
           </h1>
           <p class="hero-copy">
             SUA JORNADA DE SUCESSO COMEÇA AQUI.
@@ -1739,8 +1740,8 @@
                 </svg>
               </span>
               <div>
-                <h3>Modalidades flexíveis</h3>
-                <p>EAD e Presencial.</p>
+                <h3>Cursos 100% EAD</h3>
+                <p>Estude de onde estiver, com flexibilidade para sua rotina.</p>
               </div>
             </article>
           </div>
@@ -1755,13 +1756,9 @@
           </div>
 
           <div class="hero-actions">
-            <button
-              class="button-primary"
-              type="button"
-              data-scroll-to="inscricao"
-            >
+            <a class="button-primary" href="#inscricao">
               Fazer inscrição
-            </button>
+            </a>
           </div>
         </div>
 
@@ -1909,7 +1906,7 @@
     </div>
   </section>
 
-  <section class="landing-section courses" id="inscricao">
+  <section class="landing-section courses">
     <div class="landing-shell">
       <header class="section-header">
         <h2>Cursos disponíveis</h2>
@@ -1932,20 +1929,6 @@
             </button>
             <button class="phorte-filtro" type="button" data-filter="ead">
               EAD
-            </button>
-            <button
-              class="phorte-filtro"
-              type="button"
-              data-filter="presencial"
-            >
-              Presencial
-            </button>
-            <button
-              class="phorte-filtro"
-              type="button"
-              data-filter="semipresencial"
-            >
-              Semipresencial
             </button>
           </div>
 
@@ -2054,7 +2037,7 @@
             ></span>
             <div>
               <h3>Flexibilidade de ensino</h3>
-              <p>Escolha a modalidade que se adapta à sua rotina.</p>
+              <p>Estude online com flexibilidade para sua rotina.</p>
             </div>
           </article>
           <article class="benefit-card card">
@@ -2086,7 +2069,7 @@
       description:
         "Aprenda a criar estratégias de comunicação e posicionamento de marca.",
       duration: "2 anos",
-      modalities: ["EAD", "Presencial", "Semipresencial"],
+      modalities: ["EAD"],
     },
     {
       icon: "users",
@@ -2094,7 +2077,7 @@
       description:
         "Otimize processos e gerencie operações empresariais com eficiência.",
       duration: "2 anos",
-      modalities: ["EAD", "Semipresencial"],
+      modalities: ["EAD"],
     },
     {
       icon: "user-check",
@@ -2102,7 +2085,7 @@
       description:
         "Desenvolva talentos e construa culturas organizacionais de alto desempenho.",
       duration: "2 anos",
-      modalities: ["EAD", "Presencial", "Semipresencial"],
+      modalities: ["EAD"],
     },
   ];
 
@@ -2138,13 +2121,6 @@
           </article>
         `;
   }
-
-  document.querySelectorAll("[data-scroll-to]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = document.getElementById(button.dataset.scrollTo);
-      if (target) target.scrollIntoView({ behavior: "smooth" });
-    });
-  });
 
   const grid = document.getElementById("courseGrid");
   const carousel = document.getElementById("courseCarousel");
@@ -2285,12 +2261,12 @@
     },
     {
       name: "Processos Gerenciais",
-      category: "ead presencial",
+      category: "ead",
       url: "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
       image:
         "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/curso-phorte-processos-gerenciais.webp",
       alt: "Graduação em Processos Gerenciais",
-      badges: ["EAD", "Presencial"],
+      badges: ["EAD"],
       description:
         "Aprenda a estruturar operações, indicadores e processos com foco em resultado.",
     },
@@ -2327,7 +2303,7 @@
                 <h3 class="phorte-card__title">${course.name}</h3>
                 <p class="phorte-card__text">${course.description}</p>
                 <div class="phorte-card__footer">
-                  <button class="phorte-card__cta" type="button" data-scroll-to="inscricao">faça sua inscrição agora!</button>
+                  <a class="phorte-card__cta" href="#inscricao">faça sua inscrição agora!</a>
                 </div>
               </div>
             </div>
@@ -2352,15 +2328,8 @@
     });
   }
 
-  if (phorteCarousel) {
+  if (phorteCarousel)
     phorteCarousel.innerHTML = phorteCourses.map(phorteCourseCard).join("");
-    phorteCarousel.addEventListener("click", (event) => {
-      const scrollButton = event.target.closest("[data-scroll-to]");
-      if (!scrollButton) return;
-      const target = document.getElementById(scrollButton.dataset.scrollTo);
-      if (target) target.scrollIntoView({ behavior: "smooth" });
-    });
-  }
 
   phorteFilters?.querySelectorAll("[data-filter]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -2419,7 +2388,15 @@
 
   function replaceSchoolSourceField() {
     const textField = document.getElementById("form-field-comosoube");
-    if (!textField || textField.tagName === "SELECT") return Boolean(textField);
+    if (!textField) return false;
+
+    const registrationForm = textField.closest("form");
+    if (registrationForm && !document.getElementById("inscricao")) {
+      registrationForm.id = "inscricao";
+      registrationForm.style.scrollMarginTop = "24px";
+    }
+
+    if (textField.tagName === "SELECT") return true;
 
     const selectWrapper = document.createElement("div");
     selectWrapper.className = "elementor-field elementor-select-wrapper remove-before";
