@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+.event--pikler,
+.event--pikler * {
+  box-sizing: border-box;
+}
+.event--pikler * {
+  box-sizing: border-box;
+}
+.event--pikler {
+  min-height: 100svh;
+  background:
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(241, 190, 66, 0.21),
+      transparent 20%
+    ),
+    #f7f0e5;
+  overflow: hidden;
+}
+.event--pikler .event-header {
+  height: 77px;
+  padding: 0 clamp(22px, 6vw, 90px);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid rgba(88, 61, 52, 0.15);
+  font:
+    700 10px Arial,
+    sans-serif;
+  letter-spacing: 0.15em;
+}
+.event--pikler .brand-star {
+  color: #e7a82c;
+  font-size: 23px;
+}
+.event--pikler .header-note {
+  margin-left: auto;
+  color: #876f65;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+.event--pikler .event-hero {
+  width: min(1240px, 100%);
+  min-height: calc(100svh - 132px);
+  margin: auto;
+  padding: clamp(43px, 7vw, 88px) clamp(22px, 6vw, 90px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(310px, 0.9fr);
+  align-items: center;
+  gap: clamp(42px, 7vw, 100px);
+}
+.event--pikler .hero-copy {
+  max-width: 590px;
+}
+.event--pikler .eyebrow {
+  margin: 0 0 17px;
+  color: #c45561;
+  font:
+    700 10px Arial,
+    sans-serif;
+  letter-spacing: 0.18em;
+}
+.event--pikler .hero-copy h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.9rem, 5.8vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  font-weight: 500;
+}
+.event--pikler .hero-copy h1 span {
+  color: #c45561;
+  font-style: italic;
+}
+.event--pikler .support-copy {
+  max-width: 490px;
+  margin: 0;
+  color: #5f514b;
+  font:
+    16px/1.75 Arial,
+    sans-serif;
+}
+.event--pikler .event-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 29px;
+  padding: 15px 18px;
+  background: #dc9d22;
+  color: #29211b;
+  text-decoration: none;
+  font:
+    700 13px Arial,
+    sans-serif;
+  border-radius: 2px;
+  box-shadow: 0 8px 20px rgba(178, 126, 26, 0.15);
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.event--pikler .event-cta:hover {
+  transform: translateY(-2px);
+  background: #efb83e;
+}
+.event--pikler .event-cta:focus-visible {
+  outline: 3px solid #342b29;
+  outline-offset: 4px;
+}
+.event--pikler .event-cta span {
+  font-size: 17px;
+}
+.event--pikler .editorial-note {
+  margin: 24px 0 0;
+  color: #887970;
+  font:
+    italic 13px Georgia,
+    serif;
+}
+.event--pikler .hero-visual {
+  position: relative;
+  margin: 0;
+  padding: 14px;
+  background: #fffaf1;
+  box-shadow: 0 18px 54px rgba(90, 62, 49, 0.13);
+  transform: rotate(1.4deg);
+}
+.event--pikler .hero-visual:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 115px;
+  height: 115px;
+  left: -30px;
+  top: -30px;
+  border-radius: 50%;
+  background: #f0cb63;
+}
+.event--pikler .hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.event--pikler .image-sticker {
+  position: absolute;
+  right: -20px;
+  bottom: 26px;
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: #d66a73;
+  color: #fff;
+  font-style: italic;
+  font-size: 19px;
+  transform: rotate(-9deg);
+  box-shadow: 0 8px 20px rgba(90, 46, 49, 0.16);
+}
+.event--pikler .event-footer {
+  width: min(1240px, 100%);
+  margin: auto;
+  padding: 16px clamp(22px, 6vw, 90px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid rgba(88, 61, 52, 0.15);
+  font:
+    10px Arial,
+    sans-serif;
+  color: #907c71;
+  letter-spacing: 0.08em;
+}
+.event--pikler .footer-brand {
+  color: #483c38;
+  font-weight: 700;
+}
+.event--pikler .sun-mark {
+  margin-left: auto;
+  color: #e7a82c;
+  font-size: 19px;
+}
+@media (max-width: 760px) {
+  .event--pikler .event-header {
+    height: 64px;
+    padding: 0 21px;
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .event--pikler .header-note {
+    display: none;
+  }
+  .event--pikler .event-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 37px;
+    padding: 43px 22px 42px;
+  }
+  .event--pikler .hero-copy h1 {
+    font-size: clamp(2.9rem, 12vw, 4.6rem);
+  }
+  .event--pikler .support-copy {
+    font-size: 15px;
+  }
+  .event--pikler .hero-visual {
+    width: calc(100% - 12px);
+    max-width: 520px;
+    margin-left: 6px;
+  }
+  .event--pikler .hero-visual img {
+    aspect-ratio: 1.04/1;
+  }
+  .event--pikler .event-footer {
+    padding: 15px 22px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event--pikler *,
+  .event--pikler *:before,
+  .event--pikler *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+.event--pikler .phorte-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 360px) {
+  .event--pikler .hero-copy {
+    min-width: 0;
+  }
+  .event--pikler #event-title {
+    font-size: clamp(2.2rem, 12vw, 2.45rem);
+  }
+  .event--pikler .event-cta {
+    gap: 8px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Phorte Cursos design system: shared typography and primary action. */
+.event--pikler {
+  font-family: Poppins, Arial, sans-serif;
+}
+.event--pikler .event-cta {
+  min-height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: #f23d43;
+  color: #fff;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.event--pikler .event-cta:hover {
+  background: #df3039;
+}

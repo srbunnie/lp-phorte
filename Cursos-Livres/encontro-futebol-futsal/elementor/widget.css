@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+.event--football,
+.event--football * {
+  box-sizing: border-box;
+}
+.event--football * {
+  box-sizing: border-box;
+}
+.event--football {
+  min-height: 100svh;
+  background: linear-gradient(180deg, #111820 0 10px, #f2f5f8 10px);
+  overflow: hidden;
+}
+.event--football .top-rule {
+  height: 76px;
+  padding: 0 clamp(22px, 6vw, 92px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111820;
+  color: #f7f9fc;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+.event--football .top-rule span:last-child {
+  color: #b9c4cf;
+  letter-spacing: 0.05em;
+}
+.event--football .event-hero {
+  width: min(1240px, 100%);
+  min-height: calc(100svh - 130px);
+  margin: auto;
+  padding: clamp(42px, 7vw, 92px) clamp(22px, 6vw, 92px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.88fr);
+  align-items: center;
+  gap: clamp(36px, 7vw, 100px);
+}
+.event--football .hero-copy {
+  max-width: 590px;
+}
+.event--football .brand-lockup {
+  display: flex;
+  width: 180px;
+  height: 110px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+  padding: 12px;
+  background: #0c1b2a;
+  border-radius: 12px;
+  box-shadow: 0 12px 34px rgba(8, 26, 45, 0.16);
+}
+.event--football .brand-lockup img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.event--football .eyebrow {
+  margin: 0 0 15px;
+  color: #165ee8;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.19em;
+}
+.event--football .hero-copy h1 {
+  margin: 0 0 22px;
+  font-size: clamp(2.9rem, 5.8vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+}
+.event--football .hero-copy h1 span {
+  color: #1559d8;
+}
+.event--football .support-copy {
+  max-width: 490px;
+  margin: 0;
+  color: #3d4a58;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.7;
+}
+.event--football .event-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 16px 19px;
+  background: #135bdd;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 9px 22px rgba(19, 91, 221, 0.2);
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.event--football .event-cta:hover {
+  transform: translateY(-2px);
+  background: #0c47bd;
+}
+.event--football .event-cta:focus-visible {
+  outline: 3px solid #111820;
+  outline-offset: 4px;
+}
+.event--football .event-cta span {
+  font-size: 18px;
+}
+.event--football .hero-visual {
+  position: relative;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event--football .hero-visual:before {
+  content: "";
+  position: absolute;
+  inset: 4% -12% 3% 14%;
+  border-radius: 48% 48% 20px 20px;
+  background: #dce7f8;
+}
+.event--football .portrait-card {
+  position: relative;
+  width: min(100%, 410px);
+  height: 520px;
+  overflow: hidden;
+  border: 10px solid white;
+  border-radius: 48% 48% 14px 14px;
+  background: #1b2734;
+  box-shadow: 0 30px 80px rgba(21, 43, 73, 0.17);
+}
+.event--football .portrait-card:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(6, 17, 31, 0.35), transparent 38%);
+  pointer-events: none;
+}
+.event--football .portrait-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(1);
+}
+.event--football .visual-label {
+  position: absolute;
+  right: -5px;
+  bottom: 31px;
+  z-index: 1;
+  padding: 13px 15px;
+  background: #1459d5;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  box-shadow: 0 10px 24px rgba(16, 63, 146, 0.18);
+}
+.event--football .event-footer {
+  width: min(1240px, 100%);
+  margin: auto;
+  padding: 18px clamp(22px, 6vw, 92px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #556271;
+  border-top: 1px solid #d6dde5;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+.event--football .footer-line {
+  width: 46px;
+  height: 2px;
+  background: #135bdd;
+}
+.event--football .event-footer span:last-child {
+  margin-left: auto;
+  font-weight: 800;
+  color: #111820;
+}
+@media (max-width: 760px) {
+  .event--football .top-rule {
+    height: 64px;
+    font-size: 8px;
+    letter-spacing: 0.12em;
+  }
+  .event--football .top-rule span:last-child {
+    font-size: 9px;
+  }
+  .event--football .event-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 45px 22px 36px;
+  }
+  .event--football .brand-lockup {
+    width: 145px;
+    height: 90px;
+    margin-bottom: 27px;
+  }
+  .event--football .hero-copy h1 {
+    font-size: clamp(2.9rem, 12vw, 4.6rem);
+  }
+  .event--football .hero-visual {
+    min-height: 350px;
+  }
+  .event--football .portrait-card {
+    width: min(78%, 360px);
+    height: 400px;
+  }
+  .event--football .visual-label {
+    right: 0;
+    bottom: 17px;
+  }
+  .event--football .event-footer {
+    padding: 16px 22px;
+    font-size: 9px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event--football *,
+  .event--football *:before,
+  .event--football *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+.event--football .phorte-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 360px) {
+  .event--football .hero-copy {
+    min-width: 0;
+  }
+  .event--football #event-title {
+    font-size: clamp(2.2rem, 12vw, 2.45rem);
+  }
+  .event--football .event-cta {
+    gap: 8px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Phorte Cursos design system: shared typography and primary action. */
+.event--football {
+  font-family: Poppins, Arial, sans-serif;
+}
+.event--football .event-cta {
+  min-height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: #f23d43;
+  color: #fff;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.event--football .event-cta:hover {
+  background: #df3039;
+}
