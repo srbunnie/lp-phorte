@@ -1,0 +1,330 @@
+<!--
+ELEMENTOR: cole este arquivo inteiro em um único widget HTML.
+Antes, envie as imagens para a Biblioteca de Mídia do WordPress e troque
+cada valor COLE_AQUI_URL_DA_MIDIA__... pelo URL correspondente.
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+.event--phorte,
+.event--phorte * {
+  box-sizing: border-box;
+}
+.event--phorte * {
+  box-sizing: border-box;
+}
+.event--phorte {
+  min-height: 100svh;
+  color: #f7f8fa;
+  background:
+    radial-gradient(
+      ellipse at 84% 44%,
+      rgba(0, 198, 224, 0.12),
+      transparent 35%
+    ),
+    #0c1015;
+  overflow: hidden;
+}
+.event--phorte .event-header {
+  height: 75px;
+  padding: 0 clamp(22px, 6vw, 88px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: #9ca9b4;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.event--phorte .event-index {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+.event--phorte .event-index i {
+  color: #f03742;
+  font-style: normal;
+}
+.event--phorte .header-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #00c6e0;
+  box-shadow: 0 0 14px #00c6e0;
+}
+.event--phorte .event-hero {
+  width: min(1240px, 100%);
+  min-height: calc(100svh - 130px);
+  margin: auto;
+  padding: clamp(45px, 7vw, 90px) clamp(22px, 6vw, 88px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.97fr);
+  align-items: center;
+  gap: clamp(38px, 6.5vw, 95px);
+}
+.event--phorte .hero-copy {
+  max-width: 590px;
+}
+.event--phorte .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  color: #68e8f4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+.event--phorte .eyebrow span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f03742;
+}
+.event--phorte .hero-copy h1 {
+  margin: 0 0 24px;
+  font-size: clamp(2.9rem, 5.8vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.075em;
+  font-weight: 900;
+}
+.event--phorte .hero-copy h1 span {
+  color: #00c6e0;
+}
+.event--phorte .support-copy {
+  max-width: 480px;
+  margin: 0;
+  color: #bac4ce;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.72;
+}
+.event--phorte .event-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 16px 19px;
+  background: #00c6e0;
+  color: #071114;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 3px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.event--phorte .event-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 34px rgba(0, 198, 224, 0.2);
+}
+.event--phorte .event-cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.event--phorte .event-cta span {
+  font-size: 18px;
+}
+.event--phorte .hero-visual {
+  position: relative;
+  margin: 0;
+  padding: 23px 18px 50px;
+  border: 1px solid rgba(0, 198, 224, 0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 198, 224, 0.09),
+    rgba(240, 55, 66, 0.07)
+  );
+}
+.event--phorte .hero-visual:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -13px 13px 13px -13px;
+  border: 1px solid rgba(240, 55, 66, 0.43);
+}
+.event--phorte .hero-visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.8/1;
+  object-fit: contain;
+  object-position: center;
+  background: #12171d;
+  filter: grayscale(1);
+}
+.event--phorte .hero-visual figcaption {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 17px;
+  left: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: #b6c5d0;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.event--phorte .hero-visual figcaption span:last-child {
+  color: #f03742;
+}
+.event--phorte .event-footer {
+  width: min(1240px, 100%);
+  margin: auto;
+  padding: 15px clamp(22px, 6vw, 88px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7f8b96;
+  font-size: 10px;
+  letter-spacing: 0.07em;
+}
+.event--phorte .phorte-signature {
+  color: #fff;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+}
+.event--phorte .phorte-signature span {
+  color: #f03742;
+}
+@media (max-width: 840px) {
+  .event--phorte .event-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 54px clamp(32px, 6vw, 88px);
+  }
+  .event--phorte .hero-copy {
+    max-width: 620px;
+  }
+  .event--phorte .hero-visual {
+    width: min(100%, 620px);
+    margin: auto;
+  }
+}
+@media (max-width: 760px) {
+  .event--phorte .event-header {
+    height: 64px;
+    padding: 0 22px;
+    font-size: 8px;
+    gap: 10px;
+    letter-spacing: 0.1em;
+  }
+  .event--phorte .event-index {
+    font-size: 11px;
+  }
+  .event--phorte .event-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 45px 22px 38px;
+  }
+  .event--phorte .hero-copy h1 {
+    font-size: clamp(2.9rem, 12vw, 4.6rem);
+  }
+  .event--phorte .hero-visual {
+    max-width: 540px;
+    width: calc(100% - 12px);
+    margin-left: 12px;
+    padding: 15px 12px 43px;
+  }
+  .event--phorte .hero-visual figcaption {
+    right: 12px;
+    left: 12px;
+    bottom: 14px;
+    font-size: 8px;
+  }
+  .event--phorte .event-footer {
+    padding: 14px 22px;
+    font-size: 9px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event--phorte *,
+  .event--phorte *:before,
+  .event--phorte *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+.event--phorte .phorte-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 360px) {
+  .event--phorte .hero-copy {
+    min-width: 0;
+  }
+  .event--phorte #event-title-encontro-phorte {
+    font-size: clamp(2.2rem, 12vw, 2.45rem);
+  }
+  .event--phorte .event-cta {
+    gap: 8px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Phorte Cursos design system: shared typography and primary action. */
+.event--phorte {
+  font-family: Poppins, Arial, sans-serif;
+}
+.event--phorte .event-cta {
+  min-height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: #f23d43;
+  color: #fff;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.event--phorte .event-cta:hover {
+  background: #df3039;
+}
+
+</style>
+
+<section class="lp-event event--phorte" aria-labelledby="event-title-encontro-phorte">
+  <div class="event-hero">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span aria-hidden="true"></span> ENCONTRO INTERNACIONAL PHORTE
+      </p>
+      <h1 id="event-title-encontro-phorte">
+        Em breve<br /><span>divulgaremos<br />novas datas.</span>
+      </h1>
+      <p class="support-copy">
+        Enquanto isso, confira nossos cursos de capacitação, aperfeiçoamento e
+        extensão da Phorte e impulsione a sua carreira!
+      </p>
+      <a class="event-cta" href="https://phorte.com/"
+        >Conheça os cursos da Phorte <span aria-hidden="true">↗</span></a
+      >
+      <img class="phorte-logo" src="COLE_AQUI_URL_DA_MIDIA__phorte-logo.svg" alt="Faculdade Phorte" width="300" height="132">
+    </div>
+    <figure class="hero-visual">
+      <img
+        src="COLE_AQUI_URL_DA_MIDIA__phorte-palestrantes.webp"
+        alt="Composição de palestrantes do Encontro Phorte"
+        width="768"
+        height="394"
+      />
+      <figcaption>
+        <span>ENCONTRO INTERNACIONAL PHORTE</span
+        ><span aria-hidden="true">PHORTE</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>

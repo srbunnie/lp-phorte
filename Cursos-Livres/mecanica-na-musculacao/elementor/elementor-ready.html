@@ -1,0 +1,305 @@
+<!--
+ELEMENTOR: cole este arquivo inteiro em um único widget HTML.
+Antes, envie as imagens para a Biblioteca de Mídia do WordPress e troque
+cada valor COLE_AQUI_URL_DA_MIDIA__... pelo URL correspondente.
+-->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+.event--mechanics,
+.event--mechanics * {
+  box-sizing: border-box;
+}
+.event--mechanics * {
+  box-sizing: border-box;
+}
+.event--mechanics {
+  min-height: 100svh;
+  color: #f7f7f7;
+  background:
+    radial-gradient(
+      circle at 76% 50%,
+      rgba(226, 18, 31, 0.13),
+      transparent 33%
+    ),
+    #090909;
+  overflow: hidden;
+}
+.event--mechanics .event-header {
+  height: 72px;
+  width: min(1260px, 100%);
+  margin: auto;
+  padding: 0 clamp(22px, 5vw, 76px);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #c7c7c7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+.event--mechanics .header-rule {
+  width: 28px;
+  height: 3px;
+  background: #ec1d2d;
+}
+.event--mechanics .event-header span:last-child {
+  margin-left: auto;
+  color: #f4f4f4;
+}
+.event--mechanics .event-hero {
+  width: min(1260px, 100%);
+  min-height: calc(100svh - 128px);
+  margin: auto;
+  padding: clamp(42px, 6vw, 78px) clamp(22px, 5vw, 76px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(330px, 0.84fr);
+  align-items: center;
+  gap: clamp(38px, 7vw, 100px);
+}
+.event--mechanics .hero-copy {
+  max-width: 580px;
+}
+.event--mechanics .event-logo {
+  display: block;
+  width: min(275px, 75%);
+  height: auto;
+  max-height: 135px;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 28px;
+}
+.event--mechanics .eyebrow {
+  margin: 0 0 15px;
+  color: #ff4855;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+.event--mechanics .hero-copy h1 {
+  margin: 0 0 23px;
+  font-size: clamp(2.9rem, 5.8vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.075em;
+  font-weight: 900;
+}
+.event--mechanics .hero-copy h1 span {
+  color: #ef2837;
+}
+.event--mechanics .support-copy {
+  max-width: 470px;
+  margin: 0;
+  color: #c4c4c4;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.7;
+}
+.event--mechanics .event-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  background: #ed2534;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  border-radius: 3px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.event--mechanics .event-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 34px rgba(237, 37, 52, 0.25);
+}
+.event--mechanics .event-cta:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.event--mechanics .event-cta span {
+  font-size: 18px;
+}
+.event--mechanics .hero-visual {
+  position: relative;
+  margin: 0;
+  padding: 11px;
+  border: 1px solid rgba(239, 40, 55, 0.68);
+  border-radius: 4px;
+  background: linear-gradient(
+    145deg,
+    rgba(239, 40, 55, 0.17),
+    rgba(255, 255, 255, 0.03) 55%
+  );
+}
+.event--mechanics .hero-visual:before {
+  content: "";
+  position: absolute;
+  inset: -17px 17px 17px -17px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 0;
+}
+.event--mechanics .hero-visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.03/1;
+  object-fit: contain;
+  border-radius: 2px;
+  background: #151515;
+}
+.event--mechanics .hero-visual figcaption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 3px 2px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.event--mechanics .hero-visual figcaption:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ed2534;
+}
+.event--mechanics .event-footer {
+  width: min(1260px, 100%);
+  margin: auto;
+  padding: 15px clamp(22px, 5vw, 76px);
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8b8b8b;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  gap: 12px;
+}
+.event--mechanics .footer-emblem {
+  font-weight: 900;
+  color: #ed2534;
+  font-size: 20px;
+}
+@media (max-width: 760px) {
+  .event--mechanics .event-header {
+    height: 61px;
+    font-size: 8px;
+    letter-spacing: 0.13em;
+  }
+  .event--mechanics .event-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 42px 22px 35px;
+  }
+  .event--mechanics .event-logo {
+    max-height: 110px;
+    margin-bottom: 25px;
+  }
+  .event--mechanics .hero-copy h1 {
+    font-size: clamp(2.9rem, 12vw, 4.6rem);
+  }
+  .event--mechanics .hero-visual {
+    max-width: 520px;
+    width: calc(100% - 15px);
+    margin-left: 15px;
+  }
+  .event--mechanics .hero-visual img {
+    aspect-ratio: 1.18/1;
+  }
+  .event--mechanics .event-footer {
+    padding: 14px 22px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event--mechanics *,
+  .event--mechanics *:before,
+  .event--mechanics *:after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
+.event--mechanics .phorte-logo {
+  display: block;
+  width: 96px;
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 360px) {
+  .event--mechanics .hero-copy {
+    min-width: 0;
+  }
+  .event--mechanics #event-title-mecanica-musculacao {
+    font-size: clamp(2.2rem, 12vw, 2.45rem);
+  }
+  .event--mechanics .event-cta {
+    gap: 8px;
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+/* Phorte Cursos design system: shared typography and primary action. */
+.event--mechanics {
+  font-family: Poppins, Arial, sans-serif;
+}
+.event--mechanics .event-cta {
+  min-height: 48px;
+  border: 0;
+  border-radius: 8px;
+  background: #f23d43;
+  color: #fff;
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 20px;
+}
+.event--mechanics .event-cta:hover {
+  background: #df3039;
+}
+
+</style>
+
+<section class="lp-event event--mechanics" aria-labelledby="event-title-mecanica-musculacao">
+  <div class="event-hero">
+    <div class="hero-copy">
+      <img
+        class="event-logo"
+        src="COLE_AQUI_URL_DA_MIDIA__logo-mecanica-musculacao.webp"
+        alt="Mecânica da Musculação: técnicas de ajuda e segurança"
+        width="300"
+        height="134"
+      />
+      <p class="eyebrow">CONHECIMENTO EM MOVIMENTO</p>
+      <h1 id="event-title-mecanica-musculacao">
+        Em breve<br /><span>divulgaremos<br />novas datas.</span>
+      </h1>
+      <p class="support-copy">
+        Enquanto isso, confira nossos cursos de capacitação, aperfeiçoamento e
+        extensão da Phorte e impulsione a sua carreira!
+      </p>
+      <a class="event-cta" href="https://phorte.com/"
+        >Conheça os cursos da Phorte <span aria-hidden="true">↗</span></a
+      >
+      <img class="phorte-logo" src="COLE_AQUI_URL_DA_MIDIA__phorte-logo.svg" alt="Faculdade Phorte" width="300" height="132">
+    </div>
+    <figure class="hero-visual">
+      <img
+        src="COLE_AQUI_URL_DA_MIDIA__mecanica-professores.webp"
+        alt="Professores Francielli e Waldemar Guimarães"
+        width="600"
+        height="585"
+      />
+      <figcaption>MECÂNICA NA MUSCULAÇÃO</figcaption>
+    </figure>
+  </div>
+</section>
