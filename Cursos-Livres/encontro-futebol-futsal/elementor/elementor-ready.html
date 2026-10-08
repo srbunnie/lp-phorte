@@ -1,3 +1,5 @@
+<!-- Cole em um widget HTML do Elementor. Os assets usam os URLs de uploads do site; confirme que todos os arquivos foram enviados. -->
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 .event--football { --page: #0c131c; --ink: #f5f8fc; --accent: #6a9fff; --muted: #bac6d5; --line: #ffffff21; }.event--football * { box-sizing: border-box; }.event--football { background: var(--page); }.event--football { margin: 0; font-family: Poppins, Arial, sans-serif; }.event--football { min-height: 100svh; color: var(--ink); background: var(--page); overflow: clip; font-family: Poppins, Arial, sans-serif; -webkit-font-smoothing: antialiased; }.event--football .event-frame { max-width: 1320px; min-height: 100svh; margin: auto; display: flex; flex-direction: column; }.event--football .event-header,
 .event--football .top-rule { min-height: 92px; max-width: 1320px; margin: auto; padding: 24px clamp(24px, 5vw, 72px); display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--line); font-size: 10px; font-weight: 500; letter-spacing: .12em; width: 100%; }.event--football .event-header > :last-child,
@@ -14,3 +16,47 @@
 .event--football *::after { transition: none !important; } }.event--football .top-rule { background: #111820; color: #fff; max-width: none; }.event--football .top-rule > :last-child { color: #c3cbd4; }.event--football .brand-lockup { width: 148px; height: 114px; padding: 12px; margin-bottom: 28px; background: #111820; border-radius: 6px; }.event--football .brand-lockup img { display: block; width: 100%; height: 100%; object-fit: contain; }.event--football .hero-visual { padding: 0 0 24px 20px; }.event--football .hero-visual::before { content: ''; position: absolute; inset: 36px 0 0; background: #1559d8; border-radius: 6px; }.event--football .portrait-card { position: relative; width: 100%; overflow: hidden; border-radius: 6px; background: #162331; }.event--football .portrait-card img { aspect-ratio: 4/5; object-fit: cover; object-position: center top; filter: grayscale(1); }.event--football .visual-label { position: relative; display: block; margin: -52px 16px 0; padding: 16px; color: #fff; background: #111820e8; }.event--football .footer-line { width: 40px; height: 2px; background: var(--accent); flex-shrink: 0; }
 @media (max-width: 960px) {.event--football .portrait-card img { aspect-ratio: 4/3; object-position: center 28%; } }
 @media (max-width: 540px) {.event--football .brand-lockup { width: 116px; height: 96px; margin-bottom: 24px; }.event--football .top-rule { font-size: 8px; }.event--football .footer-line { display: none; } }
+
+</style>
+<section aria-labelledby="event-title-encontro-futebol-futsal" class="lp-event event--football">
+      <div class="top-rule">
+        <span>FORMAÇÃO • FUTEBOL • FUTSAL</span><span>Faculdade Phorte</span>
+      </div>
+      <section class="event-hero" aria-labelledby="event-title-encontro-futebol-futsal">
+        <div class="hero-copy">
+          <div class="brand-lockup">
+            <img
+              src="https://futebolefutsal.com.br/wp-content/uploads/2026/10/logo-futebol-futsal.webp"
+              alt="Encontro Nacional de Futebol e Futsal"
+              width="700"
+              height="597">
+          </div>
+          <p class="eyebrow">CONHECIMENTO QUE MOVE O ESPORTE</p>
+          <h1 id="event-title-encontro-futebol-futsal">
+            <span class="headline-lead">Em breve</span> <span class="headline-main">divulgaremos<br>novas datas.</span>
+          </h1>
+          <p class="support-copy">
+            Enquanto isso, confira nossos cursos de capacitação, aperfeiçoamento
+            e extensão da Phorte e impulsione a sua carreira!
+          </p>
+          <a class="event-cta" href="https://phorte.com/"
+            >Conheça os cursos da Phorte <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <img
+              src="https://futebolefutsal.com.br/wp-content/uploads/2026/10/futebol-profissional.webp"
+              alt="Profissional do futebol em retrato"
+              width="520"
+              height="720">
+          </div>
+          <span class="visual-label">UMA NOVA JORNADA EM BREVE</span>
+        </div>
+      </section>
+      <footer class="event-footer">
+        <span>Encontro Nacional de Futebol e Futsal</span>
+        <span class="footer-line" aria-hidden="true"></span>
+        <img class="phorte-logo" src="https://futebolefutsal.com.br/wp-content/uploads/2026/10/phorte-logo.svg" alt="Faculdade Phorte" width="300" height="132">
+      </footer>
+    </section>

@@ -1,3 +1,5 @@
+<!-- Cole em um widget HTML do Elementor. Os assets usam os URLs de uploads do site; confirme que todos os arquivos foram enviados. -->
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 .event--pikler { --page: #f7f0e5; --ink: #342b29; --accent: #a34250; --muted: #5f514b; --line: #342b2926; }.event--pikler * { box-sizing: border-box; }.event--pikler { background: var(--page); }.event--pikler { margin: 0; font-family: Poppins, Arial, sans-serif; }.event--pikler { min-height: 100svh; color: var(--ink); background: var(--page); overflow: clip; font-family: Poppins, Arial, sans-serif; -webkit-font-smoothing: antialiased; }.event--pikler .event-frame { max-width: 1320px; min-height: 100svh; margin: auto; display: flex; flex-direction: column; }.event--pikler .event-header,
 .event--pikler .top-rule { min-height: 92px; max-width: 1320px; margin: auto; padding: 24px clamp(24px, 5vw, 72px); display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--line); font-size: 10px; font-weight: 500; letter-spacing: .12em; width: 100%; }.event--pikler .event-header > :last-child,
@@ -14,3 +16,42 @@
 .event--pikler *::after { transition: none !important; } }.event--pikler { background: radial-gradient(circle at 92% 30%, #f0cb6329, transparent 35%), var(--page); }.event--pikler .brand-star { color: #b98014; font-size: 26px; }.event--pikler .header-note { color: var(--muted); font-size: 10px; letter-spacing: .02em; }.event--pikler .hero-copy h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(48px, 5.5vw, 76px); line-height: 1.04; letter-spacing: -.045em; }.event--pikler .hero-copy h1 .headline-lead { font-weight: 400; font-style: normal; }.event--pikler .headline-main { font-style: italic; }.event--pikler .editorial-note { margin: 24px 0 0; color: var(--muted); font: italic 14px/1.6 Georgia, serif; }.event--pikler .hero-visual { padding: 16px 16px 42px; background: #fffaf1; box-shadow: 0 18px 54px #5a3e3112; border: 1px solid #342b2912; border-radius: 180px 180px 4px 4px; }.event--pikler .hero-visual img { aspect-ratio: 1; object-fit: cover; border-radius: 170px 170px 2px 2px; }.event--pikler .image-sticker { position: absolute; right: 16px; bottom: 16px; padding: 12px 22px; border-radius: 50px; background: #f0cb63; color: #342b29; font: italic 24px Georgia, serif; }.event--pikler .sun-mark { color: #b98014; font-size: 24px; }.event--pikler .event-footer .phorte-logo { margin-left: 0; margin-right: auto; }
 @media (max-width: 960px) {.event--pikler .hero-copy h1 { font-size: clamp(48px, 8vw, 72px); } }
 @media (max-width: 540px) {.event--pikler .header-note { display: none; }.event--pikler .hero-copy h1 { font-size: clamp(38px, 10.5vw, 56px); }.event--pikler .hero-copy h1 .headline-lead { font-size: .6em; } }
+
+</style>
+<section aria-labelledby="event-title-encontro-pikler" class="lp-event event--pikler">
+      <header class="event-header">
+        <span class="brand-star" aria-hidden="true">✳</span
+        ><span>ENCONTRO INTERNACIONAL PIKLER</span
+        ><span class="header-note">Infância • cuidado • diálogo</span>
+      </header>
+      <section class="event-hero" aria-labelledby="event-title-encontro-pikler">
+        <div class="hero-copy">
+          <p class="eyebrow">ENCONTRO INTERNACIONAL PIKLER</p>
+          <h1 id="event-title-encontro-pikler">
+            <span class="headline-lead">Em breve</span> <span class="headline-main">divulgaremos<br>novas datas.</span>
+          </h1>
+          <p class="support-copy">
+            Enquanto isso, confira nossos cursos de capacitação, aperfeiçoamento
+            e extensão da Phorte e impulsione a sua carreira!
+          </p>
+          <a class="event-cta" href="https://phorte.com/"
+            >Conheça os cursos da Phorte <span aria-hidden="true">↗</span></a
+          >
+          <p class="editorial-note">
+            Um espaço de encontro, escuta e aprendizagem.
+          </p>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="https://encontropikler.com.br/wp-content/uploads/2026/10/myrtha-chokler.webp"
+            alt="Myrtha Chokler, referência internacional nos estudos sobre desenvolvimento infantil"
+            width="900"
+            height="900"><span class="image-sticker">Pikler</span>
+        </figure>
+      </section>
+      <footer class="event-footer">
+        <span>Realização</span>
+        <img class="phorte-logo" src="https://encontropikler.com.br/wp-content/uploads/2026/10/phorte-logo.svg" alt="Faculdade Phorte" width="300" height="132">
+        <span class="sun-mark" aria-hidden="true">✳</span>
+      </footer>
+    </section>

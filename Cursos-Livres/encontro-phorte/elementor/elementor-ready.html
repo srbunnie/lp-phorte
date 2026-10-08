@@ -1,3 +1,5 @@
+<!-- Cole em um widget HTML do Elementor. Os assets usam os URLs de uploads do site; confirme que todos os arquivos foram enviados. -->
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 .event--phorte { --page: #0c1015; --ink: #f7f8fa; --accent: #68e8f4; --muted: #bac4ce; --line: #ffffff21; }.event--phorte * { box-sizing: border-box; }.event--phorte { background: var(--page); }.event--phorte { margin: 0; font-family: Poppins, Arial, sans-serif; }.event--phorte { min-height: 100svh; color: var(--ink); background: var(--page); overflow: clip; font-family: Poppins, Arial, sans-serif; -webkit-font-smoothing: antialiased; }.event--phorte .event-frame { max-width: 1320px; min-height: 100svh; margin: auto; display: flex; flex-direction: column; }.event--phorte .event-header,
 .event--phorte .top-rule { min-height: 92px; max-width: 1320px; margin: auto; padding: 24px clamp(24px, 5vw, 72px); display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--line); font-size: 10px; font-weight: 500; letter-spacing: .12em; width: 100%; }.event--phorte .event-header > :last-child,
@@ -13,3 +15,44 @@
 .event--phorte *::before,
 .event--phorte *::after { transition: none !important; } }.event--phorte { background: radial-gradient(ellipse at 85% 38%, #00c6e00d, transparent 50%), var(--page); }.event--phorte .event-index { color: #fff; font-size: 12px; letter-spacing: .06em; }.event--phorte .event-index i { color: #f23d43; font-style: normal; }.event--phorte .header-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }.event--phorte .hero-visual { padding: 28px 20px 20px; border: 1px solid #68e8f438; border-radius: 8px; background: linear-gradient(145deg, #00c6e00f, #f23d4308); }.event--phorte .hero-visual::before { content: ''; position: absolute; top: -1px; left: 20px; width: 72px; height: 3px; background: #f23d43; }.event--phorte .hero-visual img { aspect-ratio: 768/394; object-fit: contain; filter: grayscale(1); }.event--phorte .hero-visual figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding-top: 18px; margin-top: 18px; border-top: 1px solid #ffffff1a; color: var(--muted); font-size: 9px; }.event--phorte .hero-visual figcaption > :last-child { color: #ff6870; }
 @media (max-width: 540px) {.event--phorte .event-header > :last-child { display: none; }.event--phorte .header-dot { margin-left: auto; }.event--phorte .hero-visual { padding: 24px 16px 16px; } }
+
+</style>
+<section aria-labelledby="event-title-encontro-phorte" class="lp-event event--phorte">
+      <header class="event-header">
+        <span class="event-index">PHORTE <i>+</i> CONHECIMENTO</span
+        ><span class="header-dot" aria-hidden="true"></span
+        ><span>ENCONTRO INTERNACIONAL</span>
+      </header>
+      <section class="event-hero" aria-labelledby="event-title-encontro-phorte">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span aria-hidden="true"></span> ENCONTRO INTERNACIONAL PHORTE
+          </p>
+          <h1 id="event-title-encontro-phorte">
+            <span class="headline-lead">Em breve</span> <span class="headline-main">divulgaremos<br>novas datas.</span>
+          </h1>
+          <p class="support-copy">
+            Enquanto isso, confira nossos cursos de capacitação, aperfeiçoamento
+            e extensão da Phorte e impulsione a sua carreira!
+          </p>
+          <a class="event-cta" href="https://phorte.com/"
+            >Conheça os cursos da Phorte <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="https://encontrophorte.com.br/wp-content/uploads/2026/10/phorte-palestrantes.webp"
+            alt="Composição de palestrantes do Encontro Phorte"
+            width="768"
+            height="394">
+          <figcaption>
+            <span>ENCONTRO INTERNACIONAL PHORTE</span
+            ><span aria-hidden="true">PHORTE</span>
+          </figcaption>
+        </figure>
+      </section>
+      <footer class="event-footer">
+        <span>Um encontro de conhecimento, troca e futuro.</span>
+        <img class="phorte-logo" src="https://encontrophorte.com.br/wp-content/uploads/2026/10/phorte-logo.svg" alt="Faculdade Phorte" width="300" height="132">
+      </footer>
+    </section>
