@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAFAFA">
+  <title>Salários por curso | Protótipos Faculdade Phorte</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1A1A1A;
+      --muted: #595959;
+      --line: #E5E5E5;
+      --paper: #FFFFFF;
+      --canvas: #FAFAFA;
+      --surface-muted: #F4F6F9;
+      --primary: #D42B2B;
+      --primary-dark: #A81E1E;
+      --primary-subtle: #FBEAEA;
+      --footer-red: #7D1B1B;
+      --ink-inverse: #FAFAFA;
+      --ink-inverse-muted: #C7C7C7;
+      --space-0-5: 2px;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
+      --space-12: 48px;
+      --space-16: 64px;
+      --space-20: 80px;
+      --space-24: 96px;
+      --radius: 8px;
+      --radius-sm: 4px;
+      --radius-md: 6px;
+      --radius-lg: 8px;
+      --radius-xl: 12px;
+      --shadow-rest: 0 4px 18px rgb(26 26 26 / 4%);
+      --shadow-hover: 0 8px 24px rgb(26 26 26 / 8%);
+      font-family: Poppins, Inter, ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--canvas); color: var(--ink); line-height: 1.6; }
+    button { font: inherit; }
+    .topbar { background: var(--paper); border-bottom: 1px solid var(--line); }
+    .topbar-inner, main { width: min(1180px, calc(100% - 40px)); margin-inline: auto; }
+    .topbar-inner { min-height: 66px; display: flex; align-items: center; gap: var(--space-3); }
+    .brand-lockup { display: flex; align-items: center; gap: var(--space-3); }
+    .brand-logo { display: block; width: 76px; height: auto; }
+    .brand-section { padding-left: var(--space-3); border-left: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    .topbar-label { margin-left: auto; color: var(--muted); font-size: 12px; }
+    main { padding: var(--space-12) 0 var(--space-16); }
+    .intro { max-width: 760px; margin: 0 auto var(--space-8); text-align: center; }
+    .eyebrow { margin: 0 0 var(--space-2); color: var(--primary-dark); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); font-weight: 700; line-height: 1.15; letter-spacing: -.035em; }
+    .intro-copy { max-width: 600px; margin: var(--space-3) auto 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .controls { display: grid; grid-template-columns: 1fr auto; gap: var(--space-4); align-items: end; margin: var(--space-10) 0 var(--space-4); }
+    .control-label { display: block; margin: 0 0 var(--space-2); color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .course-tabs, .style-tabs, .view-tabs { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .tab { min-height: 38px; padding: 0 var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-md); background: var(--paper); color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 600; transition: border-color .16s, background .16s, color .16s; }
+    .tab:hover { border-color: var(--primary); }
+    .tab:focus-visible { outline: 2px solid var(--footer-red); outline-offset: 2px; }
+    .tab[aria-pressed="true"] { border-color: var(--primary-dark); background: var(--primary-subtle); color: var(--primary-dark); }
+    .style-row { display: flex; justify-content: space-between; gap: var(--space-5); align-items: end; margin: var(--space-4) 0 var(--space-5); }
+    .style-tabs .tab { min-height: 34px; padding-inline: var(--space-3); font-size: 11px; }
+    .view-tabs { gap: var(--space-1); padding: var(--space-1); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper); }
+    .view-tabs .tab { min-height: 29px; padding-inline: var(--space-2); border-color: transparent; border-radius: var(--radius-sm); font-size: 11px; }
+    .view-tabs .tab[aria-pressed="true"] { border-color: var(--primary); background: var(--primary); color: var(--ink-inverse); }
+    .preview-meta { display: flex; justify-content: space-between; align-items: center; gap: var(--space-3); padding: 0 var(--space-1) var(--space-3); color: var(--muted); font-size: 12px; }
+    .course-name { color: var(--ink); font-weight: 600; }
+    .live-link { color: var(--primary-dark); font-weight: 700; text-decoration: none; }
+    .live-link:hover { text-decoration: underline; }
+    .preview-shell { margin: 0 auto; padding: var(--space-6); border: 1px solid var(--line); border-radius: var(--radius-xl); background: var(--paper); box-shadow: var(--shadow-rest); transition: max-width .22s ease, padding .22s ease; container: preview / inline-size; }
+    .preview-shell[data-viewport="desktop"] { max-width: 1180px; }
+    .preview-shell[data-viewport="mobile"] { max-width: 410px; padding: var(--space-3); border-radius: var(--radius-xl); }
+    .preview-shell[data-viewport="mobile"] .salary-panel { min-height: initial; grid-template-columns: 1fr; gap: var(--space-4); padding: var(--space-4); }
+    .preview-shell[data-viewport="mobile"] .salary-grid { grid-template-columns: 1fr; gap: var(--space-2); }
+    .preview-shell[data-viewport="mobile"] .salary-panel[data-style="editorial"] .salary-grid { border: 0; background: transparent; }
+    .preview-shell[data-viewport="mobile"] .salary-panel[data-style="editorial"] .salary-card { min-height: initial; align-items: flex-start; padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-md); text-align: left; }
+    .preview-shell[data-viewport="mobile"] .salary-panel[data-style="editorial"] .salary-card:last-child { border-right: 1px solid var(--line); }
+    .preview-shell[data-viewport="mobile"] .salary-panel[data-style="spotlight"] .salary-card { min-height: 72px; align-items: center; padding: var(--space-3); }
+    .preview-shell[data-viewport="mobile"] .salary-panel[data-style="clean"] .salary-card { min-height: 100px; }
+    .course-page-label { margin: 0 0 var(--space-3); color: var(--ink); font-size: 13px; font-weight: 600; }
+    .salary-panel { min-height: 248px; display: grid; align-items: stretch; overflow: hidden; border-radius: var(--radius-xl); }
+    .salary-copy h2 { margin: 0; color: var(--primary-dark); font-size: clamp(20px, 2.1vw, 27px); font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
+    .salary-copy p { margin: var(--space-3) 0 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .salary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .salary-list-title { display: none; }
+    .salary-card { min-width: 0; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+    .salary-value { display: block; color: var(--primary-dark); font-size: clamp(18px, 1.7vw, 22px); font-weight: 700; line-height: 1.1; letter-spacing: -.025em; white-space: nowrap; }
+    .salary-label { margin-top: var(--space-2); color: var(--ink); font-size: 11px; font-weight: 600; }
+    .salary-role { margin-top: var(--space-2); color: var(--muted); font-size: 11px; line-height: 1.35; }
+    .source { margin: var(--space-4) 0 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
+    .salary-panel[data-style="editorial"] { grid-template-columns: minmax(250px, .95fr) minmax(0, 1.25fr); gap: var(--space-6); padding: var(--space-6); background: var(--primary-subtle); }
+    .salary-panel[data-style="editorial"] .salary-copy { align-self: center; }
+    .salary-panel[data-style="editorial"] .salary-grid { align-self: center; gap: 0; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper); }
+    .salary-panel[data-style="editorial"] .salary-card { min-height: 120px; padding: var(--space-3) var(--space-2); border-right: 1px solid var(--line); }
+    .salary-panel[data-style="editorial"] .salary-card:last-child { border-right: 0; }
+    .salary-panel[data-style="editorial"] .source { grid-column: 1 / -1; margin-top: calc(-1 * var(--space-2)); }
+
+    .salary-panel[data-style="spotlight"] { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); grid-template-rows: auto auto; gap: var(--space-5) var(--space-8); align-items: center; padding: var(--space-6); border: 1px solid var(--line); background: var(--paper); }
+    .salary-panel[data-style="spotlight"] .salary-copy { align-self: center; }
+    .salary-panel[data-style="spotlight"] .salary-copy h2 { color: var(--primary-dark); font-size: clamp(25px, 2.6vw, 34px); }
+    .salary-panel[data-style="spotlight"] .salary-copy p { color: var(--muted); }
+    .salary-panel[data-style="spotlight"] .salary-grid { grid-template-columns: 1fr; gap: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--paper); box-shadow: var(--shadow-rest); }
+    .salary-panel[data-style="spotlight"] .salary-list-title { display: block; margin: 0; padding: var(--space-4); border-bottom: 1px dashed var(--line); color: var(--primary-dark); font-size: 15px; font-weight: 600; line-height: 1.4; }
+    .salary-panel[data-style="spotlight"] .salary-card { min-height: 72px; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "role value" "label value"; align-items: center; gap: 2px var(--space-3); padding: var(--space-3) var(--space-4); border-bottom: 1px dashed var(--line); text-align: left; }
+    .salary-panel[data-style="spotlight"] .salary-card:last-child { border-bottom: 0; }
+    .salary-panel[data-style="spotlight"] .salary-value { grid-area: value; color: var(--primary-dark); font-size: clamp(18px, 1.8vw, 22px); }
+    .salary-panel[data-style="spotlight"] .salary-label { grid-area: label; margin-top: 0; color: var(--muted); font-size: 10px; font-weight: 500; }
+    .salary-panel[data-style="spotlight"] .salary-role { grid-area: role; margin-top: 0; color: var(--ink); font-size: 12px; line-height: 1.4; }
+    .salary-panel[data-style="spotlight"] .source { grid-column: 1; grid-row: 2; margin-top: 0; color: var(--muted); }
+
+    .salary-panel[data-style="clean"] { grid-template-columns: 1fr; gap: var(--space-6); padding: var(--space-6); border: 1px solid var(--line); background: var(--paper); }
+    .salary-panel[data-style="clean"] .salary-copy { max-width: 800px; }
+    .salary-panel[data-style="clean"] .salary-copy h2 { color: var(--primary-dark); }
+    .salary-panel[data-style="clean"] .salary-grid { gap: var(--space-3); }
+    .salary-panel[data-style="clean"] .salary-card { min-height: 130px; align-items: flex-start; padding: var(--space-4); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface-muted); text-align: left; }
+    .salary-panel[data-style="clean"] .salary-card:first-child { border-color: var(--primary); background: var(--primary-subtle); }
+    .salary-panel[data-style="clean"] .salary-value { font-size: clamp(21px, 2vw, 28px); }
+    .salary-panel[data-style="clean"] .salary-label { order: -1; margin: 0 0 var(--space-3); color: var(--muted); font-weight: 500; }
+    .salary-panel[data-style="clean"] .salary-role { color: var(--ink); font-size: 12px; font-weight: 600; }
+    .salary-panel[data-style="clean"] .source { margin-top: 0; }
+    .review-note { display: flex; gap: var(--space-2); align-items: flex-start; max-width: 1180px; margin: var(--space-4) auto 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
+    .review-note strong { color: var(--ink); }
+    .dot { width: 7px; height: 7px; flex: 0 0 auto; margin-top: 4px; border-radius: 50%; background: var(--primary); }
+    .footer { margin-top: var(--space-8); color: var(--muted); text-align: center; font-size: 11px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (max-width: 800px) {
+      .controls { grid-template-columns: 1fr; }
+      .style-row { align-items: start; flex-direction: column; }
+      .salary-panel[data-style="editorial"], .salary-panel[data-style="spotlight"] { grid-template-columns: 1fr; }
+      .salary-panel[data-style="editorial"] .source, .salary-panel[data-style="spotlight"] .source { grid-column: auto; grid-row: auto; margin-top: calc(-1 * var(--space-2)); }
+    }
+    @media (max-width: 560px) {
+      .topbar-inner, main { width: min(100% - 24px, 1180px); }
+      main { padding-top: var(--space-8); }
+      .topbar-inner { min-height: 58px; flex-wrap: wrap; gap: var(--space-1) var(--space-3); padding-block: var(--space-2); }
+      .topbar-label { width: 100%; margin-left: 0; font-size: 10px; line-height: 1.3; }
+      .brand-logo { width: 68px; }
+      h1 { font-size: clamp(27px, 8vw, 36px); }
+      .intro h1 br { display: none; }
+      .intro-copy { font-size: 14px; }
+      .course-tabs { gap: var(--space-2); }
+      .course-tabs .tab { min-height: 34px; padding-inline: var(--space-2); font-size: 11px; }
+      .style-row { gap: var(--space-4); }
+      .style-row > section, .style-tabs { width: 100%; }
+      .style-tabs .tab { min-height: 36px; }
+      .preview-shell { padding: var(--space-3); border-radius: var(--radius-xl); }
+      .preview-shell[data-viewport="mobile"] { max-width: 100%; }
+      .salary-panel { min-height: initial; }
+      .salary-panel[data-style="editorial"], .salary-panel[data-style="spotlight"], .salary-panel[data-style="clean"] { padding: var(--space-4); gap: var(--space-4); }
+      .salary-grid { grid-template-columns: 1fr; }
+      .salary-panel[data-style="editorial"] .salary-grid { border: 0; gap: var(--space-2); background: transparent; }
+      .salary-panel[data-style="editorial"] .salary-card { min-height: initial; align-items: flex-start; padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-md); text-align: left; }
+      .salary-panel[data-style="editorial"] .salary-card:last-child { border-right: 1px solid var(--line); }
+      .salary-panel[data-style="spotlight"] .salary-grid { gap: 0; }
+      .salary-panel[data-style="spotlight"] .salary-card { min-height: 72px; align-items: center; padding: var(--space-3); }
+      .salary-panel[data-style="clean"] .salary-grid { gap: var(--space-2); }
+      .salary-panel[data-style="clean"] .salary-card { min-height: 100px; }
+      .salary-panel[data-style="clean"] .salary-label { margin-bottom: var(--space-2); }
+      .salary-role { font-size: 12px; }
+      .source { font-size: 11px; }
+      .preview-meta { align-items: flex-start; flex-direction: column; }
+      .preview-meta > span { max-width: 100%; }
+      .view-tabs { align-self: flex-end; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-lockup">
+        <img class="brand-logo" src="./assets/logo-phorte.svg" alt="Faculdade Phorte">
+        <span class="brand-section">Graduação</span>
+      </div>
+      <div class="topbar-label">Protótipos · Seção de salários</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Exploração de interface</p>
+      <h1 id="page-title">Uma seção, sete cursos,<br>três caminhos visuais.</h1>
+      <p class="intro-copy">Compare como a informação salarial pode entrar nas páginas de graduação. Escolha um curso e alterne entre as direções visuais.</p>
+    </section>
+
+    <section aria-label="Escolha do curso">
+      <span class="control-label">Curso</span>
+      <div class="course-tabs" id="course-tabs" role="group" aria-label="Cursos de graduação"></div>
+    </section>
+
+    <div class="style-row">
+      <section aria-label="Escolha do estilo">
+        <span class="control-label">Direção visual</span>
+        <div class="style-tabs" id="style-tabs" role="group" aria-label="Variações visuais">
+          <button class="tab" type="button" data-style="editorial" aria-pressed="true">01 · Institucional editorial</button>
+          <button class="tab" type="button" data-style="spotlight" aria-pressed="false">02 · Destaque de mercado</button>
+          <button class="tab" type="button" data-style="clean" aria-pressed="false">03 · Painel claro</button>
+        </div>
+      </section>
+      <div class="view-tabs" role="group" aria-label="Tamanho da prévia">
+        <button class="tab" type="button" data-viewport="desktop" aria-pressed="true">Desktop</button>
+        <button class="tab" type="button" data-viewport="mobile" aria-pressed="false">Mobile</button>
+      </div>
+    </div>
+
+    <div class="preview-meta">
+      <span>Prévia da página: <strong class="course-name" id="preview-course-name">Educação Física</strong></span>
+      <span><span id="style-description">Composição institucional inspirada na referência do briefing.</span> · <a class="live-link" id="live-course-link" href="https://faculdadephorte.edu.br/graduacao/educacao-fisica/" target="_blank" rel="noreferrer">Abrir página do curso ↗</a></span>
+    </div>
+    <section class="preview-shell" id="preview-shell" data-viewport="desktop" aria-label="Prévia da seção salarial">
+      <p class="course-page-label" id="course-page-label">Educação Física</p>
+      <article class="salary-panel" id="salary-panel" data-style="editorial" aria-live="polite"></article>
+    </section>
+    <p class="review-note"><span class="dot" aria-hidden="true"></span><span><strong>Para validação:</strong> copy, valores e fontes reproduzem o briefing do ClickUp. Confirmar a atualização das referências salariais antes da publicação.</span></p>
+    <p class="footer">Protótipo navegável · Faculdade Phorte · 2026</p>
+  </main>
+
+  <script>
+    const courses = [
+      {
+        name: "Educação Física", page: "educacao-fisica",
+        title: "Quanto ganha um profissional de Educação Física?",
+        copy: "A média salarial de Profissional de Educação Física na saúde é de R$ 3.183,12 por mês. A área oferece diferentes contextos de atuação, como docência e preparação esportiva. Os ganhos variam conforme especialização, jornada, região e modelo de contratação.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul./2026).",
+        salaries: [["R$ 3.365,48", "Professor de Educação Física no Ensino Médio"], ["R$ 3.183,12", "Profissional de Educação Física na Saúde"], ["R$ 4.019,68", "Preparador de Atleta"]]
+      },
+      {
+        name: "Administração", page: "administracao",
+        title: "Quanto ganha um administrador?",
+        copy: "A média salarial de um administrador no Brasil é de R$ 5.085,50 por mês. A remuneração varia conforme a área de atuação, a experiência, a região e o nível de responsabilidade. Com o desenvolvimento da carreira, o profissional pode buscar oportunidades em funções de gestão.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; últimos 12 meses disponíveis).",
+        salaries: [["R$ 5.085,50", "Administrador"], ["R$ 5.599,18", "Gerente Administrativo"], ["R$ 19.766,40", "Superintendente Administrativo"]]
+      },
+      {
+        name: "Marketing", page: "marketing",
+        title: "Quanto ganha um profissional de Marketing?",
+        copy: "A média salarial de Analista de Marketing no Brasil é de R$ 4.914,34 por mês. As possibilidades incluem atuação com campanhas, análise de mercado e gestão de marketing. A remuneração depende da experiência, do segmento e do nível de responsabilidade.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+        salaries: [["R$ 3.078,27", "Assistente de Marketing"], ["R$ 4.914,34", "Analista de Marketing"], ["R$ 10.957,11", "Gerente de Marketing"]]
+      },
+      {
+        name: "Pedagogia", page: "pedagogia",
+        title: "Quanto ganha um profissional de Pedagogia?",
+        copy: "O salário médio de professor no Brasil é de R$ 3.673,54 por mês. A formação também pode levar à coordenação pedagógica e à gestão escolar, conforme os requisitos de cada função. A remuneração varia por região, jornada e experiência.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+        salaries: [["R$ 3.673,54", "Professor de Creche"], ["R$ 4.188,95", "Coordenador Pedagógico"], ["R$ 5.587,12", "Diretor de Escola Privada"]]
+      },
+      {
+        name: "Processos Gerenciais", page: "processos-gerenciais",
+        title: "Quanto ganha um profissional de gestão?",
+        copy: "Não há uma média salarial única para o curso. Como referência, a média mensal de Analista de Processos de Produção é de R$ 4.809,42. A formação pode levar a possibilidades em processos e operações; remuneração e evolução dependem de experiência, setor e responsabilidade.",
+        source: "Fonte: Portal Salário/Novo CAGED-MTE e Indeed (Brasil).",
+        salaries: [["R$ 4.809,42", "Analista de Processos de Produção"], ["R$ 4.572,00", "Coordenador de Operações"], ["R$ 6.664,82", "Gerente de Processos"]]
+      },
+      {
+        name: "Recursos Humanos", page: "recursos-humanos",
+        title: "Quanto ganha um profissional de RH?",
+        copy: "A média salarial de Analista de Recursos Humanos no Brasil é de R$ 4.416,46 por mês. A remuneração varia conforme experiência, região, setor e nível de responsabilidade. A área também reúne possibilidades em parceria com os negócios e gestão de equipes.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+        salaries: [["R$ 4.416,46", "Analista de Recursos Humanos"], ["R$ 5.760,03", "Business Partner (HRBP)"], ["R$ 10.029,54", "Gerente de Recursos Humanos"]]
+      },
+      {
+        name: "Tradução e Interpretação", page: "traducao-e-interpretacao-ingles-portugues",
+        title: "Quanto ganha um tradutor e intérprete?",
+        copy: "A média salarial de Tradutor no Brasil é de R$ 6.924,60 por mês no regime CLT. A remuneração pode variar bastante entre contratos, projetos e atuação autônoma. As amostras de Tradutor e Intérprete são menores e pedem cautela na leitura.",
+        source: "Fonte: Portal Salário, dados do Novo CAGED/MTE (Brasil; ago/2025–jul/2026).",
+        salaries: [["R$ 6.924,60", "Tradutor"], ["R$ 4.367,62", "Intérprete"], ["R$ 3.104,88", "Revisor de Texto"]]
+      }
+    ];
+
+    const styleDescriptions = {
+      editorial: "Composição institucional com vermelho Phorte e fundo tênue.",
+      spotlight: "Resumo salarial em painel claro com comparação direta das ocupações.",
+      clean: "Painel claro com foco nos valores e nas ocupações de cada carreira."
+    };
+    let activeCourse = 0;
+    let activeStyle = "editorial";
+
+    const courseTabs = document.querySelector("#course-tabs");
+    const styleTabs = document.querySelector("#style-tabs");
+    const panel = document.querySelector("#salary-panel");
+    const pageLabel = document.querySelector("#course-page-label");
+    const courseName = document.querySelector("#preview-course-name");
+    const shell = document.querySelector("#preview-shell");
+
+    function renderCourseTabs() {
+      courseTabs.innerHTML = courses.map((course, index) =>
+        `<button class="tab" type="button" data-course="${index}" aria-pressed="${index === activeCourse}" aria-label="Prévia de ${course.name}">${course.name}</button>`
+      ).join("");
+    }
+
+    function renderPanel() {
+      const course = courses[activeCourse];
+      pageLabel.textContent = course.name;
+      courseName.textContent = course.name;
+      document.querySelector("#live-course-link").href = `https://faculdadephorte.edu.br/graduacao/${course.page}/`;
+      document.querySelector("#style-description").textContent = styleDescriptions[activeStyle];
+      panel.dataset.style = activeStyle;
+      panel.innerHTML = `
+        <div class="salary-copy">
+          <h2>${course.title}</h2>
+          <p>${course.copy}</p>
+        </div>
+        <div class="salary-grid" aria-label="Médias salariais por ocupação">
+          <h3 class="salary-list-title">Salários médios no Brasil</h3>
+          ${course.salaries.map(([value, role]) => `
+            <div class="salary-card">
+              <strong class="salary-value">${value}</strong>
+              <span class="salary-label">Média Salarial</span>
+              <span class="salary-role">${role}</span>
+            </div>`).join("")}
+        </div>
+        <p class="source">${course.source}</p>`;
+    }
+
+    courseTabs.addEventListener("click", event => {
+      const button = event.target.closest("[data-course]");
+      if (!button) return;
+      activeCourse = Number(button.dataset.course);
+      renderCourseTabs();
+      renderPanel();
+      courseTabs.querySelector(`[data-course="${activeCourse}"]`).focus();
+    });
+
+    styleTabs.addEventListener("click", event => {
+      const button = event.target.closest("[data-style]");
+      if (!button) return;
+      activeStyle = button.dataset.style;
+      styleTabs.querySelectorAll("[data-style]").forEach(tab => tab.setAttribute("aria-pressed", String(tab === button)));
+      renderPanel();
+    });
+
+    document.querySelector(".view-tabs").addEventListener("click", event => {
+      const button = event.target.closest("[data-viewport]");
+      if (!button) return;
+      shell.dataset.viewport = button.dataset.viewport;
+      document.querySelectorAll(".view-tabs [data-viewport]").forEach(tab => tab.setAttribute("aria-pressed", String(tab === button)));
+    });
+
+    renderCourseTabs();
+    renderPanel();
+  </script>
+</body>
+</html>
