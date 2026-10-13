@@ -1,17 +1,18 @@
 // Genera elementor/widget-html.html: la versión de campaña (index.html) en un solo bloque
 // para pegar en el widget "HTML" de Elementor.
 //
-//   node elementor/generar.js [URL base de las imágenes .webp]
+//   node elementor/generar.js [URL de la carpeta de imágenes]
 //
-// Sin argumento, las fotos se cargan desde GitHub Pages. Para servirlas desde WordPress, súbelas a
-// la biblioteca de medios y pasa la carpeta donde quedaron, p. ej.:
-//   node elementor/generar.js https://phorte.com/wp-content/uploads/2026/10/
+// Sin argumento, las imágenes se cargan de la biblioteca de medios de WordPress (uploads/2026/10/),
+// donde están las fotos .webp y el QR con el mismo nombre que en assets/images/.
 //
 // Qué hace:
 // - Junta phorte.css + styles.css y antepone #lp-punta a cada selector, para que el tema y Elementor
 //   no pisen la página (y la página no toque el resto del sitio). Las reglas del kit que la página no
 //   usa se descartan.
-// - Inserta los logotipos y el QR como data URI (WordPress no acepta SVG por defecto).
+// - Quita el relleno del contenedor de Elementor que envuelve el widget (página a sangre).
+// - El logotipo blanco va como data URI (no está en la biblioteca de medios y WordPress no acepta SVG
+//   por defecto); el resto de assets/images/ apunta a la carpeta de imágenes.
 // - Incluye script.js tal cual.
 "use strict";
 
@@ -21,7 +22,7 @@ const path = require("path");
 const RAIZ = path.resolve(__dirname, "..");
 const SALIDA = path.join(__dirname, "widget-html.html");
 const ID = "#lp-punta";
-const BASE = (process.argv[2] || "https://srbunnie.github.io/lp-phorte/Cursos-Livres/congresso-punta/assets/images/").replace(/\/?$/, "/");
+const BASE = (process.argv[2] || "https://phorte.com/wp-content/uploads/2026/10/").replace(/\/?$/, "/");
 
 const leer = (f) => fs.readFileSync(path.join(RAIZ, f), "utf8");
 const html = leer("index.html");
@@ -124,7 +125,7 @@ function procesar(css) {
 // Neutraliza estilos típicos del tema (Hello Elementor, kit global de Elementor) en elementos sin
 // clase. Con :where() solo pesa el #id: cualquier regla con clase de la página gana igual.
 const NEUTRO = `
-${ID}{display:block;position:relative;isolation:auto;text-align:left;}
+${ID}{display:block;position:relative;isolation:auto;text-align:left;letter-spacing:normal;word-spacing:normal;text-transform:none;text-indent:0;text-shadow:none;font-style:normal;font-weight:400;font-variant:normal;}
 ${ID} :where(h1,h2,h3,h4,h5,h6){font-family:inherit;font-weight:inherit;line-height:inherit;color:inherit;text-transform:none;letter-spacing:inherit;margin:0;}
 ${ID} :where(p,ul,ol,li,figure,blockquote,dl,dd){margin:0;}
 ${ID} :where(ul,ol){padding:0;list-style:none;}
@@ -134,6 +135,9 @@ ${ID} :where(img){height:auto;border:0;border-radius:0;box-shadow:none;}
 ${ID} :where(code){font-family:inherit;background:none;padding:0;font-size:inherit;color:inherit;}
 ${ID} :where(strong){font-weight:700;}
 ${ID} [hidden]{display:none!important;}
+/* Contenedor y widget de Elementor que envuelven la página: sin relleno ni espacios */
+.e-con:has(${ID}){--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;--gap:0px;--row-gap:0px;--column-gap:0px;padding:0;max-width:none;}
+.elementor-widget-html:has(${ID}),.elementor-widget-html:has(${ID}) > .elementor-widget-container{margin:0;padding:0;}
 /* Barra de administración de WordPress (solo cuando hay sesión iniciada) */
 body.admin-bar ${ID} .lp-topo{top:32px;}
 @media (max-width:782px){body.admin-bar ${ID} .lp-topo{top:46px;}}
@@ -145,16 +149,9 @@ const css = procesar(leer("phorte.css")) + NEUTRO + procesar(leer("styles.css"))
 let cuerpo = html.slice(html.indexOf("<body>") + 6, html.lastIndexOf("</body>"));
 cuerpo = cuerpo.replace(/\s*<script src="script\.js"[^>]*><\/script>\s*/, "\n");
 
-const dataUri = (f, tipo) => `data:${tipo};base64,` + fs.readFileSync(path.join(RAIZ, f)).toString("base64");
-const reemplazos = {
-  "assets/images/phorte-logo-blanco.svg": dataUri("assets/images/phorte-logo-blanco.svg", "image/svg+xml"),
-  "assets/images/qr-promocion.svg": dataUri("assets/images/qr-promocion.svg", "image/svg+xml"),
-  "assets/images/qr-promocion.png": dataUri("assets/images/qr-promocion.png", "image/png"),
-  "assets/images/formacion-avanzada-biomecanica.webp": BASE + "formacion-avanzada-biomecanica.webp",
-  "assets/images/sistemas-metodos-musculacion.webp": BASE + "sistemas-metodos-musculacion.webp",
-};
-for (const [de, a] of Object.entries(reemplazos)) cuerpo = cuerpo.split(de).join(a);
-if (/="assets\//.test(cuerpo)) throw new Error("Quedó una ruta relativa a assets/ sin reemplazar.");
+const logoBlanco = "data:image/svg+xml;base64," + fs.readFileSync(path.join(RAIZ, "assets/images/phorte-logo-blanco.svg")).toString("base64");
+cuerpo = cuerpo.split('"assets/images/phorte-logo-blanco.svg"').join('"' + logoBlanco + '"');
+cuerpo = cuerpo.replace(/="assets\/images\/([^"]+)"/g, (_, archivo) => '="' + BASE + archivo + '"');
 
 const fuentes = html.match(/<link rel="preconnect"[^>]*>\s*<link rel="preconnect"[^>]*>\s*<link href="https:\/\/fonts\.googleapis\.com[^>]*>/)[0];
 
