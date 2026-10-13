@@ -8,11 +8,11 @@ Landing page temporal en español para presentar dos cursos Phorte y explicar c�
 - Cursos: Formación Avanzada en Biomecánica y Sistemas y Métodos de Entrenamiento de Musculación.
 - El cupón se introduce durante la inscripción en el sitio de Phorte.
 - La promoción termina el 26 de octubre de 2026 a las 12:00, hora de Brasilia (UTC−3), y la página muestra un contador regresivo.
-- El QR local enlaza a `https://srbunnie.github.io/lp-phorte/Cursos-Livres/congresso-punta/`; si cambia la URL pública, hay que generar un nuevo QR.
+- La página oficial está en WordPress: `https://phorte.com/es/phorte-e-congreso-de-punta/`. El QR (`assets/images/qr-promocion-ponta-del-lest.png`) enlaza a esa dirección; si cambia, hay que generar un nuevo QR.
 
 ## Dos versiones
 
-Hay dos landing pages con el mismo contenido y el mismo `script.js`. El QR abre `index.html`.
+Hay dos landing pages con el mismo contenido y el mismo `script.js`. La de campaña (`index.html`) es la que se publica en WordPress.
 
 ### `index.html` + `styles.css` — campaña (versión principal)
 
@@ -40,20 +40,20 @@ Cuando termina el plazo, la página cambia sola: oculta el cupón, muestra un av
 
 ## WordPress + Elementor (versión de campaña)
 
-`elementor/widget-html.html` es la versión roja (`index.html`) en un solo bloque para el widget **HTML** de Elementor: estilos aislados con `#lp-punta` (el tema no la pisa y ella no toca el resto del sitio), logotipos y QR incrustados y el script incluido.
+`elementor/widget-html.html` es la versión roja (`index.html`) en un solo bloque para el widget **HTML** de Elementor: estilos aislados con `#lp-punta` (el tema no la pisa y ella no toca el resto del sitio), sin relleno del contenedor de Elementor, logotipo blanco incrustado y el script incluido. Las fotos y el QR se cargan de la biblioteca de medios (`https://phorte.com/wp-content/uploads/2026/10/`).
 
-1. En WordPress: **Páginas → Añadir nueva**. En *Atributos de página → Plantilla*, elige **Elementor Canvas** (sin la cabecera ni el pie del tema; la página trae los suyos).
-2. Edita con Elementor. Añade un contenedor de **ancho completo**, con relleno y espacio entre elementos en 0, y dentro un widget **HTML**.
-3. Pega todo el contenido de `elementor/widget-html.html` y publica.
+1. La página usa la plantilla **Elementor Canvas** (sin la cabecera ni el pie del tema; la página trae los suyos).
+2. En Elementor, dentro de un contenedor de **ancho completo**, un widget **HTML**. El relleno del contenedor se anula desde el propio código.
+3. Borra el contenido del widget, pega todo `elementor/widget-html.html` y actualiza la página. No pegues `index.html`: sus CSS, JS e imágenes usan rutas relativas que no existen en WordPress.
 4. Título y descripción para buscadores/redes: configúralos en el plugin SEO (los `<meta>` de `index.html` no van en el widget).
 
-Fotos: por defecto se cargan desde GitHub Pages. Para servirlas desde WordPress, sube `assets/images/formacion-avanzada-biomecanica.webp` y `assets/images/sistemas-metodos-musculacion.webp` a la biblioteca de medios (en el mismo mes, para que queden en la misma carpeta) y genera de nuevo con esa carpeta:
+Si las imágenes cambian de carpeta en la biblioteca de medios (mismos nombres que en `assets/images/`), genera de nuevo con la carpeta nueva:
 
 ```
-node elementor/generar.js https://phorte.com/wp-content/uploads/2026/10/
+node elementor/generar.js https://phorte.com/wp-content/uploads/AAAA/MM/
 ```
 
-Después de cualquier cambio en `index.html`, `styles.css` o `script.js`, vuelve a ejecutar `node elementor/generar.js` y pega el resultado de nuevo. Si la página de WordPress pasa a ser la URL pública, hay que generar un nuevo QR que apunte a ella.
+Después de cualquier cambio en `index.html`, `styles.css` o `script.js`, vuelve a ejecutar `node elementor/generar.js` y pega el resultado de nuevo.
 
 ## Archivos
 
@@ -62,7 +62,7 @@ Después de cualquier cambio en `index.html`, `styles.css` o `script.js`, vuelve
 - `styles.css` / `minimalista.css`: estilos de cada versión (prefijo `lp-`, colores en `:root`).
 - `script.js`: compartido: copiar cupón, contadores, animaciones al desplazar, barra fija del móvil, aviso y modal del QR.
 - `elementor/generar.js` → `elementor/widget-html.html`: versión de campaña para el widget HTML de Elementor (ver arriba).
-- `assets/images/`: logotipos (color y blanco), portadas de los cursos y QR en SVG/PNG.
+- `assets/images/`: logotipos (color y blanco), portadas de los cursos y QR (PNG).
 
 Abre `index.html` o sirve esta carpeta con un servidor HTTP local para ver la página.
 
