@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var CUPON = "congresodepunta100";
+  var CUPON = "punta100";
   // Fin de la promoción: 26/10/2026, 12:00 hora de Brasilia (UTC−3)
   var FIN = new Date("2026-10-26T12:00:00-03:00").getTime();
 

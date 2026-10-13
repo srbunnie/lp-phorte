@@ -1,6 +1,6 @@
 # Cursos gratis Phorte · Promoción por tiempo limitado
 
-Landing page temporal en español para presentar dos cursos Phorte y explicar cómo usar el cupón `congresodepunta100`. La difusión cuenta con el apoyo del evento de Punta del Este; la página presenta la promoción de Phorte sin atribuirla al evento.
+Landing page temporal en español para presentar dos cursos Phorte y explicar cómo usar el cupón `punta100`. La difusión cuenta con el apoyo del evento de Punta del Este; la página presenta la promoción de Phorte sin atribuirla al evento.
 
 ## Oferta
 
@@ -38,12 +38,30 @@ En las dos, en el móvil aparece una barra fija con el cupón cuando el cupón d
 
 Cuando termina el plazo, la página cambia sola: oculta el cupón, muestra un aviso y el contador queda en cero. Esto no desactiva el cupón en WooCommerce; la fecha de vencimiento debe configurarse allí.
 
+## WordPress + Elementor (versión de campaña)
+
+`elementor/widget-html.html` es la versión roja (`index.html`) en un solo bloque para el widget **HTML** de Elementor: estilos aislados con `#lp-punta` (el tema no la pisa y ella no toca el resto del sitio), logotipos y QR incrustados y el script incluido.
+
+1. En WordPress: **Páginas → Añadir nueva**. En *Atributos de página → Plantilla*, elige **Elementor Canvas** (sin la cabecera ni el pie del tema; la página trae los suyos).
+2. Edita con Elementor. Añade un contenedor de **ancho completo**, con relleno y espacio entre elementos en 0, y dentro un widget **HTML**.
+3. Pega todo el contenido de `elementor/widget-html.html` y publica.
+4. Título y descripción para buscadores/redes: configúralos en el plugin SEO (los `<meta>` de `index.html` no van en el widget).
+
+Fotos: por defecto se cargan desde GitHub Pages. Para servirlas desde WordPress, sube `assets/images/formacion-avanzada-biomecanica.webp` y `assets/images/sistemas-metodos-musculacion.webp` a la biblioteca de medios (en el mismo mes, para que queden en la misma carpeta) y genera de nuevo con esa carpeta:
+
+```
+node elementor/generar.js https://phorte.com/wp-content/uploads/2026/10/
+```
+
+Después de cualquier cambio en `index.html`, `styles.css` o `script.js`, vuelve a ejecutar `node elementor/generar.js` y pega el resultado de nuevo. Si la página de WordPress pasa a ser la URL pública, hay que generar un nuevo QR que apunte a ella.
+
 ## Archivos
 
 - `index.html` / `minimalista.html`: las dos versiones de la landing page.
 - `phorte.css`: kit oficial del Design System (copiado sin cambios). Se usa solo como base: reset, contenedor, íconos, alerta, aviso y modal. No editar.
 - `styles.css` / `minimalista.css`: estilos de cada versión (prefijo `lp-`, colores en `:root`).
 - `script.js`: compartido: copiar cupón, contadores, animaciones al desplazar, barra fija del móvil, aviso y modal del QR.
+- `elementor/generar.js` → `elementor/widget-html.html`: versión de campaña para el widget HTML de Elementor (ver arriba).
 - `assets/images/`: logotipos (color y blanco), portadas de los cursos y QR en SVG/PNG.
 
 Abre `index.html` o sirve esta carpeta con un servidor HTTP local para ver la página.
