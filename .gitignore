@@ -1,5 +1,6 @@
 # Dependências e caches
 node_modules/
+__pycache__/
 .next/
 .playwright-cli/
 .visual-review/

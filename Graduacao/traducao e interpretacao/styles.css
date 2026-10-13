@@ -1571,3 +1571,39 @@
     animation-iteration-count: 1 !important;
   }
 }
+
+/* phorte-salary-panel:start */
+/* Variante Painel claro: escopo próprio, tipografia herdada da LP. */
+[data-phorte-salary-section] {
+  --salary-red: #d42b2b;
+  --salary-heading: #a81e1e;
+  --salary-ink: #1a1a1a;
+  --salary-muted: #595959;
+  --salary-line: #e5e5e5;
+  padding-block: 64px;
+  background: #fff;
+  color: var(--salary-ink);
+}
+[data-phorte-salary-section], [data-phorte-salary-section] * { box-sizing: border-box; }
+[data-phorte-salary-section] .phorte-salary-container { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+[data-phorte-salary-section] .phorte-salary-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 24px; border: 1px solid var(--salary-line); border-radius: 12px; background: #fff; }
+[data-phorte-salary-section] .phorte-salary-copy { max-width: 800px; }
+[data-phorte-salary-section] .phorte-salary-copy h2 { margin: 0; color: var(--salary-heading); font-family: var(--gestao-title, var(--ti-title, var(--title, inherit))); font-size: clamp(20px, 2.1vw, 27px); font-weight: 700; line-height: 1.2; letter-spacing: -.025em; }
+[data-phorte-salary-section] .phorte-salary-copy p { margin: 12px 0 0; color: var(--salary-muted); font-size: 14px; line-height: 1.55; }
+[data-phorte-salary-section] .phorte-salary-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+[data-phorte-salary-section] .phorte-salary-card { min-width: 0; min-height: 130px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 16px; border: 1px solid var(--salary-line); border-radius: 8px; background: #f4f6f9; text-align: left; }
+[data-phorte-salary-section] .phorte-salary-card:first-child { border-color: var(--salary-red); background: #fbeaea; }
+[data-phorte-salary-section] .phorte-salary-value { display: block; color: var(--salary-heading); font-size: clamp(21px, 2vw, 28px); font-weight: 700; line-height: 1.1; letter-spacing: -.025em; white-space: nowrap; }
+[data-phorte-salary-section] .phorte-salary-label { margin: 0 0 12px; color: var(--salary-muted); font-size: 11px; font-weight: 500; }
+[data-phorte-salary-section] .phorte-salary-role { margin-top: 8px; color: var(--salary-ink); font-size: 12px; font-weight: 600; line-height: 1.35; }
+[data-phorte-salary-section] .phorte-salary-source { margin: 0; color: var(--salary-muted); font-size: 11px; line-height: 1.5; }
+@media (max-width: 767px) {
+  [data-phorte-salary-section] { padding-block: 48px; }
+  [data-phorte-salary-section] .phorte-salary-container { width: calc(100% - 40px); }
+  [data-phorte-salary-section] .phorte-salary-panel { padding: 16px; gap: 16px; }
+  [data-phorte-salary-section] .phorte-salary-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  [data-phorte-salary-section] .phorte-salary-card { min-height: 100px; }
+  [data-phorte-salary-section] .phorte-salary-value { font-size: 24px; }
+}
+
+/* phorte-salary-panel:end */
