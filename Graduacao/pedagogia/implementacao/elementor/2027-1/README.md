@@ -20,6 +20,10 @@ Container — Página Pedagogia
 3. Configure o widget Form com os campos e ações abaixo.
 4. Envie as imagens de elementor/assets/images para a Biblioteca de Mídia e substitua os caminhos relativos.
 
+## Painel claro de salários
+
+O painel foi incorporado em `widget-before-form.html`, após atuação profissional. Carregar adicionalmente [salarios.css](salarios.css) no CSS da página. [salary-panel.html](salary-panel.html) é a versão isolada para uso alternativo; não duplicar quando o widget antes do formulário já for utilizado. Conteúdo em [copy/salarios.md](../../../copy/salarios.md), com os dados do protótipo; confirmar fontes/períodos antes de publicação.
+
 ## Form widget
 
 Nome do formulário: pedagogia_2027_1

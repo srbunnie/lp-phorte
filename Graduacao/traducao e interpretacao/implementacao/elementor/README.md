@@ -24,6 +24,10 @@ Container — phorte-traducao-interpretacao-2027-1
 3. Inserir `script.js` via recurso permitido pelo projeto/Elementor. Se o site já possuir um carregador global, inicializar o script apenas uma vez.
 4. O CSS é escopado ao wrapper e não usa seletores genéricos para não interferir no header, footer ou demais widgets.
 
+## Painel claro de salários
+
+Incorporado em `widget-before-form.html`, após atuação profissional, e no [styles.css](styles.css) do pacote. [salary-panel.html](salary-panel.html) é o fragmento isolado para uso alternativo, sem duplicar sua inserção. Conteúdo em [copy/salarios.md](../../copy/salarios.md), com cargos, valores e fonte do protótipo; confirmar fontes/períodos antes de publicação. A FAQ salarial foi ajustada para não manter uma média diferente sem fonte identificada.
+
 ## Form widget nativo
 
 - Nome sugerido: `traducao_interpretacao_2027_1`;

@@ -20,6 +20,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 ### Em Andamento & Destaques
 1. **Graduação em Tradução e Interpretação** — Landing page principal de Tradução e Interpretação Português / Inglês (Turma 2027.1), pacote Elementor e documentação de implementação.
+2. **LPs de gestão — primeiras versões visuais (2026-10-09)** — [Administração](Graduacao/administracao/index.html), [Marketing](Graduacao/marketing/index.html), [Processos Gerenciais](Graduacao/processos-gerenciais/index.html) e [Recursos Humanos](Graduacao/recursos-humanos/index.html) com previews estáticos, quinze seções por curso, formulários demonstrativos e pacotes Elementor. [Copys, fontes e arquitetura](Graduacao/docs/README.md). Revisão visual das novas páginas e aprovação acadêmica/comercial pendentes; sem publicação. Educação Física está fora deste escopo.
 
 ### Concluídos & Publicados
 - **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
