@@ -7,7 +7,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estrutura Atual e Categorias
 
 - `Graduacao/`: Graduação Phorte (`pedagogia`, `traducao e interpretacao`, `aula-inaugural-gestao`, `bolsas sociais`, `bolsas sociais Escola Aberta`, `prototipo-pricecard`).
-- `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`).
+- `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`, `educacao-fisica-internacional`).
 - `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`, `congresso-punta`).
 - `USCS/`: Parceria USCS (`formacao-em-futebol-e-futsal`, `prototipo-price-card`).
 - `politicas/`: Termos de uso, privacidade LGPD e cookies.
@@ -19,11 +19,12 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 ## Estados e Prioridades Atuais
 
 ### Em Andamento & Destaques
+- **Pós-graduações em Educação Física Internacional — Phorte + FitnessLink (2026-10-14)** — [Página-vitrine](Pos/educacao-fisica-internacional/index.html) dos 3 lançamentos (MBA em Gestão Fitness & Wellness, Personal Trainer Internacional com NASM, Biomecânica e Treinamento de Força para Mulheres), destino do QR do flyer A5, no visual da LP de campanha do Congreso de Punta. Destino: https://posphorte.com.br/pos-graduacao-educacao-fisica-internacional/ via [widget HTML do Elementor](Pos/educacao-fisica-internacional/elementor/widget-html.html). Pendentes: subir imagens, colar o widget, SEO no WordPress e tag GA4 no GTM ([README](Pos/educacao-fisica-internacional/README.md)).
 1. **Graduação em Tradução e Interpretação** — Landing page principal de Tradução e Interpretação Português / Inglês (Turma 2027.1), pacote Elementor e documentação de implementação.
 2. **LPs de gestão — primeiras versões visuais (2026-10-09)** — [Administração](Graduacao/administracao/index.html), [Marketing](Graduacao/marketing/index.html), [Processos Gerenciais](Graduacao/processos-gerenciais/index.html) e [Recursos Humanos](Graduacao/recursos-humanos/index.html) com previews estáticos, quinze seções por curso, formulários demonstrativos e pacotes Elementor. [Copys, fontes e arquitetura](Graduacao/docs/README.md). Revisão visual das novas páginas e aprovação acadêmica/comercial pendentes; sem publicação. Educação Física está fora deste escopo.
 
 ### Concluídos & Publicados
-- **Cursos grátis Phorte — Congreso de Punta (2026-10-13)** — LP em espanhol com cupom de 100% em Formación Avanzada en Biomecánica e Sistemas y Métodos de Entrenamiento de Musculación, válido até 26/10/2026 12h (Brasília). Publicada em https://phorte.com/es/phorte-e-congreso-de-punta/ via [widget HTML do Elementor](Cursos-Livres/congresso-punta/elementor/widget-html.html); [versão campanha](Cursos-Livres/congresso-punta/index.html) e [minimalista](Cursos-Livres/congresso-punta/minimalista.html). O Congreso de Punta é só canal de divulgação.
+- **Cursos grátis Phorte — Congreso de Punta (2026-10-13)** — LP em espanhol com cupom de 100% em Formación Avanzada en Biomecánica e Sistemas y Métodos de Entrenamiento de Musculación, válido até 26/10/2026 12h (Brasília). Publicada em https://phorte.com/es/phorte-e-congreso-de-punta/ via [widget HTML do Elementor](Cursos-Livres/congresso-punta/elementor/widget-html.html); [versão campanha](Cursos-Livres/congresso-punta/index.html). O Congreso de Punta é só canal de divulgação.
 - **Pós em Educação (Hub Geral de Cursos)** — Landing page principal dos cursos de educação refatorada em HTML puro 1:1, otimizada e responsiva.
 - **Bolsas Sociais (Escola Aberta)** — Processo seletivo de bolsas em parceria com a Escola Aberta (RH, Processos Gerenciais e Marketing).
 - **Medicina do Esporte (Grade de professores)** — Protótipo de carrossel do corpo docente e responsividade.
