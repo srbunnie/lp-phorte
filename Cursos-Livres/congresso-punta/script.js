@@ -71,9 +71,8 @@
     });
   });
 
-  // Contadores, resumen de la cabecera (minimalista) y texto del modal
+  // Contadores y texto del modal
   var contadores = document.querySelectorAll("[data-contador]");
-  var resumenes = document.querySelectorAll("[data-contador-resumen]");
   var textos = document.querySelectorAll("[data-contador-texto]");
   var aviso = document.querySelector("[data-finalizada]");
   var dos = function (n) { return String(n).padStart(2, "0"); };
@@ -85,7 +84,7 @@
         var nuevo = valores[u.dataset.cd];
         if (u.textContent === nuevo) return;
         u.textContent = nuevo;
-        // Animación del dígito (solo tiene estilo en la versión de campaña)
+        // Animación del dígito (solo en el contador grande)
         if (u.classList.contains("lp-contador__valor")) {
           u.classList.remove("lp-tic");
           void u.offsetWidth;
@@ -101,7 +100,6 @@
     if (resta <= 0) {
       document.documentElement.setAttribute("data-promo", "finalizada");
       pintar({ d: "00", h: "00", m: "00", s: "00" });
-      resumenes.forEach(function (t) { t.textContent = "Promoción finalizada"; });
       textos.forEach(function (t) { t.textContent = "La promoción terminó el 26 de octubre a las 12:00 (hora de Brasilia)"; });
       if (aviso) aviso.hidden = false;
       clearInterval(temporizador);
@@ -115,7 +113,6 @@
     pintar({ d: dos(d), h: dos(h), m: dos(m), s: dos(s) });
 
     var resumen = (d > 0 ? d + " d " : "") + dos(h) + " h " + dos(m) + " min";
-    resumenes.forEach(function (t) { t.textContent = "Termina en " + resumen; });
     textos.forEach(function (t) { t.textContent = "La promoción termina en " + resumen + " · 26 de octubre, 12:00 (hora de Brasilia)"; });
   }
 

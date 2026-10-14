@@ -11,8 +11,7 @@
 //   no pisen la página (y la página no toque el resto del sitio). Las reglas del kit que la página no
 //   usa se descartan.
 // - Quita el relleno del contenedor de Elementor que envuelve el widget (página a sangre).
-// - El logotipo blanco va como data URI (no está en la biblioteca de medios y WordPress no acepta SVG
-//   por defecto); el resto de assets/images/ apunta a la carpeta de imágenes.
+// - Todo assets/images/ apunta a la carpeta de imágenes (phorte-logo.svg se llama allí Logo-Phorte.svg).
 // - Incluye script.js tal cual.
 "use strict";
 
@@ -149,8 +148,8 @@ const css = procesar(leer("phorte.css")) + NEUTRO + procesar(leer("styles.css"))
 let cuerpo = html.slice(html.indexOf("<body>") + 6, html.lastIndexOf("</body>"));
 cuerpo = cuerpo.replace(/\s*<script src="script\.js"[^>]*><\/script>\s*/, "\n");
 
-const logoBlanco = "data:image/svg+xml;base64," + fs.readFileSync(path.join(RAIZ, "assets/images/phorte-logo-blanco.svg")).toString("base64");
-cuerpo = cuerpo.split('"assets/images/phorte-logo-blanco.svg"').join('"' + logoBlanco + '"');
+// En la biblioteca de medios el logotipo se llama Logo-Phorte.svg
+cuerpo = cuerpo.split('"assets/images/phorte-logo.svg"').join('"' + BASE + 'Logo-Phorte.svg"');
 cuerpo = cuerpo.replace(/="assets\/images\/([^"]+)"/g, (_, archivo) => '="' + BASE + archivo + '"');
 
 const fuentes = html.match(/<link rel="preconnect"[^>]*>\s*<link rel="preconnect"[^>]*>\s*<link href="https:\/\/fonts\.googleapis\.com[^>]*>/)[0];

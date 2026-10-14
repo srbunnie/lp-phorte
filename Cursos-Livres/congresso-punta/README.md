@@ -10,13 +10,9 @@ Landing page temporal en español para presentar dos cursos Phorte y explicar c�
 - La promoción termina el 26 de octubre de 2026 a las 12:00, hora de Brasilia (UTC−3), y la página muestra un contador regresivo.
 - La página oficial está en WordPress: `https://phorte.com/es/phorte-e-congreso-de-punta/`. El QR (`assets/images/qr-promocion-ponta-del-lest.png`) enlaza a esa dirección; si cambia, hay que generar un nuevo QR.
 
-## Dos versiones
+## Landing page
 
-Hay dos landing pages con el mismo contenido y el mismo `script.js`. La de campaña (`index.html`) es la que se publica en WordPress.
-
-### `index.html` + `styles.css` — campaña (versión principal)
-
-Rojo Phorte, Barlow Condensed (títulos en mayúsculas e itálica) + Poppins, foto del hero en duotono rojo.
+`index.html` + `styles.css` (versión de campaña, la aprobada): rojo Phorte, Barlow Condensed (títulos en mayúsculas e itálica) + Poppins, foto del hero en duotono rojo.
 
 1. Hero a pantalla completa: "Dos cursos 100% gratis", cupón con forma de entrada (clic para copiar, sello "¡Copiado!") y fecha límite + mini contador.
 2. Dos fajas cruzadas en movimiento (decorativas).
@@ -24,23 +20,13 @@ Rojo Phorte, Barlow Condensed (títulos en mayúsculas e itálica) + Poppins, fo
 4. "Tres pasos y listo." (fondo oscuro) + condiciones.
 5. Cierre rojo: contador grande y QR con modo "pantalla grande".
 
-### `minimalista.html` + `minimalista.css` — minimalista (alternativa)
-
-Fondo blanco, Inter Tight en peso regular, el rojo Phorte solo como acento.
-
-1. Hero dividido con la fila del cupón y foto.
-2. "Elige tu curso" en grilla tipo bento.
-3. "Cómo aplicar el cupón": tres pasos + ilustración de checkout (marcada como ilustración).
-4. "Lo que necesitas saber": foto + condiciones.
-5. Cierre con foto y tarjetas translúcidas: contador y QR.
-
-En las dos, en el móvil aparece una barra fija con el cupón cuando el cupón del hero sale de la pantalla.
+En el móvil aparece una barra fija con el cupón cuando el cupón del hero sale de la pantalla.
 
 Cuando termina el plazo, la página cambia sola: oculta el cupón, muestra un aviso y el contador queda en cero. Esto no desactiva el cupón en WooCommerce; la fecha de vencimiento debe configurarse allí.
 
 ## WordPress + Elementor (versión de campaña)
 
-`elementor/widget-html.html` es la versión roja (`index.html`) en un solo bloque para el widget **HTML** de Elementor: estilos aislados con `#lp-punta` (el tema no la pisa y ella no toca el resto del sitio), sin relleno del contenedor de Elementor, logotipo blanco incrustado y el script incluido. Las fotos y el QR se cargan de la biblioteca de medios (`https://phorte.com/wp-content/uploads/2026/10/`).
+`elementor/widget-html.html` es la versión roja (`index.html`) en un solo bloque para el widget **HTML** de Elementor: estilos aislados con `#lp-punta` (el tema no la pisa y ella no toca el resto del sitio), sin relleno del contenedor de Elementor y el script incluido. El logotipo, las fotos y el QR se cargan de la biblioteca de medios (`https://phorte.com/wp-content/uploads/2026/10/`).
 
 1. La página usa la plantilla **Elementor Canvas** (sin la cabecera ni el pie del tema; la página trae los suyos).
 2. En Elementor, dentro de un contenedor de **ancho completo**, un widget **HTML**. El relleno del contenedor se anula desde el propio código.
@@ -57,12 +43,12 @@ Después de cualquier cambio en `index.html`, `styles.css` o `script.js`, vuelve
 
 ## Archivos
 
-- `index.html` / `minimalista.html`: las dos versiones de la landing page.
+- `index.html`: la landing page.
 - `phorte.css`: kit oficial del Design System (copiado sin cambios). Se usa solo como base: reset, contenedor, íconos, alerta, aviso y modal. No editar.
-- `styles.css` / `minimalista.css`: estilos de cada versión (prefijo `lp-`, colores en `:root`).
-- `script.js`: compartido: copiar cupón, contadores, animaciones al desplazar, barra fija del móvil, aviso y modal del QR.
+- `styles.css`: estilos de la página (prefijo `lp-`, colores en `:root`).
+- `script.js`: copiar cupón, contadores, animaciones al desplazar, barra fija del móvil, aviso y modal del QR.
 - `elementor/generar.js` → `elementor/widget-html.html`: versión de campaña para el widget HTML de Elementor (ver arriba).
-- `assets/images/`: logotipos (color y blanco), portadas de los cursos y QR (PNG).
+- `assets/images/`: logotipo oficial (`phorte-logo.svg`, en blanco con filtro CSS en la versión de campaña), portadas de los cursos y QR (PNG).
 
 Abre `index.html` o sirve esta carpeta con un servidor HTTP local para ver la página.
 
