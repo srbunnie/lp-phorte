@@ -1,7 +1,6 @@
 /* Landing page "Cursos gratis Phorte" — dirección visual de campaña (index.html).
    Usa phorte.css solo como base (reset, contenedor, íconos, alerta, aviso y modal).
-   La identidad de esta página sale del rojo Phorte: rojos, vino, negro cálido y crema.
-   La versión minimalista está en minimalista.html + minimalista.css. */
+   La identidad de esta página sale del rojo Phorte: rojos, vino, negro cálido y crema. */
 
 :root {
   --lp-rojo: #E64242;        /* rojo de marca: grandes áreas y texto grande */
@@ -78,6 +77,8 @@ main:focus { outline: none; }
 .lp-topo__barra { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; }
 .lp-topo__logo { display: inline-flex; border-radius: 4px; }
 .lp-topo__logo img { height: 2.25rem; width: auto; }
+/* Logotipo oficial (a color) en blanco sobre los fondos oscuros */
+.lp-topo__logo img, .lp-rodape__logo { filter: brightness(0) invert(1); }
 .lp-topo__nav { display: none; }
 .lp-topo__nav ul { display: flex; gap: 0.25rem; margin: 0; padding: 0.25rem; list-style: none; border: 1px solid var(--lp-linea-clara); border-radius: 999px; background: rgb(255 255 255 / 0.06); }
 .lp-topo__nav a { display: inline-flex; align-items: center; min-height: 2.75rem; padding-inline: 1.25rem; border-radius: 999px; font-size: 0.875rem; font-weight: 500; color: var(--lp-blanco); text-decoration: none; transition: background-color 150ms; }
