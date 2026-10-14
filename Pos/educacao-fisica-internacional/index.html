@@ -37,15 +37,16 @@
 
 <header class="lp-topo" data-topo>
   <div class="ph-pagina lp-topo__barra">
-    <a class="lp-marcas" href="https://posphorte.com.br/">
-      <img class="lp-marcas__phorte" src="assets/images/phorte-logo.svg" alt="Faculdade Phorte" width="91" height="40">
+    <!-- Na entrada, as duas marcas em destaque (como no flyer); ao rolar, barra compacta com menu -->
+    <a class="lp-marcas lp-topo__marcas" href="#conteudo" aria-label="Faculdade Phorte e FitnessLink, início da página">
+      <img class="lp-marcas__phorte" src="assets/images/phorte-logo.svg" alt="" width="91" height="40">
       <span class="lp-marcas__divisor" aria-hidden="true"></span>
-      <img class="lp-marcas__fitnesslink" src="assets/images/fitnesslink-logo.png" alt="FitnessLink" width="240" height="190">
+      <img class="lp-marcas__fitnesslink" src="assets/images/fitnesslink-logo.png" alt="" width="240" height="190">
     </a>
     <nav class="lp-topo__nav" aria-label="Pós-graduações">
       <ul>
-        <li><a href="#mba">MBA Gestão</a></li>
-        <li><a href="#personal">Personal Internacional</a></li>
+        <li><a href="#mba">Gestão &amp; Negócios</a></li>
+        <li><a href="#personal">Personal Internacional + NASM</a></li>
         <li><a href="#biomecanica">Treinamento Feminino</a></li>
       </ul>
     </nav>
@@ -60,29 +61,25 @@
     <div class="lp-hero__media" aria-hidden="true">
       <img src="assets/images/hero-phorte-fitnesslink.webp" alt="" width="649" height="1100" fetchpriority="high">
     </div>
-    <span class="lp-hero__fantasma" aria-hidden="true">Fitness</span>
 
     <div class="ph-pagina lp-hero__contenido">
       <div class="lp-hero__texto">
-        <span class="lp-chip lp-entra" style="--d:0"><span class="lp-chip__punto" aria-hidden="true"></span>3 lançamentos para o mercado fitness</span>
         <h1 class="lp-display" id="hero-titulo">
-          <span class="lp-display__linea lp-entra" style="--d:1">Escolha o seu</span>
-          <span class="lp-display__caja lp-entra" style="--d:2"><span>Próximo passo.</span></span>
+          <span class="lp-display__linea lp-entra" style="--d:0">Escolha o seu</span>
+          <span class="lp-display__caja lp-entra" style="--d:1"><span>Próximo passo.</span></span>
         </h1>
-        <p class="lp-hero__lead lp-entra" style="--d:3">Invista em uma pós-graduação e amplie suas oportunidades de carreira no Brasil e no exterior.</p>
-        <p class="lp-hero__chamada lp-entra" style="--d:4"><strong>3 pós-graduações</strong> para transformar sua trajetória no mercado fitness.</p>
-        <div class="lp-acoes lp-entra" style="--d:5">
-          <a class="lp-boton lp-boton--rojo" href="#cursos">Conheça as pós-graduações<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-abajo"/></svg></span></a>
+        <p class="lp-hero__lead lp-entra" style="--d:2">Invista em uma pós-graduação e amplie suas oportunidades de carreira no Brasil e no exterior.</p>
+
+        <!-- As 3 opções do flyer, como escolha direta: cada uma leva ao seu card -->
+        <div class="lp-opcoes lp-entra" style="--d:3">
+          <p class="lp-opcoes__rotulo" id="opcoes-rotulo"><strong>3 pós-graduações</strong> para transformar sua trajetória no mercado fitness.</p>
+          <ul class="lp-opcoes__lista" aria-labelledby="opcoes-rotulo">
+            <li><a class="lp-opcao" href="#mba"><span class="lp-opcao__icone" aria-hidden="true"><svg class="ph-icone"><use href="#i-grafico"/></svg></span><span class="lp-opcao__nome">Gestão &amp; Negócios</span><svg class="ph-icone ph-icone--sm lp-opcao__seta" aria-hidden="true"><use href="#i-abajo"/></svg></a></li>
+            <li><a class="lp-opcao" href="#personal"><span class="lp-opcao__icone" aria-hidden="true"><svg class="ph-icone"><use href="#i-globo"/></svg></span><span class="lp-opcao__nome">Personal Internacional + NASM</span><svg class="ph-icone ph-icone--sm lp-opcao__seta" aria-hidden="true"><use href="#i-abajo"/></svg></a></li>
+            <li><a class="lp-opcao" href="#biomecanica"><span class="lp-opcao__icone" aria-hidden="true"><svg class="ph-icone"><use href="#i-feminino"/></svg></span><span class="lp-opcao__nome">Treinamento Feminino</span><svg class="ph-icone ph-icone--sm lp-opcao__seta" aria-hidden="true"><use href="#i-abajo"/></svg></a></li>
+          </ul>
         </div>
       </div>
-    </div>
-
-    <div class="ph-pagina lp-hero__pie lp-entra" style="--d:6">
-      <ul class="lp-atalhos" aria-label="Atalhos para as pós-graduações">
-        <li><a class="lp-atalho" href="#mba"><svg class="ph-icone" aria-hidden="true"><use href="#i-grafico"/></svg><span>Gestão &amp; Negócios</span></a></li>
-        <li><a class="lp-atalho" href="#personal"><svg class="ph-icone" aria-hidden="true"><use href="#i-globo"/></svg><span>Personal Internacional + NASM</span></a></li>
-        <li><a class="lp-atalho" href="#biomecanica"><svg class="ph-icone" aria-hidden="true"><use href="#i-feminino"/></svg><span>Treinamento Feminino</span></a></li>
-      </ul>
     </div>
   </section>
 

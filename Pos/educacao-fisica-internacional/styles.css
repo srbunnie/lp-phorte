@@ -7,6 +7,7 @@
   --lp-rojo: #E64242;        /* vermelho da marca: grandes áreas e texto grande */
   --lp-rojo-600: #D42B2B;    /* botões e fundos com texto branco (5:1) */
   --lp-rojo-700: #A81E1E;    /* texto vermelho sobre claro */
+  --lp-rojo-claro: #FF7070;  /* texto vermelho pequeno sobre escuro (≥5,5:1) */
   --lp-vino: #7D1B1B;
   --lp-noche: #140807;       /* preto quente */
   --lp-noche-2: #22100E;
@@ -49,7 +50,7 @@ main:focus { outline: none; }
 /* ════════ TIPOGRAFIA DE CAMPANHA ════════ */
 .lp-sobretitulo {
   display: inline-flex; align-items: center; gap: 0.75rem;
-  font-size: 0.75rem; line-height: 1; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--lp-rojo);
+  font-size: 0.75rem; line-height: 1; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--lp-rojo-claro);
 }
 .lp-sobretitulo::before { content: ""; width: 2rem; height: 2px; background: currentColor; }
 .lp-titulo {
@@ -58,116 +59,131 @@ main:focus { outline: none; }
 }
 
 /* ════════ MARCAS (Phorte + FitnessLink) ════════ */
-.lp-marcas { display: inline-flex; align-items: center; gap: 0.875rem; border-radius: 4px; }
-.lp-marcas__phorte { height: 2.25rem; width: auto; filter: brightness(0) invert(1); } /* logotipo oficial (a cores) em branco */
-.lp-marcas__fitnesslink { height: 2.5rem; width: auto; }
+/* Alturas equilibradas a olho: o FT é mais estreito e precisa de ~1,2× a altura do Phorte */
+.lp-marcas { --marca: 2.25rem; display: inline-flex; align-items: center; gap: calc(var(--marca) * 0.45); border-radius: 4px; }
+.lp-marcas__phorte { height: var(--marca); width: auto; filter: brightness(0) invert(1); } /* logotipo oficial (a cores) em branco */
+.lp-marcas__fitnesslink { height: calc(var(--marca) * 1.2); width: auto; }
 .lp-marcas__divisor { align-self: stretch; width: 1px; margin-block: 0.25rem; background: rgb(255 255 255 / 0.35); }
-.lp-marcas--grande { gap: 1.25rem; }
-.lp-marcas--grande .lp-marcas__phorte { height: 3rem; }
-.lp-marcas--grande .lp-marcas__fitnesslink { height: 3.5rem; }
+.lp-marcas, .lp-marcas img { transition: height 300ms var(--lp-ease), gap 300ms var(--lp-ease); }
+.lp-marcas--grande { --marca: 3rem; }
 
 /* ════════ CABEÇALHO ════════ */
 .lp-topo {
   --ring: var(--lp-blanco);
   position: fixed; inset: 0 0 auto 0; z-index: var(--z-overlay); color: var(--lp-blanco);
-  background: linear-gradient(to bottom, rgb(20 8 7 / 0.7), transparent);
+  background: rgb(20 8 7 / 0.95); /* sem JS: barra sólida */
   transition: background-color 300ms, box-shadow 300ms;
 }
-.lp-topo[data-rolado] { background: rgb(20 8 7 / 0.95); box-shadow: 0 1px 0 var(--lp-linea-clara); }
-.lp-topo__barra { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; }
+.js .lp-topo { background: linear-gradient(to bottom, rgb(20 8 7 / 0.75), transparent); }
+.js .lp-topo[data-rolado] { background: rgb(20 8 7 / 0.95); box-shadow: 0 1px 0 var(--lp-linea-clara); }
+.lp-topo__barra { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.5rem; transition: min-height 300ms var(--lp-ease); }
+/* Entrada: só as duas marcas, maiores (como no topo do flyer) */
+.js .lp-topo:not([data-rolado]) .lp-topo__barra { min-height: 5.5rem; }
+.js .lp-topo:not([data-rolado]) .lp-topo__marcas { --marca: 2.75rem; }
+.js .lp-topo:not([data-rolado]) :is(.lp-topo__nav, .lp-topo__cta) { opacity: 0; visibility: hidden; }
+.lp-topo__nav, .lp-topo__cta { transition: opacity 250ms, visibility 250ms; }
 .lp-topo__nav { display: none; }
 .lp-topo__nav ul { display: flex; gap: 0.25rem; margin: 0; padding: 0.25rem; list-style: none; border: 1px solid var(--lp-linea-clara); border-radius: 999px; background: rgb(255 255 255 / 0.06); }
 .lp-topo__nav a { display: inline-flex; align-items: center; min-height: 2.75rem; padding-inline: 1.25rem; border-radius: 999px; font-size: 0.875rem; font-weight: 500; color: var(--lp-blanco); text-decoration: none; transition: background-color 150ms; }
 .lp-topo__nav a:hover { background: rgb(255 255 255 / 0.12); }
 @media (max-width: 29.99rem) { .lp-topo__cta { display: none; } }
-@media (min-width: 64rem) { .lp-topo__barra { min-height: 5.5rem; } .lp-topo__nav { display: block; } }
+@media (min-width: 64rem) {
+  .lp-topo__barra { min-height: 5rem; }
+  .js .lp-topo:not([data-rolado]) .lp-topo__barra { min-height: 7rem; }
+  .js .lp-topo:not([data-rolado]) .lp-topo__marcas { --marca: 3.25rem; }
+  .lp-topo__nav { display: block; }
+}
 
 /* ════════ BANNER PRINCIPAL ════════ */
+/* Fundo limpo: só brilho vermelho atrás da foto (sem texto vazado nem feixes cruzando os rostos) */
 .lp-hero {
   --ring: var(--lp-blanco);
   position: relative; isolation: isolate; overflow: hidden; display: flex; flex-direction: column;
   background:
-    radial-gradient(ellipse 60% 70% at 85% 30%, rgb(212 43 43 / 0.45), transparent 70%),
-    linear-gradient(135deg, var(--lp-noche) 40%, var(--lp-vino) 120%);
+    radial-gradient(ellipse 55% 65% at 82% 35%, rgb(212 43 43 / 0.5), transparent 70%),
+    linear-gradient(160deg, var(--lp-noche) 45%, #2A0D0B 100%);
 }
-/* Feixes de luz diagonais, como no flyer */
-.lp-hero::before {
-  content: ""; position: absolute; inset: 0; z-index: -4; pointer-events: none;
-  background:
-    linear-gradient(-35deg, transparent 46%, rgb(230 66 66 / 0.35) 46.3%, transparent 47.5%),
-    linear-gradient(-35deg, transparent 58%, rgb(230 66 66 / 0.18) 58.2%, transparent 60%);
-}
-.lp-hero__media { position: absolute; inset: 0 0 0 auto; z-index: -3; width: 100%; }
+
+/* Celular: a foto do casal fica no alto, nítida, e some por baixo do título */
+.lp-hero__media { position: absolute; inset: 0 0 auto 0; z-index: -1; height: 25rem; }
 .lp-hero__media img {
-  position: absolute; right: 0; bottom: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 15%;
-  opacity: 0.45;
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 6%;
+  -webkit-mask: linear-gradient(to bottom, #000 45%, transparent 95%);
+          mask: linear-gradient(to bottom, #000 45%, transparent 95%);
 }
-/* Fusão da foto com o fundo */
-.lp-hero__media::after {
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(to top, var(--lp-noche) 4%, rgb(20 8 7 / 0.55) 45%, rgb(20 8 7 / 0.2));
+/* Tablet: foto à direita, no tamanho certo para os rostos terminarem antes do título */
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .lp-hero__media { inset: 0 0 auto auto; width: min(100%, 38rem); height: 34rem; }
+  .lp-hero__media img {
+    object-position: 50% 0;
+    -webkit-mask: linear-gradient(to right, transparent, #000 20%), linear-gradient(to bottom, #000 55%, transparent 95%);
+    -webkit-mask-composite: source-in;
+            mask: linear-gradient(to right, transparent, #000 20%) intersect, linear-gradient(to bottom, #000 55%, transparent 95%);
+  }
 }
 @media (min-width: 64rem) {
-  .lp-hero { min-height: min(100svh, 62rem); }
-  .lp-hero__media { width: min(52%, 46rem); }
-  /* Máscara (e não um degradê por cima) para a foto se fundir com o fundo sem emenda */
+  .lp-hero { min-height: min(100svh, 60rem); }
+  .lp-hero__media { inset: 0 0 0 auto; height: auto; width: min(54%, 50rem); }
+  /* Máscara curta à esquerda: os rostos ficam 100% opacos; embaixo some antes dos logotipos das camisetas */
   .lp-hero__media img {
-    width: 100%; object-position: center 10%; opacity: 1;
-    -webkit-mask: linear-gradient(to right, transparent, #000 40%), linear-gradient(to top, transparent, #000 30%);
+    object-position: center 12%;
+    -webkit-mask: linear-gradient(to right, transparent, #000 14%), linear-gradient(to top, transparent 10%, #000 45%);
     -webkit-mask-composite: source-in;
-            mask: linear-gradient(to right, transparent, #000 40%) intersect, linear-gradient(to top, transparent, #000 30%);
+            mask: linear-gradient(to right, transparent, #000 14%) intersect, linear-gradient(to top, transparent 10%, #000 45%);
   }
-  .lp-hero__media::after { display: none; }
 }
-.lp-hero__fantasma {
-  position: absolute; left: -1vw; bottom: 6rem; z-index: -2; display: none;
-  font: italic 900 20vw/0.78 var(--lp-display); text-transform: uppercase; letter-spacing: -0.02em;
-  color: transparent; -webkit-text-stroke: 1.5px rgb(255 255 255 / 0.08); pointer-events: none; user-select: none;
-}
-@media (min-width: 64rem) { .lp-hero__fantasma { display: block; } }
 
-.lp-hero__contenido { flex: 1; display: flex; align-items: center; padding-top: 8.5rem; padding-bottom: 2.5rem; }
-@media (min-width: 64rem) { .lp-hero__contenido { padding-top: 10rem; } }
-.lp-hero__texto { display: flex; flex-direction: column; align-items: flex-start; gap: 1.5rem; min-width: 0; max-width: 40rem; }
+.lp-hero__contenido { flex: 1; display: flex; align-items: flex-end; padding-top: 15.5rem; padding-bottom: 6rem; }
+@media (min-width: 48rem) { .lp-hero__contenido { padding-top: 27rem; } }
+@media (min-width: 64rem) { .lp-hero__contenido { align-items: center; padding-top: 8.5rem; padding-bottom: 6.5rem; } }
+.lp-hero__texto { display: flex; flex-direction: column; align-items: flex-start; gap: 1.5rem; width: 100%; min-width: 0; max-width: 38rem; }
 
-.lp-chip {
-  display: inline-flex; align-items: center; gap: 0.625rem; padding: 0.375rem 1rem 0.375rem 0.75rem;
-  border: 1px solid rgb(255 255 255 / 0.2); border-radius: 999px; background: rgb(255 255 255 / 0.06);
-  font-size: 0.75rem; line-height: 1.2; font-weight: 600; letter-spacing: 0.04em;
-}
-.lp-chip__punto { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--lp-rojo); box-shadow: 0 0 0 4px rgb(230 66 66 / 0.3); animation: lp-latido 1.6s ease-in-out infinite; }
-@keyframes lp-latido { 50% { box-shadow: 0 0 0 7px rgb(230 66 66 / 0); } }
-
+/* O mínimo cabe em uma linha a 320px; se a Barlow não carregar, a caixa quebra em vez de ser cortada */
 .lp-display {
-  display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem; margin: 0;
+  display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem; align-self: stretch; margin: 0;
   font-family: var(--lp-display); font-style: italic; font-weight: 900; text-transform: uppercase;
-  font-size: clamp(3.25rem, 1rem + 8vw, 7.5rem); line-height: 0.88; letter-spacing: -0.01em;
+  font-size: clamp(2.5rem, 0.75rem + 8.5vw, 7rem); line-height: 0.88; letter-spacing: -0.01em;
 }
 .lp-display__linea { display: block; }
 /* "Próximo passo." numa caixa vermelha inclinada, como no flyer */
 .lp-display__caja {
-  display: inline-block; margin-left: -0.15em; padding: 0.06em 0.3em 0.1em 0.2em; white-space: nowrap;
+  display: inline-block; max-width: 100%; margin-left: -0.15em; padding: 0.06em 0.3em 0.1em 0.2em;
   border: 2px solid rgb(255 255 255 / 0.25); border-radius: 0.12em;
   background: linear-gradient(100deg, var(--lp-rojo-600), var(--lp-rojo) 60%, var(--lp-rojo-700));
   box-shadow: 0 0 40px -6px rgb(230 66 66 / 0.7), inset 0 1px 0 rgb(255 255 255 / 0.3);
   transform: skewX(-8deg);
 }
+@media (min-width: 48rem) { .lp-display__caja { max-width: none; white-space: nowrap; } }
+/* Notebooks (1024–1439px): título proporcional à tela e foto mais estreita, para a caixa não cobrir os rostos */
+@media (min-width: 64rem) and (max-width: 89.99rem) {
+  .lp-display { font-size: 6.4vw; }
+  .lp-hero__media { width: 48%; }
+}
 .lp-display__caja > span { display: inline-block; transform: skewX(8deg); text-shadow: 0 3px 0 rgb(0 0 0 / 0.2); }
 .lp-hero__lead { margin: 0; max-width: 34rem; font-size: clamp(1.0625rem, 1rem + 0.4vw, 1.3125rem); line-height: 1.55; color: rgb(255 255 255 / 0.88); }
-.lp-hero__chamada { margin: 0; padding-left: 1rem; border-left: 3px solid var(--lp-rojo); font-size: 0.9375rem; line-height: 1.6; color: rgb(255 255 255 / 0.72); }
-.lp-hero__chamada strong { color: var(--lp-blanco); }
 
-/* Atalhos para os cursos (ícones do flyer) */
-.lp-hero__pie { padding-top: 1.5rem; padding-bottom: 5.5rem; border-top: 1px solid var(--lp-linea-clara); }
-.lp-atalhos { display: grid; grid-template-columns: 1fr; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
-@media (min-width: 48rem) { .lp-atalhos { grid-template-columns: repeat(3, auto); justify-content: start; gap: 2.5rem; } }
-.lp-atalho {
-  display: inline-flex; align-items: center; gap: 0.875rem; min-height: 2.75rem; border-radius: 6px;
-  font-size: 0.9375rem; font-weight: 500; line-height: 1.25; color: var(--lp-blanco); text-decoration: none;
+/* As 3 opções (ícones do flyer) como lista de escolha, no lugar de botão + atalhos soltos */
+.lp-opcoes { display: flex; flex-direction: column; gap: 0.875rem; width: 100%; max-width: 34rem; margin-top: 0.25rem; }
+.lp-opcoes__rotulo { margin: 0; font-size: 0.9375rem; line-height: 1.5; color: rgb(255 255 255 / 0.75); text-wrap: pretty; }
+.lp-opcoes__lista { max-width: 28rem; }
+.lp-opcoes__rotulo strong { color: var(--lp-blanco); }
+.lp-opcoes__lista { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.lp-opcao {
+  display: flex; align-items: center; gap: 0.875rem; min-height: 3.5rem; padding: 0.5rem 1rem 0.5rem 0.5rem;
+  border: 1px solid rgb(255 255 255 / 0.16); border-radius: 999px; background: rgb(20 8 7 / 0.6);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  color: var(--lp-blanco); text-decoration: none;
+  transition: border-color 200ms, background-color 200ms, transform 250ms var(--lp-ease);
 }
-.lp-atalho .ph-icone { width: 2rem; height: 2rem; flex-shrink: 0; color: var(--lp-rojo); stroke-width: 1.5; transition: transform 250ms var(--lp-ease); }
-.lp-atalho:hover span { text-decoration: underline; text-underline-offset: 4px; }
-.lp-atalho:hover .ph-icone { transform: scale(1.12); }
+.lp-opcao__icone {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 2.5rem; height: 2.5rem;
+  border-radius: 50%; background: var(--lp-rojo-600); color: var(--lp-blanco);
+}
+.lp-opcao__icone .ph-icone { width: 1.25rem; height: 1.25rem; }
+.lp-opcao__nome { flex: 1; min-width: 0; font-size: 0.9375rem; font-weight: 600; line-height: 1.25; }
+.lp-opcao__seta { flex-shrink: 0; color: rgb(255 255 255 / 0.6); transition: transform 250ms var(--lp-ease), color 200ms; }
+.lp-opcao:hover { border-color: var(--lp-rojo); background: rgb(212 43 43 / 0.2); transform: translateX(4px); }
+.lp-opcao:hover .lp-opcao__seta { color: var(--lp-blanco); transform: translateY(2px); }
 
 /* ════════ FAIXAS CRUZADAS ════════ */
 .lp-fajas { position: relative; z-index: 2; height: 7rem; margin-block: -3.5rem; overflow-x: clip; pointer-events: none; }
@@ -190,7 +206,8 @@ main:focus { outline: none; }
 }
 .lp-seccion--roja {
   --ring: var(--lp-blanco); color: var(--lp-blanco);
-  background: radial-gradient(circle at 85% 10%, var(--lp-rojo), transparent 55%), radial-gradient(circle at 0% 100%, var(--lp-vino), transparent 50%), var(--lp-rojo-600);
+  /* brilho no máximo #DB3232: texto branco com ≥4,65:1 em toda a área */
+  background: radial-gradient(circle at 85% 10%, #DB3232, transparent 55%), radial-gradient(circle at 0% 100%, var(--lp-vino), transparent 50%), var(--lp-rojo-600);
 }
 
 .lp-encabezado { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: end; margin-bottom: 3rem; }
@@ -208,8 +225,10 @@ main:focus { outline: none; }
   transition: border-color 300ms, box-shadow 300ms, transform 400ms var(--lp-ease);
 }
 .lp-curso:hover { border-color: var(--lp-rojo); box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), 0 0 0 1px var(--lp-rojo), inset 0 0 50px -20px rgb(230 66 66 / 0.5); }
-.lp-curso:has(:focus-visible) { outline: 3px solid var(--lp-blanco); outline-offset: 4px; }
-.lp-curso :focus-visible { outline: none; }
+@supports selector(:has(*)) {
+  .lp-curso:has(:focus-visible) { outline: 3px solid var(--lp-blanco); outline-offset: 4px; }
+  .lp-curso :focus-visible { outline: none; }
+}
 @media (min-width: 48rem) { .lp-curso { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); } }
 
 .lp-curso__media { position: relative; overflow: hidden; aspect-ratio: 384 / 294; }
@@ -264,13 +283,14 @@ main:focus { outline: none; }
   margin: 0; font: italic 900 clamp(2.75rem, 1.25rem + 6vw, 6.5rem)/0.88 var(--lp-display); text-transform: uppercase; text-wrap: balance;
   text-shadow: 0 4px 0 rgb(0 0 0 / 0.15);
 }
-.lp-final__texto { margin: 0; max-width: 40rem; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.1875rem); line-height: 1.5; color: rgb(255 255 255 / 0.9); }
+.lp-final__texto { margin: 0; max-width: 40rem; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.1875rem); line-height: 1.5; color: var(--lp-blanco); }
 .lp-final__cursos { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
 @media (max-width: 47.99rem) { .lp-final__cursos { flex-direction: column; width: 100%; max-width: 26rem; } .lp-final__cursos .lp-boton { width: 100%; justify-content: space-between; } }
 
 /* ════════ RODAPÉ ════════ */
 .lp-rodape { --ring: var(--lp-blanco); background: var(--lp-noche); color: rgb(255 255 255 / 0.7); }
-.lp-rodape__barra { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem 2rem; padding-block: 3.5rem 2.5rem; }
+.lp-rodape__barra { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem 2rem; padding-block: 3.5rem 7rem; } /* espaço para o WhatsApp flutuante no celular */
+@media (min-width: 48rem) { .lp-rodape__barra { padding-bottom: 2.5rem; } }
 .lp-rodape__marcas { display: flex; flex-direction: column; gap: 1rem; }
 .lp-rodape__rotulo { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--lp-rojo); }
 .lp-rodape__enlaces { display: flex; flex-wrap: wrap; gap: 0 1.5rem; margin: 0; padding: 0; list-style: none; }
@@ -285,8 +305,12 @@ main:focus { outline: none; }
 @keyframes lp-entra-caja { from { opacity: 0; transform: skewX(-8deg) translateX(-2rem); } to { transform: skewX(-8deg); } }
 .js [data-revelar] { opacity: 0; transform: translateY(1.75rem); transition: opacity 700ms var(--lp-ease), transform 700ms var(--lp-ease); transition-delay: var(--retraso, 0ms); }
 .js [data-revelar].es-visible { opacity: 1; transform: none; }
+/* Se um plugin de otimização atrasar o script.js (que marca cada bloco com data-observado),
+   os blocos aparecem sozinhos depois de 3 s */
+.js [data-revelar]:not([data-observado]) { animation: lp-revela 0s 3s forwards; }
+@keyframes lp-revela { to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) {
-  .js .lp-entra { animation: none; }
+  .js .lp-entra, .js [data-revelar]:not([data-observado]) { animation: none; }
   .js [data-revelar] { opacity: 1; transform: none; }
-  .lp-faja__pista, .lp-chip__punto { animation: none; }
+  .lp-faja__pista { animation: none; }
 }
