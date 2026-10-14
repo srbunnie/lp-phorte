@@ -20,8 +20,8 @@ Os três cards mostram **360h** e **Ao vivo / Online com demonstrações prátic
 
 `index.html` + `styles.css`: preto, vermelho e branco, Barlow Condensed (títulos em maiúsculas e itálico) + Poppins.
 
-1. Cabeçalho fixo com os logotipos Phorte e FitnessLink e atalhos para os cursos.
-2. Banner principal: "Escolha o seu **próximo passo.**" (caixa vermelha inclinada, como no flyer), subtítulo, chamada complementar e foto do casal do flyer. Abaixo, os três atalhos com os ícones do flyer.
+1. Cabeçalho fixo. Na entrada mostra só as duas marcas, grandes, como no topo do flyer; ao rolar vira uma barra compacta com o menu (rótulos do flyer) e o botão "Escolher minha pós".
+2. Banner principal: "Escolha o seu **próximo passo.**" (caixa vermelha inclinada, como no flyer), subtítulo e foto do casal do flyer, sobre um fundo limpo (só brilho vermelho). A chamada complementar abre a lista das 3 opções com os ícones do flyer ("Gestão & Negócios", "Personal Internacional + NASM", "Treinamento Feminino"), que levam ao card de cada curso. No celular e no tablet a foto fica no alto e o texto entra logo abaixo dos rostos; entre 1024 e 1439px o título encolhe com a tela para não cobrir a foto.
 3. Duas faixas cruzadas em movimento (decorativas).
 4. "Escolha a sua pós.": três banners empilhados (foto, título, descrição, 360h, modalidade e botão "Conheça a pós-graduação"). O card inteiro é clicável.
    - MBA: bandeiras do Brasil, da Espanha e da Colômbia (nacionalidades dos docentes).

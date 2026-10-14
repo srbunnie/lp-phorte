@@ -150,8 +150,8 @@ let cuerpo = html.slice(html.indexOf("<body>") + 6, html.lastIndexOf("</body>"))
 cuerpo = cuerpo.replace(/\s*<script src="script\.js"[^>]*><\/script>\s*/, "\n");
 
 // Logotipo Phorte: o que o site já usa (branco, 188×106)
-cuerpo = cuerpo.split('src="assets/images/phorte-logo.svg" alt="Faculdade Phorte" width="91" height="40"')
-  .join('src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="Faculdade Phorte" width="188" height="106"');
+cuerpo = cuerpo.replace(/src="assets\/images\/phorte-logo\.svg"( alt="[^"]*") width="91" height="40"/g,
+  'src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp"$1 width="188" height="106"');
 if (cuerpo.includes("phorte-logo.svg")) throw new Error("logotipo Phorte não substituído");
 cuerpo = cuerpo.replace(/="assets\/images\/([^"]+)"/g, (_, archivo) => '="' + BASE + archivo + '"');
 
