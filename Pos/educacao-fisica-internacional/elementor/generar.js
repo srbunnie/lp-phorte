@@ -11,8 +11,7 @@
 // - Junta phorte.css + styles.css e antepõe #lp-pos-ef a cada seletor, para que o tema e o Elementor
 //   não alterem a página (e a página não altere o resto do site). Regras do kit não usadas são descartadas.
 // - Tira o padding do contêiner do Elementor que envolve o widget (página de ponta a ponta).
-// - Todo assets/images/ aponta para a pasta de imagens. phorte-logo.svg vira o logotipo que o site já
-//   usa (uploads/2024/08/logo-faculdade.webp), porque o WordPress não aceita SVG por padrão.
+// - Todo assets/images/ (só WebP, que o WordPress aceita) aponta para a pasta de imagens.
 // - Inclui script.js como está.
 "use strict";
 
@@ -149,10 +148,6 @@ const css = procesar(leer("phorte.css")) + NEUTRO + procesar(leer("styles.css"))
 let cuerpo = html.slice(html.indexOf("<body>") + 6, html.lastIndexOf("</body>"));
 cuerpo = cuerpo.replace(/\s*<script src="script\.js"[^>]*><\/script>\s*/, "\n");
 
-// Logotipo Phorte: o que o site já usa (branco, 188×106)
-cuerpo = cuerpo.replace(/src="assets\/images\/phorte-logo\.svg"( alt="[^"]*") width="91" height="40"/g,
-  'src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp"$1 width="188" height="106"');
-if (cuerpo.includes("phorte-logo.svg")) throw new Error("logotipo Phorte não substituído");
 cuerpo = cuerpo.replace(/="assets\/images\/([^"]+)"/g, (_, archivo) => '="' + BASE + archivo + '"');
 
 const fuentes = html.match(/<link rel="preconnect"[^>]*>\s*<link rel="preconnect"[^>]*>\s*<link href="https:\/\/fonts\.googleapis\.com[^>]*>/)[0];
