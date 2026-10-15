@@ -1,0 +1,46 @@
+/* Base compartilhada pelos widgets do cabeçalho, da home e do rodapé. */
+@font-face{font-family:PhorteHomePoppins;src:url("../assets/fonts/poppins-400.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:PhorteHomePoppins;src:url("../assets/fonts/poppins-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:PhorteHomePoppins;src:url("../assets/fonts/poppins-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:PhorteHomePoppins;src:url("../assets/fonts/poppins-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+/* Arial ajustada às medidas da Poppins enquanto ela carrega: o texto não muda de largura na troca (CLS).
+   size-adjust medido no navegador (largura Poppins ÷ Arial); ascent/descent/line-gap = 105/35/10 % da Poppins ÷ size-adjust. */
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial"),local("ArialMT");font-weight:400;size-adjust:112.71%;ascent-override:93.16%;descent-override:31.05%;line-gap-override:8.87%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial"),local("ArialMT");font-weight:500;size-adjust:113.63%;ascent-override:92.41%;descent-override:30.8%;line-gap-override:8.8%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial Bold"),local("Arial-BoldMT");font-weight:600;size-adjust:106.71%;ascent-override:98.4%;descent-override:32.8%;line-gap-override:9.37%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial Bold"),local("Arial-BoldMT");font-weight:700;size-adjust:107.27%;ascent-override:97.88%;descent-override:32.63%;line-gap-override:9.32%}
+
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape){--hp-primary:#d42b2b;--hp-primary-dark:#a81e1e;--hp-ink:#1a1a1a;--hp-muted:#595959;--hp-background:#fafafa;--hp-soft:#f4f6f9;--hp-border:#dedee3;--hp-radius:12px;--hp-columns:1;font-family:PhorteHomePoppins,Poppins,PhortePoppinsFallback,Arial,sans-serif;font-size:16px;line-height:1.65;font-weight:400;color:var(--hp-ink);background:var(--hp-background);text-align:left;isolation:isolate;-webkit-font-smoothing:antialiased}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *,:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *::before,:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *::after{box-sizing:border-box}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(h1,h2,h3,h4,p,ul,ol,figure,blockquote,form){margin:0;padding:0}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(h1,h2,h3,h4){font-family:inherit;font-style:normal;color:inherit;letter-spacing:normal;text-transform:none;font-weight:600;line-height:1.25}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape){font-synthesis:none}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(ul,ol){list-style:none}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(a){color:inherit;text-decoration:none}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(img){max-width:100%;display:block;height:auto}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(button,input,select,summary){font:inherit;color:inherit;letter-spacing:normal}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(button){cursor:pointer;text-transform:none;border:0;border-radius:0;box-shadow:none;background:none}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(input,select){width:100%;min-width:0;margin:0;box-shadow:none;text-transform:none}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :where(button,a,input,select,summary,[tabindex]):focus-visible{outline:3px solid #2164c5;outline-offset:4px}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) :is(.hp-highlight>a,.hp-course-card>a,.hp-news-card>a,.hp-video-play):focus-visible{outline-offset:-5px}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) [hidden]{display:none!important}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-container{width:min(1200px,calc(100% - 40px));margin-inline:auto}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) svg{width:22px;height:22px;flex-shrink:0}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) [id]{scroll-margin-top:24px}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:52px;padding:14px 24px;border:1px solid var(--hp-primary);border-radius:8px;background:var(--hp-primary);color:#fff;font-size:14px;line-height:1.5;font-weight:600;text-decoration:none;transition:background-color .2s,border-color .2s,transform .2s}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button:hover{background:var(--hp-primary-dark);border-color:var(--hp-primary-dark);transform:translateY(-2px)}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button--small{min-height:44px;padding:10px 16px;font-size:12px;gap:10px}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button--light{background:#fff;border-color:#fff;color:var(--hp-primary-dark)}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button--light:hover{background:#f5eeee;border-color:#f5eeee}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button--outline{background:transparent;border-color:var(--hp-border);color:var(--hp-ink)}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-button--outline:hover{border-color:var(--hp-primary);background:#fff;color:var(--hp-primary)}
+:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-eyebrow{font-size:11px;font-weight:600;letter-spacing:.16em;line-height:1.6;color:var(--hp-primary);text-transform:uppercase;margin-bottom:14px}
+
+@media(max-width:767px){
+  :is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-container{width:calc(100% - 40px)}
+  :is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) .hp-eyebrow{font-size:9px;letter-spacing:.12em}
+}
+@media(prefers-reduced-motion:reduce){
+  :is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *,:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *::before,:is(#hp-cabecalho,#hp-home-hero,#hp-home-secoes,#hp-rodape) *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}

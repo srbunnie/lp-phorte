@@ -1,0 +1,231 @@
+{
+  "imagens": "https://posphorte.com.br/wp-content/uploads/2026/10/",
+  "fontes": null,
+  "note": "Imagens na pasta de mídia do WordPress. Fontes não publicadas: os widgets usam a Poppins carregada pelo site (Google Fonts).",
+  "pecas": {
+    "cabecalho": [
+      "assets/images/logo-phorte.webp"
+    ],
+    "home": [
+      "assets/images/hero-pos-phorte.webp",
+      "assets/images/destaque-1.webp",
+      "assets/images/destaque-2.webp",
+      "assets/images/destaque-3.webp",
+      "assets/images/destaque-5.webp",
+      "assets/images/destaque-6.webp",
+      "assets/images/educacao-fisica-1.webp",
+      "assets/images/educacao-fisica-2.webp",
+      "assets/images/educacao-fisica-3.webp",
+      "assets/images/educacao-fisica-4.webp",
+      "assets/images/educacao-fisica-5.webp",
+      "assets/images/educacao-fisica-6.webp",
+      "assets/images/educacao-fisica-7.webp",
+      "assets/images/educacao-fisica-8.webp",
+      "assets/images/educacao-fisica-9.webp",
+      "assets/images/educacao-fisica-10.webp",
+      "assets/images/educacao-fisica-12.webp",
+      "assets/images/educacao-fisica-13.webp",
+      "assets/images/traducao-1.webp",
+      "assets/images/traducao-3.webp",
+      "assets/images/traducao-4.webp",
+      "assets/images/traducao-6.webp",
+      "assets/images/traducao-7.webp",
+      "assets/images/traducao-8.webp",
+      "assets/images/traducao-9.webp",
+      "assets/images/saude-1.webp",
+      "assets/images/saude-2.webp",
+      "assets/images/saude-6.webp",
+      "assets/images/coordenador-1.webp",
+      "assets/images/coordenador-2.webp",
+      "assets/images/coordenador-3.webp",
+      "assets/images/coordenador-4.webp",
+      "assets/images/coordenador-5.webp",
+      "assets/images/noticia-1.webp",
+      "assets/images/noticia-2.webp",
+      "assets/images/noticia-3.webp",
+      "assets/images/video-wrZ4t0rCSog.webp",
+      "assets/images/video-z5sFiYw8H-I.webp",
+      "assets/images/video-JORIuDGFjjE.webp",
+      "assets/images/video-3sJF0DKhLOk.webp",
+      "assets/images/dia-do-professor-2026-phorte.webp",
+      "assets/images/dia-do-professor-2026-phorte-mobile.webp"
+    ],
+    "rodape": [
+      "assets/images/logo-phorte.webp"
+    ]
+  },
+  "assets": [
+    {
+      "local": "assets/images/logo-phorte.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/logo-phorte.webp"
+    },
+    {
+      "local": "assets/images/hero-pos-phorte.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/hero-pos-phorte.webp"
+    },
+    {
+      "local": "assets/images/destaque-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/destaque-1.webp"
+    },
+    {
+      "local": "assets/images/destaque-2.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/destaque-2.webp"
+    },
+    {
+      "local": "assets/images/destaque-3.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/destaque-3.webp"
+    },
+    {
+      "local": "assets/images/destaque-5.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/destaque-5.webp"
+    },
+    {
+      "local": "assets/images/destaque-6.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/destaque-6.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-1.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-2.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-2.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-3.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-3.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-4.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-4.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-5.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-5.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-6.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-6.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-7.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-7.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-8.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-8.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-9.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-9.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-10.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-10.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-12.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-12.webp"
+    },
+    {
+      "local": "assets/images/educacao-fisica-13.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/educacao-fisica-13.webp"
+    },
+    {
+      "local": "assets/images/traducao-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-1.webp"
+    },
+    {
+      "local": "assets/images/traducao-3.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-3.webp"
+    },
+    {
+      "local": "assets/images/traducao-4.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-4.webp"
+    },
+    {
+      "local": "assets/images/traducao-6.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-6.webp"
+    },
+    {
+      "local": "assets/images/traducao-7.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-7.webp"
+    },
+    {
+      "local": "assets/images/traducao-8.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-8.webp"
+    },
+    {
+      "local": "assets/images/traducao-9.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/traducao-9.webp"
+    },
+    {
+      "local": "assets/images/saude-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/saude-1.webp"
+    },
+    {
+      "local": "assets/images/saude-2.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/saude-2.webp"
+    },
+    {
+      "local": "assets/images/saude-6.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/saude-6.webp"
+    },
+    {
+      "local": "assets/images/coordenador-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/coordenador-1.webp"
+    },
+    {
+      "local": "assets/images/coordenador-2.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/coordenador-2.webp"
+    },
+    {
+      "local": "assets/images/coordenador-3.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/coordenador-3.webp"
+    },
+    {
+      "local": "assets/images/coordenador-4.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/coordenador-4.webp"
+    },
+    {
+      "local": "assets/images/coordenador-5.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/coordenador-5.webp"
+    },
+    {
+      "local": "assets/images/noticia-1.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/noticia-1.webp"
+    },
+    {
+      "local": "assets/images/noticia-2.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/noticia-2.webp"
+    },
+    {
+      "local": "assets/images/noticia-3.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/noticia-3.webp"
+    },
+    {
+      "local": "assets/images/video-wrZ4t0rCSog.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/video-wrZ4t0rCSog.webp"
+    },
+    {
+      "local": "assets/images/video-z5sFiYw8H-I.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/video-z5sFiYw8H-I.webp"
+    },
+    {
+      "local": "assets/images/video-JORIuDGFjjE.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/video-JORIuDGFjjE.webp"
+    },
+    {
+      "local": "assets/images/video-3sJF0DKhLOk.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/video-3sJF0DKhLOk.webp"
+    },
+    {
+      "local": "assets/images/dia-do-professor-2026-phorte.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/dia-do-professor-2026-phorte.webp"
+    },
+    {
+      "local": "assets/images/dia-do-professor-2026-phorte-mobile.webp",
+      "destination": "https://posphorte.com.br/wp-content/uploads/2026/10/dia-do-professor-2026-phorte-mobile.webp"
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "imagesBase": "https://posphorte.com.br/wp-content/uploads/2026/10/",
+  "gerado": "2026-10-15",
+  "imagens": {
+    "logo-phorte.webp": {
+      "width": 300,
+      "height": 132,
+      "sizes": []
+    },
+    "hero-pos-phorte.webp": {
+      "width": 480,
+      "height": 480,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "hero-pos-phorte-150x150.webp"
+        },
+        {
+          "width": 300,
+          "file": "hero-pos-phorte-300x300.webp"
+        }
+      ]
+    },
+    "destaque-1.webp": {
+      "width": 1000,
+      "height": 1228,
+      "sizes": [
+        {
+          "width": 244,
+          "file": "destaque-1-244x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "destaque-1-768x943.webp"
+        },
+        {
+          "width": 834,
+          "file": "destaque-1-834x1024.webp"
+        }
+      ]
+    },
+    "destaque-2.webp": {
+      "width": 1000,
+      "height": 1228,
+      "sizes": [
+        {
+          "width": 244,
+          "file": "destaque-2-244x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "destaque-2-768x943.webp"
+        },
+        {
+          "width": 834,
+          "file": "destaque-2-834x1024.webp"
+        }
+      ]
+    },
+    "destaque-3.webp": {
+      "width": 1000,
+      "height": 1228,
+      "sizes": [
+        {
+          "width": 244,
+          "file": "destaque-3-244x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "destaque-3-768x943.webp"
+        },
+        {
+          "width": 834,
+          "file": "destaque-3-834x1024.webp"
+        }
+      ]
+    },
+    "destaque-5.webp": {
+      "width": 1000,
+      "height": 1228,
+      "sizes": [
+        {
+          "width": 244,
+          "file": "destaque-5-244x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "destaque-5-768x943.webp"
+        },
+        {
+          "width": 834,
+          "file": "destaque-5-834x1024.webp"
+        }
+      ]
+    },
+    "destaque-6.webp": {
+      "width": 1000,
+      "height": 1228,
+      "sizes": [
+        {
+          "width": 244,
+          "file": "destaque-6-244x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "destaque-6-768x943.webp"
+        },
+        {
+          "width": 834,
+          "file": "destaque-6-834x1024.webp"
+        }
+      ]
+    },
+    "educacao-fisica-1.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-1-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-2.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-2-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-3.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-3-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-4.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-4-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-5.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-5-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-6.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-6-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-7.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-7-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-8.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-8-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-9.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-9-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-10.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-10-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-12.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-12-300x292.webp"
+        }
+      ]
+    },
+    "educacao-fisica-13.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "educacao-fisica-13-300x292.webp"
+        }
+      ]
+    },
+    "traducao-1.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-1-300x292.webp"
+        }
+      ]
+    },
+    "traducao-3.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-3-300x292.webp"
+        }
+      ]
+    },
+    "traducao-4.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-4-300x292.webp"
+        }
+      ]
+    },
+    "traducao-6.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-6-300x292.webp"
+        }
+      ]
+    },
+    "traducao-7.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-7-300x292.webp"
+        }
+      ]
+    },
+    "traducao-8.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-8-300x292.webp"
+        }
+      ]
+    },
+    "traducao-9.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "traducao-9-300x292.webp"
+        }
+      ]
+    },
+    "saude-1.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "saude-1-300x292.webp"
+        }
+      ]
+    },
+    "saude-2.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "saude-2-300x292.webp"
+        }
+      ]
+    },
+    "saude-6.webp": {
+      "width": 390,
+      "height": 379,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "saude-6-300x292.webp"
+        }
+      ]
+    },
+    "coordenador-1.webp": {
+      "width": 300,
+      "height": 300,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "coordenador-1-150x150.webp"
+        }
+      ]
+    },
+    "coordenador-2.webp": {
+      "width": 300,
+      "height": 300,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "coordenador-2-150x150.webp"
+        }
+      ]
+    },
+    "coordenador-3.webp": {
+      "width": 300,
+      "height": 300,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "coordenador-3-150x150.webp"
+        }
+      ]
+    },
+    "coordenador-4.webp": {
+      "width": 300,
+      "height": 300,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "coordenador-4-150x150.webp"
+        }
+      ]
+    },
+    "coordenador-5.webp": {
+      "width": 300,
+      "height": 300,
+      "sizes": [
+        {
+          "width": 150,
+          "file": "coordenador-5-150x150.webp"
+        }
+      ]
+    },
+    "noticia-1.webp": {
+      "width": 300,
+      "height": 200,
+      "sizes": []
+    },
+    "noticia-2.webp": {
+      "width": 300,
+      "height": 200,
+      "sizes": []
+    },
+    "noticia-3.webp": {
+      "width": 300,
+      "height": 141,
+      "sizes": []
+    },
+    "video-wrZ4t0rCSog.webp": {
+      "width": 480,
+      "height": 360,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "video-wrZ4t0rCSog-300x225.webp"
+        }
+      ]
+    },
+    "video-z5sFiYw8H-I.webp": {
+      "width": 480,
+      "height": 360,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "video-z5sFiYw8H-I-300x225.webp"
+        }
+      ]
+    },
+    "video-JORIuDGFjjE.webp": {
+      "width": 480,
+      "height": 360,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "video-JORIuDGFjjE-300x225.webp"
+        }
+      ]
+    },
+    "video-3sJF0DKhLOk.webp": {
+      "width": 480,
+      "height": 360,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "video-3sJF0DKhLOk-300x225.webp"
+        }
+      ]
+    },
+    "dia-do-professor-2026-phorte.webp": {
+      "width": 1825,
+      "height": 862,
+      "sizes": [
+        {
+          "width": 300,
+          "file": "dia-do-professor-2026-phorte-300x142.webp"
+        },
+        {
+          "width": 768,
+          "file": "dia-do-professor-2026-phorte-768x363.webp"
+        },
+        {
+          "width": 1024,
+          "file": "dia-do-professor-2026-phorte-1024x484.webp"
+        },
+        {
+          "width": 1536,
+          "file": "dia-do-professor-2026-phorte-1536x725.webp"
+        }
+      ]
+    },
+    "dia-do-professor-2026-phorte-mobile.webp": {
+      "width": 1086,
+      "height": 1448,
+      "sizes": [
+        {
+          "width": 225,
+          "file": "dia-do-professor-2026-phorte-mobile-225x300.webp"
+        },
+        {
+          "width": 768,
+          "file": "dia-do-professor-2026-phorte-mobile-768x1024.webp"
+        }
+      ]
+    }
+  }
+}
