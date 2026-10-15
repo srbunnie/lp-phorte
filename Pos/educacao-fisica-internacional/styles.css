@@ -222,19 +222,12 @@ main:focus { outline: none; }
   border: 1.5px solid rgb(230 66 66 / 0.45); border-radius: 1.5rem;
   background: linear-gradient(120deg, rgb(255 255 255 / 0.04), transparent 50%), var(--lp-noche-2);
   box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), inset 0 0 40px -20px rgb(230 66 66 / 0.35);
-  transition: border-color 300ms, box-shadow 300ms, transform 400ms var(--lp-ease);
-}
-.lp-curso:hover { border-color: var(--lp-rojo); box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), 0 0 0 1px var(--lp-rojo), inset 0 0 50px -20px rgb(230 66 66 / 0.5); }
-@supports selector(:has(*)) {
-  .lp-curso:has(:focus-visible) { outline: 3px solid var(--lp-blanco); outline-offset: 4px; }
-  .lp-curso :focus-visible { outline: none; }
 }
 @media (min-width: 48rem) { .lp-curso { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); } }
 
 .lp-curso__media { position: relative; overflow: hidden; aspect-ratio: 384 / 294; }
 @media (min-width: 48rem) { .lp-curso__media { aspect-ratio: auto; min-height: 100%; } }
-.lp-curso__foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--lp-ease); }
-.lp-curso:hover .lp-curso__foto { transform: scale(1.05); }
+.lp-curso__foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .lp-curso__media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgb(20 8 7 / 0.7), transparent 45%); }
 @media (min-width: 48rem) { .lp-curso__media::after { background: linear-gradient(to right, transparent 60%, rgb(34 16 14 / 0.9)); } }
 .lp-curso__indice { position: absolute; left: 1.25rem; bottom: 0.75rem; z-index: 1; font: italic 900 5rem/1 var(--lp-display); color: transparent; -webkit-text-stroke: 1.5px rgb(255 255 255 / 0.75); }
@@ -272,20 +265,17 @@ main:focus { outline: none; }
   .lp-dato dt { font-size: 0.75rem; }
 }
 
-.lp-curso__cta::after { content: ""; position: absolute; inset: 0; z-index: 1; } /* o card inteiro leva ao curso */
-.lp-curso:hover .lp-curso__cta { background: var(--lp-rojo-700); }
-.lp-curso:hover .lp-curso__cta .lp-boton__circulo { transform: rotate(45deg); }
-@media (max-width: 29.99rem) { .lp-curso__cta { width: 100%; justify-content: space-between; } }
-
 /* ════════ FECHAMENTO ════════ */
-.lp-final { display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center; }
+.lp-final { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
 .lp-final__titulo {
-  margin: 0; font: italic 900 clamp(2.75rem, 1.25rem + 6vw, 6.5rem)/0.88 var(--lp-display); text-transform: uppercase; text-wrap: balance;
+  max-width: 62rem; margin: 0; font: italic 900 clamp(2.5rem, 1.25rem + 5vw, 5.5rem)/0.9 var(--lp-display); text-transform: uppercase; text-wrap: balance;
   text-shadow: 0 4px 0 rgb(0 0 0 / 0.15);
 }
-.lp-final__texto { margin: 0; max-width: 40rem; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.1875rem); line-height: 1.5; color: var(--lp-blanco); }
-.lp-final__cursos { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; list-style: none; }
-@media (max-width: 47.99rem) { .lp-final__cursos { flex-direction: column; width: 100%; max-width: 26rem; } .lp-final__cursos .lp-boton { width: 100%; justify-content: space-between; } }
+.lp-final__texto { margin: 0; max-width: 42rem; font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.3125rem); line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty; }
+.lp-final__texto strong { font-weight: 700; white-space: nowrap; }
+.lp-sem-quebra { white-space: nowrap; } /* palavras com hífen não quebram no meio */
+/* Linha fina de observação: menor, separada por um fio; branco puro para manter o contraste sobre o vermelho */
+.lp-final__nota { max-width: 38rem; margin: 0.5rem 0 0; padding-top: 1.25rem; border-top: 1px solid rgb(255 255 255 / 0.35); font-size: 0.875rem; line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty; }
 
 /* ════════ RODAPÉ ════════ */
 .lp-rodape { --ring: var(--lp-blanco); background: var(--lp-noche); color: rgb(255 255 255 / 0.7); }
