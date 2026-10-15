@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" preserveAspectRatio="none">
+  <defs>
+    <path id="paper" d="M10 45 31 24 67 30 109 21 142 28 188 19 223 26 270 21 303 28 350 19 392 25 423 12 463 23 497 8 526 19 561 30 602 22 631 31 670 21 704 33 740 26 777 29 788 51 779 78 787 100 781 130 786 162 773 188 753 204 713 198 678 205 644 197 610 207 571 201 552 211 558 241 548 270 555 298 542 329 516 343 485 336 452 347 423 337 391 348 359 338 326 345 296 335 272 340 253 322 246 297 252 270 243 243 248 216 223 208 190 216 157 206 128 212 98 205 68 213 40 205 23 187 18 163 24 137 13 111 20 85 12 64Z"/>
+    <clipPath id="clip"><use href="#paper"/></clipPath>
+    <filter id="fibers" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".18 .35" numOctaves="2" seed="11" result="edge"/>
+      <feDisplacementMap in="SourceGraphic" in2="edge" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="ripped"/>
+      <feTurbulence type="fractalNoise" baseFrequency=".48 .68" numOctaves="3" seed="27" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="grain">
+        <feFuncR type="linear" slope=".12" intercept=".88"/>
+        <feFuncG type="linear" slope=".12" intercept=".88"/>
+        <feFuncB type="linear" slope=".12" intercept=".88"/>
+      </feComponentTransfer>
+      <feComposite in="grain" in2="ripped" operator="in" result="clipped"/>
+      <feBlend in="ripped" in2="clipped" mode="multiply"/>
+    </filter>
+    <linearGradient id="crease" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FAFAFA" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#C8C8C8" stop-opacity=".5"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FAFAFA" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip)" filter="url(#fibers)">
+    <use href="#paper" fill="#FAFAFA"/>
+    <g fill="url(#crease)">
+      <path d="m69 0 24 0 23 360-30 0Z"/>
+      <path d="m225 0 31 0-33 360-40 0Z" opacity=".65"/>
+      <path d="m390 0 27 0 37 360-40 0Z" opacity=".7"/>
+      <path d="m560 0 29 0-21 360-36 0Z" opacity=".7"/>
+      <path d="m719 0 23 0 28 360-33 0Z"/>
+    </g>
+    <path d="m22 51 25-20 38 1m545 215-6 29 5 28m-67 31-35 4-31-7" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/>
+    <path d="m269 322 24 10 35-1m126-128 37-4 35 5m186-5 38-6 26 6" fill="none" stroke="#CFCFCF" stroke-width="2" opacity=".65"/>
+  </g>
+</svg>
