@@ -33,7 +33,6 @@
 @media (min-width: 48rem){
 #lp-pos-ef .ph-pagina{padding-inline: var(--espaco-6);}
 }
-#lp-pos-ef .ph-sr-only{position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;}
 #lp-pos-ef .ph-pular{position: absolute; left: var(--espaco-4); top: -100px; z-index: var(--z-pular-para-o-conteudo); padding: var(--espaco-3) var(--espaco-4); border-radius: var(--radius-controle); background: var(--primary); color: var(--primary-foreground); font-weight: 600; text-decoration: none;}
 #lp-pos-ef .ph-pular:focus-visible{top: var(--espaco-4);}
 #lp-pos-ef .ph-icone{width: 1.25rem; height: 1.25rem; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;}
@@ -189,12 +188,7 @@ html{scroll-behavior: auto;}
 @media (min-width: 64rem){
 #lp-pos-ef .lp-cursos{gap: 2rem;}
 }
-#lp-pos-ef .lp-curso{position: relative; isolation: isolate; display: grid; grid-template-columns: 1fr; overflow: hidden; border: 1.5px solid rgb(230 66 66 / 0.45); border-radius: 1.5rem; background: linear-gradient(120deg, rgb(255 255 255 / 0.04), transparent 50%), var(--lp-noche-2); box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), inset 0 0 40px -20px rgb(230 66 66 / 0.35); transition: border-color 300ms, box-shadow 300ms, transform 400ms var(--lp-ease);}
-#lp-pos-ef .lp-curso:hover{border-color: var(--lp-rojo); box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), 0 0 0 1px var(--lp-rojo), inset 0 0 50px -20px rgb(230 66 66 / 0.5);}
-@supports selector(:has(*)){
-#lp-pos-ef .lp-curso:has(:focus-visible){outline: 3px solid var(--lp-blanco); outline-offset: 4px;}
-#lp-pos-ef .lp-curso :focus-visible{outline: none;}
-}
+#lp-pos-ef .lp-curso{position: relative; isolation: isolate; display: grid; grid-template-columns: 1fr; overflow: hidden; border: 1.5px solid rgb(230 66 66 / 0.45); border-radius: 1.5rem; background: linear-gradient(120deg, rgb(255 255 255 / 0.04), transparent 50%), var(--lp-noche-2); box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), inset 0 0 40px -20px rgb(230 66 66 / 0.35);}
 @media (min-width: 48rem){
 #lp-pos-ef .lp-curso{grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);}
 }
@@ -202,8 +196,7 @@ html{scroll-behavior: auto;}
 @media (min-width: 48rem){
 #lp-pos-ef .lp-curso__media{aspect-ratio: auto; min-height: 100%;}
 }
-#lp-pos-ef .lp-curso__foto{position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--lp-ease);}
-#lp-pos-ef .lp-curso:hover .lp-curso__foto{transform: scale(1.05);}
+#lp-pos-ef .lp-curso__foto{position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;}
 #lp-pos-ef .lp-curso__media::after{content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgb(20 8 7 / 0.7), transparent 45%);}
 @media (min-width: 48rem){
 #lp-pos-ef .lp-curso__media::after{background: linear-gradient(to right, transparent 60%, rgb(34 16 14 / 0.9));}
@@ -232,6 +225,7 @@ html{scroll-behavior: auto;}
 #lp-pos-ef .lp-dato + .lp-dato{padding-left: 1.5rem; border-left: 2px solid var(--lp-rojo-600);}
 #lp-pos-ef .lp-dato dd{margin: 0; font: italic 900 clamp(1.875rem, 1.5rem + 1vw, 2.375rem)/1 var(--lp-display); color: var(--lp-rojo);}
 #lp-pos-ef .lp-dato dt{margin-top: 0.25rem; font-size: 0.8125rem; line-height: 1.3; color: rgb(255 255 255 / 0.8);}
+#lp-pos-ef .lp-curso__cta{margin-top: 0.25rem;}
 @media (max-width: 29.99rem){
 #lp-pos-ef .lp-datos{flex-wrap: nowrap;}
 #lp-pos-ef .lp-dato{padding-right: 0.875rem;}
@@ -239,20 +233,13 @@ html{scroll-behavior: auto;}
 #lp-pos-ef .lp-dato dd{font-size: 1.625rem;}
 #lp-pos-ef .lp-dato dt{font-size: 0.75rem;}
 }
-#lp-pos-ef .lp-curso__cta::after{content: ""; position: absolute; inset: 0; z-index: 1;}
-#lp-pos-ef .lp-curso:hover .lp-curso__cta{background: var(--lp-rojo-700);}
-#lp-pos-ef .lp-curso:hover .lp-curso__cta .lp-boton__circulo{transform: rotate(45deg);}
-@media (max-width: 29.99rem){
-#lp-pos-ef .lp-curso__cta{width: 100%; justify-content: space-between;}
-}
-#lp-pos-ef .lp-final{display: flex; flex-direction: column; align-items: center; gap: 1.25rem; text-align: center;}
-#lp-pos-ef .lp-final__titulo{margin: 0; font: italic 900 clamp(2.75rem, 1.25rem + 6vw, 6.5rem)/0.88 var(--lp-display); text-transform: uppercase; text-wrap: balance; text-shadow: 0 4px 0 rgb(0 0 0 / 0.15);}
-#lp-pos-ef .lp-final__texto{margin: 0; max-width: 40rem; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.1875rem); line-height: 1.5; color: var(--lp-blanco);}
-#lp-pos-ef .lp-final__cursos{display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin: 1.5rem 0 0; padding: 0; list-style: none;}
-@media (max-width: 47.99rem){
-#lp-pos-ef .lp-final__cursos{flex-direction: column; width: 100%; max-width: 26rem;}
-#lp-pos-ef .lp-final__cursos .lp-boton{width: 100%; justify-content: space-between;}
-}
+#lp-pos-ef .lp-final{display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center;}
+#lp-pos-ef .lp-final__titulo{max-width: 62rem; margin: 0; font: italic 900 clamp(2.5rem, 1.25rem + 5vw, 5.5rem)/0.9 var(--lp-display); text-transform: uppercase; text-wrap: balance; text-shadow: 0 4px 0 rgb(0 0 0 / 0.15);}
+#lp-pos-ef .lp-final__texto{margin: 0; max-width: 42rem; font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.3125rem); line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty;}
+#lp-pos-ef .lp-final__texto strong{font-weight: 700; white-space: nowrap;}
+#lp-pos-ef .lp-final__cta{margin-top: 0.25rem;}
+#lp-pos-ef .lp-sem-quebra{white-space: nowrap;}
+#lp-pos-ef .lp-final__nota{max-width: 38rem; margin: 0.5rem 0 0; padding-top: 1.25rem; border-top: 1px solid rgb(255 255 255 / 0.35); font-size: 0.875rem; line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty;}
 #lp-pos-ef .lp-rodape{--ring: var(--lp-blanco); background: var(--lp-noche); color: rgb(255 255 255 / 0.7);}
 #lp-pos-ef .lp-rodape__barra{display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem 2rem; padding-block: 3.5rem 7rem;}
 @media (min-width: 48rem){
@@ -301,9 +288,9 @@ html{scroll-behavior: auto;}
   <div class="ph-pagina lp-topo__barra">
     <!-- Na entrada, as duas marcas em destaque (como no flyer); ao rolar, barra compacta com menu -->
     <a class="lp-marcas lp-topo__marcas" href="#conteudo" aria-label="Faculdade Phorte e FitnessLink, início da página">
-      <img class="lp-marcas__phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="" width="188" height="106">
+      <img class="lp-marcas__phorte" src="https://posphorte.com.br/wp-content/uploads/2026/10/phorte-logo.webp" alt="" width="91" height="40">
       <span class="lp-marcas__divisor" aria-hidden="true"></span>
-      <img class="lp-marcas__fitnesslink" src="https://posphorte.com.br/wp-content/uploads/2026/10/fitnesslink-logo.png" alt="" width="240" height="190">
+      <img class="lp-marcas__fitnesslink" src="https://posphorte.com.br/wp-content/uploads/2026/10/fitnesslink-logo.webp" alt="" width="240" height="190">
     </a>
     <nav class="lp-topo__nav" aria-label="Pós-graduações">
       <ul>
@@ -312,7 +299,6 @@ html{scroll-behavior: auto;}
         <li><a href="#biomecanica">Treinamento Feminino</a></li>
       </ul>
     </nav>
-    <a class="lp-boton lp-boton--blanco lp-boton--sm lp-topo__cta" href="#cursos">Escolher minha pós</a>
   </div>
 </header>
 
@@ -321,7 +307,7 @@ html{scroll-behavior: auto;}
   <!-- 1. BANNER PRINCIPAL -->
   <section class="lp-hero" aria-labelledby="hero-titulo">
     <div class="lp-hero__media" aria-hidden="true">
-      <img src="https://posphorte.com.br/wp-content/uploads/2026/10/hero-phorte-fitnesslink.webp" alt="" width="649" height="1100" fetchpriority="high">
+      <img src="https://posphorte.com.br/wp-content/uploads/2026/10/hero-phorte-fitnesslink.webp" alt="" width="964" height="1632" fetchpriority="high">
     </div>
 
     <div class="ph-pagina lp-hero__contenido">
@@ -371,7 +357,7 @@ html{scroll-behavior: auto;}
       <div class="lp-cursos">
         <article class="lp-curso" id="mba" data-revelar aria-labelledby="mba-titulo">
           <div class="lp-curso__media">
-            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/mba-gestao-fitness-wellness.webp" alt="" width="384" height="294" loading="lazy">
+            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/mba-gestao-fitness-wellness.webp" alt="" width="1433" height="1098" loading="lazy">
             <span class="lp-curso__indice" aria-hidden="true">01</span>
           </div>
           <div class="lp-curso__cuerpo">
@@ -388,18 +374,18 @@ html{scroll-behavior: auto;}
               <div class="lp-dato"><dt>Carga horária</dt><dd>360h</dd></div>
               <div class="lp-dato"><dt>Com demonstrações práticas</dt><dd>Ao vivo / Online</dd></div>
             </dl>
-            <a class="lp-boton lp-boton--rojo lp-curso__cta" href="https://posphorte.com.br/mba-internacional-em-gestao/" data-curso="mba-gestao" data-local="card">Conheça a pós-graduação<span class="ph-sr-only">: MBA Internacional em Gestão, Liderança e Negócios Fitness &amp; Wellness</span><span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
+            <a class="lp-boton lp-boton--blanco lp-boton--sm lp-curso__cta" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/pre-venda-exclusiva-turma-de-pos-graduacao-faculdade-phorte/4726/2" aria-label="Fazer pré-venda do MBA Internacional em Gestão, Liderança e Negócios Fitness e Wellness">Fazer pré-venda<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
           </div>
         </article>
 
         <article class="lp-curso" id="personal" data-revelar aria-labelledby="personal-titulo">
           <div class="lp-curso__media">
-            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/personal-trainer-internacional.webp" alt="" width="384" height="294" loading="lazy">
+            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/personal-trainer-internacional.webp" alt="" width="1296" height="1214" loading="lazy">
             <span class="lp-curso__indice" aria-hidden="true">02</span>
           </div>
           <div class="lp-curso__cuerpo">
             <div class="lp-curso__selos">
-              <img class="lp-nasm" src="https://posphorte.com.br/wp-content/uploads/2026/10/nasm-logo.png" alt="NASM" width="176" height="62" loading="lazy">
+              <img class="lp-nasm" src="https://posphorte.com.br/wp-content/uploads/2026/10/nasm-logo.webp" alt="NASM" width="176" height="62" loading="lazy">
               <span class="lp-bandeiras" role="img" aria-label="Estados Unidos e Brasil">
                 <svg aria-hidden="true"><use href="#b-eua"/></svg><svg aria-hidden="true"><use href="#b-brasil"/></svg>
               </span>
@@ -411,13 +397,13 @@ html{scroll-behavior: auto;}
               <div class="lp-dato"><dt>Carga horária</dt><dd>360h</dd></div>
               <div class="lp-dato"><dt>Com demonstrações práticas</dt><dd>Ao vivo / Online</dd></div>
             </dl>
-            <a class="lp-boton lp-boton--rojo lp-curso__cta" href="https://posphorte.com.br/personal-internacional/" data-curso="personal-internacional" data-local="card">Conheça a pós-graduação<span class="ph-sr-only">: Personal Trainer Internacional</span><span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
+            <a class="lp-boton lp-boton--blanco lp-boton--sm lp-curso__cta" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/pre-venda-exclusiva-turma-de-pos-graduacao-faculdade-phorte/4726/2" aria-label="Fazer pré-venda do Personal Trainer Internacional">Fazer pré-venda<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
           </div>
         </article>
 
         <article class="lp-curso" id="biomecanica" data-revelar aria-labelledby="biomecanica-titulo">
           <div class="lp-curso__media">
-            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/biomecanica-forca-mulheres.webp" alt="" width="384" height="294" loading="lazy">
+            <img class="lp-curso__foto" src="https://posphorte.com.br/wp-content/uploads/2026/10/biomecanica-forca-mulheres.webp" alt="" width="1433" height="1098" loading="lazy">
             <span class="lp-curso__indice" aria-hidden="true">03</span>
           </div>
           <div class="lp-curso__cuerpo">
@@ -430,7 +416,7 @@ html{scroll-behavior: auto;}
               <div class="lp-dato"><dt>Carga horária</dt><dd>360h</dd></div>
               <div class="lp-dato"><dt>Com demonstrações práticas</dt><dd>Ao vivo / Online</dd></div>
             </dl>
-            <a class="lp-boton lp-boton--rojo lp-curso__cta" href="https://posphorte.com.br/biomecanica-e-treinamento-de-forca-para-mulheres/" data-curso="biomecanica-mulheres" data-local="card">Conheça a pós-graduação<span class="ph-sr-only">: Biomecânica e Treinamento de Força para Mulheres</span><span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
+            <a class="lp-boton lp-boton--blanco lp-boton--sm lp-curso__cta" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/pre-venda-exclusiva-turma-de-pos-graduacao-faculdade-phorte/4726/2" aria-label="Fazer pré-venda de Biomecânica e Treinamento de Força para Mulheres">Fazer pré-venda<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
           </div>
         </article>
       </div>
@@ -440,13 +426,10 @@ html{scroll-behavior: auto;}
   <!-- 3. FECHAMENTO -->
   <section class="lp-seccion lp-seccion--roja" id="condicao" aria-labelledby="condicao-titulo">
     <div class="ph-pagina lp-final" data-revelar>
-      <h2 class="lp-final__titulo" id="condicao-titulo">Garanta sua condição especial!</h2>
-      <p class="lp-final__texto">Válidas por tempo limitado ou até o preenchimento das vagas promocionais.</p>
-      <ul class="lp-final__cursos" aria-label="Pós-graduações">
-        <li><a class="lp-boton lp-boton--blanco" href="https://posphorte.com.br/mba-internacional-em-gestao/" data-curso="mba-gestao" data-local="fechamento">MBA em Gestão Fitness &amp; Wellness<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a></li>
-        <li><a class="lp-boton lp-boton--blanco" href="https://posphorte.com.br/personal-internacional/" data-curso="personal-internacional" data-local="fechamento">Personal Trainer Internacional<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a></li>
-        <li><a class="lp-boton lp-boton--blanco" href="https://posphorte.com.br/biomecanica-e-treinamento-de-forca-para-mulheres/" data-curso="biomecanica-mulheres" data-local="fechamento">Treinamento de Força para Mulheres<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a></li>
-      </ul>
+      <h2 class="lp-final__titulo" id="condicao-titulo">Garanta sua <span class="lp-sem-quebra">pré-inscrição</span> com condição exclusiva!</h2>
+      <p class="lp-final__texto">Por apenas <strong>R$&nbsp;100,00</strong>, dê o primeiro passo rumo à sua próxima especialização e assegure sua <span class="lp-sem-quebra">pré-inscrição</span> na <span class="lp-sem-quebra">pós-graduação</span> de sua escolha.</p>
+      <a class="lp-boton lp-boton--blanco lp-final__cta" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/pre-venda-exclusiva-turma-de-pos-graduacao-faculdade-phorte/4726/2">Fazer pré-venda<span class="lp-boton__circulo" aria-hidden="true"><svg class="ph-icone ph-icone--sm"><use href="#i-diagonal"/></svg></span></a>
+      <p class="lp-final__nota">Deseja se <span class="lp-sem-quebra">pré-inscrever</span> em mais de um curso? Fale com nossos consultores para incluir outras especializações e conhecer as condições correspondentes.</p>
     </div>
   </section>
 </main>
@@ -456,9 +439,9 @@ html{scroll-behavior: auto;}
     <div class="lp-rodape__marcas">
       <span class="lp-rodape__rotulo">Realização</span>
       <a class="lp-marcas lp-marcas--grande" href="https://posphorte.com.br/">
-        <img class="lp-marcas__phorte" src="https://posphorte.com.br/wp-content/uploads/2024/08/logo-faculdade.webp" alt="Faculdade Phorte" width="188" height="106" loading="lazy">
+        <img class="lp-marcas__phorte" src="https://posphorte.com.br/wp-content/uploads/2026/10/phorte-logo.webp" alt="Faculdade Phorte" width="91" height="40" loading="lazy">
         <span class="lp-marcas__divisor" aria-hidden="true"></span>
-        <img class="lp-marcas__fitnesslink" src="https://posphorte.com.br/wp-content/uploads/2026/10/fitnesslink-logo.png" alt="FitnessLink" width="240" height="190" loading="lazy">
+        <img class="lp-marcas__fitnesslink" src="https://posphorte.com.br/wp-content/uploads/2026/10/fitnesslink-logo.webp" alt="FitnessLink" width="240" height="190" loading="lazy">
       </a>
     </div>
     <ul class="lp-rodape__enlaces">
@@ -496,21 +479,5 @@ html{scroll-behavior: auto;}
   } else {
     revelables.forEach(function (el) { el.classList.add("es-visible"); });
   }
-
-  // GTM/GA4: clique em cada curso. Evento "clique_pos_graduacao" com
-  //   curso   → mba-gestao | personal-internacional | biomecanica-mulheres
-  //   posicao → card | fechamento
-  //   destino → URL da página do curso
-  document.addEventListener("click", function (e) {
-    var link = e.target.closest && e.target.closest("a[data-curso]");
-    if (!link) return;
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "clique_pos_graduacao",
-      curso: link.dataset.curso,
-      posicao: link.dataset.local,
-      destino: link.href
-    });
-  });
 })();
 </script>
