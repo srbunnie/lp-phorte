@@ -1,0 +1,59 @@
+/* Cabeçalho: publicado como widget próprio. O z-index mantém submenus acima do conteúdo da página. */
+#hp-cabecalho{position:relative;z-index:50}
+/* Contêiner do Elementor com quebra (wrap) mede a altura do widget numa largura menor, onde a linha da marca
+   quebra em duas: sobrava uma faixa vazia de 29 px no celular. Largura definida faz a medida usar a largura real. */
+.elementor-widget:has(#hp-cabecalho){width:100%}
+#hp-cabecalho .hp-skip{position:absolute;top:8px;left:16px;transform:translateY(-180%);background:#fff;color:var(--hp-ink);padding:12px 20px;border:2px solid var(--hp-primary);border-radius:8px;z-index:100}
+#hp-cabecalho .hp-skip:focus{transform:translateY(0)}
+
+/* Navegação: details funciona com teclado mesmo sem JavaScript. */
+#hp-cabecalho .hp-utility{background:#191919;color:#eee;font-size:11px}
+#hp-cabecalho .hp-utility .hp-container{display:flex;align-items:center;gap:24px;min-height:36px}
+#hp-cabecalho .hp-utility p{margin-right:auto;color:#ccc}
+#hp-cabecalho .hp-utility a{display:inline-flex;align-items:center;gap:8px;min-height:36px}
+#hp-cabecalho .hp-utility svg{width:14px;height:14px}
+#hp-cabecalho .hp-utility a:hover{text-decoration:underline}
+#hp-cabecalho .hp-header{position:relative;z-index:30;background:#fff;border-bottom:1px solid #eee}
+#hp-cabecalho .hp-header-row{display:flex;align-items:center;gap:18px;min-height:92px;position:relative}
+#hp-cabecalho .hp-brand{flex-shrink:0;display:block}
+#hp-cabecalho .hp-brand img{width:108px;height:61px;object-fit:contain}
+#hp-cabecalho .hp-brand-divider{height:30px;width:1px;background:var(--hp-border)}
+#hp-cabecalho .hp-brand-label{font-size:10px;line-height:1.8;letter-spacing:.1em;white-space:nowrap}
+#hp-cabecalho .hp-brand-label b{font-size:10px;letter-spacing:0;font-weight:400;color:var(--hp-muted)}
+#hp-cabecalho .hp-navigation{margin-left:auto;display:flex;align-items:center;gap:22px;font-size:12px;font-weight:500}
+#hp-cabecalho .hp-navigation>a:not(.hp-button){padding-block:15px}
+#hp-cabecalho .hp-navigation>a:hover:not(.hp-button),#hp-cabecalho .hp-dropdown summary:hover{color:var(--hp-primary)}
+#hp-cabecalho .hp-dropdown{position:relative}
+#hp-cabecalho .hp-dropdown summary{display:flex;align-items:center;gap:7px;min-height:48px;cursor:pointer;list-style:none}
+#hp-cabecalho .hp-dropdown summary::-webkit-details-marker{display:none}
+#hp-cabecalho .hp-dropdown summary .hp-dropdown-chevron{width:14px;height:14px;display:block;flex:0 0 14px;transition:transform .2s}
+#hp-cabecalho .hp-dropdown[open]>summary .hp-dropdown-chevron{transform:rotate(180deg)}
+#hp-cabecalho .hp-dropdown[open]>summary{color:var(--hp-primary)}
+#hp-cabecalho .hp-dropdown ul{position:absolute;top:100%;left:-15px;background:#fff;min-width:230px;max-width:320px;padding:10px;border:1px solid var(--hp-border);border-radius:10px;box-shadow:0 16px 40px #00000012}
+#hp-cabecalho .hp-dropdown li a{display:block;padding:10px 12px;border-radius:5px;font-size:12px}
+#hp-cabecalho .hp-dropdown li a:hover{background:var(--hp-soft);color:var(--hp-primary)}
+#hp-cabecalho .hp-menu-toggle{margin-left:auto;width:46px;height:46px;border:1px solid var(--hp-border);border-radius:8px;align-items:center;justify-content:center}
+
+@media(max-width:1199px){
+  #hp-cabecalho .hp-navigation{gap:14px;font-size:11px}
+  #hp-cabecalho .hp-header-row{min-height:82px}
+  #hp-cabecalho .hp-navigation.hp-menu-enhanced{display:none}
+  #hp-cabecalho .hp-navigation.hp-menu-enhanced.hp-menu-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;padding:20px;background:#fff;border:1px solid var(--hp-border);border-radius:0 0 12px 12px;max-height:75vh;overflow:auto}
+  #hp-cabecalho .hp-navigation:not(.hp-menu-enhanced){flex-wrap:wrap;margin-block:12px}
+  #hp-cabecalho .hp-dropdown ul{position:static;min-width:0;max-width:none;box-shadow:none;border:0;background:var(--hp-soft)}
+  #hp-cabecalho .hp-menu-toggle:not([hidden]){display:flex}
+  #hp-cabecalho .hp-navigation .hp-button{align-self:flex-start}
+}
+@media(min-width:1200px){
+  #hp-cabecalho .hp-menu-toggle{display:none}
+}
+@media(max-width:767px){
+  #hp-cabecalho .hp-utility .hp-container{justify-content:space-between;gap:10px}
+  #hp-cabecalho .hp-utility p{display:none}
+  #hp-cabecalho .hp-utility a{font-size:10px}
+  #hp-cabecalho .hp-header-row{gap:12px;flex-wrap:wrap}
+  #hp-cabecalho .hp-brand img{width:94px;height:53px}
+  #hp-cabecalho .hp-brand-label,#hp-cabecalho .hp-brand-label b{font-size:8px}
+  #hp-cabecalho .hp-brand-divider{height:27px}
+  #hp-cabecalho .hp-navigation:not(.hp-menu-enhanced){width:100%;margin:0;gap:12px}
+}
