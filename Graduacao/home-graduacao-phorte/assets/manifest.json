@@ -1,0 +1,333 @@
+[
+  {
+    "id": "logo",
+    "source": "https://graduacao-phorte.vercel.app/logos/faculdade-phorte.svg",
+    "path": "assets/images/logo-phorte.svg",
+    "width": 300,
+    "height": 132,
+    "publishedUrl": null
+  },
+  {
+    "id": "logo-white",
+    "source": "https://graduacao-phorte.vercel.app/logos/phorte-unificado-branco.svg",
+    "path": "assets/images/logo-phorte-branco.svg",
+    "width": 53,
+    "height": 27,
+    "publishedUrl": null
+  },
+  {
+    "id": "banner-BANNER-SITE-background-scaled.webp",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/BANNER-SITE-background-scaled.webp",
+    "path": "assets/images/BANNER-SITE-background-scaled.webp",
+    "width": 3757,
+    "height": 1637,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/BANNER-SITE-background-scaled.webp"
+  },
+  {
+    "id": "banner-persona-masculina.webp",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-masculina.webp",
+    "path": "assets/images/persona-masculina.webp",
+    "width": 1161,
+    "height": 2064,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-masculina.webp"
+  },
+  {
+    "id": "banner-persona-feminina.webp",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-feminina.webp",
+    "path": "assets/images/persona-feminina.webp",
+    "width": 1124,
+    "height": 1997,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-feminina.webp"
+  },
+  {
+    "id": "banner-ICONE-MOUSE.webp",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/ICONE-MOUSE.webp",
+    "path": "assets/images/ICONE-MOUSE.webp",
+    "width": 98,
+    "height": 118,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/ICONE-MOUSE.webp"
+  },
+  {
+    "id": "course-32014",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/administracao.webp",
+    "path": "assets/images/curso-administracao.webp",
+    "width": 580,
+    "height": 580,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-39176",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/educacao-fisica.webp",
+    "path": "assets/images/curso-educacao-fisica.webp",
+    "width": 742,
+    "height": 742,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-31985",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/marketing.webp",
+    "path": "assets/images/curso-marketing.webp",
+    "width": 865,
+    "height": 865,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-32006",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/pedagogia.webp",
+    "path": "assets/images/curso-pedagogia.webp",
+    "width": 1000,
+    "height": 1000,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-32008",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/processos-gerenciais.webp",
+    "path": "assets/images/curso-processos-gerenciais.webp",
+    "width": 580,
+    "height": 580,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-32010",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/recursos-humanos.webp",
+    "path": "assets/images/curso-recursos-humanos.webp",
+    "width": 580,
+    "height": 580,
+    "publishedUrl": null
+  },
+  {
+    "id": "course-32012",
+    "source": "https://graduacao-phorte.vercel.app/img/cursos/traducao.webp",
+    "path": "assets/images/curso-traducao.webp",
+    "width": 866,
+    "height": 866,
+    "publishedUrl": null
+  },
+  {
+    "id": "testimonial-0",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Debora-ezgif.com-optiwebp-576x1024.webp",
+    "path": "assets/images/depoimento-1.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Debora-ezgif.com-optiwebp-576x1024.webp"
+  },
+  {
+    "id": "testimonial-1",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Luciana-576x1024.jpg",
+    "path": "assets/images/depoimento-2.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Luciana-576x1024.jpg"
+  },
+  {
+    "id": "testimonial-2",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Yuri-576x1024.png",
+    "path": "assets/images/depoimento-3.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Yuri-576x1024.png"
+  },
+  {
+    "id": "testimonial-3",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Beatriz-576x1024.jpg",
+    "path": "assets/images/depoimento-4.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Beatriz-576x1024.jpg"
+  },
+  {
+    "id": "testimonial-4",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Rosangela_2-576x1024.jpg",
+    "path": "assets/images/depoimento-5.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Rosangela_2-576x1024.jpg"
+  },
+  {
+    "id": "testimonial-5",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Leticia-ezgif.com-optiwebp-576x1024.webp",
+    "path": "assets/images/depoimento-6.webp",
+    "width": 576,
+    "height": 1024,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Leticia-ezgif.com-optiwebp-576x1024.webp"
+  },
+  {
+    "id": "partner-0",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/mstc-150x150.png.webp",
+    "path": "assets/images/parceiro-1.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/mstc-150x150.png.webp"
+  },
+  {
+    "id": "partner-1",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/cna-150x150.png.webp",
+    "path": "assets/images/parceiro-2.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/cna-150x150.png.webp"
+  },
+  {
+    "id": "partner-2",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ciee-150x150.png.webp",
+    "path": "assets/images/parceiro-3.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ciee-150x150.png.webp"
+  },
+  {
+    "id": "partner-3",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ABV-150x150.png.webp",
+    "path": "assets/images/parceiro-4.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ABV-150x150.png.webp"
+  },
+  {
+    "id": "partner-4",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ass-de-amparo-autista-150x150.png.webp",
+    "path": "assets/images/parceiro-5.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ass-de-amparo-autista-150x150.png.webp"
+  },
+  {
+    "id": "partner-5",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/rumo-ao-futuro-150x150.png.webp",
+    "path": "assets/images/parceiro-6.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/rumo-ao-futuro-150x150.png.webp"
+  },
+  {
+    "id": "partner-6",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/vidraria-anchieta-150x150.png.webp",
+    "path": "assets/images/parceiro-7.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/vidraria-anchieta-150x150.png.webp"
+  },
+  {
+    "id": "partner-7",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/projeto-vida-missoes-1-150x150.png.webp",
+    "path": "assets/images/parceiro-8.webp",
+    "width": 150,
+    "height": 150,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/projeto-vida-missoes-1-150x150.png.webp"
+  },
+  {
+    "id": "news-0",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias.png",
+    "path": "assets/images/noticia-1.webp",
+    "width": 800,
+    "height": 400,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias.png"
+  },
+  {
+    "id": "news-1",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg",
+    "path": "assets/images/noticia-2.webp",
+    "width": 800,
+    "height": 419,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg"
+  },
+  {
+    "id": "news-2",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg",
+    "path": "assets/images/noticia-3.webp",
+    "width": 800,
+    "height": 419,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg"
+  },
+  {
+    "id": "unit",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-1-rui-barbosa.webp",
+    "path": "assets/images/sede-rui-barbosa.webp",
+    "width": 392,
+    "height": 467,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-1-rui-barbosa.webp"
+  },
+  {
+    "id": "institution-poster",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/capa-video-home-phorte.webp",
+    "path": "assets/images/video-institucional.webp",
+    "width": 1000,
+    "height": 562,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/capa-video-home-phorte.webp"
+  },
+  {
+    "id": "course-banner",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/personagraduacaophortestyled-768x565.webp",
+    "path": "assets/images/estudantes-graduacao.webp",
+    "width": 768,
+    "height": 565,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/personagraduacaophortestyled-768x565.webp"
+  },
+  {
+    "id": "unit-martiniano",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-2-martiniano.webp",
+    "path": "assets/images/unidade-martiniano.webp",
+    "width": 392,
+    "height": 467,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-2-martiniano.webp"
+  },
+  {
+    "id": "unit-rui-landscape",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/02/UNIDADE-1-rui-barbosa.webp",
+    "path": "assets/images/unidade-1-rui-barbosa-paisagem.webp",
+    "width": 671,
+    "height": 393,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/02/UNIDADE-1-rui-barbosa.webp"
+  },
+  {
+    "id": "unit-martiniano-landscape",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2026/02/UNIDADE-2-martiniano.webp",
+    "path": "assets/images/unidade-2-martiniano-paisagem.webp",
+    "width": 671,
+    "height": 393,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2026/02/UNIDADE-2-martiniano.webp"
+  },
+  {
+    "id": "emec-seal",
+    "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/EMEC_ICON_LOGO_FINAL-600x394.png",
+    "path": "assets/images/emec-selo.png",
+    "width": 600,
+    "height": 394,
+    "publishedUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/EMEC_ICON_LOGO_FINAL-600x394.png"
+  },
+  {
+    "id": "path-first",
+    "source": "Gerada no Magnific em 16/10/2026 (paleta Phorte vermelho/amarelo); revisar direitos de uso antes de publicar",
+    "path": "assets/images/caminho-primeira-graduacao.webp",
+    "width": 1200,
+    "height": 905
+  },
+  {
+    "id": "path-next",
+    "source": "Gerada no Magnific em 16/10/2026 (paleta Phorte vermelho/amarelo); revisar direitos de uso antes de publicar",
+    "path": "assets/images/caminho-nova-trajetoria.webp",
+    "width": 1200,
+    "height": 905
+  },
+  {
+    "id": "banner-c-matriculas",
+    "source": "Gerada no Magnific em 16/10/2026 (paleta Phorte) e estendida para 3:1; revisar direitos de uso antes de publicar",
+    "path": "assets/images/banner-matriculas-2027.webp",
+    "width": 2400,
+    "height": 800
+  },
+  {
+    "id": "banner-c-transferencia",
+    "source": "Gerada no Magnific em 16/10/2026 (paleta Phorte) e estendida para 3:1; revisar direitos de uso antes de publicar",
+    "path": "assets/images/banner-transferencia.webp",
+    "width": 2400,
+    "height": 800
+  },
+  {
+    "id": "banner-c-online",
+    "source": "Gerada no Magnific em 16/10/2026 (paleta Phorte) e estendida para 3:1; revisar direitos de uso antes de publicar",
+    "path": "assets/images/banner-online-ao-vivo.webp",
+    "width": 2400,
+    "height": 800
+  }
+]
