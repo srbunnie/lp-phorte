@@ -1,0 +1,1123 @@
+{
+  "capturedAt": "2026-10-16T14:03:35.455Z",
+  "errors": [],
+  "requests": [],
+  "testimonials": [
+    {
+      "name": "Debora",
+      "role": "Aluna(o) de Administração",
+      "quote": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Debora-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=y6Do2KmZsjo\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":51434,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Debora-ezgif.com-optiwebp.webp\"}}"
+      ]
+    },
+    {
+      "name": "Luciana Gomes",
+      "role": "Aluna(o) de Pedagogia",
+      "quote": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Luciana-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/shorts\\/F5N7LOW_U9s\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41573,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Luciana.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Yuri",
+      "role": "Aluna(o) de Administração",
+      "quote": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Yuri-576x1024.png",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=EVzmUlnkGWM\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41818,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Yuri.png\"}}"
+      ]
+    },
+    {
+      "name": "Meire e Beatriz",
+      "role": "Aluna(o) de Administração e Pedagogia",
+      "quote": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Beatriz-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/youtube.com\\/shorts\\/WnghtJQdf9Y?feature=share\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41549,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Beatriz.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Rosângela Simões Silva",
+      "role": "Aluna(o) de Pedagogia",
+      "quote": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Rosangela_2-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/shorts\\/bJwRpDj-5hI\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41548,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Rosangela_2.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Leticia",
+      "role": "Aluna(o) de Administração",
+      "quote": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Leticia-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=I7HIJ_4HSmw\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":51432,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Leticia-ezgif.com-optiwebp.webp\"}}"
+      ]
+    },
+    {
+      "name": "Debora",
+      "role": "Aluna(o) de Administração",
+      "quote": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Debora-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=y6Do2KmZsjo\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":51434,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Debora-ezgif.com-optiwebp.webp\"}}"
+      ]
+    },
+    {
+      "name": "Luciana Gomes",
+      "role": "Aluna(o) de Pedagogia",
+      "quote": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Luciana-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/shorts\\/F5N7LOW_U9s\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41573,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Luciana.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Yuri",
+      "role": "Aluna(o) de Administração",
+      "quote": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Yuri-576x1024.png",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=EVzmUlnkGWM\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41818,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Yuri.png\"}}"
+      ]
+    },
+    {
+      "name": "Meire e Beatriz",
+      "role": "Aluna(o) de Administração e Pedagogia",
+      "quote": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Beatriz-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/youtube.com\\/shorts\\/WnghtJQdf9Y?feature=share\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41549,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Beatriz.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Rosângela Simões Silva",
+      "role": "Aluna(o) de Pedagogia",
+      "quote": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Rosangela_2-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/shorts\\/bJwRpDj-5hI\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":41548,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/05\\/Depoimento_Rosangela_2.jpg\"}}"
+      ]
+    },
+    {
+      "name": "Leticia",
+      "role": "Aluna(o) de Administração",
+      "quote": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Leticia-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "videos": [
+        "{\"youtube_url\":\"https:\\/\\/www.youtube.com\\/watch?v=I7HIJ_4HSmw\",\"yt_privacy\":\"yes\",\"lazy_load\":\"yes\",\"show_image_overlay\":\"yes\",\"video_type\":\"youtube\",\"controls\":\"yes\",\"image_overlay\":{\"id\":51432,\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2025\\/06\\/Depoimento_Leticia-ezgif.com-optiwebp.webp\"}}"
+      ]
+    }
+  ],
+  "widgets": [
+    {
+      "id": "e1d0b38",
+      "type": "html.default",
+      "text": "@font-face{font-family:'Phorte Header Poppins';font-style:normal;font-weight:400;font-display:swap;src:url(data:font/woff2;base64,d09GMgABAAAAAB7MAAwAAAAAP6AAAB54AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGx4cLgZgAIFUCudM0jYLgzYAATYCJAOGaAQgBYNcB4QLG34ysyLYOAAgoXcUUbVZLPs/JHBDBr6G+hIpYlQoaayFQFiGbR8DjCviFJxE41HqT/OOXC0/Z9GQVQfAWhGOAF/O89SlbJ4fIclsS0SNUfbMPgE5dhgAVqioPNrYqNhUZCQIRaCBLIK83W+vy6VjrXTMAYfFIfS65yPR0ziMQaj0M56vY3h+bj1EaSMJC9jIVbCMv+2vgv0FSxg1alhIGl2gBxecx4xqvCi9NvP2XXsT27xJRGharfanif3dB1IbH7D/n1vvG1gi90J+0acoU3UyzKzznZ8Q8S/KSQdFE/HKrFSrbCW+EZMGJ/JOrWFOCzJcLDcqMIye7xUDVgJSUf//a37amcAiFDGyIExnC3pkybH+6s19gXl5eXMmRB9Ln2eT0vLklZIpALkqpMkyJiUkt25tgVyFkF8WZYV0VRkTScF3O1cffLfDNqsTWFV2rwUPIfjECpG7lz5AAVbIGyfmmutgE0hgB8wJNaQ30lgYP+3xQCMZjDoEDzyVUi580bg7SwwCfbU2wM1JQR5DDgSJxZ7llnqObrxHpgXHgAOb7RkL2/gXhVu/D4DXAHqoBwD7DAQKDGCTWIoEB7JEnap7PP3Aas/+DynGHuqZ3u8P+0ZRlopUoQZt6CZzX2tbJVpJTFb5OJJs6W/YeiSlKS9d/6ya+d/8fZ6YS2ftgn326bdP//3yrm98rcc+6yxV+PO3P/P9e2I8D/za2srbgL+A1V8AG18HMDYA+dea0d4dnI0DUjAxhECe4VuLDc7VmwqwYTiuFzfuViWi6aNC0Z4wRhGs1DQggom7F3EXA3Uj7WxnxPmMGXjAq72EYaM9d+AG6ziGD0E2Ej5mwCsAOBXGWG1AYIJtCLwQDEeD1BqU5mmQH15SfTnMYUKO6QE/4F8j1ltms2QsVoSSz4WUYkelXQ/7kGlFRAxAW5s6qQqGsbVQl+8GCZsOFLXw0ul+mnssHngMiMV+wiHwzdVDGrfpDWLDkN8ewxN6ZRvyKaQ6K04Nqc6B6o8yc2SW7XOOuk1FcKA/XlsYa6voyRGelb8acI8ZbnoE+I9bLYFYSdUlo6Miyo+OYJqnPAsyYlzDkHe2VlOgYQcrDqbWBQEPfr7lShm/dUdxu7Up8/IxDbSiNG8zdthTYufBq+u76tI1uHc3vs7tLencpdyDGVdkPq4cQvLkEMhSXsY0J+4dQu0yRz7TZW7mccfhw18fQHPvvAbszInsG2aKiyHGmqz3Yvm3u8vmFpjxaPQezfuYJlpv3P"
+    },
+    {
+      "id": "0cdaf6e",
+      "type": "heading.default",
+      "text": "Graduação 2026"
+    },
+    {
+      "id": "e12b6b3",
+      "type": "spacer.default",
+      "text": ""
+    },
+    {
+      "id": "891bedf",
+      "type": "heading.default",
+      "text": "Faculdade com matrículas abertas para o 2º semestre"
+    },
+    {
+      "id": "3eb25ca",
+      "type": "spacer.default",
+      "text": ""
+    },
+    {
+      "id": "086b9e6",
+      "type": "heading.default",
+      "text": "Modalidades: Presencial, EAD, Semipresencial e Ao Vivo *Consulte as condições e a disponibilidade de cada curso."
+    },
+    {
+      "id": "9266834",
+      "type": "spacer.default",
+      "text": ""
+    },
+    {
+      "id": "ac62dd7",
+      "type": "button.default",
+      "text": "Garantir minha Vaga"
+    },
+    {
+      "id": "1e5ba76",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "22ac9d92",
+      "type": "heading.default",
+      "text": "Graduação em Gestão Mês do EAD"
+    },
+    {
+      "id": "1c42de36",
+      "type": "heading.default",
+      "text": "Ainda dá tempo de começar em 2026.1"
+    },
+    {
+      "id": "93dda8e",
+      "type": "text-editor.default",
+      "text": "Administração • Processos Gerenciais • Recursos Humanos • Marketing"
+    },
+    {
+      "id": "73d32fc",
+      "type": "button.default",
+      "text": "Inicie sua graduação EAD agora - Inscrições até 13/04"
+    },
+    {
+      "id": "33f89c9d",
+      "type": "button.default",
+      "text": "Inscreva-se"
+    },
+    {
+      "id": "55090131",
+      "type": "button.default",
+      "text": "Nossos Cursos"
+    },
+    {
+      "id": "22c1d324",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "2879055b",
+      "type": "heading.default",
+      "text": "Seja o protagonista do seu futuro com a Phorte"
+    },
+    {
+      "id": "9a82f54",
+      "type": "text-editor.default",
+      "text": "A Faculdade Phorte é o lugar onde sua carreira vai começar. Cursos modernos que unem teoria e prática, professores de referência e toda a estrutura para você conquistar o mercado de trabalho. Junte-se a nós e descubra o seu potencial. Inscreva-se agora mesmo!"
+    },
+    {
+      "id": "5be55dc6",
+      "type": "menu-anchor.default",
+      "text": ""
+    },
+    {
+      "id": "733009d",
+      "type": "jet-tabs.default",
+      "text": "AdministraçãoEducação FísicaMarketingPedagogiaProcessos GerenciaisRecursos HumanosTradução e Interpretação"
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "018f7fd",
+      "type": "media-carousel.default",
+      "text": ""
+    },
+    {
+      "id": "1253677",
+      "type": "media-carousel.default",
+      "text": ""
+    },
+    {
+      "id": "267ad3ae",
+      "type": "heading.default",
+      "text": "Conheça nossos cursos de Graduação!"
+    },
+    {
+      "id": "41e6b1c3",
+      "type": "heading.default",
+      "text": "Nas modalidades EAD/Online ao vivo, semipresencial e presencial"
+    },
+    {
+      "id": "1085a68",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "171c9c44",
+      "type": "menu-anchor.default",
+      "text": ""
+    },
+    {
+      "id": "66554753",
+      "type": "heading.default",
+      "text": "Faculdade Phorte"
+    },
+    {
+      "id": "311510e2",
+      "type": "heading.default",
+      "text": "Educação Conectada e Reconhecida"
+    },
+    {
+      "id": "ac937c2",
+      "type": "text-editor.default",
+      "text": "A Faculdade Phorte carrega mais de três décadas de experiência em disseminação de conhecimento e ensino com a vantagem de ter nascido completamente conectada com as tecnologias educacionais atuais.E o MEC concorda conosco: recebemos nota máximo logo nos nossos primeiros cursos oferecidos."
+    },
+    {
+      "id": "5d67f9b6",
+      "type": "button.default",
+      "text": "Conheça a instituição"
+    },
+    {
+      "id": "29bf181a",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "63b252db",
+      "type": "menu-anchor.default",
+      "text": ""
+    },
+    {
+      "id": "7b7d97f2",
+      "type": "heading.default",
+      "text": "Infraestrutura Moderna e Ambiente Inovador"
+    },
+    {
+      "id": "7934d669",
+      "type": "jet-tabs.default",
+      "text": "Unidade 1Unidade 2"
+    },
+    {
+      "id": "4a6030f6",
+      "type": "heading.default",
+      "text": "Unidade I"
+    },
+    {
+      "id": "49abe33a",
+      "type": "text-editor.default",
+      "text": "R. Rui Barbosa, 422Bela Vista,São Paulo – SP"
+    },
+    {
+      "id": "72611c2d",
+      "type": "divider.default",
+      "text": ""
+    },
+    {
+      "id": "673cba85",
+      "type": "heading.default",
+      "text": "Unidade II"
+    },
+    {
+      "id": "18836766",
+      "type": "text-editor.default",
+      "text": "R. Martiniano de Carvalho, 170 Bela Vista São Paulo-SP"
+    },
+    {
+      "id": "1f9f6ce2",
+      "type": "divider.default",
+      "text": ""
+    },
+    {
+      "id": "1107f15f",
+      "type": "heading.default",
+      "text": "Unidade III"
+    },
+    {
+      "id": "6f8f9fe8",
+      "type": "text-editor.default",
+      "text": "Av. Marquês de São Vicente, 2477 Água Branca, São Paulo – SP"
+    },
+    {
+      "id": "3ebff754",
+      "type": "menu-anchor.default",
+      "text": ""
+    },
+    {
+      "id": "9a7b5e7",
+      "type": "heading.default",
+      "text": "Depoimentos de Alunos e Sucesso Profissional"
+    },
+    {
+      "id": "4610d219",
+      "type": "jet-listing-grid.default",
+      "text": "Debora Aluna(o) de Administração Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível. Luciana Gomes Aluna(o) de Pedagogia “A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.” Yuri Aluna(o) de Administração O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos. Meire e Beatriz Aluna(o) de Administração e Pedagogia Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.” Rosângela Simões Silva Aluna(o) de Pedagogia Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança. Leticia Aluna(o) de Administração A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses. Debora Aluna(o) de Administração Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível. Luciana Gomes Aluna(o) de Pedagogia “A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.” Yuri Aluna(o) de Administração O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos. Meire e Beatriz Aluna(o) de Administração e Pedagogia Meire"
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Debora"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Luciana Gomes"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”"
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Yuri"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Meire e Beatriz"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração e Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”"
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Rosângela Simões Silva"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Leticia"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Debora"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Luciana Gomes"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”"
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Yuri"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Meire e Beatriz"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração e Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”"
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Rosângela Simões Silva"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Pedagogia"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança."
+    },
+    {
+      "id": "bf3dc59",
+      "type": "video.default",
+      "text": ""
+    },
+    {
+      "id": "a1a6bdb",
+      "type": "image.default",
+      "text": ""
+    },
+    {
+      "id": "d0ea38f",
+      "type": "heading.default",
+      "text": "Leticia"
+    },
+    {
+      "id": "c686f98",
+      "type": "text-editor.default",
+      "text": "Aluna(o) de Administração"
+    },
+    {
+      "id": "e1b6933",
+      "type": "text-editor.default",
+      "text": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses."
+    },
+    {
+      "id": "246cb92e",
+      "type": "heading.default",
+      "text": "Na Faculdade Phorte, você inicia a transformação da sua carreira"
+    },
+    {
+      "id": "308e593d",
+      "type": "heading.default",
+      "text": "Nossos consultores estão prontos para te ajudar a escolher o curso ideal, alinhado aos seus interesses, conhecimentos e objetivos de carreira."
+    },
+    {
+      "id": "60f855f6",
+      "type": "form.default",
+      "text": "Nome Email Telefone confirmar politicas de privacidade Aceito receber marketing, publicidade e informativos sobre os produtos e serviçõs da Faculdade Phorte, nos termos de sua Política de Privacidade. Enviar"
+    },
+    {
+      "id": "246923b0",
+      "type": "html.default",
+      "text": ""
+    },
+    {
+      "id": "127209b9",
+      "type": "heading.default",
+      "text": "Parceiros da Phorte"
+    },
+    {
+      "id": "1387b1a9",
+      "type": "image-carousel.default",
+      "text": ""
+    },
+    {
+      "id": "3c89e85b",
+      "type": "heading.default",
+      "text": "Últimas Notícias"
+    },
+    {
+      "id": "3f19e4ae",
+      "type": "jet-listing-grid.default",
+      "text": ""
+    },
+    {
+      "id": "54f3175d",
+      "type": "premium-addon-title.default",
+      "text": "Faculdade Phorte na mídia"
+    },
+    {
+      "id": "40f9501a",
+      "type": "jw-carousel.default",
+      "text": "AB Notícia NewsEscola Aberta: centro de São Paulo e Zona Leste unidos pela inclusão A Redacão RJEducação que transforma: inclusão conecta o Centro e a Zona Leste com apoio da SME-SP da Associação Phorte Diário Digital CapixabaCentro e Zona Leste unidos por uma educação inclusiva com o apoio da SME-SP e da Associação Phorte"
+    }
+  ],
+  "tabs": [
+    {
+      "text": "Administração",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1201"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor active-tab "
+        ],
+        [
+          "data-tab",
+          "1"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1201"
+        ],
+        [
+          "aria-expanded",
+          "true"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Educação Física",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1202"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "2"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1202"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Marketing",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1203"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "3"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1203"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Pedagogia",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1204"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "4"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1204"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Processos Gerenciais",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1205"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "5"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1205"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Recursos Humanos",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1206"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "6"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1206"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Tradução e Interpretação",
+      "attributes": [
+        [
+          "id",
+          "jet-tabs-control-1207"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor  "
+        ],
+        [
+          "data-tab",
+          "7"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-1207"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "31095"
+        ]
+      ]
+    },
+    {
+      "text": "Unidade 1",
+      "attributes": [
+        [
+          "id",
+          "unid_1"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor"
+        ],
+        [
+          "data-tab",
+          "1"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-2031"
+        ],
+        [
+          "aria-expanded",
+          "false"
+        ],
+        [
+          "data-template-id",
+          "false"
+        ]
+      ]
+    },
+    {
+      "text": "Unidade 2",
+      "attributes": [
+        [
+          "id",
+          "unid_2"
+        ],
+        [
+          "class",
+          "jet-tabs__control jet-tabs__control-icon-left elementor-menu-anchor active-tab"
+        ],
+        [
+          "data-tab",
+          "2"
+        ],
+        [
+          "tabindex",
+          "0"
+        ],
+        [
+          "role",
+          "tab"
+        ],
+        [
+          "aria-controls",
+          "jet-tabs-content-2032"
+        ],
+        [
+          "aria-expanded",
+          "true"
+        ],
+        [
+          "data-template-id",
+          "false"
+        ]
+      ]
+    }
+  ],
+  "bodyText": "Ir para o conteúdo\nGraduação\nPós-Graduação\nCursos+\nBlog\nFale Conosco\nGraduação\nCursos Graduação\nPós-Graduação\nExtensão\nEventos\nPortal\nInscreva-se agora\nGRADUAÇÃO\n2027\n\nFACULDADE COM MATRÍCULAS ABERTAS PARA O 1º SEMESTRE.\n\nMODALIDADES\nPRESENCIAL\nEAD\nSEMIPRESENCIAL\nONLINE / AO VIVO\nGARANTIR MINHA VAGA\n\n*Consulte as condições e a disponibilidade de cada curso.\n\nSeja o protagonista do\nseu futuro com a Phorte\n\nA Faculdade Phorte é o lugar onde sua carreira vai começar. Cursos modernos que unem teoria e prática, professores de referência e toda a estrutura para você conquistar o mercado de trabalho. Junte-se a nós e descubra o seu potencial. Inscreva-se agora mesmo!\n\nAdministração\nEducação Física\nMarketing\nPedagogia\nProcessos Gerenciais\nRecursos Humanos\nTradução e Interpretação\nConheça nossos cursos de Graduação!\nNas modalidades EAD/Online ao vivo, semipresencial e presencial\nFaculdade Phorte\nEducação Conectada e Reconhecida\nConheça a instituição\nInfraestrutura Moderna e Ambiente Inovador\nUnidade 1\nUnidade 2\nUnidade I\n\nR. Rui Barbosa, 422\nBela Vista,\nSão Paulo – SP\n\nUnidade II\n\nR. Martiniano de\nCarvalho, 170\nBela Vista\nSão Paulo-SP\nDepoimentos de Alunos e\nSucesso Profissional\n\nNa Faculdade Phorte, você inicia a transformação da sua carreira\n\nNossos consultores estão prontos para te ajudar a escolher o curso ideal, alinhado aos seus interesses, conhecimentos e objetivos de carreira.\nNome\nEmail\nTelefone\nconfirmar politicas de privacidade\nAceito receber marketing, publicidade e informativos sobre os produtos e serviçõs da Faculdade Phorte, nos termos de sua Política de Privacidade.\nEnviar\nParceiros da Phorte\nÚltimas Notícias\n\nGraduação que você merece!\n\nPolíticas de Privacidade\nA Phorte\nHome\nSobre nós\nTrabalhe Conosco\nUnidades\nContato\nOuvidoria\nCPA\nProjetos\nBlogs\nEventos\nBiblioteca\nDocumentos Oficiais - Editais\nValidação de Diplomas\nCursos\nGraduação\nPós-Graduação\nCursos Livres\nBolsas\nCONTATO\n(11) 2222-1222\n(11) 2222-1222 - Sou aluno\ngraduacao@faculdadephorte.edu.br\nONDE NOS ENCONTRAR\nFacebook\n \nInstagram\n \nYoutube\n \nLinkedin\ne-MEC\nConsulte aqui o cadastro da instituição no sistema e-mec de educação\n\nOu clique aqui\n\nRua Rui Barbosa, 422 - Bela Vista - São Paulo - SP\nRua 13 de Maio, 681, Bela Vista - SP\nCopyright © 2022 Associação de Educação e Novas Tecnologias Phorte - CNPJ:42.098.615/0001-42. Todos os Direitos Reservados.\nPrivacidade\nPreferências de cookies\nPrecisa de ajuda? Fale conosco"
+}

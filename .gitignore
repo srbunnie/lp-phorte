@@ -8,5 +8,6 @@ output/
 
 # Arquivos sensíveis e logs
 .env*
+!.env.example
 *.log
 

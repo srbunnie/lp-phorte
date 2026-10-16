@@ -1,0 +1,84 @@
+{
+  "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/pages/7",
+  "capturedAt": "2026-10-16T14:02:43.484Z",
+  "testimonials": [],
+  "widgets": [
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "826dfff",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns\":\"1\"}",
+      "listings": []
+    },
+    {
+      "id": "018f7fd",
+      "type": "media-carousel.default",
+      "text": "",
+      "settings": "{\"slides_per_view\":\"1\",\"slides_per_view_laptop\":\"1\",\"slides_per_view_tablet\":\"1\",\"slides_to_scroll\":\"1\",\"slides_to_scroll_laptop\":\"1\",\"slides_to_scroll_tablet\":\"1\",\"lazyload\":\"yes\",\"space_between\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"skin\":\"carousel\",\"effect\":\"slide\",\"show_arrows\":\"yes\",\"speed\":500,\"autoplay\":\"yes\",\"autoplay_speed\":5000,\"loop\":\"yes\",\"pause_on_hover\":\"yes\",\"pause_on_interaction\":\"yes\",\"space_between_laptop\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"space_between_tablet\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"space_between_mobile\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}",
+      "listings": []
+    },
+    {
+      "id": "1253677",
+      "type": "media-carousel.default",
+      "text": "",
+      "settings": "{\"slides_per_view\":\"1\",\"slides_per_view_mobile\":\"1\",\"slides_to_scroll\":\"1\",\"slides_to_scroll_mobile\":\"1\",\"lazyload\":\"yes\",\"space_between\":{\"unit\":\"px\",\"size\":0,\"sizes\":[]},\"skin\":\"carousel\",\"effect\":\"slide\",\"show_arrows\":\"yes\",\"speed\":500,\"autoplay\":\"yes\",\"autoplay_speed\":5000,\"loop\":\"yes\",\"pause_on_hover\":\"yes\",\"pause_on_interaction\":\"yes\",\"space_between_laptop\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"space_between_tablet\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]},\"space_between_mobile\":{\"unit\":\"px\",\"size\":10,\"sizes\":[]}}",
+      "listings": []
+    },
+    {
+      "id": "4610d219",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns_mobile\":\"1\",\"_animation\":\"none\",\"columns\":3}",
+      "listings": []
+    },
+    {
+      "id": "3f19e4ae",
+      "type": "jet-listing-grid.default",
+      "text": "",
+      "settings": "{\"columns_mobile\":\"1\",\"_animation\":\"fadeInUp\",\"columns_tablet\":\"2\",\"columns\":3}",
+      "listings": []
+    }
+  ]
+}

@@ -257,6 +257,7 @@ main:focus { outline: none; }
 .lp-dato + .lp-dato { padding-left: 1.5rem; border-left: 2px solid var(--lp-rojo-600); }
 .lp-dato dd { margin: 0; font: italic 900 clamp(1.875rem, 1.5rem + 1vw, 2.375rem)/1 var(--lp-display); color: var(--lp-rojo); }
 .lp-dato dt { margin-top: 0.25rem; font-size: 0.8125rem; line-height: 1.3; color: rgb(255 255 255 / 0.8); }
+.lp-curso__cta { margin-top: 0.25rem; }
 @media (max-width: 29.99rem) {
   .lp-datos { flex-wrap: nowrap; }
   .lp-dato { padding-right: 0.875rem; }
@@ -273,6 +274,7 @@ main:focus { outline: none; }
 }
 .lp-final__texto { margin: 0; max-width: 42rem; font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.3125rem); line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty; }
 .lp-final__texto strong { font-weight: 700; white-space: nowrap; }
+.lp-final__cta { margin-top: 0.25rem; }
 .lp-sem-quebra { white-space: nowrap; } /* palavras com hífen não quebram no meio */
 /* Linha fina de observação: menor, separada por um fio; branco puro para manter o contraste sobre o vermelho */
 .lp-final__nota { max-width: 38rem; margin: 0.5rem 0 0; padding-top: 1.25rem; border-top: 1px solid rgb(255 255 255 / 0.35); font-size: 0.875rem; line-height: 1.55; color: var(--lp-blanco); text-wrap: pretty; }

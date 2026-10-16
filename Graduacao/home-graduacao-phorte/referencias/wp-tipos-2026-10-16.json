@@ -1,0 +1,1514 @@
+{
+  "url": "https://faculdadephorte.edu.br/wp-json/wp/v2/types",
+  "status": 200,
+  "capturedAt": "2026-10-16T14:03:39.011Z",
+  "data": {
+    "post": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Posts",
+      "slug": "post",
+      "icon": "dashicons-admin-post",
+      "taxonomies": [
+        "category",
+        "post_tag"
+      ],
+      "rest_base": "posts",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Blog - Faculdade Phorte</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/blog/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Blog - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Home Últimas Notícias Empreendedorismo na Administração: saiba como se preparar para um mercado exigenteSonhar com o próprio negócio é algo que inspira muitos. Mas transformar essa ideia em realidade exige mais do que apenas paixão. A graduação em Administração oferece um caminho sólido&#8230; Plano de Estudos 2025: organize suas metas com eficiênciaSonhar alto nunca sai [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/blog/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/01/blog-Empreendedorismo-na-Administracao-saiba-como-se-preparar-para-um-mercado-exigente.webp\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":[\"WebPage\",\"CollectionPage\"],\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/blog\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/blog\\/\",\"name\":\"Blog - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-10-15T11:54:45+00:00\",\"dateModified\":\"2025-01-29T16:21:18+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/blog\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/blog\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Blog - Faculdade Phorte",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/blog/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Blog - Faculdade Phorte",
+        "og_description": "Home Últimas Notícias Empreendedorismo na Administração: saiba como se preparar para um mercado exigenteSonhar com o próprio negócio é algo que inspira muitos. Mas transformar essa ideia em realidade exige mais do que apenas paixão. A graduação em Administração oferece um caminho sólido&#8230; Plano de Estudos 2025: organize suas metas com eficiênciaSonhar alto nunca sai [&hellip;]",
+        "og_url": "https://faculdadephorte.edu.br/blog/",
+        "og_site_name": "Faculdade Phorte",
+        "og_image": [
+          {
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/01/blog-Empreendedorismo-na-Administracao-saiba-como-se-preparar-para-um-mercado-exigente.webp",
+            "type": "",
+            "width": "",
+            "height": ""
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": [
+                "WebPage",
+                "CollectionPage"
+              ],
+              "@id": "https://faculdadephorte.edu.br/blog/",
+              "url": "https://faculdadephorte.edu.br/blog/",
+              "name": "Blog - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-10-15T11:54:45+00:00",
+              "dateModified": "2025-01-29T16:21:18+00:00",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/blog/#breadcrumb"
+              },
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/blog/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "page": {
+      "description": "",
+      "hierarchical": true,
+      "has_archive": false,
+      "name": "Páginas",
+      "slug": "page",
+      "icon": "dashicons-admin-page",
+      "taxonomies": [],
+      "rest_base": "pages",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/pages"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "attachment": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Mídia",
+      "slug": "attachment",
+      "icon": "dashicons-admin-media",
+      "taxonomies": [],
+      "rest_base": "media",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "nav_menu_item": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Itens do menu",
+      "slug": "nav_menu_item",
+      "icon": null,
+      "taxonomies": [
+        "nav_menu"
+      ],
+      "rest_base": "menu-items",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/menu-items"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_block": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Padrões",
+      "slug": "wp_block",
+      "icon": null,
+      "taxonomies": [
+        "wp_pattern_category"
+      ],
+      "rest_base": "blocks",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/blocks"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_template": {
+      "description": "Modelos para incluir em seu tema.",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Modelos",
+      "slug": "wp_template",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "templates",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/templates"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_template_part": {
+      "description": "Parte de modelos para incluir no seus modelos.",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Partes de modelo",
+      "slug": "wp_template_part",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "template-parts",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/template-parts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_global_styles": {
+      "description": "Estilos globais para incluir nos temas.",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Estilos globais",
+      "slug": "wp_global_styles",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "global-styles",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/global-styles"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_navigation": {
+      "description": "Menus de navegação que podem ser inseridos em seu site.",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Menus de navegação",
+      "slug": "wp_navigation",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "navigation",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/navigation"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_font_family": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Famílias de fonte",
+      "slug": "wp_font_family",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "font-families",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/font-families"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_font_face": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Tipos de fonte",
+      "slug": "wp_font_face",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/font-families/(?P<font_family_id>[\\d]+)/font-faces"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "jet-menu": {
+      "description": "description",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Mega Menu Items",
+      "slug": "jet-menu",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "jet-menu",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/jet-menu"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "jet-popup": {
+      "description": "description",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "JetPopup",
+      "slug": "jet-popup",
+      "icon": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTIwIDFINEMyLjM0MzE1IDEgMSAyLjM0MzE1IDEgNFYyMEMxIDIxLjY1NjkgMi4zNDMxNSAyMyA0IDIzSDIwQzIxLjY1NjkgMjMgMjMgMjEuNjU2OSAyMyAyMFY0QzIzIDIuMzQzMTUgMjEuNjU2OSAxIDIwIDFaTTQgMEMxLjc5MDg2IDAgMCAxLjc5MDg2IDAgNFYyMEMwIDIyLjIwOTEgMS43OTA4NiAyNCA0IDI0SDIwQzIyLjIwOTEgMjQgMjQgMjIuMjA5MSAyNCAyMFY0QzI0IDEuNzkwODYgMjIuMjA5MSAwIDIwIDBINFoiIGZpbGw9ImJsYWNrIi8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMS42MjkzIDYuMDAwNjZDMjEuOTQwMiA1Ljk4MTQ4IDIyLjExNzYgNi4zODU3OCAyMS45MTEgNi42NDI3N0wyMC4wNzIyIDguOTMwMzVDMTkuODU2OSA5LjE5ODI0IDE5LjQ1NTYgOS4wMjY5OCAxOS40NTk4IDguNjY5TDE5LjQ3MDggNy43NDA4NEMxOS40NzIyIDcuNjE5MjMgMTkuNDIxNiA3LjUwMzk4IDE5LjMzNDMgNy40Mjk3NUwxOC42Njc2IDYuODYzMjFDMTguNDEwNSA2LjY0NDcgMTguNTM3OCA2LjE5MTM0IDE4Ljg2MTkgNi4xNzEzNUwyMS42MjkzIDYuMDAwNjZaTTYuOTk4MzUgMTIuMDA4QzYuOTk4MzUgMTQuMTk5MyA1LjIwNzA2IDE1Ljk3NTEgMi45OTk2NyAxNS45NzUxQzIuNDQ2NTUgMTUuOTc1MSAyIDE1LjUyOTMgMiAxNC45ODI3QzIgMTQuNDM2MSAyLjQ0NjU1IDEzLjk5MjggMi45OTk2NyAxMy45OTI4QzQuMTAzMzYgMTMuOTkyOCA0Ljk5OTAxIDEzLjEwMzYgNC45OTkwMSAxMi4wMDhWOS4wMzMyM0M0Ljk5OTAxIDguNDg0MTMgNS40NDU1NiA4LjA0MDgyIDUuOTk4NjggOC4wNDA4MkM2LjU1MTc5IDguMDQwODIgNi45OTgzNSA4LjQ4NDEzIDYuOTk4MzUgOS4wMzMyM1YxMi4wMDhaTTE3Ljc3NjUgMTIuMDA4QzE3Ljc3NjUgMTMuMTAzNiAxOC42NzIxIDEzLjk5MjggMTkuNzc1OCAxMy45OTI4QzIwLjMyOSAxMy45OTI4IDIwLjc3NTUgMTQuNDMzNiAyMC43NzU1IDE0Ljk4MjdDMjAuNzc1NSAxNS41MzE4IDIwLjMyOSAxNS45NzUxIDE5Ljc3NTggMTUuOTc1MUMxNy41Njg0IDE1Ljk3NTEgMTUuNzc3MiAxNC4xOTkzIDE1Ljc3NzIgMTIuMDA4VjkuMDMzMjNDMTUuNzc3MiA4LjQ4NDEzIDE2LjIyMzcgOC4wNDA4MiAxNi43NzY4IDguMDQwODJDMTcuMzMgOC4wNDA4MiAxNy43NzY1IDguNDg2NjUgMTcuNzc2NSA5LjAzMzIzVjkuOTIyMzdIMTguNTcwN0MxOS4xMjM4IDkuOTIyMzcgMTkuNTcyOSAxMC4zNjgyIDE5LjU3MjkgMTAuOTE3M0MxOS41NzI5IDExLjQ2NjQgMTkuMTIzOCAxMS45MTIyIDE4LjU3MDcgMTEuOTEyMkgxNy43NzY1VjEyLjAwOFpNMTUuMjAzOCAxMC42MTc2QzE1LjIwNjMgMTAuNjE1MSAxNS4yMDg4IDEwLjYxNTEgMTUuMjA4OCAxMC42MTUxQzE0Ljg5NDIgOS43OTM5MyAxNC4zMDU2IDkuMDczNTUgMTMuNDgzNSA4LjYwMDAxQzExLjU3NTUgNy41MDE4MSA5LjEzOTc5IDguMTUxNjYgOC4wNDExNyAxMC4wNTA4QzYuOTQwMDEgMTEuOTQ3NSA3LjU5NDYyIDE0LjM3MzEgOS41MDAwOCAxNS40Njg4QzEwLjkwMzIgMTYuMjc0OSAxMi41OTMgMTYuMTMzOCAxMy44MjYxIDE1LjI0NzJMMTMuODE4NCAxNS4yMzcxQzE0LjEwMjYgMTUuMDYzMyAxNC4yOTA0IDE0Ljc1MSAxNC4yOTA0IDE0LjM5NThDMTQuMjkwNCAxMy44NDkyIDEzLjg0MzggMTMuNDA1OSAxMy4yOTMyIDEzLjQwNTlDMTMuMDI2OCAxMy40MDU5IDEyLjc4MzMgMTMuNTA5MiAxMi42MDU3IDEzLjY4MDVDMTIuMDA2OSAxNC4wODEgMTEuMjEwMiAxNC4xNDM5IDEwLjUzNzggMTMuNzc2MkwxNC41NjQ0IDExLjkxOThDMTQuNzk3OCAxMS44NDkzIDE1LjAwNTkgMTEuNjkzMSAxNS4xMzUzIDExLjQ2NjRDMTUuMjkyNiAxMS4xOTY5IDE1LjMwNzggMTAuODg3MSAxNS4yMDM4IDEwLjYxNzZaTTEyLjQ4NjQgMTAuMzE1M0MxMi42MDU3IDEwLjM4MzMgMTIuNzEyMiAxMC40NjE0IDEyLjgxMTIgMTAuNTQ3MUw5LjQ5NzU0IDEyLjA3MDlDOS40ODk5MyAxMS43MjA4IDkuNTc2MiAxMS4zNjU3IDkuNzYzOTUgMTEuMDQwN0MxMC4zMTQ1IDEwLjA5MzcgMTEuNTMyNCA5Ljc2ODc0IDEyLjQ4NjQgMTAuMzE1M1oiIGZpbGw9IiMyNDI5MkQiLz48L3N2Zz4=",
+      "taxonomies": [],
+      "rest_base": "jet-popup",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/jet-popup"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "e-floating-buttons": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Elementos flutuantes",
+      "slug": "e-floating-buttons",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "e-floating-buttons",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/e-floating-buttons"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "elementor_library": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Meus modelos",
+      "slug": "elementor_library",
+      "icon": "dashicons-admin-page",
+      "taxonomies": [],
+      "rest_base": "elementor_library",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/elementor_library"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "elementor_snippet": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Código personalizado",
+      "slug": "elementor_snippet",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "elementor_snippet",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/elementor_snippet"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wfacp_checkout": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Checkout",
+      "slug": "wfacp_checkout",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "wfacp_checkout",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/wfacp_checkout"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "product": {
+      "description": "É aqui que você pode procurar produtos nesta loja.",
+      "hierarchical": false,
+      "has_archive": "todos-os-cursos",
+      "name": "Produtos",
+      "slug": "product",
+      "icon": "dashicons-archive",
+      "taxonomies": [
+        "product_brand",
+        "product_cat",
+        "product_tag",
+        "product_cursoslivres_categorias"
+      ],
+      "rest_base": "product",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Arquivo Produtos - Faculdade Phorte</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/shop/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Arquivo Produtos - Faculdade Phorte\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/shop/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/shop\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/shop\\/\",\"name\":\"Arquivo Produtos - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/shop\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/shop\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Todos os Cursos\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Arquivo Produtos - Faculdade Phorte",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/shop/",
+        "og_locale": "pt_BR",
+        "og_type": "website",
+        "og_title": "Arquivo Produtos - Faculdade Phorte",
+        "og_url": "https://faculdadephorte.edu.br/shop/",
+        "og_site_name": "Faculdade Phorte",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://faculdadephorte.edu.br/shop/",
+              "url": "https://faculdadephorte.edu.br/shop/",
+              "name": "Arquivo Produtos - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/shop/#breadcrumb"
+              },
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/shop/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Todos os Cursos"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/product"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wffn_landing": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Sales",
+      "slug": "wffn_landing",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "wffn_landing",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/wffn_landing"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wffn_ty": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Thank You Pages",
+      "slug": "wffn_ty",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "wffn_ty",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/wffn_ty"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wffn_optin": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Optin Pages",
+      "slug": "wffn_optin",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "wffn_optin",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/wffn_optin"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wffn_oty": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Optin Confirmation Pages",
+      "slug": "wffn_oty",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "wffn_oty",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/wffn_oty"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "cfkef-entries": {
+      "description": "cool-formkit-entry",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Form Entries",
+      "slug": "cfkef-entries",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "cfkef-entries",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cfkef-entries"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "whatsapp-accounts": {
+      "description": "Manager Accounts",
+      "hierarchical": false,
+      "has_archive": true,
+      "name": "WhatsApp Accounts",
+      "slug": "whatsapp-accounts",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "whatsapp-accounts",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/whatsapp-accounts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "jet-engine": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Listing Items/Components",
+      "slug": "jet-engine",
+      "icon": null,
+      "taxonomies": [],
+      "rest_base": "jet-engine",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/jet-engine"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "ofertas": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "Ofertas",
+      "slug": "ofertas",
+      "icon": "dashicons-chart-area",
+      "taxonomies": [],
+      "rest_base": "ofertas",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/ofertas"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "info-curso-graduacao": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "name": "info curso graduacao",
+      "slug": "info-curso-graduacao",
+      "icon": "dashicons-book",
+      "taxonomies": [],
+      "rest_base": "info-curso-graduacao",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/info-curso-graduacao"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "parceiros": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": true,
+      "name": "Parceiros",
+      "slug": "parceiros",
+      "icon": "dashicons-admin-multisite",
+      "taxonomies": [
+        "lista-de-parceiros"
+      ],
+      "rest_base": "parceiros",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Parceiros - Faculdade Phorte</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Parceiros - Faculdade Phorte\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/parceiros/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/parceiros\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/parceiros\\/\",\"name\":\"Parceiros - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/parceiros\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/parceiros\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Parceiros\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Parceiros - Faculdade Phorte",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "pt_BR",
+        "og_type": "website",
+        "og_title": "Parceiros - Faculdade Phorte",
+        "og_url": "https://faculdadephorte.edu.br/parceiros/",
+        "og_site_name": "Faculdade Phorte",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://faculdadephorte.edu.br/parceiros/",
+              "url": "https://faculdadephorte.edu.br/parceiros/",
+              "name": "Parceiros - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/parceiros/#breadcrumb"
+              },
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/parceiros/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Parceiros"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/parceiros"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "graduacao": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": true,
+      "name": "Graduacao",
+      "slug": "graduacao",
+      "icon": "dashicons-format-standard",
+      "taxonomies": [
+        "modalidades",
+        "cursos-graduacao-lista"
+      ],
+      "rest_base": "graduacao",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\",\"name\":\"Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "pt_BR",
+        "og_type": "website",
+        "og_title": "Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/",
+        "og_site_name": "Faculdade Phorte",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/",
+              "url": "https://faculdadephorte.edu.br/graduacao/",
+              "name": "Graduacao - Faculdade Phorte Graduação Cursos - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/#breadcrumb"
+              },
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "depoimentos": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": true,
+      "name": "Depoimentos Graduação",
+      "slug": "depoimentos",
+      "icon": "dashicons-format-chat",
+      "taxonomies": [],
+      "rest_base": "depoimentos",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/depoimentos"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "professores": {
+      "description": "",
+      "hierarchical": false,
+      "has_archive": true,
+      "name": "Professores Phorte",
+      "slug": "professores",
+      "icon": "dashicons-businessman",
+      "taxonomies": [
+        "cursos-prof"
+      ],
+      "rest_base": "professores",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "yoast_head": null,
+      "yoast_head_json": null,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/professores"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  }
+}

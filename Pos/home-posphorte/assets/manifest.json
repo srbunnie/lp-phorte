@@ -1,0 +1,280 @@
+[
+  {
+    "source": "https://graduacao-phorte.vercel.app/logos/faculdade-phorte.svg",
+    "path": "assets/images/logo-phorte.webp",
+    "width": 300,
+    "height": 132
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/08/capa-banner-phorte-v2-sem-fundo.webp",
+    "path": "assets/images/hero-pos-phorte.webp",
+    "width": 480,
+    "height": 480
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2025/01/medicina-esporte-final-3.webp",
+    "path": "assets/images/destaque-1.webp",
+    "width": 1000,
+    "height": 1228
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-infantil-final-preto.webp",
+    "path": "assets/images/destaque-2.webp",
+    "width": 1000,
+    "height": 1228
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-final-4.webp",
+    "path": "assets/images/destaque-3.webp",
+    "width": 1000,
+    "height": 1228
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2025/01/professora-ingles.webp",
+    "path": "assets/images/destaque-5.webp",
+    "width": 1000,
+    "height": 1228
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-fisica-final.webp",
+    "path": "assets/images/destaque-6.webp",
+    "width": 1000,
+    "height": 1228
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/FISIOLOGIA-TESTE-390x379.webp",
+    "path": "assets/images/educacao-fisica-1.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/12/modulo-III-390x379.webp",
+    "path": "assets/images/educacao-fisica-2.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Natacao-e-Atividades-Aquaticas-390x379.webp",
+    "path": "assets/images/educacao-fisica-3.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Danca_Arte_Esporte_Educacao-390x379.webp",
+    "path": "assets/images/educacao-fisica-4.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Gestao-e-Pratica-do-Desporto-Paralimpico-390x379.webp",
+    "path": "assets/images/educacao-fisica-5.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/YOGA-390x379.webp",
+    "path": "assets/images/educacao-fisica-6.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-MUSCULACAO-390x379.webp",
+    "path": "assets/images/educacao-fisica-7.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/Design_sem_nome_49-1-390x379.webp",
+    "path": "assets/images/educacao-fisica-8.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/medicina-do-esporte-2-390x379.webp",
+    "path": "assets/images/educacao-fisica-9.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-LESOES-390x379.webp",
+    "path": "assets/images/educacao-fisica-10.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/BIOMECANICA-TESTE-390x379.webp",
+    "path": "assets/images/educacao-fisica-12.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/07/EDUCACAO-FISICA-TESTE-390x379.webp",
+    "path": "assets/images/educacao-fisica-13.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+    "path": "assets/images/traducao-1.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/02/Interp-Espanhol-1-390x379.webp",
+    "path": "assets/images/traducao-3.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/06/ENSINO-DE-LINGUA-INGLESA-NA-EDUCACAO-INFANTIL-1-390x379.webp",
+    "path": "assets/images/traducao-4.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Lingua-Espanhola-e-Suas-Literaturas-390x379.webp",
+    "path": "assets/images/traducao-6.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/06/lingua-390x379.jpg",
+    "path": "assets/images/traducao-7.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-e-Gestao-na-Educacao-a-Distancia-390x379.webp",
+    "path": "assets/images/traducao-8.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-do-Ensino-Superior-390x379.webp",
+    "path": "assets/images/traducao-9.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-e-educacao-390x379.webp",
+    "path": "assets/images/saude-1.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-na-Primeira-Infancia-390x379.webp",
+    "path": "assets/images/saude-2.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2022/08/Lotus_1-390x379.webp",
+    "path": "assets/images/saude-6.webp",
+    "width": 390,
+    "height": 379
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Jan-300x300.webp",
+    "path": "assets/images/coordenador-1.webp",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Bianca-300x300.webp",
+    "path": "assets/images/coordenador-2.webp",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Cristiano-300x300.jpg",
+    "path": "assets/images/coordenador-3.webp",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Jose-Luis-Sanchez-300x300.webp",
+    "path": "assets/images/coordenador-4.webp",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2024/02/Maria-Helena-Pelizon-300x300.png",
+    "path": "assets/images/coordenador-5.webp",
+    "width": 300,
+    "height": 300
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2026/10/treinador-categorias-base-formacao-atletas-futebol-300x200.webp",
+    "path": "assets/images/noticia-1.webp",
+    "width": 300,
+    "height": 200
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2026/10/profissional-educacao-infantil-formacao-continuada-jardim-fabulinus-300x200.webp",
+    "path": "assets/images/noticia-2.webp",
+    "width": 300,
+    "height": 200
+  },
+  {
+    "source": "https://posphorte.com.br/wp-content/uploads/2026/10/Design-sem-nomesdjbhsdjhbvsdjbhsdjhbvsdajbhsdajhfd-300x141.jpg",
+    "path": "assets/images/noticia-3.webp",
+    "width": 300,
+    "height": 141
+  },
+  {
+    "source": "https://i.ytimg.com/vi/wrZ4t0rCSog/hqdefault.jpg",
+    "path": "assets/images/video-wrZ4t0rCSog.webp",
+    "width": 480,
+    "height": 360
+  },
+  {
+    "source": "https://i.ytimg.com/vi/z5sFiYw8H-I/hqdefault.jpg",
+    "path": "assets/images/video-z5sFiYw8H-I.webp",
+    "width": 480,
+    "height": 360
+  },
+  {
+    "source": "https://i.ytimg.com/vi/JORIuDGFjjE/hqdefault.jpg",
+    "path": "assets/images/video-JORIuDGFjjE.webp",
+    "width": 480,
+    "height": 360
+  },
+  {
+    "source": "https://i.ytimg.com/vi/3sJF0DKhLOk/hqdefault.jpg",
+    "path": "assets/images/video-3sJF0DKhLOk.webp",
+    "width": 480,
+    "height": 360
+  },
+  {
+    "source": "Site-Phorte/Graduação/site/public/fonts/poppins-400-latin.woff2",
+    "path": "assets/fonts/poppins-400.woff2",
+    "weight": 400
+  },
+  {
+    "source": "Site-Phorte/Graduação/site/public/fonts/poppins-500-latin.woff2",
+    "path": "assets/fonts/poppins-500.woff2",
+    "weight": 500
+  },
+  {
+    "source": "Site-Phorte/Graduação/site/public/fonts/poppins-600-latin.woff2",
+    "path": "assets/fonts/poppins-600.woff2",
+    "weight": 600
+  },
+  {
+    "source": "Site-Phorte/Graduação/site/public/fonts/poppins-700-latin.woff2",
+    "path": "assets/fonts/poppins-700.woff2",
+    "weight": 700
+  },
+  {
+    "source": "Graduacao/header graduacao/x-house-leandro-julio-duarte-setembro/outputs/header-phorte-2027-elementor-wordpress/assets/dia-do-professor-2026-phorte.webp",
+    "path": "assets/images/dia-do-professor-2026-phorte.webp",
+    "width": 1825,
+    "height": 862
+  },
+  {
+    "source": "Graduacao/header graduacao/x-house-leandro-julio-duarte-setembro/outputs/header-phorte-2027-elementor-wordpress/assets/dia-do-professor-2026-phorte-mobile.webp",
+    "path": "assets/images/dia-do-professor-2026-phorte-mobile.webp",
+    "width": 1086,
+    "height": 1448
+  }
+]
