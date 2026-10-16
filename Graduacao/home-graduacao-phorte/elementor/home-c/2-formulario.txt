@@ -1,0 +1,1 @@
+Substituir a peça de prévia por um contêiner com classe hg-scope hg-form-block, ID hg-formulario. Dentro dele: contêiner classe hg-container, depois contêiner classe hg-form-panel e o widget Form do Elementor. Reaproveitar campos e ações verificadas do formulário atual. Não há integração de leads configurada no pacote.

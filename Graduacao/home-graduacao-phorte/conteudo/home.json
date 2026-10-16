@@ -1,0 +1,608 @@
+{
+  "updatedAt": "2026-10-16",
+  "source": "https://faculdadephorte.edu.br/",
+  "logo": "assets/images/logo-phorte.svg",
+  "logoWhite": "assets/images/logo-phorte-branco.svg",
+  "courses": [
+    {
+      "id": 32014,
+      "slug": "administracao",
+      "title": "Administração",
+      "sourceTitle": "Administração",
+      "href": "https://faculdadephorte.edu.br/graduacao/administracao/",
+      "modalityIds": [
+        241,
+        91
+      ],
+      "modalities": [
+        "EAD",
+        "Presencial"
+      ],
+      "courseTermIds": [
+        82
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Conhecimentos para planejar, gerir organizações e tomar decisões nos negócios.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-administracao.webp",
+      "price": null,
+      "duration": "8 semestres",
+      "degree": "Bacharelado",
+      "area": "Gestão e Negócios",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/administracao/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 39176,
+      "slug": "educacao-fisica",
+      "title": "Educação Física",
+      "sourceTitle": "Educação Física",
+      "href": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+      "modalityIds": [
+        91,
+        199
+      ],
+      "modalities": [
+        "Presencial",
+        "Semipresencial"
+      ],
+      "courseTermIds": [
+        138
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Movimento humano, atividade física e suas aplicações no esporte, na educação e na saúde.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-educacao-fisica.webp",
+      "price": null,
+      "duration": "8 semestres",
+      "degree": "Bacharelado",
+      "area": "Saúde e Movimento",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/educacao-fisica/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 31985,
+      "slug": "marketing",
+      "title": "Marketing",
+      "sourceTitle": "Marketing",
+      "href": "https://faculdadephorte.edu.br/graduacao/marketing/",
+      "modalityIds": [
+        241
+      ],
+      "modalities": [
+        "EAD"
+      ],
+      "courseTermIds": [
+        85
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Estratégias para conectar marcas e pessoas, da pesquisa à comunicação.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-marketing.webp",
+      "price": null,
+      "duration": "4 semestres",
+      "degree": "Tecnólogo",
+      "area": "Gestão e Negócios",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/marketing/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 32006,
+      "slug": "pedagogia",
+      "title": "Pedagogia",
+      "sourceTitle": "Pedagogia",
+      "href": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+      "modalityIds": [
+        199
+      ],
+      "modalities": [
+        "Semipresencial"
+      ],
+      "courseTermIds": [
+        86
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Aprendizagem e prática pedagógica para atuar na formação de pessoas.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-pedagogia.webp",
+      "price": null,
+      "duration": "8 semestres",
+      "degree": "Licenciatura",
+      "area": "Educação",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/pedagogia/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 32008,
+      "slug": "processos-gerenciais",
+      "title": "Processos Gerenciais",
+      "sourceTitle": "Processos Gerenciais",
+      "href": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+      "modalityIds": [
+        241,
+        91
+      ],
+      "modalities": [
+        "EAD",
+        "Presencial"
+      ],
+      "courseTermIds": [
+        83
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Processos, recursos e conhecimentos para os desafios da gestão empresarial.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-processos-gerenciais.webp",
+      "price": null,
+      "duration": "4 semestres",
+      "degree": "Tecnólogo",
+      "area": "Gestão e Negócios",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/processos-gerenciais/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 32010,
+      "slug": "recursos-humanos",
+      "title": "Recursos Humanos",
+      "sourceTitle": "Recursos Humanos",
+      "href": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+      "modalityIds": [
+        241
+      ],
+      "modalities": [
+        "EAD"
+      ],
+      "courseTermIds": [
+        84
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Gestão, recrutamento e desenvolvimento de pessoas nas organizações.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-recursos-humanos.webp",
+      "price": null,
+      "duration": "4 semestres",
+      "degree": "Tecnólogo",
+      "area": "Gestão e Negócios",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/recursos-humanos/). Validar com a secretaria antes de publicar."
+    },
+    {
+      "id": 32012,
+      "slug": "traducao-e-interpretacao-ingles-portugues",
+      "title": "Tradução e Interpretação",
+      "sourceTitle": "Tradução e Interpretação Português / Inglês",
+      "href": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+      "modalityIds": [
+        93
+      ],
+      "modalities": [
+        "EAD online ao vivo"
+      ],
+      "courseTermIds": [
+        87
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Valores não consolidados.",
+      "description": "Idiomas, práticas e tecnologias da tradução e da interpretação.",
+      "descriptionSource": "Redação editorial baseada em Site-Phorte/Graduação/conteudo/home.ts; revisar com a instituição.",
+      "image": "assets/images/curso-traducao.webp",
+      "price": null,
+      "duration": "6 semestres",
+      "degree": "Bacharelado",
+      "area": "Linguagens",
+      "metaSource": "Grau/área/duração do protótipo graduacao-phorte.vercel.app (16/10/2026); duração conferida na página oficial do curso (https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/). Validar com a secretaria antes de publicar."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Debora",
+      "course": "Administração",
+      "quote": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível.",
+      "youtubeId": "y6Do2KmZsjo",
+      "image": "assets/images/depoimento-1.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    },
+    {
+      "name": "Luciana Gomes",
+      "course": "Pedagogia",
+      "quote": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”",
+      "youtubeId": "F5N7LOW_U9s",
+      "image": "assets/images/depoimento-2.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    },
+    {
+      "name": "Yuri",
+      "course": "Administração",
+      "quote": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos.",
+      "youtubeId": "EVzmUlnkGWM",
+      "image": "assets/images/depoimento-3.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    },
+    {
+      "name": "Meire e Beatriz",
+      "course": "Administração e Pedagogia",
+      "quote": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”",
+      "youtubeId": "WnghtJQdf9Y",
+      "image": "assets/images/depoimento-4.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    },
+    {
+      "name": "Rosângela Simões Silva",
+      "course": "Pedagogia",
+      "quote": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança.",
+      "youtubeId": "bJwRpDj-5hI",
+      "image": "assets/images/depoimento-5.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    },
+    {
+      "name": "Leticia",
+      "course": "Administração",
+      "quote": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses.",
+      "youtubeId": "I7HIJ_4HSmw",
+      "image": "assets/images/depoimento-6.webp",
+      "source": "https://faculdadephorte.edu.br/"
+    }
+  ],
+  "partners": [
+    {
+      "name": "mstc",
+      "image": "assets/images/parceiro-1.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/mstc-150x150.png.webp"
+    },
+    {
+      "name": "cna",
+      "image": "assets/images/parceiro-2.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/cna-150x150.png.webp"
+    },
+    {
+      "name": "ciee",
+      "image": "assets/images/parceiro-3.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ciee-150x150.png.webp"
+    },
+    {
+      "name": "ABV",
+      "image": "assets/images/parceiro-4.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ABV-150x150.png.webp"
+    },
+    {
+      "name": "ass de amparo autista",
+      "image": "assets/images/parceiro-5.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ass-de-amparo-autista-150x150.png.webp"
+    },
+    {
+      "name": "rumo-ao-futuro",
+      "image": "assets/images/parceiro-6.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/rumo-ao-futuro-150x150.png.webp"
+    },
+    {
+      "name": "vidraria anchieta",
+      "image": "assets/images/parceiro-7.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/vidraria-anchieta-150x150.png.webp"
+    },
+    {
+      "name": "projeto vida missoes",
+      "image": "assets/images/parceiro-8.webp",
+      "source": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/projeto-vida-missoes-1-150x150.png.webp"
+    }
+  ],
+  "news": [
+    {
+      "title": "Dia do Professor: o papel dos educadores na construção de novas trajetórias",
+      "href": "https://faculdadephorte.edu.br/dia-do-professor-o-papel-dos-educadores-na-construcao-de-novas-trajetorias/",
+      "publishedAt": "2026-10-15T16:06:03",
+      "image": "assets/images/noticia-1.webp",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "author": "Brenda Guerra",
+      "excerpt": "Você se lembra de algum professor que mudou sua maneira de enxergar o futuro? Talvez tenha sido quem despertou seu interesse por uma profissão, reconheceu uma habilidade que você ainda não conhecia ou ajudou a…",
+      "type": "Artigo"
+    },
+    {
+      "title": "Matrículas abertas para 2027.1: comece sua graduação na Faculdade Phorte",
+      "href": "https://faculdadephorte.edu.br/faculdade-phorte-matriculas-abertas-2027-1/",
+      "publishedAt": "2026-10-09T10:47:50",
+      "image": "assets/images/noticia-2.webp",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "author": "Juliana Souza",
+      "excerpt": "O planejamento para começar uma graduação em 2027 já pode sair do papel. A Faculdade Phorte está com matrículas abertas para o primeiro semestre de 2027, com opções de cursos para diferentes áreas profissionais.…",
+      "type": "Artigo"
+    },
+    {
+      "title": "O que estudar para o Enem 2026? Veja como organizar a reta final em outubro",
+      "href": "https://faculdadephorte.edu.br/o-que-estudar-para-o-enem-2026-veja-como-organizar-a-reta-final-em-outubro/",
+      "publishedAt": "2026-10-07T10:00:00",
+      "image": "assets/images/noticia-3.webp",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "author": "Juliana Souza",
+      "excerpt": "Com a chegada de outubro, quem vai participar do Enem 2026 entra nas últimas semanas de preparação para a prova. Neste momento, mais do que tentar aprender novos conteúdos, o ideal é organizar a revisão, identificar…",
+      "type": "Artigo"
+    }
+  ],
+  "contact": {
+    "phone": "(11) 2222-1222",
+    "phoneHref": "tel:+551122221222",
+    "email": "graduacao@faculdadephorte.edu.br",
+    "whatsapp": "https://wa.me/551122221222?text=Quero%20conhecer%20os%20cursos%20de%20graduacao%20da%20Faculdade%20Phorte",
+    "enrollment": "https://typechat.phorte.org.br/vestibular-simplificado"
+  },
+  "hero": {
+    "sourceFile": "Graduacao/header graduacao/x-house-leandro-julio-duarte-setembro/outputs/header-phorte-2027-elementor-wordpress/header-phorte-2027-elementor.html",
+    "note": "Campanha Graduação 2027; slide do Dia do Professor removido em 16/10/2026 (campanha encerrada)."
+  },
+  "institution": {
+    "title": "Conhecimento que se transforma em prática.",
+    "text": "A Faculdade Phorte reúne formação, tecnologia e experiências que aproximam o aprendizado dos desafios profissionais. Conheça a instituição e encontre o próximo passo da sua trajetória.",
+    "href": "https://faculdadephorte.edu.br/sobre-nos/",
+    "youtubeId": "3sJF0DKhLOk",
+    "image": "assets/images/video-institucional.webp",
+    "timeline": [
+      {
+        "year": "1996",
+        "label": "Editora",
+        "text": "A Phorte Editora inicia sua trajetória com publicações especializadas."
+      },
+      {
+        "year": "2007",
+        "label": "Instituto",
+        "text": "O Instituto Phorte amplia a atuação em soluções educacionais digitais."
+      },
+      {
+        "year": "2018",
+        "label": "Faculdade",
+        "text": "A Faculdade inicia os cursos de graduação descritos em sua história institucional."
+      }
+    ],
+    "timelineSource": "Protótipo graduacao-phorte.vercel.app, seção A Faculdade (16/10/2026). Validar datas com o institucional."
+  },
+  "units": [
+    {
+      "title": "Rui Barbosa",
+      "address": "Rua Rui Barbosa, 422 · Bela Vista · São Paulo – SP",
+      "image": "assets/images/sede-rui-barbosa.webp",
+      "photo": "assets/images/unidade-1-rui-barbosa-paisagem.webp",
+      "map": "https://g.co/kgs/iyPN2Ac",
+      "source": "https://faculdadephorte.edu.br/",
+      "confirmation": "Duas unidades confirmadas pelo usuário em 16/10/2026; endereço/foto da home atual.",
+      "text": "Também é o polo das provas presenciais dos cursos EAD.",
+      "textSource": "Protótipo graduacao-phorte.vercel.app, seção Unidades (16/10/2026)."
+    },
+    {
+      "title": "Martiniano",
+      "address": "Rua Martiniano de Carvalho, 170 · Bela Vista · São Paulo – SP",
+      "image": "assets/images/unidade-martiniano.webp",
+      "photo": "assets/images/unidade-2-martiniano-paisagem.webp",
+      "map": "https://www.google.com/maps/search/?api=1&query=Rua%20Martiniano%20de%20Carvalho%20170%20Bela%20Vista%20Sao%20Paulo",
+      "source": "https://faculdadephorte.edu.br/",
+      "confirmation": "Segunda unidade confirmada pelo usuário em 16/10/2026. Endereço/foto preservados do inventário público."
+    }
+  ],
+  "courseBanner": {
+    "image": "assets/images/estudantes-graduacao.webp"
+  },
+  "modalities": [
+    {
+      "id": 91,
+      "title": "Presencial",
+      "icon": "campus",
+      "text": "Encontros no campus e atividades que aproximam a formação da prática. Consulte a rotina de cada curso.",
+      "href": "https://faculdadephorte.edu.br/modalidades/presencial/"
+    },
+    {
+      "id": 199,
+      "title": "Semipresencial",
+      "icon": "laptop",
+      "text": "Atividades presenciais e a distância ao longo da formação. A distribuição varia conforme o curso.",
+      "href": "https://faculdadephorte.edu.br/modalidades/semi-presencial/"
+    },
+    {
+      "id": 241,
+      "title": "EAD",
+      "icon": "screen",
+      "text": "Estudo a distância com atividades e orientações do curso. Confira também as exigências de presença e avaliação.",
+      "href": "https://faculdadephorte.edu.br/modalidades/ead-digital/"
+    },
+    {
+      "id": 93,
+      "title": "Online ao vivo",
+      "icon": "play",
+      "text": "Encontros online em tempo real para acompanhar as aulas e interagir com os professores.",
+      "href": "https://faculdadephorte.edu.br/modalidades/ead-online-ao-vivo/"
+    }
+  ],
+  "admissions": [
+    {
+      "title": "Vestibular simplificado",
+      "text": "Conheça o processo e comece sua inscrição pelo atendimento digital.",
+      "action": "Iniciar inscrição",
+      "href": "https://typechat.phorte.org.br/vestibular-simplificado"
+    },
+    {
+      "title": "Ingresso com ENEM",
+      "text": "Consulte as orientações para utilizar sua participação no ENEM.",
+      "action": "Consultar o processo",
+      "href": "https://faculdadephorte.edu.br/processo-seletivo/"
+    },
+    {
+      "title": "Transferência",
+      "text": "Converse com a equipe sobre avaliação de estudos e continuidade da formação.",
+      "action": "Falar com a equipe",
+      "href": "https://wa.me/551122221222?text=Quero%20conhecer%20os%20cursos%20de%20graduacao%20da%20Faculdade%20Phorte"
+    },
+    {
+      "title": "Segunda graduação",
+      "text": "Já tem uma formação superior? Conheça as orientações para um novo curso.",
+      "action": "Conhecer as opções",
+      "href": "https://faculdadephorte.edu.br/processo-seletivo/"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Como escolher minha graduação?",
+      "answer": "Compare os cursos, seus conteúdos e as possibilidades de atuação. Se precisar de orientação, nossa equipe pode ajudar na sua escolha.",
+      "href": "https://faculdadephorte.edu.br/graduacao/",
+      "label": "Conhecer os cursos"
+    },
+    {
+      "question": "Como funcionam as modalidades?",
+      "answer": "A rotina de aulas, as atividades presenciais e as avaliações variam conforme o curso. Consulte as informações da graduação de seu interesse.",
+      "href": "https://faculdadephorte.edu.br/graduacao/",
+      "label": "Consultar meu curso"
+    },
+    {
+      "question": "Como iniciar meu processo de ingresso?",
+      "answer": "Consulte as orientações do processo seletivo ou inicie o atendimento digital para conhecer os próximos passos.",
+      "href": "https://faculdadephorte.edu.br/processo-seletivo/",
+      "label": "Ver formas de ingresso"
+    },
+    {
+      "question": "A Phorte oferece bolsas de estudo?",
+      "answer": "A instituição tem programas com critérios e etapas próprios. Consulte o regulamento e a disponibilidade antes de se inscrever.",
+      "href": "https://faculdadephorte.edu.br/bolsas-sociais/",
+      "label": "Consultar bolsas e critérios"
+    }
+  ],
+  "navigation": {
+    "institutional": [
+      [
+        "Sobre a Phorte",
+        "https://faculdadephorte.edu.br/sobre-nos/"
+      ],
+      [
+        "Contato",
+        "https://faculdadephorte.edu.br/contato/"
+      ],
+      [
+        "Unidades",
+        "https://faculdadephorte.edu.br/#unidades"
+      ],
+      [
+        "Trabalhe conosco",
+        "https://vagas.phorteeducacional.org.br/"
+      ]
+    ],
+    "services": [
+      [
+        "Portal do Aluno / SIG",
+        "https://sis.faculdadephorte.edu.br/login"
+      ],
+      [
+        "Secretaria Virtual",
+        "https://faculdadephorte.perseus.com.br/Servicos"
+      ],
+      [
+        "Biblioteca",
+        "https://biblioteca.phorteeducacional.com.br/"
+      ]
+    ],
+    "transparency": [
+      [
+        "Documentos oficiais",
+        "https://faculdadephorte.edu.br/documentos-oficiais/"
+      ],
+      [
+        "Validação de diplomas",
+        "https://faculdadephorte.perseus.com.br/servicos/diplomadigital"
+      ],
+      [
+        "Ouvidoria",
+        "https://faculdadephorte.edu.br/ouvidoria/"
+      ],
+      [
+        "CPA",
+        "https://faculdadephorte.edu.br/comissao-propria-de-avaliacao-cpa/"
+      ],
+      [
+        "Consulta ao e-MEC",
+        "https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MjE5NDA="
+      ]
+    ],
+    "ecosystem": [
+      [
+        "Pós-graduação",
+        "https://posphorte.com.br/"
+      ],
+      [
+        "Cursos livres",
+        "https://faculdadephorte.edu.br/cursos-phorte/"
+      ],
+      [
+        "Cursos gratuitos",
+        "https://faculdadephorte.edu.br/cursos-gratuitos-phorte/"
+      ],
+      [
+        "Capacita Empreendedor",
+        "https://posphorte.com.br/capacita_empreendedor/"
+      ]
+    ],
+    "social": [
+      [
+        "Instagram",
+        "https://www.instagram.com/faculdadephorte/"
+      ],
+      [
+        "Facebook",
+        "https://www.facebook.com/faculdadephorte"
+      ],
+      [
+        "YouTube",
+        "https://www.youtube.com/@phortetv"
+      ],
+      [
+        "LinkedIn",
+        "https://br.linkedin.com/company/faculdade-phorte"
+      ]
+    ]
+  },
+  "form": {
+    "title": "Vamos encontrar o seu próximo passo?",
+    "text": "Nossos consultores ajudam você a escolher o curso alinhado aos seus interesses e objetivos de carreira.",
+    "consent": "Aceito receber comunicações sobre os produtos e serviços da Faculdade Phorte, nos termos de sua Política de Privacidade.",
+    "previewNote": "Prévia visual · este formulário não envia dados.",
+    "source": "https://faculdadephorte.edu.br/"
+  },
+  "editorialNotes": [
+    "Copy institucional revisada sem indicadores ou nota MEC não comprovados.",
+    "Somente sede Rui Barbosa e telefone geral.",
+    "Descrições, ingresso e FAQ são redações propostas para revisão.",
+    "Notícias e depoimentos são uma seleção fixa da coleta de 16/10/2026.",
+    "Arte adaptada de Pedagogia veio do kit do protótipo Next e ainda depende de revisão visual institucional."
+  ],
+  "banners": [
+    {
+      "tone": "red",
+      "image": "assets/images/banner-matriculas-2027.webp",
+      "kicker": "VESTIBULAR 2027",
+      "title": "Matrículas abertas para 2027.1",
+      "text": "Sete graduações nos formatos presencial, semipresencial, EAD e online ao vivo.",
+      "action": [
+        "Inscreva-se",
+        "https://typechat.phorte.org.br/vestibular-simplificado"
+      ],
+      "secondary": [
+        "Conheça os cursos",
+        "#hg-cursos"
+      ]
+    },
+    {
+      "tone": "yellow",
+      "image": "assets/images/banner-transferencia.webp",
+      "kicker": "TRANSFERÊNCIA E SEGUNDA GRADUAÇÃO",
+      "title": "Seu próximo capítulo pode começar agora",
+      "text": "Já estuda ou tem diploma? Conheça as formas de ingresso para continuar sua formação.",
+      "action": [
+        "Veja as formas de ingresso",
+        "https://faculdadephorte.edu.br/processo-seletivo/"
+      ]
+    },
+    {
+      "tone": "wine",
+      "image": "assets/images/banner-online-ao-vivo.webp",
+      "kicker": "ONLINE AO VIVO",
+      "title": "Aulas ao vivo, onde você estiver",
+      "text": "Encontros em tempo real com professores, para estudar com flexibilidade e interação.",
+      "action": [
+        "Conheça o formato",
+        "https://faculdadephorte.edu.br/modalidades/ead-online-ao-vivo/"
+      ]
+    }
+  ]
+}

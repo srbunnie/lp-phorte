@@ -1,0 +1,47 @@
+{
+  "note": "Leituras pelo conector GitHub; SHA de blob, não commit ou garantia da revisão implantada. SIG sem repositório confirmado.",
+  "sources": [
+    {
+      "key": "grad-page",
+      "url": "https://github.com/srbunnie/Site-Phorte/blob/main/Gradua%C3%A7%C3%A3o/site/app/page.tsx",
+      "path": "page.tsx",
+      "sha": "351e157ddb111f9ff509555c199709c58736b996",
+      "observedOn": "2026-10-16"
+    },
+    {
+      "key": "grad-home-content",
+      "url": "https://github.com/srbunnie/Site-Phorte/blob/main/Gradua%C3%A7%C3%A3o/site/conteudo/pagina-inicial.ts",
+      "path": "pagina-inicial.ts",
+      "sha": "5492d1d1b9cd26873e0ab05d430bdf3129a41f3a",
+      "observedOn": "2026-10-16"
+    },
+    {
+      "key": "grad-common-content",
+      "url": "https://github.com/srbunnie/Site-Phorte/blob/main/Gradua%C3%A7%C3%A3o/conteudo/home.ts",
+      "path": "home.ts",
+      "sha": "5850de24ade47167f1a6ab820db0456c95b95ea4",
+      "observedOn": "2026-10-16"
+    },
+    {
+      "key": "grad-design-tokens",
+      "url": "https://github.com/srbunnie/Site-Phorte/blob/main/Gradua%C3%A7%C3%A3o/site/app/design-system.css",
+      "path": "design-system.css",
+      "sha": "4a36ca30f45f11dba84a394f540ec8b23e13d6d4",
+      "observedOn": "2026-10-16"
+    },
+    {
+      "key": "pos-hero",
+      "url": "https://github.com/srbunnie/PhortePosnewsite/blob/main/app/components/organisms/Hero.tsx",
+      "path": "Hero.tsx",
+      "sha": "92629487bd3c98f71f252933e96bb8ab950327e5",
+      "observedOn": "2026-10-16"
+    },
+    {
+      "key": "pos-page",
+      "url": "https://github.com/srbunnie/PhortePosnewsite/blob/main/app/page.tsx",
+      "path": "page.tsx",
+      "sha": "4b51365d1a56eff386a6d3f0e520b5e5b316247d",
+      "observedOn": "2026-10-16"
+    }
+  ]
+}

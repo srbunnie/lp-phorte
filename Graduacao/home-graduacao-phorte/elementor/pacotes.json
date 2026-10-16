@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-10-16T18:27:19.871Z",
+  "verifiedByExtraction": true,
+  "packages": [
+    {
+      "piece": "cabecalho",
+      "zip": "elementor/pacote-cabecalho.zip",
+      "files": 2,
+      "pendingUploads": 1,
+      "sha256": "759ab8a5be748b2d42b7974f598b8db707a71895c0cfb885b3bf617e8c5c3160"
+    },
+    {
+      "piece": "cabecalho-c",
+      "zip": "elementor/pacote-cabecalho-c.zip",
+      "files": 2,
+      "pendingUploads": 1,
+      "sha256": "f0db0a728b66bfe300a3ac303a21b6c773a7cfea77f7e83bfa8de6e9257fa11f"
+    },
+    {
+      "piece": "home-a",
+      "zip": "elementor/pacote-home-a.zip",
+      "files": 5,
+      "pendingUploads": 7,
+      "sha256": "0f5f679a24e8230a12988dcfc3ba1b2e6194d629c41bece24fc6d8d0ba4dabf9"
+    },
+    {
+      "piece": "home-b",
+      "zip": "elementor/pacote-home-b.zip",
+      "files": 5,
+      "pendingUploads": 9,
+      "sha256": "d4847e56133eaea270d562d79282653455f0c4ae56213010045b1990aa0d4e23"
+    },
+    {
+      "piece": "home-c",
+      "zip": "elementor/pacote-home-c.zip",
+      "files": 5,
+      "pendingUploads": 12,
+      "sha256": "17bbd91049984246abcd205fe16c7868363ab22dbaeaf44882a3095d794bb772"
+    },
+    {
+      "piece": "rodape",
+      "zip": "elementor/pacote-rodape.zip",
+      "files": 2,
+      "pendingUploads": 1,
+      "sha256": "63addd1aee8431cd6a641fef5d7dd9363036a755a2b21c2d81e6566834c303ff"
+    }
+  ]
+}

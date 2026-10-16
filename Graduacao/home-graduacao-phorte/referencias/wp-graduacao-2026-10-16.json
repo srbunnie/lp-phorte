@@ -1,0 +1,1753 @@
+{
+  "url": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+  "status": 200,
+  "total": "8",
+  "totalPages": "1",
+  "capturedAt": "2026-10-16T14:02:44.619Z",
+  "data": [
+    {
+      "id": 57540,
+      "date": "2026-04-27T13:51:14",
+      "date_gmt": "2026-04-27T16:51:14",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=57540"
+      },
+      "modified": "2026-04-28T15:10:21",
+      "modified_gmt": "2026-04-28T18:10:21",
+      "slug": "curso-teste-administracao",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+      "title": {
+        "rendered": "Curso Teste Administração"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [],
+      "cursos-graduacao-lista": [],
+      "class_list": [
+        "post-57540",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Curso Teste Administração - Faculdade Phorte</title>\n<meta name=\"robots\" content=\"index, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Curso Teste Administração - Faculdade Phorte\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-04-28T18:10:21+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"1 minuto\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/curso-teste-administracao\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/curso-teste-administracao\\/\",\"name\":\"Curso Teste Administração - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2026-04-27T16:51:14+00:00\",\"dateModified\":\"2026-04-28T18:10:21+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/curso-teste-administracao\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/curso-teste-administracao\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/curso-teste-administracao\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Curso Teste Administração\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Curso Teste Administração - Faculdade Phorte",
+        "robots": {
+          "index": "index",
+          "follow": "nofollow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Curso Teste Administração - Faculdade Phorte",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-04-28T18:10:21+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "1 minuto"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+              "url": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+              "name": "Curso Teste Administração - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2026-04-27T16:51:14+00:00",
+              "dateModified": "2026-04-28T18:10:21+00:00",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Curso Teste Administração"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/57540",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=57540"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=57540"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=57540"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32006,
+      "date": "2026-03-11T01:00:00",
+      "date_gmt": "2026-03-11T04:00:00",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=32006"
+      },
+      "modified": "2026-08-05T13:05:57",
+      "modified_gmt": "2026-08-05T16:05:57",
+      "slug": "pedagogia",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+      "title": {
+        "rendered": "Pedagogia"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        199
+      ],
+      "cursos-graduacao-lista": [
+        86
+      ],
+      "class_list": [
+        "post-32006",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-semi-presencial",
+        "cursos-graduacao-lista-pedagogia"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Pedagogia - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/pedagogia/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Pedagogia - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/pedagogia/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-08-05T16:05:57+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"6 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/pedagogia\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/pedagogia\\/\",\"name\":\"Pedagogia - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2026-03-11T04:00:00+00:00\",\"dateModified\":\"2026-08-05T16:05:57+00:00\",\"description\":\"Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/pedagogia\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/pedagogia\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/pedagogia\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pedagogia\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Pedagogia - Faculdade Phorte",
+        "description": "Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Pedagogia - Faculdade Phorte",
+        "og_description": "Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-08-05T16:05:57+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "6 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+              "url": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+              "name": "Pedagogia - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2026-03-11T04:00:00+00:00",
+              "dateModified": "2026-08-05T16:05:57+00:00",
+              "description": "Curso de Pedagogia da Faculdade Phorte: forme-se como educador com excelência, preparado para transformar vidas e contribuir para a educação do futuro.",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/pedagogia/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/pedagogia/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/pedagogia/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Pedagogia"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/32006",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=32006"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=32006"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=32006"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 39176,
+      "date": "2025-04-22T14:34:41",
+      "date_gmt": "2025-04-22T17:34:41",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=39176"
+      },
+      "modified": "2026-09-30T16:56:21",
+      "modified_gmt": "2026-09-30T19:56:21",
+      "slug": "educacao-fisica",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+      "title": {
+        "rendered": "Educação Física"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        91,
+        199
+      ],
+      "cursos-graduacao-lista": [
+        138
+      ],
+      "class_list": [
+        "post-39176",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-presencial",
+        "modalidades-semi-presencial",
+        "cursos-graduacao-lista-educacao-fisica"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Educação Física - Faculdade Phorte</title>\n<meta name=\"description\" content=\"A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/educacao-fisica/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Educação Física - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/educacao-fisica/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-09-30T19:56:21+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/06/capa-video-edu-fisica.webp\" />\n\t<meta property=\"og:image:width\" content=\"1928\" />\n\t<meta property=\"og:image:height\" content=\"1088\" />\n\t<meta property=\"og:image:type\" content=\"image/webp\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:title\" content=\"Educação Física - Faculdade Phorte\" />\n<meta name=\"twitter:description\" content=\"A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde.\" />\n<meta name=\"twitter:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/04/arte-curso-educacao-fisica-graduacao-phorte.webp\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/educacao-fisica\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/educacao-fisica\\/\",\"name\":\"Educação Física - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2025-04-22T17:34:41+00:00\",\"dateModified\":\"2026-09-30T19:56:21+00:00\",\"description\":\"A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/educacao-fisica\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/educacao-fisica\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/educacao-fisica\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Educação Física\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Educação Física - Faculdade Phorte",
+        "description": "A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Educação Física - Faculdade Phorte",
+        "og_description": "A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-09-30T19:56:21+00:00",
+        "og_image": [
+          {
+            "width": 1928,
+            "height": 1088,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/capa-video-edu-fisica.webp",
+            "type": "image/webp"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_title": "Educação Física - Faculdade Phorte",
+        "twitter_description": "A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde.",
+        "twitter_image": "https://faculdadephorte.edu.br/wp-content/uploads/2025/04/arte-curso-educacao-fisica-graduacao-phorte.webp",
+        "twitter_misc": {
+          "Est. tempo de leitura": "2 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+              "url": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+              "name": "Educação Física - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2025-04-22T17:34:41+00:00",
+              "dateModified": "2026-09-30T19:56:21+00:00",
+              "description": "A Faculdade Phorte oferece um curso de Educação Física com professores experientes, metodologia inovadora e prática real, preparando profissionais para atuar com excelência no mercado esportivo, fitness e de saúde",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/educacao-fisica/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Educação Física"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/39176",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=39176"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=39176"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=39176"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32014,
+      "date": "2024-12-18T17:48:17",
+      "date_gmt": "2024-12-18T20:48:17",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=32014"
+      },
+      "modified": "2026-10-07T11:47:39",
+      "modified_gmt": "2026-10-07T14:47:39",
+      "slug": "administracao",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/administracao/",
+      "title": {
+        "rendered": "Administração"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        241,
+        91
+      ],
+      "cursos-graduacao-lista": [
+        82
+      ],
+      "class_list": [
+        "post-32014",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-ead-digital",
+        "modalidades-presencial",
+        "cursos-graduacao-lista-administracao"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Administração - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/administracao/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Administração - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/administracao/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-10-07T14:47:39+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"5 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/administracao\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/administracao\\/\",\"name\":\"Administração - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-12-18T20:48:17+00:00\",\"dateModified\":\"2026-10-07T14:47:39+00:00\",\"description\":\"Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/administracao\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/administracao\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/administracao\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Administração\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Administração - Faculdade Phorte",
+        "description": "Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/administracao/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Administração - Faculdade Phorte",
+        "og_description": "Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/administracao/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-10-07T14:47:39+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "5 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/administracao/",
+              "url": "https://faculdadephorte.edu.br/graduacao/administracao/",
+              "name": "Administração - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-12-18T20:48:17+00:00",
+              "dateModified": "2026-10-07T14:47:39+00:00",
+              "description": "Curso de Administração da Faculdade Phorte: desenvolva habilidades em gestão, liderança e planejamento estratégico para conquistar destaque no mercado.",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/administracao/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/administracao/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/administracao/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Administração"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/32014",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=32014"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=32014"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=32014"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32012,
+      "date": "2024-12-18T17:44:31",
+      "date_gmt": "2024-12-18T20:44:31",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=32012"
+      },
+      "modified": "2026-08-28T13:22:46",
+      "modified_gmt": "2026-08-28T16:22:46",
+      "slug": "traducao-e-interpretacao-ingles-portugues",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+      "title": {
+        "rendered": "Tradução e Interpretação Português / Inglês"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        93
+      ],
+      "cursos-graduacao-lista": [
+        87
+      ],
+      "class_list": [
+        "post-32012",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-ead-online-ao-vivo",
+        "cursos-graduacao-lista-traducao-e-interpretacao"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Tradução e Interpretação Português / Inglês - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Tradução e Interpretação Português / Inglês - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-08-28T16:22:46+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/traducao-e-interpretacao-ingles-portugues\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/traducao-e-interpretacao-ingles-portugues\\/\",\"name\":\"Tradução e Interpretação Português \\/ Inglês - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-12-18T20:44:31+00:00\",\"dateModified\":\"2026-08-28T16:22:46+00:00\",\"description\":\"Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/traducao-e-interpretacao-ingles-portugues\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/traducao-e-interpretacao-ingles-portugues\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/traducao-e-interpretacao-ingles-portugues\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Tradução e Interpretação Português \\/ Inglês\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Tradução e Interpretação Português / Inglês - Faculdade Phorte",
+        "description": "Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Tradução e Interpretação Português / Inglês - Faculdade Phorte",
+        "og_description": "Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-08-28T16:22:46+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "4 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+              "url": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+              "name": "Tradução e Interpretação Português / Inglês - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-12-18T20:44:31+00:00",
+              "dateModified": "2026-08-28T16:22:46+00:00",
+              "description": "Curso de Tradução e Interpretação Inglês-Português da Faculdade Phorte: desenvolva fluência e técnicas profissionais para se destacar.",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Tradução e Interpretação Português / Inglês"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/32012",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=32012"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=32012"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=32012"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32010,
+      "date": "2024-12-18T17:41:46",
+      "date_gmt": "2024-12-18T20:41:46",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=32010"
+      },
+      "modified": "2026-10-07T11:47:58",
+      "modified_gmt": "2026-10-07T14:47:58",
+      "slug": "recursos-humanos",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+      "title": {
+        "rendered": "Recursos Humanos"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        241
+      ],
+      "cursos-graduacao-lista": [
+        84
+      ],
+      "class_list": [
+        "post-32010",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-ead-digital",
+        "cursos-graduacao-lista-recursos-humanos"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Recursos Humanos - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/recursos-humanos/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Recursos Humanos - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/recursos-humanos/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-10-07T14:47:58+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/recursos-humanos\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/recursos-humanos\\/\",\"name\":\"Recursos Humanos - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-12-18T20:41:46+00:00\",\"dateModified\":\"2026-10-07T14:47:58+00:00\",\"description\":\"Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/recursos-humanos\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/recursos-humanos\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/recursos-humanos\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Recursos Humanos\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Recursos Humanos - Faculdade Phorte",
+        "description": "Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Recursos Humanos - Faculdade Phorte",
+        "og_description": "Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-10-07T14:47:58+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "4 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+              "url": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+              "name": "Recursos Humanos - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-12-18T20:41:46+00:00",
+              "dateModified": "2026-10-07T14:47:58+00:00",
+              "description": "Curso de Recursos Humanos da Faculdade Phorte: capacite-se em gestão de pessoas, liderança e desenvolvimento organizacional para impulsionar sua carreira.",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/recursos-humanos/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Recursos Humanos"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/32010",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=32010"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=32010"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=32010"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32008,
+      "date": "2024-12-18T17:39:43",
+      "date_gmt": "2024-12-18T20:39:43",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=32008"
+      },
+      "modified": "2026-10-07T11:47:52",
+      "modified_gmt": "2026-10-07T14:47:52",
+      "slug": "processos-gerenciais",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+      "title": {
+        "rendered": "Processos Gerenciais"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        241,
+        91
+      ],
+      "cursos-graduacao-lista": [
+        83
+      ],
+      "class_list": [
+        "post-32008",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-ead-digital",
+        "modalidades-presencial",
+        "cursos-graduacao-lista-processos-gerenciais"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Processos Gerenciais - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/processos-gerenciais/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Processos Gerenciais - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/processos-gerenciais/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-10-07T14:47:52+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/processos-gerenciais\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/processos-gerenciais\\/\",\"name\":\"Processos Gerenciais - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-12-18T20:39:43+00:00\",\"dateModified\":\"2026-10-07T14:47:52+00:00\",\"description\":\"Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/processos-gerenciais\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/processos-gerenciais\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/processos-gerenciais\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Processos Gerenciais\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Processos Gerenciais - Faculdade Phorte",
+        "description": "Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Processos Gerenciais - Faculdade Phorte",
+        "og_description": "Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-10-07T14:47:52+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "4 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+              "url": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+              "name": "Processos Gerenciais - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-12-18T20:39:43+00:00",
+              "dateModified": "2026-10-07T14:47:52+00:00",
+              "description": "Curso de Processos Gerenciais da Faculdade Phorte: desenvolva competências em gestão estratégica, tomada de decisões e eficiência empresarial",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Processos Gerenciais"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/32008",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=32008"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=32008"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=32008"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 31985,
+      "date": "2024-12-18T16:23:37",
+      "date_gmt": "2024-12-18T19:23:37",
+      "guid": {
+        "rendered": "https://faculdadephorte.edu.br/?post_type=graduacao&#038;p=31985"
+      },
+      "modified": "2026-10-07T11:47:49",
+      "modified_gmt": "2026-10-07T14:47:49",
+      "slug": "marketing",
+      "status": "publish",
+      "type": "graduacao",
+      "link": "https://faculdadephorte.edu.br/graduacao/marketing/",
+      "title": {
+        "rendered": "Marketing"
+      },
+      "content": {
+        "rendered": "<div class=\"product\"><div class=\"product\"></div></div>",
+        "protected": false
+      },
+      "template": "",
+      "modalidades": [
+        241
+      ],
+      "cursos-graduacao-lista": [
+        85
+      ],
+      "class_list": [
+        "post-31985",
+        "graduacao",
+        "type-graduacao",
+        "status-publish",
+        "hentry",
+        "modalidades-ead-digital",
+        "cursos-graduacao-lista-marketing"
+      ],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Marketing - Faculdade Phorte</title>\n<meta name=\"description\" content=\"Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://faculdadephorte.edu.br/graduacao/marketing/\" />\n<meta property=\"og:locale\" content=\"pt_BR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Marketing - Faculdade Phorte\" />\n<meta property=\"og:description\" content=\"Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.\" />\n<meta property=\"og:url\" content=\"https://faculdadephorte.edu.br/graduacao/marketing/\" />\n<meta property=\"og:site_name\" content=\"Faculdade Phorte\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/faculdadephorte\" />\n<meta property=\"article:modified_time\" content=\"2026-10-07T14:47:49+00:00\" />\n<meta property=\"og:image\" content=\"https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png\" />\n\t<meta property=\"og:image:width\" content=\"256\" />\n\t<meta property=\"og:image:height\" content=\"256\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Est. tempo de leitura\" />\n\t<meta name=\"twitter:data1\" content=\"3 minutos\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/marketing\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/marketing\\/\",\"name\":\"Marketing - Faculdade Phorte\",\"isPartOf\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\"},\"datePublished\":\"2024-12-18T19:23:37+00:00\",\"dateModified\":\"2026-10-07T14:47:49+00:00\",\"description\":\"Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/marketing\\/#breadcrumb\"},\"inLanguage\":\"pt-BR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/marketing\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/marketing\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Início\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Graduacao\",\"item\":\"https:\\/\\/faculdadephorte.edu.br\\/graduacao\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Marketing\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#website\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"name\":\"Faculdade Phorte\",\"description\":\"Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!\",\"publisher\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\"},\"alternateName\":\"Graduação Phorte\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/faculdadephorte.edu.br\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"pt-BR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#organization\",\"name\":\"Faculdade Phorte\",\"alternateName\":\"Phorte Educacional\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"pt-BR\",\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"contentUrl\":\"https:\\/\\/faculdadephorte.edu.br\\/wp-content\\/uploads\\/2024\\/10\\/logo-phorte-retangular.webp\",\"width\":1000,\"height\":448,\"caption\":\"Faculdade Phorte\"},\"image\":{\"@id\":\"https:\\/\\/faculdadephorte.edu.br\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/faculdadephorte\",\"https:\\/\\/www.instagram.com\\/faculdadephorte\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Marketing - Faculdade Phorte",
+        "description": "Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.",
+        "robots": {
+          "index": "index",
+          "follow": "follow",
+          "max-snippet": "max-snippet:-1",
+          "max-image-preview": "max-image-preview:large",
+          "max-video-preview": "max-video-preview:-1"
+        },
+        "canonical": "https://faculdadephorte.edu.br/graduacao/marketing/",
+        "og_locale": "pt_BR",
+        "og_type": "article",
+        "og_title": "Marketing - Faculdade Phorte",
+        "og_description": "Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.",
+        "og_url": "https://faculdadephorte.edu.br/graduacao/marketing/",
+        "og_site_name": "Faculdade Phorte",
+        "article_publisher": "https://www.facebook.com/faculdadephorte",
+        "article_modified_time": "2026-10-07T14:47:49+00:00",
+        "og_image": [
+          {
+            "width": 256,
+            "height": 256,
+            "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/08/favicon_phorte.png",
+            "type": "image/png"
+          }
+        ],
+        "twitter_card": "summary_large_image",
+        "twitter_misc": {
+          "Est. tempo de leitura": "3 minutos"
+        },
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://faculdadephorte.edu.br/graduacao/marketing/",
+              "url": "https://faculdadephorte.edu.br/graduacao/marketing/",
+              "name": "Marketing - Faculdade Phorte",
+              "isPartOf": {
+                "@id": "https://faculdadephorte.edu.br/#website"
+              },
+              "datePublished": "2024-12-18T19:23:37+00:00",
+              "dateModified": "2026-10-07T14:47:49+00:00",
+              "description": "Curso de Marketing da Faculdade Phorte: aprenda estratégias inovadoras e ferramentas práticas para destacar marcas e impulsionar negócios.",
+              "breadcrumb": {
+                "@id": "https://faculdadephorte.edu.br/graduacao/marketing/#breadcrumb"
+              },
+              "inLanguage": "pt-BR",
+              "potentialAction": [
+                {
+                  "@type": "ReadAction",
+                  "target": [
+                    "https://faculdadephorte.edu.br/graduacao/marketing/"
+                  ]
+                }
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://faculdadephorte.edu.br/graduacao/marketing/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Início",
+                  "item": "https://faculdadephorte.edu.br/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Graduacao",
+                  "item": "https://faculdadephorte.edu.br/graduacao/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Marketing"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://faculdadephorte.edu.br/#website",
+              "url": "https://faculdadephorte.edu.br/",
+              "name": "Faculdade Phorte",
+              "description": "Invista em um futuro Phorte! Cursos de graduação nas áreas mais desejadas do mercado!",
+              "publisher": {
+                "@id": "https://faculdadephorte.edu.br/#organization"
+              },
+              "alternateName": "Graduação Phorte",
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://faculdadephorte.edu.br/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "pt-BR"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://faculdadephorte.edu.br/#organization",
+              "name": "Faculdade Phorte",
+              "alternateName": "Phorte Educacional",
+              "url": "https://faculdadephorte.edu.br/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "pt-BR",
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/",
+                "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "contentUrl": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+                "width": 1000,
+                "height": 448,
+                "caption": "Faculdade Phorte"
+              },
+              "image": {
+                "@id": "https://faculdadephorte.edu.br/#/schema/logo/image/"
+              },
+              "sameAs": [
+                "https://www.facebook.com/faculdadephorte",
+                "https://www.instagram.com/faculdadephorte/"
+              ]
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao/31985",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/graduacao"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=31985"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "modalidades",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?post=31985"
+          },
+          {
+            "taxonomy": "cursos-graduacao-lista",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/cursos-graduacao-lista?post=31985"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ]
+}
