@@ -1,0 +1,57 @@
+{
+  "a": {
+    "label": "Jornada reorganizada",
+    "catalogMode": "grid",
+    "sections": [
+      "hero",
+      "catalog",
+      "modalities",
+      "admissions",
+      "testimonials",
+      "institution",
+      "units",
+      "partners",
+      "contact",
+      "faq",
+      "news"
+    ]
+  },
+  "b": {
+    "label": "Editorial com carrossel de campanha",
+    "catalogMode": "editorial",
+    "header": "editorial",
+    "hero": "campaign",
+    "sections": [
+      "hero",
+      "paths",
+      "catalog",
+      "learning",
+      "institution",
+      "units",
+      "testimonials",
+      "contact",
+      "partners",
+      "news",
+      "faq"
+    ]
+  },
+  "c": {
+    "label": "Editorial",
+    "catalogMode": "editorial",
+    "header": "editorial",
+    "sections": [
+      "hero",
+      "paths",
+      "catalog",
+      "banners",
+      "learning",
+      "institution",
+      "units",
+      "testimonials",
+      "contact",
+      "partners",
+      "news",
+      "faq"
+    ]
+  }
+}

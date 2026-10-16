@@ -8,7 +8,7 @@ Página-vitrine dos três lançamentos de pós-graduação da Faculdade Phorte e
 
 ## Cursos
 
-Por pedido do marketing (15/10/2026), os cards **não têm botão nem link** para as páginas dos cursos. Para referência, as páginas são:
+Os três cards incluem o botão **Fazer pré-venda**, que leva ao formulário único de pré-venda. As páginas específicas dos cursos são:
 
 | Curso | Página |
 | --- | --- |
@@ -22,14 +22,14 @@ Os três cards mostram **360h** e **Ao vivo / Online com demonstrações prátic
 
 `index.html` + `styles.css`: preto, vermelho e branco, Barlow Condensed (títulos em maiúsculas e itálico) + Poppins.
 
-1. Cabeçalho fixo. Na entrada mostra só as duas marcas, grandes, como no topo do flyer; ao rolar vira uma barra compacta com o menu (rótulos do flyer) e o botão "Escolher minha pós".
+1. Cabeçalho fixo. Na entrada mostra só as duas marcas, grandes, como no topo do flyer; ao rolar vira uma barra compacta com o menu (rótulos do flyer).
 2. Banner principal: "Escolha o seu **próximo passo.**" (caixa vermelha inclinada, como no flyer), subtítulo e foto do casal do flyer, sobre um fundo limpo (só brilho vermelho). A chamada complementar abre a lista das 3 opções com os ícones do flyer ("Gestão & Negócios", "Personal Internacional + NASM", "Treinamento Feminino"), que levam ao card de cada curso. No celular e no tablet a foto fica no alto e o texto entra logo abaixo dos rostos; entre 1024 e 1439px o título encolhe com a tela para não cobrir a foto.
 3. Duas faixas cruzadas em movimento (decorativas).
-4. "Escolha a sua pós.": três banners empilhados (foto, título, descrição, 360h e modalidade), sem botão.
+4. "Escolha a sua pós.": três banners empilhados (foto, título, descrição, 360h, modalidade e botão Fazer pré-venda).
    - MBA: bandeiras do Brasil, da Espanha e da Colômbia (nacionalidades dos docentes).
    - Personal: logotipo NASM, bandeiras dos EUA e do Brasil, selo "Metodologia OPT™".
    - Biomecânica: selo "Especialização em treinamento feminino".
-5. Fechamento vermelho (texto do marketing, 15/10/2026): título "Garanta sua pré-inscrição com condição exclusiva!", descrição com o valor de **R$ 100,00** e, abaixo de um fio, a observação sobre pré-inscrição em mais de um curso. Sem botões.
+5. Fechamento vermelho (texto do marketing, 15/10/2026): título "Garanta sua pré-inscrição com condição exclusiva!", descrição com o valor de **R$ 100,00**, botão Fazer pré-venda e, abaixo de um fio, a observação sobre pré-inscrição em mais de um curso.
 6. Rodapé com os dois logotipos ("Realização").
 
 ## Publicar no WordPress (Elementor)
@@ -51,7 +51,7 @@ O widget isola os estilos com `#lp-pos-ef`: o tema não altera a página e a pá
 
 ## Rastreamento (GTM / GA4)
 
-A página não tem mais links de saída para os cursos, então o evento `clique_pos_graduacao` foi removido. Se voltarem a existir botões (por exemplo, para a pré-inscrição ou para falar com os consultores), vale recriar um evento por botão.
+Os botões Fazer pré-venda direcionam ao formulário externo de pré-venda. Configure o rastreamento desses cliques no GTM/GA4 conforme necessário.
 
 ## Imagens e logotipos
 
@@ -59,7 +59,8 @@ Todas em WebP com até 200 KB, para subir direto no WordPress.
 
 - **Fotos** (recortes do flyer, ampliados por IA em 15/10/2026 com instrução de preservar enquadramento, rostos, roupas, cores e luz, sem acrescentar nem remover nada):
   - `hero-phorte-fitnesslink.webp` (964×1632, 183 KB): casal do flyer 2, sem os textos.
-  - `mba-gestao-fitness-wellness.webp`, `personal-trainer-internacional.webp`, `biomecanica-forca-mulheres.webp` (1433×1098, 180–190 KB): fotos dos cursos do flyer 1.
+  - `mba-gestao-fitness-wellness.webp` e `biomecanica-forca-mulheres.webp` (1433×1098): fotos dos cursos do flyer 1.
+  - `personal-trainer-internacional.webp` (1296×1214): imagem atualizada do curso Personal Trainer Internacional.
 - `phorte-logo.webp` (1200×528): logotipo oficial a cores, exibido em branco com filtro CSS.
 - `fitnesslink-logo.webp`: logotipo usado na página do MBA, convertido para branco.
 - `nasm-logo.webp`: logotipo NASM recortado do flyer, em branco com transparência. **Confirmar com o marketing a permissão de uso** e, se houver, trocar pela versão oficial.

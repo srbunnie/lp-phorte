@@ -1,0 +1,41 @@
+/* Rodapé: publicado como widget próprio. */
+/* Mesmo caso do cabeçalho: em contêiner com quebra (wrap), sem largura definida sobravam 110 px abaixo no celular. */
+.elementor-widget:has(#hp-rodape){width:100%}
+#hp-rodape .hp-footer{background:#171719;color:#c6c5cb;padding:48px 0 24px}
+#hp-rodape .hp-footer-top{display:flex;align-items:center;gap:32px;border-bottom:1px solid #ffffff26;padding-bottom:36px}
+#hp-rodape .hp-footer-brand{background:#fff;padding:8px 18px;border-radius:8px;flex-shrink:0}
+#hp-rodape .hp-footer-brand img{width:110px;height:62px;object-fit:contain}
+#hp-rodape .hp-footer-top>p{font-size:13px;line-height:1.9;margin-right:auto}
+#hp-rodape .hp-footer-top>p strong{color:#fff;font-weight:500}
+#hp-rodape .hp-footer-columns{display:grid;grid-template-columns:1fr;gap:32px;padding-block:38px}
+#hp-rodape .hp-footer h2{font-size:12px;font-weight:600;color:#fff;letter-spacing:0;margin-bottom:16px}
+#hp-rodape .hp-footer .hp-footer-subtitle{margin-top:24px}
+#hp-rodape .hp-footer ul a{font-size:11px;display:inline-block;padding-block:6px;line-height:1.7}
+#hp-rodape .hp-footer a:hover:not(.hp-button){color:#fff;text-decoration:underline;text-underline-offset:4px}
+#hp-rodape .hp-footer-phone{font-size:22px;letter-spacing:-.025em;font-weight:500;color:#fff}
+#hp-rodape .hp-footer address{font-size:11px;font-style:normal;margin-block:14px}
+#hp-rodape .hp-footer-whatsapp{color:#d2f4da;font-size:11px;text-decoration:underline;text-underline-offset:4px}
+#hp-rodape .hp-social-label{margin-top:24px;font-size:11px;color:#fff}
+#hp-rodape .hp-socials{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:10px}
+#hp-rodape .hp-socials a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid #ffffff59;border-radius:50%;color:#fff;transition:background-color .2s,border-color .2s}
+#hp-rodape .hp-socials a:hover{background:#ffffff1a;border-color:#fff}
+#hp-rodape .hp-socials svg{width:22px;height:22px}
+#hp-rodape .hp-footer-legal{display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:1px solid #ffffff26;padding-top:24px;font-size:10px;line-height:1.8}
+#hp-rodape .hp-footer-legal>div{display:flex;gap:22px}
+
+@media(min-width:768px){
+  #hp-rodape .hp-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+}
+@media(min-width:1024px){
+  #hp-rodape .hp-footer-columns{grid-template-columns:1fr .9fr 1.2fr 1.3fr}
+}
+@media(max-width:767px){
+  #hp-rodape .hp-footer{padding-top:36px}
+  #hp-rodape .hp-footer-top{align-items:start;flex-direction:column;gap:22px;padding-bottom:28px}
+  #hp-rodape .hp-footer-top>p{font-size:12px}
+  #hp-rodape .hp-footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}
+  #hp-rodape .hp-footer-phone{font-size:17px}
+  #hp-rodape .hp-footer h2{font-size:11px}
+  #hp-rodape .hp-footer ul a{font-size:10px}
+  #hp-rodape .hp-footer-legal{flex-direction:column;align-items:start;gap:18px}
+}

@@ -1,0 +1,824 @@
+{
+  "project": "Home Graduação Phorte — levantamento",
+  "date": "2026-10-16",
+  "timezone": "America/Sao_Paulo",
+  "status": "Pesquisa e duas propostas; nenhum protótipo implementado nesta etapa.",
+  "requestedVariants": [
+    {
+      "id": "a-jornada",
+      "label": "Reorganizar a jornada"
+    },
+    {
+      "id": "b-ordem-atual",
+      "label": "Preservar a ordem atual das seções"
+    }
+  ],
+  "source": "https://faculdadephorte.edu.br/",
+  "sourcePageId": 7,
+  "observedSiteParts": [
+    {
+      "type": "header",
+      "id": "51556"
+    },
+    {
+      "type": "wp-page",
+      "id": "7"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "section",
+      "id": "31095"
+    },
+    {
+      "type": "footer",
+      "id": "31347"
+    }
+  ],
+  "sectionsOriginal": [
+    {
+      "tag": "HEADER",
+      "id": "",
+      "dataId": null,
+      "text": "Graduação Pós-Graduação Cursos+ Blog Fale Conosco Graduação Cursos Graduação Pós-Graduação Extensão Eventos Portal Inscreva-se agora",
+      "y": 0
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "11a76e2",
+      "text": "GRADUAÇÃO 2027 FACULDADE COM MATRÍCULAS ABERTAS PARA O 1º SEMESTRE. MODALIDADES PRESENCIAL EAD SEMIPRESENCIAL ONLINE / AO VIVO GARANTIR MINHA VAGA *Consulte as condições e a disponibilidade de cada curso.",
+      "y": 145
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "6474e066",
+      "text": "Graduação 2026 Faculdade com matrículas abertas para o 2º semestre Modalidades: Presencial, EAD, Semipresencial e Ao Vivo *Consulte as condições e a disponibilidade de cada curso. Garantir minha Vaga Graduação em Gestão Mês do EAD Ainda dá tempo de começar em 2026.1 Administração • Processos Gerenciais • Recursos Humanos • Marketing Inicie sua graduação EAD agora - Inscrições até 13/04 Inscreva-se Nossos Cursos",
+      "y": 0
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "2c7cd9fa",
+      "text": "Seja o protagonista do seu futuro com a Phorte A Faculdade Phorte é o lugar onde sua carreira vai começar. Cursos modernos que unem teoria e prática, professores de referência e toda a estrutura para você conquistar o mercado de trabalho. Junte-se a nós e descubra o seu potencial. Inscreva-se agora mesmo! Administração Educação Física Marketing Pedagogia Processos Gerenciais Recursos Humanos Tradução e Interpretação",
+      "y": 755
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "638b7cb3",
+      "text": "Conheça nossos cursos de Graduação! Nas modalidades EAD/Online ao vivo, semipresencial e presencial",
+      "y": 1283
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "d2a0c",
+      "text": "Faculdade Phorte Educação Conectada e Reconhecida A Faculdade Phorte carrega mais de três décadas de experiência em disseminação de conhecimento e ensino com a vantagem de ter nascido completamente conectada com as tecnologias educacionais atuais. E o MEC concorda conosco: recebemos nota máximo logo nos nossos primeiros cursos oferecidos. Conheça a instituição",
+      "y": 1725
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "5d5350ff",
+      "text": "Infraestrutura Moderna e Ambiente Inovador Unidade 1 Unidade 2 Unidade I R. Rui Barbosa, 422 Bela Vista, São Paulo – SP Unidade II R. Martiniano de Carvalho, 170 Bela Vista São Paulo-SP",
+      "y": 2145
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "73bd0488",
+      "text": "Depoimentos de Alunos e Sucesso Profissional",
+      "y": 2745
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "1c9f1f42",
+      "text": "",
+      "y": 2911
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "53b5f972",
+      "text": "Na Faculdade Phorte, você inicia a transformação da sua carreira Nossos consultores estão prontos para te ajudar a escolher o curso ideal, alinhado aos seus interesses, conhecimentos e objetivos de carreira. Nome Email Telefone confirmar politicas de privacidade Aceito receber marketing, publicidade e informativos sobre os produtos e serviçõs da Faculdade Phorte, nos termos de sua Política de Privacidade. Enviar",
+      "y": 2997
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "527a0cda",
+      "text": "Parceiros da Phorte",
+      "y": 3371
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "7cdcdce9",
+      "text": "Últimas Notícias",
+      "y": 3726
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "dataId": "4dd08f8",
+      "text": "Faculdade Phorte na mídia AB Notícia NewsEscola Aberta: centro de São Paulo e Zona Leste unidos pela inclusão A Redacão RJEducação que transforma: inclusão conecta o Centro e a Zona Leste com apoio da SME-SP da Associação Phorte Diário Digital CapixabaCentro e Zona Leste unidos por uma educação inclusiva com o apoio da SME-SP e da Associação Phorte",
+      "y": 0
+    },
+    {
+      "tag": "FOOTER",
+      "id": "",
+      "dataId": null,
+      "text": "Graduação que você merece! Políticas de Privacidade A Phorte Home Sobre nós Trabalhe Conosco Unidades Contato Ouvidoria CPA Projetos Blogs Eventos Biblioteca Documentos Oficiais - Editais Validação de Diplomas Cursos Graduação Pós-Graduação Cursos Livres Bolsas CONTATO (11) 2222-1222 (11) 2222-1222 - Sou aluno graduacao@faculdadephorte.edu.br ONDE NOS ENCONTRAR Facebook Instagram Youtube Linkedin e-MEC Consulte aqui o cadastro da instituição no sistema e-mec de educação Ou clique aqui Rua Rui Barbosa, 422 - Bela Vista - São Paulo - SP Rua 13 de Maio, 681, Bela Vista - SP Copyright © 2022 Associação de Educação e Novas Tecnologias Phorte - CNPJ:42.098.615/0001-42. Todos os Direitos Reservados. Privacidade Preferências de cookies",
+      "y": 3930
+    }
+  ],
+  "courses": [
+    {
+      "id": 32014,
+      "slug": "administracao",
+      "title": "Administração",
+      "sourceTitle": "Administração",
+      "href": "https://faculdadephorte.edu.br/graduacao/administracao/",
+      "modalityIds": [
+        241,
+        91
+      ],
+      "modalities": [
+        "EAD",
+        "Presencial"
+      ],
+      "courseTermIds": [
+        82
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 39176,
+      "slug": "educacao-fisica",
+      "title": "Educação Física",
+      "sourceTitle": "Educação Física",
+      "href": "https://faculdadephorte.edu.br/graduacao/educacao-fisica/",
+      "modalityIds": [
+        91,
+        199
+      ],
+      "modalities": [
+        "Presencial",
+        "Semipresencial"
+      ],
+      "courseTermIds": [
+        138
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 31985,
+      "slug": "marketing",
+      "title": "Marketing",
+      "sourceTitle": "Marketing",
+      "href": "https://faculdadephorte.edu.br/graduacao/marketing/",
+      "modalityIds": [
+        241
+      ],
+      "modalities": [
+        "EAD"
+      ],
+      "courseTermIds": [
+        85
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 32006,
+      "slug": "pedagogia",
+      "title": "Pedagogia",
+      "sourceTitle": "Pedagogia",
+      "href": "https://faculdadephorte.edu.br/graduacao/pedagogia/",
+      "modalityIds": [
+        199
+      ],
+      "modalities": [
+        "Semipresencial"
+      ],
+      "courseTermIds": [
+        86
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 32008,
+      "slug": "processos-gerenciais",
+      "title": "Processos Gerenciais",
+      "sourceTitle": "Processos Gerenciais",
+      "href": "https://faculdadephorte.edu.br/graduacao/processos-gerenciais/",
+      "modalityIds": [
+        241,
+        91
+      ],
+      "modalities": [
+        "EAD",
+        "Presencial"
+      ],
+      "courseTermIds": [
+        83
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 32010,
+      "slug": "recursos-humanos",
+      "title": "Recursos Humanos",
+      "sourceTitle": "Recursos Humanos",
+      "href": "https://faculdadephorte.edu.br/graduacao/recursos-humanos/",
+      "modalityIds": [
+        241
+      ],
+      "modalities": [
+        "EAD"
+      ],
+      "courseTermIds": [
+        84
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    },
+    {
+      "id": 32012,
+      "slug": "traducao-e-interpretacao-ingles-portugues",
+      "title": "Tradução e Interpretação",
+      "sourceTitle": "Tradução e Interpretação Português / Inglês",
+      "href": "https://faculdadephorte.edu.br/graduacao/traducao-e-interpretacao-ingles-portugues/",
+      "modalityIds": [
+        93
+      ],
+      "modalities": [
+        "EAD online ao vivo"
+      ],
+      "courseTermIds": [
+        87
+      ],
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/graduacao?per_page=100",
+      "note": "Classificação no cadastro público; não equivale a confirmação de turma, horário ou oferta comercial. Duração, grau e valores ainda não consolidados."
+    }
+  ],
+  "excludedCourses": [
+    {
+      "id": 57540,
+      "title": "Curso Teste Administração",
+      "href": "https://faculdadephorte.edu.br/graduacao/curso-teste-administracao/",
+      "reason": "Registro de teste sem presença no menu ou nas sete categorias da home."
+    }
+  ],
+  "modalities": [
+    {
+      "id": 241,
+      "name": "EAD",
+      "slug": "ead-digital",
+      "href": "https://faculdadephorte.edu.br/modalidades/ead-digital/",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?per_page=100"
+    },
+    {
+      "id": 93,
+      "name": "EAD online ao vivo",
+      "slug": "ead-online-ao-vivo",
+      "href": "https://faculdadephorte.edu.br/modalidades/ead-online-ao-vivo/",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?per_page=100"
+    },
+    {
+      "id": 91,
+      "name": "Presencial",
+      "slug": "presencial",
+      "href": "https://faculdadephorte.edu.br/modalidades/presencial/",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?per_page=100"
+    },
+    {
+      "id": 199,
+      "name": "Semipresencial",
+      "slug": "semi-presencial",
+      "href": "https://faculdadephorte.edu.br/modalidades/semi-presencial/",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/modalidades?per_page=100"
+    }
+  ],
+  "institutionalVideo": {
+    "youtubeUrl": "https://youtu.be/3sJF0DKhLOk",
+    "poster": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/capa-video-home-phorte.webp",
+    "source": "https://faculdadephorte.edu.br/"
+  },
+  "testimonials": [
+    {
+      "name": "Debora",
+      "roleOriginal": "Aluna(o) de Administração",
+      "quoteOriginal": "Foi a caminho do trabalho que conheci a Phorte, e desde então, minha experiência tem sido incrível.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Debora-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://www.youtube.com/watch?v=y6Do2KmZsjo"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    },
+    {
+      "name": "Luciana Gomes",
+      "roleOriginal": "Aluna(o) de Pedagogia",
+      "quoteOriginal": "“A facilidade de estudar em casa, no meu conforto. Trabalhar com crianças é cuidar do futuro.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Luciana-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://www.youtube.com/shorts/F5N7LOW_U9s"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    },
+    {
+      "name": "Yuri",
+      "roleOriginal": "Aluna(o) de Administração",
+      "quoteOriginal": "O curso tem sido muito útil para minha área, e já estou aplicando os conhecimentos adquiridos.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Yuri-576x1024.png",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://www.youtube.com/watch?v=EVzmUlnkGWM"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    },
+    {
+      "name": "Meire e Beatriz",
+      "roleOriginal": "Aluna(o) de Administração e Pedagogia",
+      "quoteOriginal": "Meire de Carvalho – “Era um sonho de antigamente e, por ter um comércio, vai me ajudar a administrar melhor meu negócio.” Beatriz – “Sou uma futura pedagoga, fiquei animada e feliz por ter conseguido uma bolsa. Vou realizar meus sonhos e ter um futuro melhor.”",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Beatriz-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://youtube.com/shorts/WnghtJQdf9Y?feature=share"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    },
+    {
+      "name": "Rosângela Simões Silva",
+      "roleOriginal": "Aluna(o) de Pedagogia",
+      "quoteOriginal": "Pedagogia na Faculdade Phorte foi um diferencial. Agora estou realizando um sonho de criança.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Depoimento_Rosangela_2-576x1024.jpg",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://www.youtube.com/shorts/bJwRpDj-5hI"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    },
+    {
+      "name": "Leticia",
+      "roleOriginal": "Aluna(o) de Administração",
+      "quoteOriginal": "A Leticia decidiu levar o futuro a sério. O que ela não imaginava é que, além de um ensino de excelência, encontraria espaço para ser protagonista desde os primeiros meses.",
+      "images": [
+        {
+          "src": "https://faculdadephorte.edu.br/wp-content/uploads/2025/06/Depoimento_Leticia-ezgif.com-optiwebp-576x1024.webp",
+          "alt": ""
+        }
+      ],
+      "youtubeUrls": [
+        "https://www.youtube.com/watch?v=I7HIJ_4HSmw"
+      ],
+      "source": "https://faculdadephorte.edu.br/",
+      "capturedAt": "2026-10-16T14:03:35.455Z",
+      "note": "Conteúdo encontrado no DOM após espera; nem sempre apareceu visível na captura. Seleção variável entre carregamentos."
+    }
+  ],
+  "testimonialsRegistry": {
+    "count": 10,
+    "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/depoimentos?per_page=100",
+    "note": "Dez posts publicados não significam dez depoimentos fixos exibidos na home."
+  },
+  "news": [
+    {
+      "id": 59949,
+      "title": "Dia do Professor: o papel dos educadores na construção de novas trajetórias",
+      "href": "https://faculdadephorte.edu.br/dia-do-professor-o-papel-dos-educadores-na-construcao-de-novas-trajetorias/",
+      "publishedAt": "2026-10-15T16:06:03",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias.png",
+      "excerptHtml": "<p>Você se lembra de algum professor que mudou sua maneira de enxergar o futuro? Talvez tenha sido quem despertou seu interesse por uma profissão, reconheceu uma habilidade que você ainda não conhecia ou ajudou a transformar uma dificuldade em uma conquista. Celebrado em 15 de outubro no Brasil, o Dia do Professor é uma oportunidade [&hellip;]</p>\n",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "note": "Últimos publicados pela REST; não foi possível confirmar a seleção efetivamente renderizada no bloco Últimas Notícias da home."
+    },
+    {
+      "id": 59899,
+      "title": "Matrículas abertas para 2027.1: comece sua graduação na Faculdade Phorte",
+      "href": "https://faculdadephorte.edu.br/faculdade-phorte-matriculas-abertas-2027-1/",
+      "publishedAt": "2026-10-09T10:47:50",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg",
+      "excerptHtml": "<p>O planejamento para começar uma graduação em 2027 já pode sair do papel. A Faculdade Phorte está com matrículas abertas para o primeiro semestre de 2027, com opções de cursos para diferentes áreas profissionais. Antecipar essa decisão permite pesquisar a formação com mais atenção, conhecer a proposta do curso e organizar os próximos passos antes [&hellip;]</p>\n",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "note": "Últimos publicados pela REST; não foi possível confirmar a seleção efetivamente renderizada no bloco Últimas Notícias da home."
+    },
+    {
+      "id": 59813,
+      "title": "O que estudar para o Enem 2026? Veja como organizar a reta final em outubro",
+      "href": "https://faculdadephorte.edu.br/o-que-estudar-para-o-enem-2026-veja-como-organizar-a-reta-final-em-outubro/",
+      "publishedAt": "2026-10-07T10:00:00",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg",
+      "excerptHtml": "<p>Com a chegada de outubro, quem vai participar do Enem 2026 entra nas últimas semanas de preparação para a prova. Neste momento, mais do que tentar aprender novos conteúdos, o ideal é organizar a revisão, identificar dificuldades e treinar a resolução de questões. As provas serão realizadas nos dias 8 e 15 de novembro de [&hellip;]</p>\n",
+      "source": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+      "note": "Últimos publicados pela REST; não foi possível confirmar a seleção efetivamente renderizada no bloco Últimas Notícias da home."
+    }
+  ],
+  "form": [
+    {
+      "action": "https://faculdadephorte.edu.br/",
+      "method": "post",
+      "text": "Nome Email Telefone confirmar politicas de privacidade Aceito receber marketing, publicidade e informativos sobre os produtos e serviçõs da Faculdade Phorte, nos termos de sua Política de Privacidade. Enviar",
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "hidden",
+          "name": "post_id",
+          "placeholder": "",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "hidden",
+          "name": "form_id",
+          "placeholder": "",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "hidden",
+          "name": "referer_title",
+          "placeholder": "",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "hidden",
+          "name": "queried_id",
+          "placeholder": "",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "form_fields[nome_info]",
+          "placeholder": "Nome",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "form_fields[email_info]",
+          "placeholder": "E-mail",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "text",
+          "name": "form_fields[telefone]",
+          "placeholder": "Telefone",
+          "text": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "form_fields[aceitacao]",
+          "placeholder": "",
+          "text": ""
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "text": "Enviar"
+        }
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "sourceLabel": "mstc",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/mstc-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "cna",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/cna-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "ciee",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ciee-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "ABV",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ABV-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "ass de amparo autista",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ass-de-amparo-autista-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "rumo-ao-futuro",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/rumo-ao-futuro-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "vidraria anchieta",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/vidraria-anchieta-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    },
+    {
+      "sourceLabel": "projeto vida missoes",
+      "image": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/projeto-vida-missoes-1-150x150.png.webp",
+      "note": "Rótulo do arquivo/alt; validar nome oficial e vínculo antes de reescrever."
+    }
+  ],
+  "units": [
+    {
+      "label": "Unidade I",
+      "address": "R. Rui Barbosa, 422 · Bela Vista · São Paulo – SP",
+      "sourceSection": "Infraestrutura"
+    },
+    {
+      "label": "Unidade II",
+      "address": "R. Martiniano de Carvalho, 170 · Bela Vista · São Paulo – SP",
+      "sourceSection": "Infraestrutura",
+      "status": "confirmar operação e uso"
+    },
+    {
+      "label": "Endereço adicional no rodapé",
+      "address": "Rua 13 de Maio, 681 · Bela Vista – SP",
+      "sourceSection": "Rodapé",
+      "status": "confirmar função e relação com as unidades"
+    },
+    {
+      "label": "Unidade III oculta",
+      "address": "Av. Marquês de São Vicente, 2477 · Água Branca · São Paulo – SP",
+      "sourceSection": "Conteúdo oculto",
+      "status": "não promover a unidade ativa sem confirmação"
+    }
+  ],
+  "assetReferences": [
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/logo-phorte-retangular.webp",
+      "alt": "Faculdade Phorte logo graduação",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1000,
+      "heightObserved": 448
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/ICONE-MOUSE.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 98,
+      "heightObserved": 118
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-masculina.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1161,
+      "heightObserved": 2064
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/persona-feminina.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1124,
+      "heightObserved": 1997
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/dia-do-professor-2026-phorte.webp",
+      "alt": "Banner do Dia dos Professores, em 15 de outubro, com homenagem e mensagem de gratidão aos professores.",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/04/PERSONAS-copy.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/03/Personasitephorte-2-768x1113.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/personagraduacaophortestyled-768x565.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 768,
+      "heightObserved": 565
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-1-rui-barbosa.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 392,
+      "heightObserved": 467
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/10/unidade-2-martiniano.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 392,
+      "heightObserved": 467
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/mstc-150x150.png.webp",
+      "alt": "mstc",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 0,
+      "heightObserved": 0
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/cna-150x150.png.webp",
+      "alt": "cna",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 0,
+      "heightObserved": 0
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ciee-150x150.png.webp",
+      "alt": "ciee",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ABV-150x150.png.webp",
+      "alt": "ABV",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/ass-de-amparo-autista-150x150.png.webp",
+      "alt": "ass de amparo autista",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/rumo-ao-futuro-150x150.png.webp",
+      "alt": "rumo-ao-futuro",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/vidraria-anchieta-150x150.png.webp",
+      "alt": "vidraria anchieta",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/10/projeto-vida-missoes-1-150x150.png.webp",
+      "alt": "projeto vida missoes",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 150,
+      "heightObserved": 150
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Design-sem-nome-18.png",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Design-sem-nome-20.png",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2025/05/Design-sem-nome-19.png",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 1,
+      "heightObserved": 1
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/logo-faculdade-phorte-unificado-1.svg",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 300,
+      "heightObserved": 149
+    },
+    {
+      "url": "https://faculdadephorte.edu.br/wp-content/uploads/2024/12/EMEC_ICON_LOGO_FINAL.png.webp",
+      "alt": "",
+      "source": "https://faculdadephorte.edu.br/",
+      "widthObserved": 690,
+      "heightObserved": 453
+    }
+  ],
+  "backgrounds": [
+    {
+      "image": "url(\"https://faculdadephorte.edu.br/wp-content/uploads/2026/10/BANNER-SITE-background-scaled.webp\")",
+      "tag": "SECTION",
+      "id": "phorte-header-2027",
+      "classes": "phorte-campaign phorte-campaign--paper phorte-carousel",
+      "text": "Graduação 2027 FACULDADE COM MATRÍCULAS ABERTAS PARA O 1º SEMESTRE. Modalidades Presencial EAD Semip",
+      "y": 145
+    },
+    {
+      "image": "url(\"https://faculdadephorte.edu.br/wp-content/uploads/2026/04/background2-scaled.webp\")",
+      "tag": "DIV",
+      "id": "",
+      "classes": "elementor-element elementor-element-cb07e51 e-con-full e-flex e-con e-child",
+      "text": "Graduação 2026 Faculdade com matrículas abertas para o 2º semestre Modalidades: Presencial, EAD, Sem",
+      "y": 0
+    },
+    {
+      "image": "url(\"https://faculdadephorte.edu.br/wp-content/uploads/2025/05/capa-video-home-phorte.webp\")",
+      "tag": "DIV",
+      "id": "",
+      "classes": "elementor-custom-embed-image-overlay lazyloaded",
+      "text": "",
+      "y": 1775
+    },
+    {
+      "image": "url(\"https://faculdadephorte.edu.br/wp-content/uploads/2025/10/padrao-ph-phorte-768x1310.webp\")",
+      "tag": "DIV",
+      "id": "",
+      "classes": "elementor-element elementor-element-a2fa078 e-con-full elementor-hidden-mobile e-flex e-con e-child",
+      "text": "",
+      "y": 2145
+    }
+  ],
+  "reviewNotes": [
+    "Cabeçalho duplicado observado no desktop.",
+    "Campanhas de 2026 ocultas permanecem no DOM; não reutilizar como oferta vigente.",
+    "Alegação de nota máxima no MEC não verificada.",
+    "História de três décadas precisa distinguir grupo/Editora de Faculdade.",
+    "Formulário depende de ações Elementor não expostas pelo DOM; não foi enviado.",
+    "API da Pós e shortcode phorte_pos_search não atendem automaticamente o catálogo da Graduação.",
+    "Busca do protótipo Next usa rota e filtros próprios; não pressupor compatibilidade com WordPress.",
+    "Repositório do SIG não confirmado.",
+    "MCP get-page-structure do post 7 negou acesso; pesquisa concluída com páginas e REST públicas."
+  ]
+}

@@ -1,0 +1,67 @@
+<!-- Alternativa C: cartão claro e minimalista -->
+<style>
+  .phorte-ef-alt-c, .phorte-ef-alt-c * { box-sizing: border-box; }
+  .phorte-ef-alt-c { --c-red: #b51f2d; --c-ink: #191d23; --c-muted: #646e79; color: #fff; font-family: "Poppins", "Montserrat", Arial, sans-serif; padding: 24px 0; }
+  .phorte-ef-alt-c__layout { align-items: center; display: grid; gap: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
+  .phorte-ef-alt-c__intro { min-width: 0; }
+  .phorte-ef-alt-c__eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; line-height: 1.4; margin: 0 0 15px; text-transform: uppercase; }
+  .phorte-ef-alt-c__eyebrow span { border-bottom: 2px solid currentColor; display: inline-block; padding-bottom: 5px; }
+  .phorte-ef-alt-c__title { font-size: clamp(38px, 5vw, 60px); font-weight: 800; letter-spacing: -.045em; line-height: .98; margin: 0 0 15px; max-width: 10ch; }
+  .phorte-ef-alt-c__lead { font-size: clamp(18px, 1.8vw, 22px); font-weight: 600; line-height: 1.4; margin: 0; max-width: 29ch; }
+  .phorte-ef-alt-c__lead strong { font-weight: 800; }
+  .phorte-ef-alt-c__card { background: #fff; border: 1px solid rgb(255 255 255 / 70%); border-radius: 20px; box-shadow: 0 13px 32px rgb(70 12 20 / 16%); color: var(--c-ink); min-width: 0; padding: 25px; text-align: center; }
+  .phorte-ef-alt-c__kicker { color: var(--c-red); font-size: 12px; font-weight: 700; letter-spacing: .1em; line-height: 1.4; margin: 0 0 9px; text-transform: uppercase; }
+  .phorte-ef-alt-c__night { background: #f8e9eb; border-radius: 999px; color: var(--c-red); display: inline-flex; font-size: 12px; font-weight: 700; line-height: 1.3; margin: 0; padding: 6px 11px; }
+  .phorte-ef-alt-c__promise { color: var(--c-muted); font-size: 16px; line-height: 1.4; margin: 15px 0 8px; }
+  .phorte-ef-alt-c__promise strong { color: var(--c-ink); }
+  .phorte-ef-alt-c__price { align-items: baseline; display: flex; flex-wrap: wrap; gap: 0 5px; justify-content: center; margin: 0 0 17px; white-space: nowrap; }
+  .phorte-ef-alt-c__currency { font-size: 18px; font-weight: 700; }
+  .phorte-ef-alt-c__amount { font-size: clamp(45px, 5.3vw, 60px); font-weight: 800; letter-spacing: -.06em; line-height: 1; }
+  .phorte-ef-alt-c__period { color: var(--c-muted); font-size: 16px; font-weight: 600; }
+  .phorte-ef-alt-c__cta { align-items: center; background: #181b20; border: 2px solid #181b20; border-radius: 7px; color: #fff; display: flex; font-size: 16px; font-weight: 700; justify-content: center; line-height: 1.25; min-height: 52px; padding: 10px 18px; text-align: center; text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease; width: 100%; }
+  .phorte-ef-alt-c__cta:hover { background: var(--c-red); border-color: var(--c-red); }
+  .phorte-ef-alt-c__cta:focus-visible, .phorte-ef-alt-c__terms a:focus-visible { outline: 3px solid #222; outline-offset: 3px; }
+  .phorte-ef-alt-c__terms { color: var(--c-muted); font-size: 12px; line-height: 1.5; margin: 9px 0 19px; }
+  .phorte-ef-alt-c__terms a { color: #941724; font-weight: 600; text-underline-offset: 2px; }
+  .phorte-ef-alt-c__facts { border-top: 1px solid #e4e6e9; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); text-align: left; }
+  .phorte-ef-alt-c__fact { border-bottom: 1px solid #e4e6e9; min-width: 0; padding: 13px 12px 13px 0; }
+  .phorte-ef-alt-c__fact:nth-child(even) { border-left: 1px solid #e4e6e9; padding-left: 14px; padding-right: 0; }
+  .phorte-ef-alt-c__fact-title { color: #68717c; font-size: 12px; font-weight: 700; letter-spacing: .06em; line-height: 1.35; margin: 0 0 5px; text-transform: uppercase; }
+  .phorte-ef-alt-c__fact-copy { color: var(--c-ink); font-size: 15px; font-weight: 600; line-height: 1.4; margin: 0; }
+  .phorte-ef-alt-c__modalities { display: grid; gap: 7px; list-style: none; margin: 0; padding: 0; }
+  .phorte-ef-alt-c__modality strong { color: var(--c-ink); display: block; font-size: 14px; line-height: 1.3; }
+  .phorte-ef-alt-c__modality span { color: var(--c-muted); display: block; font-size: 13px; line-height: 1.35; }
+  @media (max-width: 860px) { .phorte-ef-alt-c { padding: 30px 0; } .phorte-ef-alt-c__layout { grid-template-columns: minmax(0, 1fr); } .phorte-ef-alt-c__intro { max-width: 560px; } .phorte-ef-alt-c__title { font-size: clamp(36px, 7vw, 48px); } .phorte-ef-alt-c__lead { font-size: 19px; } }
+  @media (max-width: 560px) {
+    .phorte-ef-alt-c { padding: 28px 0; } .phorte-ef-alt-c__title { font-size: clamp(34px, 9vw, 42px); } .phorte-ef-alt-c__lead { font-size: 18px; }
+    .phorte-ef-alt-c__card { border-radius: 17px; padding: 21px 16px 16px; } .phorte-ef-alt-c__kicker, .phorte-ef-alt-c__night { font-size: 12px; }
+    .phorte-ef-alt-c__amount { font-size: clamp(40px, 11vw, 48px); } .phorte-ef-alt-c__cta { font-size: 16px; min-height: 52px; } .phorte-ef-alt-c__terms { font-size: 13px; }
+    .phorte-ef-alt-c__facts { grid-template-columns: minmax(0, 1fr); } .phorte-ef-alt-c__fact, .phorte-ef-alt-c__fact:nth-child(even) { border-left: 0; padding: 12px 0; }
+    .phorte-ef-alt-c__fact-title { font-size: 13px; } .phorte-ef-alt-c__fact-copy, .phorte-ef-alt-c__modality strong { font-size: 15px; } .phorte-ef-alt-c__modality span { font-size: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .phorte-ef-alt-c__cta { transition: none; } }
+</style>
+
+<section class="phorte-ef-alt-c" aria-labelledby="phorte-ef-alt-c-title">
+  <div class="phorte-ef-alt-c__layout">
+    <header class="phorte-ef-alt-c__intro">
+      <p class="phorte-ef-alt-c__eyebrow"><span>Graduação em Educação Física</span></p>
+      <h2 class="phorte-ef-alt-c__title" id="phorte-ef-alt-c-title">Oferta exclusiva</h2>
+      <p class="phorte-ef-alt-c__lead">Garanta sua vaga hoje para <strong>Graduação em Educação Física</strong></p>
+    </header>
+    <article class="phorte-ef-alt-c__card" aria-label="Investimento e informações do curso">
+      <p class="phorte-ef-alt-c__kicker">Graduação em Educação Física</p>
+      <p class="phorte-ef-alt-c__night">Período noturno</p>
+      <p class="phorte-ef-alt-c__promise">Para quem quer <strong>transformar seu futuro</strong></p>
+      <p class="phorte-ef-alt-c__price"><span class="phorte-ef-alt-c__currency">R$</span><span class="phorte-ef-alt-c__amount">520,00</span><span class="phorte-ef-alt-c__period">/mês</span></p>
+      <a class="phorte-ef-alt-c__cta" href="#preinscricao">Quero me inscrever</a>
+      <p class="phorte-ef-alt-c__terms">Ao se inscrever, você concorda com nossos <a href="https://faculdadephorte.edu.br/politica-de-privacidade/">Termos e Condições.</a></p>
+      <div class="phorte-ef-alt-c__facts" role="list" aria-label="Informações do curso">
+        <div class="phorte-ef-alt-c__fact" role="listitem"><h3 class="phorte-ef-alt-c__fact-title">Duração</h3><p class="phorte-ef-alt-c__fact-copy">8 semestres (4 anos)</p></div>
+        <div class="phorte-ef-alt-c__fact" role="listitem"><h3 class="phorte-ef-alt-c__fact-title">Certificado</h3><p class="phorte-ef-alt-c__fact-copy">Bacharelado</p></div>
+        <div class="phorte-ef-alt-c__fact" role="listitem"><h3 class="phorte-ef-alt-c__fact-title">Modalidades</h3><ul class="phorte-ef-alt-c__modalities"><li class="phorte-ef-alt-c__modality"><strong>Presencial</strong><span>3 dias na semana</span></li><li class="phorte-ef-alt-c__modality"><strong>Ao Vivo/Online</strong><span>2 dias na semana</span></li></ul></div>
+        <div class="phorte-ef-alt-c__fact" role="listitem"><h3 class="phorte-ef-alt-c__fact-title">Período</h3><p class="phorte-ef-alt-c__fact-copy">Noturno</p></div>
+      </div>
+    </article>
+  </div>
+</section>

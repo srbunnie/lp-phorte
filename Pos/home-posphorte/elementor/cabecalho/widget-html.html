@@ -1,0 +1,181 @@
+<!-- Gerado por scripts/gerar.mjs — Pós Phorte: Cabeçalho. Colar inteiro em um widget HTML do Elementor. -->
+<style>
+/* Base compartilhada pelos widgets do cabeçalho, da home e do rodapé. */
+/* Arial ajustada às medidas da Poppins enquanto ela carrega: o texto não muda de largura na troca (CLS).
+   size-adjust medido no navegador (largura Poppins ÷ Arial); ascent/descent/line-gap = 105/35/10 % da Poppins ÷ size-adjust. */
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial"),local("ArialMT");font-weight:400;size-adjust:112.71%;ascent-override:93.16%;descent-override:31.05%;line-gap-override:8.87%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial"),local("ArialMT");font-weight:500;size-adjust:113.63%;ascent-override:92.41%;descent-override:30.8%;line-gap-override:8.8%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial Bold"),local("Arial-BoldMT");font-weight:600;size-adjust:106.71%;ascent-override:98.4%;descent-override:32.8%;line-gap-override:9.37%}
+@font-face{font-family:PhortePoppinsFallback;src:local("Arial Bold"),local("Arial-BoldMT");font-weight:700;size-adjust:107.27%;ascent-override:97.88%;descent-override:32.63%;line-gap-override:9.32%}
+
+#hp-cabecalho{--hp-primary:#d42b2b;--hp-primary-dark:#a81e1e;--hp-ink:#1a1a1a;--hp-muted:#595959;--hp-background:#fafafa;--hp-soft:#f4f6f9;--hp-border:#dedee3;--hp-radius:12px;--hp-columns:1;font-family:PhorteHomePoppins,Poppins,PhortePoppinsFallback,Arial,sans-serif;font-size:16px;line-height:1.65;font-weight:400;color:var(--hp-ink);background:var(--hp-background);text-align:left;isolation:isolate;-webkit-font-smoothing:antialiased}
+#hp-cabecalho *,#hp-cabecalho *::before,#hp-cabecalho *::after{box-sizing:border-box}
+#hp-cabecalho :where(h1,h2,h3,h4,p,ul,ol,figure,blockquote,form){margin:0;padding:0}
+#hp-cabecalho :where(h1,h2,h3,h4){font-family:inherit;font-style:normal;color:inherit;letter-spacing:normal;text-transform:none;font-weight:600;line-height:1.25}
+#hp-cabecalho{font-synthesis:none}
+#hp-cabecalho :where(ul,ol){list-style:none}
+#hp-cabecalho :where(a){color:inherit;text-decoration:none}
+#hp-cabecalho :where(img){max-width:100%;display:block;height:auto}
+#hp-cabecalho :where(button,input,select,summary){font:inherit;color:inherit;letter-spacing:normal}
+#hp-cabecalho :where(button){cursor:pointer;text-transform:none;border:0;border-radius:0;box-shadow:none;background:none}
+#hp-cabecalho :where(input,select){width:100%;min-width:0;margin:0;box-shadow:none;text-transform:none}
+#hp-cabecalho :where(button,a,input,select,summary,[tabindex]):focus-visible{outline:3px solid #2164c5;outline-offset:4px}
+#hp-cabecalho :is(.hp-highlight>a,.hp-course-card>a,.hp-news-card>a,.hp-video-play):focus-visible{outline-offset:-5px}
+#hp-cabecalho [hidden]{display:none!important}
+#hp-cabecalho .hp-sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+#hp-cabecalho .hp-container{width:min(1200px,calc(100% - 40px));margin-inline:auto}
+#hp-cabecalho svg{width:22px;height:22px;flex-shrink:0}
+#hp-cabecalho [id]{scroll-margin-top:24px}
+#hp-cabecalho .hp-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:52px;padding:14px 24px;border:1px solid var(--hp-primary);border-radius:8px;background:var(--hp-primary);color:#fff;font-size:14px;line-height:1.5;font-weight:600;text-decoration:none;transition:background-color .2s,border-color .2s,transform .2s}
+#hp-cabecalho .hp-button:hover{background:var(--hp-primary-dark);border-color:var(--hp-primary-dark);transform:translateY(-2px)}
+#hp-cabecalho .hp-button--small{min-height:44px;padding:10px 16px;font-size:12px;gap:10px}
+#hp-cabecalho .hp-button--light{background:#fff;border-color:#fff;color:var(--hp-primary-dark)}
+#hp-cabecalho .hp-button--light:hover{background:#f5eeee;border-color:#f5eeee}
+#hp-cabecalho .hp-button--outline{background:transparent;border-color:var(--hp-border);color:var(--hp-ink)}
+#hp-cabecalho .hp-button--outline:hover{border-color:var(--hp-primary);background:#fff;color:var(--hp-primary)}
+#hp-cabecalho .hp-eyebrow{font-size:11px;font-weight:600;letter-spacing:.16em;line-height:1.6;color:var(--hp-primary);text-transform:uppercase;margin-bottom:14px}
+
+@media(max-width:767px){
+  #hp-cabecalho .hp-container{width:calc(100% - 40px)}
+  #hp-cabecalho .hp-eyebrow{font-size:9px;letter-spacing:.12em}
+}
+@media(prefers-reduced-motion:reduce){
+  #hp-cabecalho *,#hp-cabecalho *::before,#hp-cabecalho *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+/* Cabeçalho: publicado como widget próprio. O z-index mantém submenus acima do conteúdo da página. */
+#hp-cabecalho{position:relative;z-index:50}
+/* Contêiner do Elementor com quebra (wrap) mede a altura do widget numa largura menor, onde a linha da marca
+   quebra em duas: sobrava uma faixa vazia de 29 px no celular. Largura definida faz a medida usar a largura real. */
+.elementor-widget:has(#hp-cabecalho){width:100%}
+#hp-cabecalho .hp-skip{position:absolute;top:8px;left:16px;transform:translateY(-180%);background:#fff;color:var(--hp-ink);padding:12px 20px;border:2px solid var(--hp-primary);border-radius:8px;z-index:100}
+#hp-cabecalho .hp-skip:focus{transform:translateY(0)}
+
+/* Navegação: details funciona com teclado mesmo sem JavaScript. */
+#hp-cabecalho .hp-utility{background:#191919;color:#eee;font-size:11px}
+#hp-cabecalho .hp-utility .hp-container{display:flex;align-items:center;gap:24px;min-height:36px}
+#hp-cabecalho .hp-utility p{margin-right:auto;color:#ccc}
+#hp-cabecalho .hp-utility a{display:inline-flex;align-items:center;gap:8px;min-height:36px}
+#hp-cabecalho .hp-utility svg{width:14px;height:14px}
+#hp-cabecalho .hp-utility a:hover{text-decoration:underline}
+#hp-cabecalho .hp-header{position:relative;z-index:30;background:#fff;border-bottom:1px solid #eee}
+#hp-cabecalho .hp-header-row{display:flex;align-items:center;gap:18px;min-height:92px;position:relative}
+#hp-cabecalho .hp-brand{flex-shrink:0;display:block}
+#hp-cabecalho .hp-brand img{width:108px;height:61px;object-fit:contain}
+#hp-cabecalho .hp-brand-divider{height:30px;width:1px;background:var(--hp-border)}
+#hp-cabecalho .hp-brand-label{font-size:10px;line-height:1.8;letter-spacing:.1em;white-space:nowrap}
+#hp-cabecalho .hp-brand-label b{font-size:10px;letter-spacing:0;font-weight:400;color:var(--hp-muted)}
+#hp-cabecalho .hp-navigation{margin-left:auto;display:flex;align-items:center;gap:22px;font-size:12px;font-weight:500}
+#hp-cabecalho .hp-navigation>a:not(.hp-button){padding-block:15px}
+#hp-cabecalho .hp-navigation>a:hover:not(.hp-button),#hp-cabecalho .hp-dropdown summary:hover{color:var(--hp-primary)}
+#hp-cabecalho .hp-dropdown{position:relative}
+#hp-cabecalho .hp-dropdown summary{display:flex;align-items:center;gap:7px;min-height:48px;cursor:pointer;list-style:none}
+#hp-cabecalho .hp-dropdown summary::-webkit-details-marker{display:none}
+#hp-cabecalho .hp-dropdown summary .hp-dropdown-chevron{width:14px;height:14px;display:block;flex:0 0 14px;transition:transform .2s}
+#hp-cabecalho .hp-dropdown[open]>summary .hp-dropdown-chevron{transform:rotate(180deg)}
+#hp-cabecalho .hp-dropdown[open]>summary{color:var(--hp-primary)}
+#hp-cabecalho .hp-dropdown ul{position:absolute;top:100%;left:-15px;background:#fff;min-width:230px;max-width:320px;padding:10px;border:1px solid var(--hp-border);border-radius:10px;box-shadow:0 16px 40px #00000012}
+#hp-cabecalho .hp-dropdown li a{display:block;padding:10px 12px;border-radius:5px;font-size:12px}
+#hp-cabecalho .hp-dropdown li a:hover{background:var(--hp-soft);color:var(--hp-primary)}
+#hp-cabecalho .hp-menu-toggle{margin-left:auto;width:46px;height:46px;border:1px solid var(--hp-border);border-radius:8px;align-items:center;justify-content:center}
+
+@media(max-width:1199px){
+  #hp-cabecalho .hp-navigation{gap:14px;font-size:11px}
+  #hp-cabecalho .hp-header-row{min-height:82px}
+  #hp-cabecalho .hp-navigation.hp-menu-enhanced{display:none}
+  #hp-cabecalho .hp-navigation.hp-menu-enhanced.hp-menu-open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;padding:20px;background:#fff;border:1px solid var(--hp-border);border-radius:0 0 12px 12px;max-height:75vh;overflow:auto}
+  #hp-cabecalho .hp-navigation:not(.hp-menu-enhanced){flex-wrap:wrap;margin-block:12px}
+  #hp-cabecalho .hp-dropdown ul{position:static;min-width:0;max-width:none;box-shadow:none;border:0;background:var(--hp-soft)}
+  #hp-cabecalho .hp-menu-toggle:not([hidden]){display:flex}
+  #hp-cabecalho .hp-navigation .hp-button{align-self:flex-start}
+}
+@media(min-width:1200px){
+  #hp-cabecalho .hp-menu-toggle{display:none}
+}
+@media(max-width:767px){
+  #hp-cabecalho .hp-utility .hp-container{justify-content:space-between;gap:10px}
+  #hp-cabecalho .hp-utility p{display:none}
+  #hp-cabecalho .hp-utility a{font-size:10px}
+  #hp-cabecalho .hp-header-row{gap:12px;flex-wrap:wrap}
+  #hp-cabecalho .hp-brand img{width:94px;height:53px}
+  #hp-cabecalho .hp-brand-label,#hp-cabecalho .hp-brand-label b{font-size:8px}
+  #hp-cabecalho .hp-brand-divider{height:27px}
+  #hp-cabecalho .hp-navigation:not(.hp-menu-enhanced){width:100%;margin:0;gap:12px}
+}
+
+</style>
+<div id="hp-cabecalho" lang="pt-BR">
+<a class="hp-skip" href="#hp-main">Pular para o conteúdo</a>
+<div class="hp-utility"><div class="hp-container"><p>Conhecimento que acompanha o seu próximo passo.</p><a href="tel:+551122221222">(11)&nbsp;2222&#8209;1222</a><a href="https://sis.posphorte.com.br/login">Área do Aluno <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div></div>
+<header class="hp-header"><div class="hp-container hp-header-row"><a class="hp-brand" href="https://posphorte.com.br/" aria-label="Faculdade Phorte — início"><img src="https://posphorte.com.br/wp-content/uploads/2026/10/logo-phorte.webp" width="300" height="132" alt="Faculdade Phorte" class="" decoding="async" fetchpriority="high"></a><span class="hp-brand-divider" aria-hidden="true"></span><span class="hp-brand-label">PÓS-GRADUAÇÃO<br><b>Especializações e MBA</b></span>
+<button class="hp-menu-toggle" type="button" aria-expanded="false" aria-controls="hp-navigation" hidden><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="hp-sr-only">Abrir menu</span></button>
+<nav id="hp-navigation" class="hp-navigation" aria-label="Navegação principal"><details class="hp-dropdown"><summary>Pós-graduação<svg class="hp-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><ul><li><a class="" href="https://posphorte.com.br/pos/">Todas as pós</a></li><li><a class="" href="https://posphorte.com.br/pos/ead-online-areas/">EAD</a></li><li><a class="" href="https://posphorte.com.br/pos/presencial-areas/">Presencial</a></li><li><a class="" href="https://posphorte.com.br/pos/ao-vivo-online-areas/">Online/Ao Vivo</a></li><li><a class="" href="https://posphorte.com.br/pos/semipresencial-areas/">Presencial Híbrido</a></li></ul></details><a class="" href="https://faculdadephorte.edu.br/">Graduação</a><details class="hp-dropdown"><summary>Cursos Phorte<svg class="hp-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><ul><li><a class="" href="https://faculdadephorte.edu.br/cursos-phorte/">Cursos Livres</a></li><li><a class="" href="https://posphorte.com.br/cursos-gratuitos/">Cursos Gratuitos</a></li><li><a class="" href="https://posphorte.com.br/capacita_empreendedor/">Capacita Empreendedor</a></li></ul></details><details class="hp-dropdown"><summary>Eventos<svg class="hp-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><ul><li><a class="" href="https://futebolefutsal.com.br/">Encontro Nacional de Futebol e Futsal</a></li><li><a class="" href="https://encontropikler.com.br/">Encontro Internacional Pikler</a></li><li><a class="" href="https://meetingdecorrida.com.br/">Meeting de Corrida de Rua</a></li><li><a class="" href="https://faculdadephorte.edu.br/cursos/cursos-livres/tradushow/">TRADUSHOW</a></li></ul></details><details class="hp-dropdown"><summary>Portal<svg class="hp-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary><ul><li><a class="" href="https://sis.posphorte.com.br/login">Portal do Aluno/Professor</a></li><li><a class="" href="https://inscricao.posphorte.com.br/minha-conta/login?">Portal do Candidato</a></li></ul></details><a class="hp-button hp-button--small" href="https://posphorte.com.br/pos/">Encontre sua pós<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></nav></div></header>
+</div><!-- fim-hp-cabecalho -->
+<script>
+/* Cabeçalho Pós Phorte: menu recolhível e submenus. Nenhum dado é enviado para serviços externos. */
+(() => {
+  'use strict';
+  function initialize(root) {
+    if (root.dataset.hpInitialized) return;
+    root.dataset.hpInitialized = 'true';
+    const menu = root.querySelector('#hp-navigation');
+    const toggle = root.querySelector('.hp-menu-toggle');
+    const narrow = window.matchMedia('(max-width: 1199px)');
+    // O cabeçalho é publicado em várias páginas; sem #hp-main, o atalho usa o elemento main do tema.
+    root.querySelector('.hp-skip').addEventListener('click', event => {
+      if (document.getElementById('hp-main')) return;
+      const target = document.querySelector('main, [role="main"], #content');
+      if (!target) return;
+      event.preventDefault();
+      if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+      target.focus();
+      target.scrollIntoView();
+    });
+    const dropdowns = [...menu.querySelectorAll('details')];
+    menu.classList.add('hp-menu-enhanced');
+    toggle.hidden = false;
+    function closeMenu(returnFocus = false) {
+      menu.classList.remove('hp-menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.querySelector('span').textContent = 'Abrir menu';
+      dropdowns.forEach(d => { d.open = false; });
+      if (returnFocus) toggle.focus();
+    }
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      menu.classList.toggle('hp-menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.querySelector('span').textContent = open ? 'Fechar menu' : 'Abrir menu';
+    });
+    dropdowns.forEach(d => {
+      d.addEventListener('toggle', () => {
+        if (d.open) dropdowns.forEach(other => { if (other !== d) other.open = false; });
+      });
+      d.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && d.open) {
+          event.stopPropagation();
+          d.open = false;
+          d.querySelector('summary').focus();
+        }
+      });
+    });
+    root.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && narrow.matches && menu.classList.contains('hp-menu-open')) closeMenu(true);
+    });
+    document.addEventListener('click', event => {
+      if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+        dropdowns.forEach(d => { d.open = false; });
+        if (narrow.matches) closeMenu();
+      }
+    });
+    menu.addEventListener('click', event => {
+      if (event.target.closest('a') && narrow.matches) closeMenu();
+    });
+    narrow.addEventListener('change', () => closeMenu());
+  }
+  const start = () => document.querySelectorAll('#hp-cabecalho').forEach(initialize);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();
+
+</script>

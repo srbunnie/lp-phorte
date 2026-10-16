@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" preserveAspectRatio="none">
+  <defs>
+    <path id="paper" d="M10 68 43 35 101 40 145 30 171 38 230 29 284 37 320 27 362 31 408 26 460 34 503 17 552 22 592 12 635 25 669 6 706 17 752 36 793 29 838 36 875 27 908 37 943 30 981 39 1030 31 1071 41 1115 34 1160 41 1182 34 1192 61 1180 86 1186 120 1173 145 1180 175 1149 215 1109 228 1064 217 1031 224 983 217 946 223 907 213 863 225 823 218 786 229 753 217 717 223 684 215 670 242 644 252 621 239 596 250 580 226 552 215 523 226 490 220 462 230 426 218 391 224 352 214 320 230 287 221 249 227 217 217 181 224 143 215 118 224 98 214 61 218 39 202 19 188 16 156 7 126 15 99Z"/>
+    <clipPath id="clip"><use href="#paper"/></clipPath>
+    <filter id="fibers" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".18 .35" numOctaves="2" seed="11" result="edge"/>
+      <feDisplacementMap in="SourceGraphic" in2="edge" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="ripped"/>
+      <feTurbulence type="fractalNoise" baseFrequency=".48 .68" numOctaves="3" seed="27" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="grain">
+        <feFuncR type="linear" slope=".12" intercept=".88"/>
+        <feFuncG type="linear" slope=".12" intercept=".88"/>
+        <feFuncB type="linear" slope=".12" intercept=".88"/>
+      </feComponentTransfer>
+      <feComposite in="grain" in2="ripped" operator="in" result="clipped"/>
+      <feBlend in="ripped" in2="clipped" mode="multiply"/>
+    </filter>
+    <linearGradient id="crease" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FAFAFA" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#C8C8C8" stop-opacity=".5"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#FAFAFA" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clip)" filter="url(#fibers)">
+    <use href="#paper" fill="#FAFAFA"/>
+    <g fill="url(#crease)">
+      <path d="m80 12 23 0 31 238-34 0Z"/>
+      <path d="m246 0 26 0-35 260-30 0Z" opacity=".55"/>
+      <path d="m409 0 24 0 23 260-33 0Z" opacity=".7"/>
+      <path d="m620 0 36 0-24 260-35 0Z"/>
+      <path d="m809 0 32 0 34 260-47 0Z" opacity=".8"/>
+      <path d="m1024 0 25 0-28 260-26 0Z" opacity=".7"/>
+    </g>
+    <path d="M22 80 80 41 145 37M598 23 653 17 676 13M1145 211 1170 177 1170 132" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/>
+    <path d="m44 201 29 10 53-2m176 8 40 4 27-10m579 11 44-5 37 8" fill="none" stroke="#CFCFCF" stroke-width="2" opacity=".65"/>
+  </g>
+</svg>

@@ -1,0 +1,762 @@
+{
+  "url": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts?per_page=3&_embed=wp:featuredmedia&_fields=id,date,link,title,excerpt,featured_media,_links,_embedded",
+  "status": 200,
+  "capturedAt": "2026-10-16T14:03:37.994Z",
+  "data": [
+    {
+      "id": 59949,
+      "date": "2026-10-15T16:06:03",
+      "link": "https://faculdadephorte.edu.br/dia-do-professor-o-papel-dos-educadores-na-construcao-de-novas-trajetorias/",
+      "title": {
+        "rendered": "Dia do Professor: o papel dos educadores na construção de novas trajetórias"
+      },
+      "excerpt": {
+        "rendered": "<p>Você se lembra de algum professor que mudou sua maneira de enxergar o futuro? Talvez tenha sido quem despertou seu interesse por uma profissão, reconheceu uma habilidade que você ainda não conhecia ou ajudou a transformar uma dificuldade em uma conquista. Celebrado em 15 de outubro no Brasil, o Dia do Professor é uma oportunidade [&hellip;]</p>\n",
+        "protected": false
+      },
+      "featured_media": 59961,
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59949",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/174"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59949"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 10,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59949/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 59962,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59949/revisions/59962"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59961"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=59949"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/categories?post=59949"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/tags?post=59949"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "_embedded": {
+        "wp:featuredmedia": [
+          {
+            "id": 59961,
+            "date": "2026-10-15T16:04:55",
+            "slug": "dia-do-professor_-novas-trajetorias",
+            "type": "attachment",
+            "link": "https://faculdadephorte.edu.br/dia-do-professor-o-papel-dos-educadores-na-construcao-de-novas-trajetorias/dia-do-professor_-novas-trajetorias/",
+            "title": {
+              "rendered": "Dia do Professor: o papel dos educadores na construção de novas trajetórias"
+            },
+            "author": 174,
+            "featured_media": 0,
+            "smush": "Não processado",
+            "caption": {
+              "rendered": "<p>Dia do Professor: o papel dos educadores na construção de novas trajetórias</p>\n"
+            },
+            "alt_text": "",
+            "media_type": "image",
+            "mime_type": "image/png",
+            "media_details": {
+              "width": 1774,
+              "height": 887,
+              "file": "2026/10/Dia-do-Professor_-Novas-Trajetorias.png",
+              "filesize": 1817437,
+              "sizes": {
+                "medium": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-300x150.png",
+                  "width": 300,
+                  "height": 150,
+                  "filesize": 70035,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-300x150.png"
+                },
+                "large": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-1024x512.png",
+                  "width": 1024,
+                  "height": 512,
+                  "filesize": 596648,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-1024x512.png"
+                },
+                "thumbnail": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-150x150.png",
+                  "width": 150,
+                  "height": 150,
+                  "filesize": 36409,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-150x150.png"
+                },
+                "medium_large": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-768x384.png",
+                  "width": 768,
+                  "height": 384,
+                  "filesize": 362983,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-768x384.png"
+                },
+                "1536x1536": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-1536x768.png",
+                  "width": 1536,
+                  "height": 768,
+                  "filesize": 1201095,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-1536x768.png"
+                },
+                "woocommerce_thumbnail": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-300x225.png",
+                  "width": 300,
+                  "height": 225,
+                  "filesize": 97033,
+                  "uncropped": false,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-300x225.png"
+                },
+                "woocommerce_single": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-600x300.png",
+                  "width": 600,
+                  "height": 300,
+                  "filesize": 236923,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-600x300.png"
+                },
+                "woocommerce_gallery_thumbnail": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias-100x100.png",
+                  "width": 100,
+                  "height": 100,
+                  "filesize": 17528,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias-100x100.png"
+                },
+                "full": {
+                  "file": "Dia-do-Professor_-Novas-Trajetorias.png",
+                  "width": 1774,
+                  "height": 887,
+                  "mime_type": "image/png",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias.png"
+                }
+              },
+              "image_meta": {
+                "aperture": "0",
+                "credit": "",
+                "camera": "",
+                "caption": "",
+                "created_timestamp": "0",
+                "copyright": "",
+                "focal_length": "0",
+                "iso": "0",
+                "shutter_speed": "0",
+                "title": "",
+                "orientation": "0",
+                "keywords": [],
+                "alt": ""
+              }
+            },
+            "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/Dia-do-Professor_-Novas-Trajetorias.png",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59961",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/attachment"
+                }
+              ],
+              "author": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/174"
+                }
+              ],
+              "replies": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59961"
+                }
+              ],
+              "wp:attached-to": [
+                {
+                  "embeddable": true,
+                  "post_type": "post",
+                  "id": 59949,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59949"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 59899,
+      "date": "2026-10-09T10:47:50",
+      "link": "https://faculdadephorte.edu.br/faculdade-phorte-matriculas-abertas-2027-1/",
+      "title": {
+        "rendered": "Matrículas abertas para 2027.1: comece sua graduação na Faculdade Phorte"
+      },
+      "excerpt": {
+        "rendered": "<p>O planejamento para começar uma graduação em 2027 já pode sair do papel. A Faculdade Phorte está com matrículas abertas para o primeiro semestre de 2027, com opções de cursos para diferentes áreas profissionais. Antecipar essa decisão permite pesquisar a formação com mais atenção, conhecer a proposta do curso e organizar os próximos passos antes [&hellip;]</p>\n",
+        "protected": false
+      },
+      "featured_media": 59901,
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59899",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/413"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59899"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 1,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59899/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 59900,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59899/revisions/59900"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59901"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=59899"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/categories?post=59899"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/tags?post=59899"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "_embedded": {
+        "wp:featuredmedia": [
+          {
+            "id": 59901,
+            "date": "2026-10-09T11:38:28",
+            "slug": "capa-de-blog-outubro-09-do-10",
+            "type": "attachment",
+            "link": "https://faculdadephorte.edu.br/faculdade-phorte-matriculas-abertas-2027-1/capa-de-blog-outubro-09-do-10/",
+            "title": {
+              "rendered": "CAPA DE BLOG OUTUBRO 09 do 10"
+            },
+            "author": 413,
+            "featured_media": 0,
+            "smush": "Não processado",
+            "caption": {
+              "rendered": "<p>Matrículas abertas para 2027.1: comece sua graduação na Faculdade Phorte</p>\n"
+            },
+            "alt_text": "Matrículas abertas para 2027.1: comece sua graduação na Faculdade Phorte",
+            "media_type": "image",
+            "mime_type": "image/jpeg",
+            "media_details": {
+              "width": 1536,
+              "height": 804,
+              "file": "2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg",
+              "filesize": 718912,
+              "sizes": {
+                "medium": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--300x157.jpg",
+                  "width": 300,
+                  "height": 157,
+                  "filesize": 31407,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--300x157.jpg"
+                },
+                "large": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--1024x536.jpg",
+                  "width": 1024,
+                  "height": 536,
+                  "filesize": 127155,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--1024x536.jpg"
+                },
+                "thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--150x150.jpg",
+                  "width": 150,
+                  "height": 150,
+                  "filesize": 23263,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--150x150.jpg"
+                },
+                "medium_large": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--768x402.jpg",
+                  "width": 768,
+                  "height": 402,
+                  "filesize": 87371,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--768x402.jpg"
+                },
+                "woocommerce_thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--300x225.jpg",
+                  "width": 300,
+                  "height": 225,
+                  "filesize": 35933,
+                  "uncropped": false,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--300x225.jpg"
+                },
+                "woocommerce_single": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--600x314.jpg",
+                  "width": 600,
+                  "height": 314,
+                  "filesize": 64049,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--600x314.jpg"
+                },
+                "woocommerce_gallery_thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10--100x100.jpg",
+                  "width": 100,
+                  "height": 100,
+                  "filesize": 19175,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10--100x100.jpg"
+                },
+                "full": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg",
+                  "width": 1536,
+                  "height": 804,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg"
+                }
+              },
+              "image_meta": {
+                "aperture": "0",
+                "credit": "",
+                "camera": "",
+                "caption": "",
+                "created_timestamp": "0",
+                "copyright": "",
+                "focal_length": "0",
+                "iso": "0",
+                "shutter_speed": "0",
+                "title": "",
+                "orientation": "1",
+                "keywords": [],
+                "alt": ""
+              }
+            },
+            "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-09-do-10-.jpg",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59901",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/attachment"
+                }
+              ],
+              "author": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/413"
+                }
+              ],
+              "replies": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59901"
+                }
+              ],
+              "wp:attached-to": [
+                {
+                  "embeddable": true,
+                  "post_type": "post",
+                  "id": 59899,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59899"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 59813,
+      "date": "2026-10-07T10:00:00",
+      "link": "https://faculdadephorte.edu.br/o-que-estudar-para-o-enem-2026-veja-como-organizar-a-reta-final-em-outubro/",
+      "title": {
+        "rendered": "O que estudar para o Enem 2026? Veja como organizar a reta final em outubro"
+      },
+      "excerpt": {
+        "rendered": "<p>Com a chegada de outubro, quem vai participar do Enem 2026 entra nas últimas semanas de preparação para a prova. Neste momento, mais do que tentar aprender novos conteúdos, o ideal é organizar a revisão, identificar dificuldades e treinar a resolução de questões. As provas serão realizadas nos dias 8 e 15 de novembro de [&hellip;]</p>\n",
+        "protected": false
+      },
+      "featured_media": 59814,
+      "_links": {
+        "self": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59813",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/post"
+          }
+        ],
+        "author": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/413"
+          }
+        ],
+        "replies": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59813"
+          }
+        ],
+        "version-history": [
+          {
+            "count": 1,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59813/revisions"
+          }
+        ],
+        "predecessor-version": [
+          {
+            "id": 59815,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59813/revisions/59815"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59814"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media?parent=59813"
+          }
+        ],
+        "wp:term": [
+          {
+            "taxonomy": "category",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/categories?post=59813"
+          },
+          {
+            "taxonomy": "post_tag",
+            "embeddable": true,
+            "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/tags?post=59813"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "_embedded": {
+        "wp:featuredmedia": [
+          {
+            "id": 59814,
+            "date": "2026-10-06T11:29:05",
+            "slug": "capa-de-blog-outubro-07-do-10",
+            "type": "attachment",
+            "link": "https://faculdadephorte.edu.br/o-que-estudar-para-o-enem-2026-veja-como-organizar-a-reta-final-em-outubro/capa-de-blog-outubro-07-do-10/",
+            "title": {
+              "rendered": "CAPA DE BLOG OUTUBRO 07 do 10"
+            },
+            "author": 413,
+            "featured_media": 0,
+            "smush": "Não processado",
+            "caption": {
+              "rendered": "<p>O que estudar para o Enem 2026? Veja como organizar a reta final em outubro</p>\n"
+            },
+            "alt_text": "O que estudar para o Enem 2026? Veja como organizar a reta final em outubro",
+            "media_type": "image",
+            "mime_type": "image/jpeg",
+            "media_details": {
+              "width": 1536,
+              "height": 804,
+              "file": "2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg",
+              "filesize": 833484,
+              "sizes": {
+                "medium": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-300x157.jpg",
+                  "width": 300,
+                  "height": 157,
+                  "filesize": 31688,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-300x157.jpg"
+                },
+                "large": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-1024x536.jpg",
+                  "width": 1024,
+                  "height": 536,
+                  "filesize": 131502,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-1024x536.jpg"
+                },
+                "thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-150x150.jpg",
+                  "width": 150,
+                  "height": 150,
+                  "filesize": 23169,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-150x150.jpg"
+                },
+                "medium_large": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-768x402.jpg",
+                  "width": 768,
+                  "height": 402,
+                  "filesize": 89197,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-768x402.jpg"
+                },
+                "woocommerce_thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-300x225.jpg",
+                  "width": 300,
+                  "height": 225,
+                  "filesize": 36731,
+                  "uncropped": false,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-300x225.jpg"
+                },
+                "woocommerce_single": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-600x314.jpg",
+                  "width": 600,
+                  "height": 314,
+                  "filesize": 65857,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-600x314.jpg"
+                },
+                "woocommerce_gallery_thumbnail": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10-100x100.jpg",
+                  "width": 100,
+                  "height": 100,
+                  "filesize": 19264,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10-100x100.jpg"
+                },
+                "full": {
+                  "file": "CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg",
+                  "width": 1536,
+                  "height": 804,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg"
+                }
+              },
+              "image_meta": {
+                "aperture": "0",
+                "credit": "",
+                "camera": "",
+                "caption": "",
+                "created_timestamp": "0",
+                "copyright": "",
+                "focal_length": "0",
+                "iso": "0",
+                "shutter_speed": "0",
+                "title": "",
+                "orientation": "1",
+                "keywords": [],
+                "alt": ""
+              }
+            },
+            "source_url": "https://faculdadephorte.edu.br/wp-content/uploads/2026/10/CAPA-DE-BLOG-OUTUBRO-07-do-10.jpg",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media/59814",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/media"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/types/attachment"
+                }
+              ],
+              "author": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/users/413"
+                }
+              ],
+              "replies": [
+                {
+                  "embeddable": true,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/comments?post=59814"
+                }
+              ],
+              "wp:attached-to": [
+                {
+                  "embeddable": true,
+                  "post_type": "post",
+                  "id": 59813,
+                  "href": "https://faculdadephorte.edu.br/wp-json/wp/v2/posts/59813"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "source": "https://posphorte.com.br/",
+  "capturedOn": "2026-10-15",
+  "hero": {
+    "image": "https://posphorte.com.br/wp-content/uploads/2024/08/capa-banner-phorte-v2-sem-fundo.webp",
+    "asset": {
+      "source": "https://posphorte.com.br/wp-content/uploads/2024/08/capa-banner-phorte-v2-sem-fundo.webp",
+      "path": "assets/images/hero-pos-phorte.webp",
+      "width": 480,
+      "height": 480
+    },
+    "coursesSlide": {
+      "eyebrow": "CONHECIMENTO PARA COLOCAR EM PRÁTICA",
+      "title": "Conheça nossos cursos de pós-graduação",
+      "description": "Formações desenvolvidas para conectar o que você aprende aos desafios do trabalho, com aplicação das habilidades e competências adquiridas."
+    },
+    "teachersDay": {
+      "desktop": {
+        "source": "Graduacao/header graduacao/x-house-leandro-julio-duarte-setembro/outputs/header-phorte-2027-elementor-wordpress/assets/dia-do-professor-2026-phorte.webp",
+        "path": "assets/images/dia-do-professor-2026-phorte.webp",
+        "width": 1825,
+        "height": 862
+      },
+      "mobile": {
+        "source": "Graduacao/header graduacao/x-house-leandro-julio-duarte-setembro/outputs/header-phorte-2027-elementor-wordpress/assets/dia-do-professor-2026-phorte-mobile.webp",
+        "path": "assets/images/dia-do-professor-2026-phorte-mobile.webp",
+        "width": 1086,
+        "height": 1448
+      },
+      "alt": "Dia dos Professores, 15 de outubro. Professora com livros e mensagem de respeito e gratidão a todos os professores. A arte traz a frase atribuída a Nelson Mandela: A educação é a arma mais poderosa que você pode usar para mudar o mundo."
+    }
+  },
+  "highlights": [
+    {
+      "title": "Pós em Medicina Esportiva",
+      "url": "https://posphorte.com.br/pos-graduacao/medicina-esportiva/",
+      "description": "Medicina Esportiva: aprimore seu conhecimento e potencialize a performance dos atletas!",
+      "image": "https://posphorte.com.br/wp-content/uploads/2025/01/medicina-esporte-final-3.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2025/01/medicina-esporte-final-3.webp",
+        "path": "assets/images/destaque-1.webp",
+        "width": 1000,
+        "height": 1228
+      }
+    },
+    {
+      "title": "Pós em Educação Infantil numa Perspectiva Pikleriana",
+      "url": "https://posphorte.com.br/pos-graduacao/educacao-infantil-numa-perspectiva-pikleriana/",
+      "description": "Educação Infantil com autonomia e respeito: descubra a abordagem Pikleriana!",
+      "image": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-infantil-final-preto.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-infantil-final-preto.webp",
+        "path": "assets/images/destaque-2.webp",
+        "width": 1000,
+        "height": 1228
+      }
+    },
+    {
+      "title": "Pós em Educação de 0 a 3 anos",
+      "url": "https://posphorte.com.br/pos-graduacao/educacao-de-0-a-3-anos-a-especificidade-do-trabalho-na-primeirissima-infancia/",
+      "description": "Educação de 0 a 3 anos: os primeiros passos para um desenvolvimento infantil de qualidade!",
+      "image": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-final-4.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-final-4.webp",
+        "path": "assets/images/destaque-3.webp",
+        "width": 1000,
+        "height": 1228
+      }
+    },
+    {
+      "title": "MBA em Visagismo",
+      "url": "https://posphorte.com.br/pos-graduacao/mba-em-visagismo-comportamento-humano-negocios-e-imagem/",
+      "description": "Comportamento Humano, Negócios e Imagem"
+    },
+    {
+      "title": "Pós em Ensino de Português como Língua Estrangeira",
+      "url": "https://posphorte.com.br/pos-graduacao/ensino-de-portugues-como-lingua-estrangeira/",
+      "description": "Ensine português para o mundo e amplie suas oportunidades globais!",
+      "image": "https://posphorte.com.br/wp-content/uploads/2025/01/professora-ingles.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2025/01/professora-ingles.webp",
+        "path": "assets/images/destaque-5.webp",
+        "width": 1000,
+        "height": 1228
+      }
+    },
+    {
+      "title": "Pós em Educação Física",
+      "url": "https://posphorte.com.br/pos-em-educacao-fisica-phorte/",
+      "description": "Educação Física: transforme paixão por movimento em carreira de sucesso!",
+      "image": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-fisica-final.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2025/01/educacao-fisica-final.webp",
+        "path": "assets/images/destaque-6.webp",
+        "width": 1000,
+        "height": 1228
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "educacao-fisica",
+      "title": "Pós em Educação Física",
+      "area": "Educação Física",
+      "items": [
+        {
+          "title": "Fisiologia do Exercício e Prescrição de Treinamento",
+          "url": "https://posphorte.com.br/pos-graduacao/fisiologia-do-exercicio-e-prescricao-de-treinamento-2/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/FISIOLOGIA-TESTE-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/FISIOLOGIA-TESTE-390x379.webp",
+            "path": "assets/images/educacao-fisica-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Psicomotricidade, Educação e Desenvolvimento Infantil",
+          "url": "https://posphorte.com.br/pos-graduacao/educacao-psicomotora/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/12/modulo-III-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/12/modulo-III-390x379.webp",
+            "path": "assets/images/educacao-fisica-2.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Natação e Atividades Aquáticas",
+          "url": "https://posphorte.com.br/pos-graduacao/natacao-e-atividades-aquaticas/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/10/Natacao-e-Atividades-Aquaticas-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Natacao-e-Atividades-Aquaticas-390x379.webp",
+            "path": "assets/images/educacao-fisica-3.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Dança: Arte, Esporte, Educação",
+          "url": "https://posphorte.com.br/pos-graduacao/danca-arte-esporte-educacao/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/10/Danca_Arte_Esporte_Educacao-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Danca_Arte_Esporte_Educacao-390x379.webp",
+            "path": "assets/images/educacao-fisica-4.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Gestão e Prática do Desporto Paralímpico",
+          "url": "https://posphorte.com.br/pos-graduacao/gestao-e-pratica-do-desporto-paralimpico/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/10/Gestao-e-Pratica-do-Desporto-Paralimpico-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Gestao-e-Pratica-do-Desporto-Paralimpico-390x379.webp",
+            "path": "assets/images/educacao-fisica-5.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Yoga",
+          "url": "https://posphorte.com.br/pos-graduacao/yoga/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/YOGA-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/YOGA-390x379.webp",
+            "path": "assets/images/educacao-fisica-6.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Musculação e Condicionamento Físico",
+          "url": "https://posphorte.com.br/pos-graduacao/musculacao-e-condicionamento-fisico/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-MUSCULACAO-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-MUSCULACAO-390x379.webp",
+            "path": "assets/images/educacao-fisica-7.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Método Pilates: Prescrição do Exercício Físico e Saúde",
+          "url": "https://posphorte.com.br/pos-graduacao/metodo-pilates-prescricao-do-exercicio-fisico-e-saude/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/Design_sem_nome_49-1-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/Design_sem_nome_49-1-390x379.webp",
+            "path": "assets/images/educacao-fisica-8.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Medicina do Esporte para Profissionais da Área da Saúde",
+          "url": "https://posphorte.com.br/pos-graduacao/medicina-do-esporte-para-profissionais-da-area-da-saude/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/medicina-do-esporte-2-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/medicina-do-esporte-2-390x379.webp",
+            "path": "assets/images/educacao-fisica-9.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Lesões e Doenças Musculoesqueléticas: Prevenção e Condicionamento Físico",
+          "url": "https://posphorte.com.br/pos-graduacao/lesoes-e-doencas-musculoesqueleticas-prevencao-e-condicionamento-fisico/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-LESOES-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/TESTE-LESOES-390x379.webp",
+            "path": "assets/images/educacao-fisica-10.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Fisiologia do Exercício e Prescrição de Treinamento",
+          "url": "https://posphorte.com.br/pos-graduacao/fisiologia-do-exercicio-e-prescricao-de-treinamento/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/FISIOLOGIA-TESTE-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/FISIOLOGIA-TESTE-390x379.webp",
+            "path": "assets/images/educacao-fisica-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Biomecânica e Avaliação Física para a Prescrição do Treinamento",
+          "url": "https://posphorte.com.br/pos-graduacao/biomecanica-avaliacao-fisica-e-prescricao-de-exercicios/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/BIOMECANICA-TESTE-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/BIOMECANICA-TESTE-390x379.webp",
+            "path": "assets/images/educacao-fisica-12.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Educação Física Escolar",
+          "url": "https://posphorte.com.br/pos-graduacao/educacao-fisica-escolar/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/EDUCACAO-FISICA-TESTE-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/EDUCACAO-FISICA-TESTE-390x379.webp",
+            "path": "assets/images/educacao-fisica-13.webp",
+            "width": 390,
+            "height": 379
+          }
+        }
+      ]
+    },
+    {
+      "id": "traducao",
+      "title": "Pós em Tradução",
+      "area": "Tradução",
+      "items": [
+        {
+          "title": "Pós-graduação em Tradução Técnica do Inglês",
+          "url": "https://posphorte.com.br/pos-graduacao/pos-graduacao-em-traducao-tecnica-de-ingles/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+            "path": "assets/images/traducao-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Pós-graduação em Tradução Literária do Inglês",
+          "url": "https://posphorte.com.br/pos-graduacao/traducao-literaria-do-ingles/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+            "path": "assets/images/traducao-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Interpretação de Espanhol",
+          "url": "https://posphorte.com.br/pos-graduacao/interpretacao-de-espanhol/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/02/Interp-Espanhol-1-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/02/Interp-Espanhol-1-390x379.webp",
+            "path": "assets/images/traducao-3.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Ensino de Língua Inglesa para a Educação Infantil",
+          "url": "https://posphorte.com.br/pos-graduacao/ensino-de-lingua-inglesa-para-a-educacao-infantil/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/ENSINO-DE-LINGUA-INGLESA-NA-EDUCACAO-INFANTIL-1-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/ENSINO-DE-LINGUA-INGLESA-NA-EDUCACAO-INFANTIL-1-390x379.webp",
+            "path": "assets/images/traducao-4.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Tradução Audiovisual de Inglês",
+          "url": "https://posphorte.com.br/pos-graduacao/traducao-audiovisual-de-ingles/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Traducao-Audiovisual-de-Ingles-390x379.webp",
+            "path": "assets/images/traducao-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Língua Espanhola e Suas Literaturas",
+          "url": "https://posphorte.com.br/pos-graduacao/lingua-espanhola-e-suas-literaturas/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/Lingua-Espanhola-e-Suas-Literaturas-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Lingua-Espanhola-e-Suas-Literaturas-390x379.webp",
+            "path": "assets/images/traducao-6.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Língua Inglesa e Suas Literaturas",
+          "url": "https://posphorte.com.br/pos-graduacao/lingua-inglesa-e-suas-literaturas/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/06/lingua-390x379.jpg",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/06/lingua-390x379.jpg",
+            "path": "assets/images/traducao-7.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Docência e Gestão na Educação a Distância",
+          "url": "https://posphorte.com.br/pos-graduacao/docencia-e-gestao-na-educacao-a-distancia/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-e-Gestao-na-Educacao-a-Distancia-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-e-Gestao-na-Educacao-a-Distancia-390x379.webp",
+            "path": "assets/images/traducao-8.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Docência do Ensino Superior",
+          "url": "https://posphorte.com.br/pos-graduacao/docencia-do-ensino-superior/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-do-Ensino-Superior-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2023/05/Docencia-do-Ensino-Superior-390x379.webp",
+            "path": "assets/images/traducao-9.webp",
+            "width": 390,
+            "height": 379
+          }
+        }
+      ]
+    },
+    {
+      "id": "saude",
+      "title": "Pós em Saúde",
+      "area": "Saúde",
+      "items": [
+        {
+          "title": "Neurociências Aplicadas à Educação Presencial",
+          "url": "https://posphorte.com.br/pos-graduacao/neurociencias-aplicadas-a-educacao-2/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-e-educacao-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-e-educacao-390x379.webp",
+            "path": "assets/images/saude-1.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Neurociência na Primeira Infância Presencial",
+          "url": "https://posphorte.com.br/pos-graduacao/neurociencia-na-primeira-infancia-2/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-na-Primeira-Infancia-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/12/Neurociencia-na-Primeira-Infancia-390x379.webp",
+            "path": "assets/images/saude-2.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Gestão e Prática do Desporto Paralímpico",
+          "url": "https://posphorte.com.br/pos-graduacao/gestao-e-pratica-do-desporto-paralimpico/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/10/Gestao-e-Pratica-do-Desporto-Paralimpico-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/10/Gestao-e-Pratica-do-Desporto-Paralimpico-390x379.webp",
+            "path": "assets/images/educacao-fisica-5.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Yoga",
+          "url": "https://posphorte.com.br/pos-graduacao/yoga/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/YOGA-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/YOGA-390x379.webp",
+            "path": "assets/images/educacao-fisica-6.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Método Pilates: Prescrição do Exercício Físico e Saúde",
+          "url": "https://posphorte.com.br/pos-graduacao/metodo-pilates-prescricao-do-exercicio-fisico-e-saude/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2024/07/Design_sem_nome_49-1-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2024/07/Design_sem_nome_49-1-390x379.webp",
+            "path": "assets/images/educacao-fisica-8.webp",
+            "width": 390,
+            "height": 379
+          }
+        },
+        {
+          "title": "Suicidologia",
+          "url": "https://posphorte.com.br/pos-graduacao/suicidologia/",
+          "image": "https://posphorte.com.br/wp-content/uploads/2022/08/Lotus_1-390x379.webp",
+          "asset": {
+            "source": "https://posphorte.com.br/wp-content/uploads/2022/08/Lotus_1-390x379.webp",
+            "path": "assets/images/saude-6.webp",
+            "width": 390,
+            "height": 379
+          }
+        }
+      ]
+    }
+  ],
+  "coordinators": [
+    {
+      "name": "Dr. Jan Sprey",
+      "area": "Medicina Esportiva",
+      "image": "https://posphorte.com.br/wp-content/uploads/2024/05/Jan-300x300.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Jan-300x300.webp",
+        "path": "assets/images/coordenador-1.webp",
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "name": "Dra. Bianca Ramallo",
+      "area": "Medicina Esportiva",
+      "image": "https://posphorte.com.br/wp-content/uploads/2024/05/Bianca-300x300.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Bianca-300x300.webp",
+        "path": "assets/images/coordenador-2.webp",
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "name": "Prof. Dr. Cristiano Alcântara",
+      "area": "Educação",
+      "image": "https://posphorte.com.br/wp-content/uploads/2024/05/Cristiano-300x300.jpg",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2024/05/Cristiano-300x300.jpg",
+        "path": "assets/images/coordenador-3.webp",
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "name": "José Luiz Sánchez",
+      "area": "Línguas",
+      "image": "https://posphorte.com.br/wp-content/uploads/2023/06/Jose-Luis-Sanchez-300x300.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2023/06/Jose-Luis-Sanchez-300x300.webp",
+        "path": "assets/images/coordenador-4.webp",
+        "width": 300,
+        "height": 300
+      }
+    },
+    {
+      "name": "Maria Helena Pelizon",
+      "area": "Educação",
+      "image": "https://posphorte.com.br/wp-content/uploads/2024/02/Maria-Helena-Pelizon-300x300.png",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2024/02/Maria-Helena-Pelizon-300x300.png",
+        "path": "assets/images/coordenador-5.webp",
+        "width": 300,
+        "height": 300
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Ana Flávia Cardozo Vitório",
+      "role": "Professora de Educação Física do Instituto Federal do Piauí",
+      "quote": "Fazer parte da 1ª turma da Pós-Graduação em Educação Física, Escola e Sociedade foi um grande presente, pois tive a oportunidade de tematizar e problematizar temas que são muito caros para a nossa área, além das amizades, dos afetos e das vivências que construí ao longo do percurso. A Pós tem professoras e professores incríveis, que trazem a boniteza da Educação Física de forma crítica e reflexiva, e nos permitem esperançar por uma Educação Física Escolar humanizada e transformadora."
+    },
+    {
+      "name": "Karla",
+      "role": "Coordenadora Pedagógica do CEI — Centro de Educação Infantil na rede parceira de São Paulo",
+      "quote": "Escolhi a Faculdade Phorte pela disponibilidade de um curso de grande interesse... Tem sido tudo de melhor! Estou amando, porque os professores são extremamente sensíveis e é nítido que todo conhecimento em aula atrela a teoria à prática. Um exemplo é a aula sobre desenvolvimento lento ou diferente do módulo “brinquedos”, brincadeiras e o brincar, na qual pude trabalhar com a abordagem pikler e ver o desenvolvimento das crianças com deficiência. Todas as aulas nos trazem conteúdos que podemos levar para a unidade escolar, estudar e refletir acerca da teoria. É um curso que nos traz como ser sensível e permite escutar, observar, afetar, marcar, criar memórias e ser história na vida de bebês e crianças na educação brasileira."
+    },
+    {
+      "name": "Vera Lúcia dos Santos da Silva",
+      "role": "Coordenadora",
+      "quote": "Após o curso de Registro e Documentação Pedagógica, muitas coisas foram aprimoradas, por exemplo, a escrita e a observação. Principalmente pela reflexão e contexto dos trabalhos. Notei uma escrita mais reflexiva, como resultado da aplicação dessa prática. Eu recomendo o curso!"
+    }
+  ],
+  "videos": [
+    {
+      "name": "Patricia Torres",
+      "role": "Diretora",
+      "youtubeId": "wrZ4t0rCSog",
+      "poster": {
+        "source": "https://i.ytimg.com/vi/wrZ4t0rCSog/hqdefault.jpg",
+        "path": "assets/images/video-wrZ4t0rCSog.webp",
+        "width": 480,
+        "height": 360
+      }
+    },
+    {
+      "name": "Rafaela Sampaio",
+      "role": "Aluna",
+      "youtubeId": "z5sFiYw8H-I",
+      "poster": {
+        "source": "https://i.ytimg.com/vi/z5sFiYw8H-I/hqdefault.jpg",
+        "path": "assets/images/video-z5sFiYw8H-I.webp",
+        "width": 480,
+        "height": 360
+      }
+    },
+    {
+      "name": "Pedro José",
+      "role": "Aluno",
+      "youtubeId": "JORIuDGFjjE",
+      "poster": {
+        "source": "https://i.ytimg.com/vi/JORIuDGFjjE/hqdefault.jpg",
+        "path": "assets/images/video-JORIuDGFjjE.webp",
+        "width": 480,
+        "height": 360
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Quais são as vantagens de uma pós em futebol e futsal para treinadores?",
+      "url": "https://posphorte.com.br/vantagens-pos-futebol-futsal-2/",
+      "image": "https://posphorte.com.br/wp-content/uploads/2026/10/treinador-categorias-base-formacao-atletas-futebol-300x200.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2026/10/treinador-categorias-base-formacao-atletas-futebol-300x200.webp",
+        "path": "assets/images/noticia-1.webp",
+        "width": 300,
+        "height": 200
+      }
+    },
+    {
+      "title": "Duração e formato da pós-graduação no Jardim Fabulinus",
+      "url": "https://posphorte.com.br/duracao-pos-jardim-fabulinus/",
+      "image": "https://posphorte.com.br/wp-content/uploads/2026/10/profissional-educacao-infantil-formacao-continuada-jardim-fabulinus-300x200.webp",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2026/10/profissional-educacao-infantil-formacao-continuada-jardim-fabulinus-300x200.webp",
+        "path": "assets/images/noticia-2.webp",
+        "width": 300,
+        "height": 200
+      }
+    },
+    {
+      "title": "Coordenadora do curso de Pós-Graduação em Método Pilates da Faculdade Phorte é palestrante em evento internacional",
+      "url": "https://posphorte.com.br/coordenadora-do-curso-de-pos-graduacao-em-metodo-pilates-da-faculdade-phorte-e-palestrante-em-evento-internacional/",
+      "image": "https://posphorte.com.br/wp-content/uploads/2026/10/Design-sem-nomesdjbhsdjhbvsdjbhsdjhbvsdajbhsdajhfd-300x141.jpg",
+      "asset": {
+        "source": "https://posphorte.com.br/wp-content/uploads/2026/10/Design-sem-nomesdjbhsdjhbvsdjbhsdjhbvsdajbhsdajhfd-300x141.jpg",
+        "path": "assets/images/noticia-3.webp",
+        "width": 300,
+        "height": 141
+      }
+    }
+  ],
+  "institutionVideo": "3sJF0DKhLOk",
+  "logo": {
+    "source": "https://graduacao-phorte.vercel.app/logos/faculdade-phorte.svg",
+    "path": "assets/images/logo-phorte.webp",
+    "width": 300,
+    "height": 132
+  },
+  "institutionPoster": {
+    "source": "https://i.ytimg.com/vi/3sJF0DKhLOk/hqdefault.jpg",
+    "path": "assets/images/video-3sJF0DKhLOk.webp",
+    "width": 480,
+    "height": 360
+  }
+}
