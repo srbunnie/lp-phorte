@@ -10,6 +10,10 @@ Página institucional demonstrativa para ex-alunos da Faculdade Phorte. Apresent
 
 Abra [`index.html`](./index.html) diretamente no navegador. Os estilos e o menu usam arquivos locais; não há dependências de instalação.
 
+## Referência visual
+
+A direção visual acompanha a prévia editorial C da [home da graduação](../home-graduacao-phorte/previa-c/): tipografia Poppins, tons de vermelho Phorte, superfícies claras, cartões arredondados e CTAs em formato de pílula. A fonte e as versões colorida/branca do logo estão copiadas em `assets/` para manter esta página independente. A licença SIL Open Font License está em `assets/fonts/OFL.txt`.
+
 ## Limites do protótipo
 
 - O formulário é apenas ilustrativo. Os campos não são enviados, processados nem armazenados. Não digite dados pessoais reais.
