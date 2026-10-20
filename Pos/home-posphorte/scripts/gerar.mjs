@@ -28,7 +28,8 @@ const arrow = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="c
 const chevron = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 4 8 8-8 8"/></svg>';
 const chevronDown = '<svg class="hp-dropdown-chevron" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>';
 const search = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.8" cy="10.8" r="7.3"/><path d="m16 16 5 5"/></svg>';
-const image = (a, alt = '', cls = '', eager = false, sizes = '') => '<img src="' + esc(a.path) + '"' + responsive(a, sizes) + ' width="' + a.width + '" height="' + a.height + '" alt="' + esc(alt) + '" class="' + cls + '" decoding="async"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
+// no-lazyload: o lazy load do Smush troca src por data-src e descarta srcset/sizes; as imagens já usam loading="lazy" nativo.
+const image = (a, alt = '', cls = '', eager = false, sizes = '') => '<img src="' + esc(a.path) + '"' + responsive(a, sizes) + ' width="' + a.width + '" height="' + a.height + '" alt="' + esc(alt) + '" class="' + (cls ? cls + ' ' : '') + 'no-lazyload" decoding="async"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + '>';
 const link = (text, url, cls = '') => '<a class="' + cls + '" href="' + esc(url) + '">' + esc(text) + '</a>';
 const buttonLink = (text, url, cls = '') => '<a class="hp-button ' + cls + '" href="' + esc(url) + '">' + esc(text) + arrow + '</a>';
 const socialIcons = {

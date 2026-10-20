@@ -36,6 +36,8 @@ Se as imagens forem para outra pasta, informar a URL como primeiro argumento de 
 
 **Tamanhos responsivos.** Os destaques, as miniaturas do slide 2, a imagem do hero e a arte do Dia dos Professores usam `srcset` com as versões menores que o WordPress gerou no upload (por exemplo, `destaque-1-768x943.webp`). A lista vem de `assets/tamanhos-wp.json`, lido da API de mídia por `node Pos/home-posphorte/scripts/tamanhos-wp.mjs`; rodar de novo se as imagens forem reenviadas. Não apagar essas versões na biblioteca.
 
+Todas as imagens dos widgets têm a classe `no-lazyload`. O lazy load do plugin Smush, ativo no site, troca `src` por `data-src` e descartava o `srcset` e o `sizes` (conferido na home publicada em 16/10/2026). Com a classe, o Smush ignora essas imagens e vale o `loading="lazy"` nativo, que já está nelas.
+
 **Fallback da Poppins.** Enquanto a Poppins do Google Fonts carrega, o texto usa `PhortePoppinsFallback`: Arial do aparelho ajustada (`size-adjust` e métricas) para ocupar o mesmo espaço. Isso evita que hero e busca mudem de posição quando a fonte chega (CLS). Não usa arquivo de fonte.
 
 ## 2. Cabeçalho

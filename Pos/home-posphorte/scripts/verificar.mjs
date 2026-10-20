@@ -56,6 +56,7 @@ for (const [name, id] of [['cabecalho', 'hp-cabecalho'], ['hero', 'hp-home-hero'
   else assert.ok(!/\.woff2|font-family:PhorteHomePoppins;/.test(widget[name]), `${name}: sem fontes publicadas, o widget usa a Poppins do site.`);
   if (/<style>/.test(widget[name])) assert.ok(/font-family:PhortePoppinsFallback;src:local\("Arial"\)/.test(widget[name]), `${name}: fallback da Poppins ajustado para evitar mudança de layout.`);
   assert.ok(!/(?:src|href|srcset)="(?:\.\/)?assets\/|\.\.\/assets\//.test(widget[name]), `${name}: o Elementor precisa de URLs absolutas.`);
+  for (const [tag] of widget[name].matchAll(/<img\b[^>]*>/g)) assert.ok(/class="[^"]*\bno-lazyload\b/.test(tag), `${name}: imagem sem no-lazyload (o Smush descartaria o srcset): ${tag.slice(0, 80)}`);
   assert.ok(!/<html|<body|<head>|<link|<main\b/.test(widget[name]), `${name}: o widget precisa ser um fragmento.`);
   assert.ok(!/<form\b|type="submit"/.test(widget[name]), `${name}: sem formulário próprio; a busca vem do shortcode.`);
   assert.ok(!/R\$|pravatar|Matrículas Abertas 2024|admin-ajax|Busca demonstrativa/.test(widget[name]));
