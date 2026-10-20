@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Políticas de Privacidad, Cookies y Términos de Uso de la Faculdade Phorte de Educação e Tecnologia. Directrices de protección de datos (LGPD - Ley brasileña nº 13.709/2018)." />
+    <meta name="description" content="Políticas de privacidad, cookies y términos de uso de Phorte. Información sobre la protección de datos conforme a las normas aplicables en cada mercado." />
     <title>Políticas de Privacidad, Cookies y Términos de Uso | Faculdade Phorte</title>
 
     <!-- Google Fonts -->
@@ -200,38 +200,77 @@
         color: var(--ink);
       }
 
-      /* ── PILL TABS / SELECTOR ── */
-      .doc-tabs-wrap {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-      }
-      .doc-tab {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 9px 18px;
-        border-radius: 999px;
-        font-size: 0.86rem;
-        font-weight: 700;
-        text-decoration: none;
+      /* ── CENTRO DE DOCUMENTOS LEGALES ── */
+      .legal-hub {
+        margin: 26px 0 0;
+        padding: 22px;
+        background: rgba(255, 255, 255, 0.88);
         border: 1px solid var(--line);
-        background: var(--surface);
-        color: var(--ink-light);
-        cursor: pointer;
-        transition: all 0.2s ease;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
       }
-      .doc-tab:hover {
-        border-color: var(--red);
-        color: var(--red);
-        transform: translateY(-1px);
+      .legal-hub-heading { margin-bottom: 16px; }
+      .legal-hub-heading h2 {
+        font-family: var(--font-title);
+        font-size: 1.2rem;
+        line-height: 1.25;
+        color: var(--ink);
+        margin-bottom: 4px;
       }
-      .doc-tab.active {
-        background: var(--red);
-        border-color: var(--red);
-        color: #fff;
-        box-shadow: 0 4px 14px rgba(201, 45, 45, 0.25);
+      .legal-hub-heading p {
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.55;
       }
+      .legal-doc-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .legal-doc-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 174px;
+        padding: 17px;
+        color: inherit;
+        text-decoration: none;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+      }
+      .legal-doc-card:hover,
+      .legal-doc-card:focus-visible {
+        border-color: rgba(201, 45, 45, 0.55);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+      }
+      .legal-doc-card:focus-visible { outline: 3px solid rgba(201, 45, 45, 0.2); outline-offset: 2px; }
+      .legal-doc-icon {
+        display: grid;
+        width: 36px;
+        height: 36px;
+        place-items: center;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        background: rgba(201, 45, 45, 0.08);
+        font-size: 1.05rem;
+      }
+      .legal-doc-card h3 { font-family: var(--font-title); font-size: 0.98rem; line-height: 1.3; margin-bottom: 6px; }
+      .legal-doc-card p { color: var(--muted); font-size: 0.79rem; line-height: 1.5; margin-bottom: 14px; }
+      .legal-doc-link { margin-top: auto; color: var(--red); font-size: 0.79rem; font-weight: 800; }
+      .hub-market-note {
+        margin-top: 14px;
+        padding: 11px 14px;
+        border-left: 3px solid var(--yellow);
+        border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+        background: var(--surface-subtle);
+        color: var(--muted);
+        font-size: 0.79rem;
+        line-height: 1.55;
+      }
+      .hub-market-note strong { color: var(--ink); }
 
       /* ── LAYOUT PRINCIPAL ── */
       .layout-wrap {
@@ -701,6 +740,7 @@
         .layout-wrap {
           grid-template-columns: 1fr;
         }
+        .legal-doc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         .sidebar {
           position: relative;
           top: 0;
@@ -723,10 +763,9 @@
         .doc-section {
           padding: 22px 16px;
         }
-        .doc-tab {
-          padding: 7px 13px;
-          font-size: 0.8rem;
-        }
+        .legal-hub { padding: 17px; margin-top: 20px; }
+        .legal-doc-grid { grid-template-columns: 1fr; }
+        .legal-doc-card { min-height: auto; }
         .data-table th, .data-table td {
           padding: 10px 12px;
           font-size: 0.82rem;
@@ -752,26 +791,47 @@
           </div>
         </div>
 
-        <span class="hero-kicker">Transparencia, Seguridad y Cumplimiento LGPD</span>
-        <h1 class="hero-title">Políticas de Privacidad, Cookies y Términos de Uso</h1>
+        <span class="hero-kicker">Privacidad, Cookies y Servicios Digitales</span>
+        <h1 class="hero-title">Centro de documentos legales</h1>
         <p class="hero-lead">
-          La <strong>Faculdade Phorte de Educação e Tecnologia</strong> está comprometida con el respeto, la transparencia y la seguridad en el tratamiento de sus datos personales, operando en estricto cumplimiento del <strong>Marco Civil de Internet (Ley brasileña nº 12.965/2014)</strong> y de la <strong>Ley General de Protección de Datos Personales (LGPD - Ley Federal nº 13.709/2018)</strong>.
+          Encuentre la información de la <strong>Associação de Educação e Novas Tecnologias Phorte</strong> sobre privacidad, cookies y términos de uso de los servicios digitales de Faculdade Phorte.
         </p>
 
         <div class="hero-legal-entity">
           <strong>Identificación Institucional:</strong> FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA, mantenida por la ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE (CNPJ nº 42.098.615/0001-42), con sede en Rua Rui Barbosa, nº 422, 1º piso, Bela Vista, São Paulo/SP, Brasil, Código Postal (CEP) 01326-010.
         </div>
 
-        <div class="hero-meta-bar">
-          <div class="doc-tabs-wrap" role="tablist" aria-label="Seleccione el documento">
-            <a href="#todos" class="doc-tab active" data-filter="todos">Ver Todo</a>
-            <a href="#privacidade" class="doc-tab" data-filter="privacidade">🔒 Privacidad (LGPD)</a>
-            <a href="#cookies" class="doc-tab" data-filter="cookies">🍪 Cookies</a>
-            <a href="#termos" class="doc-tab" data-filter="termos">📄 Términos de Uso</a>
+        <nav class="legal-hub" aria-labelledby="hub-title">
+          <div class="legal-hub-heading">
+            <h2 id="hub-title">Documentos por tema</h2>
+            <p>Elija un tema para ir directamente al contenido completo.</p>
           </div>
+          <div class="legal-doc-grid">
+            <a class="legal-doc-card" href="#privacidade">
+              <span class="legal-doc-icon" aria-hidden="true">🔒</span>
+              <h3>Privacidad y datos personales</h3>
+              <p>Cómo tratamos datos en el sitio, formularios, checkout, atención y cursos digitales.</p>
+              <span class="legal-doc-link">Leer la política de privacidad →</span>
+            </a>
+            <a class="legal-doc-card" href="#cookies">
+              <span class="legal-doc-icon" aria-hidden="true">🍪</span>
+              <h3>Cookies y tecnologías similares</h3>
+              <p>Categorías, finalidades y cómo consultar o cambiar sus preferencias.</p>
+              <span class="legal-doc-link">Leer la política de cookies →</span>
+            </a>
+            <a class="legal-doc-card" href="#termos">
+              <span class="legal-doc-icon" aria-hidden="true">📄</span>
+              <h3>Términos de uso y compra</h3>
+              <p>Reglas de uso de los sitios, checkout, cursos digitales y servicios relacionados.</p>
+              <span class="legal-doc-link">Consultar términos →</span>
+            </a>
+          </div>
+          <p class="hub-market-note"><strong>Idioma y mercado:</strong> el idioma facilita la lectura, pero no determina por sí solo la legislación aplicable. Consulte la <a href="#priv-10">sección 1.10</a> para ver el RGPD en la UE/EEE y el estado del proyecto de ley ADPPA en Estados Unidos. La LGPD se menciona como ley brasileña en la versión correspondiente.</p>
+        </nav>
 
+        <div class="hero-meta-bar">
           <div class="hero-meta-item">
-            <span>📅 Última actualización: <strong>Agosto de 2026</strong></span>
+            <span>📅 Revisión editorial: <strong>Octubre de 2026</strong></span>
           </div>
         </div>
       </div>
@@ -789,7 +849,7 @@
         </div>
 
         <div class="toc-group" data-doc="privacidade">
-          <a href="#privacidade" class="toc-heading">1. Privacidad (LGPD)</a>
+          <a href="#privacidade" class="toc-heading">1. Privacidad y datos personales</a>
           <ul class="toc-list">
             <li><a href="#priv-1">1.1 Información General</a></li>
             <li><a href="#priv-2">1.2 Recopilación y Finalidades</a></li>
@@ -800,6 +860,7 @@
             <li><a href="#priv-7">1.7 Derechos del Titular</a></li>
             <li><a href="#priv-8">1.8 Capacitación y Auditoría</a></li>
             <li><a href="#priv-9">1.9 Legislación y Fuero</a></li>
+            <li><a href="#priv-10">1.10 Normas por mercado</a></li>
           </ul>
         </div>
 
@@ -836,40 +897,43 @@
       <div class="content-area">
         
         <!-- ══════════════════════════════════════════════════════════ -->
-        <!-- 1. POLÍTICA DE PRIVACIDAD (LGPD)                           -->
+        <!-- 1. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS            -->
         <!-- ══════════════════════════════════════════════════════════ -->
         <section class="doc-section" id="privacidade" data-category="privacidade">
           <header class="doc-header">
-            <span class="doc-badge">LGPD · Ley Federal nº 13.709/2018</span>
+            <span class="doc-badge">Aviso de privacidad · normas según el mercado</span>
             <h2>1. Política de Privacidad</h2>
-            <p>Directrices sobre cómo la Faculdade Phorte trata los datos personales de los usuarios que acceden al sitio web www.faculdadephorte.edu.br y sus páginas integradas.</p>
+            <p>Cómo la Associação de Educação e Novas Tecnologias Phorte trata datos personales en los sitios Phorte, formularios, checkout de cursos digitales y servicios relacionados con la prestación de los cursos.</p>
           </header>
 
           <div class="summary-card">
             <div class="summary-card-title">✨ En Resumen: Principios Fundamentales</div>
             <ul>
-              <li>Recopilamos datos mediante su envío voluntario para prestar servicios educativos, procesar inscripciones/matrículas y responder consultas.</li>
-              <li>La base de datos conformada es propiedad y responsabilidad de la Faculdade Phorte; nunca comercializamos sus datos con terceros.</li>
-              <li>Usted puede confirmar, acceder, rectificar, anonimizar o revocar su consentimiento en cualquier momento ante nuestro Oficial de Protección de Datos (DPO).</li>
+              <li>Tratamos datos para responder solicitudes, procesar compras y pagos, emitir comprobantes fiscales y facilitar el acceso a cursos digitales.</li>
+              <li>Los proveedores de pagos, tecnología, análisis y comunicación pueden recibir los datos necesarios para prestar sus servicios; navegar no equivale a un consentimiento general.</li>
+              <li>Las cookies no esenciales dependen de su elección en el panel de preferencias. También puede contactar al Oficial de Protección de Datos para ejercer sus derechos.</li>
             </ul>
           </div>
 
           <article class="doc-article" id="priv-1">
             <h3><span class="num">1.1</span> Información General</h3>
             <p>
-              La <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong>, institución de educación superior mantenida por la <strong>ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE</strong>, entidad civil sin fines de lucro, de derecho privado, con autonomía administrativa y financiera, inscrita en el CNPJ bajo el nº 42.098.615/0001-42, con sede en Rua Rui Barbosa, nº 422, 1º piso, Barrio Bela Vista, Ciudad de São Paulo, Estado de São Paulo, CEP 01326-010, por medio de su Oficial de Protección de Datos (DPO), <strong>Leonardo Vinicius Alcarde Garcia</strong>, pone a su disposición la presente Política para que comprenda cómo recopilamos, utilizamos y tratamos sus datos personales.
+              En el contexto de la venta de cursos digitales en <strong>phorte.com</strong>, la responsable del tratamiento es la <strong>ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE</strong>, entidad privada sin fines de lucro, inscrita en el CNPJ nº 42.098.615/0001-42, con domicilio en Rua Rui Barbosa, nº 422, 1º piso, Bela Vista, São Paulo/SP, CEP 01326-010, Brasil. La Asociación emite los documentos fiscales y recibos de compra. Faculdade Phorte es la marca y la institución educativa que ofrece los cursos. El contacto de privacidad es el Oficial de Protección de Datos <strong>Leonardo Vinicius Alcarde Garcia</strong>.
             </p>
             <p>
-              Esta Política de Privacidad ha sido elaborada en estricta conformidad con la <strong>Ley Federal brasileña nº 12.965/2014 (Marco Civil de Internet)</strong> y la <strong>Ley Federal nº 13.709/2018 (Ley General de Protección de Datos - LGPD)</strong>, aplicándose a todos los portales institucionales y formularios web asociados.
+              Esta Política abarca el sitio Phorte, páginas de cursos, formularios, checkout, comunicaciones de atención y flujos digitales vinculados con la compra y el acceso a cursos, incluido el Portal Edux cuando los datos se traten para prestar el servicio contratado. Los sitios y servicios de terceros pueden tener sus propios avisos.
             </p>
             <p>
-              Al navegar por el sitio y enviar su información personal, el usuario otorga su consentimiento libre y expreso para que sus datos sean recopilados, almacenados, tratados y compartidos conforme a lo estipulado en este documento. En caso de no estar de acuerdo con estos términos, tenga en cuenta que la prestación de los servicios correspondientes podrá verse imposibilitada.
+              La sigla LGPD identifica exclusivamente la Ley General de Protección de Datos de Brasil; esta versión en español no la presenta como una ley común a todos los países hispanohablantes. En España y otros países de la UE/EEE pueden aplicarse el RGPD y las normas nacionales pertinentes sobre privacidad electrónica. En América Latina se consideran las normas nacionales aplicables a cada mercado. Consulte la sección <a href="#priv-10">Normas de protección de datos por mercado</a> para más información. La ley aplicable depende del servicio, el lugar de la persona y el tratamiento concreto.
+            </p>
+            <p>
+              Navegar por el sitio o enviar un formulario no constituye un consentimiento general para todos los usos de los datos personales. Determinamos la base legal adecuada para cada finalidad, como completar una compra solicitada, cumplir obligaciones legales, obtener consentimiento cuando sea necesario u otra base permitida por la legislación aplicable. Cuando el consentimiento sea la base, se solicitará por separado y podrá retirarse sin afectar el tratamiento anterior; la retirada puede desactivar únicamente la función opcional correspondiente.
             </p>
           </article>
 
           <article class="doc-article" id="priv-2">
             <h3><span class="num">1.2</span> Recopilación y Finalidades del Uso de Datos</h3>
-            <p>Los datos necesarios son recopilados a partir de su envío voluntario, sin perjuicio de enriquecimientos posteriores, e incluyen:</p>
+            <p>Según la página, el checkout y el país, los datos pueden incluir:</p>
             
             <div class="table-wrap">
               <table class="data-table">
@@ -881,25 +945,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td rowspan="8"><strong>Registrales</strong></td>
-                    <td rowspan="8">Nombre Completo, Teléfono Móvil/WhatsApp, Correo Electrónico, Documento de Identidad (CPF/RUT/Pasaporte), Dirección Completa</td>
-                    <td>Preinscripción y registro en cursos de grado, posgrado y educación continua</td>
-                  </tr>
-                  <tr><td>Contacto telefónico vía llamada o WhatsApp para atención personalizada sobre la oferta educativa</td></tr>
-                  <tr><td>Comunicación para solicitud de documentación complementaria y formalización de matrícula</td></tr>
-                  <tr><td>Envío de comunicaciones académicas y correos informativos (con opción de baja / opt-out)</td></tr>
-                  <tr><td>Emisión de comprobantes de pago bancario y facturación de matrícula o mensualidades</td></tr>
-                  <tr><td>Gestión académica y comunicación directa con las secretarías de la Institución</td></tr>
-                  <tr><td>Compartición con empresas proveedoras de tecnología aliadas para soporte operativo</td></tr>
-                  <tr><td>Recuperación de contraseñas y gestión de acceso a los portales del alumno/postulante</td></tr>
-                  <tr>
-                    <td rowspan="3"><strong>Identificación Digital</strong></td>
-                    <td rowspan="3">Dirección IP y puerto lógico de origen, Registros de interacción, Identificador de Sesión (Session ID) y Cookies</td>
-                    <td>Identificación técnica del Usuario (obligación legal del Marco Civil de Internet)</td>
-                  </tr>
-                  <tr><td>Acciones de remarketing institucional y publicidad educativa personalizada</td></tr>
-                  <tr><td>Análisis estadístico de tráfico web y optimización continua de la experiencia de usuario</td></tr>
+                  <tr><td><strong>Registro y contacto</strong></td><td>Nombre y apellido, correo electrónico, teléfono, documento fiscal (CPF brasileño o documento fiscal internacional), fecha de nacimiento y datos de dirección cuando se soliciten.</td><td>Responder solicitudes, identificar la compra, brindar soporte y completar los pasos de inscripción.</td></tr>
+                  <tr><td><strong>Compra y pago</strong></td><td>Curso seleccionado, productos del carrito, moneda, importe, estado del pedido, datos fiscales y registros de la transacción.</td><td>Procesar el pedido, remitir el pago al proveedor seleccionado, emitir comprobante fiscal/recibo y facilitar el curso digital.</td></tr>
+                  <tr><td><strong>Checkout no completado</strong></td><td>Datos de contacto ingresados, curso/carrito y etapa del checkout.</td><td>Enviar un recordatorio de recuperación por correo electrónico; los contactos de Brasil también pueden recibir WhatsApp. El flujo informado utiliza checkout/WooCommerce, RD Station y CRM, webhook, SURI y WhatsApp.</td></tr>
+                  <tr><td><strong>Navegación y dispositivo</strong></td><td>Dirección IP, navegador/dispositivo, páginas y eventos de navegación/compra, identificadores en línea y cookies.</td><td>Seguridad y funcionamiento del sitio y, cuando esté autorizado, análisis de navegación y medición de campañas.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -907,58 +956,62 @@
             <div class="callout callout-info">
               <span class="callout-icon">📌</span>
               <div>
-                <strong>Corresponsabilidad y Confidencialidad:</strong> La Faculdade Phorte no se responsabiliza por la veracidad o exactitud de los datos proporcionados por el usuario, correspondiendo a este mantenerlos debidamente actualizados. El usuario es corresponsable de la custodia y reserva de sus credenciales de acceso. Internamente, los datos son accesibles exclusivamente por personal debidamente autorizado bajo estrictos deberes de confidencialidad.
+                <strong>Uso de los datos:</strong> Solicitamos los datos necesarios en cada etapa; los campos pueden variar según el idioma, el país y el checkout. El acceso interno debe limitarse a las personas que necesitan los datos para su función. El proveedor de pago seleccionado también puede tratar directamente los datos de pago.
               </div>
             </div>
           </article>
 
           <article class="doc-article" id="priv-3">
             <h3><span class="num">1.3</span> Almacenamiento de Datos y Plazos Legales</h3>
-            <p>Los datos recopilados y los registros de actividad se almacenan en un entorno seguro y controlado durante los plazos legalmente exigidos:</p>
+            <p>No existe un único plazo de conservación para todos los datos. Cada categoría se conserva solo durante el tiempo necesario para su finalidad y los plazos legales, fiscales, académicos o de defensa de derechos que correspondan:</p>
             <ul>
-              <li><strong>Plazo mínimo de 6 (seis) meses:</strong> Conservación de registros de logs de acceso a aplicaciones, conforme al Marco Civil de Internet (Ley nº 12.965/2014);</li>
-              <li><strong>Plazo mínimo de 5 (cinco) años:</strong> Conservación de datos tras la cancelación de la cuenta o término de la relación académica, según el Código de Defensa del Consumidor;</li>
-              <li><strong>Directrices Regulatorias del MEC (Ministerio de Educación):</strong> Retención y custodia de expedientes académicos, títulos y certificaciones según las normativas federales de educación;</li>
-              <li><strong>Estado del arte tecnológico:</strong> Aplicación continua de buenas prácticas y estándares de seguridad de la información.</li>
+              <li><strong>Registros de acceso a aplicaciones:</strong> cuando se aplique la obligación del Marco Civil de Internet de Brasil, se conservan durante el mínimo legal de seis meses, bajo confidencialidad y en un entorno controlado;</li>
+              <li><strong>Compras y documentos fiscales:</strong> durante el período exigido por las obligaciones fiscales, contables y de protección al consumidor;</li>
+              <li><strong>Registros académicos:</strong> según las normas aplicables al servicio educativo y al archivo académico;</li>
+              <li><strong>Otros datos:</strong> hasta que dejen de ser necesarios para su finalidad, salvo otra obligación legal o la necesidad de ejercer o defender derechos.</li>
             </ul>
             <p>
-              Los datos podrán ser eliminados con anterioridad a dichos plazos a solicitud expresa del titular, salvo en los supuestos de retención obligatoria por disposición legal u orden judicial.
+              Al finalizar el período aplicable, los datos se eliminan o anonimizan, salvo que su conservación esté permitida u obligada por ley. Una solicitud de eliminación no elimina las obligaciones legales de conservación.
             </p>
           </article>
 
           <article class="doc-article" id="priv-4">
             <h3><span class="num">1.4</span> Legitimidad y Bases Legales del Tratamiento</h3>
             <p>
-              Tratamos sus datos personales con fundamento en su <strong>consentimiento libre, informado, inequívoco y legítimo</strong>, así como en las bases legales de ejecución de contratos, cumplimiento de obligaciones legales/regulatorias y el interés legítimo de la institución (Art. 7º de la LGPD).
+              La base legal se determina para cada finalidad y conjunto de datos. Para completar una compra solicitada y facilitar un curso, podemos tratar los datos necesarios para ejecutar el contrato y atender las solicitudes del comprador; la facturación y los registros obligatorios pueden tratarse para cumplir deberes legales; las cookies opcionales de análisis y publicidad dependen de su elección en el panel. Los recordatorios de checkout y las comunicaciones promocionales son finalidades distintas y pueden tener controles de preferencia y cancelación propios. El interés legítimo solo se utiliza cuando está permitido y tras considerar los derechos y expectativas de las personas.
             </p>
           </article>
 
           <article class="doc-article" id="priv-5">
             <h3><span class="num">1.5</span> Compartición de Datos Personales</h3>
-            <p>Para la debida prestación de los servicios educativos e institucionales, los datos personales podrán compartirse con:</p>
+            <p>Solo los datos necesarios para las finalidades descritas pueden compartirse con:</p>
             <ul>
-              <li>Proveedores de servicios y aliados tecnológicos contratados por la <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong> (como servidores en la nube, sistemas de gestión académica ERP/LMS, pasarelas de pago y plataformas de mensajería);</li>
-              <li>Fines administrativos internos: planificación pedagógica, seguridad, prevención de fraudes y análisis de riesgos;</li>
-              <li>Autoridades judiciales, administrativas o gubernamentales competentes (como MEC e INEP), en virtud de imperativo legal o requerimiento formal.</li>
+              <li>Proveedores del sitio/checkout y de pagos, incluidos WooCommerce, Stripe y PagBank, según el flujo de compra;</li>
+              <li>Servicios técnicos que muestran o protegen páginas, como fuentes alojadas por Google, Cloudflare y hCaptcha, cuando se utilizan;</li>
+              <li>Proveedores de análisis y relación con clientes, incluidos Google Analytics, Microsoft Clarity y RD Station, sujetos a las preferencias aplicables;</li>
+              <li>Proveedores que participan en la recuperación del checkout y la atención, incluidos CRM, webhook, SURI y WhatsApp, según el flujo descrito en esta Política;</li>
+              <li>Cookiez/Elementor, para registrar el estado, las categorías y la fecha/hora de la elección de cookies;</li>
+              <li>El Portal Edux y proveedores tecnológicos que permiten acceder a los cursos digitales;</li>
+              <li>Autoridades públicas competentes cuando lo exija la ley, la regulación o una orden válida.</li>
             </ul>
             <p>
-              En todos los casos, la compartición se restringe estrictamente a lo necesario. Si se efectuasen transferencias internacionales de datos (p. ej., alojamiento en servidores extranjeros de computación en la nube), se asegurarán estándares de protección equivalentes a los exigidos por la legislación brasileña.
+              Algunos proveedores pueden tratar datos en otros países o permitir el acceso desde el exterior. Cuando esto ocurra, se aplicarán las salvaguardas exigidas por la legislación aplicable. Para obtener información sobre un proveedor o una transferencia específica, contacte al Oficial de Protección de Datos.
             </p>
           </article>
 
           <article class="doc-article" id="priv-6">
             <h3><span class="num">1.6</span> Medidas de Protección y Seguridad de la Información</h3>
             <p>
-              Adoptamos rigurosas medidas técnicas y organizativas para resguardar la información, tales como navegación cifrada mediante protocolos HTTPS/TLS, almacenamiento en bases de datos con control de acceso por permisos nominativos y entornos de red protegidos no accesibles públicamente.
+              Aplicamos medidas técnicas y organizativas de seguridad proporcionales a los datos tratados y a los riesgos. Estas pueden incluir controles de acceso, protección de transferencias y procedimientos internos; las medidas varían según el sistema y el proveedor.
             </p>
             <p>
-              En el eventual supuesto de un incidente de seguridad que involucre riesgo o daño relevante para los titulares, la Faculdade Phorte adoptará de forma inmediata las medidas de mitigación pertinentes y notificará a la Autoridad Nacional de Protección de Datos (ANPD) y a los usuarios afectados en un plazo oportuno.
+              Si se produce un incidente de seguridad que implique un riesgo o daño relevante, adoptaremos medidas de contención y notificaremos a la ANPD y a las personas afectadas cuando corresponda y dentro de los plazos establecidos por las normas aplicables.
             </p>
           </article>
 
           <article class="doc-article" id="priv-7">
             <h3><span class="num">1.7</span> Derechos del Titular de Datos</h3>
-            <p>En cumplimiento del Artículo 18 de la LGPD, usted dispone de los siguientes derechos plenamente garantizados frente a la Faculdade Phorte:</p>
+            <p>Según la legislación aplicable a su situación, puede ejercer derechos como:</p>
             <ol>
               <li>Confirmación de la existencia de tratamiento de sus datos;</li>
               <li>Acceso a sus datos personales almacenados;</li>
@@ -968,33 +1021,47 @@
               <li>Eliminación de los datos personales tratados con base en el consentimiento;</li>
               <li>Información sobre las entidades públicas y privadas con las que se ha compartido la información;</li>
               <li>Información sobre la opción de no prestar consentimiento y las consecuencias de dicha negativa;</li>
-              <li>Revocación del consentimiento de forma sencilla, ágil y gratuita.</li>
+              <li>Retirada del consentimiento de forma sencilla y gratuita;</li>
+              <li>Oposición o limitación de determinados tratamientos y, cuando la ley lo permita, oposición a compartir datos para publicidad dirigida.</li>
             </ol>
             <div class="callout callout-phorte">
               <span class="callout-icon">✉️</span>
               <div>
-                <strong>Cómo ejercer sus derechos:</strong> Remita su solicitud formal y gratuita directamente a nuestro Oficial de Protección de Datos al correo <strong>Leonardo.alcarde@phorte.org.br</strong>. La institución se reserva el derecho de requerir acreditación de identidad para salvaguardar la privacidad del titular.
+                <strong>Cómo ejercer sus derechos:</strong> Contacte al Oficial de Protección de Datos en <strong><a href="mailto:Leonardo.alcarde@phorte.org.br">Leonardo.alcarde@phorte.org.br</a></strong>. Para solicitar la oposición al intercambio de datos para publicidad dirigida, indique esa finalidad en el asunto. Podemos pedir solo los datos necesarios para verificar su identidad y proteger su información.
               </div>
             </div>
           </article>
 
           <article class="doc-article" id="priv-8">
-            <h3><span class="num">1.8</span> Programa de Concientización, Capacitación y Auditoría</h3>
+            <h3><span class="num">1.8</span> Gobernanza y Revisión de Datos</h3>
             <p>
-              <strong>Capacitación Periódica:</strong> Los responsables de la gobernanza de datos promueven anualmente jornadas de concientización y formación técnica en materia de privacidad para todo el personal administrativo, académico y de soporte que interviene en el tratamiento de datos personales.
+              Revisamos este aviso cuando cambian los servicios, proveedores, flujos de datos o requisitos legales relevantes. El personal que trata datos debe cumplir las reglas internas de acceso y confidencialidad.
             </p>
             <p>
-              <strong>Auditorías Internas:</strong> Se ejecutan periódicamente evaluaciones y auditorías de control en los sectores de admisiones, atención al público y tecnología para constatar el permanente cumplimiento de la normativa LGPD.
+              La información sobre cookies, proveedores y plazos se actualiza cuando hay cambios técnicos relevantes en los servicios.
             </p>
           </article>
 
           <article class="doc-article" id="priv-9">
             <h3><span class="num">1.9</span> Actualizaciones, Legislación Aplicable y Fuero</h3>
             <p>
-              Esta Política de Privacidad está sujeta a revisiones periódicas con el fin de acompañar mejoras en nuestros servicios y cambios legislativos.
+              Esta Política puede actualizarse cuando cambien los servicios, tratamientos o normas aplicables. La fecha indicada arriba es la fecha de revisión editorial de esta versión.
             </p>
             <p>
-              El presente documento se rige íntegramente por las leyes de la República Federativa de Brasil, en particular la Ley nº 13.709/2018 (LGPD), estableciéndose el <strong>Fuero del Distrito Judicial de la Capital del Estado de São Paulo</strong> para dirimir cualquier controversia resultante.
+              La legislación brasileña, incluida la LGPD, se aplica a los tratamientos pertinentes. Esta disposición no excluye los derechos ni los fueros obligatorios disponibles para el titular o consumidor según la legislación aplicable en su lugar de residencia.
+            </p>
+          </article>
+
+          <article class="doc-article" id="priv-10">
+            <h3><span class="num">1.10</span> Normas de Protección de Datos por Mercado</h3>
+            <p>
+              <strong>Unión Europea y Espacio Económico Europeo — RGPD (GDPR).</strong> El Reglamento General de Protección de Datos (RGPD, Reglamento (UE) 2016/679; GDPR por sus siglas en inglés) puede aplicarse a Phorte cuando se cumplan sus condiciones de ámbito territorial, incluidas ciertas ofertas de bienes o servicios a personas en la UE o la supervisión de su comportamiento allí. Cuando resulte aplicable, deben evaluarse para cada tratamiento los avisos de privacidad, las bases legales, los derechos de las personas, los acuerdos con encargados, la seguridad, la conservación y las transferencias internacionales. Las normas nacionales que implementan la Directiva ePrivacy también pueden aplicarse a las cookies y las comunicaciones electrónicas. Consulte el <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj?locale=es" target="_blank" rel="noopener noreferrer">texto oficial del RGPD</a>, la <a href="https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32002L0058" target="_blank" rel="noopener noreferrer">Directiva ePrivacy</a> y la <a href="https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/application-gdpr_en" target="_blank" rel="noopener noreferrer">guía de la Comisión Europea sobre cuándo se aplica</a>.
+            </p>
+            <p>
+              Cuando se aplique el RGPD, las personas pueden tener derechos de acceso, rectificación, supresión, limitación del tratamiento, portabilidad, oposición y reclamación ante una autoridad de control, sujetos a las condiciones y excepciones del Reglamento. Las solicitudes pueden enviarse a nuestro contacto de privacidad indicado en esta página. También debe evaluarse si las actividades de Phorte hacen necesario designar un representante en la UE o un Delegado de Protección de Datos conforme a las condiciones del RGPD.
+            </p>
+            <p>
+              <strong>Estados Unidos — estado de la ADPPA.</strong> La American Data Privacy and Protection Act (ADPPA, H.R. 8152) fue un proyecto de legislación federal presentado en el 117.º Congreso de Estados Unidos. El Comité de Energía y Comercio de la Cámara de Representantes lo reportó con enmiendas y ordenó su impresión el 30 de diciembre de 2022; no se convirtió en ley en ese Congreso y no se presenta aquí como una obligación legal vigente. Las obligaciones aplicables en Estados Unidos dependen de las leyes federales y estatales vigentes para el mercado y el tratamiento correspondientes. Consulte el <a href="https://www.govinfo.gov/app/details/BILLS-117hr8152rh" target="_blank" rel="noopener noreferrer">registro oficial de H.R. 8152 en la Oficina de Publicaciones del Gobierno de Estados Unidos</a>.
             </p>
           </article>
         </section>
@@ -1013,93 +1080,53 @@
             <div class="summary-card-title">🍪 En Resumen: Nuestro Uso de Cookies</div>
             <ul>
               <li>Empleamos cookies esenciales para mantener su sesión activa y asegurar el funcionamiento de los formularios de registro.</li>
-              <li>Las cookies analíticas nos permiten entender de forma agregada y anónima qué programas académicos despiertan mayor interés.</li>
-              <li>Usted puede aceptar, configurar o revocar el uso de cookies en cualquier momento desde las preferencias de su navegador web.</li>
+              <li>Las cookies y tecnologías similares pueden tratar identificadores en línea y eventos de navegación; no suponemos que los datos resultantes sean siempre anónimos.</li>
+              <li>Puede aceptar, rechazar o personalizar cookies opcionales y volver a abrir las preferencias con el enlace “Preferencias de cookies” en el pie de página.</li>
             </ul>
           </div>
 
           <article class="doc-article" id="cook-1">
             <h3><span class="num">2.1</span> Información General</h3>
             <p>
-              La presente Política de Cookies de la <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong> ha sido estructurada conforme a las directrices de la <strong>Ley Federal brasileña nº 12.965/2014 (Marco Civil de Internet)</strong> y la <strong>Ley nº 13.709/2018 (LGPD)</strong>, pudiendo ser actualizada ante modificaciones tecnológicas o normativas.
+              Esta Política explica el uso de cookies y tecnologías similares en los sitios Phorte. El modelo configurado es opt-in mundial: las categorías no esenciales dependen de la elección de cada persona. Las cookies necesarias para funciones solicitadas, seguridad, carrito y registro de la elección pueden operar por separado, de acuerdo con la legislación aplicable.
             </p>
           </article>
 
           <article class="doc-article" id="cook-2">
             <h3><span class="num">2.2</span> ¿Qué son las Cookies?</h3>
             <p>
-              Las cookies son pequeños archivos de texto que se descargan en su dispositivo (computadora, tableta o teléfono inteligente) al visitar un sitio web. Permiten registrar información de navegación para optimizar, agilizar y personalizar su experiencia en nuestras plataformas digitales.
+              Las cookies son pequeños archivos almacenados en el navegador o dispositivo. Los píxeles, el almacenamiento local y tecnologías similares también pueden registrar identificadores, páginas visitadas y eventos. Su naturaleza y duración varían; no todos los navegadores eliminan las cookies de sesión al cerrarse.
             </p>
             <p>El concepto de "cookies" abarca también tecnologías análogas como <em>píxeles de seguimiento</em>, <em>web beacons</em> y etiquetas de analítica web.</p>
             <ul>
-              <li><strong>Cookies de Sesión:</strong> Recaban datos temporales que no identifican directamente al usuario y se eliminan automáticamente en cuanto se cierra la ventana del navegador.</li>
-              <li><strong>Cookies Persistentes:</strong> Permanecen almacenadas en su equipo durante un período determinado o hasta su borrado manual, recordando sus preferencias para futuras visitas.</li>
-              <li><strong>Cookies Propias vs. de Terceros:</strong> Las cookies propias son gestionadas directamente por el dominio de la Faculdade Phorte; las de terceros pertenecen a plataformas asociadas confiables (como Google Analytics, Meta Pixel y RD Station).</li>
+              <li><strong>Cookies de sesión:</strong> permanecen durante una sesión o el período definido por el servicio;</li>
+              <li><strong>Cookies persistentes:</strong> permanecen hasta la fecha de expiración definida por el proveedor o hasta su eliminación manual;</li>
+              <li><strong>Cookies propias y de terceros:</strong> pueden ser configuradas por el sitio o por servicios externos cargados en una página.</li>
             </ul>
           </article>
 
           <article class="doc-article" id="cook-3">
             <h3><span class="num">2.3</span> Categorías de Cookies Utilizadas y Finalidades</h3>
-            <p>A continuación se detallan los tipos de cookies implementados en nuestros canales digitales:</p>
+            <p>Las categorías y ejemplos observados en el sitio incluyen:</p>
 
             <div class="table-wrap">
               <table class="data-table">
                 <thead>
                   <tr>
                     <th>Categoría</th>
-                    <th>Subtipo / Proveedor</th>
-                    <th>Finalidad Específica</th>
+                    <th>Ejemplos de servicio/uso</th>
+                    <th>Finalidad</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td rowspan="2"><strong>Esenciales</strong><br><span class="badge-cookie badge-essential">Obligatorio</span></td>
-                    <td>Sesión de Usuario</td>
-                    <td>Mantiene el estado de la aplicación web activo durante toda su navegación.</td>
+                    <td><strong>Esenciales</strong><br><span class="badge-cookie badge-essential">Necesarias</span></td>
+                    <td>Consentimiento Cookiez; carrito/sesión WooCommerce; seguridad de PagBank y protección Cloudflare/hCaptcha cuando se utilizan</td>
+                    <td>Registrar la elección y habilitar funciones solicitadas, carrito, checkout y seguridad.</td>
                   </tr>
-                  <tr>
-                    <td>Identificación Segura</td>
-                    <td>Garantiza que el alumno acceda exclusivamente a su información en el Portal Académico.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="4"><strong>Preferencias</strong><br><span class="badge-cookie badge-functional">Funcional</span></td>
-                    <td>Idioma y Ubicación</td>
-                    <td>Recuerda las preferencias lingüísticas y muestra opciones convenientes al usuario.</td>
-                  </tr>
-                  <tr>
-                    <td>Adaptación Móvil</td>
-                    <td>Ajusta la presentación visual según las dimensiones de teléfonos y tabletas.</td>
-                  </tr>
-                  <tr>
-                    <td>Sitio de Referencia</td>
-                    <td>Registra el canal de procedencia para comprender las vías de ingreso a la web.</td>
-                  </tr>
-                  <tr>
-                    <td>Histórico de Formularios</td>
-                    <td>Retiene temporalmente datos para evitar la pérdida de información ante errores de red.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="2"><strong>Analíticas</strong><br><span class="badge-cookie badge-analytics">Rendimiento</span></td>
-                    <td>Google Analytics</td>
-                    <td>Genera métricas anónimas sobre número de visitas, tiempo de permanencia y páginas vistas.</td>
-                  </tr>
-                  <tr>
-                    <td>Auditoría de Navegación</td>
-                    <td>Permite identificar incidencias técnicas y optimizar la usabilidad general del sitio.</td>
-                  </tr>
-                  <tr>
-                    <td rowspan="3"><strong>Publicidad</strong><br><span class="badge-cookie badge-marketing">Marketing</span></td>
-                    <td>Anuncios Segmentados</td>
-                    <td>Muestra campañas de admisiones y cursos afines en plataformas de búsqueda y redes sociales.</td>
-                  </tr>
-                  <tr>
-                    <td>Prevención de Fraude</td>
-                    <td>Detecta y neutraliza actividades automatizadas no autorizadas y tráfico malicioso.</td>
-                  </tr>
-                  <tr>
-                    <td>Complementos Sociales</td>
-                    <td>Facilita la interacción con botones sociales (Meta / Facebook, Instagram, LinkedIn).</td>
-                  </tr>
+                  <tr><td><strong>Preferencias</strong><br><span class="badge-cookie badge-functional">Funcionales</span></td><td>Idioma Polylang y moneda CURCY</td><td>Recordar o aplicar el idioma y la moneda elegidos para mantener la experiencia localizada.</td></tr>
+                  <tr><td><strong>Análisis</strong><br><span class="badge-cookie badge-analytics">Medición</span></td><td>Google Analytics, Microsoft Clarity, atribución WooCommerce/Sourcebuster y flujos de atribución de RD Station</td><td>Medir navegación y eventos de compra, comprender el uso del sitio y atribuir fuentes de tráfico. Dependieron del consentimiento en las páginas probadas.</td></tr>
+                  <tr><td><strong>Publicidad</strong><br><span class="badge-cookie badge-marketing">Marketing</span></td><td>Etiquetas de publicidad o conversión de servicios integrados, cuando estén presentes</td><td>Medir campañas o personalizar anuncios, según las integraciones de la página y la elección del panel.</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1108,15 +1135,16 @@
           <article class="doc-article" id="cook-4">
             <h3><span class="num">2.4</span> ¿Cómo Gestionar o Desactivar las Cookies?</h3>
             <p>
-              Al navegar por nuestros portales, usted puede otorgar su consentimiento para la habilitación de cookies. En cualquier momento puede revocarlo eliminando o bloqueando las cookies desde las opciones de configuración de su navegador.
+              En el banner puede aceptar, rechazar o personalizar las categorías opcionales. Para revisar o retirar una elección guardada, use el enlace permanente <strong>“Preferencias de cookies”</strong> en el pie de página. Esta elección controla las cookies; no sustituye las preferencias para correo electrónico, WhatsApp u otros tratamientos.
             </p>
             <div class="callout callout-warning">
               <span class="callout-icon">⚠️</span>
               <div>
-                <strong>Efectos de la Desactivación:</strong> La inhabilitación de cookies estrictamente necesarias puede provocar un funcionamiento incorrecto del sitio, imposibilitando el envío de solicitudes de inscripción o el ingreso al Portal del Estudiante.
+                <strong>Efecto del rechazo:</strong> Rechazar categorías opcionales no debería impedir la navegación ni la compra. Desactivar el almacenamiento necesario para carrito, checkout, seguridad o acceso autenticado puede afectar esas funciones.
               </div>
             </div>
-            <p>Para configurar las cookies en los navegadores más habituales, consulte las guías oficiales:</p>
+            <p>También puede borrar cookies en la configuración del navegador, pero eso puede eliminar su elección guardada y mostrar el banner otra vez. Para elegir categorías en el sitio, use “Preferencias de cookies” en el pie de página.</p>
+            <p>Para gestionar cookies directamente en el navegador, consulte las guías oficiales:</p>
             <ul>
               <li><strong>Google Chrome:</strong> <a href="https://support.google.com/accounts/answer/61416?hl=es" target="_blank" rel="noopener noreferrer">Administrar cookies en Google Chrome ↗</a></li>
               <li><strong>Mozilla Firefox:</strong> <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer">Administrar cookies en Firefox ↗</a></li>
@@ -1128,7 +1156,7 @@
           <article class="doc-article" id="cook-5">
             <h3><span class="num">2.5</span> Canales de Consulta y Soporte</h3>
             <p>
-              Le recomendamos consultar periódicamente este documento en conjunto con nuestra Política de Privacidad. Si desea realizar alguna consulta sobre el manejo de cookies, contacte a nuestro Oficial de Protección de Datos en <strong>Leonardo.alcarde@phorte.org.br</strong>.
+              Cookiez registra el estado del consentimiento y las categorías elegidas; la validez configurada es de 180 días. Las categorías y los servicios pueden variar según la página y las etapas del checkout. Para consultas o solicitudes de privacidad, contacte al Oficial de Protección de Datos en <strong><a href="mailto:Leonardo.alcarde@phorte.org.br">Leonardo.alcarde@phorte.org.br</a></strong>.
             </p>
           </article>
         </section>
@@ -1146,7 +1174,7 @@
           <div class="summary-card">
             <div class="summary-card-title">📄 En Resumen: Directrices de Uso</div>
             <ul>
-              <li>El uso de nuestros portales y formularios implica la aceptación plena de estos Términos y el compromiso de suministrar información verídica.</li>
+              <li>Estos Términos orientan el uso de los sitios. Las condiciones específicas de compra de un curso se presentan en el checkout antes de confirmar el pedido.</li>
               <li>Todos los recursos pedagógicos, marcas, materiales didácticos y contenidos están protegidos por leyes de propiedad intelectual y derechos de autor.</li>
             </ul>
           </div>
@@ -1154,14 +1182,14 @@
           <article class="doc-article" id="term-1">
             <h3><span class="num">3.1</span> Aceptación de los Términos y Objeto</h3>
             <p>
-              Los presentes Términos de Uso norman el acceso y la utilización de los sitios web, páginas de aterrizaje (landing pages), simuladores y plataformas académicas pertenecientes a la <strong>FACULDADE PHORTE DE EDUCAÇÃO E TECNOLOGIA</strong>. Al navegar en nuestros canales, solicitar información o registrarse en procesos de admisión, el usuario declara haber leído, comprendido y aceptado la totalidad de estas condiciones.
+              Estos Términos regulan el acceso y uso de los sitios, páginas, formularios y portales digitales de Phorte. La compra de cursos digitales se contrata con la <strong>ASSOCIAÇÃO DE EDUCAÇÃO E NOVAS TECNOLOGIAS PHORTE</strong>; la información y las condiciones de la oferta se presentan en el checkout antes de confirmar el pedido. Navegar por el sitio no equivale a consentir el tratamiento de datos descrito en la Política de Privacidad.
             </p>
           </article>
 
           <article class="doc-article" id="term-2">
             <h3><span class="num">3.2</span> Registro, Veracidad y Deberes del Usuario</h3>
             <p>
-              Al completar formularios de admisiones, atención vía WhatsApp, solicitud de visitas institucionales o matrícula, el usuario asume la obligación de suministrar <strong>datos veraces, completos y actualizados</strong>, responsabilizándose civil y penalmente por la exactitud de las declaraciones efectuadas.
+              Al completar formularios o datos de matrícula, el usuario debe proporcionar información correcta y actualizada y comunicar las correcciones cuando sea necesario.
             </p>
             <p>El usuario se compromete a hacer un uso ético de las plataformas conforme a la legalidad vigente, absteniéndose expresamente de:</p>
             <ul>
@@ -1198,7 +1226,7 @@
               La Faculdade Phorte implementa sus mejores esfuerzos para procurar la continua disponibilidad de sus plataformas digitales, no haciéndose responsable por fallos temporales de conexión atribuibles a proveedores externos de internet o telecomunicaciones.
             </p>
             <p>
-              Estos Términos de Uso se rigen por la legislación de la República Federativa de Brasil. Se fija el <strong>Fuero del Distrito Judicial de la Ciudad de São Paulo, Estado de São Paulo</strong>, para resolver cualquier diferendo legal originado por el uso de estos servicios.
+              Se aplican las normas obligatorias pertinentes al servicio y al lugar del usuario. Esta disposición no limita los derechos ni los fueros obligatorios que la legislación aplicable reconoce al consumidor.
             </p>
           </article>
         </section>
@@ -1210,7 +1238,7 @@
           <div class="dpo-card-content">
             <h3>Canal Oficial del Oficial de Protección de Datos (DPO)</h3>
             <p>
-              En estricto cumplimiento del Art. 41 de la LGPD, nuestro Oficial de Protección de Datos actúa como vía institucional de comunicación directa para atender sus peticiones, aclarar inquietudes y coordinar requerimientos con la Autoridad Nacional de Protección de Datos (ANPD).
+              Para consultas sobre privacidad y solicitudes relacionadas con el tratamiento de datos, puede contactar a nuestro Oficial de Protección de Datos. En los casos regidos por la ley brasileña, este canal también atiende las solicitudes relacionadas con la LGPD y las comunicaciones pertinentes con la Autoridad Nacional de Protección de Datos (ANPD).
             </p>
             <p>
               Puede ejercer libremente cualquiera de sus derechos legalmente reconocidos contactando de forma directa a nuestro Oficial.
@@ -1252,9 +1280,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         const backToTopBtn = document.getElementById('backToTop');
-        const docTabs = document.querySelectorAll('.doc-tab');
         const docSections = document.querySelectorAll('.doc-section');
-        const tocGroups = document.querySelectorAll('.toc-group');
         const tocLinks = document.querySelectorAll('.toc-list a, .toc-heading');
         const searchInput = document.getElementById('terms-search');
 
@@ -1290,40 +1316,6 @@
         // Back to top click
         backToTopBtn.addEventListener('click', () => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Pill Tabs Filter
-        docTabs.forEach((tab) => {
-          tab.addEventListener('click', (e) => {
-            e.preventDefault();
-            const filter = tab.dataset.filter;
-
-            docTabs.forEach((t) => t.classList.remove('active'));
-            tab.classList.add('active');
-
-            if (filter === 'todos') {
-              docSections.forEach((sec) => (sec.style.display = 'block'));
-              tocGroups.forEach((group) => (group.style.display = 'block'));
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-              docSections.forEach((sec) => {
-                if (sec.dataset.category === filter) {
-                  sec.style.display = 'block';
-                  sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                } else {
-                  sec.style.display = 'none';
-                }
-              });
-
-              tocGroups.forEach((group) => {
-                if (group.dataset.doc === filter) {
-                  group.style.display = 'block';
-                } else {
-                  group.style.display = 'none';
-                }
-              });
-            }
-          });
         });
 
         // Search Filter inside policies
