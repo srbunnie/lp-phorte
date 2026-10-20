@@ -8,7 +8,7 @@ Página-vitrine dos três lançamentos de pós-graduação da Faculdade Phorte e
 
 ## Cursos
 
-Os três cards incluem o botão **Fazer pré-venda**, que leva ao formulário único de pré-venda. As páginas específicas dos cursos são:
+Os três cards incluem o botão **Pré-inscrição**, que leva ao formulário único de pré-venda. As páginas específicas dos cursos são:
 
 | Curso | Página |
 | --- | --- |
@@ -25,11 +25,11 @@ Os três cards mostram **360h** e **Ao vivo / Online com demonstrações prátic
 1. Cabeçalho fixo. Na entrada mostra só as duas marcas, grandes, como no topo do flyer; ao rolar vira uma barra compacta com o menu (rótulos do flyer).
 2. Banner principal: "Escolha o seu **próximo passo.**" (caixa vermelha inclinada, como no flyer), subtítulo e foto do casal do flyer, sobre um fundo limpo (só brilho vermelho). A chamada complementar abre a lista das 3 opções com os ícones do flyer ("Gestão & Negócios", "Personal Internacional + NASM", "Treinamento Feminino"), que levam ao card de cada curso. No celular e no tablet a foto fica no alto e o texto entra logo abaixo dos rostos; entre 1024 e 1439px o título encolhe com a tela para não cobrir a foto.
 3. Duas faixas cruzadas em movimento (decorativas).
-4. "Escolha a sua pós.": três banners empilhados (foto, título, descrição, 360h, modalidade e botão Fazer pré-venda).
+4. "Escolha a sua pós.": três banners empilhados (foto, título, descrição, 360h, modalidade e botão Pré-inscrição).
    - MBA: bandeiras do Brasil, da Espanha e da Colômbia (nacionalidades dos docentes).
    - Personal: logotipo NASM, bandeiras dos EUA e do Brasil, selo "Metodologia OPT™".
    - Biomecânica: selo "Especialização em treinamento feminino".
-5. Fechamento vermelho (texto do marketing, 15/10/2026): título "Garanta sua pré-inscrição com condição exclusiva!", descrição com o valor de **R$ 100,00**, botão Fazer pré-venda e, abaixo de um fio, a observação sobre pré-inscrição em mais de um curso.
+5. Fechamento vermelho (texto do marketing, 15/10/2026): título "Garanta sua pré-inscrição com condição exclusiva!", descrição com o valor de **R$ 100,00**, botão Pré-inscrição e, abaixo de um fio, a observação sobre pré-inscrição em mais de um curso.
 6. Rodapé com os dois logotipos ("Realização").
 
 ## Publicar no WordPress (Elementor)
@@ -51,7 +51,7 @@ O widget isola os estilos com `#lp-pos-ef`: o tema não altera a página e a pá
 
 ## Rastreamento (GTM / GA4)
 
-Os botões Fazer pré-venda direcionam ao formulário externo de pré-venda. Configure o rastreamento desses cliques no GTM/GA4 conforme necessário.
+Os botões Pré-inscrição direcionam ao formulário externo de pré-venda. Configure o rastreamento desses cliques no GTM/GA4 conforme necessário.
 
 ## Imagens e logotipos
 
