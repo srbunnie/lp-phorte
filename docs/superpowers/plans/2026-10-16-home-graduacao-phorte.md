@@ -10,7 +10,7 @@
 
 **Spec:** [propostas A e B](../../../Graduacao/home-graduacao-phorte/PROPOSTAS.md), apoiadas pelo [inventário](../../../Graduacao/home-graduacao-phorte/referencias/INVENTARIO.md) e [comparativo](../../../Graduacao/home-graduacao-phorte/referencias/COMPARATIVO.md).
 
-**Status em 16/10/2026:** implementação local das duas versões concluída após o usuário pedir “prossiga”. Prévias, peças Elementor, ZIPs e documentação disponíveis; verificações e limites registrados em `Graduacao/home-graduacao-phorte/VALIDACAO.md`. Homologação/publicação no WordPress permanecem como etapa posterior.
+**Status em 16/10/2026:** implementação local das duas versões concluída após o usuário pedir “prossiga”. Prévias, peças Elementor, ZIPs gerados localmente e documentação disponível (não versionada); verificações e limites registrados em `Graduacao/home-graduacao-phorte/VALIDACAO.md` (não versionado). Homologação/publicação no WordPress permanecem como etapa posterior.
 
 ## Global Constraints
 
@@ -68,7 +68,7 @@ Graduacao/home-graduacao-phorte/
   elementor/rodape/                  Widget e template comuns, gerados
   elementor/INSTALACAO.md            Passos e limites por variante
   elementor/assets-publicacao.json   Mapeamento real/pending de URLs
-  VALIDACAO.md                      Comandos, resultados e limites reais
+  VALIDACAO.md (não versionado) Comandos, resultados e limites reais
 ~~~
 
 Não editar diretamente `previa-*` ou os fragmentos gerados. A pasta `referencias/` conserva o levantamento; não usá-la como armazenamento de ofertas mutáveis sem atualização explícita.

@@ -4,7 +4,7 @@ Proposta para revisão, 16/10/2026. O usuário solicitou as duas versões: reorg
 
 **Situação atual:** a direção escolhida passou a ser a estrutura editorial (prévias B e C); ver [README](README.md). A descrição da B abaixo é histórica.
 
-**Atualização de execução:** após o pedido “prossiga”, as duas prévias foram implementadas conforme as estruturas abaixo. Ver [README](README.md), [validação](VALIDACAO.md) e [registro de execução](PROGRESSO.md). Este documento preserva a descrição original do desenho; revisão visual/editorial e homologação WordPress continuam posteriores.
+**Atualização de execução:** após o pedido “prossiga”, as duas prévias foram implementadas conforme as estruturas abaixo. Ver [README](README.md), validação (VALIDACAO.md, não versionado) e registro de execução (PROGRESSO.md, não versionado). Este documento preserva a descrição original do desenho; revisão visual/editorial e homologação WordPress continuam posteriores.
 
 ## 1. Objetivo e limite desta etapa
 

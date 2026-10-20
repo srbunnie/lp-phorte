@@ -72,7 +72,7 @@ node Graduacao/home-graduacao-phorte/scripts/qa-integracao.cjs
 npx --yes html-validate Graduacao/home-graduacao-phorte/previa-a/index.html Graduacao/home-graduacao-phorte/previa-b/index.html Graduacao/home-graduacao-phorte/previa-c/index.html
 ~~~
 
-`qa-editorial` cobre B e C (5 larguras sem rolagem lateral, busca, unidades, relatos, banner, faixas no celular, menu, axe, sem JS). `qa-navegador` e `qa-integracao` cobrem A e a montagem com o formulário entre widgets. Detalhes em [VALIDACAO.md](VALIDACAO.md).
+`qa-editorial` cobre B e C (5 larguras sem rolagem lateral, busca, unidades, relatos, banner, faixas no celular, menu, axe, sem JS). `qa-navegador` e `qa-integracao` cobrem A e a montagem com o formulário entre widgets. Detalhes em VALIDACAO.md (não versionado).
 
 ## Elementor
 
@@ -90,6 +90,6 @@ Antes de publicar:
 1. [Inventário da home atual](referencias/INVENTARIO.md) e [comparação das referências](referencias/COMPARATIVO.md).
 2. [Propostas A e B originais](PROPOSTAS.md) — desenho inicial; a B foi depois substituída pela estrutura editorial.
 3. [Plano de implementação](../../docs/superpowers/plans/2026-10-16-home-graduacao-phorte.md).
-4. [Registro de execução](PROGRESSO.md): cada rodada de ajustes e suas decisões.
+4. Registro de execução (PROGRESSO.md, não versionado): cada rodada de ajustes e suas decisões.
 
 Fontes: home atual, pós atual (https://posphorte.com.br/), SIG Pós, protótipo da pós (https://phorte-pos.vercel.app/), protótipo da graduação (https://graduacao-phorte.vercel.app/) e referência editorial EBAC. Código da graduação no GitHub `srbunnie/Site-Phorte`; da pós em `srbunnie/PhortePosnewsite`. Capturas e scripts de pesquisa ficam em `output/playwright/home-graduacao-phorte/` (ignorado pelo Git).

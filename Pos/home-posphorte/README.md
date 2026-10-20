@@ -1,6 +1,6 @@
 # Home Pós Phorte — protótipo HTML
 
-Para continuar o trabalho em outra sessão ou com outro agente, começar por [HANDOFF.md](HANDOFF.md): histórico consolidado, decisões, mapa de arquivos, comandos, testes e pendências.
+Para continuar o trabalho em outra sessão ou com outro agente, começar por HANDOFF.md (não versionado): histórico consolidado, decisões, mapa de arquivos, comandos, testes e pendências.
 
 Prévia completa da home. **Cabeçalho, home e rodapé são peças separadas**, publicadas de forma independente no Elementor; a busca da home usa o shortcode `[phorte_pos_search]`. Conteúdo coletado de <https://posphorte.com.br/> em **15/10/2026**. A sequência da página original foi preservada; o visual usa Poppins e os tokens atuais do site da Graduação Phorte.
 
@@ -77,6 +77,6 @@ npx --yes --package @playwright/cli playwright-cli -s=home-posphorte --raw run-c
 npx --yes --package @playwright/cli playwright-cli -s=home-posphorte --raw run-code --filename=Pos/home-posphorte/scripts/qa-hero.cjs
 ~~~
 
-O roteiro pressupõe servidor na porta 4177; não é teste de produção. Capturas e relatórios ficam em output/playwright/home-posphorte/, ignorado pelo Git. Consulte [VALIDACAO.md](VALIDACAO.md) para resultados e limites.
+O roteiro pressupõe servidor na porta 4177; não é teste de produção. Capturas e relatórios ficam em output/playwright/home-posphorte/, ignorado pelo Git. Consulte VALIDACAO.md (não versionado) para resultados e limites.
 
 Poppins acompanha a licença [SIL Open Font License](assets/fonts/OFL.txt).

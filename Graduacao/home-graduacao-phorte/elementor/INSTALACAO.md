@@ -1,6 +1,6 @@
 # Elementor — três versões da home de graduação
 
-Pacotes locais para revisão. **Nada foi importado ou publicado no WordPress por esta implementação.** O formulário presente nos templates é uma prévia visual sem envio; deve ser substituído pelo Form nativo com suas ações verificadas antes de uso público.
+Pacotes locais para revisão, gerados por `scripts/empacotar.mjs`; os ZIPs não são versionados. **Nada foi importado ou publicado no WordPress por esta implementação.** O formulário presente nos templates é uma prévia visual sem envio; deve ser substituído pelo Form nativo com suas ações verificadas antes de uso público.
 
 ## Peças
 
