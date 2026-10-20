@@ -26,3 +26,7 @@ A direção visual acompanha a prévia editorial C da [home da graduação](../h
 - `index.html`: conteúdo e navegação por seções.
 - `styles.css`: identidade visual e layout responsivo.
 - `script.js`: abertura e fechamento do menu em telas pequenas.
+
+## Documentação do projeto
+
+Consulte [`DOCUMENTACAO_DO_PROJETO.md`](./DOCUMENTACAO_DO_PROJETO.md) para ver a análise regulatória, a jornada sugerida, referências de outras instituições e a proposta para cadastro, e-mails, área interna, privacidade e evolução para produção.
