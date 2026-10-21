@@ -273,6 +273,17 @@
         color: var(--muted);
         font-size: 0.84rem;
       }
+      .project-title small.project-id {
+        display: inline-flex;
+        margin-top: 6px;
+        padding: 2px 6px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        color: var(--muted);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
 
       /* Status Badges */
       .status {
@@ -445,33 +456,13 @@
         <h3 class="projects-group-title">Em Andamento &amp; Destaques</h3>
         <div class="projects">
 
-          <!-- Pós-graduações em Educação Física Internacional (Phorte + FitnessLink) -->
-          <details class="project pos">
-            <summary>
-              <div class="project-title">
-                <strong>Pós-graduações em Educação Física Internacional — Phorte + FitnessLink</strong>
-                <small>Pós Phorte · Vitrine dos 3 lançamentos (MBA Gestão, Personal Internacional, Treinamento Feminino)</small>
-              </div>
-              <span class="status andamento">Em implementação</span>
-            </summary>
-            <div class="project-body">
-              <p>Página-vitrine destino do QR do flyer A5, no visual da LP de campanha do Congreso de Punta. Apresenta o MBA Internacional em Gestão, o Personal Trainer Internacional (NASM) e Biomecânica e Treinamento de Força para Mulheres, com a pré-inscrição por R$ 100,00 no fechamento.</p>
-              <ul class="subprojects">
-                <li class="status-group-title">Destino</li>
-                <li class="subproject"><a href="https://posphorte.com.br/pos-graduacao-educacao-fisica-internacional/">Página no WordPress ↗</a><span class="status andamento">A publicar</span></li>
-                <li class="status-group-title">Preview e implementação</li>
-                <li class="subproject"><a href="./Pos/educacao-fisica-internacional/index.html">Landing page ↗</a> <a href="./Pos/educacao-fisica-internacional/elementor/widget-html.html" download>Baixar Elementor ↓</a><span class="status andamento">Protótipo</span></li>
-                <li class="subproject"><a href="./Pos/educacao-fisica-internacional/README.md">README, imagens e GTM ↗</a></li>
-              </ul>
-            </div>
-          </details>
-
           <!-- Portal do Egresso -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-002" data-project-id="LP-002">
             <summary>
               <div class="project-title">
                 <strong>Portal do Egresso</strong>
                 <small>Graduação Phorte · Relacionamento e atualização cadastral de ex-alunos</small>
+                <small class="project-id">ID LP-002</small>
               </div>
               <span class="status andamento">Protótipo estático</span>
             </summary>
@@ -493,43 +484,19 @@
             </div>
           </details>
 
-          <!-- Consulta Pública de Diplomas -->
-          <details class="project grad">
-            <summary>
-              <div class="project-title">
-                <strong>Consulta Pública de Diplomas</strong>
-                <small>Graduação Phorte · Consulta pública e validação de diploma digital</small>
-              </div>
-              <span class="status andamento">Em implementação</span>
-            </summary>
-            <div class="project-body">
-              <p>Versão demonstrativa: consultas por CPF e registro são simuladas; a validação por código abre o serviço de diploma digital do Perseus.</p>
-              <ul class="subprojects">
-                <li class="status-group-title">Acesso e documentação</li>
-                <li class="subproject">
-                  <a href="./Graduacao/consulta-publica-de-diplomas/index-funcional.html">Consulta Pública de Diplomas ↗</a>
-                  <span class="status andamento">Versão demonstrativa</span>
-                </li>
-                <li class="subproject">
-                  <a href="./Graduacao/consulta-publica-de-diplomas/README.md">README do projeto ↗</a>
-                  <span class="status andamento">Em implementação</span>
-                </li>
-              </ul>
-            </div>
-          </details>
-
           <!-- Primeiras versões visuais das LPs de gestão -->
-          <details class="project grad" open>
+          <details class="project grad" id="project-lp-004" data-project-id="LP-004" open>
             <summary>
               <span class="priority">1</span>
               <div class="project-title">
-                <strong>Graduação — Cursos de Gestão</strong>
-                <small>Administração, Marketing, Processos Gerenciais e Recursos Humanos</small>
+                <strong>Graduação Cursos</strong>
+                <small>Administração, Marketing, Processos Gerenciais, Recursos Humanos e Tradução e Interpretação</small>
+                <small class="project-id">ID LP-004</small>
               </div>
               <span class="status andamento">Em desenvolvimento</span>
             </summary>
             <div class="project-body">
-              <p>Primeiras versões visuais com copy por curso, grade curricular, formulário demonstrativo e fragmentos para Elementor. Conteúdo e condições comerciais em revisão.</p>
+              <p>Primeiras versões visuais com copy por curso, grade curricular, formulário demonstrativo e fragmentos para Elementor. Conteúdo e condições comerciais em revisão. A landing page de Tradução e Interpretação Português / Inglês (Turma 2027.1), com pacote Elementor e documentação, está agrupada neste projeto.</p>
               <ul class="subprojects">
                 <li class="status-group-title">Previews estáticos</li>
                 <li class="subproject"><a href="./Graduacao/administracao/index.html">Administração ↗</a><span class="status andamento">Primeira versão</span></li>
@@ -542,40 +509,13 @@
                 <li class="subproject"><a href="./Graduacao/marketing/implementacao/elementor/README.md">Marketing no Elementor ↗</a><span class="status andamento">Para revisão</span></li>
                 <li class="subproject"><a href="./Graduacao/processos-gerenciais/implementacao/elementor/README.md">Processos Gerenciais no Elementor ↗</a><span class="status andamento">Para revisão</span></li>
                 <li class="subproject"><a href="./Graduacao/recursos-humanos/implementacao/elementor/README.md">Recursos Humanos no Elementor ↗</a><span class="status andamento">Para revisão</span></li>
+                <li class="status-group-title">Tradução e Interpretação</li>
+                <li class="subproject"><a href="./Graduacao/traducao%20e%20interpretacao/index.html">Landing page principal ↗</a><span class="status andamento">Em andamento</span></li>
+                <li class="subproject"><a href="./Graduacao/traducao%20e%20interpretacao/implementacao/elementor/README.md">Pacote Elementor e pendências ↗</a><span class="status andamento">Em andamento</span></li>
+                <li class="subproject"><a href="./Graduacao/traducao%20e%20interpretacao/referencias/asset-inventory.md">Inventário de assets e carrossel de docentes ↗</a><span class="status andamento">Atualizado</span></li>
               </ul>
             </div>
           </details>
-
-          <!-- Tradução e Interpretação -->
-          <details class="project grad" open>
-            <summary>
-              <span class="priority">1</span>
-              <div class="project-title">
-                <strong>Graduação em Tradução e Interpretação</strong>
-                <small>Graduação Phorte · Português / Inglês · EAD on-line ao vivo</small>
-              </div>
-              <span class="status andamento">Em andamento</span>
-            </summary>
-            <div class="project-body">
-              <p>Landing page principal de graduação em Tradução e Interpretação Português / Inglês (Turma 2027.1), pacote Elementor e documentação de implementação.</p>
-              <ul class="subprojects">
-                <li class="status-group-title">Preview e implementação</li>
-                <li class="subproject">
-                  <a href="./Graduacao/traducao%20e%20interpretacao/index.html">Landing page de Tradução e Interpretação ↗</a>
-                  <span class="status andamento">Em andamento</span>
-                </li>
-                <li class="subproject">
-                  <a href="./Graduacao/traducao%20e%20interpretacao/implementacao/elementor/README.md">Pacote Elementor e pendências ↗</a>
-                  <span class="status andamento">Em andamento</span>
-                </li>
-                <li class="subproject">
-                  <a href="./Graduacao/traducao%20e%20interpretacao/referencias/asset-inventory.md">Inventário de assets e carrossel de docentes ↗</a>
-                  <span class="status andamento">Atualizado</span>
-                </li>
-              </ul>
-            </div>
-          </details>
-
 
         </div>
 
@@ -583,12 +523,61 @@
         <h3 class="projects-group-title">Concluídos &amp; Publicados</h3>
         <div class="projects">
 
+          <!-- Pós-graduações em Educação Física Internacional (Phorte + FitnessLink) -->
+          <details class="project pos" id="project-lp-001" data-project-id="LP-001">
+            <summary>
+              <div class="project-title">
+                <strong>Pós-graduações em Educação Física Internacional — Phorte + FitnessLink</strong>
+                <small>Pós Phorte · Vitrine dos 3 lançamentos (MBA Gestão, Personal Internacional, Treinamento Feminino)</small>
+                <small class="project-id">ID LP-001</small>
+              </div>
+              <span class="status concluido">Concluído</span>
+            </summary>
+            <div class="project-body">
+              <p>Página-vitrine destino do QR do flyer A5, no visual da LP de campanha do Congreso de Punta. Apresenta o MBA Internacional em Gestão, o Personal Trainer Internacional (NASM) e Biomecânica e Treinamento de Força para Mulheres, com a pré-inscrição por R$ 100,00 no fechamento.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Destino</li>
+                <li class="subproject"><a href="https://posphorte.com.br/pos-graduacao-educacao-fisica-internacional/">Página no WordPress ↗</a><span class="status concluido">Publicado</span></li>
+                <li class="status-group-title">Preview e implementação</li>
+                <li class="subproject"><a href="./Pos/educacao-fisica-internacional/index.html">Landing page ↗</a> <a href="./Pos/educacao-fisica-internacional/elementor/widget-html.html" download>Baixar Elementor ↓</a><span class="status concluido">Concluído</span></li>
+                <li class="subproject"><a href="./Pos/educacao-fisica-internacional/README.md">README, imagens e GTM ↗</a></li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Consulta Pública de Diplomas -->
+          <details class="project grad" id="project-lp-003" data-project-id="LP-003">
+            <summary>
+              <div class="project-title">
+                <strong>Consulta Pública de Diplomas</strong>
+                <small>Graduação Phorte · Consulta pública e validação de diploma digital</small>
+                <small class="project-id">ID LP-003</small>
+              </div>
+              <span class="status concluido">Concluído</span>
+            </summary>
+            <div class="project-body">
+              <p>Versão demonstrativa: consultas por CPF e registro são simuladas; a validação por código abre o serviço de diploma digital do Perseus.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Acesso e documentação</li>
+                <li class="subproject">
+                  <a href="./Graduacao/consulta-publica-de-diplomas/index-funcional.html">Consulta Pública de Diplomas ↗</a>
+                  <span class="status andamento">Versão demonstrativa</span>
+                </li>
+                <li class="subproject">
+                  <a href="./Graduacao/consulta-publica-de-diplomas/README.md">README do projeto ↗</a>
+                  <span class="status concluido">Concluído</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
           <!-- Promoção de cursos grátis (divulgação Congreso de Punta) -->
-          <details class="project cursos">
+          <details class="project cursos" id="project-lp-005" data-project-id="LP-005">
             <summary>
               <div class="project-title">
                 <strong>Cursos grátis Phorte — Congreso de Punta</strong>
                 <small>Cursos Livres Phorte · LP em espanhol com cupom de 100% em dois cursos</small>
+                <small class="project-id">ID LP-005</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -605,11 +594,12 @@
           </details>
 
           <!-- LPs frontais de eventos -->
-          <details class="project cursos">
+          <details class="project cursos" id="project-lp-006" data-project-id="LP-006">
             <summary>
               <div class="project-title">
                 <strong>LPs frontais de eventos</strong>
                 <small>Cursos Livres Phorte · Landing pages responsivas e pacotes Elementor</small>
+                <small class="project-id">ID LP-006</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -630,11 +620,12 @@
 
 
           <!-- Pós em Educação - Hub Geral -->
-          <details class="project pos">
+          <details class="project pos" id="project-lp-007" data-project-id="LP-007">
             <summary>
               <div class="project-title">
                 <strong>Pós em Educação (Hub Geral de Cursos)</strong>
                 <small>Pós Phorte · Landing page completa de cursos de educação</small>
+                <small class="project-id">ID LP-007</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -656,11 +647,12 @@
           </details>
 
           <!-- Bolsas Sociais Escola Aberta -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-008" data-project-id="LP-008">
             <summary>
               <div class="project-title">
                 <strong>Bolsas Sociais — Escola Aberta</strong>
                 <small>Graduação Phorte · Parceria Escola Aberta (RH, Processos Gerenciais, Marketing)</small>
+                <small class="project-id">ID LP-008</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -677,11 +669,12 @@
           </details>
 
           <!-- Grade de professores — Medicina do Esporte -->
-          <details class="project pos">
+          <details class="project pos" id="project-lp-009" data-project-id="LP-009">
             <summary>
               <div class="project-title">
                 <strong>Medicina do Esporte — Grade de professores</strong>
                 <small>Pós Phorte · Carrossel de docentes para a página do curso</small>
+                <small class="project-id">ID LP-009</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -698,11 +691,12 @@
           </details>
 
           <!-- Bolsas Sociais Graduação -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-010" data-project-id="LP-010">
             <summary>
               <div class="project-title">
                 <strong>Bolsas Sociais — Graduação Phorte</strong>
                 <small>Graduação Phorte · Bolsas de até 100% (Administração, RH, Processos Gerenciais, Marketing)</small>
+                <small class="project-id">ID LP-010</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -719,11 +713,12 @@
           </details>
 
           <!-- Pedagogia -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-011" data-project-id="LP-011">
             <summary>
               <div class="project-title">
                 <strong>Graduação em Pedagogia</strong>
                 <small>Graduação Phorte · Versões 2026-2 e 2027-1 semipresencial</small>
+                <small class="project-id">ID LP-011</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -753,11 +748,12 @@
           </details>
 
           <!-- Educação Infantil Pikleriana -->
-          <details class="project pos">
+          <details class="project pos" id="project-lp-012" data-project-id="LP-012">
             <summary>
               <div class="project-title">
                 <strong>Educação Infantil — Perspectiva Pikleriana</strong>
                 <small>Pós Phorte · Live Educação</small>
+                <small class="project-id">ID LP-012</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -778,11 +774,12 @@
           </details>
 
           <!-- Políticas Institucionais -->
-          <details class="project institucional">
+          <details class="project institucional" id="project-lp-013" data-project-id="LP-013">
             <summary>
               <div class="project-title">
                 <strong>Políticas de Privacidade, Cookies e Termos de Uso</strong>
                 <small>Institucional Phorte · Página unificada 3-em-1</small>
+                <small class="project-id">ID LP-013</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -799,11 +796,12 @@
           </details>
 
           <!-- Tradushow Cursos Livres -->
-          <details class="project cursos">
+          <details class="project cursos" id="project-lp-014" data-project-id="LP-014">
             <summary>
               <div class="project-title">
                 <strong>TRADUSHOW — IA e Humano em Sinergia</strong>
                 <small>Cursos Livres Phorte · Formação e Evento de Tradução</small>
+                <small class="project-id">ID LP-014</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -820,11 +818,12 @@
           </details>
           
           <!-- Preparatório Celpe-Bras -->
-          <details class="project pos">
+          <details class="project pos" id="project-lp-015" data-project-id="LP-015">
             <summary>
               <div class="project-title">
                 <strong>Preparatório Celpe-Bras</strong>
                 <small>Pós Phorte · Curso preparatório oficial com Prof. Ms. Fernando Pedretti</small>
+                <small class="project-id">ID LP-015</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -845,11 +844,12 @@
           </details>
 
           <!-- Registro e Documentação -->
-          <details class="project pos">
+          <details class="project pos" id="project-lp-016" data-project-id="LP-016">
             <summary>
               <div class="project-title">
                 <strong>Registro e Documentação</strong>
                 <small>Pós Phorte · Live Educação</small>
+                <small class="project-id">ID LP-016</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -883,11 +883,12 @@
           </details>
 
           <!-- Aula Inaugural de Gestão -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-017" data-project-id="LP-017">
             <summary>
               <div class="project-title">
                 <strong>Aula Inaugural de Gestão</strong>
                 <small>Graduação Phorte</small>
+                <small class="project-id">ID LP-017</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -908,11 +909,12 @@
           </details>
 
           <!-- Formação em Futebol e Futsal USCS -->
-          <details class="project uscs">
+          <details class="project uscs" id="project-lp-018" data-project-id="LP-018">
             <summary>
               <div class="project-title">
                 <strong>Formação em Futebol e Futsal</strong>
                 <small>USCS</small>
+                <small class="project-id">ID LP-018</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -932,6 +934,32 @@
             </div>
           </details>
 
+          <!-- Price Card USCS -->
+          <details class="project uscs" id="project-lp-021" data-project-id="LP-021">
+            <summary>
+              <div class="project-title">
+                <strong>Price Card USCS</strong>
+                <small>USCS · Componente React de preços e ofertas</small>
+                <small class="project-id">ID LP-021</small>
+              </div>
+              <span class="status concluido">Concluído</span>
+            </summary>
+            <div class="project-body">
+              <p>Componente modular React com cards de preço dinâmicos para ofertas e cursos da USCS.</p>
+              <ul class="subprojects">
+                <li class="status-group-title">Preview &amp; Documentação</li>
+                <li class="subproject">
+                  <a href="./USCS/prototipo-price-card/preview-react-app/dist/index.html">Preview do Componente React (Build) ↗</a>
+                  <span class="status concluido">Concluído</span>
+                </li>
+                <li class="subproject">
+                  <a href="./USCS/prototipo-price-card/README.md">Documentação do Componente ↗</a>
+                  <span class="status concluido">Concluído</span>
+                </li>
+              </ul>
+            </div>
+          </details>
+
         </div>
 
         <!-- PAUSADOS -->
@@ -939,11 +967,12 @@
         <div class="projects">
 
           <!-- Price Card Graduação -->
-          <details class="project grad">
+          <details class="project grad" id="project-lp-019" data-project-id="LP-019">
             <summary>
               <div class="project-title">
                 <strong>Price Card Graduação</strong>
                 <small>Graduação Phorte · Componente de ofertas e inscrição</small>
+                <small class="project-id">ID LP-019</small>
               </div>
               <span class="status pausado">Pausado</span>
             </summary>
@@ -964,11 +993,12 @@
           </details>
 
           <!-- FAQ dos Cursos Phorte -->
-          <details class="project institucional">
+          <details class="project institucional" id="project-lp-020" data-project-id="LP-020">
             <summary>
               <div class="project-title">
                 <strong>FAQ dos Cursos Phorte</strong>
                 <small>Institucional · Central de ajuda para cursos, formações e eventos</small>
+                <small class="project-id">ID LP-020</small>
               </div>
               <span class="status concluido">Concluído</span>
             </summary>
@@ -979,31 +1009,6 @@
                 <li class="subproject">
                   <a href="./faq/index.html">FAQ dos Cursos Phorte ↗</a>
                   <span class="status concluido">Concluído</span>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- Price Card USCS -->
-          <details class="project uscs">
-            <summary>
-              <div class="project-title">
-                <strong>Price Card USCS</strong>
-                <small>USCS · Componente React de preços e ofertas</small>
-              </div>
-              <span class="status pausado">Pausado</span>
-            </summary>
-            <div class="project-body">
-              <p>Componente modular React com cards de preço dinâmicos para ofertas e cursos da USCS.</p>
-              <ul class="subprojects">
-                <li class="status-group-title">Preview &amp; Documentação</li>
-                <li class="subproject">
-                  <a href="./USCS/prototipo-price-card/preview-react-app/dist/index.html">Preview do Componente React (Build) ↗</a>
-                  <span class="status pausado">Pausado</span>
-                </li>
-                <li class="subproject">
-                  <a href="./USCS/prototipo-price-card/README.md">Documentação do Componente ↗</a>
-                  <span class="status pausado">Pausado</span>
                 </li>
               </ul>
             </div>
