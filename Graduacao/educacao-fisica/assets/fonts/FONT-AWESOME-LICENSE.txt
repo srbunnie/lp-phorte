@@ -1,0 +1,9 @@
+Font Awesome Free icon fonts are included as local assets for the page recreation.
+
+Font Awesome Free licensing:
+- Icons: Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Fonts: SIL Open Font License 1.1
+- Code: MIT License
+
+License details: https://fontawesome.com/license/free
+Original font files were served by the Elementor Font Awesome library on faculdadephorte.edu.br.

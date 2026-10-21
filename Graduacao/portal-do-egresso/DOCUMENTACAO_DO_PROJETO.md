@@ -23,9 +23,9 @@ A solicitação institucional pode ser traduzida em duas frentes:
 
 ## 2. Estado atual do projeto
 
-O projeto está em `Graduacao/portal-do-egresso/` e contém uma landing page responsiva com navegação por seções, texto institucional, espaços editoriais em validação e campos demonstrativos para nome, e-mail pessoal, curso, ano de formação e situação profissional.
+O projeto está em `Graduacao/portal-do-egresso/` e contém uma landing page responsiva e simplificada, com apresentação da comunidade de egressos e um formulário demonstrativo para nome, e-mail pessoal, curso, ano de conclusão e situação profissional opcional. A página também oferece um link externo para Google Forms.
 
-O protótipo não possui backend, banco de dados, autenticação, integração acadêmica, analytics, CRM, envio de formulário ou e-mail. A mensagem ao lado dos campos avisa que a página não coleta dados e orienta a não inserir dados pessoais reais. Benefícios, vagas, histórias e devolutivas da CPA estão sinalizados como conteúdo em preparação ou dependente de validação.
+O protótipo não possui backend, banco de dados, autenticação, integração acadêmica, analytics, CRM, envio de formulário ou e-mail. Os campos da página são apenas demonstrativos: as respostas não são enviadas nem armazenadas e a interface orienta a não inserir dados pessoais reais. O formulário externo abre um serviço independente; o link atualmente fornecido inclui perguntas específicas sobre Direito na UnB e precisa ser revisto ou substituído antes de ser apresentado como formulário da Phorte.
 
 **Este código não deve ser usado para uma coleta real.** Antes de retirar o aviso de demonstração, é necessário aprovar finalidade, campos, base legal, aviso de privacidade, responsáveis, infraestrutura e fluxo de atendimento aos direitos dos titulares.
 
@@ -97,6 +97,8 @@ CPF, salário, nome de empresa, telefone, endereço, perfil de rede social e cur
 - **Acompanhamento:** convidar para atualizar a trajetória em período definido pela CPA, com perguntas curtas e objetivo explícito.
 - **Newsletter:** envio separado, conforme preferência registrada; guardar quando e como a escolha foi feita e disponibilizar descadastro.
 
+Os modelos de mensagem, regras editoriais e o fluxograma Mermaid da comunicação pós-cadastro estão em [COMUNICACAO_POS_INSCRICAO.md](./COMUNICACAO_POS_INSCRICAO.md). A página atual não envia nenhuma dessas mensagens.
+
 ## 7. Área interna e operação após o preenchimento
 
 A instituição precisa de uma área restrita para operar o processo. Recomenda-se iniciar com quatro capacidades:
@@ -121,7 +123,7 @@ Base de egressos -> painel autenticado (CPA / operação) -> relatórios e açõ
 Sistema acadêmico -> validação mínima de curso e conclusão
 ```
 
-A página atual pode continuar como camada pública. Para dados reais, o envio precisa ir a um serviço no servidor com validação, proteção contra abuso e registro de consentimentos/preferências quando aplicável. O navegador não deve ser a base de armazenamento nem conter credenciais. Se o sistema acadêmico permitir, a confirmação de curso e conclusão deve ser feita por integração ou validação segura, evitando pedir mais identificadores do que o necessário.
+A página atual pode continuar como camada pública. Para dados reais, o envio precisa ir a um serviço aprovado com validação, proteção contra abuso e registro de preferências quando aplicável. O navegador não deve ser a base de armazenamento nem conter credenciais. O link atual do Google Forms não integra a landing page e seu conteúdo precisa ser validado para a instituição antes de qualquer divulgação. Se o sistema acadêmico permitir, a confirmação de curso e conclusão deve ser feita por integração ou validação segura, evitando pedir mais identificadores do que o necessário.
 
 Um login completo para egressos deve ser uma fase posterior e só se justifica se a instituição lançar serviços que exijam acesso recorrente. Para uma pesquisa pontual, confirmação por e-mail e link de atualização com prazo limitado podem ser suficientes, sujeitos à avaliação de segurança e privacidade.
 
