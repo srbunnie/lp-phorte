@@ -90,6 +90,10 @@ Projetos que não forem triviais devem ter seu próprio `README.md`, contendo:
 7. Instruções para executar ou editar a página.
 8. Observações sobre integrações, formulários, pixels e analytics.
 
+## Guia de criação de landing pages
+
+Para conduzir o briefing, a estratégia, a copy, o design, a implementação e a revisão de novas páginas, consulte [Orientações para criação de landing pages da Phorte](./docs/orientacoes-criacao-landing-pages-phorte.md).
+
 ## Convenções de arquivos
 
 - Use nomes em minúsculas e sem espaços: `hero-graduacao.webp`.
