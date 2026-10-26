@@ -14,6 +14,8 @@
 
 Abra `cadastro.html`, `materiais.html` ou `depoimentos.html` no navegador. O carrossel requer JavaScript do navegador. Os vídeos dependem de conexão com a internet e de permissão de visualização nas plataformas de origem.
 
+Status da página de materiais, QA e destinos comerciais pendentes de validação editorial: [MATERIAIS-STATUS.md](MATERIAIS-STATUS.md).
+
 ## Cadastro
 
 `cadastro.html` preserva a copy aprovada e organiza header, resumo, CTA para `#formulario`, formulário demonstrativo, contexto, docentes, próximo passo e footer. O hero desktop combina as três fotos locais dos docentes e o formulário; no mobile o formulário vem imediatamente após o resumo e seu CTA. Um CTA fixo aparece após a primeira dobra quando o formulário está fora da tela.
