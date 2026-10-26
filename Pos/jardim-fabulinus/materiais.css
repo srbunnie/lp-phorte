@@ -1,0 +1,99 @@
+.materiais-page { min-width: 0; }
+.materiais-page .materials-hero {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .9fr);
+  gap: 48px;
+  padding-block: 64px;
+}
+.confirmation-mark { display: grid; width: 42px; height: 42px; place-items: center; margin-bottom: 16px; border-radius: 50%; color: var(--green-dark); background: var(--green-pale); font-size: 1.4rem; }
+.materiais-page .materials-intro h1 { margin-bottom: 20px; font-size: clamp(2.7rem, 4.4vw, 4rem); }
+.materiais-page .materials-intro .hero-lede { margin: 0; font-size: 1.04rem; font-weight: 400; line-height: 1.7; color: var(--muted); }
+.materials-intro strong { display: block; margin-bottom: 12px; color: var(--ink); font-size: 1.18rem; line-height: 1.5; }
+.materials-faculty { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: start; padding: 26px 18px 20px; border-radius: 24px; background: var(--cream); }
+.materials-portrait { min-width: 0; margin: 0; }
+.materials-portrait img { width: 100%; height: 220px; object-fit: cover; object-position: center 28%; border-radius: 80px 80px 14px 14px; background: var(--green-pale); }
+.materials-faculty .portrait-dubovik { padding-top: 24px; }
+.materials-faculty .portrait-dubovik img { object-position: center 60%; }
+.materials-faculty .portrait-cristiano { padding-top: 48px; }
+.materials-faculty .portrait-cristiano img { object-position: center; }
+.materials-portrait figcaption { margin-top: 10px; color: var(--ink); font-size: .74rem; font-weight: 600; line-height: 1.45; }
+.materiais-page .lessons-section { padding-block: 64px; }
+.materiais-page .section-heading { margin-bottom: 28px; }
+.materiais-page .lesson-grid { gap: 24px; }
+.materiais-page .lesson-card { display: flex; flex-direction: column; padding: 30px; }
+.materiais-page .lesson-number { display: grid; width: 42px; height: 42px; place-items: center; margin-bottom: 24px; border: 1px solid var(--line); border-radius: 50%; color: var(--green-dark); background: var(--green-pale); }
+.materiais-page .lesson-card h3 { min-height: 0; max-width: 440px; font-size: 1.4rem; line-height: 1.3; }
+.materiais-page .lesson-card p { flex-grow: 1; margin-bottom: 24px; line-height: 1.65; }
+.materiais-page .lesson-card a { align-self: start; min-height: 46px; margin-top: auto; padding: 10px 0; }
+.materiais-page .lesson-card a:hover { color: var(--ink); }
+.materials-testimonial { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 360px); align-items: center; gap: 64px; padding-block: 72px; }
+.materials-testimonial h2 { max-width: 620px; margin: 0; font-size: clamp(1.9rem, 3.2vw, 2.8rem); }
+.materials-testimonial .testimonial-teaser { width: 100%; padding: 14px; box-shadow: none; border: 1px solid var(--line); }
+.materials-video { display: grid; width: 100%; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 14px; background: var(--ink); }
+.materials-video[hidden] { display: none; }
+.video-activate { display: flex; flex-direction: column; gap: 22px; align-items: center; justify-content: center; width: 100%; padding: 24px; border: 0; color: var(--paper); background: radial-gradient(ellipse at top left, #36624f, var(--ink) 75%); font-weight: 700; line-height: 1.5; text-align: center; cursor: pointer; }
+.video-activate[hidden] { display: none; }
+.video-play { display: grid; width: 72px; height: 72px; place-items: center; padding-left: 4px; border: 1px solid var(--paper); border-radius: 50%; font-size: 1.55rem; transition: transform .2s ease; }
+.video-activate:hover .video-play { transform: scale(1.08); }
+.video-activate:focus-visible { outline-offset: -6px; outline-color: var(--paper); }
+.materials-video iframe { width: 100%; height: 100%; border: 0; }
+.video-fallback { display: flex; min-height: 48px; align-items: center; justify-content: center; margin-top: 8px; padding: 8px; font-size: .88rem; font-weight: 600; text-align: center; }
+.materiais-page .course-promo { display: block; width: 100%; margin: 0; padding: 64px max(24px, calc((100vw - 1160px) / 2)); color: var(--paper); background: var(--green-dark); }
+.course-promo-copy { max-width: 900px; }
+.materiais-page .course-promo-copy h2 { font-size: clamp(1.9rem, 3.2vw, 2.8rem); line-height: 1.2; }
+.materiais-page .course-promo-copy p { max-width: 800px; color: var(--paper); }
+.materiais-page .materials-pos-cta { margin-top: 12px; padding: 16px 26px; color: var(--green-dark); background: var(--paper); line-height: 1.4; }
+.materiais-page .materials-pos-cta:hover { color: var(--ink); background: var(--cream); }
+.materiais-page .bonus-section { padding-block: 54px; }
+.materiais-page .bonus-section h2 { font-size: clamp(1.45rem, 2.2vw, 1.9rem); }
+.materiais-page .bonus-card { padding: 26px; background: transparent; }
+.materiais-page .bonus-card h3 { font-size: 1rem; letter-spacing: -.015em; line-height: 1.5; }
+.materiais-page .bonus-card p { font-size: .94rem; }
+.materiais-page .bonus-card a { display: inline-flex; min-height: 44px; gap: 8px; align-items: center; font-size: .9rem; }
+.materiais-page :is(a, iframe):focus-visible { outline: 3px solid #bb6c1e; outline-offset: 4px; }
+.materiais-page .materials-pos-cta:focus-visible { outline-color: #ffdd8c; }
+
+@media (min-width: 1440px) {
+  .materiais-page .materials-hero { gap: 64px; padding-block: 72px; }
+  .materials-portrait img { height: 240px; }
+}
+@media (max-width: 1024px) {
+  .materiais-page .materials-hero { gap: 28px; padding-block: 48px; }
+  .materials-faculty { gap: 8px; padding-inline: 12px; }
+  .materials-portrait img { height: 180px; }
+  .materials-portrait figcaption { font-size: .67rem; }
+  .materials-testimonial { grid-template-columns: minmax(0, 1fr) minmax(0, 320px); gap: 40px; }
+}
+@media (max-width: 768px) {
+  .materiais-page .materials-hero { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 36px; }
+  .materials-faculty { width: min(100%, 480px); justify-self: center; gap: 12px; padding: 20px 16px; }
+  .materials-portrait img { height: clamp(164px, 34vw, 240px); }
+  .materials-portrait figcaption { font-size: .73rem; }
+  .materiais-page .lesson-grid, .materiais-page .bonus-grid { grid-template-columns: minmax(0, 1fr); }
+  .materiais-page .lesson-card h3 { max-width: none; }
+  .materiais-page .lessons-section { padding-block: 40px; }
+  .materials-testimonial { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 44px; }
+  .materials-testimonial .testimonial-teaser { width: min(100%, 340px); justify-self: center; }
+  .materiais-page .course-promo { padding-block: 44px; }
+  .materiais-page .bonus-section { padding-block: 40px; }
+}
+@media (max-width: 390px) {
+  .materiais-page .materials-hero { padding-block: 28px; }
+  .materiais-page .materials-intro .hero-lede { font-size: 1rem; }
+  .materials-intro strong { font-size: 1.08rem; }
+  .materiais-page .lesson-card { padding: 24px; }
+  .materiais-page .lesson-card h3 { font-size: 1.25rem; }
+  .materiais-page .course-promo { padding-inline: 16px; }
+  .materials-pos-cta { width: 100%; }
+}
+@media (max-width: 375px) {
+  .materials-faculty { gap: 8px; padding-inline: 12px; }
+  .materials-portrait figcaption { font-size: .67rem; }
+  .materiais-page .bonus-card { padding: 22px; }
+}
+@media (max-width: 320px) {
+  .materials-portrait img { height: 140px; }
+  .materials-faculty .portrait-dubovik { padding-top: 18px; }
+  .materials-faculty .portrait-cristiano { padding-top: 36px; }
+  .materiais-page .lesson-card { padding: 20px; }
+  .materials-testimonial h2, .materiais-page .course-promo-copy h2 { font-size: 1.75rem; }
+}

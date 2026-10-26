@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Aulas abertas gratuitas sobre a proposta pedagógica do Jardim Fabulinus.">
   <title>Aulas abertas — Jardim Fabulinus | Faculdade Phorte</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="materiais.css">
+  <script src="materiais.js" defer></script>
 </head>
-<body>
+<body class="materiais-page">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header">
     <a class="wordmark" href="cadastro.html" aria-label="Faculdade Phorte — início">PHORTE <span>Educação</span></a>
@@ -16,10 +19,24 @@
   <main id="conteudo">
     <section class="materials-hero section-wrap">
       <div class="materials-intro">
+        <span class="confirmation-mark" aria-hidden="true">✓</span>
         <h1>Parabéns!</h1>
-        <p class="hero-lede">Seu acesso aos conteúdos já está liberado. Você acaba de liberar uma série de aulas gratuitas sobre o Jardim Fabulinus. O conteúdo foi desenvolvido pelas professoras Alejandra Dubovik e Alejandra Cippitelli, junto com o professor Cristiano Alcântara e o corpo docente da Pós-Graduação em Jardim Fabulinus, para você conhecer, na prática, os conceitos e princípios que estruturam esse projeto pedagógico autoral.</p>
+        <p class="hero-lede"><strong>Seu acesso aos conteúdos já está liberado.</strong> Você acaba de liberar uma série de aulas gratuitas sobre o Jardim Fabulinus. O conteúdo foi desenvolvido pelas professoras Alejandra Dubovik e Alejandra Cippitelli, junto com o professor Cristiano Alcântara e o corpo docente da Pós-Graduação em Jardim Fabulinus, para você conhecer, na prática, os conceitos e princípios que estruturam esse projeto pedagógico autoral.</p>
       </div>
-      <div class="materials-art" aria-hidden="true"><img src="assets/cristiano-final.webp" alt=""></div>
+      <div class="materials-faculty" aria-label="Docentes da série">
+        <figure class="materials-portrait portrait-cippitelli">
+          <img src="assets/alejandra-cippitelli.webp" width="768" height="1365" loading="eager" alt="Professora Alejandra Cippitelli">
+          <figcaption>Alejandra Cippitelli</figcaption>
+        </figure>
+        <figure class="materials-portrait portrait-dubovik">
+          <img src="assets/alejandra-dubovik.jpg" width="1016" height="1600" loading="eager" alt="Professora Alejandra Dubovik">
+          <figcaption>Alejandra Dubovik</figcaption>
+        </figure>
+        <figure class="materials-portrait portrait-cristiano">
+          <img src="assets/cristiano-final.webp" width="636" height="627" loading="eager" alt="Professor Cristiano Alcântara">
+          <figcaption>Cristiano Alcântara</figcaption>
+        </figure>
+      </div>
     </section>
     <section class="lessons-section">
       <div class="section-wrap">
@@ -27,11 +44,23 @@
           <h2>Aulas Abertas</h2>
         </div>
         <div class="lesson-grid">
-          <article class="lesson-card"><span class="lesson-number">01</span><h3>Conheça o Jardim Fabulinus: conceito, proposta e inspiração</h3><p>Nesta aula aberta, você irá conhecer o Jardim Fabulinus como referência em Educação Infantil, compreendendo os fundamentos que sustentam sua proposta pedagógica e a integração entre teoria e cotidiano.</p><a href="https://www.youtube.com/watch?v=f_xTsSMG1-g&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=4" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
-          <article class="lesson-card"><span class="lesson-number">02</span><h3>Os Projetos no Fabulinus: planejamento, intencionalidade e desenvolvimento</h3><p>Nesta aula aberta, você irá compreender como os projetos pedagógicos no Jardim Fabulinus são estruturados ao longo do tempo, analisando de que maneira o planejamento e a intencionalidade orientam o desenvolvimento infantil na Educação Infantil.</p><a href="https://www.youtube.com/watch?v=ZPBLbvitNdo&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=3" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
-          <article class="lesson-card"><span class="lesson-number">03</span><h3>Os Princípios do Fabulinus: fundamentos que orientam a prática</h3><p>Nesta aula aberta, você irá aprofundar sua compreensão sobre os princípios que sustentam o cotidiano do Jardim Fabulinus, analisando os fundamentos que orientam escolhas pedagógicas na Educação Infantil.</p><a href="https://www.youtube.com/watch?v=1ctRt_bE1oY&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=2" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
-          <article class="lesson-card"><span class="lesson-number">04</span><h3>A Vida Prática no Fabulinus: experiências do cotidiano pedagógico</h3><p>Acompanhe uma aula aberta gratuita que irá mostrar o caminho para transformar uma das práticas mais desafiadoras da docência em uma especialidade que valoriza sua carreira e gera mudanças reais no cotidiano da escola.</p><a href="https://www.youtube.com/watch?v=D_pHRKH3vto&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=1&amp;pp=iAQB" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
+          <article class="lesson-card"><span class="lesson-number">01</span><h3 id="aula-01">Conheça o Jardim Fabulinus: conceito, proposta e inspiração</h3><p>Nesta aula aberta, você irá conhecer o Jardim Fabulinus como referência em Educação Infantil, compreendendo os fundamentos que sustentam sua proposta pedagógica e a integração entre teoria e cotidiano.</p><a id="aula-link-01" aria-labelledby="aula-link-01 aula-01" href="https://www.youtube.com/watch?v=f_xTsSMG1-g&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=4" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
+          <article class="lesson-card"><span class="lesson-number">02</span><h3 id="aula-02">Os Projetos no Fabulinus: planejamento, intencionalidade e desenvolvimento</h3><p>Nesta aula aberta, você irá compreender como os projetos pedagógicos no Jardim Fabulinus são estruturados ao longo do tempo, analisando de que maneira o planejamento e a intencionalidade orientam o desenvolvimento infantil na Educação Infantil.</p><a id="aula-link-02" aria-labelledby="aula-link-02 aula-02" href="https://www.youtube.com/watch?v=ZPBLbvitNdo&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=3" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
+          <article class="lesson-card"><span class="lesson-number">03</span><h3 id="aula-03">Os Princípios do Fabulinus: fundamentos que orientam a prática</h3><p>Nesta aula aberta, você irá aprofundar sua compreensão sobre os princípios que sustentam o cotidiano do Jardim Fabulinus, analisando os fundamentos que orientam escolhas pedagógicas na Educação Infantil.</p><a id="aula-link-03" aria-labelledby="aula-link-03 aula-03" href="https://www.youtube.com/watch?v=1ctRt_bE1oY&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=2" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
+          <article class="lesson-card"><span class="lesson-number">04</span><h3 id="aula-04">A Vida Prática no Fabulinus: experiências do cotidiano pedagógico</h3><p>Acompanhe uma aula aberta gratuita que irá mostrar o caminho para transformar uma das práticas mais desafiadoras da docência em uma especialidade que valoriza sua carreira e gera mudanças reais no cotidiano da escola.</p><a id="aula-link-04" aria-labelledby="aula-link-04 aula-04" href="https://www.youtube.com/watch?v=D_pHRKH3vto&amp;list=PLQfqUM3sJ0NVbn2krhqUlk4rJQiIJde7Z&amp;index=1&amp;pp=iAQB" target="_blank" rel="noopener noreferrer">Assistir à aula <span aria-hidden="true">↗</span></a></article>
         </div>
+      </div>
+    </section>
+    <section class="materials-testimonial section-wrap" aria-labelledby="titulo-depoimento">
+      <h2 id="titulo-depoimento">Depoimento de aluna da pós-graduação em Jardim Fabulinus</h2>
+      <div class="testimonial-teaser">
+        <div class="materials-video" id="depoimento-player" hidden>
+          <button class="video-activate" type="button" data-video-src="https://www.youtube-nocookie.com/embed/AeRvxB_ybvY?rel=0" aria-controls="depoimento-player" hidden>
+            <span class="video-play" aria-hidden="true">▶</span>
+            <span>Assistir ao depoimento</span>
+          </button>
+        </div>
+        <a class="video-fallback" href="https://www.youtube.com/watch?v=AeRvxB_ybvY" target="_blank" rel="noopener noreferrer">Assistir ao depoimento no YouTube</a>
       </div>
     </section>
     <section class="course-promo section-wrap" aria-labelledby="titulo-pos">
@@ -39,18 +68,15 @@
         <h2 id="titulo-pos">Agora que você entende a estrutura do Jardim Fabulinus, avance para uma formação que leva esse conhecimento à sua atuação profissional.</h2>
         <p>A pós-graduação em Jardim Fabulinus é uma formação desenvolvida para conectar a metodologia autoral dessa escola de referência à realidade do sistema educacional brasileira. Ao longo do curso, você será conduzido por docentes formados pelas professoras Alejandra Cippitelii e Alejandra Dubovik e que vivem a pedagogia e o desenvolvimento infantil em suas rotinas.</p>
         <p>Conheça a estrutura completa da pós-graduação, o corpo docente e tudo o que compõe essa especialização internacional:</p>
-        <a class="text-link" href="https://posphorte.com.br/pos-graduacao/jardim-fabulinus//?utm_source=materiaisgratuitos&amp;utm_medium=paginademateriaisdefabulinusmanychat&amp;utm_campaign=posemfabulinus&amp;utm_id=posemfabulinus&amp;utm_term=paginademateriaisdefabulinusmanychat&amp;utm_content=paginademateriaisdefabulinusmanychat" target="_blank" rel="noopener noreferrer">https://posphorte.com.br/pos-graduacao/jardim-fabulinus//?utm_source=materiaisgratuitos&amp;utm_medium=paginademateriaisdefabulinusmanychat&amp;utm_campaign=posemfabulinus&amp;utm_id=posemfabulinus&amp;utm_term=paginademateriaisdefabulinusmanychat&amp;utm_content=paginademateriaisdefabulinusmanychat <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="testimonial-teaser">
-        <div class="teaser-video"><iframe src="https://www.youtube-nocookie.com/embed/AeRvxB_ybvY?rel=0" title="Depoimento de aluna da pós-graduação em Jardim Fabulinus" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <a class="button materials-pos-cta" href="https://posphorte.com.br/pos-graduacao/jardim-fabulinus/?utm_source=materiaisgratuitos&amp;utm_medium=paginademateriaisdefabulinusmanychat&amp;utm_campaign=posemfabulinus&amp;utm_id=posemfabulinus&amp;utm_term=paginademateriaisdefabulinusmanychat&amp;utm_content=paginademateriaisdefabulinusmanychat" target="_blank" rel="noopener noreferrer">Conhecer a Pós em Jardim Fabulinus <span aria-hidden="true">↗</span></a>
       </div>
     </section>
     <section class="bonus-section">
       <div class="section-wrap">
         <div class="section-heading"><h2>Bônus: conheça nossos cursos gratuitos</h2></div>
         <div class="bonus-grid">
-          <article class="bonus-card"><h3>CURSO GRATUITO “CONTRIBUIÇÕES DA NEUROCIÊNCIA PARA O DESENVOLVIMENTO ENTRE 0 E 3 ANOS”:</h3><p>O curso é 100% online e GRATUITO, com aulas gravadas para você assistir quando e onde quiser; Conteúdo exclusivo e rico em informações. As aulas foram planejadas para esclarecer dúvidas, motivar e capacitar o profissional para os desafios do trabalho com bebês.</p><a class="text-link" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/contribuicoes-de-neurociencia-para-o-desenvolvimento-entre-0-e-3-anos/701/1?" target="_blank" rel="noopener noreferrer">https://inscricao.posphorte.com.br//inscricao/pre-cadastro/contribuicoes-de-neurociencia-para-o-desenvolvimento-entre-0-e-3-anos/701/1? <span aria-hidden="true">↗</span></a></article>
-          <article class="bonus-card"><h3>CURSO GRATUITO “APLICAÇÕES DA PSICOMOTRICIDADE NA PRÁTICA EDUCACIONAL”:</h3><p>Este curso tem como objetivo capacitar profissionais da área educacional a integrar a Psicomotricidade no contexto pedagógico, fornecendo uma base teórica sólida e aplicável.</p><a class="text-link" href="https://inscricao.posphorte.com.br//inscricao/pre-cadastro/aplicacao-da-psicomotricidade-na-pratica-educacional/1166/1?" target="_blank" rel="noopener noreferrer">https://inscricao.posphorte.com.br//inscricao/pre-cadastro/aplicacao-da-psicomotricidade-na-pratica-educacional/1166/1? <span aria-hidden="true">↗</span></a></article>
+          <article class="bonus-card"><h3>CURSO GRATUITO “CONTRIBUIÇÕES DA NEUROCIÊNCIA PARA O DESENVOLVIMENTO ENTRE 0 E 3 ANOS”:</h3><p>O curso é 100% online e GRATUITO, com aulas gravadas para você assistir quando e onde quiser; Conteúdo exclusivo e rico em informações. As aulas foram planejadas para esclarecer dúvidas, motivar e capacitar o profissional para os desafios do trabalho com bebês.</p><a class="text-link" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/contribuicoes-de-neurociencia-para-o-desenvolvimento-entre-0-e-3-anos/701/1" target="_blank" rel="noopener noreferrer">Conhecer o curso de Neurociência <span aria-hidden="true">↗</span></a></article>
+          <article class="bonus-card"><h3>CURSO GRATUITO “APLICAÇÕES DA PSICOMOTRICIDADE NA PRÁTICA EDUCACIONAL”:</h3><p>Este curso tem como objetivo capacitar profissionais da área educacional a integrar a Psicomotricidade no contexto pedagógico, fornecendo uma base teórica sólida e aplicável.</p><a class="text-link" href="https://inscricao.posphorte.com.br/inscricao/pre-cadastro/aplicacao-da-psicomotricidade-na-pratica-educacional/1166/1" target="_blank" rel="noopener noreferrer">Conhecer o curso de Psicomotricidade <span aria-hidden="true">↗</span></a></article>
         </div>
       </div>
     </section>
