@@ -13,3 +13,23 @@
 ## Visualizar
 
 Abra `cadastro.html`, `materiais.html` ou `depoimentos.html` no navegador. O carrossel requer JavaScript do navegador. Os vídeos dependem de conexão com a internet e de permissão de visualização nas plataformas de origem.
+
+## Cadastro
+
+`cadastro.html` preserva a copy aprovada e organiza header, resumo, CTA para `#formulario`, formulário demonstrativo, contexto, docentes, próximo passo e footer. O hero desktop combina as três fotos locais dos docentes e o formulário; no mobile o formulário vem imediatamente após o resumo e seu CTA. Um CTA fixo aparece após a primeira dobra quando o formulário está fora da tela.
+
+Estilos próprios em `cadastro.css` consomem os tokens de `styles.css`. `cadastro.js` contém `setupDemoForm()` e `setupMobileFormCta()`: a demonstração impede submissão, não lê os valores preenchidos, não envia requisições e não persiste dados. Marcar o consentimento ilustrativo habilita o botão de teste; a resposta só confirma a demonstração. O link para as aulas é uma navegação explícita, independente do formulário. Sem JavaScript o botão permanece desabilitado e as âncoras continuam utilizáveis.
+
+Validação estática: `node Pos/jardim-fabulinus/tests/validate-cadastro.mjs` (executar da raiz do repositório). Prévia: `python -m http.server 4173`, depois abrir `http://localhost:4173/Pos/jardim-fabulinus/cadastro.html`.
+
+Checklist executado em Chromium via Playwright CLI:
+
+- Validador em RED antes da implementação e GREEN com 8/8 verificações.
+- Sem overflow em 320, 375, 390, 768, 1024 e 1440 px; formulário completo no desktop de 1440 × 900.
+- CTA na primeira dobra de 320 × 568 e 390 × 844; formulário antes das bios.
+- Tab, consentimento e links com foco visível; CTA devolve foco ao título e a próxima tabulação entra no formulário.
+- Enter no formulário sem navegação ou nova requisição; feedback demonstrativo acessível.
+- CTA fixo após a primeira dobra; `prefers-reduced-motion: reduce` com scroll imediato e transições/animações removidas.
+- Console sem erros após correção do favicon; imagens com dimensões e descrições, lazy loading fora do hero.
+
+Evidências locais em `output/playwright/cadastro/` (diretório ignorado pelo Git). A página segue como protótipo demonstrativo sem integração de cadastro real.
