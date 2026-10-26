@@ -30,7 +30,7 @@
 .materials-testimonial .testimonial-teaser { width: 100%; padding: 14px; box-shadow: none; border: 1px solid var(--line); }
 .materials-video { display: grid; width: 100%; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 14px; background: var(--ink); }
 .materials-video[hidden] { display: none; }
-.video-activate { display: flex; flex-direction: column; gap: 22px; align-items: center; justify-content: center; width: 100%; padding: 24px; border: 0; color: var(--paper); background: radial-gradient(ellipse at top left, #36624f, var(--ink) 75%); font-weight: 700; line-height: 1.5; text-align: center; cursor: pointer; }
+.video-activate { display: flex; flex-direction: column; gap: 22px; align-items: center; justify-content: center; width: 100%; padding: 24px; border: 0; color: var(--paper); background: radial-gradient(ellipse at top left, var(--green-dark), var(--ink) 75%); font-weight: 700; line-height: 1.5; text-align: center; cursor: pointer; }
 .video-activate[hidden] { display: none; }
 .video-play { display: grid; width: 72px; height: 72px; place-items: center; padding-left: 4px; border: 1px solid var(--paper); border-radius: 50%; font-size: 1.55rem; transition: transform .2s ease; }
 .video-activate:hover .video-play { transform: scale(1.08); }
@@ -50,7 +50,7 @@
 .materiais-page .bonus-card p { font-size: .94rem; }
 .materiais-page .bonus-card a { display: inline-flex; min-height: 44px; gap: 8px; align-items: center; font-size: .9rem; }
 .materiais-page :is(a, iframe):focus-visible { outline: 3px solid #bb6c1e; outline-offset: 4px; }
-.materiais-page .materials-pos-cta:focus-visible { outline-color: #ffdd8c; }
+.materiais-page .materials-pos-cta:focus-visible { outline-color: var(--paper); }
 
 @media (min-width: 1440px) {
   .materiais-page .materials-hero { gap: 64px; padding-block: 72px; }
