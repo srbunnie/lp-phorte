@@ -8,7 +8,7 @@ Este repositório centraliza protótipos e objetos estáticos de landing pages d
 
 - `Graduacao/`: Graduação Phorte (`pedagogia`, `traducao e interpretacao`, `aula-inaugural-gestao`, `bolsas sociais`, `bolsas sociais Escola Aberta`, `prototipo-pricecard`).
 - `Pos/`: Pós Phorte (`pos-em-educacao`, `educacao-infantil-pikleriana`, `preparatorio-celpe-bras`, `registro-e-documentacao`, `educacao-fisica-internacional`).
-- `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`, `congresso-punta`).
+- `Cursos-Livres/`: Cursos de extensão e eventos livres (`tradushow`, `congresso-punta`, `cursos-livres-phorte`).
 - `USCS/`: Parceria USCS (`formacao-em-futebol-e-futsal`, `prototipo-price-card`).
 - `politicas/`: Termos de uso, privacidade LGPD e cookies.
 - `skills/`: Instruções de apoio, incluindo revisão e commit deste projeto.
