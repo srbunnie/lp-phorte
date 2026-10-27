@@ -1,43 +1,44 @@
 import { courses } from './courses.js';
-import { courseAreas, otherCourseAreas } from './course-areas.js';
+import { categorySlugs, courseAreaImages, filterPageUrl, topicsArea } from './course-areas.js';
 import { filterCourses } from './course-filter.js';
 import {
   clampRangePair,
   createInitialFilters,
   getCourseFilterOptions,
-  getPageNumbers,
   getRangeThumbZIndex,
-  paginateCourses,
 } from './course-finder-state.js';
 
-const catalogUrl = 'https://faculdadephorte.edu.br/todos-os-cursos/';
-const pageSize = 8;
+// O catálogo da landing é uma prévia; a lista completa fica na página de filtros do site.
+const previewSize = 5;
+const popularTopicLimit = 4;
+const visibleTopicOptions = 6;
 const currency = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
 const formatCategories = [
-  { format: 'Curso', title: 'Curso', description: 'Cursos livres para ampliar seus conhecimentos.', icon: 'book' },
-  { format: 'Curso + Livro', title: 'Curso + Livro', description: 'Conteúdo do curso acompanhado de material em livro.', icon: 'books' },
-  { format: 'Formação', title: 'Formação', description: 'Formações para aprofundar conhecimentos e práticas.', icon: 'certificate' },
+  { format: 'Curso', title: 'Curso', description: 'Conteúdo direto ao ponto para ampliar seus conhecimentos.', icon: 'book' },
+  { format: 'Curso + Livro', title: 'Curso + Livro', description: 'O curso acompanhado de material complementar em livro.', icon: 'books' },
+  { format: 'Formação', title: 'Formação', description: 'Percurso mais completo para aprofundar conhecimentos e práticas.', icon: 'certificate' },
 ];
 const icons = {
   arrow: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>',
-  moreArrow: '<svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>',
+  close: '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>',
   book: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"></path><path d="M4 4.5v17M8 6h8M8 10h8"></path></svg>',
   books: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h7v18H5zM14 4l5-1 3 17-5 1zM7 7h3M7 11h3M7 15h3M16 7l2-.3M17 12l2-.3"></path></svg>',
   certificate: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M7 8h8M7 12h5m5 3 2 1.5 2-1.5v6l-2-1.3-2 1.3z"></path></svg>',
-  caretLeft: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>',
-  caretRight: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>',
+  moreArrow: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg>',
 };
 
 const options = getCourseFilterOptions(courses);
 let filters = createInitialFilters(options);
-let currentPage = 1;
-const activeRangeHandle = { hours: 'max', prices: 'max' };
+const activeRangeHandle = { prices: 'max' };
 const resultsCount = document.getElementById('course-results-count');
 const resultsGrid = document.getElementById('course-results-grid');
-const paginationNav = document.getElementById('course-pagination');
+const activeFiltersList = document.getElementById('course-active-filters');
+const filterCountBadge = document.getElementById('course-filter-count');
 const formatGrid = document.getElementById('course-format-grid');
+const featuredAreas = document.getElementById('course-featured-areas');
 const dialog = document.getElementById('course-finder-mobile-dialog');
 const filterToggle = document.querySelector('.course-finder__toggle');
+const heroSearch = document.getElementById('course-hero-search');
 const searchBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
 
 function escapeHtml(value) {
@@ -53,13 +54,17 @@ function escapeHtml(value) {
 function controlId(value) {
   return String(value)
     .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[̀-ͯ]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-');
 }
 
-function formatRangeValue(key, value) {
-  return key === 'prices' ? currency.format(value) : value + ' h';
+function courseCountLabel(count) {
+  return count + (count === 1 ? ' curso' : ' cursos');
+}
+
+function countCourses(partialFilters) {
+  return filterCourses(courses, { ...createInitialFilters(options), ...partialFilters }).length;
 }
 
 function rangePercent(value, min, max) {
@@ -67,65 +72,77 @@ function rangePercent(value, min, max) {
   return Math.max(0, Math.min(100, ((value - min) / span) * 100));
 }
 
-function renderRangeFilter(prefix, label, key, min, max, step, valueMin, valueMax) {
-  const minPercent = rangePercent(valueMin, min, max);
-  const maxPercent = rangePercent(valueMax, min, max);
-  const collapsed = valueMin === valueMax;
-  const minZ = getRangeThumbZIndex('min', activeRangeHandle[key], collapsed);
-  const maxZ = getRangeThumbZIndex('max', activeRangeHandle[key], collapsed);
+function hasPriceFilter() {
+  return filters.minPrice > options.minPrice || filters.maxPrice < options.maxPrice;
+}
+
+function renderPriceFilter(prefix) {
+  const min = options.minPrice;
+  const max = options.maxPrice;
+  const minPercent = rangePercent(filters.minPrice, min, max);
+  const maxPercent = rangePercent(filters.maxPrice, min, max);
+  const collapsed = filters.minPrice === filters.maxPrice;
 
   return '<fieldset class="course-filter-group course-filter-range">' +
-    '<legend>' + label + '</legend>' +
+    '<legend>Preço</legend>' +
     '<div class="course-filter-range__track">' +
       '<span class="course-filter-range__rail" aria-hidden="true"></span>' +
-      '<span class="course-filter-range__selection" data-range-selection="' + key + '" style="left:' + minPercent + '%;width:' + (maxPercent - minPercent) + '%" aria-hidden="true"></span>' +
-      '<input class="course-filter-range__input course-filter-range__input--min" type="range" min="' + min + '" max="' + max + '" step="' + step + '" value="' + valueMin + '" data-range-key="' + key + '" data-range-handle="min" aria-label="' + label + ' mínimo" style="z-index:' + minZ + '">' +
-      '<input class="course-filter-range__input course-filter-range__input--max" type="range" min="' + min + '" max="' + max + '" step="' + step + '" value="' + valueMax + '" data-range-key="' + key + '" data-range-handle="max" aria-label="' + label + ' máximo" style="z-index:' + maxZ + '">' +
+      '<span class="course-filter-range__selection" data-range-selection="prices" style="left:' + minPercent + '%;width:' + (maxPercent - minPercent) + '%" aria-hidden="true"></span>' +
+      '<input id="course-' + prefix + '-price-min" class="course-filter-range__input course-filter-range__input--min" type="range" min="' + min + '" max="' + max + '" step="0.1" value="' + filters.minPrice + '" data-range-key="prices" data-range-handle="min" aria-label="Preço mínimo" style="z-index:' + getRangeThumbZIndex('min', activeRangeHandle.prices, collapsed) + '">' +
+      '<input id="course-' + prefix + '-price-max" class="course-filter-range__input course-filter-range__input--max" type="range" min="' + min + '" max="' + max + '" step="0.1" value="' + filters.maxPrice + '" data-range-key="prices" data-range-handle="max" aria-label="Preço máximo" style="z-index:' + getRangeThumbZIndex('max', activeRangeHandle.prices, collapsed) + '">' +
     '</div>' +
-    '<output class="course-filter-range__value" data-range-output="' + key + '">' + formatRangeValue(key, valueMin) + ' – ' + formatRangeValue(key, valueMax) + '</output>' +
-    '<span class="sr-only">Intervalo de ' + label.toLocaleLowerCase('pt-BR') + '</span>' +
+    '<output class="course-filter-range__value" data-range-output="prices">' + currency.format(filters.minPrice) + ' – ' + currency.format(filters.maxPrice) + '</output>' +
   '</fieldset>';
 }
 
+// Quantos cursos o resultado teria se esta opção fosse escolhida, mantendo os demais filtros.
+function facetCount(facet, value) {
+  const facetFilters = {
+    area: { area: value },
+    topic: { topics: [value] },
+    format: { formats: [value] },
+    duration: { durations: [value] },
+    modality: { modality: value },
+  };
+  return filterCourses(courses, { ...filters, ...facetFilters[facet] }).length;
+}
+
+function renderOption(prefix, type, inputType, value, label) {
+  const id = 'course-' + prefix + '-' + type + '-' + (controlId(value) || 'all');
+  const name = inputType === 'radio' ? ' name="course-' + type + '-' + prefix + '"' : '';
+  return '<label for="' + id + '" data-facet="' + type + '"><input id="' + id + '" type="' + inputType + '"' + name + ' data-filter="' + type + '" value="' + escapeHtml(value) + '">' +
+    '<span>' + escapeHtml(label) + '</span>' +
+    '<span class="course-filter-options__count" data-facet-count></span>' +
+  '</label>';
+}
+
 function renderFilterControls(prefix) {
-  const formatOptions = options.formats.map((format) => {
-    const id = 'course-' + prefix + '-format-' + controlId(format);
-    return '<label for="' + id + '"><input id="' + id + '" type="checkbox" data-filter="format" value="' + escapeHtml(format) + '"><span>' + escapeHtml(format) + '</span></label>';
-  }).join('');
+  const areaOptions = renderOption(prefix, 'area', 'radio', '', 'Todas') +
+    options.areas.map((area) => renderOption(prefix, 'area', 'radio', area, area)).join('');
+  const topicOptions = options.topics.map((topic) => renderOption(prefix, 'topic', 'checkbox', topic, topic)).join('');
+  const hasHiddenTopics = options.topics.length > visibleTopicOptions;
+  const formatOptions = options.formats.map((format) => renderOption(prefix, 'format', 'checkbox', format, format)).join('');
+  const durationOptions = options.durations.map((bucket) => renderOption(prefix, 'duration', 'checkbox', bucket.id, bucket.label)).join('');
+  const modalityOptions = options.modalities.length > 1
+    ? '<fieldset class="course-filter-group"><legend>Modalidade</legend><div class="course-filter-options">' +
+      renderOption(prefix, 'modality', 'radio', '', 'Todas') +
+      options.modalities.map((modality) => renderOption(prefix, 'modality', 'radio', modality, modality)).join('') +
+      '</div></fieldset>'
+    : '';
+  const topicsGroup = options.topics.length
+    ? '<fieldset class="course-filter-group" data-topics-group>' +
+        '<legend>Tema</legend>' +
+        '<div class="course-filter-options' + (hasHiddenTopics ? ' is-collapsed' : '') + '" id="course-' + prefix + '-topic-options">' + topicOptions + '</div>' +
+        (hasHiddenTopics ? '<button class="course-filter-group__more" type="button" data-toggle-topics aria-expanded="false" aria-controls="course-' + prefix + '-topic-options">Ver todos os temas (' + options.topics.length + ')</button>' : '') +
+      '</fieldset>'
+    : '';
 
-  const areaOptions = '<label for="course-' + prefix + '-area-all"><input id="course-' + prefix + '-area-all" type="radio" name="course-area-' + prefix + '" data-filter="area" value=""><span>Todas</span></label>' +
-    options.areas.map((area) => {
-      const id = 'course-' + prefix + '-area-' + controlId(area);
-      return '<label for="' + id + '"><input id="' + id + '" type="radio" name="course-area-' + prefix + '" data-filter="area" value="' + escapeHtml(area) + '"><span>' + escapeHtml(area) + '</span></label>';
-    }).join('');
-
-  const modalityOptions = options.modalities.length ? '<fieldset class="course-filter-group"><legend>Modalidade</legend><div class="course-filter-options">' +
-    '<label for="course-' + prefix + '-modality-all"><input id="course-' + prefix + '-modality-all" type="radio" name="course-modality-' + prefix + '" data-filter="modality" value=""><span>Todas</span></label>' +
-    options.modalities.map((modality) => {
-      const id = 'course-' + prefix + '-modality-' + controlId(modality);
-      return '<label for="' + id + '"><input id="' + id + '" type="radio" name="course-modality-' + prefix + '" data-filter="modality" value="' + escapeHtml(modality) + '"><span>' + escapeHtml(modality) + '</span></label>';
-    }).join('') + '</div></fieldset>' : '';
-
-  const sortId = 'course-' + prefix + '-sort';
-
-  return '<label class="course-finder__search">' +
-      '<span class="sr-only">Encontre seu curso</span>' +
-      '<input type="search" placeholder="Encontre seu curso..." data-filter="query" autocomplete="off">' +
-      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>' +
-    '</label>' +
-    '<fieldset class="course-filter-group"><legend>Formato do Curso</legend><div class="course-filter-options">' + formatOptions + '</div></fieldset>' +
-    '<fieldset class="course-filter-group"><legend>Áreas</legend><div class="course-filter-options">' + areaOptions + '</div></fieldset>' +
+  return '<fieldset class="course-filter-group"><legend>Área</legend><div class="course-filter-options">' + areaOptions + '</div></fieldset>' +
+    topicsGroup +
+    '<fieldset class="course-filter-group"><legend>Formato</legend><div class="course-filter-options">' + formatOptions + '</div></fieldset>' +
+    '<fieldset class="course-filter-group"><legend>Duração</legend><div class="course-filter-options">' + durationOptions + '</div></fieldset>' +
     modalityOptions +
-    renderRangeFilter(prefix, 'Duração', 'hours', options.minHours, options.maxHours, 1, filters.minHours, filters.maxHours) +
-    renderRangeFilter(prefix, 'Preço', 'prices', options.minPrice, options.maxPrice, 0.1, filters.minPrice, filters.maxPrice) +
-    '<label class="course-finder__sort" for="' + sortId + '"><span>Ordem:</span><select id="' + sortId + '" data-filter="sortBy">' +
-      '<option value="featured">Ordem do catálogo</option>' +
-      '<option value="price-asc">Menor preço</option>' +
-      '<option value="price-desc">Maior preço</option>' +
-      '<option value="name-asc">Nome A-Z</option>' +
-      '<option value="name-desc">Nome Z-A</option>' +
-    '</select></label>' +
-    '<button class="course-finder__clear" type="button" data-action="reset">Limpar filtros</button>';
+    renderPriceFilter(prefix);
 }
 
 function renderFormatCards() {
@@ -133,40 +150,107 @@ function renderFormatCards() {
     const selected = filters.formats.length === 1 && filters.formats[0] === item.format;
     return '<button class="courses-format-card" type="button" data-select-format="' + escapeHtml(item.format) + '" aria-pressed="' + selected + '">' +
       '<span class="courses-format-card__icon" aria-hidden="true">' + icons[item.icon] + '</span>' +
-      '<span class="courses-format-card__title">' + escapeHtml(item.title) + '</span>' +
-      '<span class="courses-format-card__description">' + escapeHtml(item.description) + '</span>' +
-      '<span class="courses-format-card__action">Ver cursos ' + icons.arrow + '</span>' +
+      '<span class="courses-format-card__text">' +
+        '<span class="courses-format-card__title">' + escapeHtml(item.title) + '</span>' +
+        '<span class="courses-format-card__description">' + escapeHtml(item.description) + '</span>' +
+      '</span>' +
+      '<span class="courses-format-card__action">' + courseCountLabel(countCourses({ formats: [item.format] })) + ' ' + icons.arrow + '</span>' +
     '</button>';
   }).join('');
 }
 
 function renderCourseAreas() {
-  const featured = document.getElementById('course-featured-areas');
-  const topics = document.getElementById('course-topic-track');
+  const card = (area) => {
+    const photo = courseAreaImages[area];
+    return '<button class="courses-area-card' + (photo ? '' : ' courses-area-card--compact') + '" type="button" data-select-area="' + escapeHtml(area) + '" aria-pressed="' + (filters.area === area) + '">' +
+      (photo ? '<img src="' + escapeHtml(photo.image) + '" alt="' + escapeHtml(photo.alt) + '" loading="lazy">' : '') +
+      '<span class="courses-area-card__label"><span><strong>' + escapeHtml(area) + '</strong><small>' + courseCountLabel(countCourses({ area })) + '</small></span>' + icons.arrow + '</span>' +
+    '</button>';
+  };
+  const featured = options.areas.filter((area) => courseAreaImages[area]);
+  const compact = options.areas.filter((area) => !courseAreaImages[area]);
+  featuredAreas.innerHTML = featured.map(card).join('') +
+    (compact.length ? '<div class="courses-areas__compact">' + compact.map(card).join('') + '</div>' : '');
+}
 
-  featured.innerHTML = courseAreas.map((area) => {
-    const available = options.areas.includes(area.title);
-    const contents = '<img src="' + escapeHtml(area.image) + '" alt="' + escapeHtml(area.alt) + '" loading="lazy">' +
-      '<span class="courses-area-card__label"><strong>' + escapeHtml(area.title) + '</strong>' + icons.arrow + '</span>';
-    return available
-      ? '<button class="courses-area-card" type="button" data-select-area="' + escapeHtml(area.title) + '">' + contents + '</button>'
-      : '<a class="courses-area-card" href="' + escapeHtml(area.href) + '">' + contents + '</a>';
-  }).join('');
+function areaTopics() {
+  return options.topics.filter((topic) => countCourses({ area: topicsArea, topics: [topic] }) > 0);
+}
 
-  topics.innerHTML = otherCourseAreas.map((area) =>
-    '<button class="courses-area-topic" type="button" data-search-topic="' + escapeHtml(area) + '"><span>' + escapeHtml(area) + '</span>' + icons.arrow + '</button>'
+function renderTopicChips() {
+  document.getElementById('course-topic-chips').innerHTML = areaTopics().map((topic) =>
+    '<button class="courses-topic-chip" type="button" data-select-topic="' + escapeHtml(topic) + '">' + escapeHtml(topic) + '<span>' + countCourses({ topics: [topic] }) + '</span></button>'
   ).join('');
 }
 
+function renderPopularTopics() {
+  const container = document.getElementById('course-popular-topics');
+  const topics = areaTopics().slice(0, popularTopicLimit);
+  if (!topics.length) {
+    container.hidden = true;
+    return;
+  }
+  container.insertAdjacentHTML('beforeend', topics.map((topic) =>
+    '<button class="courses-hero__topic" type="button" data-select-topic="' + escapeHtml(topic) + '">' + escapeHtml(topic) + '</button>'
+  ).join(''));
+}
+
+function activeFilterChips() {
+  const chips = [];
+  if (filters.query.trim()) chips.push({ key: 'query', label: '“' + filters.query.trim() + '”' });
+  if (filters.area) chips.push({ key: 'area', label: filters.area });
+  filters.topics.forEach((topic) => chips.push({ key: 'topic', value: topic, label: topic }));
+  filters.formats.forEach((format) => chips.push({ key: 'format', value: format, label: format }));
+  filters.durations.forEach((id) => {
+    const bucket = options.durations.find((item) => item.id === id);
+    if (bucket) chips.push({ key: 'duration', value: id, label: bucket.label });
+  });
+  if (filters.modality) chips.push({ key: 'modality', label: filters.modality });
+  if (hasPriceFilter()) chips.push({ key: 'price', label: currency.format(filters.minPrice) + ' – ' + currency.format(filters.maxPrice) });
+  return chips;
+}
+
+function renderActiveFilters() {
+  const chips = activeFilterChips();
+  const facetCount = chips.filter((chip) => chip.key !== 'query').length;
+  filterCountBadge.hidden = facetCount === 0;
+  filterCountBadge.textContent = String(facetCount);
+  filterToggle.setAttribute('aria-label', facetCount ? 'Filtros (' + facetCount + ' ativos)' : 'Filtros');
+
+  activeFiltersList.innerHTML = chips.length
+    ? chips.map((chip) =>
+        '<button class="course-finder__chip" type="button" data-remove-filter="' + chip.key + '" data-remove-value="' + escapeHtml(chip.value ?? '') + '" aria-label="Remover filtro ' + escapeHtml(chip.label) + '">' +
+          '<span>' + escapeHtml(chip.label) + '</span>' + icons.close +
+        '</button>'
+      ).join('') + (chips.length > 1 ? '<button class="course-finder__clear-link" type="button" data-action="reset">Limpar tudo</button>' : '')
+    : '';
+}
+
 function syncFilterControls() {
-  document.querySelectorAll('[data-filter="query"]').forEach((input) => {
+  document.querySelectorAll('[data-filter="query"], #course-hero-query').forEach((input) => {
     if (input.value !== filters.query) input.value = filters.query;
   });
   document.querySelectorAll('[data-filter="format"]').forEach((input) => {
     input.checked = filters.formats.includes(input.value);
   });
+  document.querySelectorAll('[data-filter="duration"]').forEach((input) => {
+    input.checked = filters.durations.includes(input.value);
+  });
   document.querySelectorAll('[data-filter="area"]').forEach((input) => {
     input.checked = filters.area === input.value;
+  });
+  document.querySelectorAll('[data-filter="topic"]').forEach((input) => {
+    input.checked = filters.topics.includes(input.value);
+  });
+  document.querySelectorAll('[data-facet]').forEach((label) => {
+    const input = label.querySelector('input');
+    const count = facetCount(label.dataset.facet, input.value);
+    label.querySelector('[data-facet-count]').textContent = String(count);
+    label.classList.toggle('is-empty', count === 0 && !input.checked);
+  });
+  // Os temas pertencem a uma área; o grupo some quando nenhum se aplica à seleção atual.
+  document.querySelectorAll('[data-topics-group]').forEach((group) => {
+    group.hidden = !group.querySelector('[data-facet]:not(.is-empty)');
   });
   document.querySelectorAll('[data-filter="modality"]').forEach((input) => {
     input.checked = filters.modality === input.value;
@@ -175,46 +259,38 @@ function syncFilterControls() {
     input.value = filters.sortBy;
   });
 
-  const values = {
-    hours: [filters.minHours, filters.maxHours],
-    prices: [filters.minPrice, filters.maxPrice],
-  };
-  const bounds = {
-    hours: [options.minHours, options.maxHours],
-    prices: [options.minPrice, options.maxPrice],
-  };
-  Object.entries(values).forEach(([key, pair]) => {
-    const [minimum, maximum] = pair;
-    const [boundMin, boundMax] = bounds[key];
-    const low = rangePercent(minimum, boundMin, boundMax);
-    const high = rangePercent(maximum, boundMin, boundMax);
-    const collapsed = minimum === maximum;
-    document.querySelectorAll('[data-range-key="' + key + '"]').forEach((input) => {
-      const handle = input.dataset.rangeHandle;
-      input.value = String(handle === 'min' ? minimum : maximum);
-      input.style.zIndex = String(getRangeThumbZIndex(handle, activeRangeHandle[key], collapsed));
-    });
-    document.querySelectorAll('[data-range-selection="' + key + '"]').forEach((selection) => {
-      selection.style.left = low + '%';
-      selection.style.width = Math.max(0, high - low) + '%';
-    });
-    document.querySelectorAll('[data-range-output="' + key + '"]').forEach((output) => {
-      output.value = formatRangeValue(key, minimum) + ' – ' + formatRangeValue(key, maximum);
-      output.textContent = output.value;
-    });
+  const low = rangePercent(filters.minPrice, options.minPrice, options.maxPrice);
+  const high = rangePercent(filters.maxPrice, options.minPrice, options.maxPrice);
+  const collapsed = filters.minPrice === filters.maxPrice;
+  document.querySelectorAll('[data-range-key="prices"]').forEach((input) => {
+    const handle = input.dataset.rangeHandle;
+    input.value = String(handle === 'min' ? filters.minPrice : filters.maxPrice);
+    input.style.zIndex = String(getRangeThumbZIndex(handle, activeRangeHandle.prices, collapsed));
+  });
+  document.querySelectorAll('[data-range-selection="prices"]').forEach((selection) => {
+    selection.style.left = low + '%';
+    selection.style.width = Math.max(0, high - low) + '%';
+  });
+  document.querySelectorAll('[data-range-output="prices"]').forEach((output) => {
+    output.value = currency.format(filters.minPrice) + ' – ' + currency.format(filters.maxPrice);
+    output.textContent = output.value;
   });
 
   document.querySelectorAll('[data-select-format]').forEach((button) => {
     const selected = filters.formats.length === 1 && filters.formats[0] === button.dataset.selectFormat;
     button.setAttribute('aria-pressed', String(selected));
   });
+  document.querySelectorAll('[data-select-area]').forEach((button) => {
+    button.setAttribute('aria-pressed', String(filters.area === button.dataset.selectArea));
+  });
 }
 
 function renderCourseCard(course) {
   const tags = [
     course.format ? '<span class="course-result-card__tag course-result-card__tag--format">' + escapeHtml(course.format) + '</span>' : '',
-    course.area ? '<span class="course-result-card__tag">' + escapeHtml(course.area) + '</span>' : '',
+    course.areas?.length ? '<span class="course-result-card__tag">' + escapeHtml(course.areas[0]) + '</span>' : '',
   ].join('');
+  const discount = course.originalPrice > course.price ? Math.round((1 - course.price / course.originalPrice) * 100) : 0;
 
   return '<article class="course-result-card">' +
     '<div class="course-result-card__media">' +
@@ -226,70 +302,78 @@ function renderCourseCard(course) {
       '<p class="course-result-card__metadata"><span>' + escapeHtml(course.hours) + ' horas</span>' +
         (course.modality ? '<span>' + escapeHtml(course.modality) + '</span>' : '') +
       '</p>' +
-      '<div class="course-result-card__price"><span class="course-result-card__price-label">Valor:</span>' +
-        '<strong>' + currency.format(course.price) + '</strong>' +
-        (course.originalPrice > course.price ? '<del>' + currency.format(course.originalPrice) + '</del>' : '') +
+      '<div class="course-result-card__price">' +
+        (discount ? '<del><span class="sr-only">De </span>' + currency.format(course.originalPrice) + '</del>' : '') +
+        '<strong><span class="sr-only">Por </span>' + currency.format(course.price) + '</strong>' +
+        (discount ? '<span class="course-result-card__discount">-' + discount + '%</span>' : '') +
       '</div>' +
-      '<a href="' + escapeHtml(course.enrollmentUrl) + '" target="_blank" rel="noopener noreferrer">Inscreva-se Agora</a>' +
+      '<a href="' + escapeHtml(course.enrollmentUrl) + '" target="_blank" rel="noopener noreferrer">Inscreva-se agora<span class="sr-only"> em ' + escapeHtml(course.title) + '</span></a>' +
     '</div>' +
   '</article>';
 }
 
-function renderMoreCard(hasNextPage) {
-  const content = '<span class="course-result-card__more-icon" aria-hidden="true">' + icons.moreArrow + '</span>' +
-    '<span class="course-result-card__more-title">Ver mais</span>' +
-    '<span class="course-result-card__more-caption">' + (hasNextPage ? 'Explore os próximos cursos' : 'Acesse o catálogo completo') + '</span>';
-  return '<article class="course-result-card course-result-card--more">' +
-    (hasNextPage
-      ? '<button class="course-result-card__more-action" type="button" data-action="more">' + content + '</button>'
-      : '<a class="course-result-card__more-action" href="' + catalogUrl + '" target="_blank" rel="noopener noreferrer">' + content + '</a>') +
-  '</article>';
+// Leva à página de filtros do site com a área ou o tema escolhido (a página aceita uma categoria por vez).
+function moreCoursesLink() {
+  const category = filters.topics.length === 1 ? filters.topics[0] : filters.area;
+  return { url: filterPageUrl(categorySlugs[category]), label: categorySlugs[category] ? category : '' };
 }
 
-function renderPagination(page, pageCount) {
-  const numbers = getPageNumbers(page, pageCount);
-  const previousDisabled = page === 1 ? ' disabled' : '';
-  const nextDisabled = page === pageCount ? ' disabled' : '';
-  return '<button class="course-finder__page-button course-finder__page-button--arrow" type="button" data-page-step="-1" aria-label="Página anterior"' + previousDisabled + '>' + icons.caretLeft + '</button>' +
-    numbers.map((number) => '<button class="course-finder__page-button" type="button" data-page="' + number + '" aria-label="Página ' + number + '"' + (number === page ? ' aria-current="page"' : '') + '>' + number + '</button>').join('') +
-    '<button class="course-finder__page-button course-finder__page-button--arrow" type="button" data-page-step="1" aria-label="Próxima página"' + nextDisabled + '>' + icons.caretRight + '</button>';
+function renderMoreCard(remaining) {
+  const link = remaining > 0 ? moreCoursesLink() : { url: filterPageUrl(), label: '' };
+  const caption = remaining > 0
+    ? 'Mais ' + courseCountLabel(remaining) + (link.label ? ' em ' + link.label : '')
+    : 'Explore o catálogo completo';
+  return '<a class="course-result-card course-result-card--more" href="' + escapeHtml(link.url) + '">' +
+    '<span class="course-result-card__more-icon" aria-hidden="true">' + icons.moreArrow + '</span>' +
+    '<span class="course-result-card__more-title">Ver mais</span>' +
+    '<span class="course-result-card__more-caption">' + escapeHtml(caption) + '</span>' +
+  '</a>';
 }
 
 function renderResults() {
   const results = filterCourses(courses, filters);
-  const page = paginateCourses(results, currentPage, pageSize);
+  const preview = results.slice(0, previewSize);
   const countLabel = results.length === 1 ? 'curso encontrado' : 'cursos encontrados';
-  resultsCount.innerHTML = results.length + ' ' + countLabel +
-    (results.length ? '<span class="course-finder__page-summary"> · mostrando ' + (page.startIndex + 1) + '–' + page.endIndex + '</span>' : '');
+  resultsCount.innerHTML = '<strong>' + results.length + '</strong> ' + countLabel +
+    (results.length > previewSize ? '<span class="course-finder__page-summary"> · mostrando ' + previewSize + '</span>' : '');
 
   if (!results.length) {
-    resultsGrid.innerHTML = '<div class="course-finder__empty" role="status"><h3>Nenhum curso encontrado</h3><p>Experimente ajustar os filtros para ver outras opções.</p><button class="course-finder__clear" type="button" data-action="reset">Limpar filtros</button></div>';
-    paginationNav.innerHTML = '';
+    resultsGrid.innerHTML = '<div class="course-finder__empty" role="status"><h3>Nenhum curso encontrado</h3><p>Tente outro termo de busca ou remova alguns filtros.</p><button class="course-finder__clear" type="button" data-action="reset">Limpar filtros</button></div>';
     return;
   }
 
-  resultsGrid.innerHTML = page.items.map(renderCourseCard).join('') + renderMoreCard(page.page < page.pageCount);
-  paginationNav.innerHTML = renderPagination(page.page, page.pageCount);
+  resultsGrid.innerHTML = preview.map(renderCourseCard).join('') + renderMoreCard(results.length - preview.length);
 }
 
 function render() {
   syncFilterControls();
   renderFormatCards();
+  renderActiveFilters();
   renderResults();
 }
 
-function updateRange(input) {
-  const key = input.dataset.rangeKey;
-  const handle = input.dataset.rangeHandle;
-  const isHours = key === 'hours';
-  const minimumKey = isHours ? 'minHours' : 'minPrice';
-  const maximumKey = isHours ? 'maxHours' : 'maxPrice';
-  const bounds = isHours ? [options.minHours, options.maxHours] : [options.minPrice, options.maxPrice];
-  const next = clampRangePair([filters[minimumKey], filters[maximumKey]], handle, Number(input.value), bounds);
-  filters[minimumKey] = next[0];
-  filters[maximumKey] = next[1];
-  currentPage = 1;
+function applyFilters(changes) {
+  Object.assign(filters, changes);
+  // Ao trocar de área, descarta temas que não existem nela.
+  if ('area' in changes && filters.area && !('topics' in changes)) {
+    filters.topics = filters.topics.filter((topic) => countCourses({ area: filters.area, topics: [topic] }) > 0);
+  }
   render();
+}
+
+function updateRange(input) {
+  const next = clampRangePair([filters.minPrice, filters.maxPrice], input.dataset.rangeHandle, Number(input.value), [options.minPrice, options.maxPrice]);
+  applyFilters({ minPrice: next[0], maxPrice: next[1] });
+}
+
+function removeFilter(key, value) {
+  if (key === 'query') applyFilters({ query: '' });
+  else if (key === 'area') applyFilters({ area: '' });
+  else if (key === 'topic') applyFilters({ topics: filters.topics.filter((item) => item !== value) });
+  else if (key === 'modality') applyFilters({ modality: '' });
+  else if (key === 'format') applyFilters({ formats: filters.formats.filter((item) => item !== value) });
+  else if (key === 'duration') applyFilters({ durations: filters.durations.filter((item) => item !== value) });
+  else if (key === 'price') applyFilters({ minPrice: options.minPrice, maxPrice: options.maxPrice });
 }
 
 function scrollToFinder() {
@@ -305,18 +389,22 @@ document.querySelectorAll('[data-filter-prefix]').forEach((container) => {
   container.innerHTML = renderFilterControls(container.dataset.filterPrefix);
 });
 renderCourseAreas();
+renderTopicChips();
+renderPopularTopics();
 render();
+
+heroSearch.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const query = new FormData(heroSearch).get('q');
+  applyFilters({ query: String(query ?? '').trim() });
+  scrollToFinder();
+});
 
 document.addEventListener('input', (event) => {
   const input = event.target;
   if (!(input instanceof HTMLInputElement)) return;
-  if (input.dataset.filter === 'query') {
-    filters.query = input.value;
-    currentPage = 1;
-    render();
-  } else if (input.dataset.rangeKey) {
-    updateRange(input);
-  }
+  if (input.dataset.filter === 'query') applyFilters({ query: input.value });
+  else if (input.dataset.rangeKey) updateRange(input);
 });
 
 document.addEventListener('change', (event) => {
@@ -328,17 +416,16 @@ document.addEventListener('change', (event) => {
   if (!(input instanceof HTMLInputElement || input instanceof HTMLSelectElement)) return;
 
   const filter = input.dataset.filter;
-  if (filter === 'format') {
-    filters.formats = input.checked
-      ? Array.from(new Set(filters.formats.concat(input.value)))
-      : filters.formats.filter((format) => format !== input.value);
+  if (filter === 'format' || filter === 'duration' || filter === 'topic') {
+    const key = { format: 'formats', duration: 'durations', topic: 'topics' }[filter];
+    applyFilters({
+      [key]: input.checked
+        ? Array.from(new Set(filters[key].concat(input.value)))
+        : filters[key].filter((item) => item !== input.value),
+    });
   } else if (filter === 'area' || filter === 'modality' || filter === 'sortBy') {
-    filters[filter] = input.value;
-  } else {
-    return;
+    applyFilters({ [filter]: input.value });
   }
-  currentPage = 1;
-  render();
 });
 
 document.addEventListener('focusin', (event) => {
@@ -377,7 +464,6 @@ document.addEventListener('click', (event) => {
     if (!dialog.open) {
       dialog.showModal();
       filterToggle.setAttribute('aria-expanded', 'true');
-      window.requestAnimationFrame(() => dialog.querySelector('[data-filter="query"]').focus({ preventScroll: true }));
     }
     return;
   }
@@ -388,55 +474,37 @@ document.addEventListener('click', (event) => {
 
   if (target.matches('[data-action="reset"]')) {
     filters = createInitialFilters(options);
-    currentPage = 1;
     render();
+    return;
+  }
+  if (target.matches('[data-remove-filter]')) {
+    removeFilter(target.dataset.removeFilter, target.dataset.removeValue);
     return;
   }
   if (target.matches('[data-select-format]')) {
     const format = target.dataset.selectFormat;
-    filters.formats = filters.formats.length === 1 && filters.formats[0] === format ? [] : [format];
-    currentPage = 1;
-    render();
+    applyFilters({ formats: filters.formats.length === 1 && filters.formats[0] === format ? [] : [format] });
     scrollToFinder();
     return;
   }
   if (target.matches('[data-select-area]')) {
-    filters.area = target.dataset.selectArea;
-    filters.query = '';
-    currentPage = 1;
-    render();
+    const area = target.dataset.selectArea;
+    applyFilters({ area: filters.area === area ? '' : area, query: '' });
     scrollToFinder();
     return;
   }
-  if (target.matches('[data-search-topic]')) {
-    filters.area = '';
-    filters.query = target.dataset.searchTopic;
-    currentPage = 1;
-    render();
+  if (target.matches('[data-select-topic]')) {
+    applyFilters({ area: topicsArea, topics: [target.dataset.selectTopic], query: '' });
     scrollToFinder();
     return;
   }
-  if (target.matches('[data-scroll-topics]')) {
-    const track = document.getElementById('course-topic-track');
-    const direction = Number(target.dataset.scrollTopics);
-    track.scrollBy({ left: direction * Math.max(220, track.clientWidth * 0.7), behavior: searchBehavior });
+  if (target.matches('[data-toggle-topics]')) {
+    const list = document.getElementById(target.getAttribute('aria-controls'));
+    const expanded = target.getAttribute('aria-expanded') !== 'true';
+    list.classList.toggle('is-collapsed', !expanded);
+    target.setAttribute('aria-expanded', String(expanded));
+    target.textContent = expanded ? 'Mostrar menos temas' : 'Ver todos os temas (' + options.topics.length + ')';
     return;
-  }
-  if (target.matches('[data-action="more"]')) {
-    const pageCount = Math.max(1, Math.ceil(filterCourses(courses, filters).length / pageSize));
-    currentPage = Math.min(pageCount, currentPage + 1);
-    render();
-    return;
-  }
-  if (target.matches('[data-page]')) {
-    currentPage = Number(target.dataset.page);
-    render();
-    return;
-  }
-  if (target.matches('[data-page-step]') && !target.disabled) {
-    const pageCount = Math.max(1, Math.ceil(filterCourses(courses, filters).length / pageSize));
-    currentPage = Math.max(1, Math.min(pageCount, currentPage + Number(target.dataset.pageStep)));
-    render();
   }
 });
 

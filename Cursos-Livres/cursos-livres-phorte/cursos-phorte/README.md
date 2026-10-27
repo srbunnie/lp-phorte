@@ -14,7 +14,9 @@ Landing page responsiva de cursos livres da Faculdade Phorte, construída com HT
 - js/: catálogo de demonstração, filtros, paginação e interações.
 - images/: logo e imagens locais do hero e das áreas de cursos.
 
-O catálogo local tem 16 cursos demonstrativos. Cada página mostra até oito cursos e um card extra “Ver mais”. Busca, formato, área, modalidade, duração, preço e ordenação funcionam no navegador. A integração com WordPress/JetEngine poderá substituir os dados de js/courses.js depois.
+Estrutura da página: hero com busca → Escolha o formato ideal → catálogo com filtros → Explore por área (áreas e temas de Educação Física) → Por que a Phorte → CTA de atendimento.
+
+O catálogo em js/courses.js tem os 44 cursos de https://faculdadephorte.edu.br/cursos-phorte/ (extraídos em 27/10/2026 da Store API do WooCommerce, do REST da taxonomia product_cursoslivres_categorias e da carga horária exibida na listagem). Cada curso tem areas (categorias de primeiro nível) e topics (subcategorias). Os filtros são área, tema, formato, duração (faixas), preço e ordenação; as contagens de cada opção acompanham os filtros ativos e os temas além dos seis primeiros ficam recolhidos. O catálogo mostra até cinco cursos e um card "Ver mais" que abre https://faculdadephorte.edu.br/cursos-phorte/ já filtrada pela área ou pelo tema escolhido (slugs em js/course-areas.js). A modalidade só aparece quando houver mais de uma. A integração com WordPress/JetEngine poderá substituir js/courses.js depois.
 
 ## Abrir localmente
 

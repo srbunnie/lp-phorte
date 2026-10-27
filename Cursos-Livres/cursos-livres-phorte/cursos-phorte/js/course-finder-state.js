@@ -1,9 +1,29 @@
 const preferredFormats = ['Curso', 'Curso + Livro', 'Formação'];
+const durationBuckets = [
+  { id: 'ate-10', label: 'Até 10 h', max: 10 },
+  { id: '11-50', label: 'De 11 a 50 h', min: 11, max: 50 },
+  { id: 'acima-50', label: 'Acima de 50 h', min: 51 },
+];
+
+function matchesDuration(hours, bucketIds) {
+  if (!bucketIds || bucketIds.length === 0) return true;
+  return durationBuckets.some((bucket) => bucketIds.includes(bucket.id)
+    && Number.isFinite(hours)
+    && hours >= (bucket.min ?? Number.NEGATIVE_INFINITY)
+    && hours <= (bucket.max ?? Number.POSITIVE_INFINITY));
+}
 
 function uniqueValues(courses, field) {
   return [...new Set(courses
     .map((course) => course[field])
     .filter((value) => typeof value === 'string' && value.trim()))];
+}
+
+// Valores de campos-lista (areas, topics), do mais frequente para o menos frequente.
+function listValuesByCount(courses, field) {
+  const counts = new Map();
+  courses.forEach((course) => (course[field] ?? []).forEach((value) => counts.set(value, (counts.get(value) ?? 0) + 1)));
+  return [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b, 'pt-BR', { sensitivity: 'base' }));
 }
 
 function numericBounds(courses, field) {
@@ -23,15 +43,14 @@ function getCourseFilterOptions(courses) {
     if (bIndex !== undefined) return 1;
     return a.localeCompare(b, 'pt-BR', { sensitivity: 'base' });
   });
-  const hours = numericBounds(courses, 'hours');
   const prices = numericBounds(courses, 'price');
 
   return {
     formats,
-    areas: uniqueValues(courses, 'area'),
+    areas: listValuesByCount(courses, 'areas'),
+    topics: listValuesByCount(courses, 'topics'),
     modalities: uniqueValues(courses, 'modality'),
-    minHours: hours.min,
-    maxHours: hours.max,
+    durations: durationBuckets.filter((bucket) => courses.some((course) => matchesDuration(course.hours, [bucket.id]))),
     minPrice: prices.min,
     maxPrice: prices.max,
   };
@@ -42,9 +61,9 @@ function createInitialFilters(options) {
     query: '',
     formats: [],
     area: '',
+    topics: [],
     modality: '',
-    minHours: options.minHours,
-    maxHours: options.maxHours,
+    durations: [],
     minPrice: options.minPrice,
     maxPrice: options.maxPrice,
     sortBy: 'featured',
@@ -104,6 +123,8 @@ function getPageNumbers(requestedPage, requestedPageCount, maxVisible = 8) {
 
 export {
   clampRangePair,
+  durationBuckets,
+  matchesDuration,
   createInitialFilters,
   getCourseFilterOptions,
   getPageNumbers,

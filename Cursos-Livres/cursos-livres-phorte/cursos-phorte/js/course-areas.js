@@ -1,29 +1,41 @@
-export const courseAreas = [
-  {
-    title: 'Educação',
-    image: './images/area-educacao.webp',
-    href: 'https://faculdadephorte.edu.br/curso-livre/educacao-cursoslivres/',
-    alt: 'Profissional conversa com uma aluna em ambiente de aprendizagem',
-  },
-  {
-    title: 'Estética',
-    image: './images/area-estetica.webp',
-    href: 'https://faculdadephorte.edu.br/curso-livre/estetica/',
-    alt: 'Atendimento de estética facial',
-  },
-  {
-    title: 'Educação Física',
+// Áreas com foto no bloco "Explore por área". As demais áreas do catálogo aparecem como cards compactos.
+export const courseAreaImages = {
+  'Educação Física': {
     image: './images/area-educacao-fisica.webp',
-    href: 'https://faculdadephorte.edu.br/curso-livre/educacao-fisica-cursoslivres/',
     alt: 'Profissional de educação física orienta uma aluna',
   },
-];
+  Educação: {
+    image: './images/area-educacao.webp',
+    alt: 'Profissional conversa com uma aluna em ambiente de aprendizagem',
+  },
+};
 
-export const otherCourseAreas = [
-  'Biomecânica',
-  'Doenças Crônicas',
-  'Emagrecimento',
-  'Fisiologia do Exercício',
-  'Educação Infantil',
-  'Treinamento de Força',
-];
+// Área cujos temas (subcategorias) aparecem em destaque no hero e no bloco "Explore por área".
+export const topicsArea = 'Educação Física';
+
+// Slugs da taxonomia product_cursoslivres_categorias, usados na URL da página de filtros do site.
+export const categorySlugs = {
+  Educação: 'educacao-cursoslivres',
+  'Educação Física': 'educacao-fisica-cursoslivres',
+  Fisioterapia: 'fisioterapia',
+  Nutrição: 'nutricao-cursoslivres',
+  Biomecânica: 'biomecanica-cursoslivres',
+  'Doenças Crônicas': 'doencas-cronicas',
+  Emagrecimento: 'emagrecimento',
+  'Fisiologia do Exercício': 'fisiologiadoexercicio-cursoslivres',
+  Futsal: 'futsal',
+  Gestantes: 'gestantes',
+  'Gestão de Carreira': 'gestao-de-carreira',
+  'Hipertensão Arterial': 'hipertensao-arterial',
+  Marketing: 'marketing',
+  Musculação: 'musculacao-cursoslivres',
+  'Prescrição do Exercício': 'prescricao-do-exercicio',
+  'Reabilitação de Lesões': 'reabilitacao-de-lesoes',
+  'Terceira Idade': 'terceira-idade',
+};
+
+const filterPageBase = 'https://faculdadephorte.edu.br/cursos-phorte/';
+
+export function filterPageUrl(slug) {
+  return slug ? filterPageBase + 'filtros/tax/categorias/' + slug + '/' : filterPageBase;
+}

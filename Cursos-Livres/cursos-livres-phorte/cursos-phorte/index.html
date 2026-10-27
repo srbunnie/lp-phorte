@@ -39,45 +39,74 @@
               <p class="courses-eyebrow">Cursos livres Phorte</p>
               <h1 id="courses-hero-title">Aprenda hoje.<span>Avance na sua carreira.</span></h1>
               <p class="courses-hero__description">Cursos livres com conteúdo útil e prática aplicada ao seu dia a dia profissional.</p>
-              <a class="courses-button" href="https://faculdadephorte.edu.br/todos-os-cursos/" target="_blank" rel="noreferrer">Conheça todos os cursos <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+              <form class="courses-hero__search" id="course-hero-search" role="search" aria-label="Buscar cursos">
+                <label class="sr-only" for="course-hero-query">O que você quer aprender?</label>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                <input id="course-hero-query" type="search" name="q" placeholder="Busque um curso" autocomplete="off">
+                <button type="submit">Buscar</button>
+              </form>
+              <div class="courses-hero__popular" id="course-popular-topics">
+                <span>Mais buscados:</span>
+              </div>
             </div>
             <div class="courses-hero__visual" role="img" aria-label="Estudante sorridente com caderno em um campus"></div>
           </section>
 
-          <section class="courses-formats" aria-labelledby="courses-formats-title">
+          <section id="formatos" class="courses-explore" aria-labelledby="courses-formats-title">
             <div class="courses-section-heading">
-              <p class="courses-eyebrow">Conhecimento que transforma</p>
-              <h2 id="courses-formats-title">Categorias de cursos</h2>
-              <p>Escolha um formato para encontrar os cursos correspondentes.</p>
+              <p class="courses-eyebrow">Por onde começar</p>
+              <h2 id="courses-formats-title">Escolha o formato ideal</h2>
+              <p>Do conteúdo direto ao ponto à formação completa. Os cursos do formato escolhido aparecem logo abaixo.</p>
             </div>
             <div class="courses-format-grid" id="course-format-grid"></div>
           </section>
 
           <section id="course-finder" class="course-finder" aria-labelledby="course-finder-title">
             <header class="course-finder__heading">
-              <div>
-                <p class="courses-eyebrow">Cursos Livres Phorte</p>
-                <h2 id="course-finder-title">Encontre seu curso</h2>
-              </div>
-              <button class="course-finder__toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="course-finder-mobile-dialog">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"></path></svg>
-                Filtros
-              </button>
+              <p class="courses-eyebrow">Catálogo</p>
+              <h2 id="course-finder-title">Encontre seu curso</h2>
             </header>
             <div class="course-finder__layout">
               <aside class="course-finder__filters course-finder__filters--desktop" aria-label="Filtros de cursos">
+                <div class="course-finder__filters-heading">
+                  <h3>Filtrar por</h3>
+                  <button class="course-finder__clear-link" type="button" data-action="reset">Limpar</button>
+                </div>
                 <div class="course-finder__filter-fields" data-filter-prefix="desktop"></div>
               </aside>
               <div class="course-finder__results">
-                <p class="course-finder__count" id="course-results-count" aria-live="polite" aria-atomic="true"></p>
+                <div class="course-finder__toolbar">
+                  <label class="course-finder__search">
+                    <span class="sr-only">Buscar pelo nome do curso</span>
+                    <input id="course-finder-query" type="search" placeholder="Buscar pelo nome do curso" data-filter="query" autocomplete="off">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                  </label>
+                  <button class="course-finder__toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="course-finder-mobile-dialog">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"></path></svg>
+                    Filtros<span class="course-finder__toggle-count" id="course-filter-count" hidden></span>
+                  </button>
+                  <label class="course-finder__sort" for="course-sort">
+                    <span>Ordenar por</span>
+                    <select id="course-sort" data-filter="sortBy">
+                      <option value="featured">Destaques</option>
+                      <option value="price-asc">Menor preço</option>
+                      <option value="price-desc">Maior preço</option>
+                      <option value="name-asc">Nome A-Z</option>
+                      <option value="name-desc">Nome Z-A</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="course-finder__status">
+                  <p class="course-finder__count" id="course-results-count" aria-live="polite" aria-atomic="true"></p>
+                  <div class="course-finder__chips" id="course-active-filters" aria-label="Filtros ativos"></div>
+                </div>
                 <div class="course-finder__grid" id="course-results-grid"></div>
-                <nav class="course-finder__pagination" id="course-pagination" aria-label="Paginação dos cursos"></nav>
               </div>
             </div>
             <dialog id="course-finder-mobile-dialog" class="course-finder__dialog" aria-labelledby="course-finder-dialog-title">
               <div class="course-finder__dialog-layout">
                 <header class="course-finder__dialog-header">
-                  <h2 id="course-finder-dialog-title">Filtro</h2>
+                  <h2 id="course-finder-dialog-title">Filtros</h2>
                   <button class="course-finder__dialog-close" type="button" aria-label="Fechar filtros">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
                   </button>
@@ -88,30 +117,24 @@
                   </div>
                 </div>
                 <footer class="course-finder__dialog-footer">
-                  <button class="course-finder__apply" type="button">Aplicar</button>
+                  <button class="course-finder__clear" type="button" data-action="reset">Limpar</button>
+                  <button class="course-finder__apply" type="button">Ver cursos</button>
                 </footer>
               </div>
             </dialog>
           </section>
 
-          <section class="courses-areas" aria-labelledby="courses-areas-title">
+          <section id="areas" class="courses-explore courses-explore--areas" aria-labelledby="courses-areas-title">
             <div class="courses-section-heading">
-              <p class="courses-eyebrow">Conhecimento que transforma</p>
-              <h2 id="courses-areas-title">Nossas áreas de cursos</h2>
-              <p>Formação prática e atual em diferentes áreas para acompanhar os seus planos.</p>
+              <p class="courses-eyebrow">Áreas de conhecimento</p>
+              <h2 id="courses-areas-title">Explore por área</h2>
+              <p>Escolha uma área ou um tema para ver os cursos disponíveis no catálogo.</p>
             </div>
             <div class="courses-areas__featured" id="course-featured-areas"></div>
-            <div class="courses-areas__other-heading">
-              <div>
-                <h3>Outras áreas de cursos</h3>
-                <p>Deslize para conhecer mais temas disponíveis no catálogo.</p>
-              </div>
-              <div class="courses-areas__controls">
-                <button type="button" data-scroll-topics="-1" aria-label="Mostrar áreas anteriores"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
-                <button type="button" data-scroll-topics="1" aria-label="Mostrar próximas áreas"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
-              </div>
+            <div class="courses-explore__topics">
+              <h3 id="courses-topics-title">Temas em Educação Física</h3>
+              <div class="courses-explore__topic-list" id="course-topic-chips" role="group" aria-labelledby="courses-topics-title"></div>
             </div>
-            <div class="courses-areas__topic-track" id="course-topic-track" role="region" aria-label="Outras áreas de cursos"></div>
           </section>
 
           <section class="courses-story" aria-labelledby="courses-story-title">
@@ -119,7 +142,7 @@
               <img class="courses-story__image" src="https://phorte.com/wp-content/uploads/2026/08/ratio11-2025-faculdade-phorte-final.webp" alt="Peça comemorativa dos 30 anos de excelência em educação da Faculdade Phorte" loading="lazy">
             </div>
             <div class="courses-story__content">
-              <p class="courses-eyebrow">Formação que gera resultados</p>
+              <p class="courses-eyebrow">Por que a Phorte</p>
               <h2 id="courses-story-title">Mais de 30 anos transformando carreiras.</h2>
               <p>A Faculdade Phorte conecta conhecimento acadêmico com a realidade prática do mercado, com cursos pensados para evolução profissional.</p>
               <div class="courses-story__stats" aria-label="Números da Faculdade Phorte">
@@ -132,8 +155,12 @@
           <section class="courses-cta" aria-labelledby="courses-cta-title">
             <div class="courses-cta__content">
               <p class="courses-eyebrow">Seu próximo passo</p>
-              <h2 id="courses-cta-title">Desenvolva novas habilidades com a Faculdade Phorte.</h2>
-              <a class="courses-button" href="https://faculdadephorte.edu.br/todos-os-cursos/" target="_blank" rel="noreferrer">Conheça todos os cursos <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+              <h2 id="courses-cta-title">Ficou em dúvida sobre qual curso escolher?</h2>
+              <p>Fale com a nossa equipe e encontre o curso ideal para o seu momento profissional.</p>
+              <div class="courses-cta__actions">
+                <a class="courses-button" href="https://wa.me/551122221222?text=Quero%20ajuda%20para%20escolher%20um%20curso%20livre%20da%20Faculdade%20Phorte" target="_blank" rel="noreferrer">Falar no WhatsApp <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+                <a class="courses-button courses-button--ghost" href="#course-finder">Ver cursos livres</a>
+              </div>
             </div>
           </section>
         </main>

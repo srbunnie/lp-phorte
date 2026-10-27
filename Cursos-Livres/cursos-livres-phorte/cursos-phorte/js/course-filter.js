@@ -1,3 +1,5 @@
+import { matchesDuration } from './course-finder-state.js';
+
 const normalize = (value) => String(value ?? '')
   .normalize('NFD')
   .replace(/[\u0300-\u036f]/g, '')
@@ -11,14 +13,16 @@ export function filterCourses(courses, filters) {
   const query = normalize(filters.query).trim();
   const formats = new Set(filters.formats ?? []);
   const selectedArea = filters.area ?? '';
+  const topics = new Set(filters.topics ?? []);
   const selectedModality = filters.modality ?? '';
 
   const matches = courses.map((course, index) => ({ course, index })).filter(({ course }) => {
-    if (query && !normalize(course.title).includes(query)) return false;
+    if (query && !normalize([course.title, ...(course.topics ?? [])].join(' ')).includes(query)) return false;
     if (formats.size > 0 && !formats.has(course.format)) return false;
-    if (selectedArea && course.area !== selectedArea) return false;
+    if (selectedArea && !(course.areas ?? []).includes(selectedArea)) return false;
+    if (topics.size > 0 && !(course.topics ?? []).some((topic) => topics.has(topic))) return false;
     if (selectedModality && course.modality !== selectedModality) return false;
-    if (!inRange(course.hours, filters.minHours, filters.maxHours)) return false;
+    if (!matchesDuration(course.hours, filters.durations)) return false;
     if (!inRange(course.price, filters.minPrice, filters.maxPrice)) return false;
     return true;
   });
