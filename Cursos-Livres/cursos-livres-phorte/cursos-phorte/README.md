@@ -1,33 +1,25 @@
 # Cursos Livres Phorte
 
-**Status:** protótipo para revisão.
-
-Landing page responsiva dos cursos livres da Faculdade Phorte, migrada do protótipo local. O header fica em uma faixa própria, com divisor entre a marca e a navegação, seguindo a referência de Cursos Livres.
+Landing page responsiva de cursos livres da Faculdade Phorte, construída com HTML, CSS e JavaScript nativos. Não usa React, Vite ou etapa de compilação.
 
 ## Preview
 
-- [Abrir landing page](./index.html)
-- No GitHub Pages: `https://srbunnie.github.io/lp-phorte/Cursos-Livres/cursos-livres-phorte/cursos-phorte/`
+- [Abrir a landing page](./index.html)
+- GitHub Pages: https://srbunnie.github.io/lp-phorte/Cursos-Livres/cursos-livres-phorte/cursos-phorte/
 
-## Estrutura
+## Arquivos
 
-- `app/src/`: código React da home, header, catálogo e filtros.
-- `app/images/` e `app/public/images/`: imagens-fonte locais usadas pela landing page e logo institucional.
-- `app/scripts/publish-static.mjs`: publica os arquivos de build na raiz deste projeto para o GitHub Pages.
-- `index.html`, `assets/` e `images/`: versão estática que o GitHub Pages serve.
+- index.html: estrutura e conteúdo da página.
+- css/: estilos do header, landing page, catálogo e breakpoints responsivos.
+- js/: catálogo de demonstração, filtros, paginação e interações.
+- images/: logo e imagens locais do hero e das áreas de cursos.
 
-## Executar localmente
+O catálogo local tem 16 cursos demonstrativos. Cada página mostra até oito cursos e um card extra “Ver mais”. Busca, formato, área, modalidade, duração, preço e ordenação funcionam no navegador. A integração com WordPress/JetEngine poderá substituir os dados de js/courses.js depois.
 
-```powershell
-cd Cursos-Livres/cursos-phorte/app
-npm ci
-npm run dev
-```
+## Abrir localmente
 
-Para atualizar os arquivos estáticos servidos pelo GitHub Pages:
+Como a página usa módulos JavaScript nativos, sirva esta pasta por HTTP:
 
-```powershell
-npm run build:static
-```
+    python -m http.server 5175 --bind 127.0.0.1
 
-O filtro usa dados demonstrativos locais e não envia informações. As imagens e os links de cursos permanecem apontados para os endereços públicos da Faculdade Phorte.
+Depois abra http://127.0.0.1:5175/.

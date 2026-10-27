@@ -15,7 +15,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 32px clamp(32px, calc(50vw - 285px), 190px);
+  padding: 32px max(var(--phorte-page-gutter, 45px), calc((100% - var(--phorte-content-max, 1110px)) / 2));
   overflow: hidden;
   isolation: isolate;
   background: var(--courses-ink);
@@ -106,9 +106,9 @@
 }
 
 .courses-formats {
-  width: min(100% - 48px, 620px);
+  width: min(calc(100% - var(--phorte-page-gutter, 45px) - var(--phorte-page-gutter, 45px)), var(--phorte-content-max, 1110px));
   margin-inline: auto;
-  padding: 36px 0 0;
+  padding: 28px 0 0;
 }
 
 .courses-section-heading { max-width: 650px; margin-bottom: 26px; }
@@ -150,7 +150,7 @@
 .courses-format-card__action { display: inline-flex; align-items: center; gap: 5px; margin-top: auto; color: var(--phorte-red-readable); font-size: 10px; font-weight: 700; }
 
 .courses-story {
-  width: min(100% - 48px, 1110px);
+  width: min(calc(100% - var(--phorte-page-gutter, 45px) - var(--phorte-page-gutter, 45px)), var(--phorte-content-max, 1110px));
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
@@ -167,7 +167,7 @@
 .courses-story__stat span { color: var(--courses-ink); font-size: 13px; font-weight: 700; }
 
 .courses-areas {
-  width: min(100% - 48px, 1110px);
+  width: min(calc(100% - var(--phorte-page-gutter, 45px) - var(--phorte-page-gutter, 45px)), var(--phorte-content-max, 1110px));
   margin-inline: auto;
   padding: 60px 0 68px;
 }
@@ -213,7 +213,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 48px max(24px, calc((100vw - 1110px) / 2));
+  padding: 48px max(var(--phorte-page-gutter, 45px), calc((100% - var(--phorte-content-max, 1110px)) / 2));
   background-color: #222;
   background-image: linear-gradient(90deg, rgba(18, 18, 19, .12) 0%, rgba(18, 18, 19, .3) 43%, rgba(18, 18, 19, .78) 100%), url('../images/aluno-estudando.webp');
   background-size: cover;
@@ -225,7 +225,7 @@
 .courses-cta h2 { margin: 0 0 20px; font-size: clamp(30px, 3.2vw, 42px); font-weight: 700; letter-spacing: -.04em; line-height: 1.14; }
 
 @media (max-width: 760px) {
-  .courses-hero { min-height: 502px; align-items: flex-start; padding: 22px 18px 0; }
+  .courses-hero { min-height: 502px; align-items: flex-start; padding: 22px 20px 0; }
   .courses-hero::before { display: block; inset: 0 0 234px; width: auto; background: var(--courses-ink); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); content: ''; }
   .courses-hero__content { width: min(100%, 540px); padding-block: 0; transform: none; }
   .courses-hero .courses-eyebrow { position: static; }
@@ -272,16 +272,12 @@
 }
 
 @media (max-width: 390px) {
-  .courses-hero { padding-inline: 16px; }
+  .courses-hero { padding-inline: 20px; }
   .courses-hero h1 { font-size: 36px; }
 }
 
-@media (min-width: 761px) and (max-width: 1020px) {
-  .courses-home .courses-formats { width: 620px; max-width: calc(100% - 48px); margin-left: max(24px, calc((100% - 570px) / 2)); margin-right: 0; }
-  .courses-home .course-finder { width: 620px; max-width: calc(100% - 48px); margin-left: max(24px, calc((100% - 570px) / 2)); margin-right: 0; }
-  .courses-home .course-finder__layout { grid-template-columns: 170px minmax(0, 1fr); gap: 12px; }
-  .courses-home .course-finder__filters { padding: 14px; }
-  .courses-home .course-finder__heading h2 { font-size: 28px; }
+@media (max-width: 340px) {
+  .courses-hero { min-height: 522px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
