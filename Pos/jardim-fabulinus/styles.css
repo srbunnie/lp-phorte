@@ -38,8 +38,8 @@ h3 { font-size: 1.25rem; }
 .skip-link { position: fixed; left: 12px; top: 12px; z-index: 50; padding: 10px 14px; transform: translateY(-160%); border-radius: 8px; color: white; background: var(--green-dark); }
 .skip-link:focus { transform: translateY(0); }
 .site-header { min-height: 82px; padding: 16px max(24px, calc((100vw - 1160px) / 2)); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(23,54,45,.1); background: var(--paper); }
-.wordmark { display: inline-flex; align-items: baseline; gap: 9px; color: var(--ink); text-decoration: none; font-family: 'Manrope', sans-serif; font-size: 1.35rem; font-weight: 800; letter-spacing: .05em; }
-.wordmark span { font: 500 .8rem 'DM Sans', sans-serif; letter-spacing: .02em; }
+.wordmark { display: inline-flex; align-items: center; color: var(--ink); text-decoration: none; }
+.wordmark img { width: auto; height: 46px; }
 .header-label { color: var(--muted); font-size: .85rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 .header-link { text-decoration: none; }
 .eyebrow { margin-bottom: 14px; color: var(--green-dark); font-size: .78rem; font-weight: 700; letter-spacing: .12em; line-height: 1.4; text-transform: uppercase; }
@@ -156,8 +156,7 @@ h3 { font-size: 1.25rem; }
   body { font-size: 15px; }
   .section-wrap, .testimonial-layout, .prototype-banner { width: calc(100% - 32px); }
   .site-header { padding-inline: 16px; }
-  .wordmark { font-size: 1.12rem; }
-  .wordmark span { font-size: .7rem; }
+  .wordmark img { height: 40px; }
   .header-label { font-size: .68rem; }
   .hero { padding-block: 42px; }
   h1 { font-size: clamp(2.25rem, 12vw, 3rem); }

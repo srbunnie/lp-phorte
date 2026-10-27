@@ -69,7 +69,9 @@ check('imports compartilhado e próprios existem', () => {
 });
 check('três docentes com imagens locais dimensionadas, alt e loading', () => {
   const images = [...html.matchAll(/<img\b[^>]*>/g)].map(([tag]) => attributes(tag));
-  assert.equal(images.length, 3);
+  const logo = images.find((image) => image.src === 'assets/phorte-logo.svg');
+  assert.ok(logo && logo.alt === 'Faculdade Phorte', 'logo oficial ou alt ausente');
+  assert.equal(logo.loading, 'eager');
   for (const [src, name] of [['assets/alejandra-cippitelli.webp', 'Alejandra Cippitelli'], ['assets/alejandra-dubovik.jpg', 'Alejandra Dubovik'], ['assets/cristiano-final.webp', 'Cristiano Alcântara']]) {
     const image = images.find((image) => image.src === src);
     assert.ok(image && image.alt.includes(name), `imagem ou alt ausente: ${name}`);

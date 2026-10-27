@@ -32,7 +32,8 @@ check('imagens têm descrição e dimensões; fora do hero são lazy', () => {
   for (const [tag] of images) {
     const image = attributes(tag);
     assert.ok(image.alt?.trim() && Number(image.width) > 0 && Number(image.height) > 0, `alt ou dimensões ausentes: ${image.src}`);
-    if (!hero.includes(tag)) assert.equal(image.loading, 'lazy', `lazy ausente: ${image.src}`);
+    if (image.src === 'assets/phorte-logo.svg') assert.equal(image.loading, 'eager', `logo deve carregar imediatamente: ${image.src}`);
+    else if (!hero.includes(tag)) assert.equal(image.loading, 'lazy', `lazy ausente: ${image.src}`);
     assert.ok(/^assets\//.test(image.src), `imagem não local: ${image.src}`);
   }
 });
