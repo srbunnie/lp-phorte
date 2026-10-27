@@ -10,6 +10,16 @@
 - **Responsáveis por copy, design e aprovação:** conforme cards ClickUp 17tjca20qe2 e 17tjca23xfw; aprovação final pendente.
 - **Integrações:** nenhuma. O formulário de cadastro é apenas ilustrativo e não envia nem armazena dados. Vídeos são incorporados de fontes públicas/Drive.
 
+## Versões
+
+| Versão | Pasta | Estilo |
+|---|---|---|
+| v3 (recomendada) | `v3-curso/` | Página do curso em posphorte.com.br: fundo creme, título rosa, cartões pastéis, botão vinho, fotos com moldura orgânica |
+| v2 | `v2-marca/` | Home de pós: hero escuro, vermelho `#E64242`, Poppins |
+| v1 | raiz (`cadastro.html`, `materiais.html`, `depoimentos.html`) | Protótipo original, verde editorial, com logo oficial no cabeçalho |
+
+Pendências comuns à v2 e v3: link oficial de consulta do selo e-MEC, vídeo do Drive com permissão pública e uso das bandeiras nas fotos das docentes (v3).
+
 ## Visualizar
 
 Abra `cadastro.html`, `materiais.html` ou `depoimentos.html` no navegador. O carrossel requer JavaScript do navegador. Os vídeos dependem de conexão com a internet e de permissão de visualização nas plataformas de origem.
