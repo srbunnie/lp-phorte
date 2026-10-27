@@ -1,5 +1,5 @@
 .course-finder {
-  width: min(100% - 48px, 1110px);
+  width: min(calc(100% - var(--phorte-page-gutter, 45px) - var(--phorte-page-gutter, 45px)), var(--phorte-content-max, 1110px));
   margin-inline: auto;
   padding: 56px 0 64px;
   color: #171719;
@@ -292,6 +292,12 @@
 .course-finder__empty p { margin: 8px 0 18px; color: #65676d; font-size: 14px; }
 .course-finder__empty .course-finder__clear { min-width: 150px; }
 .course-finder .sr-only { width: 1px; height: 1px; position: absolute; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+
+@media (min-width: 761px) and (max-width: 1020px) {
+  .course-finder__layout { grid-template-columns: minmax(190px, 210px) minmax(0, 1fr); gap: 18px; }
+  .course-finder__filters { padding: 16px 14px; }
+  .course-finder__grid { gap: 16px; }
+}
 
 @media (max-width: 760px) {
   .course-finder { width: auto; margin: 0; padding: 49px 20px; }

@@ -1,16 +1,150 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="icon" href="./images/logo-phorte.svg" type="image/svg+xml" />
-    <meta name="description" content="Cursos Livres da Faculdade Phorte: aprenda hoje e avance na sua carreira." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Cursos Livres da Faculdade Phorte: aprenda hoje e avance na sua carreira.">
     <title>Cursos Livres | Faculdade Phorte</title>
-    <script type="module" crossorigin src="./assets/index-b59XZor1.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Dj0qpOIE.css">
+    <link rel="icon" href="./images/logo-phorte.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/course-finder.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="site-header__brand" href="./" aria-label="Faculdade Phorte — Cursos Livres">
+            <img src="./images/logo-phorte.svg" alt="Faculdade Phorte">
+          </a>
+          <button class="site-header__menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+            <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+          <nav id="primary-navigation" class="site-nav" aria-label="Navegação principal">
+            <a class="is-current" href="./" aria-current="page">Cursos Livres</a>
+            <a href="https://faculdadephorte.edu.br/sobre-nos/" target="_blank" rel="noreferrer">Institucional</a>
+            <a href="https://faculdadephorte.edu.br/blog/" target="_blank" rel="noreferrer">Blog</a>
+            <a class="site-nav__contact" href="https://wa.me/551122221222?text=Quero%20conhecer%20os%20cursos%20livres%20da%20Faculdade%20Phorte" target="_blank" rel="noreferrer">Fale Conosco <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.46 15.04L2 22l5.14-1.35A9.95 9.95 0 1 0 12.04 2Zm0 18.1a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.05.8.82-2.97-.2-.31a8.14 8.14 0 1 1 6.86 3.79Zm4.47-6.1c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.15-.25-.02-.39.11-.52.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.45.06-.68.32-.23.25-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.17 1.79 2.73 4.33 3.83.6.26 1.07.41 1.44.52.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.17-.49-.3Z"></path></svg></a>
+            <a class="site-header__catalog" href="https://faculdadephorte.edu.br/todos-os-cursos/" target="_blank" rel="noreferrer">Conheça todos os cursos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+          </nav>
+        </div>
+      </header>
+
+      <div id="main-content">
+        <main class="courses-home">
+          <section class="courses-hero" aria-labelledby="courses-hero-title">
+            <div class="courses-hero__content">
+              <p class="courses-eyebrow">Cursos livres Phorte</p>
+              <h1 id="courses-hero-title">Aprenda hoje.<span>Avance na sua carreira.</span></h1>
+              <p class="courses-hero__description">Cursos livres com conteúdo útil e prática aplicada ao seu dia a dia profissional.</p>
+              <a class="courses-button" href="https://faculdadephorte.edu.br/todos-os-cursos/" target="_blank" rel="noreferrer">Conheça todos os cursos <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+            </div>
+            <div class="courses-hero__visual" role="img" aria-label="Estudante sorridente com caderno em um campus"></div>
+          </section>
+
+          <section class="courses-formats" aria-labelledby="courses-formats-title">
+            <div class="courses-section-heading">
+              <p class="courses-eyebrow">Conhecimento que transforma</p>
+              <h2 id="courses-formats-title">Categorias de cursos</h2>
+              <p>Escolha um formato para encontrar os cursos correspondentes.</p>
+            </div>
+            <div class="courses-format-grid" id="course-format-grid"></div>
+          </section>
+
+          <section id="course-finder" class="course-finder" aria-labelledby="course-finder-title">
+            <header class="course-finder__heading">
+              <div>
+                <p class="courses-eyebrow">Cursos Livres Phorte</p>
+                <h2 id="course-finder-title">Encontre seu curso</h2>
+              </div>
+              <button class="course-finder__toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="course-finder-mobile-dialog">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M7 12h10m-7 5h4"></path></svg>
+                Filtros
+              </button>
+            </header>
+            <div class="course-finder__layout">
+              <aside class="course-finder__filters course-finder__filters--desktop" aria-label="Filtros de cursos">
+                <div class="course-finder__filter-fields" data-filter-prefix="desktop"></div>
+              </aside>
+              <div class="course-finder__results">
+                <p class="course-finder__count" id="course-results-count" aria-live="polite" aria-atomic="true"></p>
+                <div class="course-finder__grid" id="course-results-grid"></div>
+                <nav class="course-finder__pagination" id="course-pagination" aria-label="Paginação dos cursos"></nav>
+              </div>
+            </div>
+            <dialog id="course-finder-mobile-dialog" class="course-finder__dialog" aria-labelledby="course-finder-dialog-title">
+              <div class="course-finder__dialog-layout">
+                <header class="course-finder__dialog-header">
+                  <h2 id="course-finder-dialog-title">Filtro</h2>
+                  <button class="course-finder__dialog-close" type="button" aria-label="Fechar filtros">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+                  </button>
+                </header>
+                <div class="course-finder__dialog-scroll">
+                  <div class="course-finder__filters course-finder__filters--dialog" aria-label="Filtros de cursos">
+                    <div class="course-finder__filter-fields" data-filter-prefix="mobile"></div>
+                  </div>
+                </div>
+                <footer class="course-finder__dialog-footer">
+                  <button class="course-finder__apply" type="button">Aplicar</button>
+                </footer>
+              </div>
+            </dialog>
+          </section>
+
+          <section class="courses-areas" aria-labelledby="courses-areas-title">
+            <div class="courses-section-heading">
+              <p class="courses-eyebrow">Conhecimento que transforma</p>
+              <h2 id="courses-areas-title">Nossas áreas de cursos</h2>
+              <p>Formação prática e atual em diferentes áreas para acompanhar os seus planos.</p>
+            </div>
+            <div class="courses-areas__featured" id="course-featured-areas"></div>
+            <div class="courses-areas__other-heading">
+              <div>
+                <h3>Outras áreas de cursos</h3>
+                <p>Deslize para conhecer mais temas disponíveis no catálogo.</p>
+              </div>
+              <div class="courses-areas__controls">
+                <button type="button" data-scroll-topics="-1" aria-label="Mostrar áreas anteriores"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+                <button type="button" data-scroll-topics="1" aria-label="Mostrar próximas áreas"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+              </div>
+            </div>
+            <div class="courses-areas__topic-track" id="course-topic-track" role="region" aria-label="Outras áreas de cursos"></div>
+          </section>
+
+          <section class="courses-story" aria-labelledby="courses-story-title">
+            <div class="courses-story__visual">
+              <img class="courses-story__image" src="https://phorte.com/wp-content/uploads/2026/08/ratio11-2025-faculdade-phorte-final.webp" alt="Peça comemorativa dos 30 anos de excelência em educação da Faculdade Phorte" loading="lazy">
+            </div>
+            <div class="courses-story__content">
+              <p class="courses-eyebrow">Formação que gera resultados</p>
+              <h2 id="courses-story-title">Mais de 30 anos transformando carreiras.</h2>
+              <p>A Faculdade Phorte conecta conhecimento acadêmico com a realidade prática do mercado, com cursos pensados para evolução profissional.</p>
+              <div class="courses-story__stats" aria-label="Números da Faculdade Phorte">
+                <div class="courses-story__stat"><strong>50k+</strong><span>Alunos Ativos</span></div>
+                <div class="courses-story__stat"><strong>200+</strong><span>Cursos Ativos</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="courses-cta" aria-labelledby="courses-cta-title">
+            <div class="courses-cta__content">
+              <p class="courses-eyebrow">Seu próximo passo</p>
+              <h2 id="courses-cta-title">Desenvolva novas habilidades com a Faculdade Phorte.</h2>
+              <a class="courses-button" href="https://faculdadephorte.edu.br/todos-os-cursos/" target="_blank" rel="noreferrer">Conheça todos os cursos <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="site-footer">
+        <a href="./" aria-label="Voltar para Cursos Livres Phorte"><img src="./images/logo-phorte.svg" alt="Faculdade Phorte"></a>
+        <p>Faculdade Phorte · Educação para abrir novos caminhos.</p>
+        <a href="https://faculdadephorte.edu.br/sobre-nos/" target="_blank" rel="noreferrer">Conheça a Phorte</a>
+      </footer>
+    </div>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
